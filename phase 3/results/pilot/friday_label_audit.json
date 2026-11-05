@@ -1,0 +1,28 @@
+{
+  "source": "https://huggingface.co/datasets/bencorn/CICIDS2017/resolve/811c007f08d693a8a8b4226c197c138391806ce6/csvs/GeneratedLabelledFlows.zip",
+  "archive_sha256": "7bdbef286f8893f31c6db12105fa097fa5c2dcc6733179037a08129d150ea27a",
+  "opened_member": "TrafficLabelling /Friday-WorkingHours-Afternoon-DDos.pcap_ISCX.csv",
+  "label_counts": {
+    "BENIGN": 97718,
+    "DDoS": 128027
+  },
+  "unusable_rows_by_label": {},
+  "timestamp_formats": {
+    "%d/%m/%Y %H:%M": 225745
+  },
+  "first_as_written": {
+    "BENIGN": "2017-07-07T03:30:00",
+    "DDoS": "2017-07-07T03:56:00"
+  },
+  "last_as_written": {
+    "BENIGN": "2017-07-07T05:02:00",
+    "DDoS": "2017-07-07T04:16:00"
+  },
+  "tuple_timestamp_keys_with_repeats": 50023,
+  "tuple_timestamp_keys_with_conflicting_labels": 0,
+  "limitations": [
+    "CSV-only audit: no packet-level label join or model evaluation.",
+    "Timestamp values are as written. AM/PM and time-zone normalization must be validated against Friday PCAP before joining."
+  ],
+  "processing_seconds": 30.316
+}

@@ -1,0 +1,1310 @@
+[
+  {
+    "title": "Machine Learning Based Detection of Previously Unseen Low Rate DDoS Attacks",
+    "landscape": false,
+    "items": [
+      [
+        "p",
+        "COMPUTER NETWORKS  |  PHASE 2"
+      ],
+      [
+        "p",
+        "Extended Literature Review and Research Methodology Development"
+      ],
+      [
+        "table",
+        {
+          "headers": [
+            "Student name",
+            "Roll number"
+          ],
+          "rows": [
+            [
+              "M Abdullah Nadeem",
+              "Omitted in public copy"
+            ],
+            [
+              "Ayaan Faisal",
+              "Omitted in public copy"
+            ]
+          ],
+          "widths": [
+            4.5,
+            2.2
+          ]
+        }
+      ],
+      [
+        "h",
+        "Research proposal overview"
+      ],
+      [
+        "p",
+        "We propose a reproducible evaluation of whether a compact machine-learning intrusion detection system can recognize previously unseen slow denial-of-service behaviour while maintaining a low false-positive rate on ordinary and stressed legitimate traffic. The candidate detector combines supervised learning on known attacks with an autoencoder trained on benign observations. Its contribution is a controlled evaluation of attack novelty, low-rate behaviour, benign stress and detection delay together; superior performance is a hypothesis to test."
+      ],
+      [
+        "p",
+        "Eight additional research articles from 2025-2026 extend the three Phase 1 papers. The extended review refines the original gap because recent studies already provide hybrid detectors and strict zero-day holdouts. The proposed work concentrates on the remaining operating tradeoff and the quality of the evidence used to measure it."
+      ],
+      [
+        "p",
+        "The project remains limited to detection and evaluation. Its output is a timestamped alert with supporting scores. Automatic blocking, rate limiting, traffic redirection and mitigation-effectiveness experiments are outside the implementation scope."
+      ],
+      [
+        "h",
+        "Deliverables in this report"
+      ],
+      [
+        "table",
+        {
+          "headers": [
+            "Deliverable",
+            "Contents"
+          ],
+          "rows": [
+            [
+              "1 Extended literature review",
+              "Eight additional papers, critical analysis, cross-paper comparison and methodological synthesis"
+            ],
+            [
+              "2 Refined research gap",
+              "Four evidence-based gaps, central problem, research questions and measurable objectives"
+            ],
+            [
+              "3 Proposed research methodology",
+              "All 12 required steps, including baselines, statistics, ablation and failure analysis"
+            ],
+            [
+              "4 Research methodology diagram",
+              "Data separation, model branches, threshold calibration, testing and research outputs"
+            ]
+          ],
+          "widths": [
+            2.0,
+            4.7
+          ]
+        }
+      ],
+      [
+        "p",
+        "Proposal date 14 October 2026. All performance figures in the literature review are author-reported values; the proposed project has not yet produced experimental results."
+      ]
+    ]
+  },
+  {
+    "title": "Deliverable 1 Extended literature review",
+    "landscape": false,
+    "items": [
+      [
+        "h",
+        "Selection procedure and eligibility"
+      ],
+      [
+        "p",
+        "The search covered publisher article pages and accessible author manuscripts using combinations of low-rate DDoS, slow DoS, zero-day intrusion detection, autoencoder, temporal detection, false positives and lightweight classification. Inclusion required an original 2025-2026 research article, a Q1-Q2 venue under the stated ranking system, and identifiable data, method and evaluation. Surveys, editorials, duplicate records and papers without usable experimental information were excluded. This is a focused critical review rather than a claimed exhaustive systematic review."
+      ],
+      [
+        "p",
+        "The eight additions A1-A8 below are distinct from the Phase 1 studies by Bocu and Iavich [1], Rullo et al. [2] and Nakip [3]. A4 and A7 contribute directly relevant DDoS classifier baselines and evaluation lessons; they are not treated as evidence that unseen low-rate attacks have been solved. Dataset documentation is supporting material and is not counted toward the eight articles."
+      ],
+      [
+        "table",
+        {
+          "headers": [
+            "ID",
+            "Article and year",
+            "Venue"
+          ],
+          "rows": [
+            [
+              "A1",
+              "F-OSFA: A Fog Level Generalizable Solution for Zero-Day DDOS Attacks Detection (2025)",
+              "IEEE Access"
+            ],
+            [
+              "A2",
+              "Hybrid dual-head IDS: A lightweight and explainable deep learning DDOS/DOS framework for zero-day and imbalanced attack detection in IoT networks (2026)",
+              "Results in Engineering"
+            ],
+            [
+              "A3",
+              "Adapting Convolutional Autoencoder for DDoS Attack Detection via Joint Reconstruction Learning and Refined Anomaly Scoring (2025)",
+              "Computers, Materials & Continua"
+            ],
+            [
+              "A4",
+              "Lightweight machine learning framework for efficient DDoS attack detection in IoT networks (2025)",
+              "Scientific Reports"
+            ],
+            [
+              "A5",
+              "Federated sparse-learning framework for detecting low-rate stealth attacks in resource-constrained IoT devices (2026)",
+              "Scientific Reports"
+            ],
+            [
+              "A6",
+              "Liquid neural networks for adaptive DDoS detection in IoT and SDN environments (2026)",
+              "Scientific Reports"
+            ],
+            [
+              "A7",
+              "A lightweight machine learning approach for DDoS detection and classification (2026)",
+              "Scientific Reports"
+            ],
+            [
+              "A8",
+              "Dynamic graph neural network-based framework to increase detection accuracy in SDN under DDOS (2026)",
+              "Scientific Reports"
+            ]
+          ],
+          "widths": [
+            0.4,
+            4.7,
+            1.6
+          ]
+        }
+      ],
+      [
+        "h",
+        "Venue ranking evidence"
+      ],
+      [
+        "p",
+        "Quartiles below use SCImago SJR, not JCR. The audited 2024 edition provides a common documented basis: IEEE Access Q1, Scientific Reports Q1, Results in Engineering Q1 and Computers, Materials & Continua Q2 [15-18]. The latter is JCR Q3 in 2024, so its eligibility here specifically depends on SJR Q2. The assignment does not name a ranking system. The 2025 institutional records also list Results in Engineering Q1 and CMC Q2 [17,18]."
+      ],
+      [
+        "p",
+        "A8 was first published online on 29 December 2025; the publisher cites volume 16, article 2305 as 2026. Both dates fall within the required interval [11]. Publication years are verified from article records, independently of venue-ranking years."
+      ]
+    ]
+  },
+  {
+    "title": "Critical analysis of additional papers A1 to A4",
+    "landscape": false,
+    "items": [
+      [
+        "h",
+        "A1 Minhas and colleagues 2025"
+      ],
+      [
+        "p",
+        "F-OSFA: A Fog Level Generalizable Solution for Zero-Day DDOS Attacks Detection"
+      ],
+      [
+        "p",
+        "F-OSFA proposes a CNN/decision-tree classifier, a benign-trained contractive autoencoder and a resource-use analyser. Its abstract reports zero-day accuracies of 96.77% on CIC-DDoS2019 and 95.98% on CIC-IDS2017. However, its future-work section still calls for a resource-labelled dataset to implement the resource analyser, so those headline results do not establish validation of every proposed component. The abstract's few-shot terminology also differs from the methodology's zero-shot module. Hybrid detection is therefore established, while unseen slow-family recall at a fixed benign-stress false-positive budget remains a distinct evaluation question [4]."
+      ],
+      [
+        "h",
+        "A2 Ullah and colleagues 2026"
+      ],
+      [
+        "p",
+        "Hybrid dual-head IDS: A lightweight and explainable deep learning DDOS/DOS framework for zero-day and imbalanced attack detection in IoT networks"
+      ],
+      [
+        "p",
+        "The dual-head framework combines supervised classification with anomaly detection, uses dataset-adaptive minority augmentation including WGAN-GP, and supplies SHAP explanations. CIC-IoT2023, BoT-IoT and ToN-IoT experiments include a true zero-day holdout, component ablations and five-seed validation. The paper reports accuracy and F1 above 99.5% across its evaluated datasets and approximately 0.5 MB model size. Therefore, a claim that recent IDS research lacks strict holdouts is no longer defensible. Its broad intrusion results do not establish the specific unseen slow-attack versus benign-stress tradeoff investigated here. Reported per-sample inference cost also cannot replace attack-onset-to-alert delay [5]."
+      ],
+      [
+        "h",
+        "A3 Han and colleagues 2025"
+      ],
+      [
+        "p",
+        "Adapting Convolutional Autoencoder for DDoS Attack Detection via Joint Reconstruction Learning and Refined Anomaly Scoring"
+      ],
+      [
+        "p",
+        "CA-CAE uses consecutive asymmetric convolutional autoencoders with joint reconstruction and a score weighted by recency and relative traffic volume. Cisco NetFlow measurements contain 190,817 normal and 78 anomalous instances; the reported F1 rises from 0.515 for the baseline CAE to 0.934. Differencing and overlapping windows make this relevant to temporal anomaly detection. However, volume weighting requires testing when an attack deliberately has low volume, and only 78 anomalies constrain uncertainty estimates. The counts imply about 0.041% anomalies, rather than the 0.0004% printed in the article. This arithmetic discrepancy should not be propagated into our experimental design [6]."
+      ],
+      [
+        "h",
+        "A4 Nawaz and colleagues 2025"
+      ],
+      [
+        "p",
+        "Lightweight machine learning framework for efficient DDoS attack detection in IoT networks"
+      ],
+      [
+        "p",
+        "This study compares Random Forest, Logistic Regression and Naive Bayes after cleaning, encoding, scaling and ExtraTrees selection of 18 features from NSL-KDD. It reports Random Forest accuracy of 99.88% and F1 of 99.87%, using an 80:20 split and tenfold validation. It provides a useful justification for including inexpensive classical baselines rather than assuming deep learning is necessary. The authors acknowledge that NSL-KDD is not IoT-specific and may not represent current traffic. Neither conventional cross-validation nor this dataset establishes unseen low-rate DDoS detection. We retain the baseline lesson while selecting slow-attack traces and temporally separated sessions for our own evaluation [7]."
+      ]
+    ]
+  },
+  {
+    "title": "Critical analysis of additional papers A5 to A8",
+    "landscape": false,
+    "items": [
+      [
+        "h",
+        "A5 Anandhi and Srikanth 2026"
+      ],
+      [
+        "p",
+        "Federated sparse-learning framework for detecting low-rate stealth attacks in resource-constrained IoT devices"
+      ],
+      [
+        "p",
+        "FSL-IDS targets low-rate stealth attacks through sparse local encoding, fog-level temporal correlation and cloud aggregation, with training-only synthetic stealth augmentation and quantization. The authors report IoTID20-based experiments, cloud ROC-AUC 0.992 and F1 0.965, plus substantial recall loss when augmentation is removed. This makes temporal context and component ablation relevant to our design. However, the reported stealth labels and augmented data require provenance auditing; they should not automatically be treated as native benchmark categories. Exposure to stealth samples during training also differs from excluding an entire slow-attack family. Our evaluation therefore separates attack novelty from rarity and records the origin of every label [8]."
+      ],
+      [
+        "h",
+        "A6 Raza and colleagues 2026"
+      ],
+      [
+        "p",
+        "Liquid neural networks for adaptive DDoS detection in IoT and SDN environments"
+      ],
+      [
+        "p",
+        "This work combines liquid time-constant layers and attention, independently training and evaluating on SNT-SDN2025, CICIoT2023 and IoT23. Cleaning and standardization precede ten-flow sequences; a chronological 70:30 split is made before window generation. The maximum reported accuracy is 99.96%, with 0.07% FPR on CICIoT2023. The temporal separation is a useful leakage-control pattern. However, independently fitting a model on each dataset is not frozen-model cross-dataset transfer, and future traffic is not necessarily a new attack family. We adopt the split-before-window principle and evaluate both novelty and transfer explicitly rather than treating temporal modelling alone as evidence of either [9]."
+      ],
+      [
+        "h",
+        "A7 Ebrahem and colleagues 2026"
+      ],
+      [
+        "p",
+        "A lightweight machine learning approach for DDoS detection and classification"
+      ],
+      [
+        "p",
+        "The paper studies compact feature subsets with Random Forest, KNN, Complement Naive Bayes and Logistic Regression on CIC-DDoS2019, using LDAP, MSSQL, UDP and benign traffic. It removes identifying metadata, cleans invalid values, encodes labels and compares NearMiss-balanced and imbalanced experiments. Table 23 reports RF accuracy 99.32% and F1 99.40%. This supports compact baselines and reporting computational cost. Its documented balancing-before-splitting workflow warrants a leakage audit, and the selected flooding classes do not certify slow-attack performance. In our pipeline, every learned transformation and any resampling occur strictly within training, while test prevalence is preserved [10]."
+      ],
+      [
+        "h",
+        "A8 Kalafy and colleagues 2026"
+      ],
+      [
+        "p",
+        "Dynamic graph neural network-based framework to increase detection accuracy in SDN under DDOS"
+      ],
+      [
+        "p",
+        "GCTNetwork integrates gated temporal graph layers, edge-aware LSTM and graph attention on an SDN testbed-derived flow dataset. It applies log transforms, min-max scaling and graph construction, reporting 94.08% accuracy and 93.27% F1 against ST-GCN, GRAN and LR-STGCN. Graph context is relevant to coordinated activity that individual flows may hide. However, the presented classes are benign and ICMP/TCP/UDP floods, rather than a dedicated unseen slow-family evaluation. The training configuration states ten epochs while the learning-curve discussion describes 100, creating a reproducibility ambiguity. Our simpler aggregation retains temporal context with explicit settings and matched comparisons [11]."
+      ]
+    ]
+  },
+  {
+    "title": "Methodological synthesis across the literature",
+    "landscape": false,
+    "items": [
+      [
+        "h",
+        "Existing approaches and common patterns"
+      ],
+      [
+        "p",
+        "The review identifies four established approaches: classical supervised flow classification; benign-trained reconstruction or one-class detection; hybrid known-attack and anomaly branches; and temporal or graph modelling of coordinated behaviour. Feature cleaning, reduced representations and thresholded scores recur, but they address different experimental questions. A random or stratified split measures recognition within a sampled distribution; a time split measures later traffic; a family holdout measures attack novelty; and frozen transfer measures change of environment. These should be reported separately [4-11]."
+      ],
+      [
+        "h",
+        "Design choices supported by the review"
+      ],
+      [
+        "table",
+        {
+          "headers": [
+            "Observed pattern",
+            "Decision for this project"
+          ],
+          "rows": [
+            [
+              "Hybrid and zero-day detection already exist [4,5]",
+              "Use a modest hybrid as a testable candidate; locate the contribution in the evaluation problem"
+            ],
+            [
+              "Temporal representations can expose subtle activity [6,8,9,11]",
+              "Use fixed-time destination aggregates and strictly causal rolling features"
+            ],
+            [
+              "Compact classifiers can be competitive [7,10]",
+              "Include Logistic Regression and Random Forest alongside the proposed method"
+            ],
+            [
+              "Reconstruction and augmentation choices influence performance [5,6,8]",
+              "Measure the effect of each branch and temporal component; avoid synthetic attack augmentation in the core study"
+            ],
+            [
+              "Published metrics use different datasets and units [4-11]",
+              "Do not rank papers by their headline accuracy; compare our implementations on identical splits"
+            ]
+          ],
+          "widths": [
+            3.0,
+            3.7
+          ]
+        }
+      ],
+      [
+        "h",
+        "How the review refines Phase 1"
+      ],
+      [
+        "p",
+        "The earlier broad gap about an absence of strict unseen-attack protocols must be narrowed: A2 explicitly includes such a protocol [5]. Our central question becomes whether unseen slow attacks can be detected at a threshold fixed before testing while legitimate bursts and congestion remain below an acceptable false-alarm level. The study also asks what temporal observation costs are required to obtain that performance."
+      ],
+      [
+        "p",
+        "The following comparison tables use the assignment fields for all eight additions. Results are attached to their original tasks and datasets. FAI means false alarm index; ZDS means zero-day separation; AE means autoencoder; LRSA means low-rate stealth attack; DR means detection rate. Limitations are our critical interpretations unless explicitly attributed to the authors."
+      ]
+    ]
+  },
+  {
+    "title": "Cross paper comparison A1 to A4",
+    "landscape": true,
+    "items": [
+      [
+        "p",
+        "Table 1. Additional studies compared using the Phase 2 assignment fields. Values are author-reported and are not directly comparable across studies."
+      ],
+      [
+        "table",
+        {
+          "headers": [
+            "#",
+            "Title",
+            "Year",
+            "Dataset used",
+            "Preprocessing techniques",
+            "Models or techniques",
+            "Evaluation metrics",
+            "Results",
+            "Limitations or research gap"
+          ],
+          "rows": [
+            [
+              "A1",
+              "F-OSFA: A Fog Level Generalizable Solution for Zero-Day DDOS Attacks Detection [4]",
+              "2025",
+              "CIC-DDoS2019; CIC-IDS2017",
+              "Metadata/constant removal; invalid-value cleaning; min-max scaling",
+              "CNN + decision tree; contractive AE; proposed resource analyser",
+              "Accuracy; precision; recall; F1; FPR",
+              "Zero-day accuracy 96.77% / 95.98%",
+              "Resource-prong evidence limited; slow/stress tradeoff not established"
+            ],
+            [
+              "A2",
+              "Hybrid dual-head IDS: A lightweight and explainable deep learning DDOS/DOS framework for zero-day and imbalanced attack detection in IoT networks [5]",
+              "2026",
+              "CIC-IoT2023; BoT-IoT; ToN-IoT",
+              "Training-only adaptive augmentation; fitted preprocessing",
+              "Dual heads; hybrid loss; SHAP",
+              "Accuracy; F1; ROC-AUC; ZDS; inference time",
+              ">99.5% accuracy/F1; about 0.5 MB",
+              "Strict holdout exists; slow-attack stress tradeoff remains distinct"
+            ],
+            [
+              "A3",
+              "Adapting Convolutional Autoencoder for DDoS Attack Detection via Joint Reconstruction Learning and Refined Anomaly Scoring [6]",
+              "2025",
+              "Cisco NetFlow; 190,817 normal; 78 anomalous",
+              "First differences; standardization; overlapping windows",
+              "Two asymmetric CAEs; temporal and volume scoring",
+              "Precision; recall; F1; statistical comparisons",
+              "F1 0.934 versus baseline 0.515",
+              "Rare anomalies; volume weighting may underweight slow attacks"
+            ],
+            [
+              "A4",
+              "Lightweight machine learning framework for efficient DDoS attack detection in IoT networks [7]",
+              "2025",
+              "NSL-KDD",
+              "Cleaning; encoding; scaling; ExtraTrees top 18",
+              "Random Forest; Logistic Regression; Naive Bayes",
+              "Accuracy; precision; recall; F1; fold variation",
+              "RF accuracy 99.88%; F1 99.87%",
+              "Legacy non-IoT benchmark; unseen slow attacks not established"
+            ]
+          ],
+          "widths": [
+            0.3,
+            2.05,
+            0.55,
+            1.15,
+            1.15,
+            1.2,
+            0.95,
+            1.05,
+            1.4
+          ]
+        }
+      ],
+      [
+        "p",
+        "Interpretation: attack-family novelty, low traffic volume and temporal distribution change are different properties. High accuracy in one does not establish performance in the others. We therefore use explicit holdout and stress-test definitions rather than transferring headline results to the proposed task."
+      ]
+    ]
+  },
+  {
+    "title": "Cross paper comparison A5 to A8",
+    "landscape": true,
+    "items": [
+      [
+        "p",
+        "Table 2. Additional studies compared using the Phase 2 assignment fields. Values are author-reported and are not directly comparable across studies."
+      ],
+      [
+        "table",
+        {
+          "headers": [
+            "#",
+            "Title",
+            "Year",
+            "Dataset used",
+            "Preprocessing techniques",
+            "Models or techniques",
+            "Evaluation metrics",
+            "Results",
+            "Limitations or research gap"
+          ],
+          "rows": [
+            [
+              "A5",
+              "Federated sparse-learning framework for detecting low-rate stealth attacks in resource-constrained IoT devices [8]",
+              "2026",
+              "IoTID20-based traffic; reported LRSA subset",
+              "Filtering; sessionization; min-max; training augmentation",
+              "Sparse AE; fog temporal ensemble; federated aggregation",
+              "ROC-AUC; F1; LRSA recall; latency; energy",
+              "Cloud AUC 0.992; F1 0.965",
+              "Audit stealth-label provenance; rarity differs from novelty"
+            ],
+            [
+              "A6",
+              "Liquid neural networks for adaptive DDoS detection in IoT and SDN environments [9]",
+              "2026",
+              "SNT-SDN2025; CICIoT2023; IoT23",
+              "Clean; standardize; temporal split before 10-flow windows",
+              "Liquid time-constant network + attention",
+              "Accuracy; precision; recall; FPR; FNR; robustness",
+              "Maximum accuracy 99.96%; FPR 0.07%",
+              "Separate dataset fitting does not prove frozen transfer"
+            ],
+            [
+              "A7",
+              "A lightweight machine learning approach for DDoS detection and classification [10]",
+              "2026",
+              "CIC-DDoS2019 subset: LDAP, MSSQL, UDP, benign",
+              "Metadata removal; invalid-value cleaning; NearMiss",
+              "RF; KNN; Complement NB; Logistic Regression",
+              "Accuracy; precision; recall; F1; FPR; time; memory",
+              "Table 23 RF accuracy 99.32%; F1 99.40%",
+              "Audit resampling order; flooding subset is not slow evidence"
+            ],
+            [
+              "A8",
+              "Dynamic graph neural network-based framework to increase detection accuracy in SDN under DDOS [11]",
+              "2026",
+              "SDN flow dataset from Mininet/POX/OVS",
+              "log1p; min-max; encoding; node/edge aggregation",
+              "Gated temporal graph layers; edge LSTM; GAT",
+              "Accuracy; precision; recall; F1; DR; FAI",
+              "Accuracy 94.08%; F1 93.27%",
+              "Flood classes; no dedicated unseen slow-family result"
+            ]
+          ],
+          "widths": [
+            0.3,
+            2.05,
+            0.55,
+            1.15,
+            1.15,
+            1.2,
+            0.95,
+            1.05,
+            1.4
+          ]
+        }
+      ],
+      [
+        "p",
+        "Interpretation: attack-family novelty, low traffic volume and temporal distribution change are different properties. High accuracy in one does not establish performance in the others. We therefore use explicit holdout and stress-test definitions rather than transferring headline results to the proposed task."
+      ]
+    ]
+  },
+  {
+    "title": "Deliverable 2 Refined research gap",
+    "landscape": false,
+    "items": [
+      [
+        "p",
+        "Existing work already demonstrates high benchmark accuracy, benign-trained anomaly detection, hybrids, temporal representations and strict holdouts. The narrower opportunity is to measure their joint reliability when an excluded slow-attack family and unusual legitimate traffic are both encountered after thresholds are frozen. The table triangulates four potential gaps using three especially relevant additions; it does not claim that every prior paper omits every experiment."
+      ],
+      [
+        "table",
+        {
+          "headers": [
+            "Research gap",
+            "A1 F OSFA [4]",
+            "A2 Dual head [5]",
+            "A5 FSL IDS [8]",
+            "Research opportunity"
+          ],
+          "rows": [
+            [
+              "G1 Joint novelty and benign stress",
+              "Zero-day batches exist",
+              "True holdout exists",
+              "Stealth learning uses examples",
+              "Test an excluded slow family and reserved benign-stress sessions at the same frozen threshold"
+            ],
+            [
+              "G2 Temporal evidence versus delay",
+              "Multiple proposed detection prongs",
+              "Fast sample inference reported",
+              "Temporal aggregation is central",
+              "Separate observation wait, feature cost and inference from onset-to-alert delay"
+            ],
+            [
+              "G3 Provenance and transfer",
+              "Two public CIC datasets",
+              "Three IoT benchmarks",
+              "Stealth-label audit needed",
+              "Publish a label map and split manifest; perform frozen external testing on compatible features"
+            ],
+            [
+              "G4 Complexity versus value",
+              "Three proposed prongs; resource validation limited",
+              "Dual heads and adaptive augmentation",
+              "IoT-fog-cloud hierarchy",
+              "Compare a compact hybrid with simple baselines and isolate component gains"
+            ]
+          ],
+          "widths": [
+            1.25,
+            1.05,
+            1.05,
+            1.05,
+            2.3
+          ]
+        }
+      ],
+      [
+        "h",
+        "Central refined gap"
+      ],
+      [
+        "p",
+        "Within the reviewed studies, evidence remains insufficient to establish whether a compact, reproducible detector can maintain useful recall on a completely excluded slow-attack family while respecting a threshold calibrated to at most 1% false positives on development benign traffic, and how that operating point changes under reserved benign stress and network transfer. This is an evaluation and generalization gap, not a claim of inventing hybrid detection or the first zero-day protocol."
+      ],
+      [
+        "h",
+        "Why it matters and how the study addresses it"
+      ],
+      [
+        "p",
+        "An IDS that reacts to every legitimate burst can generate an impractical number of alerts; a detector that waits for a completed long connection may recognize a slow attack too late. We will hold out complete families, fit all preprocessing only on training, calibrate on separate benign sessions, freeze the full pipeline, and report per-family recall, stress FPR and onset-to-alert delay. Negative findings will identify the boundary of the method rather than be hidden by average accuracy."
+      ]
+    ]
+  },
+  {
+    "title": "Research questions objectives and claim boundaries",
+    "landscape": false,
+    "items": [
+      [
+        "h",
+        "Main research question"
+      ],
+      [
+        "p",
+        "Can a compact supervised-plus-anomaly IDS detect previously unseen slow DoS-DDoS behaviour at a low false-positive operating point, including on stressed legitimate traffic, with acceptable observation and computation delay?"
+      ],
+      [
+        "table",
+        {
+          "headers": [
+            "Question",
+            "Measurable objective",
+            "Evidence to report"
+          ],
+          "rows": [
+            [
+              "RQ1 Unseen attack detection",
+              "O1 Exclude the Slowloris and Slowhttptest group completely from development and measure final recall",
+              "Per-family and macro recall; episode recall; confusion counts"
+            ],
+            [
+              "RQ2 False positives",
+              "O2 Calibrate the final decision to development FPR <=1% in both ordinary and stressed benign strata; measure held-out FPR separately",
+              "FPR, FP count and benign denominator for each workload"
+            ],
+            [
+              "RQ3 Value of components",
+              "O3 Compare the hybrid with each branch and classical baselines using matched inputs and splits",
+              "Paired recall/FPR differences and cluster-level intervals"
+            ],
+            [
+              "RQ4 Delay and transfer",
+              "O4 Measure lab onset-to-alert delay and apply the frozen pipeline to a completely reserved compatible external dataset",
+              "Detected and missed episodes; delay distribution; external recall and FPR"
+            ]
+          ],
+          "widths": [
+            1.4,
+            3.05,
+            2.25
+          ]
+        }
+      ],
+      [
+        "h",
+        "Definitions and research hypotheses"
+      ],
+      [
+        "p",
+        "Previously unseen means the test family is absent from training, model selection, threshold calibration and attack augmentation. It does not mean an unknown software vulnerability. A time split alone is insufficient. Low-rate status must be supported by the attack mechanism and measured traffic rates; a random low-percentile sample from a flood dataset will not be relabelled as a genuine low-rate attack."
+      ],
+      [
+        "p",
+        "H1: the hybrid improves excluded-family recall over the supervised branch at its matched development FPR. H2: causal temporal context improves unseen slow-attack episode recall over instantaneous features. H3: persistence reduces benign-stress alerts, with a measurable delay cost. These are testable hypotheses, not assumed outcomes."
+      ],
+      [
+        "h",
+        "Scope of conclusions"
+      ],
+      [
+        "p",
+        "CIC-IDS2017 Slowloris and Slowhttptest support slow DoS evidence [12]. Distributed low-rate DDoS claims additionally require multiple independently logged source clients in the isolated lab. Offline CSV classification cannot establish live detection latency. Likewise, an unusual low-rate malicious trace without measured service degradation supports detection of attack attempts, not successful denial of service. Broader Internet or production IoT effectiveness will remain outside the demonstrated scope."
+      ]
+    ]
+  },
+  {
+    "title": "Deliverable 3 Research methodology inputs and collection",
+    "landscape": false,
+    "items": [
+      [
+        "h",
+        "Step 1 Define the research input"
+      ],
+      [
+        "p",
+        "The primary input is timestamped packet metadata grouped by destination service into non-overlapping one-second windows. Each record retains dataset, capture, session, attack family, time, traffic-condition and label provenance for splitting and evaluation; identifiers are not predictive features. The online feature builder uses only packets already observed. Rolling context uses the preceding ten seconds, with shorter and longer histories considered on development data only."
+      ],
+      [
+        "p",
+        "The binary target is benign versus attack-associated activity, with original attack families retained for reporting. A positive window must contain attack packets identified by audited flow/packet labels or lab event logs; time inside a scheduled attack interval alone is insufficient. Reconcile time zones, flow direction, five-tuples and NAT mappings before joining labels. Retain ambiguous mixed windows in a separate sensitivity analysis with their counts. Episode timing follows logged attack start/end; service availability and response-time logs evaluate lab impact but are not model inputs."
+      ],
+      [
+        "h",
+        "Step 2 Data collection"
+      ],
+      [
+        "table",
+        {
+          "headers": [
+            "Source",
+            "Role and inclusion",
+            "Why suitable"
+          ],
+          "rows": [
+            [
+              "CIC-IDS2017 [12]",
+              "Primary public data; benign, Hulk, GoldenEye, DDoS, Slowloris and Slowhttptest; exclude unrelated intrusion types",
+              "Provides PCAP, flow labels and attack schedule, including named slow DoS"
+            ],
+            [
+              "CSE-CIC-IDS2018 [13]",
+              "Entire source reserved for frozen external testing on compatible benign and slow DoS records; no target-benign calibration in the primary experiment",
+              "Different capture environment with slow DoS scenarios"
+            ],
+            [
+              "CIC-DDoS2019 [14]",
+              "Secondary known/flood-family benchmark in a separate experiment",
+              "Multiple DDoS families; not treated as sufficient slow-attack evidence"
+            ],
+            [
+              "Isolated local lab",
+              "Mandatory benign-stress and multi-source slow-traffic sessions",
+              "Controls workload, distributed sources, intensity and service impact"
+            ]
+          ],
+          "widths": [
+            1.45,
+            3.1,
+            2.15
+          ]
+        }
+      ],
+      [
+        "p",
+        "Before modelling, build a manifest containing source URLs, downloaded file hashes, extraction version, label map, family aliases, usable sample counts and session IDs. Reconcile labels against schedules and capture metadata; retain excluded/ambiguous counts. Report the audited usable counts and final class distribution after collection."
+      ],
+      [
+        "p",
+        "The isolated lab uses one web service, three separate client containers or VMs, and a monitor. Benign conditions are ordinary request traffic, bursts, flash-crowd-like concurrency and controlled congestion. Use benign-only infrastructure pilots; no Slowloris/Slowhttptest examples may influence feature choice, fitting, validation or calibration. Reserve two attack mechanisms (incomplete-header and slow-request-body connection holding), one or three active clients, and two prespecified concurrency/timing profiles: 10 connections with 20-second spacing, or 60 connections with 5-second spacing per client. These are design settings, not evidence that every trace is low-rate or service-denying. Record actual rates and service impact after freezing; retain unsuccessful attempts. No external targets are contacted."
+      ]
+    ]
+  },
+  {
+    "title": "Methodology preprocessing and feature representation",
+    "landscape": false,
+    "items": [
+      [
+        "h",
+        "Step 3 Data preprocessing"
+      ],
+      [
+        "p",
+        "Assign independent raw sessions to partitions before creating windows or fitting transformations. Quarantine all sessions containing an excluded family, including their benign context. Audit exact duplicates without labels or model scores and remove copied versions across partitions. For unavoidable contiguous-block splits, remove crossing flow intervals and purge at least the maximum candidate history plus connection-tracker timeout. Reset feature and persistence state at session boundaries; use warm-up packets only from the same partition."
+      ],
+      [
+        "p",
+        "Discard labels, attack filenames, source/destination IPs, absolute timestamps and raw port identifiers from model inputs. Identifiers may route aggregation and establish groups only. Map protocol to a fixed schema; standardize units, directional definitions and byte/packet counting. Replace impossible infinities with missing values, impute using branch-specific training medians (benign-only for the AE), and keep missing-value indicators. Do not discard unusual but valid observations merely because they are outliers."
+      ],
+      [
+        "p",
+        "For the AE, apply log1p to predefined non-negative heavy-tailed counts and durations, then robust centring/scaling learned from training benign data only. Apply the frozen mapping to all later data. The supervised branch uses the same feature definitions; it may consume the unscaled numeric values through its own fitted preprocessing. Fit constant-column removal within the corresponding branch's training data too. The core study uses class weights, not attack synthesis or test-set balancing."
+      ],
+      [
+        "h",
+        "Step 4 Feature engineering and representation"
+      ],
+      [
+        "table",
+        {
+          "headers": [
+            "Feature group",
+            "Examples available at window close",
+            "Rationale"
+          ],
+          "rows": [
+            [
+              "Volume and direction",
+              "Packets and bytes in each direction; number of observed connections; upstream/downstream ratios",
+              "Captures load without making a single rate threshold decisive"
+            ],
+            [
+              "Timing and activity",
+              "Inter-arrival mean/std; active connection ages; active/idle proportions; fraction still open",
+              "Slow attacks may occupy resources while sending little traffic"
+            ],
+            [
+              "Protocol behaviour",
+              "SYN/ACK/RST fractions; completed-handshake ratio; packet-length mean/std",
+              "Distinguishes connection behaviour using observable metadata"
+            ],
+            [
+              "Temporal context",
+              "Five-/ten-/twenty-second causal means, variation and rate changes; distinct source count",
+              "Detects persistence and coordinated weak activity across clients"
+            ]
+          ],
+          "widths": [
+            1.3,
+            3.25,
+            2.15
+          ]
+        }
+      ],
+      [
+        "p",
+        "Use incremental, as-of-time counters. A completed-flow duration or total bytes from the future must never appear in an earlier decision. In PCAP experiments, re-extract the same window schema for each source. If only finished-flow CSVs are feasible, run a separately labelled offline analysis and omit claims about early/live detection delay. Fix the feature list and history length using development data; the main no-temporal ablation removes only rolling history, leaving instantaneous inputs intact."
+      ]
+    ]
+  },
+  {
+    "title": "Methodology proposed detector and baselines",
+    "landscape": false,
+    "items": [
+      [
+        "h",
+        "Step 5 Proposed model and decision rule"
+      ],
+      [
+        "p",
+        "Use HistGradientBoosting (HGB) on benign and permitted known attacks with inverse-frequency sample weights. Disable its internal random early-stopping split; select boosting iterations on grouped development V within the stated tuning budget. The anomaly branch is a dense AE fitted only to benign training windows, initially d-32-16-8-16-32-d with ReLU hidden layers and linear reconstruction. Minimize mean squared error with Adam, initially learning rate 0.001 and batch size 256; use benign V for early stopping, a 100-epoch cap and patience ten. The input dimension d follows the frozen feature schema. These are proposed CPU-oriented settings, not measured findings."
+      ],
+      [
+        "p",
+        "Let pS(x) be the supervised attack score and r(x) the AE mean reconstruction error. Convert each to a benign-tail percentile using a disjoint benign score-reference set C1: uS(x) = ECDF_C1(pS(x)) and uA(x) = ECDF_C1(r(x)). The hybrid score is s(x) = max(uS(x), uA(x)). This is a calibrated ranking score, not a probability that the attack is zero-day. An alert occurs when at least k of the last m window scores for a destination exceed threshold t. Candidate persistence rules are 1-of-1, 2-of-3 and 3-of-5."
+      ],
+      [
+        "p",
+        "Use a separate benign set C2, including ordinary and development-stress sessions, to calibrate the complete threshold-plus-persistence rule. For each candidate, require empirical C2 FPR <=1% both overall and within each of the ordinary/stress strata; report denominators and uncertainty. Branch-wise 1% allowances do not imply a 1% OR-rule FPR. Among feasible candidates select the best known-attack V episode recall, breaking ties by lower delay then lower complexity. An always-silent rule is feasible but may be useless: if detection collapses under the constraint, report that tradeoff. Freeze all transforms, weights, C1 mappings, the threshold and persistence before final tests."
+      ],
+      [
+        "h",
+        "Step 6 Baseline methods"
+      ],
+      [
+        "table",
+        {
+          "headers": [
+            "Baseline",
+            "Purpose"
+          ],
+          "rows": [
+            [
+              "Packet/byte rate threshold",
+              "Checks whether observable traffic volume alone is sufficient; uses the same packet-metadata input"
+            ],
+            [
+              "Logistic Regression",
+              "Low-cost linear supervised reference"
+            ],
+            [
+              "Random Forest",
+              "Strong conventional nonlinear reference motivated by A4 and A7"
+            ],
+            [
+              "HistGradientBoosting only",
+              "Isolates the contribution of the anomaly branch"
+            ],
+            [
+              "Autoencoder only",
+              "Isolates known-attack supervision"
+            ],
+            [
+              "Isolation Forest trained on benign data",
+              "Alternative anomaly detector with lower architectural complexity"
+            ]
+          ],
+          "widths": [
+            2.1,
+            4.6
+          ]
+        }
+      ],
+      [
+        "p",
+        "Use identical available features, source partitions, calibration sets and test sessions for all models. Apply the same persistence candidates and final-rule FPR calibration. Allow at most 12 prespecified parameter configurations per learned method; select only on development performance. Run stochastic models with seeds 7, 19, 42, 73 and 101; deterministic methods need one fitted run. Literature architectures requiring unavailable telemetry or private data serve as contextual references rather than claimed reproductions."
+      ]
+    ]
+  },
+  {
+    "title": "Methodology experimental design",
+    "landscape": false,
+    "items": [
+      [
+        "h",
+        "Step 7 Experimental design"
+      ],
+      [
+        "p",
+        "Before any fitting, quarantine the whole Slowloris/Slowhttptest group, family aliases and associated complete public sessions as novelty test U. All corresponding lab attack sessions are also final-only. None may enter training, early stopping, feature selection, augmentation, C1, C2 or V. The entire external CSE-CIC-IDS2018 source, including benign records, is reserved separately. Grouping related slow variants together avoids learning a close relative. Secondary Hulk or GoldenEye exclusions test broader novelty, not additional slow-family diversity."
+      ],
+      [
+        "p",
+        "Allocate remaining eligible public groups and benign lab sessions approximately as 50% fitting, 15% known-attack/benign development V, 10% benign score reference C1, 10% benign calibration C2, and 15% final known/benign K. These are group-level planning proportions, not row-wise stratification: family quarantine and benign-only C1/C2 eligibility take precedence. Keep final lab-stress sessions separate. If independent public sessions are scarce, use purged contiguous blocks and publish exact counts and dependence limits. Every model uses the same manifest; no external-source records enter these development partitions."
+      ],
+      [
+        "table",
+        {
+          "headers": [
+            "Experiment",
+            "Frozen test material",
+            "Question answered"
+          ],
+          "rows": [
+            [
+              "E1 Known attacks",
+              "K with permitted known families and normal benign traffic",
+              "Does the detector retain standard detection ability?"
+            ],
+            [
+              "E2 Primary novelty",
+              "All quarantined slow-family sessions U with reserved benign sessions",
+              "Can it detect attacks never used in development?"
+            ],
+            [
+              "E3 Benign stress",
+              "Test-only bursts, flash-crowd-like workload and congestion sessions",
+              "What is its false-positive burden when legitimate behaviour changes?"
+            ],
+            [
+              "E4 Distributed slow traffic",
+              "Reserved three-client lab configurations; one-client runs reported separately",
+              "Does detection extend to verified distributed low-rate behaviour?"
+            ],
+            [
+              "E5 Environment transfer",
+              "All compatible CSE-CIC-IDS2018 records, wholly reserved from development",
+              "Does the frozen pipeline transfer to an uncalibrated external environment?"
+            ],
+            [
+              "E6 Secondary family novelty",
+              "Hulk or GoldenEye exclusion, each with an independently fitted pipeline",
+              "How family-dependent is generalization?"
+            ]
+          ],
+          "widths": [
+            1.35,
+            3.15,
+            2.2
+          ]
+        }
+      ],
+      [
+        "p",
+        "Run at least five independent final sessions for each of the four benign conditions. For attacks, two mechanisms x two source counts x two concurrency/timing profiles x five fresh-session replicates gives 40 planned episodes. Reserve all these attack runs until the detector is frozen; development lab traffic is benign only. Reset the service and clients between runs, vary background/workload seeds, provide a benign warm-up longer than the maximum history, and observe for 180 seconds after onset or until episode end. Record packet/byte rates, active connections and service degradation; publish failed attempts and missed detections too."
+      ],
+      [
+        "p",
+        "Primary external transfer applies the complete model and threshold unchanged to CSE-CIC-IDS2018. Lab sessions from an environment used for benign calibration are stress/distribution tests, not evidence of unseen-environment transfer. Re-extract compatible features from PCAP where possible; otherwise omit that source with an explicit limitation. Optional target-benign recalibration is a separate adaptation experiment with its own disjoint split and cannot replace frozen transfer. Never use test outcomes to select low-rate cutoffs or configurations."
+      ]
+    ]
+  },
+  {
+    "title": "Methodology evaluation and statistical comparison",
+    "landscape": false,
+    "items": [
+      [
+        "h",
+        "Step 8 Evaluation metrics"
+      ],
+      [
+        "p",
+        "Treat attack as positive. Report confusion counts TP, FP, TN and FN, along with the total number of benign windows, attack windows and independent sessions. Primary outcomes are per-family unseen recall and ordinary/stress FPR at the frozen development-calibrated operating point. The <=1% development FPR is a design target, not a guarantee for final or transferred data."
+      ],
+      [
+        "table",
+        {
+          "headers": [
+            "Metric",
+            "Definition and interpretation"
+          ],
+          "rows": [
+            [
+              "Recall and precision",
+              "Recall = TP/(TP+FN); precision = TP/(TP+FP). Report each unseen family separately"
+            ],
+            [
+              "F1 and accuracy",
+              "F1 = 2TP/(2TP+FP+FN); accuracy = (TP+TN)/N. Supplementary, because prevalence can dominate"
+            ],
+            [
+              "False-positive rate",
+              "FPR = FP/(FP+TN). Show percentages, counts and normal/stress strata separately"
+            ],
+            [
+              "PR and ROC curves",
+              "Use average precision (AP) as the prespecified precision-recall summary under imbalance; ROC-AUC is supplementary. Keep frozen-threshold results primary"
+            ],
+            [
+              "Episode recall and delay",
+              "New eligible alert episodes during the attack horizon / all attack episodes; delay is first eligible alert timestamp minus logged onset"
+            ],
+            [
+              "Computation and alert burden",
+              "Median/p95 feature and inference time, throughput, peak memory, and merged benign alert episodes per hour"
+            ]
+          ],
+          "widths": [
+            1.5,
+            5.2
+          ]
+        }
+      ],
+      [
+        "p",
+        "Separate score-computation latency from observation wait. End-to-end delay includes window closure, history warm-up when relevant, persistence and processing. An eligible detection is a newly starting alert episode after logged attack onset, within 180 seconds and before the episode ends; an alert already active before onset is not credited as immediate attack detection. New alert episodes require five preceding non-alert windows. Report pre-existing alerts, misses and censoring separately, window FPR before merging, conditional delay among detections, and detection fractions by 10/30/60/180 seconds with denominators and time at risk. Undefined precision/AUC values are N/A, not silently zero."
+      ],
+      [
+        "h",
+        "Step 9 Statistical and comparative analysis"
+      ],
+      [
+        "p",
+        "Report mean/std across the five model seeds, without treating seeds or overlapping windows as independent traffic replications. First average each model's counts/outcomes across seeds within each session. Use 2,000 paired session-cluster bootstrap resamples, stratified by attack family and benign condition, and recompute pooled confusion-count metrics for 95% intervals and paired hybrid-minus-baseline differences. Report macro recall across families too. With one long capture, use contiguous blocks longer than the dependence horizon and disclose the assumption; repeated seeds cannot create attack diversity."
+      ],
+      [
+        "p",
+        "When enough independent sessions exist, perform a paired permutation test on session-level differences, with Holm adjustment across the prespecified hybrid-versus-baseline comparisons. Report effect sizes and intervals before p-values. With very few attack episodes, present descriptive intervals and explicit uncertainty instead of a strong significance claim. Threshold sweeps are diagnostic curves after freezing; no test-derived threshold becomes the headline operating point."
+      ]
+    ]
+  },
+  {
+    "title": "Methodology component analysis failures and outputs",
+    "landscape": false,
+    "items": [
+      [
+        "h",
+        "Step 10 Ablation and component analysis"
+      ],
+      [
+        "table",
+        {
+          "headers": [
+            "Variant",
+            "What it isolates",
+            "Expected evidence"
+          ],
+          "rows": [
+            [
+              "Remove supervised branch",
+              "Contribution of known-attack learning",
+              "Known/unseen recall and stress FPR"
+            ],
+            [
+              "Remove autoencoder branch",
+              "Contribution of benign anomaly learning",
+              "Unseen-family recall difference"
+            ],
+            [
+              "Remove rolling history",
+              "Value of causal temporal representation",
+              "Episode recall versus observation delay"
+            ],
+            [
+              "Remove persistence",
+              "Value of repeated evidence",
+              "Stress FPR and detection-delay tradeoff"
+            ],
+            [
+              "Remove timing/connection features",
+              "Whether the detector depends mainly on volume",
+              "Low-rate recall compared with volume-only inputs"
+            ],
+            [
+              "Class weights off",
+              "Effect of imbalance treatment",
+              "Per-family recall and precision"
+            ]
+          ],
+          "widths": [
+            1.7,
+            2.3,
+            2.7
+          ]
+        }
+      ],
+      [
+        "p",
+        "Retrain each applicable variant on the same groups, then recalibrate its complete final rule on the same development benign sets to the same FPR target. Keep seeds and testing fixed. Recalibration is necessary because removing a branch changes the score scale. Also show an optional fixed-threshold removal only as a diagnostic, clearly distinguished from the matched-operating-point comparison."
+      ],
+      [
+        "h",
+        "Step 11 Error and failure analysis"
+      ],
+      [
+        "p",
+        "Inspect false positives by legitimate workload, destination, protocol and session. Inspect false negatives by excluded family, measured rate, active connections, attack duration and client count. Plot benign-stress and attack score overlap; distinguish data/label errors from model errors. Check cold-start misses, alert lag, missing features, exporter timeouts and residual identifier leakage. Examine cases where legitimate congestion and malicious resource exhaustion have similar metadata; if the available features cannot separate them, report the observability limit."
+      ],
+      [
+        "p",
+        "Record whether a missed lab trace actually degraded service. Keep attempted attacks and successful denial-of-service episodes distinguishable. Threshold or feature changes suggested by final-test errors belong to a future iteration requiring a new untouched test set; they are not retroactively applied to improve this study."
+      ],
+      [
+        "h",
+        "Step 12 Final research output"
+      ],
+      [
+        "p",
+        "Produce the fitted detection pipeline, frozen feature schema, preprocessing parameters, C1 score maps, final decision threshold, model configurations, seeds and an environment file. Release scripts or notebooks for extraction, manifest generation, fitting and evaluation, plus licence-compatible dataset links and hashes. The evaluation report will include matched baseline results, per-family confusion matrices, stress FPR, recall-delay curves, paired uncertainty intervals, ablation tables and labelled failure examples."
+      ],
+      [
+        "p",
+        "The practical output is a timestamped destination-service alert with supervised score, reconstruction score, combined score and persistence state. The scientific output is evidence for or against the hypotheses, including situations where a simple baseline is sufficient or every method fails. No accuracy, novelty or deployment claim will be made until these measurements exist."
+      ]
+    ]
+  },
+  {
+    "title": "Deliverable 4 Research methodology diagram",
+    "landscape": false,
+    "items": [
+      [
+        "diagram",
+        ""
+      ],
+      [
+        "p",
+        "Figure 1. The methodology separates model fitting, development, score reference, benign threshold calibration and final tests. Quarantined attack families never enter either learning branch. All final experiments use the frozen preprocessing, model and decision rule. Steps 8-11 produce comparative evidence; Step 12 packages the detector and report."
+      ]
+    ]
+  },
+  {
+    "title": "Feasibility validity and deliverable alignment",
+    "landscape": false,
+    "items": [
+      [
+        "h",
+        "Four month implementation plan"
+      ],
+      [
+        "table",
+        {
+          "headers": [
+            "Weeks",
+            "Work and completion condition"
+          ],
+          "rows": [
+            [
+              "1 to 2",
+              "Audit source files, labels and licences; create family/session manifest and lab topology"
+            ],
+            [
+              "3 to 4",
+              "Implement causal feature extractor and grouped partitions; pilot normal and stress workloads"
+            ],
+            [
+              "5 to 7",
+              "Train simple baselines and both branches; complete development-only configuration search"
+            ],
+            [
+              "8 to 9",
+              "Construct C1/C2 mappings; calibrate final rules; freeze manifest and configurations"
+            ],
+            [
+              "10 to 12",
+              "Run novelty, benign-stress, distributed-source and frozen-transfer experiments"
+            ],
+            [
+              "13 to 14",
+              "Complete statistical comparisons, component ablations and error inspection"
+            ],
+            [
+              "15 to 16",
+              "Package reproducibility materials, final figures and research report"
+            ]
+          ],
+          "widths": [
+            0.9,
+            5.8
+          ]
+        }
+      ],
+      [
+        "h",
+        "Main threats to validity"
+      ],
+      [
+        "p",
+        "Public captures may contain few independent slow-attack episodes, correlated flows, schedule-derived labels or data errors. Grouped splits, provenance audits and session-level uncertainty reduce these risks but cannot create attack diversity. An older public dataset and a small lab do not represent all operational traffic. Lab workload generators may make benign stress artificially easy; use several traffic seeds and match load ranges across benign and malicious conditions where feasible."
+      ],
+      [
+        "p",
+        "A false-positive target selected on development benign traffic can drift on a new network. Report transfer failure directly. Destination aggregation may dilute very weak attacks or mix simultaneous families; label ambiguous windows and examine dilution separately. CPU inference speed does not demonstrate IoT-device deployability. The core implementation is CPU-oriented; federated training, large GANs and production response integration are excluded to keep the plan feasible."
+      ],
+      [
+        "h",
+        "Requirement coverage"
+      ],
+      [
+        "table",
+        {
+          "headers": [
+            "Assignment requirement",
+            "Report evidence"
+          ],
+          "rows": [
+            [
+              "8 to 10 additional eligible research papers",
+              "A1-A8, venue/year evidence and complete references"
+            ],
+            [
+              "Cross-paper comparison fields",
+              "Tables 1-2 include all nine requested columns"
+            ],
+            [
+              "At least 3 potential research gaps",
+              "G1-G4 and central gap with research opportunities"
+            ],
+            [
+              "Justified step-by-step methodology",
+              "Steps 1-12 with operational definitions and fair comparisons"
+            ],
+            [
+              "Research methodology architecture diagram",
+              "Figure 1, also supplied as separate vector and image files"
+            ]
+          ],
+          "widths": [
+            2.55,
+            4.15
+          ]
+        }
+      ]
+    ]
+  },
+  {
+    "title": "References research articles",
+    "landscape": false,
+    "items": [
+      [
+        "p",
+        "[1] R. Bocu and M. Iavich, Generalized detection of DDoS attack patterns using machine learning models, Journal of Network and Computer Applications, vol. 248, 104441, 2026. https://doi.org/10.1016/j.jnca.2026.104441"
+      ],
+      [
+        "p",
+        "[2] A. Rullo, E. Cambiaso and M. Guarascio, Detecting the invisible without knowledge: Unsupervised packet-based real-time detection of slow DoS attacks, Applied Soft Computing, vol. 202, 115796, 2026. https://doi.org/10.1016/j.asoc.2026.115796"
+      ],
+      [
+        "p",
+        "[3] M. Nakip, A predictive neural network architecture for early detection of low-rate cyberattacks, Knowledge-Based Systems, vol. 343, 115995, 2026. https://doi.org/10.1016/j.knosys.2026.115995"
+      ],
+      [
+        "p",
+        "[4] M. R. Minhas et al., F-OSFA: A Fog Level Generalizable Solution for Zero-Day DDOS Attacks Detection, IEEE Access, vol. 13, pp. 75153-75166, 2025. https://doi.org/10.1109/ACCESS.2025.3557822"
+      ],
+      [
+        "p",
+        "[5] S. Ullah et al., Hybrid dual-head IDS: A lightweight and explainable deep learning DDOS/DOS framework for zero-day and imbalanced attack detection in IoT networks, Results in Engineering, vol. 31, 111498, 2026. https://doi.org/10.1016/j.rineng.2026.111498"
+      ],
+      [
+        "p",
+        "[6] S. Han, S. Son, W. Sakong and H. Jung, Adapting Convolutional Autoencoder for DDoS Attack Detection via Joint Reconstruction Learning and Refined Anomaly Scoring, Computers, Materials & Continua, vol. 85, no. 2, pp. 2893-2912, 2025. https://doi.org/10.32604/cmc.2025.067211"
+      ],
+      [
+        "p",
+        "[7] M. Nawaz et al., Lightweight machine learning framework for efficient DDoS attack detection in IoT networks, Scientific Reports, vol. 15, 24961, 2025. https://doi.org/10.1038/s41598-025-10092-0"
+      ],
+      [
+        "p",
+        "[8] R. Anandhi and G. U. Srikanth, Federated sparse-learning framework for detecting low-rate stealth attacks in resource-constrained IoT devices, Scientific Reports, vol. 16, 21298, 2026. https://doi.org/10.1038/s41598-026-46531-9"
+      ],
+      [
+        "p",
+        "[9] M. Raza, M. A. Sattar, Z. Jahangir and M. Billah, Liquid neural networks for adaptive DDoS detection in IoT and SDN environments, Scientific Reports, vol. 16, 26053, 2026. https://doi.org/10.1038/s41598-026-67535-5"
+      ],
+      [
+        "p",
+        "[10] O. Ebrahem, S. Dowaji and S. Alhammoud, A lightweight machine learning approach for DDoS detection and classification, Scientific Reports, vol. 16, 16895, 2026. https://doi.org/10.1038/s41598-026-48535-x"
+      ],
+      [
+        "p",
+        "[11] S. A. A. Kalafy, S. Pashazadeh and P. Salehpour, Dynamic graph neural network-based framework to increase detection accuracy in SDN under DDOS, Scientific Reports, vol. 16, 2305, 2026; first online 29 December 2025. https://doi.org/10.1038/s41598-025-32102-x"
+      ]
+    ]
+  },
+  {
+    "title": "References data and venue evidence",
+    "landscape": false,
+    "items": [
+      [
+        "p",
+        "[12] Canadian Institute for Cybersecurity, Intrusion detection evaluation dataset CIC-IDS2017, official dataset description and attack schedule. Accessed 14 October 2026. https://www.unb.ca/cic/datasets/ids-2017.html"
+      ],
+      [
+        "p",
+        "[13] Canadian Institute for Cybersecurity and Communications Security Establishment, CSE-CIC-IDS2018 on AWS, official dataset description. Accessed 14 October 2026. https://www.unb.ca/cic/datasets/ids-2018.html"
+      ],
+      [
+        "p",
+        "[14] Canadian Institute for Cybersecurity, DDoS evaluation dataset CIC-DDoS2019, official dataset description. Accessed 14 October 2026. https://www.unb.ca/cic/datasets/ddos-2019.html"
+      ],
+      [
+        "p",
+        "[15] SCImago Journal and Country Rank, 2024 journal ranking listing, IEEE Access, SJR 0.849, Q1. Indexed listing accessed 14 October 2026. https://www.scimagojr.com/journalrank.php?country=&min=3&min_type=cd&ord=desc&order=titem&year=2024"
+      ],
+      [
+        "p",
+        "[16] SCImago Journal and Country Rank, 2024 United Kingdom journal ranking listing, Scientific Reports, SJR 0.874, Q1. Historical ranking rechecked 17 October 2026. https://www.scimagojr.com/journalrank.php?country=GB&ord=desc&order=cd&year=2024"
+      ],
+      [
+        "p",
+        "[17] Comillas Institute for Research in Technology, Results in Engineering journal record, SJR 2024 1.171 Q1 and SJR 2025 1.240 Q1. Accessed 14 October 2026. https://www.iit.comillas.edu/publicacion/info_revista/en/675/Results_in_Engineering"
+      ],
+      [
+        "p",
+        "[18] Comillas Institute for Research in Technology, Computer, Materials & Continua journal record, SJR 2024 0.431 Q2 and SJR 2025 0.513 Q2; JCR Q3 in both years. Accessed 14 October 2026. https://www.iit.comillas.edu/publicacion/info_revista/en/655/Computer%2C_Materials_%26_Continua"
+      ],
+      [
+        "p",
+        "References [1]-[3] are the retained Phase 1 foundation. References [4]-[11] are the eight additional Phase 2 research articles. References [12]-[18] support data selection and venue eligibility and are not counted as additional research papers."
+      ]
+    ]
+  }
+]

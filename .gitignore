@@ -1,0 +1,17 @@
+# Local runtimes, datasets, and generated scratch files
+**/.venv/
+**/__pycache__/
+*.py[cod]
+**/data/
+*.pcap
+*.pcapng
+*.partial
+*.zip
+/tmp/
+/output/
+.env
+.env.*
+*.aux
+*.log
+*.out
+*.synctex.gz

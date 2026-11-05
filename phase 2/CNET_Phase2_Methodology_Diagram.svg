@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="595" height="745" viewBox="0 0 595 745">
+<rect width="595" height="745" fill="white"/>
+<defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8" fill="#42566b"/></marker></defs>
+<text x="297.64" y="24" font-family="Arial, sans-serif" font-size="16" font-weight="700" text-anchor="middle" fill="#142b43">Proposed research methodology</text>
+<text x="297.64" y="41" font-family="Arial, sans-serif" font-size="10" font-weight="400" text-anchor="middle" fill="#142b43">Detection and evaluation of unseen slow DoS and low-rate DDoS</text>
+<rect x="80" y="55" width="435" height="54" rx="6" fill="#edf3f8" stroke="#8799aa"/>
+<text x="297.5" y="72" font-family="Arial, sans-serif" font-size="10.5" font-weight="700" text-anchor="middle" fill="#142b43">1-2  Collect and audit inputs</text>
+<text x="297.5" y="87" font-family="Arial, sans-serif" font-size="9" font-weight="400" text-anchor="middle" fill="#142b43">Public PCAP and labels + isolated lab sessions</text>
+<text x="297.5" y="99" font-family="Arial, sans-serif" font-size="9" font-weight="400" text-anchor="middle" fill="#142b43">Verify family, session, timing, rates and service-impact provenance</text>
+<path d="M297,109 L297,123" fill="none" stroke="#42566b" marker-end="url(#arrow)"/>
+<rect x="80" y="123" width="435" height="54" rx="6" fill="#edf3f8" stroke="#8799aa"/>
+<text x="297.5" y="140" font-family="Arial, sans-serif" font-size="10.5" font-weight="700" text-anchor="middle" fill="#142b43">3  Separate raw sessions before any fitting</text>
+<text x="297.5" y="155" font-family="Arial, sans-serif" font-size="9" font-weight="400" text-anchor="middle" fill="#142b43">Quarantine slow families U; group and purge boundaries</text>
+<text x="297.5" y="167" font-family="Arial, sans-serif" font-size="9" font-weight="400" text-anchor="middle" fill="#142b43">Training T | development V | benign C1/C2 | final K/U/stress</text>
+<path d="M180,177 L180,195" fill="none" stroke="#42566b" marker-end="url(#arrow)"/>
+<path d="M431,177 L431,195" fill="none" stroke="#42566b" marker-end="url(#arrow)"/>
+<rect x="30" y="195" width="300" height="57" rx="6" fill="#edf3f8" stroke="#8799aa"/>
+<text x="180.0" y="212" font-family="Arial, sans-serif" font-size="10.5" font-weight="700" text-anchor="middle" fill="#142b43">3-4  Development features</text>
+<text x="180.0" y="227" font-family="Arial, sans-serif" font-size="9" font-weight="400" text-anchor="middle" fill="#142b43">Causal one-second aggregates and rolling context</text>
+<text x="180.0" y="239" font-family="Arial, sans-serif" font-size="9" font-weight="400" text-anchor="middle" fill="#142b43">Fit transformations on training only</text>
+<rect x="355" y="195" width="210" height="57" rx="6" fill="#fff2de" stroke="#8799aa"/>
+<text x="460.0" y="212" font-family="Arial, sans-serif" font-size="10.5" font-weight="700" text-anchor="middle" fill="#142b43">Reserved final data</text>
+<text x="460.0" y="227" font-family="Arial, sans-serif" font-size="9" font-weight="400" text-anchor="middle" fill="#142b43">Unseen U and known K</text>
+<text x="460.0" y="239" font-family="Arial, sans-serif" font-size="9" font-weight="400" text-anchor="middle" fill="#142b43">Stress, lab and external transfer</text>
+<path d="M102,252 L102,271" fill="none" stroke="#42566b" marker-end="url(#arrow)"/>
+<path d="M254,252 L254,271" fill="none" stroke="#42566b" marker-end="url(#arrow)"/>
+<rect x="30" y="271" width="145" height="66" rx="6" fill="#edf3f8" stroke="#8799aa"/>
+<text x="102.5" y="288" font-family="Arial, sans-serif" font-size="10.5" font-weight="700" text-anchor="middle" fill="#142b43">5  Supervised branch</text>
+<text x="102.5" y="303" font-family="Arial, sans-serif" font-size="9" font-weight="400" text-anchor="middle" fill="#142b43">HistGradientBoosting</text>
+<text x="102.5" y="315" font-family="Arial, sans-serif" font-size="9" font-weight="400" text-anchor="middle" fill="#142b43">Benign + known attacks</text>
+<text x="102.5" y="327" font-family="Arial, sans-serif" font-size="9" font-weight="400" text-anchor="middle" fill="#142b43">No excluded families</text>
+<rect x="190" y="271" width="140" height="66" rx="6" fill="#edf3f8" stroke="#8799aa"/>
+<text x="260.0" y="288" font-family="Arial, sans-serif" font-size="10.5" font-weight="700" text-anchor="middle" fill="#142b43">5  Anomaly branch</text>
+<text x="260.0" y="303" font-family="Arial, sans-serif" font-size="9" font-weight="400" text-anchor="middle" fill="#142b43">Dense autoencoder</text>
+<text x="260.0" y="315" font-family="Arial, sans-serif" font-size="9" font-weight="400" text-anchor="middle" fill="#142b43">Benign training only</text>
+<text x="260.0" y="327" font-family="Arial, sans-serif" font-size="9" font-weight="400" text-anchor="middle" fill="#142b43">Reconstruction score</text>
+<path d="M102,337 L102,352" fill="none" stroke="#42566b" marker-end="url(#arrow)"/>
+<path d="M260,337 L260,352" fill="none" stroke="#42566b" marker-end="url(#arrow)"/>
+<rect x="30" y="352" width="300" height="64" rx="6" fill="#edf3f8" stroke="#8799aa"/>
+<text x="180.0" y="369" font-family="Arial, sans-serif" font-size="10.5" font-weight="700" text-anchor="middle" fill="#142b43">5-7  Score mapping and joint calibration</text>
+<text x="180.0" y="384" font-family="Arial, sans-serif" font-size="9" font-weight="400" text-anchor="middle" fill="#142b43">C1 benign ECDF maps; max of branch scores</text>
+<text x="180.0" y="396" font-family="Arial, sans-serif" font-size="9" font-weight="400" text-anchor="middle" fill="#142b43">V selects candidates; C2 calibrates final persistence</text>
+<text x="180.0" y="408" font-family="Arial, sans-serif" font-size="9" font-weight="400" text-anchor="middle" fill="#142b43">Complete rule FPR target &lt;=1% on development</text>
+<path d="M180,416 L180,435" fill="none" stroke="#42566b" marker-end="url(#arrow)"/>
+<rect x="30" y="435" width="300" height="56" rx="6" fill="#e7f3eb" stroke="#8799aa"/>
+<text x="180.0" y="452" font-family="Arial, sans-serif" font-size="10.5" font-weight="700" text-anchor="middle" fill="#142b43">7  Freeze the full pipeline</text>
+<text x="180.0" y="467" font-family="Arial, sans-serif" font-size="9" font-weight="400" text-anchor="middle" fill="#142b43">Feature schema, weights, ECDF, threshold and k-of-m</text>
+<text x="180.0" y="479" font-family="Arial, sans-serif" font-size="9" font-weight="400" text-anchor="middle" fill="#142b43">No fitting or threshold selection on final data</text>
+<path d="M460,252 L460,507" fill="none" stroke="#42566b" marker-end="url(#arrow)"/>
+<path d="M180,491 L180,507" fill="none" stroke="#42566b" marker-end="url(#arrow)"/>
+<rect x="30" y="507" width="535" height="66" rx="6" fill="#edf3f8" stroke="#8799aa"/>
+<text x="297.5" y="524" font-family="Arial, sans-serif" font-size="10.5" font-weight="700" text-anchor="middle" fill="#142b43">6-8  Final detection and matched evaluation</text>
+<text x="297.5" y="539" font-family="Arial, sans-serif" font-size="9" font-weight="400" text-anchor="middle" fill="#142b43">Apply frozen transforms and both branches to reserved data</text>
+<text x="297.5" y="551" font-family="Arial, sans-serif" font-size="9" font-weight="400" text-anchor="middle" fill="#142b43">Compare with rate rule, LR, RF, single branches and Isolation Forest</text>
+<text x="297.5" y="563" font-family="Arial, sans-serif" font-size="9" font-weight="400" text-anchor="middle" fill="#142b43">Report per-family recall, normal/stress FPR and onset-to-alert delay</text>
+<path d="M297,573 L297,582" fill="none" stroke="#42566b" marker-end="url(#arrow)"/>
+<rect x="30" y="582" width="535" height="56" rx="6" fill="#edf3f8" stroke="#8799aa"/>
+<text x="297.5" y="599" font-family="Arial, sans-serif" font-size="10.5" font-weight="700" text-anchor="middle" fill="#142b43">9-11  Statistical comparison and diagnosis</text>
+<text x="297.5" y="614" font-family="Arial, sans-serif" font-size="9" font-weight="400" text-anchor="middle" fill="#142b43">Paired session/block intervals; effect sizes; ablations at matched FPR</text>
+<text x="297.5" y="626" font-family="Arial, sans-serif" font-size="9" font-weight="400" text-anchor="middle" fill="#142b43">Inspect missed attacks, benign alerts, transfer and cold-start failures</text>
+<path d="M297,638 L297,654" fill="none" stroke="#42566b" marker-end="url(#arrow)"/>
+<rect x="80" y="654" width="435" height="54" rx="6" fill="#e7f3eb" stroke="#8799aa"/>
+<text x="297.5" y="671" font-family="Arial, sans-serif" font-size="10.5" font-weight="700" text-anchor="middle" fill="#142b43">12  Final research outputs</text>
+<text x="297.5" y="686" font-family="Arial, sans-serif" font-size="9" font-weight="400" text-anchor="middle" fill="#142b43">Timestamped alerts + reproducible detector and evaluation report</text>
+<text x="297.5" y="698" font-family="Arial, sans-serif" font-size="9" font-weight="400" text-anchor="middle" fill="#142b43">Manifests, scripts, metrics, limitations and hypothesis outcomes</text>
+<text x="297.64" y="730" font-family="Arial, sans-serif" font-size="9" font-weight="400" text-anchor="middle" fill="#142b43">Reserved data enter evaluation only. No automatic mitigation or test-to-training feedback.</text>
+</svg>

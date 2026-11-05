@@ -1,0 +1,33 @@
+{
+  "source": "https://huggingface.co/datasets/bencorn/CICIDS2017/resolve/811c007f08d693a8a8b4226c197c138391806ce6/pcaps/Monday-WorkingHours.pcap",
+  "publisher": "https://www.unb.ca/cic/datasets/ids-2017.html",
+  "range_inclusive": [
+    0,
+    33554431
+  ],
+  "range_sha256": "138e288cf10a0f8934feccccbda9f9789c34bc771e6e65b0c7d021da157a1815",
+  "complete_capture_bytes": 33554332,
+  "discarded_partial_tail_bytes": 100,
+  "observed_duration_seconds": 635.357,
+  "packet_stats": {
+    "frames_read": 54632,
+    "out_of_order_frames": 22,
+    "selected_tcp_frames": 2516
+  },
+  "service": "192.168.10.3:389",
+  "windows": 630,
+  "scope": "Benign engineering pilot; service and features are not the final experiment.",
+  "windows_with_inbound_packets": 75,
+  "model_smoke": {
+    "status": "ran",
+    "model": "Isolation Forest pilot baseline",
+    "seed": 7,
+    "fit_windows": 315,
+    "calibration_windows": 152,
+    "later_windows": 153,
+    "threshold": 0.5834914583702635,
+    "later_alerts": 6,
+    "caution": "One benign prefix only; alert count is diagnostic, not final FPR or attack recall."
+  },
+  "processing_seconds": 3.941
+}

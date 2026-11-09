@@ -2,4 +2,4 @@
 *.pdf binary
 *.png binary
 # Preserve exact generated evidence bytes for recorded SHA-256 checks.
-*.csv -text
+*.csv -text whitespace=cr-at-eol

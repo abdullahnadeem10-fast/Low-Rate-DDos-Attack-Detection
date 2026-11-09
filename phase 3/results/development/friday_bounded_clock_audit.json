@@ -1,0 +1,30 @@
+{
+  "scope": "INTERIM: bounded tail clock corroboration only; full capture hash and label join pending.",
+  "revision": "811c007f08d693a8a8b4226c197c138391806ce6",
+  "source_byte_range": [
+    8573157376,
+    8839309055
+  ],
+  "range_sha256": "e826fcfc7798fba8939ce48044cb868c009ede9cb1528474a9927f6c6508d67c",
+  "discarded_initial_partial_bytes": 3712,
+  "discarded_tail_bytes": 0,
+  "retained_interface_metadata_sha256": "4e34bbaa46fda3116b42b48dedb4188e450221ddf6fb3fe2cd0731aa532e86f1",
+  "clock_offset_seconds": 54000,
+  "csv_counts": {
+    "BENIGN": 97718,
+    "DDoS": 128027
+  },
+  "clock_audit": {
+    "eligible_benign_keys": 22936,
+    "benign_key_votes_by_offset_hours": {
+      "15": 8656
+    },
+    "frames": {
+      "frames": 425888,
+      "out_of_order": 247
+    },
+    "capture_first_utc": "2017-07-07T19:15:32.323820+00:00",
+    "capture_last_utc": "2017-07-07T20:02:41.169108+00:00",
+    "elapsed_seconds": 11.95
+  }
+}

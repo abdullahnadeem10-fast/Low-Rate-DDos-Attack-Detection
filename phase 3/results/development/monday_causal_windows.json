@@ -1,0 +1,22 @@
+{
+  "input_file": "monday-first-32MiB.partial",
+  "service": "192.168.10.3:389",
+  "counts": {
+    "frames": 54632,
+    "selected_tcp": 2516,
+    "late_selected_dropped": 0,
+    "decode_errors": 0,
+    "rows": 595,
+    "fully_warmed_rows": 576
+  },
+  "reorder_budget_seconds": 1.0,
+  "connection_inactivity_timeout_seconds": 30,
+  "history_seconds": [
+    5,
+    10,
+    20
+  ],
+  "largest_adjacent_timestamp_regression_seconds": 1.1920928955078125e-06,
+  "elapsed_seconds": 1.068,
+  "scope": "Causal replay engineering features; no final labels, model scoring or live delay claim."
+}

@@ -1,0 +1,8 @@
+{
+  "negative_duration_rows_by_label": {
+    "BENIGN": 2
+  },
+  "quarantined_connection_keys": 2,
+  "additional_valid_rows_quarantined_with_same_keys": 2,
+  "policy": "Exclude the complete key if any row has an impossible negative duration; preserve raw row counts."
+}

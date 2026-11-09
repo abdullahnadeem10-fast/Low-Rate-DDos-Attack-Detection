@@ -1,0 +1,80 @@
+{
+  "capture_sha256": "beff0dcce1eebc9b2454582f4dc8ed0ba0112b2c619a710bf03af93147254cd0",
+  "capture_bytes": 8839309056,
+  "source_revision": "811c007f08d693a8a8b4226c197c138391806ce6",
+  "labels_opened": "TrafficLabelling /Friday-WorkingHours-Afternoon-DDos.pcap_ISCX.csv",
+  "csv_counts": {
+    "BENIGN": 97718,
+    "DDoS": 128027
+  },
+  "clock_audit": {
+    "eligible_benign_keys": 22936,
+    "benign_key_votes_by_offset_hours": {
+      "7": 1,
+      "8": 25,
+      "9": 40,
+      "10": 34,
+      "11": 22,
+      "12": 21,
+      "13": 39,
+      "14": 18,
+      "15": 22768
+    },
+    "frames": {
+      "frames": 9997874,
+      "out_of_order": 7094
+    },
+    "capture_first_utc": "2017-07-07T11:59:39.599128+00:00",
+    "capture_last_utc": "2017-07-07T20:02:41.169108+00:00",
+    "elapsed_seconds": 259.79
+  },
+  "offset_seconds": 54000,
+  "join_audit": {
+    "clock_offset_seconds": 54000,
+    "all_csv_rows_to_be_shifted_by_hours": 15.0,
+    "tuple_groups": 86419,
+    "exact_directional_packet_count_groups": {
+      "BENIGN": 33486,
+      "DDoS": 25278
+    },
+    "directional_count_mismatch_groups": {
+      "BENIGN": 7369,
+      "BENIGN/DDoS": 20055,
+      "DDoS": 59
+    },
+    "unseen_tuple_groups": {
+      "BENIGN": 172
+    },
+    "packet_matching": {
+      "unmatched_or_multi_direction_packets": 2053
+    },
+    "service_observed_seconds": 1096,
+    "target_service_total_tuple_groups": {
+      "DDoS": 25337,
+      "BENIGN/DDoS": 20055,
+      "BENIGN": 88
+    },
+    "target_service_count_agreement_groups": {
+      "DDoS": 25278,
+      "BENIGN": 80
+    },
+    "target_service_corroborated_packet_counts": {
+      "verified_benign": 1160,
+      "verified_attack": 488376,
+      "uncorroborated": 791066
+    },
+    "target_service_corroborated_second_status": {
+      "uncertain": 20,
+      "attack_present": 1076
+    },
+    "frames_read": 9997874,
+    "elapsed_seconds": 241.66,
+    "label_join_status": "possible-interval join, NOT exact packet ground truth",
+    "limitations": [
+      "Minute-only timestamps define possible intervals, not exact flow starts.",
+      "Count agreement is corroboration; overlapping/reused tuple intervals still need scrutiny.",
+      "No predictor includes CSV identifiers, duration, labels or future totals.",
+      "No reserved slow-family data or final model scoring occurred."
+    ]
+  }
+}

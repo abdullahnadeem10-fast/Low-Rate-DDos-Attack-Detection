@@ -1,0 +1,31 @@
+{
+  "date": "2026-11-09",
+  "role": "Known-family development only",
+  "capture": {
+    "url": "https://huggingface.co/datasets/bencorn/CICIDS2017/resolve/811c007f08d693a8a8b4226c197c138391806ce6/pcaps/Friday-WorkingHours.pcap?download=true",
+    "revision": "811c007f08d693a8a8b4226c197c138391806ce6",
+    "bytes": 8839309056,
+    "sha256": "beff0dcce1eebc9b2454582f4dc8ed0ba0112b2c619a710bf03af93147254cd0",
+    "seconds": 5414.94,
+    "relative_path": "data/development/Friday-WorkingHours.pcap"
+  },
+  "labels": {
+    "archive_sha256": "7bdbef286f8893f31c6db12105fa097fa5c2dcc6733179037a08129d150ea27a",
+    "member_opened": "TrafficLabelling /Friday-WorkingHours-Afternoon-DDos.pcap_ISCX.csv",
+    "clock_offset_seconds": 54000,
+    "precision": "Minute-only start timestamps; possible intervals, not exact starts.",
+    "mapping": "Private endpoint/port identity with canonical bidirectional tuples; no NAT substitution inferred."
+  },
+  "service": "192.168.10.50:80",
+  "feature_table": {
+    "relative_path": "data/development/friday_causal_windows.csv",
+    "sha256": "aef18b026aa26c013b0171295078c7b888191959f440b0eb36fb1afa67cbe773",
+    "windows": 18894
+  },
+  "split_state": "Not allocated: continuous replay must not be used as a split-safe training table.",
+  "reserved_data": {
+    "CICIDS2017_slow_families": "No raw capture fetched; no slow-family label member opened.",
+    "CSE_CIC_IDS2018_entire_source": "Not fetched or used."
+  },
+  "next_action": "Acquire and audit compatible benign target-service traffic: this Friday label member may provide no fully corroborated benign-only windows; unlabelled idle time is not a negative class."
+}

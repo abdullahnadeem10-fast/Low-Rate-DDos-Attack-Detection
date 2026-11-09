@@ -1,0 +1,80 @@
+{
+  "counts": {
+    "windows": 18894,
+    "packets_in_emitted_windows": 1282861,
+    "empty_windows": 17470,
+    "overlapping_label_seconds": 1096
+  },
+  "predictors": [
+    "packets_in",
+    "packets_out",
+    "bytes_in",
+    "bytes_out",
+    "syn_in",
+    "ack_in",
+    "rst_in",
+    "synack_out",
+    "handshakes_completed",
+    "new_connections",
+    "distinct_sources",
+    "packet_length_mean",
+    "packet_length_std",
+    "inbound_iat_mean",
+    "inbound_iat_std",
+    "active_connections",
+    "known_age_connections",
+    "unknown_age_connections",
+    "active_age_mean",
+    "active_age_max",
+    "uncompleted_fraction",
+    "handshake_to_syn_ratio",
+    "in_out_byte_ratio",
+    "packet_rate_change",
+    "packets_in_mean_5",
+    "packets_in_std_5",
+    "packets_in_mean_10",
+    "packets_in_std_10",
+    "packets_in_mean_20",
+    "packets_in_std_20"
+  ],
+  "window_status": {
+    "not_labelled": 17798,
+    "uncertain": 20,
+    "attack_present": 1076
+  },
+  "fully_warmed_window_status": {
+    "not_labelled": 17779,
+    "uncertain": 20,
+    "attack_present": 1076
+  },
+  "status_extent_not_continuous_intervals": {
+    "not_labelled": {
+      "first_utc_second": 1499438867,
+      "last_utc_second": 1499457760
+    },
+    "uncertain": {
+      "first_utc_second": 1499453791,
+      "last_utc_second": 1499454621
+    },
+    "attack_present": {
+      "first_utc_second": 1499453792,
+      "last_utc_second": 1499454972
+    }
+  },
+  "consistency": "All overlapping per-second packet totals agree.",
+  "training_ready": false,
+  "blocking_work": [
+    "Acquire and audit compatible benign target-service traffic: this Friday label member may provide no fully corroborated benign-only windows; unlabelled idle time is not a negative class.",
+    "Reset connection/history state at declared development split boundaries and audit cross-boundary keys.",
+    "Audit whether corroborated-label coverage supplies adequate independent benign/attack sessions; do not select solely easy labelled windows.",
+    "Define treatment of uncertain/unlabelled/idle windows before model fitting; do not infer benign from silence.",
+    "Collect separate benign ordinary/stress development sessions before full alert calibration and freeze."
+  ],
+  "limitations": [
+    "Count corroboration is not independent packet ground truth or exact attack-onset timing.",
+    "Continuous capture features are engineering evidence; no split-safe final model has been fitted.",
+    "Known flooding development data cannot establish slow-family or distributed low-rate detection."
+  ],
+  "feature_table_sha256": "aef18b026aa26c013b0171295078c7b888191959f440b0eb36fb1afa67cbe773",
+  "label_table_sha256": "d4c3a214b3aa61dec6a1387f3da381c3b42c9fc8b092e9dee3f66deeae1720b7"
+}

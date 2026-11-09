@@ -1,0 +1,22 @@
+{
+  "input_file": "Friday-WorkingHours.pcap",
+  "service": "192.168.10.50:80",
+  "counts": {
+    "frames": 9997874,
+    "selected_tcp": 1282861,
+    "late_selected_dropped": 0,
+    "decode_errors": 0,
+    "rows": 18894,
+    "fully_warmed_rows": 18875
+  },
+  "reorder_budget_seconds": 1.0,
+  "connection_inactivity_timeout_seconds": 30,
+  "history_seconds": [
+    5,
+    10,
+    20
+  ],
+  "largest_adjacent_timestamp_regression_seconds": 1.3828277587890625e-05,
+  "elapsed_seconds": 261.434,
+  "scope": "Causal replay engineering features; no final labels, model scoring or live delay claim."
+}

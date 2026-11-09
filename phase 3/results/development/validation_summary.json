@@ -1,0 +1,8 @@
+{
+  "date": "2026-11-09",
+  "tests_run": 18,
+  "failures": 0,
+  "errors": 0,
+  "successful": true,
+  "scope": "Synthetic protocol, preprocessing, split, packet-label consistency and replay integration fixtures. Not a research accuracy benchmark."
+}

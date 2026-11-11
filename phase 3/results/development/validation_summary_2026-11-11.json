@@ -1,0 +1,8 @@
+{
+  "date": "2026-11-11",
+  "tests_run": 25,
+  "failures": 0,
+  "errors": 0,
+  "successful": true,
+  "scope": "Offline protocol, preprocessing including signed features, permitted-member audits, replay consistency and lab-scope guards. No Docker traffic or final efficacy tests."
+}

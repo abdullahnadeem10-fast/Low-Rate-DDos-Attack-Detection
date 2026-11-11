@@ -11,18 +11,29 @@ from sklearn.preprocessing import RobustScaler
 
 
 class BenignAutoencoder:
-    def __init__(self,seed=7,max_epochs=100,patience=10):
+    def __init__(self,seed=7,max_epochs=100,patience=10,signed_columns=()):
         self.seed=seed; self.max_epochs=max_epochs; self.patience=patience
+        self.signed_columns=tuple(signed_columns)
+        if len(set(self.signed_columns))!=len(self.signed_columns) or any(
+                not isinstance(i,(int,np.integer)) or isinstance(i,bool) or i<0 for i in self.signed_columns):
+            raise ValueError('Signed columns must be unique nonnegative integer indices')
 
-    @staticmethod
-    def clean(x):
+    def clean(self,x):
         x=np.asarray(x,dtype=float).copy()
-        x[~np.isfinite(x) | (x<0)]=np.nan
-        return np.log1p(x)
+        if x.ndim!=2 or not x.shape[1]: raise ValueError('Expected a two-dimensional feature table')
+        if any(i>=x.shape[1] for i in self.signed_columns): raise ValueError('Signed column outside feature schema')
+        if hasattr(self,'n_features_in_') and x.shape[1]!=self.n_features_in_:
+            raise ValueError('Feature schema changed after fitting')
+        signed=np.zeros(x.shape[1],dtype=bool); signed[list(self.signed_columns)]=True
+        x[~np.isfinite(x) | ((x<0) & ~signed[None,:])]=np.nan
+        x[:,~signed]=np.log1p(x[:,~signed])
+        x[:,signed]=np.sign(x[:,signed])*np.log1p(np.abs(x[:,signed]))
+        return x
 
     def fit(self,x,y,x_val,y_val):
         if np.any(np.asarray(y)!=0) or np.any(np.asarray(y_val)!=0):
             raise ValueError('AE fitting and early stopping must contain benign observations only')
+        self.n_features_in_=np.asarray(x).shape[1]
         self.imputer=SimpleImputer(strategy='median',add_indicator=True,keep_empty_features=True)
         z=self.imputer.fit_transform(self.clean(x))
         self.keep=np.ptp(z,axis=0)>0

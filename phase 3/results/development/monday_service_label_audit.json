@@ -1,0 +1,134 @@
+{
+  "class_rows": {
+    "BENIGN": 529918
+  },
+  "timestamp_formats": {
+    "%d/%m/%Y %H:%M:%S": 529918
+  },
+  "first_as_written": "2017-07-03T01:00:01",
+  "last_as_written": "2017-07-03T12:59:58",
+  "anomalies": {
+    "negative_duration_rows": 15
+  },
+  "published_web_host_coverage": {
+    "192.168.10.50": {
+      "endpoint_occurrences_all_ports": 11340
+    },
+    "205.174.165.68": {}
+  },
+  "distinct_tcp_web_endpoints": 11650,
+  "top_tcp_web_endpoints": [
+    {
+      "ip": "35.186.227.40",
+      "port": 443,
+      "rows_touching_endpoint": 5617
+    },
+    {
+      "ip": "23.50.75.27",
+      "port": 80,
+      "rows_touching_endpoint": 4877
+    },
+    {
+      "ip": "178.255.83.1",
+      "port": 80,
+      "rows_touching_endpoint": 3588
+    },
+    {
+      "ip": "72.21.91.29",
+      "port": 80,
+      "rows_touching_endpoint": 3397
+    },
+    {
+      "ip": "162.208.20.178",
+      "port": 443,
+      "rows_touching_endpoint": 3218
+    },
+    {
+      "ip": "23.111.11.111",
+      "port": 443,
+      "rows_touching_endpoint": 2686
+    },
+    {
+      "ip": "72.167.239.239",
+      "port": 80,
+      "rows_touching_endpoint": 2435
+    },
+    {
+      "ip": "23.194.182.12",
+      "port": 443,
+      "rows_touching_endpoint": 2322
+    },
+    {
+      "ip": "23.61.187.27",
+      "port": 80,
+      "rows_touching_endpoint": 2213
+    },
+    {
+      "ip": "162.213.33.44",
+      "port": 443,
+      "rows_touching_endpoint": 1834
+    },
+    {
+      "ip": "172.217.12.194",
+      "port": 443,
+      "rows_touching_endpoint": 1520
+    },
+    {
+      "ip": "35.186.253.0",
+      "port": 443,
+      "rows_touching_endpoint": 1366
+    },
+    {
+      "ip": "104.16.25.92",
+      "port": 443,
+      "rows_touching_endpoint": 1337
+    },
+    {
+      "ip": "50.63.243.230",
+      "port": 80,
+      "rows_touching_endpoint": 1268
+    },
+    {
+      "ip": "104.88.89.135",
+      "port": 443,
+      "rows_touching_endpoint": 1162
+    },
+    {
+      "ip": "52.71.109.106",
+      "port": 443,
+      "rows_touching_endpoint": 1120
+    },
+    {
+      "ip": "172.217.11.2",
+      "port": 443,
+      "rows_touching_endpoint": 1086
+    },
+    {
+      "ip": "151.101.208.166",
+      "port": 443,
+      "rows_touching_endpoint": 1035
+    },
+    {
+      "ip": "173.241.242.143",
+      "port": 443,
+      "rows_touching_endpoint": 997
+    },
+    {
+      "ip": "172.217.6.194",
+      "port": 443,
+      "rows_touching_endpoint": 967
+    }
+  ],
+  "matched_http_calibration_established": false,
+  "limitations": [
+    "CSV endpoint/label inventory only; not a packet join or proof that absent CSV flows mean no raw packets.",
+    "Port 80/443 is a candidate service inventory, not payload-level protocol verification.",
+    "Other external web endpoints do not automatically provide a matched negative class for the attacked local service.",
+    "No slow-family member, external dataset, model fitting or final scoring is involved."
+  ],
+  "date": "2026-11-11",
+  "opened_member": "TrafficLabelling /Monday-WorkingHours.pcap_ISCX.csv",
+  "archive_sha256": "7bdbef286f8893f31c6db12105fa097fa5c2dcc6733179037a08129d150ea27a",
+  "seconds": 25.716,
+  "next_action": "Collect compatible benign HTTP sessions in the isolated lab; no full Monday capture download is justified solely by this inventory."
+}

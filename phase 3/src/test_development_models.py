@@ -41,5 +41,27 @@ class DevelopmentModelChecks(unittest.TestCase):
         self.assertEqual(mapped.tolist(),[0.,.25,.75,1.,1.])
         with self.assertRaises(ValueError): benign_percentiles([],np.ones(2))
 
+    def test_explicit_signed_rate_changes_are_preserved(self):
+        model=BenignAutoencoder(signed_columns=(1,))
+        clean=model.clean([[2,-9],[-2,9],[0,0],[np.inf,-np.inf]])
+        self.assertTrue(np.isnan(clean[1,0]))
+        self.assertAlmostEqual(clean[0,1],-np.log(10))
+        self.assertAlmostEqual(clean[1,1],np.log(10))
+        self.assertEqual(clean[2,1],0)
+        self.assertTrue(np.isnan(clean[3]).all())
+
+    def test_signed_transform_scaling_fits_training_only(self):
+        x=np.array([[i,(-1)**i*i] for i in range(1,17)],dtype=float)
+        v=np.array([[100,10000],[200,-10000]],dtype=float)
+        model=BenignAutoencoder(max_epochs=2,signed_columns=(1,)).fit(x,np.zeros(16),v,np.zeros(2))
+        expected=np.column_stack((np.log1p(x[:,0]),np.sign(x[:,1])*np.log1p(np.abs(x[:,1]))))
+        self.assertTrue(np.allclose(model.imputer.statistics_,np.median(expected,axis=0)))
+        with self.assertRaisesRegex(ValueError,'schema'): model.score(np.ones((2,3)))
+
+    def test_invalid_signed_schema_fails(self):
+        for columns in ((-1,),(1,1),(True,)):
+            with self.assertRaises(ValueError): BenignAutoencoder(signed_columns=columns)
+        with self.assertRaises(ValueError): BenignAutoencoder(signed_columns=(2,)).clean([[1,2]])
+
 
 if __name__=='__main__': unittest.main(verbosity=2)

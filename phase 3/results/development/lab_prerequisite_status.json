@@ -1,0 +1,32 @@
+{
+  "date": "2026-11-11",
+  "scope": "Prerequisite preparation, not an operational lab or completed research test",
+  "wsl": {
+    "version": "3.0.5",
+    "installer_bytes": 367788032,
+    "sha256": "2313efc5873e3f8552f42e77f950fabd913c0289078fa89d2100f3421a525eaa",
+    "authenticode": "Valid Microsoft Corporation",
+    "installed": false,
+    "state": "administrator_launch_cancelled_by_windows",
+    "runtime_verified": false
+  },
+  "docker": {
+    "version": "4.98.0",
+    "build": 245422,
+    "installer_bytes": 623748528,
+    "sha256": "cd6273d9eaa4f07fa7593fc6813d37e1004381cebc3f26047a2554fa5db24388",
+    "authenticode": "Valid Docker Inc",
+    "installer_exit_code": 1,
+    "installed": false,
+    "state": "first_per_user_attempt_failed_without_useful_stdout_stderr",
+    "engine_verified": false
+  },
+  "automatic_restart": false,
+  "next_action": "Complete the authorized Windows administrator setup via ordinary UAC, then verify WSL and Docker engine before benign collection.",
+  "lab": {
+    "configuration_prepared": true,
+    "offline_scope_guards_passed": true,
+    "sessions_collected": 0,
+    "final_attack_tests_run": 0
+  }
+}

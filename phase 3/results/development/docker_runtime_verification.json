@@ -1,0 +1,22 @@
+{
+  "date": "2026-11-11",
+  "scope": "Local prerequisite verification only; no container workload, model training or final research tests.",
+  "docker_desktop_version": "4.98.0",
+  "client_version": "29.9.2",
+  "server_version": "29.9.2",
+  "server_os": "linux",
+  "context": "desktop-linux",
+  "kernel": "6.18.58.1-microsoft-standard-WSL2",
+  "compose_version": "5.6.1",
+  "prepared_lab_compose_config_valid": true,
+  "temporary_network_check": {
+    "driver": "bridge",
+    "internal": true,
+    "container_endpoints": 0,
+    "removed_after_check": true
+  },
+  "limitations": [
+    "An empty internal-network configuration check is not a packet-level egress/capture-quality test.",
+    "No benign lab session has been collected; capture quality and service compatibility remain unverified."
+  ]
+}

@@ -13,9 +13,9 @@ Hashes were obtained from the [Microsoft WSL release API](https://api.github.com
 
 Docker's verified installer is run in per-user mode with `install --user --quiet --accept-license --backend=wsl-2 --no-windows-containers`. See the [official Windows install instructions](https://docs.docker.com/desktop/setup/install/windows-install/) and [Microsoft WSL instructions](https://learn.microsoft.com/en-us/windows/wsl/install). Docker's WSL backend supplies its own Linux environment; a general-purpose Ubuntu distribution can be added later if needed.
 
-Current checkpoint: the user approved the second UAC prompt. The WSL MSI completed with exit 0; both Windows features completed with exit 3010 (successful, restart required). `wsl --version` confirms WSL 3.0.5.0. The PC has **not** been restarted by the assistant. Docker's earlier real-user installation log identifies its blocker as the missing VirtualMachinePlatform feature. Finish the restart before retrying that per-user installer.
+Current checkpoint: the user completed the required restart. WSL 3.0.5.0 and Docker Desktop 4.98.0 are installed; Docker client/server 29.9.2, the Linux WSL2 engine and Compose 5.6.1 are verified. The earlier feature exit codes 3010 are historical installation outcomes, not a current pending restart. Docker's successful retry returned 0. No further restart is currently requested. See [runtime evidence](../results/development/docker_runtime_verification.json).
 
-After saving work and restarting Windows, from `phase 3/` run:
+For a fresh installation/recovery where the package is absent, after any required Windows-feature restart, from `phase 3/` run:
 
 ```powershell
 powershell.exe -NoProfile -ExecutionPolicy Bypass -File '.\setup\install-docker.ps1'
@@ -25,4 +25,6 @@ wsl --status
 
 `install-docker.ps1` rechecks the pinned hash/signature, performs the authorized per-user WSL-backed installation and records status under `data/setup/`. It does not claim engine readiness or start traffic. Under a coding harness, use its authorized unsandboxed execution route for installation; the harness's sandbox can redirect LocalAppData. In normal Windows PowerShell, per-user logs are under `%LOCALAPPDATA%\Docker\install-log.txt`.
 
-Then start Docker Desktop and verify `docker version` (both client and server) and `docker compose version`. Resolve first-run UI or actual runtime prerequisites if reported. Do not claim the lab is ready from an installer exit alone. Create and validate the isolated, non-published network/capture with benign traffic before collecting sessions. All slow-attack lab traffic remains final-only until model freeze.
+On the installed PC, Docker Desktop is already running. Later it can be started with `docker desktop start --timeout 120`; verify `docker version` (both client and server) and `docker compose version`. Under this harness, run WSL/Docker IPC commands through the authorized unsandboxed route; sandboxed WSL status may report access denied. A pre-install process may not have the refreshed PATH; resolve the CLI from the real Windows `%LOCALAPPDATA%\Programs\DockerDesktop\resources\bin\docker.exe`.
+
+The prepared Compose configuration and empty internal-network creation/removal have passed. Actual packet-level isolation/capture quality remain unverified; validate them with benign traffic before collecting sessions. All slow-attack lab traffic remains final-only until model freeze.

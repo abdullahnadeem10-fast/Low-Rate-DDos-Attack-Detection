@@ -6,7 +6,7 @@ For a different harness or machine, read the maintained root [PROJECT_CONTEXT.md
 
 Development evidence is in `results/development/`: full Friday capture replay, clock/count audits, readiness checks and separate completed-flow baseline comparisons. The latter deliberately use finished-flow features and a development partition; they do **not** establish unseen-family recall or early/live detection performance.
 
-11 November: the additional Monday label audit did not establish matched benign HTTP coverage. The AE supports explicit signed feature columns; 25 offline checks pass. WSL 3.0.5 is installed and both Windows features succeeded; **restart Windows next**, then finish Docker installation and engine verification. Docker's first per-user attempt failed because VirtualMachinePlatform was absent. See [setup](setup/README.md), the prepared [benign-only lab](lab/README.md), and the [five-step roadmap](plan/FIVE_STEP_ROADMAP.md). No lab collection/final attack test has run.
+11 November: the additional Monday label audit did not establish matched benign HTTP coverage. The AE supports explicit signed feature columns; 25 offline checks pass. After the user-controlled restart, WSL 3.0.5 and Docker Desktop 4.98.0 are installed and the Linux engine/Compose work. **Next: build/validate the benign lab and its capture**, then collect independent development sessions. See [runtime evidence](results/development/docker_runtime_verification.json), [setup](setup/README.md), the prepared [benign-only lab](lab/README.md), and the [five-step roadmap](plan/FIVE_STEP_ROADMAP.md). No lab collection/final attack test has run.
 
 From this folder, with Python 3.12 and the pilot dependencies installed in `.venv`:
 

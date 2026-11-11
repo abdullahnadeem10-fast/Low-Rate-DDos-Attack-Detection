@@ -2,6 +2,8 @@
 
 Requires an operational Docker Linux engine. Runtime services use an **internal Docker network**, no published ports and no host networking. One Apache web container, one capture sidecar sharing its network namespace and one/three clients produce complete benign HTTP requests only. Images/build packages need downloads during preparation; runtime clients target only `web:80` and do not follow redirects or use internet targets. The runner cleans up only its uniquely named Compose project and retains session data.
 
+The Linux engine and Compose are now verified. The prepared Compose configuration passed validation and an empty internal network check passed, but no lab images/workloads or PCAP session have run. Actual isolation, packet quality and service compatibility still require benign preflight checks before session collection.
+
 From `phase 3/`:
 
 ```powershell

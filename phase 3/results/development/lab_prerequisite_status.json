@@ -1,14 +1,14 @@
 {
   "date": "2026-11-11",
-  "scope": "Prerequisite preparation, not an operational lab or completed research test",
+  "scope": "Installed prerequisite/runtime verification, not completed lab collection or final research tests",
   "wsl": {
     "version": "3.0.5",
     "installer_bytes": 367788032,
     "sha256": "2313efc5873e3f8552f42e77f950fabd913c0289078fa89d2100f3421a525eaa",
     "authenticode": "Valid Microsoft Corporation",
     "installed": true,
-    "state": "installed_restart_required",
-    "runtime_verified": false,
+    "state": "operational_via_docker_wsl2_backend",
+    "runtime_verified": true,
     "msi_exit_code": 0,
     "features": [
       {
@@ -20,10 +20,14 @@
         "name": "Microsoft-Windows-Subsystem-Linux"
       }
     ],
-    "restart_required": true,
+    "restart_required": false,
     "version_command_exit_code": 0,
     "version_command_first_line": "WSL version: 3.0.5.0",
-    "administrator_relaunch": "Explicitly requested and approved by the user on 11 November."
+    "administrator_relaunch": "Explicitly requested and approved by the user on 11 November.",
+    "restart_completed": true,
+    "status_command_exit_code": 0,
+    "default_distribution_version": 2,
+    "feature_exit_codes_note": "The 3010 values record the earlier feature installation; the user has now completed the required restart."
   },
   "docker": {
     "version": "4.98.0",
@@ -31,18 +35,27 @@
     "installer_bytes": 623748528,
     "sha256": "cd6273d9eaa4f07fa7593fc6813d37e1004381cebc3f26047a2554fa5db24388",
     "authenticode": "Valid Docker Inc",
-    "installer_exit_code": 1,
-    "installed": false,
-    "state": "awaiting_windows_restart_before_per_user_retry",
-    "engine_verified": false,
-    "first_attempt_diagnosis": "Official installer log: VirtualMachinePlatform feature was not enabled; per-user installer cannot enable administrator-only Windows features."
+    "installer_exit_code": 0,
+    "installed": true,
+    "state": "installed_engine_verified",
+    "engine_verified": true,
+    "first_attempt_diagnosis": "Official installer log: VirtualMachinePlatform feature was not enabled; per-user installer cannot enable administrator-only Windows features.",
+    "client_version": "29.9.2",
+    "server_version": "29.9.2",
+    "server_os": "linux",
+    "compose_version": "5.6.1",
+    "context": "desktop-linux",
+    "restart_required": false
   },
   "automatic_restart": false,
-  "next_action": "User saves work and restarts Windows; then run setup/install-docker.ps1 and verify WSL/Docker Linux engine before benign collection.",
+  "next_action": "Build prepared lab images, verify benign-only network isolation and packet-capture quality, then collect/audit independent benign HTTP development sessions. No final attack testing before freeze.",
   "lab": {
     "configuration_prepared": true,
     "offline_scope_guards_passed": true,
     "sessions_collected": 0,
-    "final_attack_tests_run": 0
+    "final_attack_tests_run": 0,
+    "compose_configuration_valid": true,
+    "empty_internal_network_configuration_verified": true,
+    "capture_quality_verified": false
   }
 }

@@ -1,0 +1,166 @@
+{
+  "date": "2026-11-11",
+  "batch": "benign_v3",
+  "scope": "Initial benign development component, not final testing.",
+  "reason": "Correct additive per-client PRNG seed overlap across roles; no classifier outcomes were used.",
+  "source_batch": "benign_v2",
+  "entries": [
+    {
+      "role": "T",
+      "condition": "ordinary",
+      "clients": 1,
+      "warmup": 30,
+      "duration": 60,
+      "seed": 1001,
+      "reuse_session": "benign-t-ordinary-fbf3c0fd39d6",
+      "capture_sha256": "c5d6fb5e95289783835d7807201ed896071c585a1f182a5bf469442d6257c25a"
+    },
+    {
+      "role": "T",
+      "condition": "bursts",
+      "clients": 3,
+      "warmup": 30,
+      "duration": 60,
+      "seed": 1002,
+      "reuse_session": "benign-t-bursts-9d3f427692b4",
+      "capture_sha256": "c41c8ac55edef9309934a11e79ae7cca61c37dacb1f67807d8fc7efac35b1ee1"
+    },
+    {
+      "role": "T",
+      "condition": "flash",
+      "clients": 3,
+      "warmup": 30,
+      "duration": 60,
+      "seed": 1003,
+      "reuse_session": "benign-t-flash-6dfb5f6a0c9a",
+      "capture_sha256": "2b53486173758ec40cd8005bf07c8b2362586ab9b18f4630ea4e6300b83efd9d"
+    },
+    {
+      "role": "C1",
+      "condition": "ordinary",
+      "clients": 1,
+      "warmup": 30,
+      "duration": 60,
+      "seed": 2001,
+      "reuse_session": "benign-c1-ordinary-2316cadf3878",
+      "capture_sha256": "a21f0f0cb0276c4705f21f39a89d18052d0b776df9105771869c401e6db9256f"
+    },
+    {
+      "role": "C1",
+      "condition": "bursts",
+      "clients": 3,
+      "warmup": 30,
+      "duration": 60,
+      "seed": 200002,
+      "reuse_session": null
+    },
+    {
+      "role": "C1",
+      "condition": "flash",
+      "clients": 3,
+      "warmup": 30,
+      "duration": 60,
+      "seed": 200003,
+      "reuse_session": null
+    },
+    {
+      "role": "C2",
+      "condition": "ordinary",
+      "clients": 1,
+      "warmup": 30,
+      "duration": 60,
+      "seed": 3001,
+      "reuse_session": "benign-c2-ordinary-51699d630e2d",
+      "capture_sha256": "e2b5baeca53b7a66a2efee43e5c30dab8a854581d8e5b693fdb314e83c599724"
+    },
+    {
+      "role": "C2",
+      "condition": "bursts",
+      "clients": 3,
+      "warmup": 30,
+      "duration": 60,
+      "seed": 300002,
+      "reuse_session": null
+    },
+    {
+      "role": "C2",
+      "condition": "flash",
+      "clients": 3,
+      "warmup": 30,
+      "duration": 60,
+      "seed": 300003,
+      "reuse_session": null
+    },
+    {
+      "role": "V",
+      "condition": "ordinary",
+      "clients": 1,
+      "warmup": 30,
+      "duration": 60,
+      "seed": 4001,
+      "reuse_session": "benign-v-ordinary-668865d0f2db",
+      "capture_sha256": "6d05476a6f82d4d38abc6528e27950b72132807aec619fb6fffb55d5d4293efe"
+    },
+    {
+      "role": "V",
+      "condition": "bursts",
+      "clients": 3,
+      "warmup": 30,
+      "duration": 60,
+      "seed": 4002,
+      "reuse_session": "benign-v-bursts-0f1a58c9937d",
+      "capture_sha256": "34599b51d69819d159ea5778df6c37489c95393cb25e8b7e756e68c4a65e1c86"
+    },
+    {
+      "role": "V",
+      "condition": "flash",
+      "clients": 3,
+      "warmup": 30,
+      "duration": 60,
+      "seed": 4003,
+      "reuse_session": "benign-v-flash-0832aeee7ee0",
+      "capture_sha256": "90176e4a98c241aa7c6470829f27c84a99a4907f088c269d356ee3de4eac6b4e"
+    }
+  ],
+  "expected_effective_client_seeds": [
+    2001,
+    2002,
+    2003,
+    3001,
+    3002,
+    3003,
+    4001,
+    4002,
+    4003,
+    5001,
+    5002,
+    5003,
+    6002,
+    6003,
+    7002,
+    7003,
+    201002,
+    201003,
+    202002,
+    202003,
+    203002,
+    203003,
+    301002,
+    301003,
+    302002,
+    302003,
+    303002,
+    303003
+  ],
+  "expected_tools_image": "sha256:78168ae6e29ac8739ef00b6d99939c9ea94a15a64bc77b8631dc0cebb9d27b60",
+  "functional_source_sha256": {
+    "lab/run_benign_session.py": "b50b5c2e968deac1c5d83d536af5d96be6879775ad9b417b2ef3d0827d7b8c64",
+    "lab/client.py": "8e26f8eb2d789baf95270b52d489512137dcd137ec2e32d3231236daa18ea0ad",
+    "lab/capture.py": "ffcf012df10a04da63f55d4521c18c566aa51f158b340606ca703fdb73749c56",
+    "lab/Dockerfile": "3e0b705b89a8bc8425dc44ae7adaac3d43159c029c7943738fd26d67c28d2093",
+    "src/audit_benign_session.py": "cc39dd7fd1d404f7a25a5f89000cbc5f7f6dd69ccc70aee8e0c5ff8dbfdaff60",
+    "src/replay_causal_features.py": "5b1e48da2576a9bde3cc2e87a2443241142984058346b98d3d3f5a05aa7be158",
+    "src/causal_features.py": "24795f084da55ab93bb858e14bd35663fd85c86b994ed928cb5d80e481c5e708"
+  },
+  "composition_source_sha256": "36481a34287a137b8b388e184aff0cd3a380cf9d340c9005480bd1c1a9bf129e"
+}

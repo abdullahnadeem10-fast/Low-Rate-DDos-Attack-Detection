@@ -6,7 +6,7 @@ For a different harness or machine, read the maintained root [PROJECT_CONTEXT.md
 
 Development evidence is in `results/development/`: full Friday capture replay, clock/count audits, readiness checks and separate completed-flow baseline comparisons. The latter deliberately use finished-flow features and a development partition; they do **not** establish unseen-family recall or early/live detection performance.
 
-11 November: the additional Monday label audit did not establish matched benign HTTP coverage. The AE supports explicit signed feature columns; 25 offline checks pass. After the user-controlled restart, WSL 3.0.5 and Docker Desktop 4.98.0 are installed and the Linux engine/Compose work. **Next: build/validate the benign lab and its capture**, then collect independent development sessions. See [runtime evidence](results/development/docker_runtime_verification.json), [setup](setup/README.md), the prepared [benign-only lab](lab/README.md), and the [five-step roadmap](plan/FIVE_STEP_ROADMAP.md). No lab collection/final attack test has run.
+11 November: WSL/Docker and the initial benign data component work. The selected **v3** component contains 12 sessions, 702 measurement windows and 28 distinct client jitter seeds; every selected capture passed HTTP/packet checks with zero kernel-reported drops. The public HTTP-candidate audit yielded 2,243 corroborated nonempty service-seconds and retained 1,743 uncertain cells. All 35 offline checks pass. See [current readiness](results/development/development_readiness_2026-11-11.json), [canonical lab selection](results/development/benign_batch_v3.json), [predictor/group manifest](results/development/benign_development_manifest.json) and the [roadmap](plan/FIVE_STEP_ROADMAP.md). No main detector/final attack test has run.
 
 From this folder, with Python 3.12 and the pilot dependencies installed in `.venv`:
 
@@ -32,9 +32,14 @@ Run these from `phase 3` using the existing `.venv` (on another machine create a
 & '.venv/Scripts/python.exe' 'src/assess_packet_development.py'
 & '.venv/Scripts/python.exe' 'src/audit_monday_labels.py'
 & '.venv/Scripts/python.exe' 'lab/run_benign_session.py' --role T --condition ordinary --clients 1 --prepare-only
+& '.venv/Scripts/python.exe' 'src/summarize_benign_batch.py' --batch-version v3
 ```
 
 `download_friday.py` fetches only the pinned Friday source, preserves resumable chunks and verifies the full SHA-256 before publishing the final capture filename. `friday_packet_audit.py` opens only the Friday DDoS label member, excludes impossible-duration keys, infers the clock offset from benign keys and compares canonical directional packet counts. The join outputs distinguish corroborated labels from possible or uncertain matches; they are not a blanket declaration of exact ground truth.
+
+The entry points above are not a request to rerun downloads/collections blindly. For existing lab data, use only the v3 whitelist and verify hashes. The raw directory contains interrupted pilots, preflights and superseded calibration sessions; globbing all tables would duplicate/contaminate the dataset. v3 retains eight original sessions and four seed-separated replacements. Transfer the selected raw session folders for exact replay on a new harness; new network acquisitions produce new timestamps/hashes and require a separately recorded plan.
+
+`inventory_friday_http.py` and `audit_friday_http_services.py` inspect archived Friday data only; candidate public IPs are not live traffic targets. Public candidate labels still need destination/session partitioning and reset/purged feature replay before model use. Broaden benign calibration with controlled congestion/diversity and repetitions; keep failed legitimate stress requests benign rather than selecting only successful easy cases. The study is deliberately not yet marked training-ready.
 
 Do not score the slow-family holdout or CSE-CIC-IDS2018 while developing these tools. The causal extractor's proposed one-second lateness budget and 30-second connection timeout require full-capture and split-boundary validation before final use. The dense AE uses CPU scikit-learn `partial_fit` to retain Adam state, with benign-only fitted preprocessing and separate benign development early stopping; no GPU dependency is required.
 

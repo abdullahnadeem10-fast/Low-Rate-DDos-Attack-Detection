@@ -1,0 +1,126 @@
+{
+  "date": "2026-11-11",
+  "scope": "Workload-seed independence diagnostic, not a detector result.",
+  "client_instances": 28,
+  "distinct_jitter_seeds": 16,
+  "cross_role_shared_seeds": {
+    "3002": [
+      [
+        "T",
+        "bursts",
+        2
+      ],
+      [
+        "C1",
+        "bursts",
+        1
+      ]
+    ],
+    "4002": [
+      [
+        "T",
+        "bursts",
+        3
+      ],
+      [
+        "C1",
+        "bursts",
+        2
+      ],
+      [
+        "C2",
+        "bursts",
+        1
+      ]
+    ],
+    "3003": [
+      [
+        "T",
+        "flash",
+        2
+      ],
+      [
+        "C1",
+        "flash",
+        1
+      ]
+    ],
+    "4003": [
+      [
+        "T",
+        "flash",
+        3
+      ],
+      [
+        "C1",
+        "flash",
+        2
+      ],
+      [
+        "C2",
+        "flash",
+        1
+      ]
+    ],
+    "5002": [
+      [
+        "C1",
+        "bursts",
+        3
+      ],
+      [
+        "C2",
+        "bursts",
+        2
+      ],
+      [
+        "V",
+        "bursts",
+        1
+      ]
+    ],
+    "5003": [
+      [
+        "C1",
+        "flash",
+        3
+      ],
+      [
+        "C2",
+        "flash",
+        2
+      ],
+      [
+        "V",
+        "flash",
+        1
+      ]
+    ],
+    "6002": [
+      [
+        "C2",
+        "bursts",
+        3
+      ],
+      [
+        "V",
+        "bursts",
+        2
+      ]
+    ],
+    "6003": [
+      [
+        "C2",
+        "flash",
+        3
+      ],
+      [
+        "V",
+        "flash",
+        2
+      ]
+    ]
+  },
+  "cross_role_substreams_disjoint": false,
+  "training_ready": false
+}

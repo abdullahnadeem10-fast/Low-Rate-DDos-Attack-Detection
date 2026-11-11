@@ -27,4 +27,4 @@ wsl --status
 
 On the installed PC, Docker Desktop is already running. Later it can be started with `docker desktop start --timeout 120`; verify `docker version` (both client and server) and `docker compose version`. Under this harness, run WSL/Docker IPC commands through the authorized unsandboxed route; sandboxed WSL status may report access denied. A pre-install process may not have the refreshed PATH; resolve the CLI from the real Windows `%LOCALAPPDATA%\Programs\DockerDesktop\resources\bin\docker.exe`.
 
-The prepared Compose configuration and empty internal-network creation/removal have passed. Actual packet-level isolation/capture quality remain unverified; validate them with benign traffic before collecting sessions. All slow-attack lab traffic remains final-only until model freeze.
+The initial controlled-profile scope/capture audits and selected v3 benign collection are now complete; see `../results/development/benign_batch_v3.json`. Broader benign conditions, public-source compatibility and full study/model integration remain open. All slow-attack lab traffic remains final-only until model freeze.

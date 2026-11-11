@@ -1,0 +1,220 @@
+{
+  "date": "2026-11-11",
+  "scope": "Allowed Friday development candidate audit; no training/final scoring.",
+  "capture_sha256": "beff0dcce1eebc9b2454582f4dc8ed0ba0112b2c619a710bf03af93147254cd0",
+  "clock_offset_seconds": 54000,
+  "selection_rule": "At least 100 unambiguous benign canonical groups and no DDoS/conflicting groups at a TCP port-80 endpoint; not an efficacy/score-based rule.",
+  "selected_services_before_packet_scan": [
+    "61.251.165.12:80",
+    "178.255.83.1:80",
+    "72.21.91.29:80",
+    "23.61.187.27:80",
+    "119.205.194.11:80",
+    "50.63.243.230:80",
+    "23.54.187.27:80",
+    "23.52.155.27:80",
+    "119.205.194.14:80"
+  ],
+  "frames_read": 9997874,
+  "elapsed_seconds": 373.232,
+  "protocol_errors": {},
+  "services": [
+    {
+      "service": "61.251.165.12:80",
+      "canonical_groups": 920,
+      "count_agreement_groups": 28,
+      "http_marker_groups": 919,
+      "count_and_http_corroborated_groups": 28,
+      "http_payload_prefix_evidence": {
+        "request_prefix_packets": 919,
+        "response_prefix_packets": 919
+      },
+      "nonempty_second_status": {
+        "uncertain": 135,
+        "benign_only": 1
+      },
+      "packet_counts": {
+        "corroborated_benign": 294,
+        "uncorroborated": 9339
+      },
+      "label_table_relative_path": "data/development/public_http_candidates/61.251.165.12_80/labels.csv",
+      "label_table_sha256": "f3ee3a7ebbf3857509b823e42e5bd38ad394a1e389ba522a6818fc8f5f4945fb"
+    },
+    {
+      "service": "178.255.83.1:80",
+      "canonical_groups": 399,
+      "count_agreement_groups": 32,
+      "http_marker_groups": 320,
+      "count_and_http_corroborated_groups": 15,
+      "http_payload_prefix_evidence": {
+        "request_prefix_packets": 320,
+        "response_prefix_packets": 320
+      },
+      "nonempty_second_status": {
+        "uncertain": 281,
+        "benign_only": 3
+      },
+      "packet_counts": {
+        "corroborated_benign": 152,
+        "uncorroborated": 3807
+      },
+      "label_table_relative_path": "data/development/public_http_candidates/178.255.83.1_80/labels.csv",
+      "label_table_sha256": "66a22c83b674ba21c8a5ec19b5a9dfd5fc4372c7a4da455539123a6071b6cb8d"
+    },
+    {
+      "service": "72.21.91.29:80",
+      "canonical_groups": 264,
+      "count_agreement_groups": 230,
+      "http_marker_groups": 184,
+      "count_and_http_corroborated_groups": 157,
+      "http_payload_prefix_evidence": {
+        "request_prefix_packets": 509,
+        "response_prefix_packets": 546
+      },
+      "nonempty_second_status": {
+        "uncertain": 386,
+        "benign_only": 1233
+      },
+      "packet_counts": {
+        "corroborated_benign": 5968,
+        "uncorroborated": 1617
+      },
+      "label_table_relative_path": "data/development/public_http_candidates/72.21.91.29_80/labels.csv",
+      "label_table_sha256": "c7bbdf0c120c620e9211e457ffb9a8a92472bb4dc16dcf2b8ebfe7b0ad64b1d9"
+    },
+    {
+      "service": "23.61.187.27:80",
+      "canonical_groups": 206,
+      "count_agreement_groups": 164,
+      "http_marker_groups": 144,
+      "count_and_http_corroborated_groups": 115,
+      "http_payload_prefix_evidence": {
+        "request_prefix_packets": 268,
+        "response_prefix_packets": 268
+      },
+      "nonempty_second_status": {
+        "benign_only": 505,
+        "uncertain": 242
+      },
+      "packet_counts": {
+        "corroborated_benign": 3327,
+        "uncorroborated": 1153
+      },
+      "label_table_relative_path": "data/development/public_http_candidates/23.61.187.27_80/labels.csv",
+      "label_table_sha256": "d0ef52c5d2e91bd0d35ef7580fe5cf5d16ef1728ec158012bd4f48258b59dcd1"
+    },
+    {
+      "service": "119.205.194.11:80",
+      "canonical_groups": 200,
+      "count_agreement_groups": 152,
+      "http_marker_groups": 191,
+      "count_and_http_corroborated_groups": 143,
+      "http_payload_prefix_evidence": {
+        "request_prefix_packets": 551,
+        "response_prefix_packets": 551
+      },
+      "nonempty_second_status": {
+        "benign_only": 100,
+        "uncertain": 101
+      },
+      "packet_counts": {
+        "corroborated_benign": 3450,
+        "uncorroborated": 1565
+      },
+      "label_table_relative_path": "data/development/public_http_candidates/119.205.194.11_80/labels.csv",
+      "label_table_sha256": "dfa1a104e04269b93394d4204243f6d15849120836b74b6a870b7966b2e20c8a"
+    },
+    {
+      "service": "50.63.243.230:80",
+      "canonical_groups": 147,
+      "count_agreement_groups": 28,
+      "http_marker_groups": 114,
+      "count_and_http_corroborated_groups": 2,
+      "http_payload_prefix_evidence": {
+        "request_prefix_packets": 114,
+        "response_prefix_packets": 114
+      },
+      "nonempty_second_status": {
+        "uncertain": 98
+      },
+      "packet_counts": {
+        "corroborated_benign": 21,
+        "uncorroborated": 1378
+      },
+      "label_table_relative_path": "data/development/public_http_candidates/50.63.243.230_80/labels.csv",
+      "label_table_sha256": "7feb118d3edd844df2a6e51bc01b1fa3e42565e9e84aebc7de1aba420e284f68"
+    },
+    {
+      "service": "23.54.187.27:80",
+      "canonical_groups": 143,
+      "count_agreement_groups": 66,
+      "http_marker_groups": 96,
+      "count_and_http_corroborated_groups": 32,
+      "http_payload_prefix_evidence": {
+        "request_prefix_packets": 155,
+        "response_prefix_packets": 155
+      },
+      "nonempty_second_status": {
+        "uncertain": 307,
+        "benign_only": 81
+      },
+      "packet_counts": {
+        "corroborated_benign": 696,
+        "uncorroborated": 1749
+      },
+      "label_table_relative_path": "data/development/public_http_candidates/23.54.187.27_80/labels.csv",
+      "label_table_sha256": "8b9da28cf70553cc84a88b69a5e95e3aa8a44d7f799133fde324ea84d85d1326"
+    },
+    {
+      "service": "23.52.155.27:80",
+      "canonical_groups": 125,
+      "count_agreement_groups": 101,
+      "http_marker_groups": 80,
+      "count_and_http_corroborated_groups": 66,
+      "http_payload_prefix_evidence": {
+        "request_prefix_packets": 121,
+        "response_prefix_packets": 122
+      },
+      "nonempty_second_status": {
+        "uncertain": 153,
+        "benign_only": 246
+      },
+      "packet_counts": {
+        "corroborated_benign": 2176,
+        "uncorroborated": 855
+      },
+      "label_table_relative_path": "data/development/public_http_candidates/23.52.155.27_80/labels.csv",
+      "label_table_sha256": "61eab72da098ca4a47a2da941621f9e890be4cfc38d13d02cda1bf62a32a1d35"
+    },
+    {
+      "service": "119.205.194.14:80",
+      "canonical_groups": 103,
+      "count_agreement_groups": 78,
+      "http_marker_groups": 103,
+      "count_and_http_corroborated_groups": 78,
+      "http_payload_prefix_evidence": {
+        "request_prefix_packets": 437,
+        "response_prefix_packets": 437
+      },
+      "nonempty_second_status": {
+        "benign_only": 74,
+        "uncertain": 40
+      },
+      "packet_counts": {
+        "corroborated_benign": 1616,
+        "uncorroborated": 979
+      },
+      "label_table_relative_path": "data/development/public_http_candidates/119.205.194.14_80/labels.csv",
+      "label_table_sha256": "e8c9d62881ab0c8e145fdb21908443905ea6c9b638f73020905aaff94f1a5a8d"
+    }
+  ],
+  "total_corroborated_nonempty_benign_seconds": 2243,
+  "training_ready": false,
+  "limitations": [
+    "Minute-precision possible intervals, aggregate directional counts and HTTP prefixes corroborate labels; they are not exact packet ground truth.",
+    "HTTP prefix counts are protocol evidence, not reassembled complete-request counts.",
+    "Idle/unmatched/non-HTTP/mismatched seconds remain unlabelled or uncertain; report resulting selection coverage.",
+    "External benign servers and the internal attacked server have different network paths; audit service/source effects and hold out destination/session groups.",
+    "No causal feature partitions were built from these candidates and no final holdout was opened."
+  ]
+}

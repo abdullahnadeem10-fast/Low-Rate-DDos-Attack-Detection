@@ -1,0 +1,175 @@
+{
+  "date": "2026-11-11",
+  "scope": "Metadata inventory only; no raw packet join or benign window labels assigned.",
+  "archive_sha256": "7bdbef286f8893f31c6db12105fa097fa5c2dcc6733179037a08129d150ea27a",
+  "opened_member": "TrafficLabelling /Friday-WorkingHours-Afternoon-DDos.pcap_ISCX.csv",
+  "raw_class_rows": {
+    "BENIGN": 97718,
+    "DDoS": 128027
+  },
+  "canonical_key_quarantine": "Reuse the Friday audit complete-key negative-duration exclusion policy.",
+  "eligibility_rule": "At least 100 unambiguous benign canonical groups and no DDoS/conflicting groups at a TCP port-80 endpoint; not an efficacy/score-based rule.",
+  "tcp_port_80_endpoints": 727,
+  "metadata_eligible_endpoints": 9,
+  "top_endpoints": [
+    {
+      "service": "61.251.165.12:80",
+      "unambiguous_benign_canonical_groups": 920,
+      "rows_in_unambiguous_benign_groups": 1842,
+      "expected_packets_in_unambiguous_benign_groups": 8741,
+      "metadata_inventory_eligible": true
+    },
+    {
+      "service": "178.255.83.1:80",
+      "unambiguous_benign_canonical_groups": 399,
+      "rows_in_unambiguous_benign_groups": 797,
+      "expected_packets_in_unambiguous_benign_groups": 3592,
+      "metadata_inventory_eligible": true
+    },
+    {
+      "service": "72.21.91.29:80",
+      "unambiguous_benign_canonical_groups": 264,
+      "rows_in_unambiguous_benign_groups": 549,
+      "expected_packets_in_unambiguous_benign_groups": 7473,
+      "metadata_inventory_eligible": true
+    },
+    {
+      "service": "23.61.187.27:80",
+      "unambiguous_benign_canonical_groups": 206,
+      "rows_in_unambiguous_benign_groups": 416,
+      "expected_packets_in_unambiguous_benign_groups": 4439,
+      "metadata_inventory_eligible": true
+    },
+    {
+      "service": "119.205.194.11:80",
+      "unambiguous_benign_canonical_groups": 200,
+      "rows_in_unambiguous_benign_groups": 400,
+      "expected_packets_in_unambiguous_benign_groups": 4967,
+      "metadata_inventory_eligible": true
+    },
+    {
+      "service": "50.63.243.230:80",
+      "unambiguous_benign_canonical_groups": 147,
+      "rows_in_unambiguous_benign_groups": 294,
+      "expected_packets_in_unambiguous_benign_groups": 1280,
+      "metadata_inventory_eligible": true
+    },
+    {
+      "service": "23.54.187.27:80",
+      "unambiguous_benign_canonical_groups": 143,
+      "rows_in_unambiguous_benign_groups": 275,
+      "expected_packets_in_unambiguous_benign_groups": 2368,
+      "metadata_inventory_eligible": true
+    },
+    {
+      "service": "23.52.155.27:80",
+      "unambiguous_benign_canonical_groups": 125,
+      "rows_in_unambiguous_benign_groups": 243,
+      "expected_packets_in_unambiguous_benign_groups": 2825,
+      "metadata_inventory_eligible": true
+    },
+    {
+      "service": "119.205.194.14:80",
+      "unambiguous_benign_canonical_groups": 103,
+      "rows_in_unambiguous_benign_groups": 206,
+      "expected_packets_in_unambiguous_benign_groups": 2570,
+      "metadata_inventory_eligible": true
+    },
+    {
+      "service": "192.168.10.50:80",
+      "known_DDoS_canonical_groups": 25337,
+      "conflicting_label_canonical_groups": 20055,
+      "unambiguous_benign_canonical_groups": 88,
+      "rows_in_unambiguous_benign_groups": 194,
+      "expected_packets_in_unambiguous_benign_groups": 1470,
+      "metadata_inventory_eligible": false
+    },
+    {
+      "service": "23.60.139.27:80",
+      "unambiguous_benign_canonical_groups": 65,
+      "rows_in_unambiguous_benign_groups": 131,
+      "expected_packets_in_unambiguous_benign_groups": 1079,
+      "metadata_inventory_eligible": false
+    },
+    {
+      "service": "23.5.251.27:80",
+      "unambiguous_benign_canonical_groups": 53,
+      "rows_in_unambiguous_benign_groups": 107,
+      "expected_packets_in_unambiguous_benign_groups": 734,
+      "metadata_inventory_eligible": false
+    },
+    {
+      "service": "172.217.10.238:80",
+      "unambiguous_benign_canonical_groups": 41,
+      "rows_in_unambiguous_benign_groups": 84,
+      "expected_packets_in_unambiguous_benign_groups": 1145,
+      "metadata_inventory_eligible": false
+    },
+    {
+      "service": "72.167.239.239:80",
+      "unambiguous_benign_canonical_groups": 37,
+      "rows_in_unambiguous_benign_groups": 74,
+      "expected_packets_in_unambiguous_benign_groups": 317,
+      "metadata_inventory_eligible": false
+    },
+    {
+      "service": "23.4.43.27:80",
+      "unambiguous_benign_canonical_groups": 34,
+      "rows_in_unambiguous_benign_groups": 70,
+      "expected_packets_in_unambiguous_benign_groups": 536,
+      "metadata_inventory_eligible": false
+    },
+    {
+      "service": "172.217.12.174:80",
+      "unambiguous_benign_canonical_groups": 33,
+      "rows_in_unambiguous_benign_groups": 63,
+      "expected_packets_in_unambiguous_benign_groups": 828,
+      "metadata_inventory_eligible": false
+    },
+    {
+      "service": "172.217.6.238:80",
+      "unambiguous_benign_canonical_groups": 33,
+      "rows_in_unambiguous_benign_groups": 67,
+      "expected_packets_in_unambiguous_benign_groups": 984,
+      "metadata_inventory_eligible": false
+    },
+    {
+      "service": "119.205.194.17:80",
+      "unambiguous_benign_canonical_groups": 32,
+      "rows_in_unambiguous_benign_groups": 64,
+      "expected_packets_in_unambiguous_benign_groups": 371,
+      "metadata_inventory_eligible": false
+    },
+    {
+      "service": "38.72.130.155:80",
+      "unambiguous_benign_canonical_groups": 31,
+      "rows_in_unambiguous_benign_groups": 41,
+      "expected_packets_in_unambiguous_benign_groups": 375,
+      "metadata_inventory_eligible": false
+    },
+    {
+      "service": "199.59.88.242:80",
+      "unambiguous_benign_canonical_groups": 30,
+      "rows_in_unambiguous_benign_groups": 70,
+      "expected_packets_in_unambiguous_benign_groups": 873,
+      "metadata_inventory_eligible": false
+    }
+  ],
+  "target_endpoint": {
+    "service": "192.168.10.50:80",
+    "known_DDoS_canonical_groups": 25337,
+    "conflicting_label_canonical_groups": 20055,
+    "unambiguous_benign_canonical_groups": 88,
+    "rows_in_unambiguous_benign_groups": 194,
+    "expected_packets_in_unambiguous_benign_groups": 1470,
+    "metadata_inventory_eligible": false
+  },
+  "packet_training_ready": false,
+  "next_action": "Audit candidate HTTP payload, direction, capture coverage and clock/count joins before assigning windows; use server/session grouping and disclose network-path differences.",
+  "limitations": [
+    "A matching port is not proof of HTTP or comparable service behaviour.",
+    "Destination IPs route/group streams only and must never enter predictor columns.",
+    "The current clean target-positive/lab-negative pool is source-label confounded; this inventory alone does not solve it.",
+    "No slow-family/external source or final test was opened."
+  ]
+}

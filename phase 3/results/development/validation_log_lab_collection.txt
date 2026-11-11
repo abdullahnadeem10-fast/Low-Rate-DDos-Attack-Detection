@@ -1,0 +1,62 @@
+test_additive_client_seed_overlap_is_rejected (test_benign_audit.BenignAuditChecks.test_additive_client_seed_overlap_is_rejected) ... ok
+test_first_partial_second_is_explicitly_counted (test_benign_audit.BenignAuditChecks.test_first_partial_second_is_explicitly_counted) ... ok
+test_gaps_and_conflicting_retransmission_fail (test_benign_audit.BenignAuditChecks.test_gaps_and_conflicting_retransmission_fail) ... ok
+test_nonfinite_model_feature_fails (test_benign_audit.BenignAuditChecks.test_nonfinite_model_feature_fails) ... ok
+test_partition_measurement_drops_warmup_and_partial_seconds (test_benign_audit.BenignAuditChecks.test_partition_measurement_drops_warmup_and_partial_seconds) ... ok
+test_reordering_and_identical_retransmission (test_benign_audit.BenignAuditChecks.test_reordering_and_identical_retransmission) ... ok
+test_reused_port_and_delayed_old_payload_stay_separate (test_benign_audit.BenignAuditChecks.test_reused_port_and_delayed_old_payload_stay_separate) ... ok
+test_sequence_wrap_is_not_a_gap (test_benign_audit.BenignAuditChecks.test_sequence_wrap_is_not_a_gap) ... ok
+test_disorder_rejected (test_causal_features.CausalChecks.test_disorder_rejected) ... ok
+test_expiry_rst_and_unknown_initial_age (test_causal_features.CausalChecks.test_expiry_rst_and_unknown_initial_age) ... ok
+test_future_changes_cannot_change_closed_windows (test_causal_features.CausalChecks.test_future_changes_cannot_change_closed_windows) ... ok
+test_handshake_and_bidirectional_fin (test_causal_features.CausalChecks.test_handshake_and_bidirectional_fin) ... ok
+test_history_and_reset (test_causal_features.CausalChecks.test_history_and_reset) ... ok
+test_ae_preprocessing_only_fits_benign_training (test_development_models.DevelopmentModelChecks.test_ae_preprocessing_only_fits_benign_training) ... ok
+test_ae_refuses_attack_training_or_early_stopping (test_development_models.DevelopmentModelChecks.test_ae_refuses_attack_training_or_early_stopping) ... ok
+test_connection_groups_ignore_direction (test_development_models.DevelopmentModelChecks.test_connection_groups_ignore_direction) ... ok
+test_explicit_signed_rate_changes_are_preserved (test_development_models.DevelopmentModelChecks.test_explicit_signed_rate_changes_are_preserved) ... ok
+test_invalid_signed_schema_fails (test_development_models.DevelopmentModelChecks.test_invalid_signed_schema_fails) ... ok
+test_percentile_ties_and_extreme_scores_are_explicit (test_development_models.DevelopmentModelChecks.test_percentile_ties_and_extreme_scores_are_explicit) ... ok
+test_signed_transform_scaling_fits_training_only (test_development_models.DevelopmentModelChecks.test_signed_transform_scaling_fits_training_only) ... ok
+test_uncertain_flow_end_cannot_cross_split (test_development_models.DevelopmentModelChecks.test_uncertain_flow_end_cannot_cross_split) ... ok
+test_clock_uses_benign_keys_not_attack_volume (test_friday_audit.AuditChecks.test_clock_uses_benign_keys_not_attack_volume) ... ok
+test_exact_directional_counts_and_mismatches_separate (test_friday_audit.AuditChecks.test_exact_directional_counts_and_mismatches_separate) ... ok
+test_insufficient_clock_evidence_rejected (test_friday_audit.AuditChecks.test_insufficient_clock_evidence_rejected) ... ok
+test_reverse_rows_share_a_canonical_key (test_friday_audit.AuditChecks.test_reverse_rows_share_a_canonical_key) ... ok
+test_two_direction_candidates_are_not_guessed (test_friday_audit.AuditChecks.test_two_direction_candidates_are_not_guessed) ... ok
+test_count_agreement_without_http_or_with_a_mismatch_is_not_enough (test_http_candidate_audit.HttpCandidateAuditChecks.test_count_agreement_without_http_or_with_a_mismatch_is_not_enough) ... ok
+test_empty_or_partly_unknown_second_never_defaults_to_benign (test_http_candidate_audit.HttpCandidateAuditChecks.test_empty_or_partly_unknown_second_never_defaults_to_benign) ... ok
+test_client_refuses_a_public_service_resolution (test_lab_preparation.LabPreparationChecks.test_client_refuses_a_public_service_resolution) ... ok
+test_runtime_has_no_published_ports_or_external_network (test_lab_preparation.LabPreparationChecks.test_runtime_has_no_published_ports_or_external_network) ... ok
+test_both_host_directions_are_inventoried (test_monday_audit.MondayAuditChecks.test_both_host_directions_are_inventoried) ... ok
+test_nonbenign_or_wrong_date_is_rejected (test_monday_audit.MondayAuditChecks.test_nonbenign_or_wrong_date_is_rejected) ... ok
+test_mismatched_packet_counts_fail_closed (test_packet_readiness.ReadinessChecks.test_mismatched_packet_counts_fail_closed) ... ok
+test_unlabelled_empty_second_is_not_benign (test_packet_readiness.ReadinessChecks.test_unlabelled_empty_second_is_not_benign) ... ok
+test_late_packet_is_dropped_without_backfilling (test_replay_features.ReplayChecks.test_late_packet_is_dropped_without_backfilling) ... {
+  "input_file": "late_fixture.pcap",
+  "service": "192.168.10.50:80",
+  "counts": {
+    "frames": 6,
+    "selected_tcp": 3,
+    "late_selected_dropped": 1,
+    "decode_errors": 0,
+    "rows": 5,
+    "fully_warmed_rows": 0
+  },
+  "reorder_budget_seconds": 1.0,
+  "connection_inactivity_timeout_seconds": 30,
+  "history_seconds": [
+    5,
+    10,
+    20
+  ],
+  "largest_adjacent_timestamp_regression_seconds": 2.6,
+  "elapsed_seconds": 0.008,
+  "scope": "Causal replay engineering features; no final labels, model scoring or live delay claim."
+}
+ok
+
+----------------------------------------------------------------------
+Ran 35 tests in 0.087s
+
+OK

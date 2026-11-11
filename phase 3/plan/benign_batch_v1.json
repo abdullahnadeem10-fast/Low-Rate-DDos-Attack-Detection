@@ -1,0 +1,119 @@
+{
+  "date": "2026-11-11",
+  "batch": "benign_v1",
+  "scope": "Initial benign development only; no final tests.",
+  "expected_tools_image": "sha256:be574d702c228173cfa3e2556f7dde052e096c62b1d7a603dc48302e11f28469",
+  "sequential_collection": true,
+  "entries": [
+    {
+      "role": "T",
+      "condition": "ordinary",
+      "seed": 1001,
+      "clients": 1,
+      "warmup": 30,
+      "duration": 60
+    },
+    {
+      "role": "T",
+      "condition": "bursts",
+      "seed": 1002,
+      "clients": 3,
+      "warmup": 30,
+      "duration": 60
+    },
+    {
+      "role": "T",
+      "condition": "flash",
+      "seed": 1003,
+      "clients": 3,
+      "warmup": 30,
+      "duration": 60
+    },
+    {
+      "role": "C1",
+      "condition": "ordinary",
+      "seed": 2001,
+      "clients": 1,
+      "warmup": 30,
+      "duration": 60
+    },
+    {
+      "role": "C1",
+      "condition": "bursts",
+      "seed": 2002,
+      "clients": 3,
+      "warmup": 30,
+      "duration": 60
+    },
+    {
+      "role": "C1",
+      "condition": "flash",
+      "seed": 2003,
+      "clients": 3,
+      "warmup": 30,
+      "duration": 60
+    },
+    {
+      "role": "C2",
+      "condition": "ordinary",
+      "seed": 3001,
+      "clients": 1,
+      "warmup": 30,
+      "duration": 60
+    },
+    {
+      "role": "C2",
+      "condition": "bursts",
+      "seed": 3002,
+      "clients": 3,
+      "warmup": 30,
+      "duration": 60
+    },
+    {
+      "role": "C2",
+      "condition": "flash",
+      "seed": 3003,
+      "clients": 3,
+      "warmup": 30,
+      "duration": 60
+    },
+    {
+      "role": "V",
+      "condition": "ordinary",
+      "seed": 4001,
+      "clients": 1,
+      "warmup": 30,
+      "duration": 60
+    },
+    {
+      "role": "V",
+      "condition": "bursts",
+      "seed": 4002,
+      "clients": 3,
+      "warmup": 30,
+      "duration": 60
+    },
+    {
+      "role": "V",
+      "condition": "flash",
+      "seed": 4003,
+      "clients": 3,
+      "warmup": 30,
+      "duration": 60
+    }
+  ],
+  "functional_source_sha256": {
+    "lab/run_benign_session.py": "b50b5c2e968deac1c5d83d536af5d96be6879775ad9b417b2ef3d0827d7b8c64",
+    "lab/client.py": "8e26f8eb2d789baf95270b52d489512137dcd137ec2e32d3231236daa18ea0ad",
+    "lab/capture.py": "001e557306bf8147d08ece054490bd03e82cbc7a94ab8df63d0b7d6857809338",
+    "lab/Dockerfile": "3e0b705b89a8bc8425dc44ae7adaac3d43159c029c7943738fd26d67c28d2093",
+    "src/audit_benign_session.py": "a0de6844ad4dfadf2351f51d912f51a29170c95d13bc8dad6db5ad8eb67a998e",
+    "src/replay_causal_features.py": "5b1e48da2576a9bde3cc2e87a2443241142984058346b98d3d3f5a05aa7be158",
+    "src/causal_features.py": "24795f084da55ab93bb858e14bd35663fd85c86b994ed928cb5d80e481c5e708"
+  },
+  "limitations": [
+    "Only one initial session per role/condition; not final independent stress replicates.",
+    "Controlled congestion and representative benign diversity are not established by these profiles.",
+    "Public/lab source and service confounding remain unresolved; full study is not training-ready."
+  ]
+}

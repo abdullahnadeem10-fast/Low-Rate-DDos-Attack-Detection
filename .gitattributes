@@ -3,3 +3,5 @@
 *.png binary
 # Preserve exact generated evidence bytes for recorded SHA-256 checks.
 *.csv -text whitespace=cr-at-eol
+# Collection plans are hashed before traffic; preserve their exact JSON bytes.
+"phase 3/plan/benign_batch_*.json" -text whitespace=cr-at-eol

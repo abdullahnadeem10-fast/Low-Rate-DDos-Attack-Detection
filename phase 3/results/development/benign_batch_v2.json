@@ -1,0 +1,508 @@
+{
+  "date": "2026-11-11",
+  "plan": {
+    "date": "2026-11-11",
+    "batch": "benign_v2",
+    "scope": "Initial benign development only; no final tests.",
+    "expected_tools_image": "sha256:78168ae6e29ac8739ef00b6d99939c9ea94a15a64bc77b8631dc0cebb9d27b60",
+    "sequential_collection": true,
+    "entries": [
+      {
+        "role": "T",
+        "condition": "ordinary",
+        "seed": 1001,
+        "clients": 1,
+        "warmup": 30,
+        "duration": 60
+      },
+      {
+        "role": "T",
+        "condition": "bursts",
+        "seed": 1002,
+        "clients": 3,
+        "warmup": 30,
+        "duration": 60
+      },
+      {
+        "role": "T",
+        "condition": "flash",
+        "seed": 1003,
+        "clients": 3,
+        "warmup": 30,
+        "duration": 60
+      },
+      {
+        "role": "C1",
+        "condition": "ordinary",
+        "seed": 2001,
+        "clients": 1,
+        "warmup": 30,
+        "duration": 60
+      },
+      {
+        "role": "C1",
+        "condition": "bursts",
+        "seed": 2002,
+        "clients": 3,
+        "warmup": 30,
+        "duration": 60
+      },
+      {
+        "role": "C1",
+        "condition": "flash",
+        "seed": 2003,
+        "clients": 3,
+        "warmup": 30,
+        "duration": 60
+      },
+      {
+        "role": "C2",
+        "condition": "ordinary",
+        "seed": 3001,
+        "clients": 1,
+        "warmup": 30,
+        "duration": 60
+      },
+      {
+        "role": "C2",
+        "condition": "bursts",
+        "seed": 3002,
+        "clients": 3,
+        "warmup": 30,
+        "duration": 60
+      },
+      {
+        "role": "C2",
+        "condition": "flash",
+        "seed": 3003,
+        "clients": 3,
+        "warmup": 30,
+        "duration": 60
+      },
+      {
+        "role": "V",
+        "condition": "ordinary",
+        "seed": 4001,
+        "clients": 1,
+        "warmup": 30,
+        "duration": 60
+      },
+      {
+        "role": "V",
+        "condition": "bursts",
+        "seed": 4002,
+        "clients": 3,
+        "warmup": 30,
+        "duration": 60
+      },
+      {
+        "role": "V",
+        "condition": "flash",
+        "seed": 4003,
+        "clients": 3,
+        "warmup": 30,
+        "duration": 60
+      }
+    ],
+    "functional_source_sha256": {
+      "lab/run_benign_session.py": "b50b5c2e968deac1c5d83d536af5d96be6879775ad9b417b2ef3d0827d7b8c64",
+      "lab/client.py": "8e26f8eb2d789baf95270b52d489512137dcd137ec2e32d3231236daa18ea0ad",
+      "lab/capture.py": "ffcf012df10a04da63f55d4521c18c566aa51f158b340606ca703fdb73749c56",
+      "lab/Dockerfile": "3e0b705b89a8bc8425dc44ae7adaac3d43159c029c7943738fd26d67c28d2093",
+      "src/audit_benign_session.py": "cc39dd7fd1d404f7a25a5f89000cbc5f7f6dd69ccc70aee8e0c5ff8dbfdaff60",
+      "src/replay_causal_features.py": "5b1e48da2576a9bde3cc2e87a2443241142984058346b98d3d3f5a05aa7be158",
+      "src/causal_features.py": "24795f084da55ab93bb858e14bd35663fd85c86b994ed928cb5d80e481c5e708"
+    },
+    "limitations": [
+      "Only one initial session per role/condition; not final independent stress replicates.",
+      "Controlled congestion and representative benign diversity are not established by these profiles.",
+      "Public/lab source and service confounding remain unresolved; full study is not training-ready."
+    ]
+  },
+  "plan_sha256": "9ae3c5117227243573a5945a693ed181042f02e68aabbce539b13cc06bc160c8",
+  "sessions": [
+    {
+      "role": "T",
+      "condition": "ordinary",
+      "seed": 1001,
+      "clients": 1,
+      "warmup": 30,
+      "duration": 60,
+      "plan_index": 0,
+      "session": "benign-t-ordinary-fbf3c0fd39d6",
+      "relative_session_path": "data/lab_development/benign-t-ordinary-fbf3c0fd39d6",
+      "web_container_id": "59681999b132aefdd54b0fcb589f587b02cea2245cccaa72f155c5d14ccd97e9",
+      "capture_sha256": "c5d6fb5e95289783835d7807201ed896071c585a1f182a5bf469442d6257c25a",
+      "model_windows_sha256": "e8523cdf54b4cd3fedeb70103e37b84aa9d38fa695e1cdc4abfc2b7acf08fb8a",
+      "model_windows": 58,
+      "frames": 5836,
+      "http_requests": 184,
+      "kernel_reported_drops": 0,
+      "max_frame_bytes": 1514,
+      "late_selected_dropped": 0,
+      "audit_passed": true,
+      "capture_initial_partial_packets_excluded_by_replay": 31,
+      "image_ids": {
+        "httpd:2.4@sha256:ce3b1e5ab31c4b1b6aba298b935cb88bc6ca1d643446b69d396406db5550bf68": "sha256:ce3b1e5ab31c4b1b6aba298b935cb88bc6ca1d643446b69d396406db5550bf68",
+        "cnet-benign-tools:development": "sha256:78168ae6e29ac8739ef00b6d99939c9ea94a15a64bc77b8631dc0cebb9d27b60"
+      },
+      "measurement_utc_seconds_exclusive_end": [
+        1794368390,
+        1794368449
+      ]
+    },
+    {
+      "role": "T",
+      "condition": "bursts",
+      "seed": 1002,
+      "clients": 3,
+      "warmup": 30,
+      "duration": 60,
+      "plan_index": 1,
+      "session": "benign-t-bursts-9d3f427692b4",
+      "relative_session_path": "data/lab_development/benign-t-bursts-9d3f427692b4",
+      "web_container_id": "cdd8c581278ef9342e664f1cca5bc7c08df47d2cd44de7fad6149cb8533bfc4f",
+      "capture_sha256": "c41c8ac55edef9309934a11e79ae7cca61c37dacb1f67807d8fc7efac35b1ee1",
+      "model_windows_sha256": "576852c77eeb4e1612d83524c2ee57bc80c185d51bacc830b064673801339355",
+      "model_windows": 59,
+      "frames": 26615,
+      "http_requests": 834,
+      "kernel_reported_drops": 0,
+      "max_frame_bytes": 1514,
+      "late_selected_dropped": 0,
+      "audit_passed": true,
+      "capture_initial_partial_packets_excluded_by_replay": 96,
+      "image_ids": {
+        "httpd:2.4@sha256:ce3b1e5ab31c4b1b6aba298b935cb88bc6ca1d643446b69d396406db5550bf68": "sha256:ce3b1e5ab31c4b1b6aba298b935cb88bc6ca1d643446b69d396406db5550bf68",
+        "cnet-benign-tools:development": "sha256:78168ae6e29ac8739ef00b6d99939c9ea94a15a64bc77b8631dc0cebb9d27b60"
+      },
+      "measurement_utc_seconds_exclusive_end": [
+        1794368491,
+        1794368550
+      ]
+    },
+    {
+      "role": "T",
+      "condition": "flash",
+      "seed": 1003,
+      "clients": 3,
+      "warmup": 30,
+      "duration": 60,
+      "plan_index": 2,
+      "session": "benign-t-flash-6dfb5f6a0c9a",
+      "relative_session_path": "data/lab_development/benign-t-flash-6dfb5f6a0c9a",
+      "web_container_id": "55ce4b92f8de7888fc701703dfb9a72a8c6e688f510e2ef6bf7c4229cab6bd75",
+      "capture_sha256": "2b53486173758ec40cd8005bf07c8b2362586ab9b18f4630ea4e6300b83efd9d",
+      "model_windows_sha256": "2d83383199aab00b562bf96e63930574a27724804b2ebf46de07c55c4921b567",
+      "model_windows": 58,
+      "frames": 61522,
+      "http_requests": 1922,
+      "kernel_reported_drops": 0,
+      "max_frame_bytes": 1514,
+      "late_selected_dropped": 0,
+      "audit_passed": true,
+      "capture_initial_partial_packets_excluded_by_replay": 96,
+      "image_ids": {
+        "httpd:2.4@sha256:ce3b1e5ab31c4b1b6aba298b935cb88bc6ca1d643446b69d396406db5550bf68": "sha256:ce3b1e5ab31c4b1b6aba298b935cb88bc6ca1d643446b69d396406db5550bf68",
+        "cnet-benign-tools:development": "sha256:78168ae6e29ac8739ef00b6d99939c9ea94a15a64bc77b8631dc0cebb9d27b60"
+      },
+      "measurement_utc_seconds_exclusive_end": [
+        1794368593,
+        1794368651
+      ]
+    },
+    {
+      "role": "C1",
+      "condition": "ordinary",
+      "seed": 2001,
+      "clients": 1,
+      "warmup": 30,
+      "duration": 60,
+      "plan_index": 3,
+      "session": "benign-c1-ordinary-2316cadf3878",
+      "relative_session_path": "data/lab_development/benign-c1-ordinary-2316cadf3878",
+      "web_container_id": "f9f25cc16f464e1147f734a173021ce793703906d78964a012d70cb7f7adfe3d",
+      "capture_sha256": "a21f0f0cb0276c4705f21f39a89d18052d0b776df9105771869c401e6db9256f",
+      "model_windows_sha256": "b993bc58a16c589c7e3b74f7527fa3f9be490ba47c05327e51e941edb0f9ac77",
+      "model_windows": 58,
+      "frames": 5719,
+      "http_requests": 180,
+      "kernel_reported_drops": 0,
+      "max_frame_bytes": 1514,
+      "late_selected_dropped": 0,
+      "audit_passed": true,
+      "capture_initial_partial_packets_excluded_by_replay": 32,
+      "image_ids": {
+        "httpd:2.4@sha256:ce3b1e5ab31c4b1b6aba298b935cb88bc6ca1d643446b69d396406db5550bf68": "sha256:ce3b1e5ab31c4b1b6aba298b935cb88bc6ca1d643446b69d396406db5550bf68",
+        "cnet-benign-tools:development": "sha256:78168ae6e29ac8739ef00b6d99939c9ea94a15a64bc77b8631dc0cebb9d27b60"
+      },
+      "measurement_utc_seconds_exclusive_end": [
+        1794368696,
+        1794368754
+      ]
+    },
+    {
+      "role": "C1",
+      "condition": "bursts",
+      "seed": 2002,
+      "clients": 3,
+      "warmup": 30,
+      "duration": 60,
+      "plan_index": 4,
+      "session": "benign-c1-bursts-ebc9e01024f5",
+      "relative_session_path": "data/lab_development/benign-c1-bursts-ebc9e01024f5",
+      "web_container_id": "fda5076b60612bc9891f4d91dc622e32d7113972f944b1a90c28405bd9fc79cf",
+      "capture_sha256": "223130fcc3b5d9450b11aa25dd9996fce8aba8022a21e4162a9af2e1365e1971",
+      "model_windows_sha256": "b0ddbfa84e4e58d836a5c65f8bcb7f29e0119a23c16c5d146c9cf18e8ed9f870",
+      "model_windows": 58,
+      "frames": 26533,
+      "http_requests": 832,
+      "kernel_reported_drops": 0,
+      "max_frame_bytes": 1514,
+      "late_selected_dropped": 0,
+      "audit_passed": true,
+      "capture_initial_partial_packets_excluded_by_replay": 96,
+      "image_ids": {
+        "httpd:2.4@sha256:ce3b1e5ab31c4b1b6aba298b935cb88bc6ca1d643446b69d396406db5550bf68": "sha256:ce3b1e5ab31c4b1b6aba298b935cb88bc6ca1d643446b69d396406db5550bf68",
+        "cnet-benign-tools:development": "sha256:78168ae6e29ac8739ef00b6d99939c9ea94a15a64bc77b8631dc0cebb9d27b60"
+      },
+      "measurement_utc_seconds_exclusive_end": [
+        1794368796,
+        1794368854
+      ]
+    },
+    {
+      "role": "C1",
+      "condition": "flash",
+      "seed": 2003,
+      "clients": 3,
+      "warmup": 30,
+      "duration": 60,
+      "plan_index": 5,
+      "session": "benign-c1-flash-1e304d4652d9",
+      "relative_session_path": "data/lab_development/benign-c1-flash-1e304d4652d9",
+      "web_container_id": "b1ea2a7ea2668461f22200fccdbdf1c280642fbedacf2a66e5dae30dbf59dbb8",
+      "capture_sha256": "812791cc88d99d716a36963a1fcbdaf11266d2c810b26d2d49dc0d2ac536c5bd",
+      "model_windows_sha256": "e42e5592d3a53953690ee235a2fd3e909d70fa7ce6f0a5ee3366b1d40bbcb892",
+      "model_windows": 58,
+      "frames": 61518,
+      "http_requests": 1922,
+      "kernel_reported_drops": 0,
+      "max_frame_bytes": 1514,
+      "late_selected_dropped": 0,
+      "audit_passed": true,
+      "capture_initial_partial_packets_excluded_by_replay": 96,
+      "image_ids": {
+        "httpd:2.4@sha256:ce3b1e5ab31c4b1b6aba298b935cb88bc6ca1d643446b69d396406db5550bf68": "sha256:ce3b1e5ab31c4b1b6aba298b935cb88bc6ca1d643446b69d396406db5550bf68",
+        "cnet-benign-tools:development": "sha256:78168ae6e29ac8739ef00b6d99939c9ea94a15a64bc77b8631dc0cebb9d27b60"
+      },
+      "measurement_utc_seconds_exclusive_end": [
+        1794368898,
+        1794368956
+      ]
+    },
+    {
+      "role": "C2",
+      "condition": "ordinary",
+      "seed": 3001,
+      "clients": 1,
+      "warmup": 30,
+      "duration": 60,
+      "plan_index": 6,
+      "session": "benign-c2-ordinary-51699d630e2d",
+      "relative_session_path": "data/lab_development/benign-c2-ordinary-51699d630e2d",
+      "web_container_id": "31b15e9049e213d55c9081c41ccba6738471f40c1716890d5fd3e08d09580ab9",
+      "capture_sha256": "e2b5baeca53b7a66a2efee43e5c30dab8a854581d8e5b693fdb314e83c599724",
+      "model_windows_sha256": "ca8c0e40121d8905201b7338833108a577d715b995a5e2bf15f8fcdaef35a8aa",
+      "model_windows": 58,
+      "frames": 5914,
+      "http_requests": 186,
+      "kernel_reported_drops": 0,
+      "max_frame_bytes": 1514,
+      "late_selected_dropped": 0,
+      "audit_passed": true,
+      "capture_initial_partial_packets_excluded_by_replay": 32,
+      "image_ids": {
+        "httpd:2.4@sha256:ce3b1e5ab31c4b1b6aba298b935cb88bc6ca1d643446b69d396406db5550bf68": "sha256:ce3b1e5ab31c4b1b6aba298b935cb88bc6ca1d643446b69d396406db5550bf68",
+        "cnet-benign-tools:development": "sha256:78168ae6e29ac8739ef00b6d99939c9ea94a15a64bc77b8631dc0cebb9d27b60"
+      },
+      "measurement_utc_seconds_exclusive_end": [
+        1794369001,
+        1794369059
+      ]
+    },
+    {
+      "role": "C2",
+      "condition": "bursts",
+      "seed": 3002,
+      "clients": 3,
+      "warmup": 30,
+      "duration": 60,
+      "plan_index": 7,
+      "session": "benign-c2-bursts-4949214529a7",
+      "relative_session_path": "data/lab_development/benign-c2-bursts-4949214529a7",
+      "web_container_id": "36bea51c5d1304fceeb176aedcdcda0b58d2e941bb499408402934b1fc3fa759",
+      "capture_sha256": "4ae22e69ec2b45244d02899ae5f3ebe3f2d9352c73e5a0aa9be0f2fa9c30daf1",
+      "model_windows_sha256": "3f7a32e94cfc8842a133ffd600d2cadded7e194d2c7d29c2b1272053502e7d10",
+      "model_windows": 59,
+      "frames": 26001,
+      "http_requests": 814,
+      "kernel_reported_drops": 0,
+      "max_frame_bytes": 1514,
+      "late_selected_dropped": 0,
+      "audit_passed": true,
+      "capture_initial_partial_packets_excluded_by_replay": 97,
+      "image_ids": {
+        "httpd:2.4@sha256:ce3b1e5ab31c4b1b6aba298b935cb88bc6ca1d643446b69d396406db5550bf68": "sha256:ce3b1e5ab31c4b1b6aba298b935cb88bc6ca1d643446b69d396406db5550bf68",
+        "cnet-benign-tools:development": "sha256:78168ae6e29ac8739ef00b6d99939c9ea94a15a64bc77b8631dc0cebb9d27b60"
+      },
+      "measurement_utc_seconds_exclusive_end": [
+        1794369103,
+        1794369162
+      ]
+    },
+    {
+      "role": "C2",
+      "condition": "flash",
+      "seed": 3003,
+      "clients": 3,
+      "warmup": 30,
+      "duration": 60,
+      "plan_index": 8,
+      "session": "benign-c2-flash-3a0a5ccde5ce",
+      "relative_session_path": "data/lab_development/benign-c2-flash-3a0a5ccde5ce",
+      "web_container_id": "90a75ec877c1a8281d7a870d2208ce280a355ba51c7ae4e944b8f6133758f8fb",
+      "capture_sha256": "5c89a982a18ee9f457b11aa3819675545bb5341b11b989785a4da1fb4c3416a8",
+      "model_windows_sha256": "c0d1fa925ecfe2c87aa5230585d4e8ca95d87f270b6a173732bf7e4a8841c4ce",
+      "model_windows": 59,
+      "frames": 62769,
+      "http_requests": 1962,
+      "kernel_reported_drops": 0,
+      "max_frame_bytes": 1514,
+      "late_selected_dropped": 0,
+      "audit_passed": true,
+      "capture_initial_partial_packets_excluded_by_replay": 96,
+      "image_ids": {
+        "httpd:2.4@sha256:ce3b1e5ab31c4b1b6aba298b935cb88bc6ca1d643446b69d396406db5550bf68": "sha256:ce3b1e5ab31c4b1b6aba298b935cb88bc6ca1d643446b69d396406db5550bf68",
+        "cnet-benign-tools:development": "sha256:78168ae6e29ac8739ef00b6d99939c9ea94a15a64bc77b8631dc0cebb9d27b60"
+      },
+      "measurement_utc_seconds_exclusive_end": [
+        1794369209,
+        1794369268
+      ]
+    },
+    {
+      "role": "V",
+      "condition": "ordinary",
+      "seed": 4001,
+      "clients": 1,
+      "warmup": 30,
+      "duration": 60,
+      "plan_index": 9,
+      "session": "benign-v-ordinary-668865d0f2db",
+      "relative_session_path": "data/lab_development/benign-v-ordinary-668865d0f2db",
+      "web_container_id": "093d3d965e899215cb42fc3f42d137167496885fe3fc94b73777d182201fee41",
+      "capture_sha256": "6d05476a6f82d4d38abc6528e27950b72132807aec619fb6fffb55d5d4293efe",
+      "model_windows_sha256": "ac2ba7128bcdac1a6644913711c0bb84aaa341783a2313607272d501c93e9c40",
+      "model_windows": 59,
+      "frames": 5901,
+      "http_requests": 186,
+      "kernel_reported_drops": 0,
+      "max_frame_bytes": 1514,
+      "late_selected_dropped": 0,
+      "audit_passed": true,
+      "capture_initial_partial_packets_excluded_by_replay": 32,
+      "image_ids": {
+        "httpd:2.4@sha256:ce3b1e5ab31c4b1b6aba298b935cb88bc6ca1d643446b69d396406db5550bf68": "sha256:ce3b1e5ab31c4b1b6aba298b935cb88bc6ca1d643446b69d396406db5550bf68",
+        "cnet-benign-tools:development": "sha256:78168ae6e29ac8739ef00b6d99939c9ea94a15a64bc77b8631dc0cebb9d27b60"
+      },
+      "measurement_utc_seconds_exclusive_end": [
+        1794369316,
+        1794369375
+      ]
+    },
+    {
+      "role": "V",
+      "condition": "bursts",
+      "seed": 4002,
+      "clients": 3,
+      "warmup": 30,
+      "duration": 60,
+      "plan_index": 10,
+      "session": "benign-v-bursts-0f1a58c9937d",
+      "relative_session_path": "data/lab_development/benign-v-bursts-0f1a58c9937d",
+      "web_container_id": "2f80255a98e3daa21d242ebc283105666a0bb9ad18846cb540b1f043187383a8",
+      "capture_sha256": "34599b51d69819d159ea5778df6c37489c95393cb25e8b7e756e68c4a65e1c86",
+      "model_windows_sha256": "92adac3f98d66a12efa42974727e8e57b48663fa31961c5a715e9702adeabf84",
+      "model_windows": 59,
+      "frames": 26840,
+      "http_requests": 840,
+      "kernel_reported_drops": 0,
+      "max_frame_bytes": 1514,
+      "late_selected_dropped": 0,
+      "audit_passed": true,
+      "capture_initial_partial_packets_excluded_by_replay": 96,
+      "image_ids": {
+        "httpd:2.4@sha256:ce3b1e5ab31c4b1b6aba298b935cb88bc6ca1d643446b69d396406db5550bf68": "sha256:ce3b1e5ab31c4b1b6aba298b935cb88bc6ca1d643446b69d396406db5550bf68",
+        "cnet-benign-tools:development": "sha256:78168ae6e29ac8739ef00b6d99939c9ea94a15a64bc77b8631dc0cebb9d27b60"
+      },
+      "measurement_utc_seconds_exclusive_end": [
+        1794369419,
+        1794369478
+      ]
+    },
+    {
+      "role": "V",
+      "condition": "flash",
+      "seed": 4003,
+      "clients": 3,
+      "warmup": 30,
+      "duration": 60,
+      "plan_index": 11,
+      "session": "benign-v-flash-0832aeee7ee0",
+      "relative_session_path": "data/lab_development/benign-v-flash-0832aeee7ee0",
+      "web_container_id": "b5f300f6dceefb4daf586954e97b1657dda0d9ddda18e30ba5d21f31b38875ba",
+      "capture_sha256": "90176e4a98c241aa7c6470829f27c84a99a4907f088c269d356ee3de4eac6b4e",
+      "model_windows_sha256": "a5af097668a71c26100a283704d8260421c4f383fd4554ac26492ab323128a8a",
+      "model_windows": 58,
+      "frames": 60811,
+      "http_requests": 1901,
+      "kernel_reported_drops": 0,
+      "max_frame_bytes": 1514,
+      "late_selected_dropped": 0,
+      "audit_passed": true,
+      "capture_initial_partial_packets_excluded_by_replay": 94,
+      "image_ids": {
+        "httpd:2.4@sha256:ce3b1e5ab31c4b1b6aba298b935cb88bc6ca1d643446b69d396406db5550bf68": "sha256:ce3b1e5ab31c4b1b6aba298b935cb88bc6ca1d643446b69d396406db5550bf68",
+        "cnet-benign-tools:development": "sha256:78168ae6e29ac8739ef00b6d99939c9ea94a15a64bc77b8631dc0cebb9d27b60"
+      },
+      "measurement_utc_seconds_exclusive_end": [
+        1794369531,
+        1794369589
+      ]
+    }
+  ],
+  "independence_checks": {
+    "unique_capture_hashes": true,
+    "fresh_web_container_each_session": true,
+    "new_causal_feature_instance_each_session": true,
+    "same_image_content_within_batch": true
+  },
+  "grouping_basis": "Whole independent lab sessions; connection identities are namespaced by session, not pooled across separate container lifetimes.",
+  "totals": {
+    "sessions": 12,
+    "measurement_windows": 701,
+    "http_requests": 11763,
+    "frames": 375979
+  },
+  "failed_attempts": [],
+  "analysis_recoveries": [],
+  "analysis_source_sha256": "c79752f2c57d1d05e98febb344e94f9f851efb7528e7b83344548cd385c9e9e0",
+  "training_ready": false,
+  "analysis_revisions": [],
+  "remaining": [
+    "Controlled congestion, benign diversity and independent repetitions.",
+    "Public attack/session split integration and a source/service-confounding audit.",
+    "Full calibration/freeze and untouched final evaluations."
+  ]
+}

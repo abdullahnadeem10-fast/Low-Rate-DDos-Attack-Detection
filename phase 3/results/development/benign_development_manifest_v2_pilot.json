@@ -1,0 +1,152 @@
+{
+  "date": "2026-11-11",
+  "scope": "Audited initial benign lab development component; no fitted packet-window model/final research results.",
+  "batch": "benign_v2",
+  "plan_sha256": "9ae3c5117227243573a5945a693ed181042f02e68aabbce539b13cc06bc160c8",
+  "group_unit": "Independent whole lab session with a fresh service container and feature instance.",
+  "label_basis": "Predeclared controlled benign workload plus endpoint/route/packet/HTTP audits; labels are not inferred from idle windows.",
+  "predictor_columns": [
+    "packets_in",
+    "packets_out",
+    "bytes_in",
+    "bytes_out",
+    "syn_in",
+    "ack_in",
+    "rst_in",
+    "synack_out",
+    "handshakes_completed",
+    "new_connections",
+    "distinct_sources",
+    "packet_length_mean",
+    "packet_length_std",
+    "inbound_iat_mean",
+    "inbound_iat_std",
+    "active_connections",
+    "known_age_connections",
+    "unknown_age_connections",
+    "active_age_mean",
+    "active_age_max",
+    "uncompleted_fraction",
+    "handshake_to_syn_ratio",
+    "in_out_byte_ratio",
+    "packet_rate_change",
+    "packets_in_mean_5",
+    "packets_in_std_5",
+    "packets_in_mean_10",
+    "packets_in_std_10",
+    "packets_in_mean_20",
+    "packets_in_std_20"
+  ],
+  "metadata_columns_excluded_from_predictors": [
+    "session_id",
+    "role",
+    "condition",
+    "y",
+    "utc_second",
+    "history_complete"
+  ],
+  "ae_signed_predictor_columns": [
+    "packet_rate_change"
+  ],
+  "ae_signed_column_indices": [
+    23
+  ],
+  "partitions": {
+    "T": {
+      "sessions": [
+        "benign-t-ordinary-fbf3c0fd39d6",
+        "benign-t-bursts-9d3f427692b4",
+        "benign-t-flash-6dfb5f6a0c9a"
+      ],
+      "windows": 175,
+      "conditions": {
+        "ordinary": 1,
+        "bursts": 1,
+        "flash": 1
+      }
+    },
+    "C1": {
+      "sessions": [
+        "benign-c1-ordinary-2316cadf3878",
+        "benign-c1-bursts-ebc9e01024f5",
+        "benign-c1-flash-1e304d4652d9"
+      ],
+      "windows": 174,
+      "conditions": {
+        "ordinary": 1,
+        "bursts": 1,
+        "flash": 1
+      }
+    },
+    "C2": {
+      "sessions": [
+        "benign-c2-ordinary-51699d630e2d",
+        "benign-c2-bursts-4949214529a7",
+        "benign-c2-flash-3a0a5ccde5ce"
+      ],
+      "windows": 176,
+      "conditions": {
+        "ordinary": 1,
+        "bursts": 1,
+        "flash": 1
+      }
+    },
+    "V": {
+      "sessions": [
+        "benign-v-ordinary-668865d0f2db",
+        "benign-v-bursts-0f1a58c9937d",
+        "benign-v-flash-0832aeee7ee0"
+      ],
+      "windows": 176,
+      "conditions": {
+        "ordinary": 1,
+        "bursts": 1,
+        "flash": 1
+      }
+    }
+  },
+  "workload_characterization": {
+    "ordinary": {
+      "sessions": 4,
+      "all_logged_requests": 736,
+      "measurement_requests": 616,
+      "model_windows": 233,
+      "mean_captured_packets_per_measurement_second": 81.60085836909872,
+      "client_http_roundtrip_median_seconds": 0.005401446999997006,
+      "client_http_roundtrip_p95_seconds": 0.01705648699999074
+    },
+    "bursts": {
+      "sessions": 4,
+      "all_logged_requests": 3320,
+      "measurement_requests": 2960,
+      "model_windows": 235,
+      "mean_captured_packets_per_measurement_second": 390.72340425531917,
+      "client_http_roundtrip_median_seconds": 0.0073730010000190305,
+      "client_http_roundtrip_p95_seconds": 0.018282965000025797
+    },
+    "flash": {
+      "sessions": 4,
+      "all_logged_requests": 7707,
+      "measurement_requests": 7348,
+      "model_windows": 233,
+      "mean_captured_packets_per_measurement_second": 984.0987124463519,
+      "client_http_roundtrip_median_seconds": 0.006887665000022025,
+      "client_http_roundtrip_p95_seconds": 0.021448768999903223
+    }
+  },
+  "measurement_request_count": 10924,
+  "lab_component_quality_checks_passed": true,
+  "study_training_ready": false,
+  "remaining_gates": [
+    "Add controlled-congestion and more representative/independently repeated benign development traffic.",
+    "Audit and partition public benign HTTP candidates plus the known-attack source; prevent source/service-label confounding.",
+    "Complete split-safe public replay, full calibration and freeze before untouched final tests."
+  ],
+  "limits": [
+    "One initial session per role/condition is not sufficient independent evidence of generalization.",
+    "HTTP roundtrip is a benign service measurement, not detector inference or attack-onset-to-alert delay.",
+    "Final benign stress sessions and all lab attack episodes remain separate and uncollected."
+  ],
+  "superseded_for_partition_use": true,
+  "seed_diagnostic": "benign_batch_v2_seed_diagnostic.json"
+}

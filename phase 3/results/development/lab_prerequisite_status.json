@@ -48,14 +48,20 @@
     "restart_required": false
   },
   "automatic_restart": false,
-  "next_action": "Build prepared lab images, verify benign-only network isolation and packet-capture quality, then collect/audit independent benign HTTP development sessions. No final attack testing before freeze.",
+  "next_action": "Declare public destination/session and known-attack block partitions before causal replay; extend benign coverage with controlled congestion/diversity; then fit/calibrate/freeze. Final holdouts remain untouched.",
   "lab": {
     "configuration_prepared": true,
     "offline_scope_guards_passed": true,
-    "sessions_collected": 0,
+    "sessions_collected": 12,
     "final_attack_tests_run": 0,
     "compose_configuration_valid": true,
     "empty_internal_network_configuration_verified": true,
-    "capture_quality_verified": false
+    "capture_quality_verified": true,
+    "initial_benign_scope_checks_verified": true,
+    "selected_component": "benign_v3",
+    "selected_measurement_windows": 702,
+    "physical_collection_lineage": "v1 interrupted; v2 pilot; v3 selects eight unchanged v2 sessions and four seed-disjoint replacements.",
+    "effective_client_jitter_seeds_unique": 28,
+    "owned_temporary_projects_cleaned_up": true
   }
 }

@@ -1,0 +1,37 @@
+{
+  "date": "2026-11-11",
+  "scope": "Image-content provenance; declared image versions are not a separate runtime binary probe.",
+  "python_base_digest": "sha256:5e2bdb1b0d542d5039cffb8181c65930093949194a65c365dfb1b0fe13a4fa5b",
+  "images": [
+    {
+      "reference": "cnet-benign-tools:development",
+      "content_id": "sha256:78168ae6e29ac8739ef00b6d99939c9ea94a15a64bc77b8631dc0cebb9d27b60",
+      "repo_digests": [
+        "cnet-benign-tools@sha256:78168ae6e29ac8739ef00b6d99939c9ea94a15a64bc77b8631dc0cebb9d27b60"
+      ],
+      "architecture": "amd64",
+      "os": "linux",
+      "version_declarations_in_image_config": [
+        "PYTHON_VERSION=3.12.16"
+      ]
+    },
+    {
+      "reference": "httpd:2.4@sha256:ce3b1e5ab31c4b1b6aba298b935cb88bc6ca1d643446b69d396406db5550bf68",
+      "content_id": "sha256:ce3b1e5ab31c4b1b6aba298b935cb88bc6ca1d643446b69d396406db5550bf68",
+      "repo_digests": [
+        "httpd@sha256:ce3b1e5ab31c4b1b6aba298b935cb88bc6ca1d643446b69d396406db5550bf68"
+      ],
+      "architecture": "amd64",
+      "os": "linux",
+      "version_declarations_in_image_config": [
+        "HTTPD_VERSION=2.4.70"
+      ]
+    }
+  ],
+  "capture_policy": {
+    "web_tso_gso_gro": "off",
+    "buffer_kib": 32768,
+    "capture_output": "container Linux filesystem, post-flush copy to host"
+  },
+  "rebuild_limit": "Debian apt availability can affect a rebuild; use the recorded content IDs for this collected component."
+}

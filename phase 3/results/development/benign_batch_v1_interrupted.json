@@ -1,0 +1,163 @@
+{
+  "date": "2026-11-11",
+  "state": "interrupted_superseded_by_v2",
+  "plan_sha256": "03c0c5642bc43db83f8f3070e1f826ed7b3ac8a055cf89dd71d16250e78655d6",
+  "accepted_before_interruption": [
+    {
+      "role": "T",
+      "condition": "ordinary",
+      "seed": 1001,
+      "clients": 1,
+      "warmup": 30,
+      "duration": 60,
+      "plan_index": 0,
+      "session": "benign-t-ordinary-a08330700dfe",
+      "relative_session_path": "data/lab_development/benign-t-ordinary-a08330700dfe",
+      "web_container_id": "9a4b4a0871a607b19670d1c32fba091a445a4e76be06f1fd4f0dbc02716b4a6b",
+      "capture_sha256": "d2a12183ce63d7b646d2576dbb9d021486160f9c3a2b9791b2fb256490b67fb1",
+      "model_windows_sha256": "b4c22296a11625fe183fb1ca0bb5534ec5d1c4250cd40e617206658c3d184d2b",
+      "model_windows": 58,
+      "frames": 5791,
+      "http_requests": 182,
+      "kernel_reported_drops": 0,
+      "max_frame_bytes": 1514,
+      "late_selected_dropped": 0,
+      "audit_passed": true,
+      "capture_initial_partial_packets_excluded_by_replay": 32,
+      "image_ids": {
+        "httpd:2.4@sha256:ce3b1e5ab31c4b1b6aba298b935cb88bc6ca1d643446b69d396406db5550bf68": "sha256:ce3b1e5ab31c4b1b6aba298b935cb88bc6ca1d643446b69d396406db5550bf68",
+        "cnet-benign-tools:development": "sha256:be574d702c228173cfa3e2556f7dde052e096c62b1d7a603dc48302e11f28469"
+      },
+      "measurement_utc_seconds_exclusive_end": [
+        1794367385,
+        1794367444
+      ]
+    },
+    {
+      "role": "T",
+      "condition": "bursts",
+      "seed": 1002,
+      "clients": 3,
+      "warmup": 30,
+      "duration": 60,
+      "plan_index": 1,
+      "session": "benign-t-bursts-b07bfe12998f",
+      "relative_session_path": "data/lab_development/benign-t-bursts-b07bfe12998f",
+      "web_container_id": "34c04d4bd9311b1799080095a6cbeda6af0a9e5bec2d1ed5e37d8a40ceb85239",
+      "capture_sha256": "121af5c2bc5800408b8ee892aa050f77688f4b97be05b9076e478ab2a983d015",
+      "model_windows_sha256": "81a69500dc34c2359c90729b6cf62b5196d29282a37f6e07389422b61af6c9ef",
+      "model_windows": 59,
+      "frames": 25894,
+      "http_requests": 811,
+      "kernel_reported_drops": 0,
+      "max_frame_bytes": 1514,
+      "late_selected_dropped": 0,
+      "audit_passed": true,
+      "capture_initial_partial_packets_excluded_by_replay": 96,
+      "image_ids": {
+        "httpd:2.4@sha256:ce3b1e5ab31c4b1b6aba298b935cb88bc6ca1d643446b69d396406db5550bf68": "sha256:ce3b1e5ab31c4b1b6aba298b935cb88bc6ca1d643446b69d396406db5550bf68",
+        "cnet-benign-tools:development": "sha256:be574d702c228173cfa3e2556f7dde052e096c62b1d7a603dc48302e11f28469"
+      },
+      "measurement_utc_seconds_exclusive_end": [
+        1794367681,
+        1794367740
+      ]
+    }
+  ],
+  "failed_attempts": [
+    {
+      "plan_index": 0,
+      "entry": {
+        "role": "T",
+        "condition": "ordinary",
+        "seed": 1001,
+        "clients": 1,
+        "warmup": 30,
+        "duration": 60
+      },
+      "error": "Replay selected packet count differs from the capture audit",
+      "created_session_directories": [
+        "benign-t-ordinary-a08330700dfe"
+      ]
+    },
+    {
+      "plan_index": 2,
+      "entry": {
+        "role": "T",
+        "condition": "flash",
+        "seed": 1003,
+        "clients": 3,
+        "warmup": 30,
+        "duration": 60
+      },
+      "error": "Tuple reused within session; needs a connection-incarnation audit",
+      "created_session_directories": [
+        "benign-t-flash-becc3dec04c0"
+      ]
+    }
+  ],
+  "analysis_recoveries": [
+    {
+      "plan_index": 0,
+      "session": "benign-t-ordinary-a08330700dfe",
+      "raw_capture_reused": true,
+      "analysis_source_sha256": "6015fc952898f886e501e43d1fe8d3d940bef8057fbdb3ba9e1260332c5bc9fc"
+    }
+  ],
+  "capture_quality_failure": {
+    "session": "benign-t-flash-becc3dec04c0",
+    "role": "T",
+    "condition": "flash",
+    "seed": 1003,
+    "clients": 3,
+    "scope": "Benign development only; not a final research test.",
+    "capture_sha256": "7dee75999adf257a52441b8c6a78eb0a45f0eb2f2beb279a52c29c7ecd99f754",
+    "capture_bytes": 36827788,
+    "counts": {
+      "frames": 60900,
+      "truncated_frames": 0
+    },
+    "tcpdump": {
+      "captured": 60900,
+      "received_by_filter": 61376,
+      "dropped_by_kernel": 476
+    },
+    "max_frame_bytes": 1514,
+    "largest_timestamp_regression_seconds": 8.893013000488281e-05,
+    "logged_http_requests": 1918,
+    "complete_captured_http_exchanges": 1902,
+    "stream_errors": {
+      "invalid response: b''": 5,
+      "short body (missing 15186 bytes)": 1
+    },
+    "observed_clients": 3,
+    "tcp_connection_incarnations": 1910,
+    "reused_endpoint_tuples": 19,
+    "measurement_utc_seconds_exclusive_end": [
+      1794367789,
+      1794367847
+    ],
+    "passed": false,
+    "issues": [
+      "Nonzero or unknown kernel-reported packet drops",
+      "Some captured TCP/HTTP streams failed reconstruction",
+      "Captured complete HTTP exchanges disagree with request logs"
+    ],
+    "training_ready": false,
+    "image_ids": {
+      "httpd:2.4@sha256:ce3b1e5ab31c4b1b6aba298b935cb88bc6ca1d643446b69d396406db5550bf68": "sha256:ce3b1e5ab31c4b1b6aba298b935cb88bc6ca1d643446b69d396406db5550bf68",
+      "cnet-benign-tools:development": "sha256:be574d702c228173cfa3e2556f7dde052e096c62b1d7a603dc48302e11f28469"
+    },
+    "limitations": [
+      "Controlled synthetic benign development, not final stressed-traffic performance.",
+      "No-default-route/internal-bridge and endpoint checks are bounded scope evidence, not a general network-security proof.",
+      "No packet checksum validation; virtual capture hooks can expose checksum-offload artefacts.",
+      "Public/lab source and service confounding, controlled congestion and full split integration remain unresolved."
+    ]
+  },
+  "reason_for_new_batch": "High-concurrency capture lost 476 kernel-reported packets while writing per-packet data to a Windows bind mount. Replaced capture transport with Linux-side buffered writes and a post-flush copy.",
+  "workload_and_role_matrix_changed": false,
+  "pooled_into_v2": false,
+  "raw_evidence_retained": true,
+  "training_ready": false
+}

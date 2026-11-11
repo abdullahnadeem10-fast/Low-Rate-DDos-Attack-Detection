@@ -20,6 +20,14 @@ def run():
     addresses = {entry[4][0] for entry in socket.getaddrinfo('web', 80, socket.AF_INET)}
     if not addresses or any(not ipaddress.ip_address(a).is_private for a in addresses):
         raise ValueError('The fixed lab service must resolve only to private network addresses')
+    routes=Path('/proc/net/route').read_text().splitlines()
+    default_routes=[line for line in routes[1:] if line.split()[1]=='00000000']
+    if default_routes:
+        raise ValueError('The isolated client unexpectedly has an IPv4 default route')
+    own_addresses={entry[4][0] for entry in socket.getaddrinfo(socket.gethostname(),None,socket.AF_INET)}
+    network_evidence={'service_addresses':sorted(addresses),'client_addresses':sorted(own_addresses),
+        'ipv4_default_routes':len(default_routes)}
+    Path('/output/network.json').write_text(json.dumps(network_evidence,indent=2)+'\n')
     started = time.time(); deadline = time.monotonic() + duration + warmup
     boundary = time.monotonic() + warmup
     generator = random.Random(seed)
@@ -50,7 +58,7 @@ def run():
             stream.flush()
             time.sleep(generator.uniform(.25, .5) if active else 1.)
     Path('/output/client.json').write_text(json.dumps({'condition': condition, 'seed': seed,
-        'start_utc': started, 'end_utc': time.time(), 'duration': duration, 'warmup': warmup,
+        'start_utc': started, 'measurement_start_utc':started+warmup,'end_utc': time.time(), 'duration': duration, 'warmup': warmup,
         'scope': 'Benign development only; complete GETs, no slow/attack traffic.'}, indent=2) + '\n')
 
 

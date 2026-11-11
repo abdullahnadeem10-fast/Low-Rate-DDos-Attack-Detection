@@ -1,0 +1,146 @@
+{
+  "date": "2026-11-11",
+  "scope": "Engineering only; all PREFLIGHT captures are excluded from model partitions.",
+  "runs": [
+    {
+      "session": "benign-preflight-ordinary-0cb604f390bb",
+      "role": "PREFLIGHT",
+      "condition": "ordinary",
+      "seed": 901,
+      "clients": 3,
+      "scope": "Engineering preflight; exclude from model partitions.",
+      "capture_sha256": "9f4193fd89ab92aac39ca2785f009d4aff694620f1b1484c0316c2061b6f9f9d",
+      "capture_bytes": 1716970,
+      "counts": {
+        "frames": 1345,
+        "truncated_frames": 0,
+        "unknown_client_packets": 1345
+      },
+      "tcpdump": {
+        "captured": 1345,
+        "received_by_filter": 1345,
+        "dropped_by_kernel": 0
+      },
+      "max_frame_bytes": 7306,
+      "largest_timestamp_regression_seconds": 0.0,
+      "logged_http_requests": 96,
+      "complete_captured_http_exchanges": 96,
+      "stream_errors": {},
+      "observed_clients": 3,
+      "tcp_connection_incarnations": 96,
+      "reused_endpoint_tuples": 0,
+      "measurement_utc_seconds_exclusive_end": [
+        1794366710,
+        1794366713
+      ],
+      "passed": false,
+      "issues": [
+        "Client address identity evidence is incomplete",
+        "Missing web offload-policy evidence",
+        "Frames above the intended Ethernet MTU counting basis",
+        "Capture truncation/protocol/scope anomaly"
+      ],
+      "training_ready": false,
+      "image_ids": {
+        "httpd:2.4@sha256:ce3b1e5ab31c4b1b6aba298b935cb88bc6ca1d643446b69d396406db5550bf68": "sha256:ce3b1e5ab31c4b1b6aba298b935cb88bc6ca1d643446b69d396406db5550bf68",
+        "cnet-benign-tools:development": "sha256:9d2a429348855d7cc6009dda2c1ce61e22607157188fa2ae70a1061ab1a5f9c4"
+      },
+      "limitations": [
+        "Controlled synthetic benign development, not final stressed-traffic performance.",
+        "No-default-route/internal-bridge and endpoint checks are bounded scope evidence, not a general network-security proof.",
+        "No packet checksum validation; virtual capture hooks can expose checksum-offload artefacts.",
+        "Public/lab source and service confounding, controlled congestion and full split integration remain unresolved."
+      ]
+    },
+    {
+      "session": "benign-preflight-ordinary-d7f9c405287d",
+      "role": "PREFLIGHT",
+      "condition": "ordinary",
+      "seed": 902,
+      "clients": 3,
+      "scope": "Engineering preflight; exclude from model partitions.",
+      "capture_sha256": "66bddcf29dd7de1527fe3c437cc77eb3b1df341ddb4b944a98f2c51f581949ec",
+      "capture_bytes": 1877288,
+      "counts": {
+        "frames": 3096,
+        "truncated_frames": 0
+      },
+      "tcpdump": {
+        "captured": 3096,
+        "received_by_filter": 3096,
+        "dropped_by_kernel": 0
+      },
+      "max_frame_bytes": 1514,
+      "largest_timestamp_regression_seconds": 0.0,
+      "logged_http_requests": 97,
+      "complete_captured_http_exchanges": 97,
+      "stream_errors": {},
+      "observed_clients": 3,
+      "tcp_connection_incarnations": 97,
+      "reused_endpoint_tuples": 0,
+      "measurement_utc_seconds_exclusive_end": [
+        1794367012,
+        1794367016
+      ],
+      "passed": true,
+      "issues": [],
+      "training_ready": false,
+      "image_ids": {
+        "httpd:2.4@sha256:ce3b1e5ab31c4b1b6aba298b935cb88bc6ca1d643446b69d396406db5550bf68": "sha256:ce3b1e5ab31c4b1b6aba298b935cb88bc6ca1d643446b69d396406db5550bf68",
+        "cnet-benign-tools:development": "sha256:be574d702c228173cfa3e2556f7dde052e096c62b1d7a603dc48302e11f28469"
+      },
+      "limitations": [
+        "Controlled synthetic benign development, not final stressed-traffic performance.",
+        "No-default-route/internal-bridge and endpoint checks are bounded scope evidence, not a general network-security proof.",
+        "No packet checksum validation; virtual capture hooks can expose checksum-offload artefacts.",
+        "Public/lab source and service confounding, controlled congestion and full split integration remain unresolved."
+      ]
+    },
+    {
+      "session": "benign-preflight-flash-e6709e620bda",
+      "role": "PREFLIGHT",
+      "condition": "flash",
+      "seed": 903,
+      "clients": 3,
+      "scope": "Engineering preflight; exclude from model partitions.",
+      "capture_sha256": "c723b055c1a295233c1507ec9f663f6fcfea3cd600411ea590c3ce8fb2f918ee",
+      "capture_bytes": 19050756,
+      "counts": {
+        "frames": 31494,
+        "truncated_frames": 0
+      },
+      "tcpdump": {
+        "captured": 31494,
+        "received_by_filter": 31494,
+        "dropped_by_kernel": 0
+      },
+      "max_frame_bytes": 1514,
+      "largest_timestamp_regression_seconds": 0.0008819103240966797,
+      "logged_http_requests": 984,
+      "complete_captured_http_exchanges": 984,
+      "stream_errors": {},
+      "observed_clients": 3,
+      "tcp_connection_incarnations": 984,
+      "reused_endpoint_tuples": 0,
+      "measurement_utc_seconds_exclusive_end": [
+        1794368281,
+        1794368310
+      ],
+      "passed": true,
+      "issues": [],
+      "training_ready": false,
+      "image_ids": {
+        "httpd:2.4@sha256:ce3b1e5ab31c4b1b6aba298b935cb88bc6ca1d643446b69d396406db5550bf68": "sha256:ce3b1e5ab31c4b1b6aba298b935cb88bc6ca1d643446b69d396406db5550bf68",
+        "cnet-benign-tools:development": "sha256:78168ae6e29ac8739ef00b6d99939c9ea94a15a64bc77b8631dc0cebb9d27b60"
+      },
+      "limitations": [
+        "Controlled synthetic benign development, not final stressed-traffic performance.",
+        "No-default-route/internal-bridge and endpoint checks are bounded scope evidence, not a general network-security proof.",
+        "No packet checksum validation; virtual capture hooks can expose checksum-offload artefacts.",
+        "Public/lab source and service confounding, controlled congestion and full split integration remain unresolved."
+      ]
+    }
+  ],
+  "accepted_capture_implementation": "Linux-side buffered capture, post-flush host copy, web TSO/GSO/GRO disabled.",
+  "latest_preflight_passed": true
+}

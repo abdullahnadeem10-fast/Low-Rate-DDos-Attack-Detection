@@ -13,4 +13,16 @@ Hashes were obtained from the [Microsoft WSL release API](https://api.github.com
 
 Docker's verified installer is run in per-user mode with `install --user --quiet --accept-license --backend=wsl-2 --no-windows-containers`. See the [official Windows install instructions](https://docs.docker.com/desktop/setup/install/windows-install/) and [Microsoft WSL instructions](https://learn.microsoft.com/en-us/windows/wsl/install). Docker's WSL backend supplies its own Linux environment; a general-purpose Ubuntu distribution can be added later if needed.
 
-After any required restart, continue with `wsl --version`, `wsl --status`, then start Docker Desktop and verify `docker version` and `docker compose version`. Resolve first-run UI or firmware virtualization requirements if present. Do not claim the container lab is ready from a successful installer exit alone. Create and validate the isolated, non-published lab network with benign traffic before collecting sessions. All slow-attack lab traffic remains final-only until model freeze.
+Current checkpoint: the user approved the second UAC prompt. The WSL MSI completed with exit 0; both Windows features completed with exit 3010 (successful, restart required). `wsl --version` confirms WSL 3.0.5.0. The PC has **not** been restarted by the assistant. Docker's earlier real-user installation log identifies its blocker as the missing VirtualMachinePlatform feature. Finish the restart before retrying that per-user installer.
+
+After saving work and restarting Windows, from `phase 3/` run:
+
+```powershell
+powershell.exe -NoProfile -ExecutionPolicy Bypass -File '.\setup\install-docker.ps1'
+wsl --version
+wsl --status
+```
+
+`install-docker.ps1` rechecks the pinned hash/signature, performs the authorized per-user WSL-backed installation and records status under `data/setup/`. It does not claim engine readiness or start traffic. Under a coding harness, use its authorized unsandboxed execution route for installation; the harness's sandbox can redirect LocalAppData. In normal Windows PowerShell, per-user logs are under `%LOCALAPPDATA%\Docker\install-log.txt`.
+
+Then start Docker Desktop and verify `docker version` (both client and server) and `docker compose version`. Resolve first-run UI or actual runtime prerequisites if reported. Do not claim the lab is ready from an installer exit alone. Create and validate the isolated, non-published network/capture with benign traffic before collecting sessions. All slow-attack lab traffic remains final-only until model freeze.

@@ -6,9 +6,24 @@
     "installer_bytes": 367788032,
     "sha256": "2313efc5873e3f8552f42e77f950fabd913c0289078fa89d2100f3421a525eaa",
     "authenticode": "Valid Microsoft Corporation",
-    "installed": false,
-    "state": "administrator_launch_cancelled_by_windows",
-    "runtime_verified": false
+    "installed": true,
+    "state": "installed_restart_required",
+    "runtime_verified": false,
+    "msi_exit_code": 0,
+    "features": [
+      {
+        "exit_code": 3010,
+        "name": "VirtualMachinePlatform"
+      },
+      {
+        "exit_code": 3010,
+        "name": "Microsoft-Windows-Subsystem-Linux"
+      }
+    ],
+    "restart_required": true,
+    "version_command_exit_code": 0,
+    "version_command_first_line": "WSL version: 3.0.5.0",
+    "administrator_relaunch": "Explicitly requested and approved by the user on 11 November."
   },
   "docker": {
     "version": "4.98.0",
@@ -18,11 +33,12 @@
     "authenticode": "Valid Docker Inc",
     "installer_exit_code": 1,
     "installed": false,
-    "state": "first_per_user_attempt_failed_without_useful_stdout_stderr",
-    "engine_verified": false
+    "state": "awaiting_windows_restart_before_per_user_retry",
+    "engine_verified": false,
+    "first_attempt_diagnosis": "Official installer log: VirtualMachinePlatform feature was not enabled; per-user installer cannot enable administrator-only Windows features."
   },
   "automatic_restart": false,
-  "next_action": "Complete the authorized Windows administrator setup via ordinary UAC, then verify WSL and Docker engine before benign collection.",
+  "next_action": "User saves work and restarts Windows; then run setup/install-docker.ps1 and verify WSL/Docker Linux engine before benign collection.",
   "lab": {
     "configuration_prepared": true,
     "offline_scope_guards_passed": true,

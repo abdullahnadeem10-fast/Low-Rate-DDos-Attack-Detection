@@ -2,6 +2,8 @@
 
 Track completed work in [plan/CHECKLIST.md](plan/CHECKLIST.md) and resume from [plan/PROGRESS.md](plan/PROGRESS.md). Phase 2 defines the study protocol. Files under `results/pilot` are engineering evidence, not paper results.
 
+For a different harness or machine, read the maintained root [PROJECT_CONTEXT.md](../PROJECT_CONTEXT.md) first. It includes the full handoff, source hashes, commands and exact next action; [AGENTS.md](../AGENTS.md) is the compatible-harness entry point. A clone includes code and small evidence, while raw datasets and the local environment must be transferred separately or recreated.
+
 Development evidence is in `results/development/`: full Friday capture replay, clock/count audits, readiness checks and separate completed-flow baseline comparisons. The latter deliberately use finished-flow features and a development partition; they do **not** establish unseen-family recall or early/live detection performance.
 
 From this folder, with Python 3.12 and the pilot dependencies installed in `.venv`:

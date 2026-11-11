@@ -25,6 +25,13 @@
 
 The full Friday audit and replay are complete engineering milestones. Compatible benign packet coverage, packet-window group integration, benign-stress lab calibration, final freeze, withheld slow-family tests and external transfer remain unchecked until their own evidence exists. The fixture checks and auxiliary flow experiment do not replace them.
 
+## 2026-11-11: Consolidated portable handoff
+
+- Rechecked the local/public checkpoint and saved evidence. The 9 November engineering work was already committed and pushed through `eafb765`; there were no pending source changes at the start of this update.
+- Expanded the root `PROJECT_CONTEXT.md` with current status, source/file hashes, quarantine rules, code map, auxiliary result counts, reproduction commands, local-versus-clone layout, research protocol/history and an exact resume prompt. Added `AGENTS.md` to direct compatible harnesses to that file. The public context is sanitized of private coursework identifiers and machine-specific user paths.
+- Recorded a pending packet-model integration detail: the current AE preprocessing assumes nonnegative flow inputs, while causal `packet_rate_change` can be signed. Define a suitable training-fitted transform/policy before reusing it on packet windows.
+- This update changes documentation only. The last fixture suite remains 18 passing tests on 9 November; no new model training, final evaluation or lab sessions were performed. The next gate and untouched holdouts remain unchanged. Use Git history for the documentation commit and root context for future continuation.
+
 ## Next unchecked item
 
 Acquire and audit compatible benign target-service packet traffic from permitted benign captures or isolated benign-only sessions. Do not use the LDAP prefix, unknown Friday seconds or the reserved external source as a convenient negative/calibration class. Then declare session/block partitions and replay with fresh state, warm-up/purging and connection-overlap checks before packet-window model fitting. Follow [NEXT_STEPS.md](NEXT_STEPS.md); preserve all uncertainty/coverage counts and the untouched final sets.

@@ -1,11 +1,302 @@
-# Project handoff — 9 November 2026
+# CNET project history and handoff context
 
-Read `phase 3/plan/PROGRESS.md`, `phase 3/plan/CHECKLIST.md` and `phase 3/plan/NEXT_STEPS.md` for the current state. Phase 2 is a reviewed research proposal, not an experimental paper.
+Phase 3 began on 4 November 2026 and continued on 9 November. For the current experiment checklist, evidence and exact next action, start with `phase 3/plan/CHECKLIST.md` and `phase 3/plan/PROGRESS.md`. The full 8,839,309,056-byte Friday capture passed its pinned SHA-256, causal replay produced 18,894 one-second windows, and the clock/count audit and label-coverage checks are recorded in `phase 3/results/development/`. Separate auxiliary completed-flow models were run on known-family development data; fusion did not improve recall over HGB. No final attack tests or paper-grade results exist yet. The Phase 2 history below remains the protocol record.
 
-The full Friday capture is checksum-verified. Causal replay produced 18,894 one-second target-service windows. The full clock/count audit supports a +15-hour CSV-to-packet correction for this capture only. Label evidence is uncertain and lacks fully corroborated benign-only target-service seconds. Do not infer benign from unlabelled idle time. The continuous replay is not split-safe training data. Compatible benign service traffic, explicit partitions, resets/purging and group-overlap checks come next.
+The key 9 November finding is inadequate matched benign coverage: the Friday target `.50:80` has 1,076 attack-present seconds, 20 uncertain seconds and no fully corroborated benign-only seconds. Another 17,798 replay seconds are unlabelled; do not call them benign. The next action is compatible benign target-service acquisition/auditing, followed by split-safe replay with resets/purging and group-overlap checks. The 18 fixture tests pass, but `training_ready` remains false. See `phase 3/plan/NEXT_STEPS.md`. The slow-family holdout and entire external source remain unused; no lab attack sessions or final freeze have occurred.
 
-Eighteen engineering fixture tests pass. Auxiliary completed-flow development models ran on the allowed Friday CSV; score fusion did not improve recall over HGB. These finished-flow outcomes are not evidence about early/live detection, unseen slow attacks or distributed low-rate traffic. All slow-family holdout groups and the entire external CSE-CIC-IDS2018 source remain excluded from development. No final model freeze, live attack lab session or final research evaluation has occurred.
+On 5 November 2026 the user asked to publish completed work to GitHub. The verified initial commit is `7dd0559e41df54a3d1d865c25b12043176e44e7c` on `main` in `abdullahnadeem10-fast/Low-Rate-DDos-Attack-Detection`. The local Git checkout is `github-repo/` inside this workspace. The original folders remain the private working copies; the checkout contains the public Phase 2 proposal/source/diagrams/review and Phase 3 checklist/code/pilot outputs. The public report was rebuilt without student roll numbers. Raw datasets, virtual environments, prior report archives and build tools were excluded. For future pushes, copy only reviewed public changes into `github-repo/` and preserve its exclusions.
 
-Preserve detection/evaluation-only scope. Use benign training only for the anomaly branch and all its fitted transforms. Keep T, C1, C2 and V disjoint; fit score maps on C1 and calibrate the complete threshold/persistence rule on C2 overall and per benign ordinary/stress stratum. Freeze all settings before final tests. Do not use model seeds or correlated windows as independent traffic replications.
+On 9 November 2026 the reviewed Phase 3 source, plans, portable public context and small development evidence were pushed to `main`; remote verification returned `eafb7650981ea2cb1644c5737fe48f2030c94c5a`. The preceding implementation commit is `92e7d90`; the final commit preserves exact CSV evidence bytes so recorded checksums survive Git checkout. No raw captures/archives, environments or private coursework identifiers were included. The local full replay feature CSV remains under ignored `phase 3/data/development/`; its checksum and schema are recorded in the public readiness evidence. No background download/audit/replay process remains running at this checkpoint.
 
-Raw datasets, environments and private coursework identifiers are excluded from this public checkout. Reproduction commands and pinned sources/hashes are in the Phase 3 README and evidence. Update the checklist only when its own evidence exists; record failed tests, uncertain labels and negative findings.
+Last updated: 11 November 2026 (Asia/Karachi). The Phase 2 historical sections below describe the October proposal; their statements about no implementation refer to that stage. Current implementation status is in Phase 3. On 11 November, the user requested a fresh push and a complete portable handoff; documentation was consolidated without running new scientific experiments.
+
+This file records the work completed in this chat and the context needed to continue in another chat or agent environment. It is a handoff record, not evidence that the proposed research experiments have been performed.
+
+## Read first: continuation checkpoint
+
+This is the maintained project knowledge entry point. `AGENTS.md` directs compatible coding harnesses here. The local root copy includes historical private-workspace details; the Git checkout contains a sanitized full copy. Update both deliberately after substantive work. `phase 2/PROJECT_CONTEXT.md`, where present locally, is an October proposal snapshot and is not the current implementation handoff.
+
+The immediate next task is **acquire and audit compatible benign HTTP target-service packet traffic**, using permitted benign public capture material or isolated benign-only local sessions. The Friday target `192.168.10.50:80` has no fully corroborated benign-only seconds. Do not use unlabelled idle seconds, the short LDAP pilot or the reserved external source as its negative/calibration class. Audit service compatibility and possible environment/service confounding; a new address alone does not establish incompatibility, and matching an address alone does not establish comparability.
+
+Then implement declared T/C1/C2/V partitions before feature creation, reset feature/connection state per partition, warm up the 20-second history and audit canonical connection overlap. A 20-second gap cannot purge a continuing connection's age/state. `training_ready` must stay false until this gate has evidence. Full instructions are in `phase 3/plan/NEXT_STEPS.md`; checkboxes live in `phase 3/plan/CHECKLIST.md`, and the chronological log is `phase 3/plan/PROGRESS.md`.
+
+No background acquisition, audit or training process is running at this handoff. No final model has been frozen or serialized as a deployable detector. The full packet-window experiment, five-seed matched runs, withheld slow-family tests, ordinary/stress lab calibration, 40 planned distributed attack episodes, ablations, frozen external transfer and final research paper/results remain unfinished. Phase 2 remains the proposal; do not relabel it as an experimental paper.
+
+## Local workspace versus a fresh clone
+
+- Public repository: https://github.com/abdullahnadeem10-fast/Low-Rate-DDos-Attack-Detection ; branch `main`. Last verified experimental checkpoint: `eafb7650981ea2cb1644c5737fe48f2030c94c5a` on 9 November. The 11 November documentation commit is identifiable with `git log -1`; this file cannot contain its own eventual commit hash.
+- This machine's parent workspace has private `phase 2/`, `phase 3/` and this history. Its Git checkout is the nested `github-repo/`. Work in the parent folders, then copy reviewed public changes into that checkout before committing. In a fresh clone, work directly at the repository root; do not create another nested checkout.
+- The public checkout contains the reviewed Phase 2 LaTeX/PDF/diagram/source/review and Phase 3 source, plans and small evidence. Raw data, `.venv`, credentials, student roll numbers, scratch/build files and old report archives are not publication artifacts. Some older local aliases/source archives mentioned in the history are absent from a clone; `phase 2/CNET_Phase2_IEEE.pdf` and `.tex` are the portable proposal files.
+- Do not overwrite the public Phase 2 source/report with the private student-identifier version. Do not force-push or add raw captures. CSV evidence uses `.gitattributes` to preserve exact bytes for SHA-256 records.
+- Current evidence paths in the following sections are relative to the project/clone root unless explicitly stated otherwise. If raw inputs are absent on a new machine, reacquire them with the pinned source records and verify checksums rather than inventing substitute inputs. Local resumable chunks can save downloads but are not required Git content.
+
+## Data ledger and quarantine
+
+The allowlisted mirror is `bencorn/CICIDS2017` at immutable revision `811c007f08d693a8a8b4226c197c138391806ce6`. This is a public mirror, not an official publisher download; provenance is recorded explicitly. Use `https://huggingface.co/datasets/bencorn/CICIDS2017/resolve/811c007f08d693a8a8b4226c197c138391806ce6/` plus the suffix below. Publisher context is https://www.unb.ca/cic/datasets/ids-2017.html .
+
+| Local path under `phase 3/` | Pinned source / scope | Bytes / SHA-256 |
+| --- | --- | --- |
+| `data/development/Friday-WorkingHours.pcap` | `pcaps/Friday-WorkingHours.pcap?download=true`; full capture | 8,839,309,056; `beff0dcce1eebc9b2454582f4dc8ed0ba0112b2c619a710bf03af93147254cd0` |
+| `data/quarantine/CICIDS2017-GeneratedLabelledFlows.zip` | `csvs/GeneratedLabelledFlows.zip`; only the Friday DDoS member opened | 283,876,488; `7bdbef286f8893f31c6db12105fa097fa5c2dcc6733179037a08129d150ea27a` |
+| `data/pilot/monday-first-32MiB.partial` | `pcaps/Monday-WorkingHours.pcap`; inclusive byte range 0–33,554,431 only | 33,554,432; `138e288cf10a0f8934feccccbda9f9789c34bc771e6e65b0c7d021da157a1815` |
+| `data/development/friday_causal_windows.csv` | Generated engineering feature table; continuous, not split-safe | 18,894 rows; `aef18b026aa26c013b0171295078c7b888191959f440b0eb36fb1afa67cbe773` |
+
+The exact archive member is `TrafficLabelling /Friday-WorkingHours-Afternoon-DDos.pcap_ISCX.csv` (including the space before `/` and `DDos` spelling). It has 97,718 BENIGN and 128,027 DDoS rows. Other label members, particularly Wednesday slow-family data, remain unopened for development. Wednesday raw data and the entire CSE-CIC-IDS2018 source, including benign data, remain unfetched/unused. CIC-DDoS2019 is a proposed separate known/flooding benchmark, not a completed experiment.
+
+CSV starts have minute precision. The empirically corroborated **+54,000-second (+15-hour)** shift applies to this Friday join only; it does not establish exact flow starts/onsets or a general timezone correction. Two negative-duration benign rows cause complete quarantine of their two canonical connection keys, including two other valid rows. Canonical grouping combines both directions. Conflicting labels and count mismatches remain uncertain; no NAT substitution is inferred.
+
+## Implemented code and engineering evidence
+
+All following source names are under `phase 3/src/`.
+
+| Code | What it does / current limit |
+| --- | --- |
+| `packet_pilot.py`, `check_packet_pilot.py`, `audit_friday_labels.py` | Original bounded benign pilot, directional fixture and Friday CSV-only audit |
+| `download_friday.py` | Friday-only resumable 8 MiB ranges, 12 workers, final full-file checksum gate; importing it starts acquisition, so run it as a script and do not import it casually |
+| `friday_packet_audit.py` | Hash guards, label-key quarantine, benign-key clock votes, directional-count join and conservative per-second label evidence |
+| `bounded_friday_clock.py` | Historical tail-range clock corroboration; superseded for confirmation by the full audit; depends on retained local range parts |
+| `causal_features.py`, `replay_causal_features.py` | Thirty causal predictors, one-second event-time windows, one-second reorder budget, 30-second observed-connection expiry and 5/10/20-second histories; instantiate fresh state per session |
+| `benign_autoencoder.py` | CPU dense AE, benign-only preprocessing, external benign-V early stopping and benign ECDF score maps |
+| `train_flow_development.py` | Separate completed-flow auxiliary LR/RF/HGB/AE/fusion experiment; not the final packet-window detector |
+| `assess_packet_development.py` | Reconciles overlapping per-second packet totals, checks finite schema/contiguous seconds, records coverage and deliberately false training readiness |
+| `test_*.py` | Eighteen synthetic protocol/preprocessing/split/replay/label-consistency fixtures as last run on 9 November; these are not attack efficacy tests |
+
+Predictors describe packet/byte directions, TCP flags/handshake observations, inbound timing, length moments, source counts, connection counts/known and unknown ages, ratios, rate changes and rolling counts. They exclude IPs, ports, absolute time, labels and future CSV totals. Connection state is an observation-based approximation, not a server OS socket count. Captured frame lengths include link-layer bytes. A continuous replay must not silently carry state across future partition boundaries. Unknown/late-data policies must be fixed before final evaluation; never filter raw packets by label confidence before feature extraction.
+
+Preprocessing integration detail for the next implementer: the current AE's `clean()` treats negative values as missing before `log1p`, which is appropriate to its current nonnegative completed-flow inputs but not automatically to all packet predictors. `packet_rate_change` is legitimately signed. Define and fit an appropriate signed-feature transform/policy before reusing this AE on packet windows; do not silently erase negative rate changes. This is unfinished integration, not a claim that the current flow experiment used signed inputs.
+
+`phase 3/results/development/` contains `development_manifest.json`, `friday_packet_audit.json`, `friday_clock_audit.json`, `friday_label_exclusions.json`, `friday_causal_windows.json`, `friday_packet_readiness.json`, the two per-second join CSVs, Monday replay evidence, `completed_flow_development.json` and the validation summary/log. The manifest describes **one known-family development capture**, not the complete study/session manifest.
+
+Full Friday replay: 9,997,874 frames, 1,282,861 selected service TCP packets, 18,894 windows, 18,875 fully warmed windows, zero selected late drops and zero decode errors; 261.434 seconds of replay on the current PC, excluding startup/download. Clock pass found 7,094 adjacent timestamp regressions; its winning +15-hour shift had 22,768 benign-key votes versus at most 40 for another shift. All 1,096 overlapping labelled seconds reconciled exactly to feature packet totals. Count agreement corroborates labels; it is not independent packet ground truth.
+
+At the target service, the label envelope contains 488,376 corroborated attack packets, 1,160 corroborated benign packets and 791,066 uncorroborated packets. Window statuses: **1,076 attack-present; 20 uncertain; 17,798 unlabelled; zero fully corroborated benign-only**. There are 17,470 empty windows overall. The 20,055 conflicting BENIGN/DDoS canonical groups and other mismatches are retained in the audit. Do not convert these exclusions into inflated accuracy or exact delay claims.
+
+## Auxiliary results: development only
+
+The separate Friday completed-flow run uses 14 finished-flow predictors, one seed (7) and disjoint canonical connection groups. T has 27,691 rows (17,044 benign / 10,647 known DDoS), benign C1 1,712, benign C2 1,023, and V 44,741 (10,041 benign / 34,700 DDoS). It drops 12,515 cross-partition-key candidate rows and two negative durations. Printed-minute T intervals are [210,220) and [231,240), C1 [221,225), C2 [226,230), V [241,248); latest possible flow end must remain inside its block. These are development blocks from one known flooding episode, not independent final attack sessions.
+
+| Model | V TP / FN | V FP / TN |
+| --- | --- | --- |
+| Logistic Regression | 34,664 / 36 | 58 / 9,983 |
+| Random Forest | 34,685 / 15 | 13 / 10,028 |
+| HGB | 34,685 / 15 | 10 / 10,031 |
+| Benign AE | 21,808 / 12,892 | 17 / 10,024 |
+| HGB/AE score fusion | 34,685 / 15 | 11 / 10,030 |
+
+There is **no demonstrated fusion advantage**. Thresholds used the higher 99th percentile of benign C2 with strict `score > threshold`; the flow experiment does not implement one-second persistence or stress-stratum calibration. The AE reached its 100-epoch cap and selected epoch 100. Completed-flow features include future/end-of-flow information, negatives span services, and service/environment confounding remains possible. These outcomes do not establish unseen slow-family recall, live delay, distributed low-rate detection or final FPR. Full settings, metrics and limitations are in the saved JSON. Do not use them as paper headline results.
+
+## Environment and reproducible entry points
+
+The local offline environment is `phase 3/.venv/Scripts/python.exe`, Python 3.12.14 with CPU-only dependencies pinned in `phase 3/requirements-pilot.txt`: dpkt 1.9.8, NumPy 2.3.5, SciPy 1.18.1, scikit-learn 1.7.2, joblib 1.6.0, threadpoolctl 3.7.0 and cloudpickle 3.1.2. The local environment was built using available system packages; a fresh clone has no environment. On a new machine, create a Python 3.12 virtual environment and install the requirements, then run the fixtures before parsing large inputs. Do not assume this PC's bundled runtime path exists elsewhere.
+
+From `phase 3/` on Windows, use the following commands as needed, not as a request to repeat large downloads:
+
+```powershell
+python -m venv .venv
+& '.venv/Scripts/python.exe' -m pip install -r requirements-pilot.txt
+& '.venv/Scripts/python.exe' -m unittest discover -s src -p 'test_*.py' -v
+& '.venv/Scripts/python.exe' src/friday_packet_audit.py
+& '.venv/Scripts/python.exe' src/replay_causal_features.py --pcap data/development/Friday-WorkingHours.pcap --service 192.168.10.50:80 --out data/development/friday_causal_windows.csv
+& '.venv/Scripts/python.exe' src/assess_packet_development.py
+```
+
+Use `.venv/bin/python` on POSIX. `src/download_friday.py` is the explicit Friday acquisition entry point if that capture is absent; the label archive and Monday prefix must also be acquired with their pinned source/range records before their respective scripts run. The downloader retains ranges and intermediate files, so allow several tens of GB of working space. Do not delete/move raw/quarantine inputs merely to tidy a fresh continuation.
+
+The checked machine is an i7-8650U with four reported cores/logical processors and about 16 GB RAM; no GPU is needed for these offline models. Approximately 81 GiB was free after acquisition on 9 November, not a current guaranteed capacity. WSL/Docker were unavailable at the recorded checks; lab virtualization, service/client isolation and monitoring remain to be prepared. No system-wide installation or live attack generation has been completed. Only an isolated, authorized local lab is in scope.
+
+## Resume prompt for another harness
+
+> Read `AGENTS.md` and `PROJECT_CONTEXT.md`, then `phase 3/plan/PROGRESS.md`, `CHECKLIST.md`, `NEXT_STEPS.md` and `phase 3/results/development/friday_packet_readiness.json`. Preserve the untouched slow-family/external holdouts. Continue with compatible benign HTTP packet acquisition/auditing, then split-safe replay and calibration; do not present auxiliary flow results as final research. Maintain the context and checklist with evidence, and preserve the reviewed public/private file boundary.
+
+An arbitrary Markdown file is not automatically read by every harness. `AGENTS.md` helps tools that support that convention; otherwise explicitly provide the prompt above. A Git clone restores code, plans and small evidence, **not raw data or environments**. To resume without downloading again, separately transfer the approved local data files and verify their hashes.
+
+## Historical Phase 2 version: IEEE-format LaTeX paper
+
+The preferred report is the **nine-page LaTeX paper, finally reviewed and corrected on 17 October 2026**. The user explicitly requested a professional research-paper format found online and asked to use LaTeX. The official IEEE conference template was selected from the IEEE Author Center: https://conferences.ieeeauthorcenter.ieee.org/write-your-paper/authoring-tools-and-templates/ . Its standard `IEEEtran` conference class provides the two-column typography and section/citation styles. Page numbers are added for course review. The assignment specifies content and comparison-table fields but does not mandate a template; this is an editorial format choice, not a claim of IEEE publication.
+
+The paper has a title and student author blocks, abstract, index terms, seven numbered sections, full-width literature/gap tables, numbered equations, a native TikZ vector methodology diagram, eighteen numbered references and twelve methodology subsections. All four required deliverables and the detection-only proposal scope are retained. No project experiments had been performed as of that October proposal review.
+
+Current editable source: `phase 2/CNET_Phase2_IEEE.tex`. The compiled `phase 2/CNET_Phase2_IEEE.pdf` and submission alias `phase 2/CNET_Phase2_Report.pdf` are identical. `phase 2/CNET_Phase2_LaTeX.zip` contains the standalone source and instructions for Overleaf. There are no external image, bibliography or project-file dependencies. The earlier Word/PDF report is preserved under `phase 2/archive/academic_layout_2026-10-17/`; the original 19-page layout remains under `phase 2/archive/original_layout_2026-10-14/`.
+
+Current generator: `phase 2/source/build_ieee_paper.py`; content snapshot: `phase 2/source/report_content.json`; verification: `phase 2/source/verify_ieee_paper.py`; page renders and structural checks: `tmp/phase2/ieee_render/`. Regenerating replaces direct edits to the `.tex` file. Do not run the old Word generators to replace the current PDF.
+
+This handoff file is maintained at the project root. The earlier `phase 2/PROJECT_CONTEXT.md` is an archived October snapshot; use this root file for Phase 3 continuation.
+
+The final factual/methodological review is documented in `phase 2/FINAL_REVIEW.md`, including primary-source links, corrections and limits. Read it before relying on older summaries. The user asked to check that information is perfect; the review does not claim independent replication of published findings or guarantee grading. The remaining course interpretation is that SJR Q1–Q2 meets the unspecified ranking-system requirement; CMC is SJR Q2 but JCR Q3.
+
+## Workspace and project
+
+- Workspace: `<original private workspace>`
+- User-facing deliverables folder: `phase 2` inside the workspace.
+- Course: Computer Networks.
+- Project title: Machine Learning-Based Detection of Previously Unseen Low-Rate DDoS Attacks.
+- Students: M Abdullah Nadeem and Ayaan Faisal.
+
+If this project is copied to another machine, resolve the relative paths below against the new project root instead of relying on the original Windows paths.
+
+## User requests and completed history
+
+### 14 October 2026 — Prepare Phase 2
+
+The user said Phase 1 was complete and asked for careful completion of the assignment PDF in the project folder. Required deliverables were:
+
+1. Extended literature review.
+2. Refined research gap.
+3. Proposed research methodology.
+4. Research methodology diagram.
+
+The assistant read the assignment PDF and both supplied Word documents, researched additional papers and dataset documentation, and created a 19-page report in Word and PDF plus a standalone methodology diagram in PDF, PNG and SVG formats.
+
+### 17 October 2026 — Save in a separate folder
+
+The user requested another folder named exactly `phase 2` inside `Cnet_Proj`. The assistant created it and copied all five final deliverables from `output/phase2`. SHA-256 hashes were compared between each source and destination to verify the copies. The original files were preserved.
+
+### 17 October 2026 — Save context for future chats
+
+The user requested a Markdown history file so a new chat or harness can recover context. This file fulfills that request.
+
+### 17 October 2026 — Revise the report presentation
+
+The user said the report looked unprofessional. The assistant rechecked the assignment and created a 23-page formal academic Word report with a separate cover, abstract, contents page and numbered sections. Word updated the contents field and exported the PDF. All 23 pages were rendered and visually inspected; the final small wrapping correction changed only page 10, which was inspected again. Checks retained all twelve methodology subsections and references [1]-[18]. This version is now archived. The standalone diagram files were unchanged.
+
+### 17 October 2026 — Use an internet-sourced LaTeX research-paper format
+
+The user then requested an established research-paper format from the internet and explicitly asked for LaTeX. Official IEEE Author Center and IEEE's official Overleaf conference example were consulted. The content was rebuilt in `IEEEtran` conference mode with standard column dimensions, full-width booktabs comparison tables, native equations and a TikZ architecture diagram. Long methodological tables were converted to labeled prose to keep the two-column paper readable. Small punctuation, bibliography author-boundary and table-rule issues were corrected during QA; no experimental findings were added.
+
+The built-in compiler failed because it could not download its TeX bundle. A portable official Tectonic 0.17.0 Windows binary was downloaded to `tmp/latex-runtime/`; its ZIP SHA-256 was `f61ce51f0b0ade1015b7de7ef368541c5424e9756ecbd0d7af97d6d48030845f`. With approved network access it fetched the TeX packages and compiled the source. Later builds used its cache. Nothing was installed system-wide. The portable binary is a temporary local build aid, not a submission dependency.
+
+The final PDF has nine pages, all twelve steps, all eighteen references and 78 link annotations. No overfull boxes or unresolved references remain. TeX still reports ordinary underfull spacing notices; the compiler's Fontconfig notice did not prevent embedded TeX fonts from rendering. Every page was rendered and visually reviewed, including the final comparison tables, diagram and balanced reference columns. The old 23-page files were archived before replacing the main PDF. The source and final PDF were queued for opening in the app; successful compilation is established by the portable compiler and saved PDF, not by the editor-opening response.
+
+### 17 October 2026 — Final factual and methodological review
+
+At the user's request, the original brief and Phase 1 scope were reread, the eight new articles' identities and reported results were checked against accessible primary/author-linked evidence, and the final methodology was audited. `phase 2/FINAL_REVIEW.md` records the evidence and limits. The prior LaTeX files and content snapshot were archived under `phase 2/archive/before_final_review_2026-10-17/`.
+
+Corrections qualify F-OSFA's proposed resource-analysis component, remove unnecessary A2 shared-representation wording, explicitly exclude all slow-attack lab data from development, reserve all CSE-CIC-IDS2018 records for external testing, restrict AE fitted preprocessing to benign training data, and disable HGB internal random early-stopping splits. The complete rule's development FPR target applies overall and to ordinary/stress strata. The lab plan is now 40 attack episodes (2 mechanisms × 2 source counts × 2 concurrency/timing profiles × 5 independent repeats), plus at least 5 final sessions per benign condition. Pre-onset alarms do not count as immediate detections. AP, session-stratified bootstrap and seed averaging are specified. These are proposed protocols, not experimental outcomes.
+
+The final paper remains nine pages with twelve steps, eighteen unique resolved bibliography entries and 78 link annotations. Every page was visually checked. The generator now rejects duplicate/missing bibliography identifiers and unresolved citation keys; the PDF verifier also rejects `[?]`. Natural bibliography flow replaces the earlier manual `IEEEtriggeratref{6}` balancing point. Both PDF aliases, the ZIP, README and context copies are synchronized. The older Word reports are historical and do not contain these final refinements.
+
+## Original inputs and their authority
+
+- `Phase 02 - Extended Literature - Research Methdology.pdf`: the three-page Phase 2 assignment brief. Preserve the filename's original spelling.
+- `CNET_Phase1_Literature_Review.docx`: the completed Phase 1 report. This is the authoritative source for the accepted project scope.
+- `cnet-research.docx`: earlier brainstorming notes. These contain an older direction involving mitigation and are superseded on scope by the completed Phase 1 report.
+
+The Phase 2 brief requires **8–10 additional original research papers from 2025–2026**, eligible Q1–Q2 journal/conference/book-chapter venues, a comparison table, at least three potential gaps, a justified methodology and a diagram. Its example tables still refer to three studies, but the extended-selection requirement explicitly asks for 8–10 additions; the report uses eight additions.
+
+The methodology must cover all 12 steps: research input, collection, preprocessing, feature engineering, proposed method, baselines, experimental design, metrics, statistical comparison, ablation, failure analysis and final output.
+
+## Final deliverables
+
+The following are the copies requested by the user:
+
+| Relative path | Purpose |
+| --- | --- |
+| `phase 2/CNET_Phase2_Report.pdf` | Preferred nine-page compiled LaTeX submission paper |
+| `phase 2/CNET_Phase2_IEEE.pdf` | Identical PDF under the source basename |
+| `phase 2/CNET_Phase2_IEEE.tex` | Editable standalone LaTeX source |
+| `phase 2/CNET_Phase2_LaTeX.zip` | LaTeX source and README for Overleaf |
+| `phase 2/README.md` | Submission-file guide, template provenance and build instructions |
+| `phase 2/FINAL_REVIEW.md` | Final compliance/source audit, corrections and remaining qualifications |
+| `phase 2/PROJECT_CONTEXT.md` | Portable copy of this handoff file |
+| `phase 2/archive/academic_layout_2026-10-17/CNET_Phase2_Report.docx` | Earlier editable Word report, superseded by LaTeX |
+| `phase 2/CNET_Phase2_Methodology_Diagram.pdf` | Standalone vector diagram |
+| `phase 2/CNET_Phase2_Methodology_Diagram.png` | High-resolution diagram for insertion |
+| `phase 2/CNET_Phase2_Methodology_Diagram.svg` | Editable vector diagram |
+
+The PDF alias under `output/phase2/` is synchronized to the LaTeX PDF. The Word file there is historical. Future edits should keep the user-facing `phase 2` PDF aliases current and avoid unexplained conflicting versions.
+
+## Key scope decisions
+
+- Preserve **detection and evaluation only**. Automatic blocking, rate limiting, traffic redirection and mitigation-effectiveness experiments are outside the accepted implementation scope.
+- The original three Phase 1 papers are retained as the foundation; they do not count toward the eight additional Phase 2 papers.
+- Previously unseen or experimental zero-day means an attack family excluded from training, validation, early stopping, calibration and augmentation. It does not mean a new software vulnerability unknown to the security community.
+- Slow application-layer DoS and distributed low-rate DDoS are distinct. Public Slowloris/Slowhttptest results alone do not prove distributed low-rate DDoS detection. The proposed isolated multi-client lab provides the additional distributed evidence.
+- Do not describe completed-flow CSV classification as proof of early/live detection latency.
+- At the October Phase 2 stage, no dataset collection, model implementation, training, attack experiment or measured research result had been completed. The report is a literature review and **proposed** methodology. Literature performance numbers are author-reported, not project results. The November engineering/development work is recorded separately above.
+
+## Literature review and refined gap
+
+The report adds these eight articles, numbered A1–A8 and references [4]–[11]:
+
+| ID | Study | DOI |
+| --- | --- | --- |
+| A1 | Minhas et al., F-OSFA, IEEE Access, 2025 | `10.1109/ACCESS.2025.3557822` |
+| A2 | Ullah et al., Hybrid dual-head IDS, Results in Engineering, 2026 | `10.1016/j.rineng.2026.111498` |
+| A3 | Han et al., Adapting Convolutional Autoencoder for DDoS Attack Detection via Joint Reconstruction Learning and Refined Anomaly Scoring, CMC, 2025 | `10.32604/cmc.2025.067211` |
+| A4 | Nawaz et al., Lightweight machine learning framework for efficient DDoS attack detection in IoT networks, Scientific Reports, 2025 | `10.1038/s41598-025-10092-0` |
+| A5 | Anandhi and Srikanth, Federated sparse-learning framework for detecting low-rate stealth attacks in resource-constrained IoT devices, Scientific Reports, 2026 | `10.1038/s41598-026-46531-9` |
+| A6 | Raza et al., Liquid neural networks for adaptive DDoS detection in IoT and SDN environments, Scientific Reports, 2026 | `10.1038/s41598-026-67535-5` |
+| A7 | Ebrahem et al., A lightweight machine learning approach for DDoS detection and classification, Scientific Reports, 2026 | `10.1038/s41598-026-48535-x` |
+| A8 | Kalafy et al., Dynamic graph neural network-based framework to increase detection accuracy in SDN under DDOS, Scientific Reports, 2026 | `10.1038/s41598-025-32102-x` |
+
+A8 was first online on 29 December 2025, with the publisher's volume citation/version of record in 2026. Both are within the assignment period.
+
+The retained Phase 1 references are Bocu and Iavich (`10.1016/j.jnca.2026.104441`), Rullo et al. (`10.1016/j.asoc.2026.115796`) and Nakıp (`10.1016/j.knosys.2026.115995`).
+
+Important correction to the earlier gap: A2 already explicitly provides a strict zero-day holdout and hybrid detection. Do not claim this project invents either or that no recent work evaluates unseen attacks. The refined gap concerns **unseen slow-family recall, a fixed low false-positive operating point, stressed legitimate traffic, temporal delay and frozen environment transfer together**.
+
+Four gap themes are documented: joint novelty and benign stress; temporal evidence versus delay; provenance and transfer; and complexity versus measured value.
+
+Venue eligibility uses **SCImago SJR**, explicitly distinguished from JCR. The report documents the audited 2024 ranking edition and supporting 2025 institutional records where checked. CMC is SJR Q2 but JCR Q3; do not silently call it JCR Q2. Rankings are historical evidence recorded in the report, not a guarantee of their latest status. Some publisher pages were inaccessible; accessible publisher records and author manuscripts/repositories supported the review. Recheck full texts and venue records if deeper source verification is requested.
+
+## Proposed methodology to preserve
+
+- Inputs: timestamped PCAP-derived, causal one-second destination-service windows, with rolling temporal context. Metadata identifiers support grouping and labels, not prediction.
+- Sources: CIC-IDS2017 for the primary public study; CSE-CIC-IDS2018 for external testing; CIC-DDoS2019 as a separate flooding/known-family benchmark; isolated local sessions for benign stress and multi-source slow traffic.
+- Final-review clarification: reserve the entire external CSE-CIC-IDS2018 source, including benign data, from development. Lab development/pilots are benign only; all slow-attack lab runs are final-only. A lab environment already used for benign calibration is not an unseen transfer environment.
+- Primary novelty test: quarantine the **entire Slowloris/Slowhttptest group** from every development stage. Secondary Hulk/GoldenEye exclusions test broader novelty, not extra slow-family diversity.
+- Split before window creation or fitted transformations. Keep captures/sessions or purged contiguous blocks separate; prevent duplicated observations and future-flow features from leaking across splits. Proposed eligible-group allocations are 50% T, 15% V, 10% benign C1, 10% benign C2 and 15% final K, subordinate to holdout and benign-only eligibility. These are planning proportions, not allocated packet-window groups. For contiguous blocks purge at least maximum history plus tracker timeout and separately handle continuing/crossing connections.
+- Proposed supervised branch: HistGradientBoosting with inverse-frequency sample weights on benign and permitted known attacks.
+- Disable HGB internal random early stopping; tune iteration count on grouped V. AE initial Adam learning rate is 0.001, batch size 256, maximum 100 epochs and patience 10 on benign V. All AE fitted transforms, including imputation, use benign training only.
+- Proposed anomaly branch: benign-trained dense autoencoder, initially `d-32-16-8-16-32-d`, with reconstruction error as its score.
+- Use disjoint benign C1 data to build empirical score-percentile maps. Combine branches by the maximum mapped score. Calibrate the **whole** threshold-plus-persistence rule on separate benign C2 data to empirical development FPR at most 1%, overall and in ordinary/stress strata.
+- Do not independently allocate each branch 1% FPR and assume their OR also has 1% FPR. Final test FPR can exceed the development target and must be reported honestly.
+- Candidate persistence rules: 1-of-1, 2-of-3 and 3-of-5. Select using development data and freeze features, transformations, weights, mappings and decision settings before final tests.
+- Baselines: rate threshold, Logistic Regression, Random Forest, supervised branch alone, AE alone and benign-trained Isolation Forest. Use matched splits and calibration procedures.
+- Main outcomes: per-family unseen recall, ordinary/stress FPR, episode recall, onset-to-alert delay, alert burden and computational cost; supplement with accuracy, precision, F1 and ranking curves.
+- Count newly starting eligible alerts within 180 seconds of onset and before episode end; do not credit a pre-existing alarm as immediate detection. Define alert episodes after five preceding non-alert windows, show misses/censoring and undefined metrics as N/A. Use AP for the precision–recall summary.
+- Lab target: two mechanisms (incomplete-header and slow-request-body connection holding), one/three clients, profiles of 10 connections/20-second spacing or 60 connections/5-second spacing per client, with five independent session repeats each: 40 planned attack episodes. Benign conditions are ordinary requests, bursts, flash-crowd-like concurrency and controlled congestion, with at least five independent final sessions per condition (at least 20 total), separate from benign development/calibration sessions. Reset service/client state and vary background seeds; actual rates and denial-of-service impact remain to be measured.
+- Proposed model-comparison budget: at most 12 prespecified configurations per learned method, chosen on development data only; stochastic seeds 7, 19, 42, 73 and 101, with one run for deterministic methods. Only the auxiliary seed-7 run is complete. Proposed statistical work includes paired session/block bootstrap intervals, effect sizes and appropriately qualified paired tests. Seeds and correlated windows are not independent traffic replications.
+- Average seeds within each session before paired cluster resampling; stratify by family/benign condition and recompute pooled confusion-count metrics. Use 2,000 resamples and 95% intervals.
+- Ablations: remove either branch, temporal history, persistence, timing/connection features or class weights; recalibrate variants to the same development FPR target.
+- Frozen external transfer is separate from optional target-benign recalibration. Never use final-test outcomes to tune the headline model.
+- The final scientific result may be negative. Preserve missed episodes, false positives, uncertain labels and failed attack attempts rather than hiding them with aggregate accuracy.
+
+## Generation and verification details
+
+The following first three items are the current LaTeX workflow. Word-related details below document previous layouts and should not be treated as current build instructions.
+
+- `phase 2/source/build_ieee_paper.py`: current standalone LaTeX generator.
+- `phase 2/source/verify_ieee_paper.py`: current structural checks and page renderer.
+- `phase 2/README.md`: current build/edit instructions. Use pdfLaTeX twice, XeLaTeX twice, or Tectonic; IEEEtran and TikZ are standard TeX packages. The distributed source includes all bibliography entries and the diagram inline.
+- `phase 2/source/format_phase2_report.py`: previous 23-page Word formatter.
+- `phase 2/source/report_content.json`: portable content snapshot shared by the formatters.
+- `phase 2/source/verify_academic_report.py`: previous Word-report renderer.
+- `build_phase2.py`: original report/diagram source using `python-docx`, ReportLab and `pypdfium2`; generates the superseded 19-page report layout.
+- `tmp/phase2/report_structure.json`: structured report content generated by the builder.
+- `tmp/phase2/verify_report.py`: structural checks and page rendering.
+- `tmp/phase2/render/page-1.png` through `page-19.png`: internal visual QA images; `overview.png` is a contact sheet.
+- The original builder writes to **`output/phase2`**; the current formatter writes to **`phase 2`**. After verification, synchronize the report copies deliberately.
+- The builder does not itself export the full Word report to PDF. The report PDF was exported with installed Microsoft Word through a hidden COM instance.
+- The document skill's `render_docx.py` was attempted but could not find LibreOffice. Word export followed by `pypdfium2` rendering provided visual verification instead. Word automation required an escalated command in this environment.
+- Every final report page was visually inspected. A final reference-link repair changed only page 19; rendered PNG hashes confirmed pages 1–18 were unchanged, and page 19 was inspected again.
+- Final checks confirmed 19 pages, all 12 methodology steps, references [1]–[18], 18 Word hyperlinks and 18 PDF link annotations. No tool citation tokens or placeholder markers remained.
+- A default blue border under the Word title was removed. Headings are black Arial; body text is Times New Roman; comparison tables use landscape pages.
+
+Bundled Python used during creation:
+
+`Python 3.12 runtime (discover the local executable)`
+
+If continuing on another machine or runtime, rediscover dependencies and available document tools rather than assuming that path exists. Read applicable skills and repository instructions before editing.
+
+## Suggested continuation
+
+The requested Phase 2 content, LaTeX paper, source package and handoff documentation are complete.
+
+For revisions, read the current LaTeX paper, final review and this history first. Preserve the accepted scope, edit the standalone source or regenerate deliberately, compile, render and visually inspect the pages. The current bibliography uses natural column flow; recheck it after length changes. Synchronize the PDF aliases, source ZIP and context copies. Word export is not part of the current workflow.
+
+The November implementation has completed the initial audit/replay engineering gate. Continue from the current benign-coverage and split-safety checkpoint above, not from the start of the October proposal. Refine proposed settings using permitted development data while preserving genuinely untouched final sets.
+
+## How to use this context in a new chat
+
+Ask the new assistant to read `PROJECT_CONTEXT.md`, `phase 2/README.md` and `phase 2/CNET_Phase2_IEEE.tex` before continuing. An arbitrary Markdown file is not guaranteed to be loaded automatically by every harness. If moving the work elsewhere, include the original assignment, authoritative Phase 1 report, final Phase 2 deliverables, this file and `phase 2/source/` for regeneration. Include the original `build_phase2.py` only if the original diagram or layout generator is also needed.

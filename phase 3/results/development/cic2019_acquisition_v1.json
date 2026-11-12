@@ -1,0 +1,29 @@
+{
+  "date": "2026-11-12",
+  "scope": "Allowlisted 03-11 acquisition only; no 01-12/final/slow/external payload opened.",
+  "plan_sha256": "d624f9888b6b7459640ea6ad3680aa5f141c679e48ab32bdf3aaaeba0620c392",
+  "revision": "88b5d61acbcd41a4bb96221a6a64990a506804b8",
+  "archives": [
+    {
+      "id": "pcaps-03-11",
+      "path": "pcaps/03-11/PCAP-03-11.zip",
+      "bytes": 2000948331,
+      "sha256": "cdc8935296cab7a2354d4fd32939f7d5e6c592371e5fb89d6a3094cc05dc38c5",
+      "local": "data/development/cic2019_v/PCAP-03-11.zip",
+      "verified": true,
+      "cached": false
+    },
+    {
+      "id": "labels-03-11",
+      "path": "csvs/CSV-03-11.zip",
+      "bytes": 918815761,
+      "sha256": "a81d8ce59a819d13e6bfea4e4812d6d144d0572b6d2c42d8e0c0a8cf1c26c263",
+      "local": "data/development/cic2019_v/CSV-03-11.zip",
+      "verified": true,
+      "cached": false
+    }
+  ],
+  "source_sha256": "574254596e7977df14ef8d237e692dacb8f00d435c764b59719bc43a3bc9903c",
+  "elapsed_seconds": 940.56,
+  "study_training_ready": false
+}

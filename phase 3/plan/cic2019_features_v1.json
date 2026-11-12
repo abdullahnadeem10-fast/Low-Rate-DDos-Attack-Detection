@@ -1,0 +1,41 @@
+{
+  "date": "2026-11-12",
+  "version": "cic2019_features_v1",
+  "role": "V",
+  "group_id": "cic2019-03-11-syn-tcp443-v",
+  "parent_source_group": "entire provided CIC-DDoS2019 03-11 source",
+  "scope": "Preliminary independently recorded known-SYN validation component; no final research scoring.",
+  "evidence_sha256": {
+    "plan/cic2019_validation_v1.json": "d624f9888b6b7459640ea6ad3680aa5f141c679e48ab32bdf3aaaeba0620c392",
+    "results/development/cic2019_corroboration_v1.json": "05b2ad60035327458e62dbced611f657720d6edbe0df2a0d5899d8c67bb383ee",
+    "results/development/cic2019_packet_inventory_v1.json": "2c4da13f6b31949485c601fc4daf407eee1e42daa11473bb7f5f9e0d062a6043",
+    "results/development/cic2019_label_inventory_v1.json": "1a9c9aa0d33310f40060e7d1d95cfa4c66d7e9339c18c7758dbe8ef7c6a8cdff",
+    "results/development/study_development_manifest_v3.json": "9951795d8148492b945e8dc12d72e3dea3511c7c934c20b86584eef87a42eed0"
+  },
+  "source_sha256": {
+    "replay_cic2019_validation.py": "0fe6f1b993b3cdcf54d62193d3334ad8ad61855b5d9129cbd68dffdc533e5a3e",
+    "causal_features.py": "24795f084da55ab93bb858e14bd35663fd85c86b994ed928cb5d80e481c5e708"
+  },
+  "service": "192.168.50.4:443",
+  "service_index": 3,
+  "raw_start": 1541247497,
+  "raw_end": 1541277416,
+  "eligible_start": 1541247547,
+  "eligible_end": 1541277366,
+  "chronology_proof": {
+    "all_members_monotonic": true,
+    "natural_rotation_order_is_chronological": true,
+    "rotation_overlaps": 0,
+    "max_rotation_gap_seconds": 0.00045108795166015625,
+    "one_second_reorder_budget_cannot_drop_selected_packets_in_this_monotonic_source": true
+  },
+  "reorder_seconds": 1,
+  "history_seconds": 20,
+  "timeout_seconds": 30,
+  "cache_policy": "Entire raw selected-service stream from hash-pinned metadata, no packet filtering by labels. Monotonic complete-source proof makes closed-window values equal the one-second bounded raw replay; this is not a measured live-latency result.",
+  "observation_policy": "146 chronological contiguous rotations are one recorded source, not 146 independent sessions. Fresh core for the complete observed V stream; unknown initial connection ages remain observed unknowns.",
+  "label_policy": "Unchanged +3-hour count/interval corroboration after features; y=1 only on attack_present seconds. Idle/uncertain/unlabelled context remains unknown.",
+  "reserved_final_candidate": "Entire 01-12 source including all raw/context/labels; metadata listing only, no payload acquisition, opening or scoring before freeze.",
+  "final_K_candidate_qualified": false,
+  "study_training_ready": false
+}

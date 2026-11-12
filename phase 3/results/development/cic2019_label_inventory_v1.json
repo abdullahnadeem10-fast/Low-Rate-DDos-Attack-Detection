@@ -1,0 +1,124 @@
+{
+  "date": "2026-11-12",
+  "scope": "Allowed Syn.csv source/endpoint inventory; no features/models or final payloads.",
+  "plan_sha256": "d624f9888b6b7459640ea6ad3680aa5f141c679e48ab32bdf3aaaeba0620c392",
+  "archive_sha256": "a81d8ce59a819d13e6bfea4e4812d6d144d0572b6d2c42d8e0c0a8cf1c26c263",
+  "member": "03-11/Syn.csv",
+  "member_bytes": 1877372065,
+  "member_sha256": "603648e7c56e9232b6d647470dc01b6451502c594a4ebf235b45103edb5e545a",
+  "independent_mirror_bytes_match": true,
+  "counts": {
+    "rows": 4320541
+  },
+  "label_counts": {
+    "Syn": 4284751,
+    "BENIGN": 35790
+  },
+  "protocol_counts": {
+    "6": 4303967,
+    "17": 15758,
+    "0": 816
+  },
+  "top_destination_ports": [
+    [
+      "443",
+      13177
+    ],
+    [
+      "53",
+      10333
+    ],
+    [
+      "80",
+      3879
+    ],
+    [
+      "22",
+      1900
+    ],
+    [
+      "0",
+      816
+    ],
+    [
+      "465",
+      262
+    ],
+    [
+      "67",
+      215
+    ],
+    [
+      "5355",
+      187
+    ],
+    [
+      "11468",
+      178
+    ],
+    [
+      "12520",
+      171
+    ],
+    [
+      "62610",
+      166
+    ],
+    [
+      "21368",
+      166
+    ],
+    [
+      "44455",
+      162
+    ],
+    [
+      "39447",
+      160
+    ],
+    [
+      "20684",
+      160
+    ],
+    [
+      "5109",
+      157
+    ],
+    [
+      "43667",
+      157
+    ],
+    [
+      "59832",
+      155
+    ],
+    [
+      "3063",
+      154
+    ],
+    [
+      "26811",
+      153
+    ]
+  ],
+  "candidate_services": {
+    "192.168.50.1:80": {},
+    "192.168.50.1:443": {},
+    "192.168.50.4:80": {
+      "Syn": 30
+    },
+    "192.168.50.4:443": {
+      "Syn": 70
+    }
+  },
+  "candidate_canonical_keys": 64,
+  "quarantined_candidate_keys": 0,
+  "printed_timestamp_min_as_utc_surrogate": "2018-11-03T11:30:25.830707+00:00",
+  "printed_timestamp_max_as_utc_surrogate": "2018-11-03T17:36:41.528982+00:00",
+  "private_group_table": "data/development/cic2019_v/syn_candidate_groups.json",
+  "private_group_sha256": "bb8972692c3665b5b04e6098438fad42ccc6ecb3a219af4f2e65018844bb955b",
+  "source_sha256": "3b6e78776056a796d8744991456cb38f7de74d63d2861dc84d2c39f993b2361e",
+  "elapsed_seconds": 173.035,
+  "independent_attack_V_accepted": false,
+  "study_training_ready": false
+}

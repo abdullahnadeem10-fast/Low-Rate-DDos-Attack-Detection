@@ -1,0 +1,66 @@
+{
+  "date": "2026-11-12",
+  "scope": "Preliminary independent SYN-labelled TCP/443 V engineering component; not detector performance.",
+  "current_registry": "results/development/study_development_manifest_v4.json",
+  "groups": 20,
+  "candidate_labelled_rows": 4046,
+  "combined_rows_by_role_and_y": {
+    "T": {
+      "0": 1504,
+      "1": 1076
+    },
+    "C1": {
+      "0": 669,
+      "1": 0
+    },
+    "C2": {
+      "0": 422,
+      "1": 0
+    },
+    "V": {
+      "0": 331,
+      "1": 44
+    }
+  },
+  "candidate_benign_rows": 2926,
+  "attack_present_T_rows": 1076,
+  "preliminary_attack_present_V_rows": 44,
+  "independent_attack_training_recordings": 1,
+  "independent_attack_validation_recordings": 1,
+  "new_V_labelled_runs": 40,
+  "new_V_longest_labelled_run_seconds": 2,
+  "cic2019_frames_inventoried": 61407884,
+  "cic2019_raw_rotations": 146,
+  "cic2019_label_rows": 4320541,
+  "cic2019_clock_offset_seconds": 10800,
+  "clock_exact_nonempty_groups": 55,
+  "other_offset_exact_groups": 0,
+  "cic2019_selected_raw_tcp_packets": 278,
+  "cic2019_corroborated_attack_packets": 132,
+  "cic2019_full_raw_feature_windows": 29919,
+  "no_TLS_prefix_observed_at_selected_endpoint": true,
+  "no_corroborated_benign_target_seconds_from_allowed_member": true,
+  "known_final_candidate_reserved": "Entire CIC-DDoS2019 01-12 source/context/labels; no payload opened.",
+  "final_K_candidate_qualified": false,
+  "reserved_slow_family_and_entire_external_source_unused": true,
+  "offline_fixture_tests_passed": 81,
+  "study_training_ready": false,
+  "main_packet_window_model_trained": false,
+  "final_attack_tests_run": 0,
+  "next_action": "Declare and collect a broader benign congestion/diversity/repetition matrix with suitable failure-retaining audits; review sparse V representativeness/source controls and gap-aware calibration before fitting/freeze.",
+  "remaining_limits": [
+    "Sparse TCP/443 slice is not verified HTTPS functionality or denial impact.",
+    "No within-source benign target labels; class/service/path/source confounding remains.",
+    "Benign congestion/long-lived legitimate diversity and independent repetitions incomplete.",
+    "Sparse C2 persistence calibration and known-V representativeness require review."
+  ],
+  "evidence_sha256": {
+    "cic2019_acquisition_v1.json": "4831d06d71919023ce24d0d430e8b5a2ddb4cd1d539f923f8d49ca5b7ea4b251",
+    "cic2019_label_inventory_v1.json": "1a9c9aa0d33310f40060e7d1d95cfa4c66d7e9339c18c7758dbe8ef7c6a8cdff",
+    "cic2019_packet_inventory_v1.json": "2c4da13f6b31949485c601fc4daf407eee1e42daa11473bb7f5f9e0d062a6043",
+    "cic2019_corroboration_v1.json": "05b2ad60035327458e62dbced611f657720d6edbe0df2a0d5899d8c67bb383ee",
+    "cic2019_causal_v1.json": "a37b92b99077ce63b061c1300fad5ea057b683e9a89c426a2f60ae9ec6138fff",
+    "study_development_manifest_v4.json": "b4a17e4b0e6445f6d76cb4a15b3550d5b25f3aea811ca8ad40e4fc9b47e0c0c1",
+    "validation_summary_cic2019_2026-11-12.json": "6fc74fae788f179fdb1c37501c5ebb59312de81c4e7554b4689856eca37cf583"
+  }
+}

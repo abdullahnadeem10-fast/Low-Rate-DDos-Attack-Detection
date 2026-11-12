@@ -1,0 +1,1737 @@
+{
+  "date": "2026-11-12",
+  "scope": "Raw development source/endpoint inventory; no labels/features/model scoring.",
+  "plan_sha256": "d624f9888b6b7459640ea6ad3680aa5f141c679e48ab32bdf3aaaeba0620c392",
+  "archive_sha256": "cdc8935296cab7a2354d4fd32939f7d5e6c592371e5fb89d6a3094cc05dc38c5",
+  "counts": {
+    "frames": 61407884,
+    "fast_skipped_non_tcp_ipv4": 43105122,
+    "fast_skipped_other_tcp_address": 913920,
+    "fast_skipped_other_tcp_port": 17354665,
+    "candidate_metadata_rows": 518
+  },
+  "candidate_services": {
+    "192.168.50.1:80": {},
+    "192.168.50.1:443": {},
+    "192.168.50.4:80": {
+      "packets": 240,
+      "inbound": 138,
+      "initial_syn": 24,
+      "outbound": 102,
+      "request_prefix": 24,
+      "response_prefix": 24
+    },
+    "192.168.50.4:443": {
+      "packets": 278,
+      "inbound": 206,
+      "initial_syn": 204,
+      "outbound": 72
+    }
+  },
+  "top_tcp_destination_ports_at_candidate_server_ips": [
+    [
+      "22",
+      30890
+    ],
+    [
+      "51554",
+      511
+    ],
+    [
+      "51572",
+      474
+    ],
+    [
+      "51590",
+      470
+    ],
+    [
+      "51524",
+      465
+    ],
+    [
+      "445",
+      458
+    ],
+    [
+      "51598",
+      451
+    ],
+    [
+      "35628",
+      446
+    ],
+    [
+      "51578",
+      442
+    ],
+    [
+      "51544",
+      441
+    ],
+    [
+      "39447",
+      438
+    ],
+    [
+      "11468",
+      438
+    ],
+    [
+      "12520",
+      432
+    ],
+    [
+      "51560",
+      428
+    ],
+    [
+      "51614",
+      428
+    ],
+    [
+      "21368",
+      426
+    ],
+    [
+      "59832",
+      414
+    ],
+    [
+      "51670",
+      413
+    ],
+    [
+      "23",
+      410
+    ],
+    [
+      "39631",
+      408
+    ]
+  ],
+  "members": [
+    {
+      "name": "SAT-03-11-2018_0",
+      "bytes": 200000241,
+      "crc32": "83a9c120",
+      "sha256": "f3b411a9ed87a9761d9eef8d44eec92e8e0e6141b45c0630aaa706b1b4a11cd8",
+      "link_type": 1,
+      "frames": 511063,
+      "first_utc_timestamp": 1541247496.583626,
+      "last_utc_timestamp": 1541250108.920573,
+      "max_adjacent_timestamp_regression_seconds": 0.0
+    },
+    {
+      "name": "SAT-03-11-2018_01",
+      "bytes": 200000260,
+      "crc32": "1a354f2b",
+      "sha256": "7f0a817679c1f628e41859c8747b636defa48f98a3654b754bf4708d0a3f4730",
+      "link_type": 1,
+      "frames": 697154,
+      "first_utc_timestamp": 1541250108.920574,
+      "last_utc_timestamp": 1541250151.97325,
+      "max_adjacent_timestamp_regression_seconds": 0.0
+    },
+    {
+      "name": "SAT-03-11-2018_02",
+      "bytes": 200000131,
+      "crc32": "1b4cf8ac",
+      "sha256": "1164c58f32d92e8cb712f3b4dcd546d7f2a4a10ebb790a2e0df30af23ae6780d",
+      "link_type": 1,
+      "frames": 697201,
+      "first_utc_timestamp": 1541250151.973251,
+      "last_utc_timestamp": 1541250195.000949,
+      "max_adjacent_timestamp_regression_seconds": 0.0
+    },
+    {
+      "name": "SAT-03-11-2018_03",
+      "bytes": 200000149,
+      "crc32": "9c6d6c6a",
+      "sha256": "9552913465647b9a224ff0ec92b5d525f678c00b52bf5d0829c2c3c9edac1b21",
+      "link_type": 1,
+      "frames": 697806,
+      "first_utc_timestamp": 1541250195.000999,
+      "last_utc_timestamp": 1541250237.824549,
+      "max_adjacent_timestamp_regression_seconds": 0.0
+    },
+    {
+      "name": "SAT-03-11-2018_04",
+      "bytes": 200000103,
+      "crc32": "4cdc1f5b",
+      "sha256": "40dcc331b7d3234c02ed247e7f6fbce8566d80408daffc30561763d935747fb7",
+      "link_type": 1,
+      "frames": 696061,
+      "first_utc_timestamp": 1541250237.82455,
+      "last_utc_timestamp": 1541250280.970045,
+      "max_adjacent_timestamp_regression_seconds": 0.0
+    },
+    {
+      "name": "SAT-03-11-2018_05",
+      "bytes": 200000063,
+      "crc32": "47f3070e",
+      "sha256": "596cb72bd056ca9de5c95dc003de4225c36cdf5a12a9e133c44b6d3105b8fc78",
+      "link_type": 1,
+      "frames": 696249,
+      "first_utc_timestamp": 1541250280.97023,
+      "last_utc_timestamp": 1541250324.774789,
+      "max_adjacent_timestamp_regression_seconds": 0.0
+    },
+    {
+      "name": "SAT-03-11-2018_06",
+      "bytes": 200000272,
+      "crc32": "89c6f314",
+      "sha256": "4ab0855cf439528e87c7aa7da0059ee9e0372bbe7b5892718b08bf968c31a6f8",
+      "link_type": 1,
+      "frames": 697484,
+      "first_utc_timestamp": 1541250324.77479,
+      "last_utc_timestamp": 1541250368.209889,
+      "max_adjacent_timestamp_regression_seconds": 0.0
+    },
+    {
+      "name": "SAT-03-11-2018_07",
+      "bytes": 200000274,
+      "crc32": "6ca4b95d",
+      "sha256": "b884b1e50dc28b2a222d72a812bb60c5f5653d78dbc4d22b9d8bad825cda7780",
+      "link_type": 1,
+      "frames": 697414,
+      "first_utc_timestamp": 1541250368.209932,
+      "last_utc_timestamp": 1541250411.52556,
+      "max_adjacent_timestamp_regression_seconds": 0.0
+    },
+    {
+      "name": "SAT-03-11-2018_08",
+      "bytes": 200000139,
+      "crc32": "494ec5d8",
+      "sha256": "7787917562fb98345a97e390e43b8bc71a6a61b475d3820822b79348d1213bf5",
+      "link_type": 1,
+      "frames": 684881,
+      "first_utc_timestamp": 1541250411.525794,
+      "last_utc_timestamp": 1541250453.64136,
+      "max_adjacent_timestamp_regression_seconds": 0.0
+    },
+    {
+      "name": "SAT-03-11-2018_09",
+      "bytes": 200000092,
+      "crc32": "6ab0db8d",
+      "sha256": "3e48b7c698a26716acad1212db3b4f5b576e64c5f4203eeb23f2041dd2eab0d7",
+      "link_type": 1,
+      "frames": 695715,
+      "first_utc_timestamp": 1541250453.641361,
+      "last_utc_timestamp": 1541250496.839435,
+      "max_adjacent_timestamp_regression_seconds": 0.0
+    },
+    {
+      "name": "SAT-03-11-2018_010",
+      "bytes": 200000087,
+      "crc32": "57964239",
+      "sha256": "db90de4a3d6d4b636e37ce77896dab042627ec4595ac2d7e794e03d9e2a4b941",
+      "link_type": 1,
+      "frames": 697146,
+      "first_utc_timestamp": 1541250496.839436,
+      "last_utc_timestamp": 1541250540.565357,
+      "max_adjacent_timestamp_regression_seconds": 0.0
+    },
+    {
+      "name": "SAT-03-11-2018_011",
+      "bytes": 200001287,
+      "crc32": "17f615dc",
+      "sha256": "5558ef366546391b3b6b693f9c7a19a1d1d21c75ace0df793e6eca616a78f6ef",
+      "link_type": 1,
+      "frames": 511445,
+      "first_utc_timestamp": 1541250540.565557,
+      "last_utc_timestamp": 1541251316.124692,
+      "max_adjacent_timestamp_regression_seconds": 0.0
+    },
+    {
+      "name": "SAT-03-11-2018_012",
+      "bytes": 200001296,
+      "crc32": "9fa8e3e9",
+      "sha256": "620d5b140f9dc4c29661e9fd5e721be99c0943d98a544bdbffb70ae1dd81e140",
+      "link_type": 1,
+      "frames": 154739,
+      "first_utc_timestamp": 1541251316.124693,
+      "last_utc_timestamp": 1541251324.520059,
+      "max_adjacent_timestamp_regression_seconds": 0.0
+    },
+    {
+      "name": "SAT-03-11-2018_013",
+      "bytes": 200001119,
+      "crc32": "9bbcdc19",
+      "sha256": "e61f27c00e279f0d644b6325b9c41d2457e22afe5593c1bfa9bfe843026b3080",
+      "link_type": 1,
+      "frames": 154975,
+      "first_utc_timestamp": 1541251324.52006,
+      "last_utc_timestamp": 1541251332.986045,
+      "max_adjacent_timestamp_regression_seconds": 0.0
+    },
+    {
+      "name": "SAT-03-11-2018_014",
+      "bytes": 200000412,
+      "crc32": "2af24a3c",
+      "sha256": "70462712f9239bfdc25ddfdd7cf1abeb3a2752fc46fb67fd043bdf24d410114a",
+      "link_type": 1,
+      "frames": 155102,
+      "first_utc_timestamp": 1541251332.986496,
+      "last_utc_timestamp": 1541251341.387313,
+      "max_adjacent_timestamp_regression_seconds": 0.0
+    },
+    {
+      "name": "SAT-03-11-2018_015",
+      "bytes": 200001198,
+      "crc32": "710e2f0f",
+      "sha256": "78a5463f2b80b7caf8dc8ddeac8a7cfab73dd955bcb9eab5fd24e6f29218e9c8",
+      "link_type": 1,
+      "frames": 154812,
+      "first_utc_timestamp": 1541251341.387314,
+      "last_utc_timestamp": 1541251349.788654,
+      "max_adjacent_timestamp_regression_seconds": 0.0
+    },
+    {
+      "name": "SAT-03-11-2018_016",
+      "bytes": 200000677,
+      "crc32": "a13dd327",
+      "sha256": "f33482286af0094dcacb98b8ecabfed3c07cfedfcab4cf319fe05b772a0814aa",
+      "link_type": 1,
+      "frames": 154755,
+      "first_utc_timestamp": 1541251349.788702,
+      "last_utc_timestamp": 1541251358.183115,
+      "max_adjacent_timestamp_regression_seconds": 0.0
+    },
+    {
+      "name": "SAT-03-11-2018_017",
+      "bytes": 200001254,
+      "crc32": "c3b4d807",
+      "sha256": "192fdb13b15544545d0ef02f99cbb52f277636bfe0b11811c9bfed8ee748f843",
+      "link_type": 1,
+      "frames": 154885,
+      "first_utc_timestamp": 1541251358.183116,
+      "last_utc_timestamp": 1541251366.578472,
+      "max_adjacent_timestamp_regression_seconds": 0.0
+    },
+    {
+      "name": "SAT-03-11-2018_018",
+      "bytes": 200001027,
+      "crc32": "841439db",
+      "sha256": "477b299a984bc69748198b1f19a06fef15c77098d2e135e9799c1eadace4f423",
+      "link_type": 1,
+      "frames": 155503,
+      "first_utc_timestamp": 1541251366.578473,
+      "last_utc_timestamp": 1541251374.950235,
+      "max_adjacent_timestamp_regression_seconds": 0.0
+    },
+    {
+      "name": "SAT-03-11-2018_019",
+      "bytes": 200001498,
+      "crc32": "3b01a425",
+      "sha256": "4bfee608e67bc099c6c14c807c213500cb43c00ede127235796ca63511863a60",
+      "link_type": 1,
+      "frames": 154758,
+      "first_utc_timestamp": 1541251374.950424,
+      "last_utc_timestamp": 1541251383.332271,
+      "max_adjacent_timestamp_regression_seconds": 0.0
+    },
+    {
+      "name": "SAT-03-11-2018_020",
+      "bytes": 200000046,
+      "crc32": "fc9cb79d",
+      "sha256": "994aa36c79592cfba32c0572588bfacc5ebc2ee8b881d89c755e2ff554b76d08",
+      "link_type": 1,
+      "frames": 154962,
+      "first_utc_timestamp": 1541251383.332272,
+      "last_utc_timestamp": 1541251391.731428,
+      "max_adjacent_timestamp_regression_seconds": 0.0
+    },
+    {
+      "name": "SAT-03-11-2018_021",
+      "bytes": 200000816,
+      "crc32": "79d73d1c",
+      "sha256": "f1c0c76ef6d3dc557df06e0875521422d9dd653390a5077240046627e4a5052b",
+      "link_type": 1,
+      "frames": 154879,
+      "first_utc_timestamp": 1541251391.731429,
+      "last_utc_timestamp": 1541251400.122833,
+      "max_adjacent_timestamp_regression_seconds": 0.0
+    },
+    {
+      "name": "SAT-03-11-2018_022",
+      "bytes": 200001368,
+      "crc32": "4cbecb6d",
+      "sha256": "6fa47f85d2a8863b73f085444af747883b390f65670f24e845b747874de769e5",
+      "link_type": 1,
+      "frames": 154589,
+      "first_utc_timestamp": 1541251400.122834,
+      "last_utc_timestamp": 1541251408.505281,
+      "max_adjacent_timestamp_regression_seconds": 0.0
+    },
+    {
+      "name": "SAT-03-11-2018_023",
+      "bytes": 200000197,
+      "crc32": "5632b555",
+      "sha256": "c68a0f7bcf421e998a6c93a67ecc76222adbfb8cc1176f3b1026014ccb5d44c6",
+      "link_type": 1,
+      "frames": 154612,
+      "first_utc_timestamp": 1541251408.505281,
+      "last_utc_timestamp": 1541251416.933968,
+      "max_adjacent_timestamp_regression_seconds": 0.0
+    },
+    {
+      "name": "SAT-03-11-2018_024",
+      "bytes": 200001317,
+      "crc32": "7ba6975f",
+      "sha256": "113cb66d36e844c9b85453f612e40d53026d83b9aee0aebcde67af701f05ef8c",
+      "link_type": 1,
+      "frames": 154964,
+      "first_utc_timestamp": 1541251416.934017,
+      "last_utc_timestamp": 1541251425.317563,
+      "max_adjacent_timestamp_regression_seconds": 0.0
+    },
+    {
+      "name": "SAT-03-11-2018_025",
+      "bytes": 200001430,
+      "crc32": "f70facdf",
+      "sha256": "ac5b9df42e0a66ca43114c04cfc80fb300bd418a3e0ce9291b94c434ba22a043",
+      "link_type": 1,
+      "frames": 154652,
+      "first_utc_timestamp": 1541251425.317564,
+      "last_utc_timestamp": 1541251433.682706,
+      "max_adjacent_timestamp_regression_seconds": 0.0
+    },
+    {
+      "name": "SAT-03-11-2018_026",
+      "bytes": 200001404,
+      "crc32": "4c295012",
+      "sha256": "f950e4819c866d6f76c7983a83c28292ccc5c63551e03680b45e7d936476cb74",
+      "link_type": 1,
+      "frames": 154531,
+      "first_utc_timestamp": 1541251433.682707,
+      "last_utc_timestamp": 1541251442.065346,
+      "max_adjacent_timestamp_regression_seconds": 0.0
+    },
+    {
+      "name": "SAT-03-11-2018_027",
+      "bytes": 200000048,
+      "crc32": "4e0406db",
+      "sha256": "259e2ea257ea395cddb97ae8a0c899deb08eed2ed84c7b191b13496a75037f0c",
+      "link_type": 1,
+      "frames": 154627,
+      "first_utc_timestamp": 1541251442.065347,
+      "last_utc_timestamp": 1541251450.432231,
+      "max_adjacent_timestamp_regression_seconds": 0.0
+    },
+    {
+      "name": "SAT-03-11-2018_028",
+      "bytes": 200000162,
+      "crc32": "131fb2b0",
+      "sha256": "febd24622efea711bfa1dc872c62d8c642b24c75348f86dab3d1c2f54a2c1ba9",
+      "link_type": 1,
+      "frames": 154757,
+      "first_utc_timestamp": 1541251450.432279,
+      "last_utc_timestamp": 1541251458.779105,
+      "max_adjacent_timestamp_regression_seconds": 0.0
+    },
+    {
+      "name": "SAT-03-11-2018_029",
+      "bytes": 200000172,
+      "crc32": "225502ca",
+      "sha256": "557ba620cbadc3abfad52abe804ce82f45b2e1398a8e5a649ff443938306dea5",
+      "link_type": 1,
+      "frames": 155846,
+      "first_utc_timestamp": 1541251458.779106,
+      "last_utc_timestamp": 1541251467.136219,
+      "max_adjacent_timestamp_regression_seconds": 0.0
+    },
+    {
+      "name": "SAT-03-11-2018_030",
+      "bytes": 200000890,
+      "crc32": "9dfbb114",
+      "sha256": "6b04eda198c34f7be52c5ad5bf0b14da3b8229da56aa41c21fb7ad29ac60a820",
+      "link_type": 1,
+      "frames": 154660,
+      "first_utc_timestamp": 1541251467.136219,
+      "last_utc_timestamp": 1541251475.502634,
+      "max_adjacent_timestamp_regression_seconds": 0.0
+    },
+    {
+      "name": "SAT-03-11-2018_031",
+      "bytes": 200000234,
+      "crc32": "05552070",
+      "sha256": "4b15519c162d8cebe75f8c549c151468b5d08e0b1d37cfde2ad2f33a8f78d3a7",
+      "link_type": 1,
+      "frames": 154465,
+      "first_utc_timestamp": 1541251475.502737,
+      "last_utc_timestamp": 1541251483.936201,
+      "max_adjacent_timestamp_regression_seconds": 0.0
+    },
+    {
+      "name": "SAT-03-11-2018_032",
+      "bytes": 200001456,
+      "crc32": "1a8e308d",
+      "sha256": "ddf91ae2fe7adf6b883a72a640b0c872cd7ee7ec404ecb2246b525ecea1d4795",
+      "link_type": 1,
+      "frames": 154824,
+      "first_utc_timestamp": 1541251483.936202,
+      "last_utc_timestamp": 1541251492.454644,
+      "max_adjacent_timestamp_regression_seconds": 0.0
+    },
+    {
+      "name": "SAT-03-11-2018_033",
+      "bytes": 200000664,
+      "crc32": "040b8271",
+      "sha256": "e3fbe270ef55a43019032c484fb9156217191a9c0e33b1002406a70533d3e893",
+      "link_type": 1,
+      "frames": 155597,
+      "first_utc_timestamp": 1541251492.454645,
+      "last_utc_timestamp": 1541251500.825322,
+      "max_adjacent_timestamp_regression_seconds": 0.0
+    },
+    {
+      "name": "SAT-03-11-2018_034",
+      "bytes": 200001165,
+      "crc32": "b0c9cf9f",
+      "sha256": "a86ba4d017c1e2d37e40849d3c9f92b2d2e2fb38e5767dfdb13b2753b18f35b8",
+      "link_type": 1,
+      "frames": 155623,
+      "first_utc_timestamp": 1541251500.825322,
+      "last_utc_timestamp": 1541251509.188847,
+      "max_adjacent_timestamp_regression_seconds": 0.0
+    },
+    {
+      "name": "SAT-03-11-2018_035",
+      "bytes": 200000017,
+      "crc32": "2d3b7b75",
+      "sha256": "d2d05d761b27b69ca8040e7eb1706cc18d4ab75fe32c174cab4d16e0d01545fc",
+      "link_type": 1,
+      "frames": 155242,
+      "first_utc_timestamp": 1541251509.188848,
+      "last_utc_timestamp": 1541251517.558348,
+      "max_adjacent_timestamp_regression_seconds": 0.0
+    },
+    {
+      "name": "SAT-03-11-2018_036",
+      "bytes": 200000948,
+      "crc32": "9982cb26",
+      "sha256": "1477dfea74bd5ce9a22d5bfc25f09053a5c1912afcb23ec842c0ab7d9479c6cb",
+      "link_type": 1,
+      "frames": 154654,
+      "first_utc_timestamp": 1541251517.558348,
+      "last_utc_timestamp": 1541251525.92942,
+      "max_adjacent_timestamp_regression_seconds": 0.0
+    },
+    {
+      "name": "SAT-03-11-2018_037",
+      "bytes": 200000671,
+      "crc32": "b67fb3d4",
+      "sha256": "3661bfe0a88ac27996e1157980bd8ed7a44485024ada28f5292e3b75eb45c0da",
+      "link_type": 1,
+      "frames": 154471,
+      "first_utc_timestamp": 1541251525.929421,
+      "last_utc_timestamp": 1541251534.295466,
+      "max_adjacent_timestamp_regression_seconds": 0.0
+    },
+    {
+      "name": "SAT-03-11-2018_038",
+      "bytes": 200000831,
+      "crc32": "97e09a17",
+      "sha256": "99f0ad475dc6f3d35d070703e5cc543179b52b83917512e5efe2ab1e651cf4d2",
+      "link_type": 1,
+      "frames": 154659,
+      "first_utc_timestamp": 1541251534.295516,
+      "last_utc_timestamp": 1541251543.27995,
+      "max_adjacent_timestamp_regression_seconds": 0.0
+    },
+    {
+      "name": "SAT-03-11-2018_039",
+      "bytes": 200001260,
+      "crc32": "15a877c1",
+      "sha256": "0e343721419e69f3613fc098860a0dd0970cc960b68f446265543784e47d6910",
+      "link_type": 1,
+      "frames": 154766,
+      "first_utc_timestamp": 1541251543.279951,
+      "last_utc_timestamp": 1541251551.65446,
+      "max_adjacent_timestamp_regression_seconds": 0.0
+    },
+    {
+      "name": "SAT-03-11-2018_040",
+      "bytes": 200000076,
+      "crc32": "82be9e27",
+      "sha256": "5d77c96d3c397243ae3b8169408fffb4832f47cf369296b022746ad610004c91",
+      "link_type": 1,
+      "frames": 155266,
+      "first_utc_timestamp": 1541251551.654461,
+      "last_utc_timestamp": 1541251560.027288,
+      "max_adjacent_timestamp_regression_seconds": 0.0
+    },
+    {
+      "name": "SAT-03-11-2018_041",
+      "bytes": 200000902,
+      "crc32": "9ff99384",
+      "sha256": "3263a9115961461f7a62c3b1a8dd3810609a21f93674fc2de718c75322bbf8ec",
+      "link_type": 1,
+      "frames": 154749,
+      "first_utc_timestamp": 1541251560.027468,
+      "last_utc_timestamp": 1541251569.749562,
+      "max_adjacent_timestamp_regression_seconds": 0.0
+    },
+    {
+      "name": "SAT-03-11-2018_042",
+      "bytes": 200001274,
+      "crc32": "f1f307dd",
+      "sha256": "faf32aca1e164354099e8448eb4224e3581da671bc0fdebebbabf220e49b0ba8",
+      "link_type": 1,
+      "frames": 154777,
+      "first_utc_timestamp": 1541251569.749562,
+      "last_utc_timestamp": 1541251578.120715,
+      "max_adjacent_timestamp_regression_seconds": 0.0
+    },
+    {
+      "name": "SAT-03-11-2018_043",
+      "bytes": 200000530,
+      "crc32": "7e4fcbbd",
+      "sha256": "6760090b4d4aa29c6dcaebe0f1a2fa9d43d54b4352db27f58d2028f37676c7c1",
+      "link_type": 1,
+      "frames": 154762,
+      "first_utc_timestamp": 1541251578.120716,
+      "last_utc_timestamp": 1541251586.478295,
+      "max_adjacent_timestamp_regression_seconds": 0.0
+    },
+    {
+      "name": "SAT-03-11-2018_044",
+      "bytes": 200000836,
+      "crc32": "045421f4",
+      "sha256": "b00905a7d1baafa6b2bd4cddb318eed792447641ae8c0d4069b54fcc029c5486",
+      "link_type": 1,
+      "frames": 154736,
+      "first_utc_timestamp": 1541251586.478444,
+      "last_utc_timestamp": 1541251594.853739,
+      "max_adjacent_timestamp_regression_seconds": 0.0
+    },
+    {
+      "name": "SAT-03-11-2018_045",
+      "bytes": 200000740,
+      "crc32": "605afab6",
+      "sha256": "d827587804db27f28259c0863c1af3ef122cce505a17b9a2dd70b1d4abef2f86",
+      "link_type": 1,
+      "frames": 154759,
+      "first_utc_timestamp": 1541251594.85374,
+      "last_utc_timestamp": 1541251603.219754,
+      "max_adjacent_timestamp_regression_seconds": 0.0
+    },
+    {
+      "name": "SAT-03-11-2018_046",
+      "bytes": 200000028,
+      "crc32": "dc41ea3b",
+      "sha256": "e59a482a070a328899692288c5b04f2bedda42ec28c42337c7317d7b29580075",
+      "link_type": 1,
+      "frames": 154841,
+      "first_utc_timestamp": 1541251603.219942,
+      "last_utc_timestamp": 1541251611.578948,
+      "max_adjacent_timestamp_regression_seconds": 0.0
+    },
+    {
+      "name": "SAT-03-11-2018_047",
+      "bytes": 200001210,
+      "crc32": "61111cda",
+      "sha256": "5a39c39d2f1576ef5939dc29abbe1a254f7924858bce74d341c3d12433d5a389",
+      "link_type": 1,
+      "frames": 154618,
+      "first_utc_timestamp": 1541251611.57913,
+      "last_utc_timestamp": 1541251619.947942,
+      "max_adjacent_timestamp_regression_seconds": 0.0
+    },
+    {
+      "name": "SAT-03-11-2018_048",
+      "bytes": 200001186,
+      "crc32": "8d7f1a9d",
+      "sha256": "e3367eaf37a469111d4e696c999bb1acbe79e425259e2bafe9b86dc80565af59",
+      "link_type": 1,
+      "frames": 154815,
+      "first_utc_timestamp": 1541251619.947942,
+      "last_utc_timestamp": 1541251628.318504,
+      "max_adjacent_timestamp_regression_seconds": 0.0
+    },
+    {
+      "name": "SAT-03-11-2018_049",
+      "bytes": 200000153,
+      "crc32": "fea139ba",
+      "sha256": "15363fa9a8fefdbd746b036bc47e8874a4a8fb5d6de5fade7799a56ab095fbce",
+      "link_type": 1,
+      "frames": 154531,
+      "first_utc_timestamp": 1541251628.318923,
+      "last_utc_timestamp": 1541251638.054179,
+      "max_adjacent_timestamp_regression_seconds": 0.0
+    },
+    {
+      "name": "SAT-03-11-2018_050",
+      "bytes": 200000566,
+      "crc32": "ab9daad4",
+      "sha256": "d989f9f78f3cf99447d8cbf9d0814143647603e2a564041907177ab16eb6fc57",
+      "link_type": 1,
+      "frames": 154470,
+      "first_utc_timestamp": 1541251638.054181,
+      "last_utc_timestamp": 1541251646.439234,
+      "max_adjacent_timestamp_regression_seconds": 0.0
+    },
+    {
+      "name": "SAT-03-11-2018_051",
+      "bytes": 200000324,
+      "crc32": "d12caeba",
+      "sha256": "77c2fe903399e82ed2b231d90bcbd605e46755e2b4c9a58962604d30f9db1894",
+      "link_type": 1,
+      "frames": 155108,
+      "first_utc_timestamp": 1541251646.439236,
+      "last_utc_timestamp": 1541251654.825027,
+      "max_adjacent_timestamp_regression_seconds": 0.0
+    },
+    {
+      "name": "SAT-03-11-2018_052",
+      "bytes": 200001100,
+      "crc32": "91709a3d",
+      "sha256": "6bf6805f01c4aee9f389b359292d5c213eec086261d316ed278d53c11759af34",
+      "link_type": 1,
+      "frames": 155271,
+      "first_utc_timestamp": 1541251654.825028,
+      "last_utc_timestamp": 1541251663.19867,
+      "max_adjacent_timestamp_regression_seconds": 0.0
+    },
+    {
+      "name": "SAT-03-11-2018_053",
+      "bytes": 200000782,
+      "crc32": "75648617",
+      "sha256": "58929e986cd2e66a199b5611199e9d8a823eae32508b6145749172e09ebae4ac",
+      "link_type": 1,
+      "frames": 155284,
+      "first_utc_timestamp": 1541251663.1991,
+      "last_utc_timestamp": 1541251671.569928,
+      "max_adjacent_timestamp_regression_seconds": 0.0
+    },
+    {
+      "name": "SAT-03-11-2018_054",
+      "bytes": 200000198,
+      "crc32": "56f8b8fe",
+      "sha256": "0a1914935e2f3575ca6cdcf0d889c35015374efb01d3044003f89ebb38c051ac",
+      "link_type": 1,
+      "frames": 155201,
+      "first_utc_timestamp": 1541251671.569929,
+      "last_utc_timestamp": 1541251679.942691,
+      "max_adjacent_timestamp_regression_seconds": 0.0
+    },
+    {
+      "name": "SAT-03-11-2018_055",
+      "bytes": 200000647,
+      "crc32": "a9379423",
+      "sha256": "f10a100b8e1d79849dcc7c770138310deed49f2b170dd8cff15df4d7ea3d0be9",
+      "link_type": 1,
+      "frames": 154745,
+      "first_utc_timestamp": 1541251679.942694,
+      "last_utc_timestamp": 1541251688.300606,
+      "max_adjacent_timestamp_regression_seconds": 0.0
+    },
+    {
+      "name": "SAT-03-11-2018_056",
+      "bytes": 200001329,
+      "crc32": "cb85cc28",
+      "sha256": "fdc10f3505ab0bd4112bd2f5faee8c8b0a0875b45fbc9c53d3b1f85b40d74927",
+      "link_type": 1,
+      "frames": 156186,
+      "first_utc_timestamp": 1541251688.300608,
+      "last_utc_timestamp": 1541251696.658588,
+      "max_adjacent_timestamp_regression_seconds": 0.0
+    },
+    {
+      "name": "SAT-03-11-2018_057",
+      "bytes": 200000630,
+      "crc32": "bfa97ea7",
+      "sha256": "bb9357448fe2f0f7f04d65c465a2bd0de1db0e731a7eec4ed00bed5cb8122662",
+      "link_type": 1,
+      "frames": 156402,
+      "first_utc_timestamp": 1541251696.65859,
+      "last_utc_timestamp": 1541251705.018836,
+      "max_adjacent_timestamp_regression_seconds": 0.0
+    },
+    {
+      "name": "SAT-03-11-2018_058",
+      "bytes": 200000855,
+      "crc32": "34962457",
+      "sha256": "e6f066b26da30fb358c1392dda90b28e1bba725f3fbf2b66d9ed2f3c96958cff",
+      "link_type": 1,
+      "frames": 154932,
+      "first_utc_timestamp": 1541251705.018887,
+      "last_utc_timestamp": 1541251716.214169,
+      "max_adjacent_timestamp_regression_seconds": 0.0
+    },
+    {
+      "name": "SAT-03-11-2018_059",
+      "bytes": 200001119,
+      "crc32": "18a6da63",
+      "sha256": "3427b5b57b88e01bf1cb1cedfad2d826fe1f29d89077553e05ec16caf7406134",
+      "link_type": 1,
+      "frames": 154898,
+      "first_utc_timestamp": 1541251716.214341,
+      "last_utc_timestamp": 1541251724.575725,
+      "max_adjacent_timestamp_regression_seconds": 0.0
+    },
+    {
+      "name": "SAT-03-11-2018_060",
+      "bytes": 200001215,
+      "crc32": "3ad1e3e7",
+      "sha256": "a650eae0466a0dc816b51ff933de6787bfc6686e447da57b4ea4640f897e43d3",
+      "link_type": 1,
+      "frames": 154894,
+      "first_utc_timestamp": 1541251724.575821,
+      "last_utc_timestamp": 1541251732.996875,
+      "max_adjacent_timestamp_regression_seconds": 0.0
+    },
+    {
+      "name": "SAT-03-11-2018_061",
+      "bytes": 200001045,
+      "crc32": "7c0d4b13",
+      "sha256": "f42d98423945a1cd97734a719b3f224041e7e19c5fc156b4a17a41580a79c82c",
+      "link_type": 1,
+      "frames": 154702,
+      "first_utc_timestamp": 1541251732.996877,
+      "last_utc_timestamp": 1541251741.422724,
+      "max_adjacent_timestamp_regression_seconds": 0.0
+    },
+    {
+      "name": "SAT-03-11-2018_062",
+      "bytes": 200000619,
+      "crc32": "d1b2404f",
+      "sha256": "7bb6e2ab317421654686feee03734212846175950f621988a913b69e35c5110b",
+      "link_type": 1,
+      "frames": 155188,
+      "first_utc_timestamp": 1541251741.422724,
+      "last_utc_timestamp": 1541251749.895467,
+      "max_adjacent_timestamp_regression_seconds": 0.0
+    },
+    {
+      "name": "SAT-03-11-2018_063",
+      "bytes": 200000922,
+      "crc32": "0630b2fe",
+      "sha256": "1ed41d25d5b2a028dbac78d703a62e549241059404a425c2a997950ea7ad77ff",
+      "link_type": 1,
+      "frames": 154953,
+      "first_utc_timestamp": 1541251749.895518,
+      "last_utc_timestamp": 1541251758.325416,
+      "max_adjacent_timestamp_regression_seconds": 0.0
+    },
+    {
+      "name": "SAT-03-11-2018_064",
+      "bytes": 200000473,
+      "crc32": "b7bd16b9",
+      "sha256": "4350debae3237ac79b1ec508bd6faf30f2f2eb563dca318e62b59197c47946f9",
+      "link_type": 1,
+      "frames": 154633,
+      "first_utc_timestamp": 1541251758.325417,
+      "last_utc_timestamp": 1541251766.714522,
+      "max_adjacent_timestamp_regression_seconds": 0.0
+    },
+    {
+      "name": "SAT-03-11-2018_065",
+      "bytes": 200000932,
+      "crc32": "67fd2fb8",
+      "sha256": "d9c0eb46c4380c0e9fa042993e2ff5fa10f1dcbeb76c458dcb3da1e371344fc7",
+      "link_type": 1,
+      "frames": 154858,
+      "first_utc_timestamp": 1541251766.714523,
+      "last_utc_timestamp": 1541251775.102369,
+      "max_adjacent_timestamp_regression_seconds": 0.0
+    },
+    {
+      "name": "SAT-03-11-2018_066",
+      "bytes": 200000693,
+      "crc32": "bae4c994",
+      "sha256": "843eec203dad99e1f2eb26df740f0abc60bc604c609a36c95028b2c5fda02f3e",
+      "link_type": 1,
+      "frames": 154963,
+      "first_utc_timestamp": 1541251775.102371,
+      "last_utc_timestamp": 1541251783.698359,
+      "max_adjacent_timestamp_regression_seconds": 0.0
+    },
+    {
+      "name": "SAT-03-11-2018_067",
+      "bytes": 200000591,
+      "crc32": "d9234b42",
+      "sha256": "64ad9ba53c1c70f7f9cea59764aa0750d6d1431e8af9c2444fc950222f752efe",
+      "link_type": 1,
+      "frames": 154739,
+      "first_utc_timestamp": 1541251783.698748,
+      "last_utc_timestamp": 1541251792.072543,
+      "max_adjacent_timestamp_regression_seconds": 0.0
+    },
+    {
+      "name": "SAT-03-11-2018_068",
+      "bytes": 200000507,
+      "crc32": "98cb0275",
+      "sha256": "3ddec0583cabdb390c26134f0376c25a934859fd89dcfcca71a514a7a5379ebb",
+      "link_type": 1,
+      "frames": 273136,
+      "first_utc_timestamp": 1541251792.072724,
+      "last_utc_timestamp": 1541252051.268896,
+      "max_adjacent_timestamp_regression_seconds": 0.0
+    },
+    {
+      "name": "SAT-03-11-2018_069",
+      "bytes": 200000616,
+      "crc32": "cc022cd4",
+      "sha256": "bc67bed5cb8402d6e17b9478c83c16a4356495640727cc90f125aeddc2d4b9ee",
+      "link_type": 1,
+      "frames": 315425,
+      "first_utc_timestamp": 1541252051.268897,
+      "last_utc_timestamp": 1541252063.179911,
+      "max_adjacent_timestamp_regression_seconds": 0.0
+    },
+    {
+      "name": "SAT-03-11-2018_070",
+      "bytes": 200000064,
+      "crc32": "5a6d0ff2",
+      "sha256": "5492c6fb0237e963cd2ce6a0a59c5ef8c5f61c7c3490407f98ea9b35d7dedb2e",
+      "link_type": 1,
+      "frames": 317266,
+      "first_utc_timestamp": 1541252063.179912,
+      "last_utc_timestamp": 1541252075.480053,
+      "max_adjacent_timestamp_regression_seconds": 0.0
+    },
+    {
+      "name": "SAT-03-11-2018_071",
+      "bytes": 200000438,
+      "crc32": "af789f10",
+      "sha256": "4396c414199ae5bb7f7d1655fccf6771d120680d415b5d64bb7140210af862b0",
+      "link_type": 1,
+      "frames": 317490,
+      "first_utc_timestamp": 1541252075.480115,
+      "last_utc_timestamp": 1541252088.716684,
+      "max_adjacent_timestamp_regression_seconds": 0.0
+    },
+    {
+      "name": "SAT-03-11-2018_072",
+      "bytes": 200000580,
+      "crc32": "02d46f82",
+      "sha256": "bc0d01971af49676c8efd6b561e89e61eeabafae8361ad183e31ee5a3c5cf641",
+      "link_type": 1,
+      "frames": 317337,
+      "first_utc_timestamp": 1541252088.716734,
+      "last_utc_timestamp": 1541252101.099429,
+      "max_adjacent_timestamp_regression_seconds": 0.0
+    },
+    {
+      "name": "SAT-03-11-2018_073",
+      "bytes": 200000382,
+      "crc32": "2c1a10e3",
+      "sha256": "a6fe67c0b54556d425e57dd18ab6658acae594aa5d45eb6ce31196c0c0aef3cc",
+      "link_type": 1,
+      "frames": 317278,
+      "first_utc_timestamp": 1541252101.099478,
+      "last_utc_timestamp": 1541252113.477054,
+      "max_adjacent_timestamp_regression_seconds": 0.0
+    },
+    {
+      "name": "SAT-03-11-2018_074",
+      "bytes": 200000280,
+      "crc32": "4fee8d68",
+      "sha256": "bbff6870a656e41ecc17ca79aeb14af02b744a4235a43100dfe3d4391aeb431f",
+      "link_type": 1,
+      "frames": 317289,
+      "first_utc_timestamp": 1541252113.477055,
+      "last_utc_timestamp": 1541252125.873941,
+      "max_adjacent_timestamp_regression_seconds": 0.0
+    },
+    {
+      "name": "SAT-03-11-2018_075",
+      "bytes": 200000166,
+      "crc32": "4620e8e8",
+      "sha256": "decd66b79aaafff1d9c56984d62d9b288f212465fcb92e86fc5f6dfc2db7bc89",
+      "link_type": 1,
+      "frames": 317265,
+      "first_utc_timestamp": 1541252125.87399,
+      "last_utc_timestamp": 1541252138.280213,
+      "max_adjacent_timestamp_regression_seconds": 0.0
+    },
+    {
+      "name": "SAT-03-11-2018_076",
+      "bytes": 200000842,
+      "crc32": "58fbb7b8",
+      "sha256": "64ba528a1bbf0259c8d3f671446ff09fe734a2f44304fe31f3baced0a586347a",
+      "link_type": 1,
+      "frames": 317056,
+      "first_utc_timestamp": 1541252138.280214,
+      "last_utc_timestamp": 1541252150.677435,
+      "max_adjacent_timestamp_regression_seconds": 0.0
+    },
+    {
+      "name": "SAT-03-11-2018_077",
+      "bytes": 200000936,
+      "crc32": "ec5527b1",
+      "sha256": "f99e7e3fc2af246fdbd3710c4ffcc1003a2b767b53c66157fa6309260d789db8",
+      "link_type": 1,
+      "frames": 317492,
+      "first_utc_timestamp": 1541252150.677436,
+      "last_utc_timestamp": 1541252163.033795,
+      "max_adjacent_timestamp_regression_seconds": 0.0
+    },
+    {
+      "name": "SAT-03-11-2018_078",
+      "bytes": 200000600,
+      "crc32": "70fd22f1",
+      "sha256": "aad9877d5710c4c05a4f2f913d23b71b662b70415edcc17138fe69abd4556802",
+      "link_type": 1,
+      "frames": 317246,
+      "first_utc_timestamp": 1541252163.033796,
+      "last_utc_timestamp": 1541252175.437939,
+      "max_adjacent_timestamp_regression_seconds": 0.0
+    },
+    {
+      "name": "SAT-03-11-2018_079",
+      "bytes": 200000582,
+      "crc32": "cd6580b0",
+      "sha256": "9537ffb4a5ec16226964dc83615632ec33a2820efef664f5bb44483c2df172c4",
+      "link_type": 1,
+      "frames": 317391,
+      "first_utc_timestamp": 1541252175.43794,
+      "last_utc_timestamp": 1541252187.841095,
+      "max_adjacent_timestamp_regression_seconds": 0.0
+    },
+    {
+      "name": "SAT-03-11-2018_080",
+      "bytes": 200000271,
+      "crc32": "acafdac4",
+      "sha256": "fd4a141702f2a82aa84e8005cfdc26c6a9b79c31aee0f0b3339a6ec2bc08a1e2",
+      "link_type": 1,
+      "frames": 317438,
+      "first_utc_timestamp": 1541252187.841096,
+      "last_utc_timestamp": 1541252200.264969,
+      "max_adjacent_timestamp_regression_seconds": 0.0
+    },
+    {
+      "name": "SAT-03-11-2018_081",
+      "bytes": 200000328,
+      "crc32": "e8e06a5f",
+      "sha256": "12ff600ea483b850593fee5f8671e7fce40078562bfb5b872eaa8166e3b8e17b",
+      "link_type": 1,
+      "frames": 317663,
+      "first_utc_timestamp": 1541252200.264971,
+      "last_utc_timestamp": 1541252212.709803,
+      "max_adjacent_timestamp_regression_seconds": 0.0
+    },
+    {
+      "name": "SAT-03-11-2018_082",
+      "bytes": 200000135,
+      "crc32": "806ac244",
+      "sha256": "ec1c4ca44f17b288c0941efb80142f85d76f94997f7edfd26085b8e624effea2",
+      "link_type": 1,
+      "frames": 317504,
+      "first_utc_timestamp": 1541252212.709804,
+      "last_utc_timestamp": 1541252225.060485,
+      "max_adjacent_timestamp_regression_seconds": 0.0
+    },
+    {
+      "name": "SAT-03-11-2018_083",
+      "bytes": 200000508,
+      "crc32": "50a65f94",
+      "sha256": "ea330e3fcb0197f059d12c58b0b5c08dcd2a554bd89179b9de9bd080a4e07eb1",
+      "link_type": 1,
+      "frames": 317236,
+      "first_utc_timestamp": 1541252225.060553,
+      "last_utc_timestamp": 1541252237.453214,
+      "max_adjacent_timestamp_regression_seconds": 0.0
+    },
+    {
+      "name": "SAT-03-11-2018_084",
+      "bytes": 200000529,
+      "crc32": "bd99fa87",
+      "sha256": "11279565f7dbc3f5533b5f9fd1a2aba002224ae45bc5a9604e29466aae81e3cc",
+      "link_type": 1,
+      "frames": 317070,
+      "first_utc_timestamp": 1541252237.453214,
+      "last_utc_timestamp": 1541252249.836986,
+      "max_adjacent_timestamp_regression_seconds": 0.0
+    },
+    {
+      "name": "SAT-03-11-2018_085",
+      "bytes": 200000504,
+      "crc32": "31ce88a6",
+      "sha256": "7dceb189deb577b7c67b94a25eccc2d069de60343a70c8c28e4cf16cea5c83a3",
+      "link_type": 1,
+      "frames": 317148,
+      "first_utc_timestamp": 1541252249.836987,
+      "last_utc_timestamp": 1541252262.269168,
+      "max_adjacent_timestamp_regression_seconds": 0.0
+    },
+    {
+      "name": "SAT-03-11-2018_086",
+      "bytes": 200000669,
+      "crc32": "869abf79",
+      "sha256": "ce33c20c1ec1a0ccef9a475524abaf6d27dd3c04c720e67865a216f24c0dbb3a",
+      "link_type": 1,
+      "frames": 317638,
+      "first_utc_timestamp": 1541252262.269169,
+      "last_utc_timestamp": 1541252275.078026,
+      "max_adjacent_timestamp_regression_seconds": 0.0
+    },
+    {
+      "name": "SAT-03-11-2018_087",
+      "bytes": 200000044,
+      "crc32": "a1616c3f",
+      "sha256": "0b45a04ab9bfba269b7a00b6d18e54b3320bca95a3e7e9e5b86be647a5c5d75c",
+      "link_type": 1,
+      "frames": 316767,
+      "first_utc_timestamp": 1541252275.078027,
+      "last_utc_timestamp": 1541252287.489913,
+      "max_adjacent_timestamp_regression_seconds": 0.0
+    },
+    {
+      "name": "SAT-03-11-2018_088",
+      "bytes": 200000294,
+      "crc32": "646568e8",
+      "sha256": "fdc8fdcbc727ce2cfd39053f5b139d2816252d67bede868486c12f7630497638",
+      "link_type": 1,
+      "frames": 315245,
+      "first_utc_timestamp": 1541252287.489961,
+      "last_utc_timestamp": 1541252300.35389,
+      "max_adjacent_timestamp_regression_seconds": 0.0
+    },
+    {
+      "name": "SAT-03-11-2018_089",
+      "bytes": 200000249,
+      "crc32": "88431d9a",
+      "sha256": "ee4d6eb9f421bb1a5cdbcc5d2531a48cd64128db11eeb0005119a1d77591811b",
+      "link_type": 1,
+      "frames": 315572,
+      "first_utc_timestamp": 1541252300.353891,
+      "last_utc_timestamp": 1541252313.226649,
+      "max_adjacent_timestamp_regression_seconds": 0.0
+    },
+    {
+      "name": "SAT-03-11-2018_090",
+      "bytes": 200000034,
+      "crc32": "206ebfcf",
+      "sha256": "d3aa226ab5d65dbc0fa5eb4069ea8ff36d7a8cc6fdbc2933df6f5ea6bfddc59d",
+      "link_type": 1,
+      "frames": 315533,
+      "first_utc_timestamp": 1541252313.22665,
+      "last_utc_timestamp": 1541252326.094704,
+      "max_adjacent_timestamp_regression_seconds": 0.0
+    },
+    {
+      "name": "SAT-03-11-2018_091",
+      "bytes": 200000204,
+      "crc32": "b001c7ea",
+      "sha256": "28848d1b958503416d3f07af3e6b05b179bb7ae0ed7c274ddab8f15dba771d16",
+      "link_type": 1,
+      "frames": 315366,
+      "first_utc_timestamp": 1541252326.095059,
+      "last_utc_timestamp": 1541252338.956659,
+      "max_adjacent_timestamp_regression_seconds": 0.0
+    },
+    {
+      "name": "SAT-03-11-2018_092",
+      "bytes": 200000187,
+      "crc32": "dd38ba4f",
+      "sha256": "b31ed28a9fe84857185ebe22e8d528f1e98151d9567b7d2e3eb69afdcb49f65c",
+      "link_type": 1,
+      "frames": 317364,
+      "first_utc_timestamp": 1541252338.956661,
+      "last_utc_timestamp": 1541252407.67003,
+      "max_adjacent_timestamp_regression_seconds": 0.0
+    },
+    {
+      "name": "SAT-03-11-2018_093",
+      "bytes": 200000004,
+      "crc32": "1d47def7",
+      "sha256": "695155d66e1148f7885a19627306da92c97e95e1c56e56d0d1bf416882d8b918",
+      "link_type": 1,
+      "frames": 315098,
+      "first_utc_timestamp": 1541252407.670031,
+      "last_utc_timestamp": 1541252420.562354,
+      "max_adjacent_timestamp_regression_seconds": 0.0
+    },
+    {
+      "name": "SAT-03-11-2018_094",
+      "bytes": 200000380,
+      "crc32": "2f0a5d15",
+      "sha256": "1509ccc2de2c3bf70ee060993e0562c2f81e43a84935c3c9508280dea0f0f748",
+      "link_type": 1,
+      "frames": 315439,
+      "first_utc_timestamp": 1541252420.562355,
+      "last_utc_timestamp": 1541252433.427982,
+      "max_adjacent_timestamp_regression_seconds": 0.0
+    },
+    {
+      "name": "SAT-03-11-2018_095",
+      "bytes": 200000534,
+      "crc32": "09de8215",
+      "sha256": "7c09a9b72f16a2ffb69a2925e8cc4b87d98c0b7d3a6dd6cd06f22b417acbf24f",
+      "link_type": 1,
+      "frames": 314950,
+      "first_utc_timestamp": 1541252433.428142,
+      "last_utc_timestamp": 1541252446.309166,
+      "max_adjacent_timestamp_regression_seconds": 0.0
+    },
+    {
+      "name": "SAT-03-11-2018_096",
+      "bytes": 200000364,
+      "crc32": "9529fc54",
+      "sha256": "15f8443b09b01d0efe8665255efb826446c1e7acfe97388f6392ecd0b4a4aee9",
+      "link_type": 1,
+      "frames": 315330,
+      "first_utc_timestamp": 1541252446.309167,
+      "last_utc_timestamp": 1541252459.214261,
+      "max_adjacent_timestamp_regression_seconds": 0.0
+    },
+    {
+      "name": "SAT-03-11-2018_097",
+      "bytes": 200000010,
+      "crc32": "a26d1e78",
+      "sha256": "3baccb349dda3468cc68133f8c5bc9b2df9cae9dcd6690d598f187e9388de77f",
+      "link_type": 1,
+      "frames": 315508,
+      "first_utc_timestamp": 1541252459.214262,
+      "last_utc_timestamp": 1541252472.117279,
+      "max_adjacent_timestamp_regression_seconds": 0.0
+    },
+    {
+      "name": "SAT-03-11-2018_098",
+      "bytes": 200000546,
+      "crc32": "a47b12f2",
+      "sha256": "8db720c4cd6e09d92ffe364836715c6532f30128e037a8341991471eb786f1f5",
+      "link_type": 1,
+      "frames": 315185,
+      "first_utc_timestamp": 1541252472.11728,
+      "last_utc_timestamp": 1541252485.379752,
+      "max_adjacent_timestamp_regression_seconds": 0.0
+    },
+    {
+      "name": "SAT-03-11-2018_099",
+      "bytes": 200000024,
+      "crc32": "2455d1f6",
+      "sha256": "b4c250ab282311c6c158ecb4d4d34fa7f440df05204c35b529a51e999cbf0880",
+      "link_type": 1,
+      "frames": 315041,
+      "first_utc_timestamp": 1541252485.379753,
+      "last_utc_timestamp": 1541252498.248885,
+      "max_adjacent_timestamp_regression_seconds": 0.0
+    },
+    {
+      "name": "SAT-03-11-2018_0100",
+      "bytes": 200000038,
+      "crc32": "d5a2ec4b",
+      "sha256": "2cb0363d0a8bb1ae30f3e967e6199456afd42d14732f3510ac39d8090064ff37",
+      "link_type": 1,
+      "frames": 315520,
+      "first_utc_timestamp": 1541252498.248886,
+      "last_utc_timestamp": 1541252512.378824,
+      "max_adjacent_timestamp_regression_seconds": 0.0
+    },
+    {
+      "name": "SAT-03-11-2018_0101",
+      "bytes": 200000506,
+      "crc32": "ffa69742",
+      "sha256": "12cc5690ef268cb90777c8b2bc6645a3176963594344201320a47e2ec4e57729",
+      "link_type": 1,
+      "frames": 315165,
+      "first_utc_timestamp": 1541252512.378873,
+      "last_utc_timestamp": 1541252525.25759,
+      "max_adjacent_timestamp_regression_seconds": 0.0
+    },
+    {
+      "name": "SAT-03-11-2018_0102",
+      "bytes": 200000075,
+      "crc32": "81b04708",
+      "sha256": "a89dbae2569c7ac85ef16b33e5a8d64437d3f8552ded88cdc39aa4154d927baa",
+      "link_type": 1,
+      "frames": 314864,
+      "first_utc_timestamp": 1541252525.257639,
+      "last_utc_timestamp": 1541252538.124877,
+      "max_adjacent_timestamp_regression_seconds": 0.0
+    },
+    {
+      "name": "SAT-03-11-2018_0103",
+      "bytes": 200000569,
+      "crc32": "cc02af1c",
+      "sha256": "8a35fac34ffe956d16a7aeb79c8ec4c163c3b4c17132dec98d6dc86db922d590",
+      "link_type": 1,
+      "frames": 315863,
+      "first_utc_timestamp": 1541252538.124878,
+      "last_utc_timestamp": 1541252550.996278,
+      "max_adjacent_timestamp_regression_seconds": 0.0
+    },
+    {
+      "name": "SAT-03-11-2018_0104",
+      "bytes": 200000393,
+      "crc32": "37fe42d5",
+      "sha256": "1f4c2b4841aeaaf566f01437211ae0dad506d9b81773044842fd889902d476b9",
+      "link_type": 1,
+      "frames": 315432,
+      "first_utc_timestamp": 1541252550.996279,
+      "last_utc_timestamp": 1541252563.925123,
+      "max_adjacent_timestamp_regression_seconds": 0.0
+    },
+    {
+      "name": "SAT-03-11-2018_0105",
+      "bytes": 200000169,
+      "crc32": "e67738de",
+      "sha256": "aa11e1721871635d08c0648daa82358cc38fd86d33bf5e28b28d3677e699156a",
+      "link_type": 1,
+      "frames": 315176,
+      "first_utc_timestamp": 1541252563.925124,
+      "last_utc_timestamp": 1541252577.17661,
+      "max_adjacent_timestamp_regression_seconds": 0.0
+    },
+    {
+      "name": "SAT-03-11-2018_0106",
+      "bytes": 200000380,
+      "crc32": "e3ae78a5",
+      "sha256": "4b7d15037bb7d0239dfc8331affa3e2c10f72e0b8a58c1f7ca47c739de2f9fa5",
+      "link_type": 1,
+      "frames": 443966,
+      "first_utc_timestamp": 1541252577.176611,
+      "last_utc_timestamp": 1541253251.631481,
+      "max_adjacent_timestamp_regression_seconds": 0.0
+    },
+    {
+      "name": "SAT-03-11-2018_0107",
+      "bytes": 200000266,
+      "crc32": "7cf4c4d2",
+      "sha256": "58f3106a602aa76a2e1ede6abee3abcc1d18f898ad654cbcc4f1ba6290e91882",
+      "link_type": 1,
+      "frames": 474881,
+      "first_utc_timestamp": 1541253251.631529,
+      "last_utc_timestamp": 1541253270.15177,
+      "max_adjacent_timestamp_regression_seconds": 0.0
+    },
+    {
+      "name": "SAT-03-11-2018_0108",
+      "bytes": 200000414,
+      "crc32": "2d82378c",
+      "sha256": "6ead3146addeefa204cbdf2256a219f16b90d90719282bc092b7a5596f258974",
+      "link_type": 1,
+      "frames": 475185,
+      "first_utc_timestamp": 1541253270.151771,
+      "last_utc_timestamp": 1541253290.914644,
+      "max_adjacent_timestamp_regression_seconds": 0.0
+    },
+    {
+      "name": "SAT-03-11-2018_0109",
+      "bytes": 200000157,
+      "crc32": "e00b2649",
+      "sha256": "4d683f9f34dafb9decde65d38853bbcc8423ccf77e9513a03b273b9c50720323",
+      "link_type": 1,
+      "frames": 475336,
+      "first_utc_timestamp": 1541253290.914645,
+      "last_utc_timestamp": 1541253305.170026,
+      "max_adjacent_timestamp_regression_seconds": 0.0
+    },
+    {
+      "name": "SAT-03-11-2018_0110",
+      "bytes": 200000166,
+      "crc32": "78555eab",
+      "sha256": "39e070857fe793372a44c88edac1a145e61cea7cb78684e3cc6fa99c56d5b182",
+      "link_type": 1,
+      "frames": 475492,
+      "first_utc_timestamp": 1541253305.170027,
+      "last_utc_timestamp": 1541253319.203067,
+      "max_adjacent_timestamp_regression_seconds": 0.0
+    },
+    {
+      "name": "SAT-03-11-2018_0111",
+      "bytes": 200000373,
+      "crc32": "e38343f6",
+      "sha256": "4c3058fb84f00f57073504663c79674cb5ffcbff4adab5d5ab5999a55a9d61a9",
+      "link_type": 1,
+      "frames": 475632,
+      "first_utc_timestamp": 1541253319.203068,
+      "last_utc_timestamp": 1541253333.226932,
+      "max_adjacent_timestamp_regression_seconds": 0.0
+    },
+    {
+      "name": "SAT-03-11-2018_0112",
+      "bytes": 200000351,
+      "crc32": "303ac3e6",
+      "sha256": "2997f28e0c7374060449ed160487d31ddd654c45912f4b0cb09b3f14ceb3ab14",
+      "link_type": 1,
+      "frames": 474582,
+      "first_utc_timestamp": 1541253333.226979,
+      "last_utc_timestamp": 1541253348.387511,
+      "max_adjacent_timestamp_regression_seconds": 0.0
+    },
+    {
+      "name": "SAT-03-11-2018_0113",
+      "bytes": 200000149,
+      "crc32": "f29a0e4e",
+      "sha256": "f71d18669a640d010c146e9f9996a6ff807ab340f2d9ecbeef7bf1d3bbfe8b69",
+      "link_type": 1,
+      "frames": 474001,
+      "first_utc_timestamp": 1541253348.387512,
+      "last_utc_timestamp": 1541253361.261541,
+      "max_adjacent_timestamp_regression_seconds": 0.0
+    },
+    {
+      "name": "SAT-03-11-2018_0114",
+      "bytes": 200000064,
+      "crc32": "0fc2b8d5",
+      "sha256": "5a0c3504b20b9febe21c4e753e862560b82777cb08ac1853a99c439682197be6",
+      "link_type": 1,
+      "frames": 476016,
+      "first_utc_timestamp": 1541253361.261542,
+      "last_utc_timestamp": 1541253374.798399,
+      "max_adjacent_timestamp_regression_seconds": 0.0
+    },
+    {
+      "name": "SAT-03-11-2018_0115",
+      "bytes": 200000079,
+      "crc32": "8356c270",
+      "sha256": "1cc9844eb765ba3d1cb55d3918f12a80a1e697de47e55fe34dbac28c065d5451",
+      "link_type": 1,
+      "frames": 475483,
+      "first_utc_timestamp": 1541253374.798399,
+      "last_utc_timestamp": 1541253390.214948,
+      "max_adjacent_timestamp_regression_seconds": 0.0
+    },
+    {
+      "name": "SAT-03-11-2018_0116",
+      "bytes": 200000173,
+      "crc32": "d44418bf",
+      "sha256": "62c2558f04b78e21b688a03f7b7706585fa848c369a381d55b3e57ae1a3dc54a",
+      "link_type": 1,
+      "frames": 475079,
+      "first_utc_timestamp": 1541253390.214995,
+      "last_utc_timestamp": 1541253402.944971,
+      "max_adjacent_timestamp_regression_seconds": 0.0
+    },
+    {
+      "name": "SAT-03-11-2018_0117",
+      "bytes": 200000005,
+      "crc32": "43656a3e",
+      "sha256": "0bd633440a69d48ce314b86b8a704f533ee11ce1f183f68216710cbb1cd21e46",
+      "link_type": 1,
+      "frames": 470436,
+      "first_utc_timestamp": 1541253402.945018,
+      "last_utc_timestamp": 1541253416.31338,
+      "max_adjacent_timestamp_regression_seconds": 0.0
+    },
+    {
+      "name": "SAT-03-11-2018_0118",
+      "bytes": 200000376,
+      "crc32": "8807ad96",
+      "sha256": "e846c04c1d45eeea32f95f0f672a69dc9f35342554eb941fbd3e461f850fdc29",
+      "link_type": 1,
+      "frames": 474557,
+      "first_utc_timestamp": 1541253416.313381,
+      "last_utc_timestamp": 1541253429.873455,
+      "max_adjacent_timestamp_regression_seconds": 0.0
+    },
+    {
+      "name": "SAT-03-11-2018_0119",
+      "bytes": 200000061,
+      "crc32": "3f140959",
+      "sha256": "8077a71467ff9b9f1b3cb91c6dd90163e267de181f558dffec96507d3e5eca61",
+      "link_type": 1,
+      "frames": 475419,
+      "first_utc_timestamp": 1541253429.873502,
+      "last_utc_timestamp": 1541253445.437545,
+      "max_adjacent_timestamp_regression_seconds": 0.0
+    },
+    {
+      "name": "SAT-03-11-2018_0120",
+      "bytes": 200000021,
+      "crc32": "2b644f7d",
+      "sha256": "dbccaf76cf944ae419d1c30c20612e3836b9d76fecc79c604c4bca4830df64b2",
+      "link_type": 1,
+      "frames": 474248,
+      "first_utc_timestamp": 1541253445.437546,
+      "last_utc_timestamp": 1541253460.546782,
+      "max_adjacent_timestamp_regression_seconds": 0.0
+    },
+    {
+      "name": "SAT-03-11-2018_0121",
+      "bytes": 200000345,
+      "crc32": "b98296b4",
+      "sha256": "26df0576fbf34c6d9a9d164a7d2c8db1ed59f1830bfc4fbf1f9d0b1b40d33f61",
+      "link_type": 1,
+      "frames": 474210,
+      "first_utc_timestamp": 1541253460.546831,
+      "last_utc_timestamp": 1541253477.806521,
+      "max_adjacent_timestamp_regression_seconds": 0.0
+    },
+    {
+      "name": "SAT-03-11-2018_0122",
+      "bytes": 200000073,
+      "crc32": "7f726580",
+      "sha256": "d145bd1a8f596d471178e3e370f45dff0b1270eedf1fbecc844d3af6eb162ef9",
+      "link_type": 1,
+      "frames": 476091,
+      "first_utc_timestamp": 1541253477.806522,
+      "last_utc_timestamp": 1541253492.657334,
+      "max_adjacent_timestamp_regression_seconds": 0.0
+    },
+    {
+      "name": "SAT-03-11-2018_0123",
+      "bytes": 200000055,
+      "crc32": "1f42b94d",
+      "sha256": "fb54d4f34708917fc03505fd320776e3a39f96e647c36b5eeb35501c555199d3",
+      "link_type": 1,
+      "frames": 475217,
+      "first_utc_timestamp": 1541253492.657335,
+      "last_utc_timestamp": 1541253509.121156,
+      "max_adjacent_timestamp_regression_seconds": 0.0
+    },
+    {
+      "name": "SAT-03-11-2018_0124",
+      "bytes": 200000329,
+      "crc32": "aa38d2bc",
+      "sha256": "d14d462058cc71e2d9183f2353a937be6ea2f3f3bccf32670057398075bc1558",
+      "link_type": 1,
+      "frames": 475638,
+      "first_utc_timestamp": 1541253509.121426,
+      "last_utc_timestamp": 1541253525.195024,
+      "max_adjacent_timestamp_regression_seconds": 0.0
+    },
+    {
+      "name": "SAT-03-11-2018_0125",
+      "bytes": 200000264,
+      "crc32": "cb88bc7a",
+      "sha256": "6a874386333c53841215b210f755dbef9676725a274a868785854cf3dadb2d99",
+      "link_type": 1,
+      "frames": 475258,
+      "first_utc_timestamp": 1541253525.195077,
+      "last_utc_timestamp": 1541253542.498512,
+      "max_adjacent_timestamp_regression_seconds": 0.0
+    },
+    {
+      "name": "SAT-03-11-2018_0126",
+      "bytes": 200000318,
+      "crc32": "cfd69923",
+      "sha256": "6cd383aba4e421118f684ccde21feb918d58aa23d7e0e637dd7450a69b50e960",
+      "link_type": 1,
+      "frames": 474941,
+      "first_utc_timestamp": 1541253542.498513,
+      "last_utc_timestamp": 1541253559.886571,
+      "max_adjacent_timestamp_regression_seconds": 0.0
+    },
+    {
+      "name": "SAT-03-11-2018_0127",
+      "bytes": 200000313,
+      "crc32": "723f4838",
+      "sha256": "23791d0b9d027f91552061aa72dab201bc71783e8d88f621d59f5c2a12627a05",
+      "link_type": 1,
+      "frames": 474920,
+      "first_utc_timestamp": 1541253559.886572,
+      "last_utc_timestamp": 1541253575.181379,
+      "max_adjacent_timestamp_regression_seconds": 0.0
+    },
+    {
+      "name": "SAT-03-11-2018_0128",
+      "bytes": 200000077,
+      "crc32": "36efc0bc",
+      "sha256": "1f59494a2a3cf0986cd91e7649f1306327e1850041c3679009b991c5968e4b23",
+      "link_type": 1,
+      "frames": 475603,
+      "first_utc_timestamp": 1541253575.181379,
+      "last_utc_timestamp": 1541253588.515056,
+      "max_adjacent_timestamp_regression_seconds": 0.0
+    },
+    {
+      "name": "SAT-03-11-2018_0129",
+      "bytes": 200000350,
+      "crc32": "620106e7",
+      "sha256": "7e770c05dea8ca7c61455232583c16b5392fed183108a780c65ce211dc9604dc",
+      "link_type": 1,
+      "frames": 474701,
+      "first_utc_timestamp": 1541253588.515057,
+      "last_utc_timestamp": 1541253604.724691,
+      "max_adjacent_timestamp_regression_seconds": 0.0
+    },
+    {
+      "name": "SAT-03-11-2018_0130",
+      "bytes": 200000061,
+      "crc32": "81a317c8",
+      "sha256": "1e8154e9d2840dbeba47b6a191bdadb7661c82c0dd26b3cfeacac0427dd43789",
+      "link_type": 1,
+      "frames": 473295,
+      "first_utc_timestamp": 1541253604.724692,
+      "last_utc_timestamp": 1541253620.590763,
+      "max_adjacent_timestamp_regression_seconds": 0.0
+    },
+    {
+      "name": "SAT-03-11-2018_0131",
+      "bytes": 200000246,
+      "crc32": "bc017d99",
+      "sha256": "e12b459a2955cdcf47885b9261298ed0ef0be640e8f9b1d1525c755bf2183474",
+      "link_type": 1,
+      "frames": 475260,
+      "first_utc_timestamp": 1541253620.590764,
+      "last_utc_timestamp": 1541253638.091918,
+      "max_adjacent_timestamp_regression_seconds": 0.0
+    },
+    {
+      "name": "SAT-03-11-2018_0132",
+      "bytes": 200000222,
+      "crc32": "3b71b0ec",
+      "sha256": "18fbd5f1744c888cdbe576328cb8f66e88172833f0c64dad39d01b663b14d730",
+      "link_type": 1,
+      "frames": 474720,
+      "first_utc_timestamp": 1541253638.09192,
+      "last_utc_timestamp": 1541253654.375591,
+      "max_adjacent_timestamp_regression_seconds": 0.0
+    },
+    {
+      "name": "SAT-03-11-2018_0133",
+      "bytes": 200000049,
+      "crc32": "e0b6f6fa",
+      "sha256": "db86c247ca184402bda96a756dce7791214a303c7edff2353cfba3a93e8ffcbc",
+      "link_type": 1,
+      "frames": 474233,
+      "first_utc_timestamp": 1541253654.375594,
+      "last_utc_timestamp": 1541253670.163362,
+      "max_adjacent_timestamp_regression_seconds": 0.0
+    },
+    {
+      "name": "SAT-03-11-2018_0134",
+      "bytes": 200000132,
+      "crc32": "b5c225df",
+      "sha256": "40cf1717107f0ceec6b6dd1ac505c38b34937596e6935ca78305f6504366725a",
+      "link_type": 1,
+      "frames": 473166,
+      "first_utc_timestamp": 1541253670.163363,
+      "last_utc_timestamp": 1541253686.890328,
+      "max_adjacent_timestamp_regression_seconds": 0.0
+    },
+    {
+      "name": "SAT-03-11-2018_0135",
+      "bytes": 200000082,
+      "crc32": "49a52cfb",
+      "sha256": "75279c92de3e7024527c51d61422b9107e13d9f4ef1906d6f87c5ebd15989fb8",
+      "link_type": 1,
+      "frames": 474449,
+      "first_utc_timestamp": 1541253686.89033,
+      "last_utc_timestamp": 1541253703.65274,
+      "max_adjacent_timestamp_regression_seconds": 0.0
+    },
+    {
+      "name": "SAT-03-11-2018_0136",
+      "bytes": 200001215,
+      "crc32": "39db210d",
+      "sha256": "7b585b6809000f77827275f6a94aa57607512832d72f887cdece1e814b7f69bb",
+      "link_type": 1,
+      "frames": 472685,
+      "first_utc_timestamp": 1541253703.652741,
+      "last_utc_timestamp": 1541254494.297925,
+      "max_adjacent_timestamp_regression_seconds": 0.0
+    },
+    {
+      "name": "SAT-03-11-2018_0137",
+      "bytes": 200000032,
+      "crc32": "3caaee77",
+      "sha256": "e8d76130a6e5014177a9260345495fc48ac667fc31f92782748621cac69c43bc",
+      "link_type": 1,
+      "frames": 2465197,
+      "first_utc_timestamp": 1541254494.298079,
+      "last_utc_timestamp": 1541255425.830426,
+      "max_adjacent_timestamp_regression_seconds": 0.0
+    },
+    {
+      "name": "SAT-03-11-2018_0138",
+      "bytes": 200000030,
+      "crc32": "926d6177",
+      "sha256": "08bb38057fba1ce93f62b34eedbf5b4680bd6b1b36b6f79938a2852fa8366a52",
+      "link_type": 1,
+      "frames": 2617796,
+      "first_utc_timestamp": 1541255425.830707,
+      "last_utc_timestamp": 1541255499.015743,
+      "max_adjacent_timestamp_regression_seconds": 0.0
+    },
+    {
+      "name": "SAT-03-11-2018_0139",
+      "bytes": 200000026,
+      "crc32": "76f09d14",
+      "sha256": "8280a50b657072787b481b92c292dabc8a20ea39e1c420acc6621d07527af7eb",
+      "link_type": 1,
+      "frames": 2622887,
+      "first_utc_timestamp": 1541255499.015744,
+      "last_utc_timestamp": 1541255569.839616,
+      "max_adjacent_timestamp_regression_seconds": 0.0
+    },
+    {
+      "name": "SAT-03-11-2018_0140",
+      "bytes": 200000067,
+      "crc32": "81044493",
+      "sha256": "0ccf8bda128efa58b119a84ed26a4b237ee839ac48297f01ca76a5894ac2ed5e",
+      "link_type": 1,
+      "frames": 2623294,
+      "first_utc_timestamp": 1541255569.839616,
+      "last_utc_timestamp": 1541255641.050761,
+      "max_adjacent_timestamp_regression_seconds": 0.0
+    },
+    {
+      "name": "SAT-03-11-2018_0141",
+      "bytes": 200000067,
+      "crc32": "2ae5a8b3",
+      "sha256": "af8606ff26457a030e4f6d0204909e9da3ca12ebf464f2541a1075cda5d9dbe3",
+      "link_type": 1,
+      "frames": 2629227,
+      "first_utc_timestamp": 1541255641.051135,
+      "last_utc_timestamp": 1541255711.137462,
+      "max_adjacent_timestamp_regression_seconds": 0.0
+    },
+    {
+      "name": "SAT-03-11-2018_0142",
+      "bytes": 200000058,
+      "crc32": "bb577f6e",
+      "sha256": "85f50de9ac48d974e20d5d8de4ac2556091e10ee6fe40b1d07c62ffb8961f0ba",
+      "link_type": 1,
+      "frames": 2609619,
+      "first_utc_timestamp": 1541255711.137463,
+      "last_utc_timestamp": 1541255788.607338,
+      "max_adjacent_timestamp_regression_seconds": 0.0
+    },
+    {
+      "name": "SAT-03-11-2018_0143",
+      "bytes": 200001122,
+      "crc32": "9db41a9e",
+      "sha256": "625cd2d5de83c79d5b5a2bf62eb1283c25b7eda5aca0f016397371ef501c1dcf",
+      "link_type": 1,
+      "frames": 1915417,
+      "first_utc_timestamp": 1541255788.607338,
+      "last_utc_timestamp": 1541259421.119179,
+      "max_adjacent_timestamp_regression_seconds": 0.0
+    },
+    {
+      "name": "SAT-03-11-2018_0144",
+      "bytes": 200000054,
+      "crc32": "ff0501c9",
+      "sha256": "3d6f0f6e4dedce7bcb7ecdd9ac9730262593539518a73bd87718385e98380399",
+      "link_type": 1,
+      "frames": 373320,
+      "first_utc_timestamp": 1541259421.119182,
+      "last_utc_timestamp": 1541267478.675622,
+      "max_adjacent_timestamp_regression_seconds": 0.0
+    },
+    {
+      "name": "SAT-03-11-2018_0145",
+      "bytes": 69754880,
+      "crc32": "5b457296",
+      "sha256": "eef2069b39526d1850e72140424b3b4910b11c8085dafbad85ed4fccd52bb749",
+      "link_type": 1,
+      "frames": 232832,
+      "first_utc_timestamp": 1541267478.675623,
+      "last_utc_timestamp": 1541277416.34945,
+      "max_adjacent_timestamp_regression_seconds": 0.0
+    }
+  ],
+  "adjacent_member_time_overlaps": [],
+  "index": "data/development/cic2019_v/candidate_tcp.npy",
+  "index_sha256": "eebfaff1de68116fbb54bcdbdaec4d2787baf46175ea9c52150558aeb02d6191",
+  "index_rows": 518,
+  "index_fields_are_grouping_metadata_not_predictors": true,
+  "source_sha256": "ef88a273977460190eb0bcdc2b4b46e93ee02cdb1304d9a6399008d24436e43f",
+  "elapsed_seconds": 1344.716,
+  "independent_attack_V_accepted": false,
+  "study_training_ready": false,
+  "limits": [
+    "ZIP members are source rotations, not independent traffic replications.",
+    "Plainly off-scope IPv4 addresses/ports and non-TCP IPv4 payloads are skipped before transport decoding; integrity hashes still cover every byte. Quality counters apply to candidate TCP input.",
+    "Exact repeated TCP bytes can be retransmissions or capture duplication; no automatic deduplication is performed.",
+    "HTTP/TLS prefixes are service-context evidence, not reassembled complete-request counts.",
+    "Metadata sorting is for audit only; future causal replay requires declared session/gap/order handling and current-window label corroboration."
+  ]
+}

@@ -1,0 +1,337 @@
+{
+  "date": "2026-11-12",
+  "scope": "Independent-source clock/count feasibility; not model fitting/final evaluation.",
+  "plan_sha256": "d624f9888b6b7459640ea6ad3680aa5f141c679e48ab32bdf3aaaeba0620c392",
+  "label_inventory_sha256": "1a9c9aa0d33310f40060e7d1d95cfa4c66d7e9339c18c7758dbe8ef7c6a8cdff",
+  "packet_inventory_sha256": "2c4da13f6b31949485c601fc4daf407eee1e42daa11473bb7f5f9e0d062a6043",
+  "clock_hypotheses": [
+    {
+      "offset_seconds": 10800,
+      "exact_nonempty_groups": 55,
+      "corroborated_packets": 292
+    },
+    {
+      "offset_seconds": -93600,
+      "exact_nonempty_groups": 0,
+      "corroborated_packets": 0
+    },
+    {
+      "offset_seconds": -90000,
+      "exact_nonempty_groups": 0,
+      "corroborated_packets": 0
+    },
+    {
+      "offset_seconds": -86400,
+      "exact_nonempty_groups": 0,
+      "corroborated_packets": 0
+    },
+    {
+      "offset_seconds": -82800,
+      "exact_nonempty_groups": 0,
+      "corroborated_packets": 0
+    },
+    {
+      "offset_seconds": -79200,
+      "exact_nonempty_groups": 0,
+      "corroborated_packets": 0
+    },
+    {
+      "offset_seconds": -75600,
+      "exact_nonempty_groups": 0,
+      "corroborated_packets": 0
+    },
+    {
+      "offset_seconds": -72000,
+      "exact_nonempty_groups": 0,
+      "corroborated_packets": 0
+    },
+    {
+      "offset_seconds": -68400,
+      "exact_nonempty_groups": 0,
+      "corroborated_packets": 0
+    },
+    {
+      "offset_seconds": -64800,
+      "exact_nonempty_groups": 0,
+      "corroborated_packets": 0
+    },
+    {
+      "offset_seconds": -61200,
+      "exact_nonempty_groups": 0,
+      "corroborated_packets": 0
+    },
+    {
+      "offset_seconds": -57600,
+      "exact_nonempty_groups": 0,
+      "corroborated_packets": 0
+    },
+    {
+      "offset_seconds": -54000,
+      "exact_nonempty_groups": 0,
+      "corroborated_packets": 0
+    },
+    {
+      "offset_seconds": -50400,
+      "exact_nonempty_groups": 0,
+      "corroborated_packets": 0
+    },
+    {
+      "offset_seconds": -46800,
+      "exact_nonempty_groups": 0,
+      "corroborated_packets": 0
+    },
+    {
+      "offset_seconds": -43200,
+      "exact_nonempty_groups": 0,
+      "corroborated_packets": 0
+    },
+    {
+      "offset_seconds": -39600,
+      "exact_nonempty_groups": 0,
+      "corroborated_packets": 0
+    },
+    {
+      "offset_seconds": -36000,
+      "exact_nonempty_groups": 0,
+      "corroborated_packets": 0
+    },
+    {
+      "offset_seconds": -32400,
+      "exact_nonempty_groups": 0,
+      "corroborated_packets": 0
+    },
+    {
+      "offset_seconds": -28800,
+      "exact_nonempty_groups": 0,
+      "corroborated_packets": 0
+    },
+    {
+      "offset_seconds": -25200,
+      "exact_nonempty_groups": 0,
+      "corroborated_packets": 0
+    },
+    {
+      "offset_seconds": -21600,
+      "exact_nonempty_groups": 0,
+      "corroborated_packets": 0
+    },
+    {
+      "offset_seconds": -18000,
+      "exact_nonempty_groups": 0,
+      "corroborated_packets": 0
+    },
+    {
+      "offset_seconds": -14400,
+      "exact_nonempty_groups": 0,
+      "corroborated_packets": 0
+    },
+    {
+      "offset_seconds": -10800,
+      "exact_nonempty_groups": 0,
+      "corroborated_packets": 0
+    },
+    {
+      "offset_seconds": -7200,
+      "exact_nonempty_groups": 0,
+      "corroborated_packets": 0
+    },
+    {
+      "offset_seconds": -3600,
+      "exact_nonempty_groups": 0,
+      "corroborated_packets": 0
+    },
+    {
+      "offset_seconds": 0,
+      "exact_nonempty_groups": 0,
+      "corroborated_packets": 0
+    },
+    {
+      "offset_seconds": 3600,
+      "exact_nonempty_groups": 0,
+      "corroborated_packets": 0
+    },
+    {
+      "offset_seconds": 7200,
+      "exact_nonempty_groups": 0,
+      "corroborated_packets": 0
+    },
+    {
+      "offset_seconds": 14400,
+      "exact_nonempty_groups": 0,
+      "corroborated_packets": 0
+    },
+    {
+      "offset_seconds": 18000,
+      "exact_nonempty_groups": 0,
+      "corroborated_packets": 0
+    },
+    {
+      "offset_seconds": 21600,
+      "exact_nonempty_groups": 0,
+      "corroborated_packets": 0
+    },
+    {
+      "offset_seconds": 25200,
+      "exact_nonempty_groups": 0,
+      "corroborated_packets": 0
+    },
+    {
+      "offset_seconds": 28800,
+      "exact_nonempty_groups": 0,
+      "corroborated_packets": 0
+    },
+    {
+      "offset_seconds": 32400,
+      "exact_nonempty_groups": 0,
+      "corroborated_packets": 0
+    },
+    {
+      "offset_seconds": 36000,
+      "exact_nonempty_groups": 0,
+      "corroborated_packets": 0
+    },
+    {
+      "offset_seconds": 39600,
+      "exact_nonempty_groups": 0,
+      "corroborated_packets": 0
+    },
+    {
+      "offset_seconds": 43200,
+      "exact_nonempty_groups": 0,
+      "corroborated_packets": 0
+    },
+    {
+      "offset_seconds": 46800,
+      "exact_nonempty_groups": 0,
+      "corroborated_packets": 0
+    },
+    {
+      "offset_seconds": 50400,
+      "exact_nonempty_groups": 0,
+      "corroborated_packets": 0
+    },
+    {
+      "offset_seconds": 54000,
+      "exact_nonempty_groups": 0,
+      "corroborated_packets": 0
+    },
+    {
+      "offset_seconds": 57600,
+      "exact_nonempty_groups": 0,
+      "corroborated_packets": 0
+    },
+    {
+      "offset_seconds": 61200,
+      "exact_nonempty_groups": 0,
+      "corroborated_packets": 0
+    },
+    {
+      "offset_seconds": 64800,
+      "exact_nonempty_groups": 0,
+      "corroborated_packets": 0
+    },
+    {
+      "offset_seconds": 68400,
+      "exact_nonempty_groups": 0,
+      "corroborated_packets": 0
+    },
+    {
+      "offset_seconds": 72000,
+      "exact_nonempty_groups": 0,
+      "corroborated_packets": 0
+    },
+    {
+      "offset_seconds": 75600,
+      "exact_nonempty_groups": 0,
+      "corroborated_packets": 0
+    },
+    {
+      "offset_seconds": 79200,
+      "exact_nonempty_groups": 0,
+      "corroborated_packets": 0
+    },
+    {
+      "offset_seconds": 82800,
+      "exact_nonempty_groups": 0,
+      "corroborated_packets": 0
+    },
+    {
+      "offset_seconds": 86400,
+      "exact_nonempty_groups": 0,
+      "corroborated_packets": 0
+    },
+    {
+      "offset_seconds": 90000,
+      "exact_nonempty_groups": 0,
+      "corroborated_packets": 0
+    },
+    {
+      "offset_seconds": 93600,
+      "exact_nonempty_groups": 0,
+      "corroborated_packets": 0
+    }
+  ],
+  "clock_offset_seconds": 10800,
+  "timestamp_join_tolerance_seconds": 1e-06,
+  "clock_basis": "Pure SYN or BENIGN canonical directional-count concordance on allowed development V data; not a detector score or a presumed publisher timezone.",
+  "services": [
+    {
+      "service": "192.168.50.1:80",
+      "service_index": 0,
+      "nonempty_second_status": {},
+      "corroborated_attack_packets": 0,
+      "raw_packets": 0,
+      "label_table": "data/development/cic2019_v/192-168-50-1-80-labels.csv",
+      "label_sha256": "92f590eb020bb7e8f2efa44a706126efbe134c07b8c660ffbe79f70edbe9599b"
+    },
+    {
+      "service": "192.168.50.1:443",
+      "service_index": 1,
+      "nonempty_second_status": {},
+      "corroborated_attack_packets": 0,
+      "raw_packets": 0,
+      "label_table": "data/development/cic2019_v/192-168-50-1-443-labels.csv",
+      "label_sha256": "92f590eb020bb7e8f2efa44a706126efbe134c07b8c660ffbe79f70edbe9599b"
+    },
+    {
+      "service": "192.168.50.4:80",
+      "service_index": 2,
+      "nonempty_second_status": {
+        "not_labelled": 3,
+        "uncertain": 1,
+        "attack_present": 9
+      },
+      "corroborated_attack_packets": 160,
+      "raw_packets": 240,
+      "label_table": "data/development/cic2019_v/192-168-50-4-80-labels.csv",
+      "label_sha256": "ec8d6db50c3e63bd2ae9676fdbcf46bcf8b9e4f5760e727bf964796e4e70880b"
+    },
+    {
+      "service": "192.168.50.4:443",
+      "service_index": 3,
+      "nonempty_second_status": {
+        "not_labelled": 14,
+        "uncertain": 32,
+        "attack_present": 44
+      },
+      "corroborated_attack_packets": 132,
+      "raw_packets": 278,
+      "label_table": "data/development/cic2019_v/192-168-50-4-443-labels.csv",
+      "label_sha256": "64416438fa1b1e14daf772ffd9599d3d8e3b32e11001361d71a55fbf9b8d19c0"
+    }
+  ],
+  "packet_input_quality_passed": true,
+  "label_metadata_quality_passed": true,
+  "selected_metadata_candidate": "192.168.50.4:443",
+  "independent_attack_V_accepted": false,
+  "study_training_ready": false,
+  "source_sha256": "5f1e64384ccd45e86c1e45ffc6e13d793d891c66f23d5ac68441971f4bb5497e",
+  "elapsed_seconds": 0.124,
+  "next_gate": "If a candidate exists, declare raw stream/service/gap handling before fresh causal extraction; otherwise preserve negative compatibility evidence and find another source.",
+  "limitations": [
+    "Aggregate flow counts and interval correspondence corroborate current-window labels, not exact packet or onset ground truth.",
+    "SYN traffic at arbitrary ports is not silently pooled into a web-service stream.",
+    "No uncertain, unlabelled or idle time is inferred benign; sparse selected cells are not independent episodes.",
+    "The reserved 01-12 known-test candidate remains unopened and unqualified; slow/external sources remain reserved."
+  ]
+}

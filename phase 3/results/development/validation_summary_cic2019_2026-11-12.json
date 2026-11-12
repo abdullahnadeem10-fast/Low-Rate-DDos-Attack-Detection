@@ -1,0 +1,9 @@
+{
+  "date": "2026-11-12",
+  "tests_run": 81,
+  "failures": 0,
+  "errors": 0,
+  "successful": true,
+  "log_sha256": "ba2906cce2d0904a67db8304420003fa0622b70cc7c8cc66edc33c3f05d2e7f4",
+  "scope": "Offline engineering checks including source/final-reservation guards, exact HTTP ranges, extensionless rotations, ISO clock/count joins and cache-vs-bounded-raw feature equivalence. Not classifier performance or final attack tests."
+}

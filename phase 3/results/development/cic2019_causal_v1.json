@@ -1,0 +1,72 @@
+{
+  "date": "2026-11-12",
+  "scope": "Preliminary independently recorded known-SYN validation component; no final research scoring.",
+  "plan": "plan/cic2019_features_v1.json",
+  "plan_sha256": "2518047afcdd8d3de8c050520070dfd8ea71581dc1f3f55d2e8a095b74413d72",
+  "group_id": "cic2019-03-11-syn-tcp443-v",
+  "role": "V",
+  "condition": "public_syn_tcp443",
+  "service": "192.168.50.4:443",
+  "raw_window_count": 29919,
+  "raw_status_windows": {
+    "not_labelled": 29843,
+    "uncertain": 32,
+    "attack_present": 44
+  },
+  "primary_exclusion_windows": {
+    "boundary_guard": 100,
+    "label_not_labelled": 29743,
+    "label_uncertain": 32,
+    "retained": 44
+  },
+  "counts": {
+    "selected_tcp_in_full_seconds": 278
+  },
+  "selected_raw_metadata_packets": 278,
+  "late_selected_dropped": 0,
+  "late_zero_basis": "Proven monotonic raw capture order, not an assumption from sorted cache alone.",
+  "retained": {
+    "windows": 44,
+    "packets": 142,
+    "empty_windows": 0,
+    "mean_active_connections": 3.8863636363636362,
+    "mean_unknown_age_connections": 0.0
+  },
+  "excluded": {
+    "windows": 29875,
+    "packets": 136,
+    "empty_windows": 29829,
+    "mean_active_connections": 0.050175732217573224,
+    "mean_unknown_age_connections": 0.0
+  },
+  "files": {
+    "features.csv": {
+      "path": "data/development/cic2019_v/causal_v1/features.csv",
+      "sha256": "ab16051ec3b5a249cca1d92c54620c41e04fccaa0f8a2b113df300e87b1ed056"
+    },
+    "eligibility.csv": {
+      "path": "data/development/cic2019_v/causal_v1/eligibility.csv",
+      "sha256": "a880d8f0da13160098aa1475771670e2838fa0e1cd4c75ea3f64f22a08eaff9a"
+    },
+    "model_windows.csv": {
+      "path": "data/development/cic2019_v/causal_v1/model_windows.csv",
+      "sha256": "8f1538cb7f9eef2aad0f8015447044d1bfd1e331897e8058cc54b3252e5d21a4"
+    }
+  },
+  "source_sha256": {
+    "replay_cic2019_validation.py": "0fe6f1b993b3cdcf54d62193d3334ad8ad61855b5d9129cbd68dffdc533e5a3e",
+    "causal_features.py": "24795f084da55ab93bb858e14bd35663fd85c86b994ed928cb5d80e481c5e708"
+  },
+  "recorded_attack_validation_sources": 1,
+  "independent_attack_V_packet_component_available": true,
+  "study_training_ready": false,
+  "main_packet_window_model_trained": false,
+  "final_attack_tests_run": 0,
+  "limitations": [
+    "This is a sparse TCP/443 slice of a predominantly other-port SYN campaign; it is not a measurement of whole-host or HTTPS denial impact.",
+    "No TLS payload prefix was observed at this endpoint. Port compatibility and SYN labels do not prove a functioning HTTPS application or every packet malicious.",
+    "Flow directional counts/intervals corroborate labels, not exact packet or onset ground truth.",
+    "One independent validation recording does not create one independent experiment per labelled second or archive rotation.",
+    "Sparse coverage, class/service/path/source confounding and broader benign congestion/diversity/repetitions remain unresolved."
+  ]
+}

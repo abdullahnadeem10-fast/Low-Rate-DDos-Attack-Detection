@@ -1,0 +1,57 @@
+{
+  "date": "2026-11-12",
+  "version": "cic2019_validation_v1",
+  "scope": "Independent known TCP-denial validation source feasibility; not final scoring or detector fitting.",
+  "publisher": "https://www.unb.ca/cic/datasets/ddos-2019.html",
+  "publisher_download_portal": "https://cicresearch.ca/CICDataset/CICDDoS2019/",
+  "publisher_portal_observation": "Server error; no personal form submitted. Use a declared public mirror, not a claim of publisher-authenticated bytes.",
+  "mirror": "bencorn/CICDDoS2019",
+  "revision": "88b5d61acbcd41a4bb96221a6a64990a506804b8",
+  "source_metadata": "https://huggingface.co/api/datasets/bencorn/CICDDoS2019/revision/88b5d61acbcd41a4bb96221a6a64990a506804b8?blobs=true",
+  "development_V_group": "Entire 03-11 capture source; no portion becomes an untouched final set.",
+  "reserved_final_K_candidate": "Entire 01-12 source including all raw/context/labels; metadata listing only, no payload acquisition, opening or scoring before freeze.",
+  "final_K_candidate_qualified": false,
+  "allowed_downloads": [
+    {
+      "id": "pcaps-03-11",
+      "path": "pcaps/03-11/PCAP-03-11.zip",
+      "bytes": 2000948331,
+      "sha256": "cdc8935296cab7a2354d4fd32939f7d5e6c592371e5fb89d6a3094cc05dc38c5",
+      "local": "data/development/cic2019_v/PCAP-03-11.zip"
+    },
+    {
+      "id": "labels-03-11",
+      "path": "csvs/CSV-03-11.zip",
+      "bytes": 918815761,
+      "sha256": "a81d8ce59a819d13e6bfea4e4812d6d144d0572b6d2c42d8e0c0a8cf1c26c263",
+      "local": "data/development/cic2019_v/CSV-03-11.zip"
+    }
+  ],
+  "label_member_rule": "Read only the unique Syn.csv member from the 03-11 ZIP; inventory directory names first. Do not open other CSV payloads.",
+  "independent_syn_csv_crosscheck": {
+    "mirror": "baalajimaestro/CICDDoS2019",
+    "revision": "1b3677ee26ba69caa5a9c1ba91cc75cec7ad976e",
+    "path": "03-11/Syn.csv",
+    "bytes": 1877372065,
+    "sha256": "603648e7c56e9232b6d647470dc01b6451502c594a4ebf235b45103edb5e545a"
+  },
+  "endpoint_metadata_candidates": [
+    "192.168.50.1:80",
+    "192.168.50.1:443",
+    "192.168.50.4:80",
+    "192.168.50.4:443"
+  ],
+  "selection_before_features": "Inventory Syn labels and packet metadata at these publisher web-server HTTP(S) endpoints. Prefer greatest corroborated nonempty SYN coverage, tie by service string; no model scores. No silent aggregation across all destination ports.",
+  "time_policy": "Treat folder/day names as source identifiers; establish actual PCAP/CSV UTC alignment from evidence rather than trusting date/schedule strings.",
+  "stream_policy": "ZIP members may be rotations of one capture, not independent sessions. Inventory times and order first; preserve whole 03-11 ownership by V, reset only at documented stream/session boundaries, not arbitrary filenames.",
+  "label_policy": "Corroborate canonical directional counts and compatible SYN evidence. Uncertain/idle/unlabelled time is unknown. Filename/class prevalence does not automatically label every packet/second.",
+  "feature_policy": "No fitted features, model scoring or training during feasibility. Declare selected raw stream, service and any gaps/guards in a new manifest before fresh causal extraction.",
+  "disk_policy": "Download two pinned archives only; read members as streams, do not expand entire ZIPs. Preserve >=10 GiB free and bound requests/ranges.",
+  "excluded": [
+    "entire Slowloris/Slowhttptest groups and context",
+    "entire CSE-CIC-IDS2018 including benign",
+    "all 01-12 payloads reserved as final K candidate"
+  ],
+  "study_training_ready": false,
+  "independent_attack_V_accepted": false
+}

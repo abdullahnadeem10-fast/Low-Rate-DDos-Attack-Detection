@@ -1,0 +1,642 @@
+{
+  "date": "2026-11-12",
+  "scope": "Development-only eligibility revision supported by metadata audit, not blind preregistration or final evaluation.",
+  "plan": "plan/public_partitions_v2.json",
+  "plan_sha256": "347f06914cc02bc997a7f9ba9356ac845566f9e50f7a8e3a7283ba72841bb9c7",
+  "capture_sha256": "beff0dcce1eebc9b2454582f4dc8ed0ba0112b2c619a710bf03af93147254cd0",
+  "source_sha256": {
+    "replay_public_v2.py": "93252b7c6622b44b7f5d3c8b229f09e9b83bfaa05ef67e62d0b32392425b6cb4",
+    "tcp_incarnations.py": "c9d073f90d79c755078cb49f5fcbf33a5e55604acdfdcf583a35eae53f1587aa",
+    "causal_features.py": "24795f084da55ab93bb858e14bd35663fd85c86b994ed928cb5d80e481c5e708"
+  },
+  "partitions": [
+    {
+      "id": "friday-http-72-21-91-29-80",
+      "service": "72.21.91.29:80",
+      "role": "T",
+      "condition": "public_http",
+      "kind": "benign_destination",
+      "raw_start": 1499451900,
+      "raw_end": 1499457760,
+      "eligible_start": 1499452200,
+      "eligible_end": 1499457710,
+      "label_table": "data/development/public_http_candidates/72.21.91.29_80/labels.csv",
+      "label_sha256": "c7bbdf0c120c620e9211e457ffb9a8a92472bb4dc16dcf2b8ebfe7b0ad64b1d9",
+      "accepted_status": "benign_only",
+      "y": 0,
+      "prior_corroborated_seconds": 1233,
+      "packet_counts": {
+        "unknown_or_ambiguous_start_packets": 394,
+        "selected_tcp": 8055,
+        "cross_role_syn_fingerprints": 0
+      },
+      "raw_status_windows": {
+        "not_labelled": 4241,
+        "uncertain": 386,
+        "benign_only": 1233
+      },
+      "primary_exclusion_windows": {
+        "boundary_guard": 350,
+        "label_not_labelled": 3895,
+        "label_uncertain": 386,
+        "retained": 1229
+      },
+      "all_exclusion_flags_windows": {
+        "boundary_guard": 350,
+        "history_incomplete": 19,
+        "label_not_labelled": 4241,
+        "label_uncertain": 386
+      },
+      "unknown_influence_intervals": [],
+      "shared_influence_intervals": [],
+      "retained": {
+        "windows": 1229,
+        "packets": 4684,
+        "empty_windows": 0,
+        "mean_active_connections": 6.888527257933279,
+        "mean_unknown_age_connections": 1.4149715215622458
+      },
+      "excluded": {
+        "windows": 4631,
+        "packets": 3371,
+        "empty_windows": 4126,
+        "mean_active_connections": 5.251349600518247,
+        "mean_unknown_age_connections": 1.473763765925286
+      },
+      "files": {
+        "features.csv": {
+          "relative_path": "data/development/public_partitioned_v1/friday-http-72-21-91-29-80/features.csv",
+          "sha256": "8dc56550bfd824fb337d998823d2f1a5ce98452e7dd72392b5bd439b4b8b11ae"
+        },
+        "eligibility.csv": {
+          "relative_path": "data/development/public_partitioned_v1/friday-http-72-21-91-29-80/eligibility.csv",
+          "sha256": "007d9a1c29023897d57bd217834d35aa662e85ccd620dcae72cf217c5ff3f869"
+        },
+        "model_windows.csv": {
+          "relative_path": "data/development/public_partitioned_v1/friday-http-72-21-91-29-80/model_windows.csv",
+          "sha256": "63e91dbb7deecb115db707b3c5242fd25689d03c0a2cfb532404c7ea2fa0e198"
+        }
+      },
+      "lineage": "Unchanged whole-destination v1 benign component."
+    },
+    {
+      "id": "friday-http-23-61-187-27-80",
+      "service": "23.61.187.27:80",
+      "role": "C1",
+      "condition": "public_http",
+      "kind": "benign_destination",
+      "raw_start": 1499451900,
+      "raw_end": 1499457760,
+      "eligible_start": 1499452200,
+      "eligible_end": 1499457710,
+      "label_table": "data/development/public_http_candidates/23.61.187.27_80/labels.csv",
+      "label_sha256": "d0ef52c5d2e91bd0d35ef7580fe5cf5d16ef1728ec158012bd4f48258b59dcd1",
+      "accepted_status": "benign_only",
+      "y": 0,
+      "prior_corroborated_seconds": 505,
+      "packet_counts": {
+        "selected_tcp": 4480,
+        "unknown_or_ambiguous_start_packets": 194,
+        "cross_role_syn_fingerprints": 0
+      },
+      "raw_status_windows": {
+        "not_labelled": 5113,
+        "benign_only": 505,
+        "uncertain": 242
+      },
+      "primary_exclusion_windows": {
+        "boundary_guard": 350,
+        "label_not_labelled": 4774,
+        "retained": 494,
+        "label_uncertain": 242
+      },
+      "all_exclusion_flags_windows": {
+        "boundary_guard": 350,
+        "history_incomplete": 19,
+        "label_not_labelled": 5113,
+        "label_uncertain": 242
+      },
+      "unknown_influence_intervals": [],
+      "shared_influence_intervals": [],
+      "retained": {
+        "windows": 494,
+        "packets": 2037,
+        "empty_windows": 0,
+        "mean_active_connections": 10.058704453441296,
+        "mean_unknown_age_connections": 2.4757085020242915
+      },
+      "excluded": {
+        "windows": 5366,
+        "packets": 2443,
+        "empty_windows": 5113,
+        "mean_active_connections": 2.4135296310100633,
+        "mean_unknown_age_connections": 0.8354453969437197
+      },
+      "files": {
+        "features.csv": {
+          "relative_path": "data/development/public_partitioned_v1/friday-http-23-61-187-27-80/features.csv",
+          "sha256": "7a4107e6c7188ff829d62e470e6ab08853e64950f8fff0147d0d5e180b523b25"
+        },
+        "eligibility.csv": {
+          "relative_path": "data/development/public_partitioned_v1/friday-http-23-61-187-27-80/eligibility.csv",
+          "sha256": "0c976b8d8d9d681b9444af6c91e413db9d757bf98d56a3d24b2555406264e7c3"
+        },
+        "model_windows.csv": {
+          "relative_path": "data/development/public_partitioned_v1/friday-http-23-61-187-27-80/model_windows.csv",
+          "sha256": "3c69080272e91ac38a8d778945aff664cd26532b628a1c92455c154fc28a72ef"
+        }
+      },
+      "lineage": "Unchanged whole-destination v1 benign component."
+    },
+    {
+      "id": "friday-http-23-52-155-27-80",
+      "service": "23.52.155.27:80",
+      "role": "C2",
+      "condition": "public_http",
+      "kind": "benign_destination",
+      "raw_start": 1499451900,
+      "raw_end": 1499457760,
+      "eligible_start": 1499452200,
+      "eligible_end": 1499457710,
+      "label_table": "data/development/public_http_candidates/23.52.155.27_80/labels.csv",
+      "label_sha256": "61eab72da098ca4a47a2da941621f9e890be4cfc38d13d02cda1bf62a32a1d35",
+      "accepted_status": "benign_only",
+      "y": 0,
+      "prior_corroborated_seconds": 246,
+      "packet_counts": {
+        "selected_tcp": 3366,
+        "unknown_or_ambiguous_start_packets": 146,
+        "cross_role_syn_fingerprints": 0
+      },
+      "raw_status_windows": {
+        "not_labelled": 5461,
+        "uncertain": 153,
+        "benign_only": 246
+      },
+      "primary_exclusion_windows": {
+        "boundary_guard": 350,
+        "label_uncertain": 153,
+        "label_not_labelled": 5111,
+        "retained": 246
+      },
+      "all_exclusion_flags_windows": {
+        "boundary_guard": 350,
+        "history_incomplete": 19,
+        "label_not_labelled": 5461,
+        "label_uncertain": 153
+      },
+      "unknown_influence_intervals": [],
+      "shared_influence_intervals": [],
+      "retained": {
+        "windows": 246,
+        "packets": 1466,
+        "empty_windows": 0,
+        "mean_active_connections": 18.98780487804878,
+        "mean_unknown_age_connections": 3.4390243902439024
+      },
+      "excluded": {
+        "windows": 5614,
+        "packets": 1900,
+        "empty_windows": 5410,
+        "mean_active_connections": 1.8015675097969361,
+        "mean_unknown_age_connections": 0.5819380121125757
+      },
+      "files": {
+        "features.csv": {
+          "relative_path": "data/development/public_partitioned_v1/friday-http-23-52-155-27-80/features.csv",
+          "sha256": "a56dc5903b9703665e9deb9bd2938e7d9ae3fdf99d196b419be6b4e3a864b335"
+        },
+        "eligibility.csv": {
+          "relative_path": "data/development/public_partitioned_v1/friday-http-23-52-155-27-80/eligibility.csv",
+          "sha256": "61b167deee2fd063e4961085f3d398d07f4c31bd3bc79b328506e610ee917d56"
+        },
+        "model_windows.csv": {
+          "relative_path": "data/development/public_partitioned_v1/friday-http-23-52-155-27-80/model_windows.csv",
+          "sha256": "0870ade29c7ddfbb0a23b8dec1e8f3523ce4b5e3422940da3a34f19b5210a2e7"
+        }
+      },
+      "lineage": "Unchanged whole-destination v1 benign component."
+    },
+    {
+      "id": "friday-http-119-205-194-11-80",
+      "service": "119.205.194.11:80",
+      "role": "T",
+      "condition": "public_http",
+      "kind": "benign_destination",
+      "raw_start": 1499451900,
+      "raw_end": 1499457760,
+      "eligible_start": 1499452200,
+      "eligible_end": 1499457710,
+      "label_table": "data/development/public_http_candidates/119.205.194.11_80/labels.csv",
+      "label_sha256": "dfa1a104e04269b93394d4204243f6d15849120836b74b6a870b7966b2e20c8a",
+      "accepted_status": "benign_only",
+      "y": 0,
+      "prior_corroborated_seconds": 100,
+      "packet_counts": {
+        "selected_tcp": 5015,
+        "unknown_or_ambiguous_start_packets": 200,
+        "cross_role_syn_fingerprints": 0
+      },
+      "raw_status_windows": {
+        "not_labelled": 5659,
+        "benign_only": 100,
+        "uncertain": 101
+      },
+      "primary_exclusion_windows": {
+        "boundary_guard": 350,
+        "label_not_labelled": 5309,
+        "retained": 100,
+        "label_uncertain": 101
+      },
+      "all_exclusion_flags_windows": {
+        "boundary_guard": 350,
+        "history_incomplete": 19,
+        "label_not_labelled": 5659,
+        "label_uncertain": 101
+      },
+      "unknown_influence_intervals": [],
+      "shared_influence_intervals": [],
+      "retained": {
+        "windows": 100,
+        "packets": 2005,
+        "empty_windows": 0,
+        "mean_active_connections": 10.29,
+        "mean_unknown_age_connections": 3.19
+      },
+      "excluded": {
+        "windows": 5760,
+        "packets": 3010,
+        "empty_windows": 5659,
+        "mean_active_connections": 1.565625,
+        "mean_unknown_age_connections": 0.9550347222222222
+      },
+      "files": {
+        "features.csv": {
+          "relative_path": "data/development/public_partitioned_v1/friday-http-119-205-194-11-80/features.csv",
+          "sha256": "f9fd8273902ffb7b67588a4604583ce9a4630c7222ad705e5b058dd5a1d4dcb3"
+        },
+        "eligibility.csv": {
+          "relative_path": "data/development/public_partitioned_v1/friday-http-119-205-194-11-80/eligibility.csv",
+          "sha256": "1dabb4637538bd782912bac201a29604158dc1b91816348a5bb51f50c6dc2bfe"
+        },
+        "model_windows.csv": {
+          "relative_path": "data/development/public_partitioned_v1/friday-http-119-205-194-11-80/model_windows.csv",
+          "sha256": "16cb7f6b1e067379a790977ccce8a3fdc629749318ed5d3f62670f716600a1a3"
+        }
+      },
+      "lineage": "Unchanged whole-destination v1 benign component."
+    },
+    {
+      "id": "friday-http-23-54-187-27-80",
+      "service": "23.54.187.27:80",
+      "role": "V",
+      "condition": "public_http",
+      "kind": "benign_destination",
+      "raw_start": 1499451900,
+      "raw_end": 1499457760,
+      "eligible_start": 1499452200,
+      "eligible_end": 1499457710,
+      "label_table": "data/development/public_http_candidates/23.54.187.27_80/labels.csv",
+      "label_sha256": "8b9da28cf70553cc84a88b69a5e95e3aa8a44d7f799133fde324ea84d85d1326",
+      "accepted_status": "benign_only",
+      "y": 0,
+      "prior_corroborated_seconds": 81,
+      "packet_counts": {
+        "selected_tcp": 2670,
+        "unknown_or_ambiguous_start_packets": 141,
+        "cross_role_syn_fingerprints": 0
+      },
+      "raw_status_windows": {
+        "not_labelled": 5472,
+        "uncertain": 307,
+        "benign_only": 81
+      },
+      "primary_exclusion_windows": {
+        "boundary_guard": 350,
+        "label_not_labelled": 5122,
+        "label_uncertain": 307,
+        "retained": 81
+      },
+      "all_exclusion_flags_windows": {
+        "boundary_guard": 350,
+        "history_incomplete": 19,
+        "label_not_labelled": 5472,
+        "label_uncertain": 307
+      },
+      "unknown_influence_intervals": [],
+      "shared_influence_intervals": [],
+      "retained": {
+        "windows": 81,
+        "packets": 336,
+        "empty_windows": 0,
+        "mean_active_connections": 8.691358024691358,
+        "mean_unknown_age_connections": 3.0
+      },
+      "excluded": {
+        "windows": 5779,
+        "packets": 2334,
+        "empty_windows": 5428,
+        "mean_active_connections": 1.615504412528119,
+        "mean_unknown_age_connections": 0.663955701678491
+      },
+      "files": {
+        "features.csv": {
+          "relative_path": "data/development/public_partitioned_v1/friday-http-23-54-187-27-80/features.csv",
+          "sha256": "fc8dd7f2d0126d321810ab08d52987d3c1feb947d5893e9dbaae4900f7be794e"
+        },
+        "eligibility.csv": {
+          "relative_path": "data/development/public_partitioned_v1/friday-http-23-54-187-27-80/eligibility.csv",
+          "sha256": "e8b282940f14344b686508caa444c0981a00fd03ed46316507aab369b5fb85f0"
+        },
+        "model_windows.csv": {
+          "relative_path": "data/development/public_partitioned_v1/friday-http-23-54-187-27-80/model_windows.csv",
+          "sha256": "49c5c27ee9a8234fc52eebdc8e0d6b65fcc6e050416991756c2695d025e2deb4"
+        }
+      },
+      "lineage": "Unchanged whole-destination v1 benign component."
+    },
+    {
+      "id": "friday-http-119-205-194-14-80",
+      "service": "119.205.194.14:80",
+      "role": "V",
+      "condition": "public_http",
+      "kind": "benign_destination",
+      "raw_start": 1499451900,
+      "raw_end": 1499457760,
+      "eligible_start": 1499452200,
+      "eligible_end": 1499457710,
+      "label_table": "data/development/public_http_candidates/119.205.194.14_80/labels.csv",
+      "label_sha256": "e8c9d62881ab0c8e145fdb21908443905ea6c9b638f73020905aaff94f1a5a8d",
+      "accepted_status": "benign_only",
+      "y": 0,
+      "prior_corroborated_seconds": 74,
+      "packet_counts": {
+        "selected_tcp": 2595,
+        "unknown_or_ambiguous_start_packets": 104,
+        "cross_role_syn_fingerprints": 0
+      },
+      "raw_status_windows": {
+        "not_labelled": 5746,
+        "benign_only": 74,
+        "uncertain": 40
+      },
+      "primary_exclusion_windows": {
+        "boundary_guard": 350,
+        "label_not_labelled": 5396,
+        "retained": 74,
+        "label_uncertain": 40
+      },
+      "all_exclusion_flags_windows": {
+        "boundary_guard": 350,
+        "history_incomplete": 19,
+        "label_not_labelled": 5746,
+        "label_uncertain": 40
+      },
+      "unknown_influence_intervals": [],
+      "shared_influence_intervals": [],
+      "retained": {
+        "windows": 74,
+        "packets": 1518,
+        "empty_windows": 0,
+        "mean_active_connections": 5.364864864864865,
+        "mean_unknown_age_connections": 1.0945945945945945
+      },
+      "excluded": {
+        "windows": 5786,
+        "packets": 1077,
+        "empty_windows": 5746,
+        "mean_active_connections": 0.8187003110957484,
+        "mean_unknown_age_connections": 0.494123746975458
+      },
+      "files": {
+        "features.csv": {
+          "relative_path": "data/development/public_partitioned_v1/friday-http-119-205-194-14-80/features.csv",
+          "sha256": "c3ee63a2f989090592bfc1dbf11dfe1bff900b0c8876d96f41e0a4e2f2d91443"
+        },
+        "eligibility.csv": {
+          "relative_path": "data/development/public_partitioned_v1/friday-http-119-205-194-14-80/eligibility.csv",
+          "sha256": "17d65fa949eaa016a062a66f249682132c891aeea57ba291cc95870df74b2417"
+        },
+        "model_windows.csv": {
+          "relative_path": "data/development/public_partitioned_v1/friday-http-119-205-194-14-80/model_windows.csv",
+          "sha256": "5435fd5d58bd79c69e9aa5f6f4aeeca75ed74b9695417ef4b1d3860abdc90b4c"
+        }
+      },
+      "lineage": "Unchanged whole-destination v1 benign component."
+    },
+    {
+      "id": "friday-ddos-t",
+      "service": "192.168.10.50:80",
+      "role": "T",
+      "condition": "public_known_ddos",
+      "kind": "attack_block",
+      "raw_start": 1499453760,
+      "raw_end": 1499454240,
+      "eligible_start": 1499453810,
+      "eligible_end": 1499454190,
+      "label_table": "results/development/friday_service_corroborated_labels.csv",
+      "label_sha256": "d4c3a214b3aa61dec6a1387f3da381c3b42c9fc8b092e9dee3f66deeae1720b7",
+      "accepted_status": "attack_present",
+      "y": 1,
+      "lineage": "Fresh v2 replay; features byte-identical to v1; versioned metadata eligibility only.",
+      "packet_counts": {
+        "selected_tcp": 476981,
+        "direct_unsafe_packets": 16372
+      },
+      "unsafe_influence_intervals": [
+        [
+          1499453794,
+          1499454290
+        ]
+      ],
+      "raw_status_windows": {
+        "not_labelled": 55,
+        "uncertain": 7,
+        "attack_present": 418
+      },
+      "primary_exclusion_windows": {
+        "boundary_guard": 100,
+        "unsafe_tcp_tracker_influence": 380
+      },
+      "all_exclusion_flags_windows": {
+        "boundary_guard": 100,
+        "history_incomplete": 19,
+        "label_not_labelled": 55,
+        "label_uncertain": 7,
+        "unsafe_tcp_tracker_influence": 446
+      },
+      "retained": {
+        "windows": 0
+      },
+      "excluded": {
+        "windows": 480,
+        "packets": 476981,
+        "empty_windows": 55,
+        "mean_active_connections": 505.9583333333333,
+        "mean_unknown_age_connections": 6.964583333333334
+      },
+      "files": {
+        "features.csv": {
+          "relative_path": "data/development/public_partitioned_v2/friday-ddos-t/features.csv",
+          "sha256": "a7829b304c10e115f4a5dfd20120ada9a5d37ee84428ed207389e651caa2ddfa"
+        },
+        "model_windows.csv": {
+          "relative_path": "data/development/public_partitioned_v2/friday-ddos-t/model_windows.csv",
+          "sha256": "543f001a20db4cbedbc5345af3da6862108ea8084fe4cb94361b0182905cb60d"
+        },
+        "eligibility.csv": {
+          "relative_path": "data/development/public_partitioned_v2/friday-ddos-t/eligibility.csv",
+          "sha256": "aeca828f4683cc3a8f4ce44247639d303349b1d513be2077679e992f463501dd"
+        }
+      },
+      "tcp_provenance_packets": {
+        "supported_input_packets": 460609,
+        "unsafe_input_packets": 16372
+      }
+    },
+    {
+      "id": "friday-ddos-v",
+      "service": "192.168.10.50:80",
+      "role": "V",
+      "condition": "public_known_ddos",
+      "kind": "attack_block",
+      "raw_start": 1499454360,
+      "raw_end": 1499454960,
+      "eligible_start": 1499454410,
+      "eligible_end": 1499454910,
+      "label_table": "results/development/friday_service_corroborated_labels.csv",
+      "label_sha256": "d4c3a214b3aa61dec6a1387f3da381c3b42c9fc8b092e9dee3f66deeae1720b7",
+      "accepted_status": "attack_present",
+      "y": 1,
+      "lineage": "Fresh v2 replay; features byte-identical to v1; versioned metadata eligibility only.",
+      "packet_counts": {
+        "direct_unsafe_packets": 20937,
+        "selected_tcp": 659088
+      },
+      "unsafe_influence_intervals": [
+        [
+          1499454360,
+          1499455010
+        ]
+      ],
+      "raw_status_windows": {
+        "attack_present": 547,
+        "uncertain": 10,
+        "not_labelled": 43
+      },
+      "primary_exclusion_windows": {
+        "boundary_guard": 100,
+        "unsafe_tcp_tracker_influence": 500
+      },
+      "all_exclusion_flags_windows": {
+        "boundary_guard": 100,
+        "history_incomplete": 19,
+        "unsafe_tcp_tracker_influence": 600,
+        "label_uncertain": 10,
+        "label_not_labelled": 43
+      },
+      "retained": {
+        "windows": 0
+      },
+      "excluded": {
+        "windows": 600,
+        "packets": 659088,
+        "empty_windows": 43,
+        "mean_active_connections": 550.64,
+        "mean_unknown_age_connections": 6.441666666666666
+      },
+      "files": {
+        "features.csv": {
+          "relative_path": "data/development/public_partitioned_v2/friday-ddos-v/features.csv",
+          "sha256": "c787cb1f8134951c0f04432ff72f1014774e1dff027c2acbba13eda2dec6c12d"
+        },
+        "model_windows.csv": {
+          "relative_path": "data/development/public_partitioned_v2/friday-ddos-v/model_windows.csv",
+          "sha256": "543f001a20db4cbedbc5345af3da6862108ea8084fe4cb94361b0182905cb60d"
+        },
+        "eligibility.csv": {
+          "relative_path": "data/development/public_partitioned_v2/friday-ddos-v/eligibility.csv",
+          "sha256": "8942473700072e1cb8628c8b6f6553cfa7056023cfec47a0982cbbfec913be2f"
+        }
+      },
+      "tcp_provenance_packets": {
+        "unsafe_input_packets": 20937,
+        "supported_input_packets": 638151
+      }
+    }
+  ],
+  "retained_windows_by_role_and_y": {
+    "T": {
+      "0": 1329,
+      "1": 0
+    },
+    "C1": {
+      "0": 494,
+      "1": 0
+    },
+    "C2": {
+      "0": 246,
+      "1": 0
+    },
+    "V": {
+      "0": 155,
+      "1": 0
+    }
+  },
+  "predictor_columns": [
+    "packets_in",
+    "packets_out",
+    "bytes_in",
+    "bytes_out",
+    "syn_in",
+    "ack_in",
+    "rst_in",
+    "synack_out",
+    "handshakes_completed",
+    "new_connections",
+    "distinct_sources",
+    "packet_length_mean",
+    "packet_length_std",
+    "inbound_iat_mean",
+    "inbound_iat_std",
+    "active_connections",
+    "known_age_connections",
+    "unknown_age_connections",
+    "active_age_mean",
+    "active_age_max",
+    "uncompleted_fraction",
+    "handshake_to_syn_ratio",
+    "in_out_byte_ratio",
+    "packet_rate_change",
+    "packets_in_mean_5",
+    "packets_in_std_5",
+    "packets_in_mean_10",
+    "packets_in_std_10",
+    "packets_in_mean_20",
+    "packets_in_std_20"
+  ],
+  "metadata_columns_excluded_from_predictors": [
+    "session_id",
+    "role",
+    "condition",
+    "y",
+    "utc_second",
+    "history_complete"
+  ],
+  "newly_replayed_attack_streams": 2,
+  "unchanged_parent_benign_streams": 6,
+  "attack_feature_tables_byte_identical_to_v1": true,
+  "retained_cross_role_supported_identities": 0,
+  "public_packet_quality_after_independent_fragment_attribution": true,
+  "public_known_attack_component_has_retained_labels": false,
+  "study_training_ready": false,
+  "main_packet_window_model_trained": false,
+  "final_attack_tests_run": 0,
+  "limitations": [
+    "Metadata-based observed identity consistency is not OS socket ground truth; whole-key unresolved quarantine and taint propagation remain conservative.",
+    "The unchanged endpoint-key core still approximates ages/handshakes and can conflate incomplete tuple reuse. Metadata identities never become predictors.",
+    "v2 is a documented development eligibility revision after v1 failure, not blind preregistration.",
+    "Two blocks from one attack episode are not independent attack sessions. Independent final K remains unallocated.",
+    "Source/path confounding, sparse benign calibration, congestion/diversity/repetition and final freeze remain unfinished."
+  ]
+}

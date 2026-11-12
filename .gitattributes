@@ -7,4 +7,5 @@
 "phase 3/plan/benign_batch_*.json" -text whitespace=cr-at-eol
 # Public partition plans and their hashed JSON evidence must survive checkout.
 "phase 3/plan/public_partitions_*.json" -text whitespace=cr-at-eol
+"phase 3/plan/tcp_boundary_*.json" -text whitespace=cr-at-eol
 "phase 3/results/development/*.json" -text whitespace=cr-at-eol

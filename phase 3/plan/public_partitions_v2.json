@@ -1,0 +1,191 @@
+{
+  "date": "2026-11-12",
+  "version": "public_partitions_v2",
+  "scope": "Development-only eligibility revision supported by metadata audit, not blind preregistration or final evaluation.",
+  "parent": "plan/public_partitions_v1.json",
+  "evidence_sha256": {
+    "plan/public_partitions_v1.json": "eb45d7d6ead7b5a4191a4b9147d34c4c864330e3c37c6ddfd67dcb8de52eda99",
+    "results/development/public_partitioned_v1.json": "0c464de4b1b486f78ea41470c8b726352864ddd771eababfc492d8db70cb0f98",
+    "results/development/public_fragment_attribution_v1.json": "4acdb74f0fa9c89fb7f8f1c42612adf1899e9f58ca78d2fc57a22f4f86d06e50",
+    "results/development/friday_tcp_index_v1.json": "12b718aff778da7db716cff3cb47d2633c8d68f347f0125bf17a7368a2e8f703",
+    "results/development/tcp_boundary_audit_v1.json": "448f975da2499ad3c592decf144e60142710f23c2e23b9df713294d2805c7038"
+  },
+  "source_sha256": {
+    "replay_public_v2.py": "93252b7c6622b44b7f5d3c8b229f09e9b83bfaa05ef67e62d0b32392425b6cb4",
+    "tcp_incarnations.py": "c9d073f90d79c755078cb49f5fcbf33a5e55604acdfdcf583a35eae53f1587aa",
+    "causal_features.py": "24795f084da55ab93bb858e14bd35663fd85c86b994ed928cb5d80e481c5e708"
+  },
+  "capture": {
+    "path": "data/development/Friday-WorkingHours.pcap",
+    "bytes": 8839309056,
+    "sha256": "beff0dcce1eebc9b2454582f4dc8ed0ba0112b2c619a710bf03af93147254cd0",
+    "expected_frames": 9997874
+  },
+  "blocks": [
+    {
+      "id": "friday-http-72-21-91-29-80",
+      "service": "72.21.91.29:80",
+      "role": "T",
+      "condition": "public_http",
+      "kind": "benign_destination",
+      "raw_start": 1499451900,
+      "raw_end": 1499457760,
+      "eligible_start": 1499452200,
+      "eligible_end": 1499457710,
+      "label_table": "data/development/public_http_candidates/72.21.91.29_80/labels.csv",
+      "label_sha256": "c7bbdf0c120c620e9211e457ffb9a8a92472bb4dc16dcf2b8ebfe7b0ad64b1d9",
+      "accepted_status": "benign_only",
+      "y": 0,
+      "prior_corroborated_seconds": 1233
+    },
+    {
+      "id": "friday-http-23-61-187-27-80",
+      "service": "23.61.187.27:80",
+      "role": "C1",
+      "condition": "public_http",
+      "kind": "benign_destination",
+      "raw_start": 1499451900,
+      "raw_end": 1499457760,
+      "eligible_start": 1499452200,
+      "eligible_end": 1499457710,
+      "label_table": "data/development/public_http_candidates/23.61.187.27_80/labels.csv",
+      "label_sha256": "d0ef52c5d2e91bd0d35ef7580fe5cf5d16ef1728ec158012bd4f48258b59dcd1",
+      "accepted_status": "benign_only",
+      "y": 0,
+      "prior_corroborated_seconds": 505
+    },
+    {
+      "id": "friday-http-23-52-155-27-80",
+      "service": "23.52.155.27:80",
+      "role": "C2",
+      "condition": "public_http",
+      "kind": "benign_destination",
+      "raw_start": 1499451900,
+      "raw_end": 1499457760,
+      "eligible_start": 1499452200,
+      "eligible_end": 1499457710,
+      "label_table": "data/development/public_http_candidates/23.52.155.27_80/labels.csv",
+      "label_sha256": "61eab72da098ca4a47a2da941621f9e890be4cfc38d13d02cda1bf62a32a1d35",
+      "accepted_status": "benign_only",
+      "y": 0,
+      "prior_corroborated_seconds": 246
+    },
+    {
+      "id": "friday-http-119-205-194-11-80",
+      "service": "119.205.194.11:80",
+      "role": "T",
+      "condition": "public_http",
+      "kind": "benign_destination",
+      "raw_start": 1499451900,
+      "raw_end": 1499457760,
+      "eligible_start": 1499452200,
+      "eligible_end": 1499457710,
+      "label_table": "data/development/public_http_candidates/119.205.194.11_80/labels.csv",
+      "label_sha256": "dfa1a104e04269b93394d4204243f6d15849120836b74b6a870b7966b2e20c8a",
+      "accepted_status": "benign_only",
+      "y": 0,
+      "prior_corroborated_seconds": 100
+    },
+    {
+      "id": "friday-http-23-54-187-27-80",
+      "service": "23.54.187.27:80",
+      "role": "V",
+      "condition": "public_http",
+      "kind": "benign_destination",
+      "raw_start": 1499451900,
+      "raw_end": 1499457760,
+      "eligible_start": 1499452200,
+      "eligible_end": 1499457710,
+      "label_table": "data/development/public_http_candidates/23.54.187.27_80/labels.csv",
+      "label_sha256": "8b9da28cf70553cc84a88b69a5e95e3aa8a44d7f799133fde324ea84d85d1326",
+      "accepted_status": "benign_only",
+      "y": 0,
+      "prior_corroborated_seconds": 81
+    },
+    {
+      "id": "friday-http-119-205-194-14-80",
+      "service": "119.205.194.14:80",
+      "role": "V",
+      "condition": "public_http",
+      "kind": "benign_destination",
+      "raw_start": 1499451900,
+      "raw_end": 1499457760,
+      "eligible_start": 1499452200,
+      "eligible_end": 1499457710,
+      "label_table": "data/development/public_http_candidates/119.205.194.14_80/labels.csv",
+      "label_sha256": "e8c9d62881ab0c8e145fdb21908443905ea6c9b638f73020905aaff94f1a5a8d",
+      "accepted_status": "benign_only",
+      "y": 0,
+      "prior_corroborated_seconds": 74
+    },
+    {
+      "id": "friday-ddos-t",
+      "service": "192.168.10.50:80",
+      "role": "T",
+      "condition": "public_known_ddos",
+      "kind": "attack_block",
+      "raw_start": 1499453760,
+      "raw_end": 1499454240,
+      "eligible_start": 1499453810,
+      "eligible_end": 1499454190,
+      "label_table": "results/development/friday_service_corroborated_labels.csv",
+      "label_sha256": "d4c3a214b3aa61dec6a1387f3da381c3b42c9fc8b092e9dee3f66deeae1720b7",
+      "accepted_status": "attack_present",
+      "y": 1
+    },
+    {
+      "id": "friday-ddos-v",
+      "service": "192.168.10.50:80",
+      "role": "V",
+      "condition": "public_known_ddos",
+      "kind": "attack_block",
+      "raw_start": 1499454360,
+      "raw_end": 1499454960,
+      "eligible_start": 1499454410,
+      "eligible_end": 1499454910,
+      "label_table": "results/development/friday_service_corroborated_labels.csv",
+      "label_sha256": "d4c3a214b3aa61dec6a1387f3da381c3b42c9fc8b092e9dee3f66deeae1720b7",
+      "accepted_status": "attack_present",
+      "y": 1
+    }
+  ],
+  "private_tcp_evidence": {
+    "assignments.npy": {
+      "path": "data/development/friday_tcp_boundary_v1/assignments.npy",
+      "sha256": "959d198d5bfaef7da75e3ed55a8be1ac0e7d6e7322493d1a8490a6294453edea"
+    },
+    "incarnations.json": {
+      "path": "data/development/friday_tcp_boundary_v1/incarnations.json",
+      "sha256": "9dea22c7d3a4b2bf77652eaf252d95b4ad9d105dc33876c0435c23fcd3a865eb"
+    },
+    "unresolved_keys.npy": {
+      "path": "data/development/friday_tcp_boundary_v1/unresolved_keys.npy",
+      "sha256": "188bec330d93553fecd074c8162d12cebba9ce8c5f7da723d4086a939b1ae8bf"
+    }
+  },
+  "unchanged": [
+    "raw block boundaries and destination roles",
+    "all 30 predictors and signed-rate schema",
+    "feature core and fresh per-block state",
+    "six wholly assigned benign destination tables",
+    "label evidence and accepted statuses",
+    "50-second eligibility edge guards",
+    "final source reservations"
+  ],
+  "eligibility_policy": [
+    "An observed TCP identity is supported only if all its attributed observations lie inside this raw block, with no ambiguous handshake.",
+    "Quarantine every observation of any endpoint key with any unresolved/conflicting full-capture packet evidence; do not salvage individual rows from that key.",
+    "Mark all other observations (unsupported/missing identity or identity crossing either raw edge) unsafe.",
+    "Feed every raw packet to the frozen fresh causal core, regardless of safety/label. Track unsafe influence independently.",
+    "Unsafe input taints that endpoint-key feature state. Refreshing that state with a supported packet does not clear taint. Only actual frozen-core expiry, close or its completed-handshake/new-SYN reset clears state taint.",
+    "Mask every direct or propagated tainted packet second and 50 following seconds, conservatively covering residual connection state and history.",
+    "Apply label confidence, warm-up, boundary and safety masks only after complete raw features exist. Never compress gaps for persistence."
+  ],
+  "final_known_attack_K": "UNALLOCATED: independent source/episodes required. Friday has already been development-audited and auxiliary-scored.",
+  "reserved": [
+    "entire Slowloris/Slowhttptest groups and context",
+    "entire CSE-CIC-IDS2018 source including benign",
+    "all final lab sessions"
+  ],
+  "study_training_ready": false
+}

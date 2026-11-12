@@ -1,0 +1,34 @@
+{
+  "date": "2026-11-12",
+  "scope": "Development-only cause audit; no revised feature/eligibility rule or model outcomes.",
+  "plan_sha256": "560705cc9f06053cb6b9c9552c4339c1e403cc7dc7465b1ce4148a7bf78fa06c",
+  "capture_sha256": "beff0dcce1eebc9b2454582f4dc8ed0ba0112b2c619a710bf03af93147254cd0",
+  "capture_bytes_hashed": 8839309056,
+  "counts": {
+    "frames": 9997874,
+    "selected_tcp": 1282861
+  },
+  "max_selected_adjacent_timestamp_regression_seconds": 1.3828277587890625e-05,
+  "index": "data/development/friday_tcp_boundary_v1/packets.npy",
+  "index_sha256": "330198b21f63e8001355b3899906aee11be91c28a7f786e6fe6b8bce6f31a59d",
+  "index_bytes": 87234868,
+  "fields": [
+    "timestamp",
+    "client",
+    "port",
+    "inbound",
+    "flags",
+    "seq",
+    "ack",
+    "payload",
+    "length",
+    "frame",
+    "tcp_sha256"
+  ],
+  "source_sha256": "3216ee0ffe6794fafc3551e9035c482231a8b07b537280c78daaac878c1d2fce",
+  "elapsed_seconds": 47062.551,
+  "source_order_for_equal_timestamps_preserved": true,
+  "passed": true,
+  "study_training_ready": false,
+  "identifiers_sequences_hashes_are_grouping_metadata_only": true
+}

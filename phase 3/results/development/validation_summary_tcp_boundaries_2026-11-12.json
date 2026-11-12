@@ -1,0 +1,9 @@
+{
+  "date": "2026-11-12",
+  "tests_run": 65,
+  "failures": 0,
+  "errors": 0,
+  "successful": true,
+  "log_sha256": "a0abfcf64b452338d900383779dae232682fc13fec81882aed464c9b58e0791d",
+  "scope": "Offline protocol checks including complete TCP identity/sequence coverage, closed-connection retransmissions, ambiguous reuse, unsafe-state propagation and whole-source role ownership. Not detector efficacy or final attack tests."
+}

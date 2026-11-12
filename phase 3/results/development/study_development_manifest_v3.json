@@ -1,0 +1,748 @@
+{
+  "date": "2026-11-12",
+  "version": "study_development_manifest_v3",
+  "scope": "Current engineering whitelist with whole-target supervised T component; independent attack V and final K unfinished.",
+  "source_evidence_sha256": {
+    "results/development/public_partitioned_v3.json": "9433f6334452734540cfd774d2e7175ad2ceb8abbd6e25fa442fc024c7691562",
+    "results/development/study_development_manifest_v1.json": "de5174d06b4a4a0ad637f1d96e479e08fdb0da3e8a6ed5cd138ba4d123982e0d",
+    "results/development/benign_batch_v3.json": "1d8c54093ea0255354234c469ffc4ebc88d75f01ba366c5c4d104252cef7f03f",
+    "results/development/tcp_boundary_audit_v1.json": "448f975da2499ad3c592decf144e60142710f23c2e23b9df713294d2805c7038",
+    "results/development/public_partitioned_v2.json": "8a6bc565bfbda25b3bfd6ad3a60522da445c782bac722f82eb0c28b53a003bc8"
+  },
+  "source_code_sha256": "f7bbbe5769b69a898eac25bc92556161bb24e6693ba1e469e78fdebd9a22d7bb",
+  "predictor_columns": [
+    "packets_in",
+    "packets_out",
+    "bytes_in",
+    "bytes_out",
+    "syn_in",
+    "ack_in",
+    "rst_in",
+    "synack_out",
+    "handshakes_completed",
+    "new_connections",
+    "distinct_sources",
+    "packet_length_mean",
+    "packet_length_std",
+    "inbound_iat_mean",
+    "inbound_iat_std",
+    "active_connections",
+    "known_age_connections",
+    "unknown_age_connections",
+    "active_age_mean",
+    "active_age_max",
+    "uncompleted_fraction",
+    "handshake_to_syn_ratio",
+    "in_out_byte_ratio",
+    "packet_rate_change",
+    "packets_in_mean_5",
+    "packets_in_std_5",
+    "packets_in_mean_10",
+    "packets_in_std_10",
+    "packets_in_mean_20",
+    "packets_in_std_20"
+  ],
+  "metadata_columns_excluded_from_predictors": [
+    "session_id",
+    "role",
+    "condition",
+    "y",
+    "utc_second",
+    "history_complete"
+  ],
+  "ae_signed_predictor_columns": [
+    "packet_rate_change"
+  ],
+  "ae_signed_column_indices": [
+    23
+  ],
+  "groups": [
+    {
+      "id": "friday-http-72-21-91-29-80",
+      "role": "T",
+      "condition": "public_http",
+      "source": "Friday_public",
+      "table": "data/development/public_partitioned_v1/friday-http-72-21-91-29-80/model_windows.csv",
+      "sha256": "63e91dbb7deecb115db707b3c5242fd25689d03c0a2cfb532404c7ea2fa0e198",
+      "expected_rows": 1229,
+      "capture_sha256": "beff0dcce1eebc9b2454582f4dc8ed0ba0112b2c619a710bf03af93147254cd0",
+      "raw_start": 1499451900,
+      "raw_end": 1499457760,
+      "group_unit": "benign_destination",
+      "expected_y": 0,
+      "packet_extraction_quality_accepted": true,
+      "timeline_coverage": {
+        "labelled_runs": 857,
+        "longest_consecutive_labelled_run_seconds": 7,
+        "gaps_between_retained_rows": 856
+      }
+    },
+    {
+      "id": "friday-http-23-61-187-27-80",
+      "role": "C1",
+      "condition": "public_http",
+      "source": "Friday_public",
+      "table": "data/development/public_partitioned_v1/friday-http-23-61-187-27-80/model_windows.csv",
+      "sha256": "3c69080272e91ac38a8d778945aff664cd26532b628a1c92455c154fc28a72ef",
+      "expected_rows": 494,
+      "capture_sha256": "beff0dcce1eebc9b2454582f4dc8ed0ba0112b2c619a710bf03af93147254cd0",
+      "raw_start": 1499451900,
+      "raw_end": 1499457760,
+      "group_unit": "benign_destination",
+      "expected_y": 0,
+      "packet_extraction_quality_accepted": true,
+      "timeline_coverage": {
+        "labelled_runs": 348,
+        "longest_consecutive_labelled_run_seconds": 12,
+        "gaps_between_retained_rows": 347
+      }
+    },
+    {
+      "id": "friday-http-23-52-155-27-80",
+      "role": "C2",
+      "condition": "public_http",
+      "source": "Friday_public",
+      "table": "data/development/public_partitioned_v1/friday-http-23-52-155-27-80/model_windows.csv",
+      "sha256": "0870ade29c7ddfbb0a23b8dec1e8f3523ce4b5e3422940da3a34f19b5210a2e7",
+      "expected_rows": 246,
+      "capture_sha256": "beff0dcce1eebc9b2454582f4dc8ed0ba0112b2c619a710bf03af93147254cd0",
+      "raw_start": 1499451900,
+      "raw_end": 1499457760,
+      "group_unit": "benign_destination",
+      "expected_y": 0,
+      "packet_extraction_quality_accepted": true,
+      "timeline_coverage": {
+        "labelled_runs": 137,
+        "longest_consecutive_labelled_run_seconds": 6,
+        "gaps_between_retained_rows": 136
+      }
+    },
+    {
+      "id": "friday-http-119-205-194-11-80",
+      "role": "T",
+      "condition": "public_http",
+      "source": "Friday_public",
+      "table": "data/development/public_partitioned_v1/friday-http-119-205-194-11-80/model_windows.csv",
+      "sha256": "16cb7f6b1e067379a790977ccce8a3fdc629749318ed5d3f62670f716600a1a3",
+      "expected_rows": 100,
+      "capture_sha256": "beff0dcce1eebc9b2454582f4dc8ed0ba0112b2c619a710bf03af93147254cd0",
+      "raw_start": 1499451900,
+      "raw_end": 1499457760,
+      "group_unit": "benign_destination",
+      "expected_y": 0,
+      "packet_extraction_quality_accepted": true,
+      "timeline_coverage": {
+        "labelled_runs": 49,
+        "longest_consecutive_labelled_run_seconds": 4,
+        "gaps_between_retained_rows": 48
+      }
+    },
+    {
+      "id": "friday-http-23-54-187-27-80",
+      "role": "V",
+      "condition": "public_http",
+      "source": "Friday_public",
+      "table": "data/development/public_partitioned_v1/friday-http-23-54-187-27-80/model_windows.csv",
+      "sha256": "49c5c27ee9a8234fc52eebdc8e0d6b65fcc6e050416991756c2695d025e2deb4",
+      "expected_rows": 81,
+      "capture_sha256": "beff0dcce1eebc9b2454582f4dc8ed0ba0112b2c619a710bf03af93147254cd0",
+      "raw_start": 1499451900,
+      "raw_end": 1499457760,
+      "group_unit": "benign_destination",
+      "expected_y": 0,
+      "packet_extraction_quality_accepted": true,
+      "timeline_coverage": {
+        "labelled_runs": 73,
+        "longest_consecutive_labelled_run_seconds": 3,
+        "gaps_between_retained_rows": 72
+      }
+    },
+    {
+      "id": "friday-http-119-205-194-14-80",
+      "role": "V",
+      "condition": "public_http",
+      "source": "Friday_public",
+      "table": "data/development/public_partitioned_v1/friday-http-119-205-194-14-80/model_windows.csv",
+      "sha256": "5435fd5d58bd79c69e9aa5f6f4aeeca75ed74b9695417ef4b1d3860abdc90b4c",
+      "expected_rows": 74,
+      "capture_sha256": "beff0dcce1eebc9b2454582f4dc8ed0ba0112b2c619a710bf03af93147254cd0",
+      "raw_start": 1499451900,
+      "raw_end": 1499457760,
+      "group_unit": "benign_destination",
+      "expected_y": 0,
+      "packet_extraction_quality_accepted": true,
+      "timeline_coverage": {
+        "labelled_runs": 38,
+        "longest_consecutive_labelled_run_seconds": 5,
+        "gaps_between_retained_rows": 37
+      }
+    },
+    {
+      "id": "benign-t-ordinary-fbf3c0fd39d6",
+      "role": "T",
+      "condition": "ordinary",
+      "source": "lab_benign_v3",
+      "table": "data/lab_development/benign-t-ordinary-fbf3c0fd39d6/model_windows.csv",
+      "sha256": "e8523cdf54b4cd3fedeb70103e37b84aa9d38fa695e1cdc4abfc2b7acf08fb8a",
+      "expected_rows": 58,
+      "capture_sha256": "c5d6fb5e95289783835d7807201ed896071c585a1f182a5bf469442d6257c25a",
+      "group_unit": "whole_fresh_lab_session",
+      "expected_y": 0,
+      "packet_extraction_quality_accepted": true,
+      "timeline_coverage": {
+        "labelled_runs": 1,
+        "longest_consecutive_labelled_run_seconds": 58,
+        "gaps_between_retained_rows": 0
+      }
+    },
+    {
+      "id": "benign-t-bursts-9d3f427692b4",
+      "role": "T",
+      "condition": "bursts",
+      "source": "lab_benign_v3",
+      "table": "data/lab_development/benign-t-bursts-9d3f427692b4/model_windows.csv",
+      "sha256": "576852c77eeb4e1612d83524c2ee57bc80c185d51bacc830b064673801339355",
+      "expected_rows": 59,
+      "capture_sha256": "c41c8ac55edef9309934a11e79ae7cca61c37dacb1f67807d8fc7efac35b1ee1",
+      "group_unit": "whole_fresh_lab_session",
+      "expected_y": 0,
+      "packet_extraction_quality_accepted": true,
+      "timeline_coverage": {
+        "labelled_runs": 1,
+        "longest_consecutive_labelled_run_seconds": 59,
+        "gaps_between_retained_rows": 0
+      }
+    },
+    {
+      "id": "benign-t-flash-6dfb5f6a0c9a",
+      "role": "T",
+      "condition": "flash",
+      "source": "lab_benign_v3",
+      "table": "data/lab_development/benign-t-flash-6dfb5f6a0c9a/model_windows.csv",
+      "sha256": "2d83383199aab00b562bf96e63930574a27724804b2ebf46de07c55c4921b567",
+      "expected_rows": 58,
+      "capture_sha256": "2b53486173758ec40cd8005bf07c8b2362586ab9b18f4630ea4e6300b83efd9d",
+      "group_unit": "whole_fresh_lab_session",
+      "expected_y": 0,
+      "packet_extraction_quality_accepted": true,
+      "timeline_coverage": {
+        "labelled_runs": 1,
+        "longest_consecutive_labelled_run_seconds": 58,
+        "gaps_between_retained_rows": 0
+      }
+    },
+    {
+      "id": "benign-c1-ordinary-2316cadf3878",
+      "role": "C1",
+      "condition": "ordinary",
+      "source": "lab_benign_v3",
+      "table": "data/lab_development/benign-c1-ordinary-2316cadf3878/model_windows.csv",
+      "sha256": "b993bc58a16c589c7e3b74f7527fa3f9be490ba47c05327e51e941edb0f9ac77",
+      "expected_rows": 58,
+      "capture_sha256": "a21f0f0cb0276c4705f21f39a89d18052d0b776df9105771869c401e6db9256f",
+      "group_unit": "whole_fresh_lab_session",
+      "expected_y": 0,
+      "packet_extraction_quality_accepted": true,
+      "timeline_coverage": {
+        "labelled_runs": 1,
+        "longest_consecutive_labelled_run_seconds": 58,
+        "gaps_between_retained_rows": 0
+      }
+    },
+    {
+      "id": "benign-c1-bursts-8b284ce4f436",
+      "role": "C1",
+      "condition": "bursts",
+      "source": "lab_benign_v3",
+      "table": "data/lab_development/benign-c1-bursts-8b284ce4f436/model_windows.csv",
+      "sha256": "8c452150809a36e70155040f06da504c3b35eea9267066a8462f96e30a327a7f",
+      "expected_rows": 58,
+      "capture_sha256": "663cf62c2db58d2df5f58315e0a69089a114df65b0a81692e494440b521490eb",
+      "group_unit": "whole_fresh_lab_session",
+      "expected_y": 0,
+      "packet_extraction_quality_accepted": true,
+      "timeline_coverage": {
+        "labelled_runs": 1,
+        "longest_consecutive_labelled_run_seconds": 58,
+        "gaps_between_retained_rows": 0
+      }
+    },
+    {
+      "id": "benign-c1-flash-4b04780c2ca3",
+      "role": "C1",
+      "condition": "flash",
+      "source": "lab_benign_v3",
+      "table": "data/lab_development/benign-c1-flash-4b04780c2ca3/model_windows.csv",
+      "sha256": "ec54530b2e15e7665f586ac27795807dc60918b12ac97f7ea8e2473fb34b033e",
+      "expected_rows": 59,
+      "capture_sha256": "f105a4253d1c1f970e8135068530fd1fda5b8abffe9de0193bd1432cb20c27b7",
+      "group_unit": "whole_fresh_lab_session",
+      "expected_y": 0,
+      "packet_extraction_quality_accepted": true,
+      "timeline_coverage": {
+        "labelled_runs": 1,
+        "longest_consecutive_labelled_run_seconds": 59,
+        "gaps_between_retained_rows": 0
+      }
+    },
+    {
+      "id": "benign-c2-ordinary-51699d630e2d",
+      "role": "C2",
+      "condition": "ordinary",
+      "source": "lab_benign_v3",
+      "table": "data/lab_development/benign-c2-ordinary-51699d630e2d/model_windows.csv",
+      "sha256": "ca8c0e40121d8905201b7338833108a577d715b995a5e2bf15f8fcdaef35a8aa",
+      "expected_rows": 58,
+      "capture_sha256": "e2b5baeca53b7a66a2efee43e5c30dab8a854581d8e5b693fdb314e83c599724",
+      "group_unit": "whole_fresh_lab_session",
+      "expected_y": 0,
+      "packet_extraction_quality_accepted": true,
+      "timeline_coverage": {
+        "labelled_runs": 1,
+        "longest_consecutive_labelled_run_seconds": 58,
+        "gaps_between_retained_rows": 0
+      }
+    },
+    {
+      "id": "benign-c2-bursts-a165286b93f7",
+      "role": "C2",
+      "condition": "bursts",
+      "source": "lab_benign_v3",
+      "table": "data/lab_development/benign-c2-bursts-a165286b93f7/model_windows.csv",
+      "sha256": "776076bfba6070259dd53d5442f3b835b44361060407ba2ae54d62c2d5725169",
+      "expected_rows": 59,
+      "capture_sha256": "728725f84e65e86a41e0fa7191cb5fca23e019ff2edebb6d02efe1f68049e2f0",
+      "group_unit": "whole_fresh_lab_session",
+      "expected_y": 0,
+      "packet_extraction_quality_accepted": true,
+      "timeline_coverage": {
+        "labelled_runs": 1,
+        "longest_consecutive_labelled_run_seconds": 59,
+        "gaps_between_retained_rows": 0
+      }
+    },
+    {
+      "id": "benign-c2-flash-a3b4572a7a37",
+      "role": "C2",
+      "condition": "flash",
+      "source": "lab_benign_v3",
+      "table": "data/lab_development/benign-c2-flash-a3b4572a7a37/model_windows.csv",
+      "sha256": "ad1f4217a099f397d5aa91ced1c46beeceba7b200fbf7609eb24260042141473",
+      "expected_rows": 59,
+      "capture_sha256": "3a576f7795ab1e639f11828f946e610ef4ab28c864b9896edad1e38c77ec04c6",
+      "group_unit": "whole_fresh_lab_session",
+      "expected_y": 0,
+      "packet_extraction_quality_accepted": true,
+      "timeline_coverage": {
+        "labelled_runs": 1,
+        "longest_consecutive_labelled_run_seconds": 59,
+        "gaps_between_retained_rows": 0
+      }
+    },
+    {
+      "id": "benign-v-ordinary-668865d0f2db",
+      "role": "V",
+      "condition": "ordinary",
+      "source": "lab_benign_v3",
+      "table": "data/lab_development/benign-v-ordinary-668865d0f2db/model_windows.csv",
+      "sha256": "ac2ba7128bcdac1a6644913711c0bb84aaa341783a2313607272d501c93e9c40",
+      "expected_rows": 59,
+      "capture_sha256": "6d05476a6f82d4d38abc6528e27950b72132807aec619fb6fffb55d5d4293efe",
+      "group_unit": "whole_fresh_lab_session",
+      "expected_y": 0,
+      "packet_extraction_quality_accepted": true,
+      "timeline_coverage": {
+        "labelled_runs": 1,
+        "longest_consecutive_labelled_run_seconds": 59,
+        "gaps_between_retained_rows": 0
+      }
+    },
+    {
+      "id": "benign-v-bursts-0f1a58c9937d",
+      "role": "V",
+      "condition": "bursts",
+      "source": "lab_benign_v3",
+      "table": "data/lab_development/benign-v-bursts-0f1a58c9937d/model_windows.csv",
+      "sha256": "92adac3f98d66a12efa42974727e8e57b48663fa31961c5a715e9702adeabf84",
+      "expected_rows": 59,
+      "capture_sha256": "34599b51d69819d159ea5778df6c37489c95393cb25e8b7e756e68c4a65e1c86",
+      "group_unit": "whole_fresh_lab_session",
+      "expected_y": 0,
+      "packet_extraction_quality_accepted": true,
+      "timeline_coverage": {
+        "labelled_runs": 1,
+        "longest_consecutive_labelled_run_seconds": 59,
+        "gaps_between_retained_rows": 0
+      }
+    },
+    {
+      "id": "benign-v-flash-0832aeee7ee0",
+      "role": "V",
+      "condition": "flash",
+      "source": "lab_benign_v3",
+      "table": "data/lab_development/benign-v-flash-0832aeee7ee0/model_windows.csv",
+      "sha256": "a5af097668a71c26100a283704d8260421c4f383fd4554ac26492ab323128a8a",
+      "expected_rows": 58,
+      "capture_sha256": "90176e4a98c241aa7c6470829f27c84a99a4907f088c269d356ee3de4eac6b4e",
+      "group_unit": "whole_fresh_lab_session",
+      "expected_y": 0,
+      "packet_extraction_quality_accepted": true,
+      "timeline_coverage": {
+        "labelled_runs": 1,
+        "longest_consecutive_labelled_run_seconds": 58,
+        "gaps_between_retained_rows": 0
+      }
+    },
+    {
+      "id": "friday-ddos-whole-t",
+      "role": "T",
+      "condition": "public_known_ddos",
+      "source": "Friday_public",
+      "table": "data/development/public_partitioned_v3/friday-ddos-whole-t/model_windows.csv",
+      "sha256": "4bbdef2385573a11a7b871d270105e65f5f8a18a39d7e2dcc1bea5b455468fc8",
+      "expected_rows": 1076,
+      "capture_sha256": "beff0dcce1eebc9b2454582f4dc8ed0ba0112b2c619a710bf03af93147254cd0",
+      "raw_start": 1499428780,
+      "raw_end": 1499457761,
+      "group_unit": "whole_capture_attack_destination",
+      "expected_y": 1,
+      "packet_extraction_quality_accepted": true,
+      "timeline_coverage": {
+        "labelled_runs": 106,
+        "longest_consecutive_labelled_run_seconds": 195,
+        "gaps_between_retained_rows": 105
+      }
+    }
+  ],
+  "windows_by_role_and_y": {
+    "T": {
+      "0": 1504,
+      "1": 1076
+    },
+    "C1": {
+      "0": 669,
+      "1": 0
+    },
+    "C2": {
+      "0": 422,
+      "1": 0
+    },
+    "V": {
+      "0": 331,
+      "1": 0
+    }
+  },
+  "selected_lab_sessions": 12,
+  "public_benign_destination_groups": 6,
+  "whole_public_attack_training_groups": 1,
+  "supervised_T_positive_component_available": true,
+  "independent_attack_V_available": false,
+  "independent_final_K_allocated": false,
+  "study_training_ready": false,
+  "main_packet_window_model_trained": false,
+  "final_attack_tests_run": 0,
+  "reserved_slow_family_and_entire_external_source_unused": true,
+  "descriptive_feature_distributions": {
+    "Friday_public/public_http/y=0": {
+      "packets_in": {
+        "n": 2224,
+        "p10": 1.0,
+        "median": 2.0,
+        "p90": 5.0,
+        "zero_fraction": 0.0170863309352518
+      },
+      "packets_out": {
+        "n": 2224,
+        "p10": 1.0,
+        "median": 2.0,
+        "p90": 5.0,
+        "zero_fraction": 0.03597122302158273
+      },
+      "inbound_iat_mean": {
+        "n": 2224,
+        "p10": 0.0,
+        "median": 5.9604644775390625e-06,
+        "p90": 0.1540098285675049,
+        "zero_fraction": 0.4608812949640288
+      },
+      "packet_length_mean": {
+        "n": 2224,
+        "p10": 60.0,
+        "median": 63.0,
+        "p90": 146.84000000000006,
+        "zero_fraction": 0.0
+      },
+      "active_connections": {
+        "n": 2224,
+        "p10": 3.0,
+        "median": 7.0,
+        "p90": 18.0,
+        "zero_fraction": 0.0
+      },
+      "unknown_age_connections": {
+        "n": 2224,
+        "p10": 0.0,
+        "median": 1.0,
+        "p90": 6.0,
+        "zero_fraction": 0.4033273381294964
+      },
+      "packet_rate_change": {
+        "n": 2224,
+        "p10": -2.0,
+        "median": 1.0,
+        "p90": 4.0,
+        "zero_fraction": 0.09532374100719425
+      },
+      "uncompleted_fraction": {
+        "n": 2224,
+        "p10": 0.0,
+        "median": 0.14285714285714285,
+        "p90": 0.6,
+        "zero_fraction": 0.3943345323741007
+      }
+    },
+    "lab_benign_v3/ordinary/y=0": {
+      "packets_in": {
+        "n": 233,
+        "p10": 34.0,
+        "median": 47.0,
+        "p90": 51.0,
+        "zero_fraction": 0.0
+      },
+      "packets_out": {
+        "n": 233,
+        "p10": 30.0,
+        "median": 45.0,
+        "p90": 45.0,
+        "zero_fraction": 0.0
+      },
+      "inbound_iat_mean": {
+        "n": 233,
+        "p10": 0.011886860847473145,
+        "median": 0.014532479372891512,
+        "p90": 0.017780932467034525,
+        "zero_fraction": 0.0
+      },
+      "packet_length_mean": {
+        "n": 233,
+        "p10": 589.0,
+        "median": 589.0000000000003,
+        "p90": 611.739130434783,
+        "zero_fraction": 0.0
+      },
+      "active_connections": {
+        "n": 233,
+        "p10": 40.2,
+        "median": 76.0,
+        "p90": 79.0,
+        "zero_fraction": 0.0
+      },
+      "unknown_age_connections": {
+        "n": 233,
+        "p10": 40.2,
+        "median": 76.0,
+        "p90": 79.0,
+        "zero_fraction": 0.0
+      },
+      "packet_rate_change": {
+        "n": 233,
+        "p10": -17.0,
+        "median": 0.0,
+        "p90": 17.0,
+        "zero_fraction": 0.19313304721030042
+      },
+      "uncompleted_fraction": {
+        "n": 233,
+        "p10": 1.0,
+        "median": 1.0,
+        "p90": 1.0,
+        "zero_fraction": 0.0
+      }
+    },
+    "lab_benign_v3/bursts/y=0": {
+      "packets_in": {
+        "n": 235,
+        "p10": 116.0,
+        "median": 136.0,
+        "p90": 454.0,
+        "zero_fraction": 0.0
+      },
+      "packets_out": {
+        "n": 235,
+        "p10": 105.0,
+        "median": 120.0,
+        "p90": 421.0,
+        "zero_fraction": 0.0
+      },
+      "inbound_iat_mean": {
+        "n": 235,
+        "p10": 0.001881583144176038,
+        "median": 0.0060249137878417985,
+        "p90": 0.007299523518003264,
+        "zero_fraction": 0.0
+      },
+      "packet_length_mean": {
+        "n": 235,
+        "p10": 588.2903663500676,
+        "median": 589.0000000000001,
+        "p90": 600.3359953366364,
+        "zero_fraction": 0.0
+      },
+      "active_connections": {
+        "n": 235,
+        "p10": 163.4,
+        "median": 362.0,
+        "p90": 384.0,
+        "zero_fraction": 0.0
+      },
+      "unknown_age_connections": {
+        "n": 235,
+        "p10": 163.4,
+        "median": 362.0,
+        "p90": 384.0,
+        "zero_fraction": 0.0
+      },
+      "packet_rate_change": {
+        "n": 235,
+        "p10": -193.0,
+        "median": 0.0,
+        "p90": 177.6,
+        "zero_fraction": 0.03404255319148936
+      },
+      "uncompleted_fraction": {
+        "n": 235,
+        "p10": 1.0,
+        "median": 1.0,
+        "p90": 1.0,
+        "zero_fraction": 0.0
+      }
+    },
+    "lab_benign_v3/flash/y=0": {
+      "packets_in": {
+        "n": 234,
+        "p10": 456.0,
+        "median": 523.0,
+        "p90": 594.0,
+        "zero_fraction": 0.0
+      },
+      "packets_out": {
+        "n": 234,
+        "p10": 418.6,
+        "median": 493.0,
+        "p90": 561.0,
+        "zero_fraction": 0.0
+      },
+      "inbound_iat_mean": {
+        "n": 234,
+        "p10": 0.0014098312491333082,
+        "median": 0.0016109396184519065,
+        "p90": 0.0018688782030854354,
+        "zero_fraction": 0.0
+      },
+      "packet_length_mean": {
+        "n": 234,
+        "p10": 587.523042021269,
+        "median": 588.9999999999992,
+        "p90": 590.3655352480415,
+        "zero_fraction": 0.0
+      },
+      "active_connections": {
+        "n": 234,
+        "p10": 281.6,
+        "median": 901.5,
+        "p90": 929.4000000000001,
+        "zero_fraction": 0.0
+      },
+      "unknown_age_connections": {
+        "n": 234,
+        "p10": 281.6,
+        "median": 901.5,
+        "p90": 929.4000000000001,
+        "zero_fraction": 0.0
+      },
+      "packet_rate_change": {
+        "n": 234,
+        "p10": -132.0,
+        "median": 1.0,
+        "p90": 133.0,
+        "zero_fraction": 0.01282051282051282
+      },
+      "uncompleted_fraction": {
+        "n": 234,
+        "p10": 1.0,
+        "median": 1.0,
+        "p90": 1.0,
+        "zero_fraction": 0.0
+      }
+    },
+    "Friday_public/public_known_ddos/y=1": {
+      "packets_in": {
+        "n": 1076,
+        "p10": 101.0,
+        "median": 675.0,
+        "p90": 1385.0,
+        "zero_fraction": 0.0009293680297397769
+      },
+      "packets_out": {
+        "n": 1076,
+        "p10": 82.5,
+        "median": 470.5,
+        "p90": 822.5,
+        "zero_fraction": 0.0
+      },
+      "inbound_iat_mean": {
+        "n": 1076,
+        "p10": 0.00024261497931744668,
+        "median": 0.0008262213253516779,
+        "p90": 0.0028231369415428077,
+        "zero_fraction": 0.0009293680297397769
+      },
+      "packet_length_mean": {
+        "n": 1076,
+        "p10": 791.471594767906,
+        "median": 994.2077417828252,
+        "p90": 1055.0033620195068,
+        "zero_fraction": 0.0
+      },
+      "active_connections": {
+        "n": 1076,
+        "p10": 365.0,
+        "median": 555.0,
+        "p90": 739.0,
+        "zero_fraction": 0.0009293680297397769
+      },
+      "unknown_age_connections": {
+        "n": 1076,
+        "p10": 2.0,
+        "median": 6.0,
+        "p90": 11.0,
+        "zero_fraction": 0.015799256505576207
+      },
+      "packet_rate_change": {
+        "n": 1076,
+        "p10": -990.0,
+        "median": 119.0,
+        "p90": 1147.5,
+        "zero_fraction": 0.0
+      },
+      "uncompleted_fraction": {
+        "n": 1076,
+        "p10": 0.005052653972981598,
+        "median": 0.011009752583603469,
+        "p90": 0.021060023654642223,
+        "zero_fraction": 0.01486988847583643
+      }
+    }
+  },
+  "negative_history_preserved": [
+    "public_partitions_v1: zero retained temporal-block attack rows",
+    "public_partitions_v2: zero retained rows after full TCP identity and unsafe-state propagation checks"
+  ],
+  "remaining_gates": [
+    "Acquire/audit a distinct permitted known TCP-denial capture for attack V; allocate independent final K before opening final tests.",
+    "Constrain class/service/path/source confounding; one Friday training episode is not independent replication.",
+    "Extend controlled-congestion, long-lived/diverse legitimate traffic and independent benign repetitions; retain legitimate failures.",
+    "Use complete timelines and a prespecified missing-label policy for C2 persistence, then fit/calibrate/freeze matched models."
+  ],
+  "index_timing_note": "Index elapsed counter jumped between progress checkpoints; the recorded 47062.551 seconds is execution bookkeeping, not a throughput/runtime benchmark."
+}

@@ -1,0 +1,114 @@
+{
+  "date": "2026-11-12",
+  "scope": "Development-only cause audit; no revised feature/eligibility rule or model outcomes.",
+  "plan_sha256": "560705cc9f06053cb6b9c9552c4339c1e403cc7dc7465b1ce4148a7bf78fa06c",
+  "index_report_sha256": "12b718aff778da7db716cff3cb47d2633c8d68f347f0125bf17a7368a2e8f703",
+  "capture_sha256": "beff0dcce1eebc9b2454582f4dc8ed0ba0112b2c619a710bf03af93147254cd0",
+  "source_sha256": {
+    "audit_tcp_boundaries.py": "04cbed618460454775b07593a28ca6296f4668f0fcd32cd871c89b9d0c69ff85",
+    "tcp_incarnations.py": "c9d073f90d79c755078cb49f5fcbf33a5e55604acdfdcf583a35eae53f1587aa"
+  },
+  "indexed_tcp_packets": 1282861,
+  "canonical_endpoint_keys": 45532,
+  "observed_syn_identities": 96010,
+  "assigned_packets": 1282307,
+  "unresolved_packets": 554,
+  "canonical_keys_with_any_unresolved_or_ambiguous_evidence": 546,
+  "conflicting_handshake_identities": 0,
+  "identities_with_observations_in_both_development_blocks": 0,
+  "blocks": {
+    "friday-ddos-t": {
+      "raw_packets": 476981,
+      "v1_unknown_packets_reproduced": 6745,
+      "v1_feature_table_sha256_reproduced": "a7829b304c10e115f4a5dfd20120ada9a5d37ee84428ed207389e651caa2ddfa",
+      "unknown_packet_attribution": {
+        "fully_attributed_incarnation_inside_raw_block": 6504,
+        "assigned_but_key_has_unresolved_observations": 161,
+        "unresolved_packet": 3,
+        "attributed_incarnation_crosses_raw_boundary_or_ambiguous": 77
+      },
+      "unknown_flags": {
+        "out/flags=18/payload=no": 497,
+        "in/flags=2/payload=no": 497,
+        "in/flags=16/payload=no": 2488,
+        "in/flags=24/payload=yes": 497,
+        "out/flags=16/payload=no": 497,
+        "out/flags=16/payload=yes": 781,
+        "out/flags=24/payload=yes": 253,
+        "out/flags=17/payload=no": 370,
+        "in/flags=20/payload=no": 592,
+        "out/flags=25/payload=yes": 268,
+        "in/flags=4/payload=no": 5
+      },
+      "unknown_close_relationship": {
+        "before_or_at_observed_close": 6737,
+        "after_observed_close": 5
+      },
+      "unknown_assignment_evidence": {
+        "synack_matches_client_isn": 497,
+        "initiating_syn": 497,
+        "sequence_ack_consistent": 5508,
+        "sequence_ack_consistent_exact_repeat": 240,
+        "no_supported_identity": 3
+      }
+    },
+    "friday-ddos-v": {
+      "raw_packets": 659088,
+      "v1_unknown_packets_reproduced": 7940,
+      "v1_feature_table_sha256_reproduced": "c787cb1f8134951c0f04432ff72f1014774e1dff027c2acbba13eda2dec6c12d",
+      "unknown_packet_attribution": {
+        "attributed_incarnation_crosses_raw_boundary_or_ambiguous": 900,
+        "fully_attributed_incarnation_inside_raw_block": 6754,
+        "assigned_but_key_has_unresolved_observations": 277,
+        "unresolved_packet": 9
+      },
+      "unknown_flags": {
+        "out/flags=16/payload=yes": 867,
+        "out/flags=24/payload=yes": 374,
+        "out/flags=17/payload=no": 537,
+        "in/flags=16/payload=no": 2896,
+        "out/flags=18/payload=no": 526,
+        "in/flags=2/payload=no": 526,
+        "in/flags=24/payload=yes": 526,
+        "out/flags=16/payload=no": 526,
+        "in/flags=20/payload=no": 926,
+        "out/flags=25/payload=yes": 229,
+        "in/flags=4/payload=no": 7
+      },
+      "unknown_close_relationship": {
+        "before_or_at_observed_close": 7924,
+        "after_observed_close": 7
+      },
+      "unknown_assignment_evidence": {
+        "sequence_ack_consistent": 6552,
+        "sequence_ack_consistent_exact_repeat": 327,
+        "synack_matches_client_isn": 526,
+        "initiating_syn": 526,
+        "no_supported_identity": 9
+      }
+    }
+  },
+  "private_evidence": {
+    "assignments.npy": {
+      "path": "data/development/friday_tcp_boundary_v1/assignments.npy",
+      "sha256": "959d198d5bfaef7da75e3ed55a8be1ac0e7d6e7322493d1a8490a6294453edea"
+    },
+    "incarnations.json": {
+      "path": "data/development/friday_tcp_boundary_v1/incarnations.json",
+      "sha256": "9dea22c7d3a4b2bf77652eaf252d95b4ad9d105dc33876c0435c23fcd3a865eb"
+    },
+    "unresolved_keys.npy": {
+      "path": "data/development/friday_tcp_boundary_v1/unresolved_keys.npy",
+      "sha256": "188bec330d93553fecd074c8162d12cebba9ce8c5f7da723d4086a939b1ae8bf"
+    }
+  },
+  "elapsed_seconds": 64.148,
+  "v1_feature_bytes_and_unknown_counts_reproduced": true,
+  "study_training_ready": false,
+  "limitations": [
+    "Sequence/ACK consistency and segment hashes are capture evidence, not OS TCP state or complete packet ground truth.",
+    "Missing/ambiguous evidence is not repaired by temporal proximity; an entire canonical key remains suspect if any full-capture observation cannot be attributed.",
+    "No labels, model scores or new eligibility selections enter this audit. A new plan must precede any v2 row selection.",
+    "One attack episode, source/path confounding, sparse benign labels and unallocated independent final K remain."
+  ]
+}

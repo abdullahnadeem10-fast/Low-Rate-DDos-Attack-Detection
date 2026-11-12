@@ -1,0 +1,58 @@
+{
+  "date": "2026-11-12",
+  "scope": "TCP boundary audit and whole-stream supervised T engineering checkpoint, not detector efficacy.",
+  "current_registry": "results/development/study_development_manifest_v3.json",
+  "current_public_allocation": "plan/public_partitions_v3.json",
+  "whole_public_target_training_rows": 1076,
+  "public_benign_candidate_rows": 2224,
+  "selected_lab_benign_rows": 702,
+  "combined_rows_by_role_and_y": {
+    "T": {
+      "0": 1504,
+      "1": 1076
+    },
+    "C1": {
+      "0": 669,
+      "1": 0
+    },
+    "C2": {
+      "0": 422,
+      "1": 0
+    },
+    "V": {
+      "0": 331,
+      "1": 0
+    }
+  },
+  "candidate_labelled_rows": 4002,
+  "groups": 19,
+  "observed_attack_training_episodes": 1,
+  "independent_attack_V_available": false,
+  "independent_final_K_allocated": false,
+  "v1_v2_temporal_positive_rows": 0,
+  "tcp_index_packets": 1282861,
+  "observed_syn_identities": 96010,
+  "unresolved_packets": 554,
+  "unresolved_endpoint_keys": 546,
+  "raw_packets_shared_between_whole_target_and_other_destination_roles": 0,
+  "offline_fixture_tests_passed": 65,
+  "study_training_ready": false,
+  "main_packet_window_model_trained": false,
+  "final_attack_tests_run": 0,
+  "reserved_slow_family_and_entire_external_source_unused": true,
+  "next_action": "Audit a separate permitted known TCP-denial capture for independent attack V; declare V and independent final K groups before feature creation. Preserve full Friday target ownership by T.",
+  "remaining_limits": [
+    "One attack training episode; no positive independent V or final K allocation.",
+    "Class/service/path/source confounding.",
+    "Controlled congestion, long-lived/diverse legitimate traffic and benign repetitions missing.",
+    "Sparse public C2 labels: longest run six seconds; full timeline/missing-label policy required."
+  ],
+  "evidence_sha256": {
+    "friday_tcp_index_v1.json": "12b718aff778da7db716cff3cb47d2633c8d68f347f0125bf17a7368a2e8f703",
+    "tcp_boundary_audit_v1.json": "448f975da2499ad3c592decf144e60142710f23c2e23b9df713294d2805c7038",
+    "public_partitioned_v2.json": "8a6bc565bfbda25b3bfd6ad3a60522da445c782bac722f82eb0c28b53a003bc8",
+    "public_partitioned_v3.json": "9433f6334452734540cfd774d2e7175ad2ceb8abbd6e25fa442fc024c7691562",
+    "study_development_manifest_v3.json": "9951795d8148492b945e8dc12d72e3dea3511c7c934c20b86584eef87a42eed0",
+    "validation_summary_tcp_boundaries_2026-11-12.json": "b821a33910f1644e18eb5989c5abb542aec8e8ff077515875ceb56068a733e95"
+  }
+}

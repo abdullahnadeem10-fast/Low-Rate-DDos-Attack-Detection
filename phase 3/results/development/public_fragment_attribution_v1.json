@@ -1,0 +1,138 @@
+{
+  "date": "2026-11-12",
+  "scope": "Independent attribution of conservative service-IP fragment flags; no model fitting.",
+  "plan_sha256": "eb45d7d6ead7b5a4191a4b9147d34c4c864330e3c37c6ddfd67dcb8de52eda99",
+  "replay_evidence_sha256": "0c464de4b1b486f78ea41470c8b726352864ddd771eababfc492d8db70cb0f98",
+  "capture_sha256": "beff0dcce1eebc9b2454582f4dc8ed0ba0112b2c619a710bf03af93147254cd0",
+  "capture_bytes_hashed": 8839309056,
+  "frames_read": 9997874,
+  "source_sha256": "16758dbc0ab7dc9ff7e4e19c4d392f73ddccd902f98d9a83729f23eb94f4152b",
+  "service_ip_fragment_frames": 8,
+  "fragment_frames_by_ip_protocol": {
+    "17": 8
+  },
+  "potentially_relevant_tcp_fragment_frames": 0,
+  "all_flagged_fragments_proven_non_tcp": true,
+  "fragments": [
+    {
+      "utc_timestamp": 1499454598.721498,
+      "source": "192.168.10.50",
+      "destination": "192.168.10.3",
+      "ip_id": 841,
+      "ip_protocol": 17,
+      "fragment_offset_bytes": 0,
+      "more_fragments": true,
+      "first_fragment_ports": [
+        53348,
+        88
+      ],
+      "matching_blocks": [
+        "friday-ddos-v"
+      ]
+    },
+    {
+      "utc_timestamp": 1499454598.721502,
+      "source": "192.168.10.50",
+      "destination": "192.168.10.3",
+      "ip_id": 841,
+      "ip_protocol": 17,
+      "fragment_offset_bytes": 1480,
+      "more_fragments": false,
+      "first_fragment_ports": null,
+      "matching_blocks": [
+        "friday-ddos-v"
+      ]
+    },
+    {
+      "utc_timestamp": 1499454598.721503,
+      "source": "192.168.10.50",
+      "destination": "192.168.10.3",
+      "ip_id": 841,
+      "ip_protocol": 17,
+      "fragment_offset_bytes": 0,
+      "more_fragments": true,
+      "first_fragment_ports": [
+        53348,
+        88
+      ],
+      "matching_blocks": [
+        "friday-ddos-v"
+      ]
+    },
+    {
+      "utc_timestamp": 1499454598.721504,
+      "source": "192.168.10.50",
+      "destination": "192.168.10.3",
+      "ip_id": 841,
+      "ip_protocol": 17,
+      "fragment_offset_bytes": 1480,
+      "more_fragments": false,
+      "first_fragment_ports": null,
+      "matching_blocks": [
+        "friday-ddos-v"
+      ]
+    },
+    {
+      "utc_timestamp": 1499454632.454222,
+      "source": "192.168.10.50",
+      "destination": "192.168.10.3",
+      "ip_id": 2401,
+      "ip_protocol": 17,
+      "fragment_offset_bytes": 0,
+      "more_fragments": true,
+      "first_fragment_ports": [
+        39650,
+        88
+      ],
+      "matching_blocks": [
+        "friday-ddos-v"
+      ]
+    },
+    {
+      "utc_timestamp": 1499454632.454226,
+      "source": "192.168.10.50",
+      "destination": "192.168.10.3",
+      "ip_id": 2401,
+      "ip_protocol": 17,
+      "fragment_offset_bytes": 1480,
+      "more_fragments": false,
+      "first_fragment_ports": null,
+      "matching_blocks": [
+        "friday-ddos-v"
+      ]
+    },
+    {
+      "utc_timestamp": 1499454632.454227,
+      "source": "192.168.10.50",
+      "destination": "192.168.10.3",
+      "ip_id": 2401,
+      "ip_protocol": 17,
+      "fragment_offset_bytes": 0,
+      "more_fragments": true,
+      "first_fragment_ports": [
+        39650,
+        88
+      ],
+      "matching_blocks": [
+        "friday-ddos-v"
+      ]
+    },
+    {
+      "utc_timestamp": 1499454632.454228,
+      "source": "192.168.10.50",
+      "destination": "192.168.10.3",
+      "ip_id": 2401,
+      "ip_protocol": 17,
+      "fragment_offset_bytes": 1480,
+      "more_fragments": false,
+      "first_fragment_ports": null,
+      "matching_blocks": [
+        "friday-ddos-v"
+      ]
+    }
+  ],
+  "elapsed_seconds": 271.124,
+  "interpretation": "Original replay field selected_fragmented_tcp_frames actually conservatively counts all protocols touching selected service IPs. Preserve its failed flag; this supplemental audit attributes the protocol explicitly. TCP fragment presence would remain unresolved rather than being waived.",
+  "unknown_connection_exclusions_unchanged": true,
+  "study_training_ready": false
+}

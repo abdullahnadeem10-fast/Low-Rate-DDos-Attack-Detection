@@ -6,6 +6,10 @@ For a different harness or machine, read the maintained root [PROJECT_CONTEXT.md
 
 Development evidence is in `results/development/`: full Friday capture replay, clock/count audits, readiness checks and separate completed-flow baseline comparisons. The latter deliberately use finished-flow features and a development partition; they do **not** establish unseen-family recall or early/live detection performance.
 
+12 November current checkpoint: [split-first public replay](results/development/public_partitioned_v1.json) is complete: 2,224 candidate benign rows and **zero retained attack rows** under its declared conservative connection policy. The independent [fragment audit](results/development/public_fragment_attribution_v1.json) attributes eight flags to UDP while preserving the original flag. All 47 offline checks pass. Study training readiness remains false. Read the [split review](plan/PUBLIC_SPLIT_REVIEW.md), [engineering registry](results/development/study_development_manifest_v1.json) and [current readiness](results/development/development_readiness_2026-11-12.json). Next: full TCP-incarnation/boundary audit or independent permitted known-attack data; final K is unallocated.
+
+Prior 11 November component checkpoint follows:
+
 11 November: WSL/Docker and the initial benign data component work. The selected **v3** component contains 12 sessions, 702 measurement windows and 28 distinct client jitter seeds; every selected capture passed HTTP/packet checks with zero kernel-reported drops. The public HTTP-candidate audit yielded 2,243 corroborated nonempty service-seconds and retained 1,743 uncertain cells. All 35 offline checks pass. See [current readiness](results/development/development_readiness_2026-11-11.json), [canonical lab selection](results/development/benign_batch_v3.json), [predictor/group manifest](results/development/benign_development_manifest.json) and the [roadmap](plan/FIVE_STEP_ROADMAP.md). No main detector/final attack test has run.
 
 From this folder, with Python 3.12 and the pilot dependencies installed in `.venv`:
@@ -46,3 +50,16 @@ Do not score the slow-family holdout or CSE-CIC-IDS2018 while developing these t
 The continuous Friday replay is **not a split-safe training table**. Start from the readiness report and development manifest, reset feature state at declared partition boundaries, and audit connection overlap before fitting the packet-window models. Missing/uncertain labels, including unlabelled idle seconds, are not benign by default. Do not filter packets by label confidence before extracting features; that would change the traffic the detector sees. Any later exclusion of uncertain windows must be quantified as coverage and possible selection bias.
 
 When integrating the AE with the packet schema, explicitly pass `signed_columns=(feature_names.index('packet_rate_change'),)` so valid negative changes use signed-log preprocessing. Other features keep the nonnegative default; all fitted transforms still use benign training only. The packet-window model and its final schema are not yet fitted/frozen.
+
+## Public split-first development commands
+
+The v1 plan exists; do not change its boundaries under that name. From this folder, with pinned raw capture and saved audited label tables:
+
+```powershell
+& '.venv/Scripts/python.exe' 'src/declare_public_partitions.py'
+& '.venv/Scripts/python.exe' 'src/replay_public_partitions.py'
+& '.venv/Scripts/python.exe' 'src/audit_public_fragments.py'
+& '.venv/Scripts/python.exe' 'src/summarize_study_development.py'
+```
+
+The conservative fragment flag covers all IPv4 protocols touching selected service IPs. Independent attribution preserves that report and establishes zero TCP fragments. The registry records supplemented packet quality, sparse timelines and zero positive rows. Raw features/eligibility/model tables stay ignored under `data/development/public_partitioned_v1/`. A clone must reacquire/recreate pinned raw evidence; never substitute guessed labels. v1 is a negative data-readiness checkpoint, not trained or final detection evidence.

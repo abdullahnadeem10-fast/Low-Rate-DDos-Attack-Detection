@@ -5,3 +5,6 @@
 *.csv -text whitespace=cr-at-eol
 # Collection plans are hashed before traffic; preserve their exact JSON bytes.
 "phase 3/plan/benign_batch_*.json" -text whitespace=cr-at-eol
+# Public partition plans and their hashed JSON evidence must survive checkout.
+"phase 3/plan/public_partitions_*.json" -text whitespace=cr-at-eol
+"phase 3/results/development/*.json" -text whitespace=cr-at-eol

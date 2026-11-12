@@ -1,0 +1,9 @@
+{
+  "date": "2026-11-12",
+  "tests_run": 47,
+  "failures": 0,
+  "errors": 0,
+  "successful": true,
+  "log_sha256": "08b9615009726f037908749d493478615945143f5c29f79463acbae2ae74b0dc",
+  "scope": "Offline engineering checks including split-first replay, fresh state, cross-role SYN/unknown-start influence, sparse-label timelines and full-stream PCAP/PCAPNG hashing. Not final attack-efficacy tests."
+}

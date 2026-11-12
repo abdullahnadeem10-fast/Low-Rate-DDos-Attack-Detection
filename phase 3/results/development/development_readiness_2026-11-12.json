@@ -1,0 +1,54 @@
+{
+  "date": "2026-11-12",
+  "scope": "Split-first public development and existing benign-lab engineering readiness; not final detector results.",
+  "public_plan": "plan/public_partitions_v1.json",
+  "public_raw_feature_windows": 36240,
+  "public_candidate_benign_windows": 2224,
+  "public_retained_attack_windows": 0,
+  "public_benign_windows_by_role": {
+    "T": 1329,
+    "C1": 494,
+    "C2": 246,
+    "V": 155
+  },
+  "lab_selected_sessions": 12,
+  "lab_selected_benign_windows": 702,
+  "combined_candidate_benign_windows_by_role": {
+    "T": 1504,
+    "C1": 669,
+    "C2": 422,
+    "V": 331
+  },
+  "candidate_attack_windows_after_boundary_history_guards": {
+    "T": 363,
+    "V": 452
+  },
+  "unknown_ambiguous_start_packets": {
+    "T": 6745,
+    "V": 7940
+  },
+  "original_public_replay_quality_flag": false,
+  "conservative_service_ip_fragment_frames": 8,
+  "fragment_attribution": {
+    "ip_protocol": 17,
+    "protocol": "UDP",
+    "tcp_fragment_frames": 0
+  },
+  "public_packet_quality_after_independent_fragment_attribution": true,
+  "public_C2_labelled_runs": 137,
+  "public_C2_longest_labelled_run_seconds": 6,
+  "offline_fixture_tests_passed": 47,
+  "study_training_ready": false,
+  "main_packet_window_model_trained": false,
+  "final_known_attack_K_allocated": false,
+  "final_attack_tests_run": 0,
+  "reserved_slow_family_and_entire_external_source_unused": true,
+  "negative_finding": "Conservative v1 unknown/ambiguous-start influence masks exclude all candidate attack rows. This does not prove all masked connections crossed boundaries or that a detector failed.",
+  "next_action": "Audit complete TCP incarnations and boundary provenance for the unknown-start events; declare v2 if evidence justifies a more precise safe rule, otherwise obtain independent permitted known-attack development data. Keep final K independently allocated.",
+  "evidence_sha256": {
+    "public_partitions_v1.json": "eb45d7d6ead7b5a4191a4b9147d34c4c864330e3c37c6ddfd67dcb8de52eda99",
+    "public_partitioned_v1.json": "0c464de4b1b486f78ea41470c8b726352864ddd771eababfc492d8db70cb0f98",
+    "public_fragment_attribution_v1.json": "4acdb74f0fa9c89fb7f8f1c42612adf1899e9f58ca78d2fc57a22f4f86d06e50",
+    "study_development_manifest_v1.json": "de5174d06b4a4a0ad637f1d96e479e08fdb0da3e8a6ed5cd138ba4d123982e0d"
+  }
+}

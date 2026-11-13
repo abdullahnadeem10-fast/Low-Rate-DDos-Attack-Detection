@@ -1,0 +1,13 @@
+# Probe outcomes and timing definitions
+
+This note describes the existing, hash-pinned `../lab/final_v1/agent.py`; it does not change any collector, criterion, label, model or frozen evaluation rule. The v5 summary adds a descriptive reason breakdown to existing counts. Older statements that all unsuccessful probes "missed the deadline" were too broad; use the definitions here when writing results.
+
+The probe schedules one slot per second, alternating complete GET of the small object and complete POST to the CGI reader, using at most three workers. A successful slot requires a complete HTTP200 response with the expected body hash/length and completion before the nominal two-second request/read deadline. Its socket operations use a one-second timeout, which can fail earlier than the total deadline. A slot can also be skipped if scheduling is over 0.5s late or all workers remain busy. All scheduled slots remain in the denominator.
+
+`failed_or_skipped` includes socket/connection errors, disconnects, incomplete reads, non-200 HTTP responses, the explicit `DeclaredReadDeadline` outcome, and scheduler skips. It is not a count solely of elapsed two-second deadline overruns. V5 groups failures by their recorded exception/outcome prefix or HTTP status; it does not infer an unobserved failure cause or alter the success flag. Each reason count must sum to the existing unsuccessful-slot count within its phase/endpoint.
+
+For example, the preserved first high-body trial `final-a-038` has 166 unsuccessful measurement slots: 114 `TimeoutError`, 9 `RemoteDisconnected`, 31 HTTP503, 7 HTTP500 and 5 `IncompleteRead`. Shaped benign `final-b-019` has 180 unsuccessful measurement slots, all recorded as `TimeoutError`. These exact categories are diagnostic, not attack labels. Legitimate failures remain benign; a controlled campaign can also leave every probe successful.
+
+The latency median and 95th percentile in summaries describe **successful probes only**. Report unsuccessful/skipped denominators alongside them; they are not overall latency estimates with failed requests somehow excluded as correct outcomes. Warmup and measurement comparisons use the fixed scheduled slot times and are descriptive service-impact evidence for this environment. Do not infer particular worker/CPU exhaustion or whole-host denial from a failure fraction alone.
+
+Service-probe timing is separate from detector timing. The frozen detector's window-end plus one-second reorder availability is an **offline proxy**, not measured live detector latency. Preserve all earlier raw logs, source hashes, results and counts; this note corrects interpretation rather than rewriting experimental history.

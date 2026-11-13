@@ -1,0 +1,48 @@
+{
+  "checkpoint_sha256": "e3126a95387ffcaa2fe450392d334e65f2f865a7ba7366859461763a2cfa3e06",
+  "source_sha256": "79d101603173c1154b867556aba66b5150db349204a77ada170f1da801ddb1a6",
+  "CSV_sha256": "df996bef6dea2b1f3c0b3062f0c0a3d4640cda280f72c4b37222818384579f66",
+  "rows": 1989,
+  "canonical_sessions": 17,
+  "cases_per_session": 117,
+  "all_result_hashes_match": true,
+  "all_CSV_confusion_and_condition_counts_match": true,
+  "probe_failure_reason_and_slot_counts_match_qualification_ledgers": true,
+  "factor_coverage_matches_fixed_catalog": true,
+  "old_v4_source_JSON_CSV_bytes_preserved": true,
+  "original_model_acquisition_recovery_seals_intact": true,
+  "new_capture_structural_checks": [
+    {
+      "unit": "final-b-019",
+      "pcap_sha256": "ef2184dc92c4f4992b8127a13d66d8d69c021bf6a5adcaf485d9ed4ce5a94a2c",
+      "frames": 22075,
+      "full_Ethernet_IPv4_TCP_records": true,
+      "MF_or_fragment_offset_nonzero": 0
+    },
+    {
+      "unit": "final-a-026",
+      "pcap_sha256": "4ca1f61b6a5fcf0d346e5318ba8f6e93c5897211ba8cc0cee64bbe0c6800b345",
+      "frames": 183558,
+      "full_Ethernet_IPv4_TCP_records": true,
+      "MF_or_fragment_offset_nonzero": 0
+    },
+    {
+      "unit": "final-a-017",
+      "pcap_sha256": "ee26f34074759537b996ee9722e73f5fef48a1312ebd905fbd078efb1564bfe4",
+      "frames": 200454,
+      "full_Ethernet_IPv4_TCP_records": true,
+      "MF_or_fragment_offset_nonzero": 0
+    },
+    {
+      "unit": "final-a-023",
+      "pcap_sha256": "37099ac7306627838ba5189fcc54892175adeb5650a285daf40f426a2ec91215",
+      "frames": 169454,
+      "full_Ethernet_IPv4_TCP_records": true,
+      "MF_or_fragment_offset_nonzero": 0
+    }
+  ],
+  "unresolved_attempts": 0,
+  "collector_lock_present": false,
+  "temporary_lab_containers_and_networks_absent": true,
+  "scope": "Read-only actual data/hash/row/factor/probe/packet reconciliation. Previously passed 225 engineering checks remain on unchanged sealed sources; no new fitting, tuning or public held-out access. Probe categories are descriptive; unchanged success criteria/counts."
+}

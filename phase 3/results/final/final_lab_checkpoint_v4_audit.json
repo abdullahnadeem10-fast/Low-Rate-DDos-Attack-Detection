@@ -1,0 +1,46 @@
+{
+  "checkpoint_sha256": "b5848dceb97f6694ec5dbbcacba90890f08c785d075cbd0bae9c7edb885397c2",
+  "source_sha256": "c1baa129bed1b93e2636e7cd04696e39d1266d4cb0b8e70807a0f0cd976d9359",
+  "CSV_sha256": "080d6921bf4cfc22223440cbf871ff78e70117ea04a26841bad03b28a4c4866b",
+  "rows": 1521,
+  "canonical_sessions": 13,
+  "cases_per_session": 117,
+  "all_result_hashes_match": true,
+  "all_CSV_confusion_and_condition_counts_match": true,
+  "factor_coverage_matches_fixed_catalog": true,
+  "old_v3_source_JSON_CSV_bytes_preserved": true,
+  "original_model_acquisition_recovery_seals_intact": true,
+  "new_capture_structural_checks": [
+    {
+      "unit": "final-b-003",
+      "pcap_sha256": "37a44c3f425445ae77c482afe0cc3de5474ca6b11de2ede88ed5d01643385536",
+      "frames": 133933,
+      "full_Ethernet_IPv4_TCP_records": true,
+      "MF_or_fragment_offset_nonzero": 0
+    },
+    {
+      "unit": "final-b-007",
+      "pcap_sha256": "87def09b8ce5b53a96251642011d3258571c0b484f3299e14ab46f00d6a3c095",
+      "frames": 90251,
+      "full_Ethernet_IPv4_TCP_records": true,
+      "MF_or_fragment_offset_nonzero": 0
+    },
+    {
+      "unit": "final-a-012",
+      "pcap_sha256": "4c8620c9ae7f5e6a03076e8b0ea658550b5b1037345b55fad030df20a2ca0a2b",
+      "frames": 171766,
+      "full_Ethernet_IPv4_TCP_records": true,
+      "MF_or_fragment_offset_nonzero": 0
+    },
+    {
+      "unit": "final-a-014",
+      "pcap_sha256": "ee90628f4556436a4916cbc96621bbf3d34e993df794ed868e9a0452908ecab0",
+      "frames": 173763,
+      "full_Ethernet_IPv4_TCP_records": true,
+      "MF_or_fragment_offset_nonzero": 0
+    }
+  ],
+  "unresolved_attempts": 0,
+  "collector_lock_present": false,
+  "scope": "Read-only actual data/hash/row/factor/packet reconciliation. The previously passed 225 engineering checks remain on unchanged sealed sources; no new fitting, tuning or public held-out access."
+}

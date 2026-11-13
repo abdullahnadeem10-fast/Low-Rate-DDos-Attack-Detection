@@ -177,3 +177,18 @@ Rechecked original/recovery seals and free space (39.6 GiB); no prior source/mod
 ## Exact next action after checkpoint v3
 
 Continue `final_lab_resolution_recovery_v1.py run --limit 4` in fixed order, next `final-b-003` ordinary repeat 3. The runner qualifies/scores new units automatically; never rerun completed collection/scoring, overwrite v1/v2/v3 evidence/source or retune from final results. Preserve failures and create a new versioned summary after later batches. See current [NEXT_STEPS.md](NEXT_STEPS.md), root context and `results/final/final_lab_checkpoint_v3.json`/audit.
+
+## 2026-11-13: Third fixed recovery batch started
+
+Rechecked all original/acquisition/recovery seals and v3 hashes; 39.1 GiB free at start. Running original next order ordinary `final-b-003`, bursts `final-b-007`, then three-source/10-connection incomplete-header repeats `final-a-012` and `final-a-014`. The sealed runner qualifies/scores each automatically. No source/settings changes or detector-outcome selection. Started states are not completed experiments. Prepared an append-only v4 summary, preserving v1/v2/v3 and frozen metrics. Final context remains excluded from all development and public slow/K/external remains unopened.
+
+## 2026-11-13: Checkpoint v4 — ordinary/burst/header repeats completed
+
+- Original next four entries `final-b-003`, `final-b-007`, `final-a-012`, `final-a-014` all qualified/scored on 117 configurations, zero kernel/selected replay drops. New frame counts 133,933/90,251/171,766/173,763; all 569,713 records independently checked full Ethernet/IPv4/TCP with zero MF/fragment offsets. Original/acquisition/recovery seals and all settings unchanged.
+- Ordinary 0/180 FP for both; burst repeats hybrid 150/180 and AE 152/180 with healthy 180/180 probes, matching the earlier burst failure. Both three-source/10-connection headers have 330 corroborated initial payloads, primary 238/239 windows, fresh 3.76s/3.85s offline-proxy hits and 240/240 timely probes. No measured deadline impairment/proven denial. HGB only 63/239 and 67/239; earlier one-source hybrid 41/239/60.88s remains. Source count also changes total connections 10→30, not an isolated source effect.
+- Canonical total 13 sessions (7 benign, 6 campaign trials), 1,521 case/session rows. Benign descriptive FPR 568/1260(45.08%) hybrid, 466/1260(36.98%) AE; positive windows 1038/1434(72.38%) versus 1428/1434(99.58%). Six primary episode hits do not erase missed windows/late alerts/false alarms. No source/seed/variant promoted or tuned; pooled changes reflect partial mixture, not model improvement.
+- Append-only v4 source/JSON/CSV/audit preserve v3 bytes, reconcile all rows/counts/hashes and show 4/8 attack factor cells/6 trials observed, with fixed unscored IDs retained. Global CIs still N/A (flash/long each one parent); same-host/seeds are not independent environments. All final context remains excluded from development; public slow/K/external stay unopened. No active job/lock/temporary lab resources remain. Existing 225 engineering checks stay on unchanged sealed sources; new verification is actual data reconciliation.
+
+## Exact next action after checkpoint v4
+
+Continue the same sealed recovery runner `final_lab_resolution_recovery_v1.py run --limit 4`; next `final-b-019` shaped long repeat 4. It automatically qualifies/scores new entries once; preserve failures and never overwrite earlier sources/checkpoints/CSV or retune on finals. 47 lab sessions remain (13 benign, 34 campaigns), then public-source qualification/transfer/cost/reporting work. See current [NEXT_STEPS.md](NEXT_STEPS.md), root context and `results/final/final_lab_checkpoint_v4.json`/audit.

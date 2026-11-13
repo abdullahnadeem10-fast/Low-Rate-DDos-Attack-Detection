@@ -1,3 +1,19 @@
+# Next gate — continue after checkpoint v4 (thirteen final sessions)
+
+Read root `PROJECT_CONTEXT.md`, [checkpoint v4](../results/final/final_lab_checkpoint_v4.json)/[audit](../results/final/final_lab_checkpoint_v4_audit.json), recovery review and the recovery ledger. Completed 7/20 benign and 6/40 campaign trials; 47 lab sessions remain. All 117 cases/session scored (1,521 evaluations). Existing 225 engineering checks remain on unchanged sealed sources; actual new row/hash/count/catalog/packet-structure verification passes. No active job/lock/task-owned lab resource remains.
+
+1. **Continue fixed recovery order, next `final-b-019` shaped-long repeat 4.** Set `CNET_DOCKER_EXE` as in the recovery review and run project Python on `phase 3/src/final_lab_resolution_recovery_v1.py run --limit 4` (quote the path). It automatically qualifies/frozen-scores each new unit once and skips completed successes. Do not use the original failed runner, redeclare recovery or change images/settings. New failed/partial entries stop for explicit review, not automatic recollection.
+2. **Preserve full final-only groups and prior evidence.** Never feed raw/context/warmup back into T/C1/C2/V, fitting or tuning. Do not rerun completed collection/scoring or overwrite v1/v2/v3/v4 JSON/CSV/source. Make a new versioned summary after later batches, retaining failed/no-payload/censored trials and fixed remaining IDs. Payload onset proves a campaign, not successful denial.
+3. **Use the actual mixed findings.** Ordinary repeated 0/180 FP for both; bursts repeated 150/180 hybrid and 152/180 AE with healthy service. Both new three-source/10-per-source headers detect 238/239 windows with fresh 3.76s/3.85s offline proxy alerts, while 240/240 probes are timely. HGB has only 63/239 and 67/239; earlier weak one-source hybrid 41/239/60.88s remains. Total connections also change 10→30, so no isolated source-count causality claim. Keep all controls/seeds; no outcome-driven promotion.
+4. **Report coverage and statistical limits.** Observed 4/8 attack cells, 6/40 trials; benign ordinary 3/5, bursts 2/5, flash 1/5, long 1/5. Pooled descriptive FPR 45.08%/36.98%, positive recall 72.38%/99.58% are conditional on the partial mixture, not independent/population rates or model improvement. Global paired-parent CIs remain N/A with sparse strata and one host. Six primary episode hits do not erase window misses/slow alerts/false alarms; proxy delays are not measured live detector latency.
+5. **Finish remaining study before paper claims.** Thirteen benign and 34 campaign trials remain, plus separate pre-access public slow/K/external qualification, frozen transfer and feature/inference/live-latency costs. Complete public Wednesday slow/context, supplied CIC2019 01-12 and CSE-CIC-IDS2018 remain unopened/unqualified; Friday stays T, 03-11 V. Retain unsupported/N/A and negative findings. Any later redesign requires separate development and new independent final evidence.
+
+Keep raw data/private failure snapshots/weights/maps/scores/environments/credentials/private student identifiers out of Git. Preserve exact CSV/JSON hashes, every sealed source and sanitized Phase2. Full continuation in a fresh clone requires exact private bundles/images/snapshot separately.
+
+---
+
+## Prior next-action record (historical; superseded)
+
 # Next gate — continue after checkpoint v3 (nine final sessions)
 
 Read root `PROJECT_CONTEXT.md`, [checkpoint v3](../results/final/final_lab_checkpoint_v3.json)/[audit](../results/final/final_lab_checkpoint_v3_audit.json), the recovery review and `../results/qualification/final_lab_resolution_batch_v1.json`. Completed 5/20 benign and 4/40 controlled attack trials; 51 remain. All 117 cases/session are scored (1,053 case/session evaluations). The 225 existing offline checks remain on unchanged sealed sources; actual new data/CSV/hash/count checks pass. No active job/lock/lab resources remain.

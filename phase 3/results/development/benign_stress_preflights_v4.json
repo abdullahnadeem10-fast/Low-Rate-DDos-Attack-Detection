@@ -1,0 +1,85 @@
+{
+  "plan_sha256": "6372f91d7f1f0cee71d4c78e15c357f2bdc0a24536b66587cc25ae811f9f1106",
+  "scope": "Excluded preflight",
+  "attempts": [
+    {
+      "entry_index": 0,
+      "entry": {
+        "role": "PREFLIGHT",
+        "condition": "mixed_keepalive",
+        "repeat": 0,
+        "clients": 3,
+        "warmup": 30,
+        "duration": 60,
+        "client_seeds": [
+          80000101,
+          80000202,
+          80000303
+        ],
+        "down_seed": 80005001,
+        "up_seed": 80005002
+      },
+      "state": "quality_pass",
+      "start_utc": 1794508403.5093575,
+      "session": "benign-stress-preflight-mixed_keepalive-f5faccb88d",
+      "audit": {
+        "session": "benign-stress-preflight-mixed_keepalive-f5faccb88d",
+        "role": "PREFLIGHT",
+        "condition": "mixed_keepalive",
+        "repeat": 0,
+        "engineering_quality_pass": true,
+        "eligible_for_development": false,
+        "pcap_sha256": "1a75b1f1b271aa5f6faac15a22d19b01cf40b0a497647623b06078bde3d2e896",
+        "plan_sha256": "6372f91d7f1f0cee71d4c78e15c357f2bdc0a24536b66587cc25ae811f9f1106",
+        "counts": {
+          "frames": 25810,
+          "inbound": 8590,
+          "measurement_frames": 18316,
+          "outbound": 17220
+        },
+        "kernel_capture_drops": 0,
+        "router_qdisc_drops": 0,
+        "router_qdisc_drops_are_legitimate_network_outcomes": true,
+        "client_outcomes": {
+          "complete": 481,
+          "method_GET": 381,
+          "method_HEAD": 100
+        },
+        "max_request_seconds": 0.1020754929999157,
+        "first_packet_utc": 1794508418.013754,
+        "last_packet_utc": 1794508508.622822,
+        "measurement_start_utc": 1794508448,
+        "measurement_end_utc": 1794508508,
+        "observation_ready_utc": 1794508408.876368,
+        "observation_stop_signal_utc": 1794508514.7074263,
+        "largest_timestamp_regression_seconds": 0.0,
+        "failed_legitimate_requests_remain_benign": true,
+        "study_training_ready": false,
+        "scope": "Controlled declared legitimate scenario; not inferred public idle labels, final testing, model results or an unseen environment."
+      }
+    },
+    {
+      "entry_index": 1,
+      "entry": {
+        "role": "PREFLIGHT",
+        "condition": "long_download",
+        "repeat": 0,
+        "clients": 3,
+        "warmup": 30,
+        "duration": 60,
+        "client_seeds": [
+          80100101,
+          80100202,
+          80100303
+        ],
+        "down_seed": 80105001,
+        "up_seed": 80105002
+      },
+      "state": "failed_preserved",
+      "start_utc": 1794508521.8529541,
+      "error_type": "RuntimeError",
+      "error": "Bounded benign clients did not finish"
+    }
+  ],
+  "study_training_ready": false
+}

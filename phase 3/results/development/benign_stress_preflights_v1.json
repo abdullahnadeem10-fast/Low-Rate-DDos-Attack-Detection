@@ -1,0 +1,30 @@
+{
+  "plan_sha256": "d8b963248861a2ee4fa1127f2fc37bccb1d628175adc788a3631f20cdc62e393",
+  "scope": "Excluded preflight",
+  "attempts": [
+    {
+      "entry_index": 0,
+      "entry": {
+        "role": "PREFLIGHT",
+        "condition": "mixed_keepalive",
+        "repeat": 0,
+        "clients": 3,
+        "warmup": 30,
+        "duration": 60,
+        "client_seeds": [
+          50000101,
+          50000202,
+          50000303
+        ],
+        "down_seed": 50005001,
+        "up_seed": 50005002
+      },
+      "state": "failed_preserved",
+      "start_utc": 1794507750.3875656,
+      "session": "benign-stress-preflight-mixed_keepalive-4b0cf61b42",
+      "error_type": "ValueError",
+      "error": "Capture count/measurement empty"
+    }
+  ],
+  "study_training_ready": false
+}

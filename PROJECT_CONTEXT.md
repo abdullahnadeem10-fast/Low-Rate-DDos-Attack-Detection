@@ -1,6 +1,26 @@
 # CNET project history and handoff context
 
-Current engineering input registry: `phase 3/results/development/study_development_manifest_v4.json`. The independent CIC-DDoS2019 source audit is complete; no research processing job is active. Read `phase 3/plan/CIC2019_VALIDATION_REVIEW.md` for the new component and its sparse-coverage limits.
+## Latest implementation update — 13 November 2026 (benign stress development)
+
+**Authoritative input whitelist: `phase 3/results/development/study_development_manifest_v5.json`.** It contains **56 groups and 6,206 candidate labelled windows**: T **2,044 benign + 1,076 attack-present**; C1 **1,209 benign**; C2 **962 benign**; V **871 benign + 44 preliminary attack-present**. Use each listed table once. Preserve all older registries and negative findings, without pooling superseded sessions or temporal blocks.
+
+The declared stress v5 matrix is complete: **36 fresh sessions, 2,160 additional benign measurement windows (540 per role)**, three repetitions per role/profile across mixed complete GET/HEAD keep-alive, bandwidth-limited long downloads and delayed/lossy mixed requests. Three excluded preflights passed first. All 484,992 accepted frames passed scope, service/router-MAC path, full-capture and clock checks with **zero kernel capture drops**. **451 legitimate request failures remain benign**; request counts include warm-up/drain, while model windows are measurement only. Configured router loss/queue drops are separate from capture loss. The original 12 selected lab v3 sessions/702 windows remain unchanged: 48 selected lab sessions/2,862 lab windows in total.
+
+Runtime is private Docker HTTP traffic only: one internal bridge, forced /32 router routes, no NAT, host networking, published ports or host NIC changes. The service-MAC filter excludes flooded non-service bridge copies. Stress v5 shares the embedded v4 image content ID `sha256:bcd95e916f898bfad243bd3d4e8ccaf542cbe9d870e782ee62c45e5473f8112b`; its added host safeguards request process-scoped Windows idle-sleep inhibition, probe host/VM clocks, and reject host pauses/observation gaps. They do not change global power/display settings or override manual sleep. Each session resets containers and the unchanged 30-predictor causal core; known observed idle tails advance actual expiry/history. Public unknown/idle time is never inferred benign. All six metadata fields and absolute time/source/IDs/hashes stay out of predictors; signed `packet_rate_change` remains index 23.
+
+Preserved engineering history: stress v1 delivered zero service frames/all 108 attempts failed; v2 exposed HEAD/read1 keep-alive state failures and two flooded non-service copies; v3 was declared but unrun; v4 mixed passed but long traffic suffered an interrupted/invalid clock interval. All are excluded, as are all preflights. See `phase 3/results/development/benign_stress_engineering_history.json` and `phase 3/plan/BENIGN_STRESS_REVIEW.md`. Failures were not repaired by filling windows or silently recollecting. All **129 public-checkout offline engineering checks pass**, including archived-version regression guards; that count is not 129 independent experiments or detector efficacy.
+
+**Study training readiness remains false. No main packet-window model is trained/frozen, and no final attack test ran.** These synthetic repeats share one host/image/service and fixed-order matrix. They do not establish independent environments, realistic production diversity, population FPR or unseen detection. The existing CIC2019 V slice remains 44 SYN-labelled TCP/443 seconds in 40 runs of maximum two seconds, without observed TLS functionality, measured denial or matched target benign controls. Friday's attack target still lacks corroborated benign-only seconds. Source/service/path confounding and sparse V selection remain unresolved. Coverage diagnostics do not choose a missing-label/persistence calibration policy.
+
+**Exact next action:** Write `phase 3/plan/model_development_v1.json`: qualify the sparse V selection criterion, prespecify source/path sensitivity controls and missing-label/persistence calibration policy, then fit matched development branches/baselines without opening final sources. Keep all Slowloris/Slowhttptest groups/context, every lab attack, all final benign sessions, the entire CSE-CIC-IDS2018 source and provided CIC2019 01-12 payload/labels/context excluded until the proper final qualification/freeze stage. The last is still unopened and unqualified, not an established final benchmark.
+
+Read `phase 3/plan/NEXT_STEPS.md`, `phase 3/plan/BENIGN_STRESS_REVIEW.md`, `phase 3/results/development/development_readiness_benign_stress_2026-11-13.json` and `phase 3/results/development/development_coverage_review_v5.json`. There are no active project collection/replay jobs at this checkpoint. Ignored raw state is under `phase 3/data/lab_stress_v5/`; its hash companion pins PCAPs, request/server logs, routing/capture metadata, feature/model tables and replay reports. Existing public caches remain under their prior ignored paths. Transfer raw caches and the exact local Docker image for byte-exact continuation; a new acquisition/build requires a new versioned record rather than overwriting completed plans/timed/hash-pinned evidence.
+
+Publication includes reviewed source/plans/small evidence and sanitized context only; raw captures/labels/tables, environments, credentials and private student identifiers remain outside Git. Preserve the sanitized public Phase 2 PDF/source. Resolve the current publication with `git log -1` and remote verification; the preceding verified checkpoint was `96054a85e2cf648b066e63fc1451d7a488b3c80e`.
+
+## Prior overview and preserved project history
+
+Historical 12 November input registry: `phase 3/results/development/study_development_manifest_v4.json`. The independent CIC-DDoS2019 source audit is complete; no research processing job is active. Read `phase 3/plan/CIC2019_VALIDATION_REVIEW.md` for the new component and its sparse-coverage limits.
 
 Phase 3 began on 4 November 2026 and now includes the independent CIC-DDoS2019 validation-source audit and v4 input registry on 12 November. For the current experiment checklist, evidence and exact next action, start with `phase 3/plan/CHECKLIST.md` and `phase 3/plan/PROGRESS.md`. The full 8,839,309,056-byte Friday capture passed its pinned SHA-256, causal replay produced 18,894 one-second windows, and the clock/count audit and label-coverage checks are recorded in `phase 3/results/development/`. Separate auxiliary completed-flow models were run on known-family development data; fusion did not improve recall over HGB. No final attack tests or paper-grade results exist yet. The Phase 2 history below remains the protocol record.
 
@@ -10,11 +30,11 @@ On 5 November 2026 the user asked to publish completed work to GitHub. The verif
 
 On 9 November 2026 the reviewed Phase 3 source, plans, portable public context and small development evidence were pushed to `main`; remote verification returned `eafb7650981ea2cb1644c5737fe48f2030c94c5a`. The preceding implementation commit is `92e7d90`; the final commit preserves exact CSV evidence bytes so recorded checksums survive Git checkout. No raw captures/archives, environments or private coursework identifiers were included. The local full replay feature CSV remains under ignored `phase 3/data/development/`; its checksum and schema are recorded in the public readiness evidence. No background download/audit/replay process remains running at this checkpoint.
 
-Last updated: 12 November 2026 (Asia/Karachi). The Phase 2 historical sections below describe the October proposal; their statements about no implementation refer to that stage. Current implementation status is in Phase 3. On 11 November, the user requested a fresh push and a complete portable handoff; documentation was consolidated without running new scientific experiments.
+Last updated: 13 November 2026 (Asia/Karachi). The Phase 2 historical sections below describe the October proposal; their statements about no implementation refer to that stage. Current implementation status is in Phase 3. On 11 November, the user requested a fresh push and a complete portable handoff; documentation was consolidated without running new scientific experiments.
 
 This file records the work completed in this chat and the context needed to continue in another chat or agent environment. It is a handoff record, not evidence that the proposed research experiments have been performed.
 
-## Latest implementation update — 12 November 2026 (independent CIC2019 V component)
+## Prior implementation checkpoint — 12 November 2026 (independent CIC2019 V component)
 
 **Authoritative registry: `phase 3/results/development/study_development_manifest_v4.json`.** It contains 20 groups and **4,046 candidate labelled rows**: T **1,504 benign + 1,076 attack**; C1 **669 benign**; C2 **422 benign**; V **331 benign + 44 preliminary attack-present** rows. Keep every earlier v3 group once and add one independently recorded CIC-DDoS2019 validation stream. Do not pool registries, failed temporal blocks or superseded lab sessions. Metadata/IDs/sequences/hashes/time remain excluded from the unchanged 30 predictors.
 
@@ -203,7 +223,7 @@ The final factual/methodological review is documented in `phase 2/FINAL_REVIEW.m
 
 ## Workspace and project
 
-- Workspace: `<original private workspace>`
+- Workspace: the project root; the original workspace keeps a nested public checkout at `github-repo/`, while a fresh clone works directly from its root.
 - User-facing deliverables folder: `phase 2` inside the workspace.
 - Course: Computer Networks.
 - Project title: Machine Learning-Based Detection of Previously Unseen Low-Rate DDoS Attacks.
@@ -362,7 +382,7 @@ The following first three items are the current LaTeX workflow. Word-related det
 
 Bundled Python used during creation:
 
-`<bundled Python runtime; rediscover on a new machine>`
+Use the project-local Python 3.12 environment under `phase 3/.venv/`; rediscover bundled runtime paths on another machine.
 
 If continuing on another machine or runtime, rediscover dependencies and available document tools rather than assuming that path exists. Read applicable skills and repository instructions before editing.
 

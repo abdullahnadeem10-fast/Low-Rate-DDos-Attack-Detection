@@ -1,0 +1,2108 @@
+{
+  "plan_sha256": "d646e6460f7c7a7ceb8cfb4f34d305a41180265f6dcafbc2e3d07ee963211c30",
+  "scope": "Benign development only",
+  "attempts": [
+    {
+      "entry_index": 0,
+      "entry": {
+        "role": "T",
+        "condition": "mixed_keepalive",
+        "repeat": 1,
+        "clients": 3,
+        "warmup": 30,
+        "duration": 60,
+        "client_seeds": [
+          45000101,
+          45000202,
+          45000303
+        ],
+        "down_seed": 45005001,
+        "up_seed": 45005002
+      },
+      "state": "quality_pass",
+      "start_utc": 1794537191.9724746,
+      "session": "benign-stress-t-mixed_keepalive-3122de7bcc",
+      "audit": {
+        "session": "benign-stress-t-mixed_keepalive-3122de7bcc",
+        "role": "T",
+        "condition": "mixed_keepalive",
+        "repeat": 1,
+        "engineering_quality_pass": true,
+        "eligible_for_development": true,
+        "pcap_sha256": "3f89d585385c587eb2d8c36ff887e0896fa5ce6682f208a8d1ee3d25dcde28e2",
+        "plan_sha256": "d646e6460f7c7a7ceb8cfb4f34d305a41180265f6dcafbc2e3d07ee963211c30",
+        "counts": {
+          "frames": 25380,
+          "inbound": 9342,
+          "measurement_frames": 16946,
+          "outbound": 16038
+        },
+        "kernel_capture_drops": 0,
+        "router_qdisc_drops": 0,
+        "router_qdisc_drops_are_legitimate_network_outcomes": true,
+        "client_outcomes": {
+          "complete": 471,
+          "method_GET": 386,
+          "method_HEAD": 85
+        },
+        "max_request_seconds": 0.04822857399994973,
+        "first_packet_utc": 1794537202.013174,
+        "last_packet_utc": 1794537292.522639,
+        "measurement_start_utc": 1794537232,
+        "measurement_end_utc": 1794537292,
+        "observation_ready_utc": 1794537195.246087,
+        "observation_stop_signal_utc": 1794537298.4462242,
+        "largest_timestamp_regression_seconds": 3.814697265625e-05,
+        "clock_probe_count": 8,
+        "max_clock_probe_gap_seconds": 17.754085063934326,
+        "failed_legitimate_requests_remain_benign": true,
+        "study_training_ready": false,
+        "scope": "Controlled declared legitimate scenario; not inferred public idle labels, final testing, model results or an unseen environment."
+      }
+    },
+    {
+      "entry_index": 1,
+      "entry": {
+        "role": "C1",
+        "condition": "mixed_keepalive",
+        "repeat": 1,
+        "clients": 3,
+        "warmup": 30,
+        "duration": 60,
+        "client_seeds": [
+          45100101,
+          45100202,
+          45100303
+        ],
+        "down_seed": 45105001,
+        "up_seed": 45105002
+      },
+      "state": "quality_pass",
+      "start_utc": 1794537302.1008742,
+      "session": "benign-stress-c1-mixed_keepalive-215ced6d10",
+      "audit": {
+        "session": "benign-stress-c1-mixed_keepalive-215ced6d10",
+        "role": "C1",
+        "condition": "mixed_keepalive",
+        "repeat": 1,
+        "engineering_quality_pass": true,
+        "eligible_for_development": true,
+        "pcap_sha256": "66e797f306cf7ff3809dc1c1299f4466d65e9c909b1338d2d080fe9a3c57eb73",
+        "plan_sha256": "d646e6460f7c7a7ceb8cfb4f34d305a41180265f6dcafbc2e3d07ee963211c30",
+        "counts": {
+          "frames": 26803,
+          "inbound": 9841,
+          "measurement_frames": 16117,
+          "outbound": 16962
+        },
+        "kernel_capture_drops": 0,
+        "router_qdisc_drops": 0,
+        "router_qdisc_drops_are_legitimate_network_outcomes": true,
+        "client_outcomes": {
+          "complete": 474,
+          "method_GET": 369,
+          "method_HEAD": 105
+        },
+        "max_request_seconds": 0.05112728800008881,
+        "first_packet_utc": 1794537312.006607,
+        "last_packet_utc": 1794537402.267734,
+        "measurement_start_utc": 1794537342,
+        "measurement_end_utc": 1794537402,
+        "observation_ready_utc": 1794537305.629541,
+        "observation_stop_signal_utc": 1794537408.6287165,
+        "largest_timestamp_regression_seconds": 6.198883056640625e-05,
+        "clock_probe_count": 8,
+        "max_clock_probe_gap_seconds": 17.152321100234985,
+        "failed_legitimate_requests_remain_benign": true,
+        "study_training_ready": false,
+        "scope": "Controlled declared legitimate scenario; not inferred public idle labels, final testing, model results or an unseen environment."
+      }
+    },
+    {
+      "entry_index": 2,
+      "entry": {
+        "role": "C2",
+        "condition": "mixed_keepalive",
+        "repeat": 1,
+        "clients": 3,
+        "warmup": 30,
+        "duration": 60,
+        "client_seeds": [
+          45200101,
+          45200202,
+          45200303
+        ],
+        "down_seed": 45205001,
+        "up_seed": 45205002
+      },
+      "state": "quality_pass",
+      "start_utc": 1794537412.1662598,
+      "session": "benign-stress-c2-mixed_keepalive-c37af26849",
+      "audit": {
+        "session": "benign-stress-c2-mixed_keepalive-c37af26849",
+        "role": "C2",
+        "condition": "mixed_keepalive",
+        "repeat": 1,
+        "engineering_quality_pass": true,
+        "eligible_for_development": true,
+        "pcap_sha256": "f6e6118f9565c6ce69a8d75bdb9410f419f549a8ebafd98919e82d834dfdade2",
+        "plan_sha256": "d646e6460f7c7a7ceb8cfb4f34d305a41180265f6dcafbc2e3d07ee963211c30",
+        "counts": {
+          "frames": 29932,
+          "inbound": 11260,
+          "measurement_frames": 21163,
+          "outbound": 18672
+        },
+        "kernel_capture_drops": 0,
+        "router_qdisc_drops": 0,
+        "router_qdisc_drops_are_legitimate_network_outcomes": true,
+        "client_outcomes": {
+          "complete": 481,
+          "method_HEAD": 112,
+          "method_GET": 369
+        },
+        "max_request_seconds": 0.04705826399981561,
+        "first_packet_utc": 1794537421.005658,
+        "last_packet_utc": 1794537511.584019,
+        "measurement_start_utc": 1794537451,
+        "measurement_end_utc": 1794537511,
+        "observation_ready_utc": 1794537415.3393586,
+        "observation_stop_signal_utc": 1794537517.3469136,
+        "largest_timestamp_regression_seconds": 1.1920928955078125e-06,
+        "clock_probe_count": 8,
+        "max_clock_probe_gap_seconds": 16.964332342147827,
+        "failed_legitimate_requests_remain_benign": true,
+        "study_training_ready": false,
+        "scope": "Controlled declared legitimate scenario; not inferred public idle labels, final testing, model results or an unseen environment."
+      }
+    },
+    {
+      "entry_index": 3,
+      "entry": {
+        "role": "V",
+        "condition": "mixed_keepalive",
+        "repeat": 1,
+        "clients": 3,
+        "warmup": 30,
+        "duration": 60,
+        "client_seeds": [
+          45300101,
+          45300202,
+          45300303
+        ],
+        "down_seed": 45305001,
+        "up_seed": 45305002
+      },
+      "state": "quality_pass",
+      "start_utc": 1794537520.9111462,
+      "session": "benign-stress-v-mixed_keepalive-ff7829693e",
+      "audit": {
+        "session": "benign-stress-v-mixed_keepalive-ff7829693e",
+        "role": "V",
+        "condition": "mixed_keepalive",
+        "repeat": 1,
+        "engineering_quality_pass": true,
+        "eligible_for_development": true,
+        "pcap_sha256": "e67c6f96c472357fee442394713de3863fb60408a88c48b38877ae5f145280e3",
+        "plan_sha256": "d646e6460f7c7a7ceb8cfb4f34d305a41180265f6dcafbc2e3d07ee963211c30",
+        "counts": {
+          "frames": 29822,
+          "inbound": 10978,
+          "measurement_frames": 20524,
+          "outbound": 18844
+        },
+        "kernel_capture_drops": 0,
+        "router_qdisc_drops": 0,
+        "router_qdisc_drops_are_legitimate_network_outcomes": true,
+        "client_outcomes": {
+          "complete": 486,
+          "method_GET": 392,
+          "method_HEAD": 94
+        },
+        "max_request_seconds": 0.08299919899991437,
+        "first_packet_utc": 1794537530.015304,
+        "last_packet_utc": 1794537620.618824,
+        "measurement_start_utc": 1794537560,
+        "measurement_end_utc": 1794537620,
+        "observation_ready_utc": 1794537523.9696553,
+        "observation_stop_signal_utc": 1794537626.5901356,
+        "largest_timestamp_regression_seconds": 0.001811981201171875,
+        "clock_probe_count": 8,
+        "max_clock_probe_gap_seconds": 17.05185866355896,
+        "failed_legitimate_requests_remain_benign": true,
+        "study_training_ready": false,
+        "scope": "Controlled declared legitimate scenario; not inferred public idle labels, final testing, model results or an unseen environment."
+      }
+    },
+    {
+      "entry_index": 4,
+      "entry": {
+        "role": "T",
+        "condition": "long_download",
+        "repeat": 1,
+        "clients": 3,
+        "warmup": 30,
+        "duration": 60,
+        "client_seeds": [
+          45400101,
+          45400202,
+          45400303
+        ],
+        "down_seed": 45405001,
+        "up_seed": 45405002
+      },
+      "state": "quality_pass",
+      "start_utc": 1794537630.119136,
+      "session": "benign-stress-t-long_download-4fb857735a",
+      "audit": {
+        "session": "benign-stress-t-long_download-4fb857735a",
+        "role": "T",
+        "condition": "long_download",
+        "repeat": 1,
+        "engineering_quality_pass": true,
+        "eligible_for_development": true,
+        "pcap_sha256": "c5753c665ab9bc072f64bc43928d99a2ea4263ad78d00c45f0cfddaae2abcc9e",
+        "plan_sha256": "d646e6460f7c7a7ceb8cfb4f34d305a41180265f6dcafbc2e3d07ee963211c30",
+        "counts": {
+          "frames": 8675,
+          "inbound": 3945,
+          "measurement_frames": 4760,
+          "outbound": 4730
+        },
+        "kernel_capture_drops": 0,
+        "router_qdisc_drops": 353,
+        "router_qdisc_drops_are_legitimate_network_outcomes": true,
+        "client_outcomes": {
+          "failed": 3,
+          "method_GET": 7,
+          "complete": 4
+        },
+        "max_request_seconds": 53.620138279,
+        "first_packet_utc": 1794537640.047629,
+        "last_packet_utc": 1794537742.589412,
+        "measurement_start_utc": 1794537670,
+        "measurement_end_utc": 1794537730,
+        "observation_ready_utc": 1794537633.5683672,
+        "observation_stop_signal_utc": 1794537743.5788121,
+        "largest_timestamp_regression_seconds": 0.0,
+        "clock_probe_count": 9,
+        "max_clock_probe_gap_seconds": 17.13226294517517,
+        "failed_legitimate_requests_remain_benign": true,
+        "study_training_ready": false,
+        "scope": "Controlled declared legitimate scenario; not inferred public idle labels, final testing, model results or an unseen environment."
+      }
+    },
+    {
+      "entry_index": 5,
+      "entry": {
+        "role": "C1",
+        "condition": "long_download",
+        "repeat": 1,
+        "clients": 3,
+        "warmup": 30,
+        "duration": 60,
+        "client_seeds": [
+          45500101,
+          45500202,
+          45500303
+        ],
+        "down_seed": 45505001,
+        "up_seed": 45505002
+      },
+      "state": "quality_pass",
+      "start_utc": 1794537746.608517,
+      "session": "benign-stress-c1-long_download-5c90b1b2ae",
+      "audit": {
+        "session": "benign-stress-c1-long_download-5c90b1b2ae",
+        "role": "C1",
+        "condition": "long_download",
+        "repeat": 1,
+        "engineering_quality_pass": true,
+        "eligible_for_development": true,
+        "pcap_sha256": "6f6376c4ee83b7d1af54f9b87bd8653bcd570aa5dcbd414a1127ae5660d4c8d9",
+        "plan_sha256": "d646e6460f7c7a7ceb8cfb4f34d305a41180265f6dcafbc2e3d07ee963211c30",
+        "counts": {
+          "frames": 8522,
+          "inbound": 3872,
+          "measurement_frames": 4562,
+          "outbound": 4650
+        },
+        "kernel_capture_drops": 0,
+        "router_qdisc_drops": 269,
+        "router_qdisc_drops_are_legitimate_network_outcomes": true,
+        "client_outcomes": {
+          "complete": 4,
+          "method_GET": 7,
+          "failed": 3
+        },
+        "max_request_seconds": 51.2915160120001,
+        "first_packet_utc": 1794537756.042412,
+        "last_packet_utc": 1794537858.933102,
+        "measurement_start_utc": 1794537786,
+        "measurement_end_utc": 1794537846,
+        "observation_ready_utc": 1794537749.9534254,
+        "observation_stop_signal_utc": 1794537859.9092245,
+        "largest_timestamp_regression_seconds": 5.0067901611328125e-06,
+        "clock_probe_count": 9,
+        "max_clock_probe_gap_seconds": 17.22852396965027,
+        "failed_legitimate_requests_remain_benign": true,
+        "study_training_ready": false,
+        "scope": "Controlled declared legitimate scenario; not inferred public idle labels, final testing, model results or an unseen environment."
+      }
+    },
+    {
+      "entry_index": 6,
+      "entry": {
+        "role": "C2",
+        "condition": "long_download",
+        "repeat": 1,
+        "clients": 3,
+        "warmup": 30,
+        "duration": 60,
+        "client_seeds": [
+          45600101,
+          45600202,
+          45600303
+        ],
+        "down_seed": 45605001,
+        "up_seed": 45605002
+      },
+      "state": "quality_pass",
+      "start_utc": 1794537862.9327493,
+      "session": "benign-stress-c2-long_download-533b0f8dd9",
+      "audit": {
+        "session": "benign-stress-c2-long_download-533b0f8dd9",
+        "role": "C2",
+        "condition": "long_download",
+        "repeat": 1,
+        "engineering_quality_pass": true,
+        "eligible_for_development": true,
+        "pcap_sha256": "3150efdba3f1e0de902c9f03ce895c455c25461002818e0ae0b1ed9b26320ba0",
+        "plan_sha256": "d646e6460f7c7a7ceb8cfb4f34d305a41180265f6dcafbc2e3d07ee963211c30",
+        "counts": {
+          "frames": 8461,
+          "inbound": 3835,
+          "measurement_frames": 4661,
+          "outbound": 4626
+        },
+        "kernel_capture_drops": 0,
+        "router_qdisc_drops": 241,
+        "router_qdisc_drops_are_legitimate_network_outcomes": true,
+        "client_outcomes": {
+          "complete": 4,
+          "method_GET": 7,
+          "failed": 3
+        },
+        "max_request_seconds": 51.565982425999664,
+        "first_packet_utc": 1794537873.042745,
+        "last_packet_utc": 1794537976.137191,
+        "measurement_start_utc": 1794537903,
+        "measurement_end_utc": 1794537963,
+        "observation_ready_utc": 1794537866.546348,
+        "observation_stop_signal_utc": 1794537976.8613653,
+        "largest_timestamp_regression_seconds": 0.0,
+        "clock_probe_count": 9,
+        "max_clock_probe_gap_seconds": 17.331143856048584,
+        "failed_legitimate_requests_remain_benign": true,
+        "study_training_ready": false,
+        "scope": "Controlled declared legitimate scenario; not inferred public idle labels, final testing, model results or an unseen environment."
+      }
+    },
+    {
+      "entry_index": 7,
+      "entry": {
+        "role": "V",
+        "condition": "long_download",
+        "repeat": 1,
+        "clients": 3,
+        "warmup": 30,
+        "duration": 60,
+        "client_seeds": [
+          45700101,
+          45700202,
+          45700303
+        ],
+        "down_seed": 45705001,
+        "up_seed": 45705002
+      },
+      "state": "quality_pass",
+      "start_utc": 1794537981.2274084,
+      "session": "benign-stress-v-long_download-183a404804",
+      "audit": {
+        "session": "benign-stress-v-long_download-183a404804",
+        "role": "V",
+        "condition": "long_download",
+        "repeat": 1,
+        "engineering_quality_pass": true,
+        "eligible_for_development": true,
+        "pcap_sha256": "7a904248704766b5bea0a68aa6f9f1d0c6b5e1ee92891f235b505dfe3cc15573",
+        "plan_sha256": "d646e6460f7c7a7ceb8cfb4f34d305a41180265f6dcafbc2e3d07ee963211c30",
+        "counts": {
+          "frames": 8522,
+          "inbound": 3758,
+          "measurement_frames": 4841,
+          "outbound": 4764
+        },
+        "kernel_capture_drops": 0,
+        "router_qdisc_drops": 379,
+        "router_qdisc_drops_are_legitimate_network_outcomes": true,
+        "client_outcomes": {
+          "failed": 4,
+          "method_GET": 6,
+          "complete": 2
+        },
+        "max_request_seconds": 55.70163167199962,
+        "first_packet_utc": 1794537994.042948,
+        "last_packet_utc": 1794538096.998477,
+        "measurement_start_utc": 1794538024,
+        "measurement_end_utc": 1794538084,
+        "observation_ready_utc": 1794537986.0069125,
+        "observation_stop_signal_utc": 1794538097.8274043,
+        "largest_timestamp_regression_seconds": 0.0,
+        "clock_probe_count": 9,
+        "max_clock_probe_gap_seconds": 18.206398963928223,
+        "failed_legitimate_requests_remain_benign": true,
+        "study_training_ready": false,
+        "scope": "Controlled declared legitimate scenario; not inferred public idle labels, final testing, model results or an unseen environment."
+      }
+    },
+    {
+      "entry_index": 8,
+      "entry": {
+        "role": "T",
+        "condition": "congested_mixed",
+        "repeat": 1,
+        "clients": 3,
+        "warmup": 30,
+        "duration": 60,
+        "client_seeds": [
+          45800101,
+          45800202,
+          45800303
+        ],
+        "down_seed": 45805001,
+        "up_seed": 45805002
+      },
+      "state": "quality_pass",
+      "start_utc": 1794538100.7296195,
+      "session": "benign-stress-t-congested_mixed-6dd382a779",
+      "audit": {
+        "session": "benign-stress-t-congested_mixed-6dd382a779",
+        "role": "T",
+        "condition": "congested_mixed",
+        "repeat": 1,
+        "engineering_quality_pass": true,
+        "eligible_for_development": true,
+        "pcap_sha256": "826097d5728b9a41994120c5c669d4a39d4f1f8d2b055748fd51dc0bc2e763d8",
+        "plan_sha256": "d646e6460f7c7a7ceb8cfb4f34d305a41180265f6dcafbc2e3d07ee963211c30",
+        "counts": {
+          "frames": 4048,
+          "inbound": 1918,
+          "measurement_frames": 2567,
+          "outbound": 2130
+        },
+        "kernel_capture_drops": 0,
+        "router_qdisc_drops": 82,
+        "router_qdisc_drops_are_legitimate_network_outcomes": true,
+        "client_outcomes": {
+          "complete": 57,
+          "method_GET": 65,
+          "failed": 27,
+          "method_HEAD": 19
+        },
+        "max_request_seconds": 10.257987550000053,
+        "first_packet_utc": 1794538111.06751,
+        "last_packet_utc": 1794538205.468521,
+        "measurement_start_utc": 1794538141,
+        "measurement_end_utc": 1794538201,
+        "observation_ready_utc": 1794538104.3387825,
+        "observation_stop_signal_utc": 1794538207.3747191,
+        "largest_timestamp_regression_seconds": 0.0,
+        "clock_probe_count": 8,
+        "max_clock_probe_gap_seconds": 17.130733489990234,
+        "failed_legitimate_requests_remain_benign": true,
+        "study_training_ready": false,
+        "scope": "Controlled declared legitimate scenario; not inferred public idle labels, final testing, model results or an unseen environment."
+      }
+    },
+    {
+      "entry_index": 9,
+      "entry": {
+        "role": "C1",
+        "condition": "congested_mixed",
+        "repeat": 1,
+        "clients": 3,
+        "warmup": 30,
+        "duration": 60,
+        "client_seeds": [
+          45900101,
+          45900202,
+          45900303
+        ],
+        "down_seed": 45905001,
+        "up_seed": 45905002
+      },
+      "state": "quality_pass",
+      "start_utc": 1794538210.3014987,
+      "session": "benign-stress-c1-congested_mixed-b182048442",
+      "audit": {
+        "session": "benign-stress-c1-congested_mixed-b182048442",
+        "role": "C1",
+        "condition": "congested_mixed",
+        "repeat": 1,
+        "engineering_quality_pass": true,
+        "eligible_for_development": true,
+        "pcap_sha256": "57a6fda41910c1158316dfda154a80feadd17a51800977b294d78586acfa004f",
+        "plan_sha256": "d646e6460f7c7a7ceb8cfb4f34d305a41180265f6dcafbc2e3d07ee963211c30",
+        "counts": {
+          "frames": 4120,
+          "inbound": 1967,
+          "measurement_frames": 2657,
+          "outbound": 2153
+        },
+        "kernel_capture_drops": 0,
+        "router_qdisc_drops": 73,
+        "router_qdisc_drops_are_legitimate_network_outcomes": true,
+        "client_outcomes": {
+          "complete": 56,
+          "method_GET": 76,
+          "method_HEAD": 11,
+          "failed": 31
+        },
+        "max_request_seconds": 11.397215443000277,
+        "first_packet_utc": 1794538220.060645,
+        "last_packet_utc": 1794538315.534254,
+        "measurement_start_utc": 1794538250,
+        "measurement_end_utc": 1794538310,
+        "observation_ready_utc": 1794538213.607481,
+        "observation_stop_signal_utc": 1794538316.4295766,
+        "largest_timestamp_regression_seconds": 0.0,
+        "clock_probe_count": 8,
+        "max_clock_probe_gap_seconds": 17.109209060668945,
+        "failed_legitimate_requests_remain_benign": true,
+        "study_training_ready": false,
+        "scope": "Controlled declared legitimate scenario; not inferred public idle labels, final testing, model results or an unseen environment."
+      }
+    },
+    {
+      "entry_index": 10,
+      "entry": {
+        "role": "C2",
+        "condition": "congested_mixed",
+        "repeat": 1,
+        "clients": 3,
+        "warmup": 30,
+        "duration": 60,
+        "client_seeds": [
+          46000101,
+          46000202,
+          46000303
+        ],
+        "down_seed": 46005001,
+        "up_seed": 46005002
+      },
+      "state": "quality_pass",
+      "start_utc": 1794538319.531257,
+      "session": "benign-stress-c2-congested_mixed-44ce540670",
+      "audit": {
+        "session": "benign-stress-c2-congested_mixed-44ce540670",
+        "role": "C2",
+        "condition": "congested_mixed",
+        "repeat": 1,
+        "engineering_quality_pass": true,
+        "eligible_for_development": true,
+        "pcap_sha256": "912de147b6818a361414f2dd6a3f4b5d6773f961dd4028f3eb3c0f782e211167",
+        "plan_sha256": "d646e6460f7c7a7ceb8cfb4f34d305a41180265f6dcafbc2e3d07ee963211c30",
+        "counts": {
+          "frames": 4106,
+          "inbound": 1864,
+          "measurement_frames": 2571,
+          "outbound": 2242
+        },
+        "kernel_capture_drops": 0,
+        "router_qdisc_drops": 131,
+        "router_qdisc_drops_are_legitimate_network_outcomes": true,
+        "client_outcomes": {
+          "complete": 56,
+          "method_GET": 70,
+          "failed": 29,
+          "method_HEAD": 15
+        },
+        "max_request_seconds": 10.017863249999664,
+        "first_packet_utc": 1794538329.065408,
+        "last_packet_utc": 1794538424.566925,
+        "measurement_start_utc": 1794538359,
+        "measurement_end_utc": 1794538419,
+        "observation_ready_utc": 1794538322.7809434,
+        "observation_stop_signal_utc": 1794538425.5868878,
+        "largest_timestamp_regression_seconds": 0.0,
+        "clock_probe_count": 8,
+        "max_clock_probe_gap_seconds": 16.982810258865356,
+        "failed_legitimate_requests_remain_benign": true,
+        "study_training_ready": false,
+        "scope": "Controlled declared legitimate scenario; not inferred public idle labels, final testing, model results or an unseen environment."
+      }
+    },
+    {
+      "entry_index": 11,
+      "entry": {
+        "role": "V",
+        "condition": "congested_mixed",
+        "repeat": 1,
+        "clients": 3,
+        "warmup": 30,
+        "duration": 60,
+        "client_seeds": [
+          46100101,
+          46100202,
+          46100303
+        ],
+        "down_seed": 46105001,
+        "up_seed": 46105002
+      },
+      "state": "quality_pass",
+      "start_utc": 1794538428.239555,
+      "session": "benign-stress-v-congested_mixed-5f8678504e",
+      "audit": {
+        "session": "benign-stress-v-congested_mixed-5f8678504e",
+        "role": "V",
+        "condition": "congested_mixed",
+        "repeat": 1,
+        "engineering_quality_pass": true,
+        "eligible_for_development": true,
+        "pcap_sha256": "19e69b6072e6021eec1c2872bc292ca14d29a7b32593f8457fe3638e77eeae6b",
+        "plan_sha256": "d646e6460f7c7a7ceb8cfb4f34d305a41180265f6dcafbc2e3d07ee963211c30",
+        "counts": {
+          "frames": 4324,
+          "inbound": 2051,
+          "measurement_frames": 2646,
+          "outbound": 2273
+        },
+        "kernel_capture_drops": 0,
+        "router_qdisc_drops": 92,
+        "router_qdisc_drops_are_legitimate_network_outcomes": true,
+        "client_outcomes": {
+          "complete": 43,
+          "method_GET": 61,
+          "failed": 33,
+          "method_HEAD": 15
+        },
+        "max_request_seconds": 11.762114506000216,
+        "first_packet_utc": 1794538438.066841,
+        "last_packet_utc": 1794538536.233086,
+        "measurement_start_utc": 1794538468,
+        "measurement_end_utc": 1794538528,
+        "observation_ready_utc": 1794538431.633252,
+        "observation_stop_signal_utc": 1794538536.8401647,
+        "largest_timestamp_regression_seconds": 0.0,
+        "clock_probe_count": 8,
+        "max_clock_probe_gap_seconds": 17.218827962875366,
+        "failed_legitimate_requests_remain_benign": true,
+        "study_training_ready": false,
+        "scope": "Controlled declared legitimate scenario; not inferred public idle labels, final testing, model results or an unseen environment."
+      }
+    },
+    {
+      "entry_index": 12,
+      "entry": {
+        "role": "T",
+        "condition": "mixed_keepalive",
+        "repeat": 2,
+        "clients": 3,
+        "warmup": 30,
+        "duration": 60,
+        "client_seeds": [
+          46200101,
+          46200202,
+          46200303
+        ],
+        "down_seed": 46205001,
+        "up_seed": 46205002
+      },
+      "state": "quality_pass",
+      "start_utc": 1794538539.9012125,
+      "session": "benign-stress-t-mixed_keepalive-54ebf562d7",
+      "audit": {
+        "session": "benign-stress-t-mixed_keepalive-54ebf562d7",
+        "role": "T",
+        "condition": "mixed_keepalive",
+        "repeat": 2,
+        "engineering_quality_pass": true,
+        "eligible_for_development": true,
+        "pcap_sha256": "8936d324614fc36060d05210395fa2ddbfec5182dfb0c021f982125e12a174ea",
+        "plan_sha256": "d646e6460f7c7a7ceb8cfb4f34d305a41180265f6dcafbc2e3d07ee963211c30",
+        "counts": {
+          "frames": 28353,
+          "inbound": 10635,
+          "measurement_frames": 17686,
+          "outbound": 17718
+        },
+        "kernel_capture_drops": 0,
+        "router_qdisc_drops": 0,
+        "router_qdisc_drops_are_legitimate_network_outcomes": true,
+        "client_outcomes": {
+          "complete": 474,
+          "method_GET": 373,
+          "method_HEAD": 101
+        },
+        "max_request_seconds": 0.11308369900007165,
+        "first_packet_utc": 1794538549.011284,
+        "last_packet_utc": 1794538639.547341,
+        "measurement_start_utc": 1794538579,
+        "measurement_end_utc": 1794538639,
+        "observation_ready_utc": 1794538543.047357,
+        "observation_stop_signal_utc": 1794538645.4610317,
+        "largest_timestamp_regression_seconds": 3.4809112548828125e-05,
+        "clock_probe_count": 8,
+        "max_clock_probe_gap_seconds": 17.048823356628418,
+        "failed_legitimate_requests_remain_benign": true,
+        "study_training_ready": false,
+        "scope": "Controlled declared legitimate scenario; not inferred public idle labels, final testing, model results or an unseen environment."
+      }
+    },
+    {
+      "entry_index": 13,
+      "entry": {
+        "role": "C1",
+        "condition": "mixed_keepalive",
+        "repeat": 2,
+        "clients": 3,
+        "warmup": 30,
+        "duration": 60,
+        "client_seeds": [
+          46300101,
+          46300202,
+          46300303
+        ],
+        "down_seed": 46305001,
+        "up_seed": 46305002
+      },
+      "state": "quality_pass",
+      "start_utc": 1794538649.1197646,
+      "session": "benign-stress-c1-mixed_keepalive-cd19f866d3",
+      "audit": {
+        "session": "benign-stress-c1-mixed_keepalive-cd19f866d3",
+        "role": "C1",
+        "condition": "mixed_keepalive",
+        "repeat": 2,
+        "engineering_quality_pass": true,
+        "eligible_for_development": true,
+        "pcap_sha256": "ca3e830ccb342b2239e18d4025b037f1d41e81ea29d1921eb680fbd08e16e8f2",
+        "plan_sha256": "d646e6460f7c7a7ceb8cfb4f34d305a41180265f6dcafbc2e3d07ee963211c30",
+        "counts": {
+          "frames": 26232,
+          "inbound": 10040,
+          "measurement_frames": 17724,
+          "outbound": 16192
+        },
+        "kernel_capture_drops": 0,
+        "router_qdisc_drops": 0,
+        "router_qdisc_drops_are_legitimate_network_outcomes": true,
+        "client_outcomes": {
+          "complete": 479,
+          "method_GET": 377,
+          "method_HEAD": 102
+        },
+        "max_request_seconds": 0.05317140700026357,
+        "first_packet_utc": 1794538658.005825,
+        "last_packet_utc": 1794538748.706862,
+        "measurement_start_utc": 1794538688,
+        "measurement_end_utc": 1794538748,
+        "observation_ready_utc": 1794538652.1687832,
+        "observation_stop_signal_utc": 1794538754.588035,
+        "largest_timestamp_regression_seconds": 6.890296936035156e-05,
+        "clock_probe_count": 8,
+        "max_clock_probe_gap_seconds": 17.0090069770813,
+        "failed_legitimate_requests_remain_benign": true,
+        "study_training_ready": false,
+        "scope": "Controlled declared legitimate scenario; not inferred public idle labels, final testing, model results or an unseen environment."
+      }
+    },
+    {
+      "entry_index": 14,
+      "entry": {
+        "role": "C2",
+        "condition": "mixed_keepalive",
+        "repeat": 2,
+        "clients": 3,
+        "warmup": 30,
+        "duration": 60,
+        "client_seeds": [
+          46400101,
+          46400202,
+          46400303
+        ],
+        "down_seed": 46405001,
+        "up_seed": 46405002
+      },
+      "state": "quality_pass",
+      "start_utc": 1794538757.8645065,
+      "session": "benign-stress-c2-mixed_keepalive-126bc8d5c2",
+      "audit": {
+        "session": "benign-stress-c2-mixed_keepalive-126bc8d5c2",
+        "role": "C2",
+        "condition": "mixed_keepalive",
+        "repeat": 2,
+        "engineering_quality_pass": true,
+        "eligible_for_development": true,
+        "pcap_sha256": "7eba13851cd10d7a6eaa22f1d1330d45175ac527880b2d8b4f57a2d9913f3d39",
+        "plan_sha256": "d646e6460f7c7a7ceb8cfb4f34d305a41180265f6dcafbc2e3d07ee963211c30",
+        "counts": {
+          "frames": 30513,
+          "inbound": 11631,
+          "measurement_frames": 21509,
+          "outbound": 18882
+        },
+        "kernel_capture_drops": 0,
+        "router_qdisc_drops": 0,
+        "router_qdisc_drops_are_legitimate_network_outcomes": true,
+        "client_outcomes": {
+          "complete": 483,
+          "method_HEAD": 94,
+          "method_GET": 389
+        },
+        "max_request_seconds": 0.04582091700012825,
+        "first_packet_utc": 1794538767.009026,
+        "last_packet_utc": 1794538857.454218,
+        "measurement_start_utc": 1794538797,
+        "measurement_end_utc": 1794538857,
+        "observation_ready_utc": 1794538761.0747752,
+        "observation_stop_signal_utc": 1794538863.4965184,
+        "largest_timestamp_regression_seconds": 0.0,
+        "clock_probe_count": 8,
+        "max_clock_probe_gap_seconds": 17.196080207824707,
+        "failed_legitimate_requests_remain_benign": true,
+        "study_training_ready": false,
+        "scope": "Controlled declared legitimate scenario; not inferred public idle labels, final testing, model results or an unseen environment."
+      }
+    },
+    {
+      "entry_index": 15,
+      "entry": {
+        "role": "V",
+        "condition": "mixed_keepalive",
+        "repeat": 2,
+        "clients": 3,
+        "warmup": 30,
+        "duration": 60,
+        "client_seeds": [
+          46500101,
+          46500202,
+          46500303
+        ],
+        "down_seed": 46505001,
+        "up_seed": 46505002
+      },
+      "state": "quality_pass",
+      "start_utc": 1794538867.1016176,
+      "session": "benign-stress-v-mixed_keepalive-3debf7a108",
+      "audit": {
+        "session": "benign-stress-v-mixed_keepalive-3debf7a108",
+        "role": "V",
+        "condition": "mixed_keepalive",
+        "repeat": 2,
+        "engineering_quality_pass": true,
+        "eligible_for_development": true,
+        "pcap_sha256": "aa18a009502b346f6735d00b952c22a7e1b64dee11ae5c7dddc569b7a0716e1f",
+        "plan_sha256": "d646e6460f7c7a7ceb8cfb4f34d305a41180265f6dcafbc2e3d07ee963211c30",
+        "counts": {
+          "frames": 28699,
+          "inbound": 10930,
+          "measurement_frames": 19133,
+          "outbound": 17769
+        },
+        "kernel_capture_drops": 0,
+        "router_qdisc_drops": 0,
+        "router_qdisc_drops_are_legitimate_network_outcomes": true,
+        "client_outcomes": {
+          "complete": 477,
+          "method_GET": 386,
+          "method_HEAD": 91
+        },
+        "max_request_seconds": 0.07491660699997738,
+        "first_packet_utc": 1794538876.006669,
+        "last_packet_utc": 1794538966.361306,
+        "measurement_start_utc": 1794538906,
+        "measurement_end_utc": 1794538966,
+        "observation_ready_utc": 1794538870.2375224,
+        "observation_stop_signal_utc": 1794538972.4513447,
+        "largest_timestamp_regression_seconds": 0.00018978118896484375,
+        "clock_probe_count": 8,
+        "max_clock_probe_gap_seconds": 17.01866102218628,
+        "failed_legitimate_requests_remain_benign": true,
+        "study_training_ready": false,
+        "scope": "Controlled declared legitimate scenario; not inferred public idle labels, final testing, model results or an unseen environment."
+      }
+    },
+    {
+      "entry_index": 16,
+      "entry": {
+        "role": "T",
+        "condition": "long_download",
+        "repeat": 2,
+        "clients": 3,
+        "warmup": 30,
+        "duration": 60,
+        "client_seeds": [
+          46600101,
+          46600202,
+          46600303
+        ],
+        "down_seed": 46605001,
+        "up_seed": 46605002
+      },
+      "state": "quality_pass",
+      "start_utc": 1794538975.9512239,
+      "session": "benign-stress-t-long_download-c832b29353",
+      "audit": {
+        "session": "benign-stress-t-long_download-c832b29353",
+        "role": "T",
+        "condition": "long_download",
+        "repeat": 2,
+        "engineering_quality_pass": true,
+        "eligible_for_development": true,
+        "pcap_sha256": "3e7bde7c4af0af9e01411c5e6b16c203fd4e53172087aa0e4fb343e7cff7ab94",
+        "plan_sha256": "d646e6460f7c7a7ceb8cfb4f34d305a41180265f6dcafbc2e3d07ee963211c30",
+        "counts": {
+          "frames": 8498,
+          "inbound": 3839,
+          "measurement_frames": 4590,
+          "outbound": 4659
+        },
+        "kernel_capture_drops": 0,
+        "router_qdisc_drops": 275,
+        "router_qdisc_drops_are_legitimate_network_outcomes": true,
+        "client_outcomes": {
+          "failed": 3,
+          "method_GET": 7,
+          "complete": 4
+        },
+        "max_request_seconds": 51.583278383000106,
+        "first_packet_utc": 1794538986.050452,
+        "last_packet_utc": 1794539089.146662,
+        "measurement_start_utc": 1794539016,
+        "measurement_end_utc": 1794539076,
+        "observation_ready_utc": 1794538979.177314,
+        "observation_stop_signal_utc": 1794539089.81333,
+        "largest_timestamp_regression_seconds": 0.0,
+        "clock_probe_count": 9,
+        "max_clock_probe_gap_seconds": 17.312399864196777,
+        "failed_legitimate_requests_remain_benign": true,
+        "study_training_ready": false,
+        "scope": "Controlled declared legitimate scenario; not inferred public idle labels, final testing, model results or an unseen environment."
+      }
+    },
+    {
+      "entry_index": 17,
+      "entry": {
+        "role": "C1",
+        "condition": "long_download",
+        "repeat": 2,
+        "clients": 3,
+        "warmup": 30,
+        "duration": 60,
+        "client_seeds": [
+          46700101,
+          46700202,
+          46700303
+        ],
+        "down_seed": 46705001,
+        "up_seed": 46705002
+      },
+      "state": "quality_pass",
+      "start_utc": 1794539092.8330965,
+      "session": "benign-stress-c1-long_download-59c8851497",
+      "audit": {
+        "session": "benign-stress-c1-long_download-59c8851497",
+        "role": "C1",
+        "condition": "long_download",
+        "repeat": 2,
+        "engineering_quality_pass": true,
+        "eligible_for_development": true,
+        "pcap_sha256": "48276a9cd2abd6a5865cbc64d3cb7aa81b731b192f342a2c04b8233871f6e8a0",
+        "plan_sha256": "d646e6460f7c7a7ceb8cfb4f34d305a41180265f6dcafbc2e3d07ee963211c30",
+        "counts": {
+          "frames": 8522,
+          "inbound": 3886,
+          "measurement_frames": 4605,
+          "outbound": 4636
+        },
+        "kernel_capture_drops": 0,
+        "router_qdisc_drops": 254,
+        "router_qdisc_drops_are_legitimate_network_outcomes": true,
+        "client_outcomes": {
+          "complete": 4,
+          "method_GET": 7,
+          "failed": 3
+        },
+        "max_request_seconds": 51.55763149999984,
+        "first_packet_utc": 1794539103.042495,
+        "last_packet_utc": 1794539206.100806,
+        "measurement_start_utc": 1794539133,
+        "measurement_end_utc": 1794539193,
+        "observation_ready_utc": 1794539096.1707206,
+        "observation_stop_signal_utc": 1794539206.5778062,
+        "largest_timestamp_regression_seconds": 0.0,
+        "clock_probe_count": 9,
+        "max_clock_probe_gap_seconds": 17.38350772857666,
+        "failed_legitimate_requests_remain_benign": true,
+        "study_training_ready": false,
+        "scope": "Controlled declared legitimate scenario; not inferred public idle labels, final testing, model results or an unseen environment."
+      }
+    },
+    {
+      "entry_index": 18,
+      "entry": {
+        "role": "C2",
+        "condition": "long_download",
+        "repeat": 2,
+        "clients": 3,
+        "warmup": 30,
+        "duration": 60,
+        "client_seeds": [
+          46800101,
+          46800202,
+          46800303
+        ],
+        "down_seed": 46805001,
+        "up_seed": 46805002
+      },
+      "state": "quality_pass",
+      "start_utc": 1794539209.5788648,
+      "session": "benign-stress-c2-long_download-38d62f5bf5",
+      "audit": {
+        "session": "benign-stress-c2-long_download-38d62f5bf5",
+        "role": "C2",
+        "condition": "long_download",
+        "repeat": 2,
+        "engineering_quality_pass": true,
+        "eligible_for_development": true,
+        "pcap_sha256": "0453e53f1ff9e798fff8c6adaebae958f11b1ca6bad5c42282fc75223b4412e0",
+        "plan_sha256": "d646e6460f7c7a7ceb8cfb4f34d305a41180265f6dcafbc2e3d07ee963211c30",
+        "counts": {
+          "frames": 8568,
+          "inbound": 3880,
+          "measurement_frames": 4657,
+          "outbound": 4688
+        },
+        "kernel_capture_drops": 0,
+        "router_qdisc_drops": 306,
+        "router_qdisc_drops_are_legitimate_network_outcomes": true,
+        "client_outcomes": {
+          "failed": 3,
+          "method_GET": 7,
+          "complete": 4
+        },
+        "max_request_seconds": 53.572026838000056,
+        "first_packet_utc": 1794539220.049628,
+        "last_packet_utc": 1794539323.131647,
+        "measurement_start_utc": 1794539250,
+        "measurement_end_utc": 1794539310,
+        "observation_ready_utc": 1794539213.4924636,
+        "observation_stop_signal_utc": 1794539323.7263153,
+        "largest_timestamp_regression_seconds": 0.0,
+        "clock_probe_count": 9,
+        "max_clock_probe_gap_seconds": 16.895957946777344,
+        "failed_legitimate_requests_remain_benign": true,
+        "study_training_ready": false,
+        "scope": "Controlled declared legitimate scenario; not inferred public idle labels, final testing, model results or an unseen environment."
+      }
+    },
+    {
+      "entry_index": 19,
+      "entry": {
+        "role": "V",
+        "condition": "long_download",
+        "repeat": 2,
+        "clients": 3,
+        "warmup": 30,
+        "duration": 60,
+        "client_seeds": [
+          46900101,
+          46900202,
+          46900303
+        ],
+        "down_seed": 46905001,
+        "up_seed": 46905002
+      },
+      "state": "quality_pass",
+      "start_utc": 1794539326.7663965,
+      "session": "benign-stress-v-long_download-4df0752f2a",
+      "audit": {
+        "session": "benign-stress-v-long_download-4df0752f2a",
+        "role": "V",
+        "condition": "long_download",
+        "repeat": 2,
+        "engineering_quality_pass": true,
+        "eligible_for_development": true,
+        "pcap_sha256": "d5508419a54062fbe07a533a6fdc97a394a3fa4dff70ffaeb81c29d553fbfc52",
+        "plan_sha256": "d646e6460f7c7a7ceb8cfb4f34d305a41180265f6dcafbc2e3d07ee963211c30",
+        "counts": {
+          "frames": 9116,
+          "inbound": 4119,
+          "measurement_frames": 4786,
+          "outbound": 4997
+        },
+        "kernel_capture_drops": 0,
+        "router_qdisc_drops": 212,
+        "router_qdisc_drops_are_legitimate_network_outcomes": true,
+        "client_outcomes": {
+          "failed": 5,
+          "method_GET": 10,
+          "complete": 5
+        },
+        "max_request_seconds": 51.5568989569997,
+        "first_packet_utc": 1794539337.043658,
+        "last_packet_utc": 1794539447.113598,
+        "measurement_start_utc": 1794539367,
+        "measurement_end_utc": 1794539427,
+        "observation_ready_utc": 1794539330.6338701,
+        "observation_stop_signal_utc": 1794539447.695082,
+        "largest_timestamp_regression_seconds": 0.0,
+        "clock_probe_count": 9,
+        "max_clock_probe_gap_seconds": 16.92911648750305,
+        "failed_legitimate_requests_remain_benign": true,
+        "study_training_ready": false,
+        "scope": "Controlled declared legitimate scenario; not inferred public idle labels, final testing, model results or an unseen environment."
+      }
+    },
+    {
+      "entry_index": 20,
+      "entry": {
+        "role": "T",
+        "condition": "congested_mixed",
+        "repeat": 2,
+        "clients": 3,
+        "warmup": 30,
+        "duration": 60,
+        "client_seeds": [
+          47000101,
+          47000202,
+          47000303
+        ],
+        "down_seed": 47005001,
+        "up_seed": 47005002
+      },
+      "state": "quality_pass",
+      "start_utc": 1794539450.7668219,
+      "session": "benign-stress-t-congested_mixed-0548e15a81",
+      "audit": {
+        "session": "benign-stress-t-congested_mixed-0548e15a81",
+        "role": "T",
+        "condition": "congested_mixed",
+        "repeat": 2,
+        "engineering_quality_pass": true,
+        "eligible_for_development": true,
+        "pcap_sha256": "970d7b6868d347e1ed6305b84609aef76924731b54d262bf59764e227a91f1ec",
+        "plan_sha256": "d646e6460f7c7a7ceb8cfb4f34d305a41180265f6dcafbc2e3d07ee963211c30",
+        "counts": {
+          "frames": 4156,
+          "inbound": 1909,
+          "measurement_frames": 2694,
+          "outbound": 2247
+        },
+        "kernel_capture_drops": 0,
+        "router_qdisc_drops": 172,
+        "router_qdisc_drops_are_legitimate_network_outcomes": true,
+        "client_outcomes": {
+          "complete": 40,
+          "method_GET": 62,
+          "failed": 34,
+          "method_HEAD": 12
+        },
+        "max_request_seconds": 11.258730451999782,
+        "first_packet_utc": 1794539461.065719,
+        "last_packet_utc": 1794539557.203657,
+        "measurement_start_utc": 1794539491,
+        "measurement_end_utc": 1794539551,
+        "observation_ready_utc": 1794539454.3975422,
+        "observation_stop_signal_utc": 1794539557.4213216,
+        "largest_timestamp_regression_seconds": 0.0,
+        "clock_probe_count": 8,
+        "max_clock_probe_gap_seconds": 17.103625535964966,
+        "failed_legitimate_requests_remain_benign": true,
+        "study_training_ready": false,
+        "scope": "Controlled declared legitimate scenario; not inferred public idle labels, final testing, model results or an unseen environment."
+      }
+    },
+    {
+      "entry_index": 21,
+      "entry": {
+        "role": "C1",
+        "condition": "congested_mixed",
+        "repeat": 2,
+        "clients": 3,
+        "warmup": 30,
+        "duration": 60,
+        "client_seeds": [
+          47100101,
+          47100202,
+          47100303
+        ],
+        "down_seed": 47105001,
+        "up_seed": 47105002
+      },
+      "state": "quality_pass",
+      "start_utc": 1794539560.2524102,
+      "session": "benign-stress-c1-congested_mixed-e4b345ff96",
+      "audit": {
+        "session": "benign-stress-c1-congested_mixed-e4b345ff96",
+        "role": "C1",
+        "condition": "congested_mixed",
+        "repeat": 2,
+        "engineering_quality_pass": true,
+        "eligible_for_development": true,
+        "pcap_sha256": "c92d35856d198fb9a6841cd483a82b4ade01c00220d444e8e42860361610f727",
+        "plan_sha256": "d646e6460f7c7a7ceb8cfb4f34d305a41180265f6dcafbc2e3d07ee963211c30",
+        "counts": {
+          "frames": 4069,
+          "inbound": 1843,
+          "measurement_frames": 2556,
+          "outbound": 2226
+        },
+        "kernel_capture_drops": 0,
+        "router_qdisc_drops": 144,
+        "router_qdisc_drops_are_legitimate_network_outcomes": true,
+        "client_outcomes": {
+          "complete": 37,
+          "method_GET": 64,
+          "failed": 38,
+          "method_HEAD": 11
+        },
+        "max_request_seconds": 11.728276241000003,
+        "first_packet_utc": 1794539570.08166,
+        "last_packet_utc": 1794539663.622687,
+        "measurement_start_utc": 1794539600,
+        "measurement_end_utc": 1794539660,
+        "observation_ready_utc": 1794539563.7899148,
+        "observation_stop_signal_utc": 1794539666.400904,
+        "largest_timestamp_regression_seconds": 0.0,
+        "clock_probe_count": 8,
+        "max_clock_probe_gap_seconds": 17.23085379600525,
+        "failed_legitimate_requests_remain_benign": true,
+        "study_training_ready": false,
+        "scope": "Controlled declared legitimate scenario; not inferred public idle labels, final testing, model results or an unseen environment."
+      }
+    },
+    {
+      "entry_index": 22,
+      "entry": {
+        "role": "C2",
+        "condition": "congested_mixed",
+        "repeat": 2,
+        "clients": 3,
+        "warmup": 30,
+        "duration": 60,
+        "client_seeds": [
+          47200101,
+          47200202,
+          47200303
+        ],
+        "down_seed": 47205001,
+        "up_seed": 47205002
+      },
+      "state": "quality_pass",
+      "start_utc": 1794539669.35242,
+      "session": "benign-stress-c2-congested_mixed-b6fdc9ba0c",
+      "audit": {
+        "session": "benign-stress-c2-congested_mixed-b6fdc9ba0c",
+        "role": "C2",
+        "condition": "congested_mixed",
+        "repeat": 2,
+        "engineering_quality_pass": true,
+        "eligible_for_development": true,
+        "pcap_sha256": "e4d7063a72f674726d6df7960b3c8d98c18f637625762b7eb454ab80f6c74354",
+        "plan_sha256": "d646e6460f7c7a7ceb8cfb4f34d305a41180265f6dcafbc2e3d07ee963211c30",
+        "counts": {
+          "frames": 4051,
+          "inbound": 1924,
+          "measurement_frames": 2611,
+          "outbound": 2127
+        },
+        "kernel_capture_drops": 0,
+        "router_qdisc_drops": 105,
+        "router_qdisc_drops_are_legitimate_network_outcomes": true,
+        "client_outcomes": {
+          "complete": 54,
+          "method_HEAD": 15,
+          "failed": 31,
+          "method_GET": 70
+        },
+        "max_request_seconds": 11.831658058999892,
+        "first_packet_utc": 1794539679.067608,
+        "last_packet_utc": 1794539771.503895,
+        "measurement_start_utc": 1794539709,
+        "measurement_end_utc": 1794539769,
+        "observation_ready_utc": 1794539672.8357277,
+        "observation_stop_signal_utc": 1794539775.4581368,
+        "largest_timestamp_regression_seconds": 0.0,
+        "clock_probe_count": 8,
+        "max_clock_probe_gap_seconds": 17.006185293197632,
+        "failed_legitimate_requests_remain_benign": true,
+        "study_training_ready": false,
+        "scope": "Controlled declared legitimate scenario; not inferred public idle labels, final testing, model results or an unseen environment."
+      }
+    },
+    {
+      "entry_index": 23,
+      "entry": {
+        "role": "V",
+        "condition": "congested_mixed",
+        "repeat": 2,
+        "clients": 3,
+        "warmup": 30,
+        "duration": 60,
+        "client_seeds": [
+          47300101,
+          47300202,
+          47300303
+        ],
+        "down_seed": 47305001,
+        "up_seed": 47305002
+      },
+      "state": "quality_pass",
+      "start_utc": 1794539778.2857475,
+      "session": "benign-stress-v-congested_mixed-970796c787",
+      "audit": {
+        "session": "benign-stress-v-congested_mixed-970796c787",
+        "role": "V",
+        "condition": "congested_mixed",
+        "repeat": 2,
+        "engineering_quality_pass": true,
+        "eligible_for_development": true,
+        "pcap_sha256": "ba0840783227d94ff31a44370b5924c73acfefb8ae52b474653cf1b25da54fbb",
+        "plan_sha256": "d646e6460f7c7a7ceb8cfb4f34d305a41180265f6dcafbc2e3d07ee963211c30",
+        "counts": {
+          "frames": 4180,
+          "inbound": 1973,
+          "measurement_frames": 2672,
+          "outbound": 2207
+        },
+        "kernel_capture_drops": 0,
+        "router_qdisc_drops": 101,
+        "router_qdisc_drops_are_legitimate_network_outcomes": true,
+        "client_outcomes": {
+          "failed": 35,
+          "method_GET": 59,
+          "complete": 42,
+          "method_HEAD": 18
+        },
+        "max_request_seconds": 11.742352799999935,
+        "first_packet_utc": 1794539788.056199,
+        "last_packet_utc": 1794539883.304981,
+        "measurement_start_utc": 1794539818,
+        "measurement_end_utc": 1794539878,
+        "observation_ready_utc": 1794539781.7994425,
+        "observation_stop_signal_utc": 1794539884.6217842,
+        "largest_timestamp_regression_seconds": 5.9604644775390625e-06,
+        "clock_probe_count": 8,
+        "max_clock_probe_gap_seconds": 17.69605541229248,
+        "failed_legitimate_requests_remain_benign": true,
+        "study_training_ready": false,
+        "scope": "Controlled declared legitimate scenario; not inferred public idle labels, final testing, model results or an unseen environment."
+      }
+    },
+    {
+      "entry_index": 24,
+      "entry": {
+        "role": "T",
+        "condition": "mixed_keepalive",
+        "repeat": 3,
+        "clients": 3,
+        "warmup": 30,
+        "duration": 60,
+        "client_seeds": [
+          47400101,
+          47400202,
+          47400303
+        ],
+        "down_seed": 47405001,
+        "up_seed": 47405002
+      },
+      "state": "quality_pass",
+      "start_utc": 1794539887.445342,
+      "session": "benign-stress-t-mixed_keepalive-1819bbbf75",
+      "audit": {
+        "session": "benign-stress-t-mixed_keepalive-1819bbbf75",
+        "role": "T",
+        "condition": "mixed_keepalive",
+        "repeat": 3,
+        "engineering_quality_pass": true,
+        "eligible_for_development": true,
+        "pcap_sha256": "eff23890e54ed6f1280a272a6b893217be2f3d7384678273ca4aa8def1591ddc",
+        "plan_sha256": "d646e6460f7c7a7ceb8cfb4f34d305a41180265f6dcafbc2e3d07ee963211c30",
+        "counts": {
+          "frames": 24478,
+          "inbound": 9073,
+          "measurement_frames": 14564,
+          "outbound": 15405
+        },
+        "kernel_capture_drops": 0,
+        "router_qdisc_drops": 0,
+        "router_qdisc_drops_are_legitimate_network_outcomes": true,
+        "client_outcomes": {
+          "complete": 489,
+          "method_GET": 372,
+          "method_HEAD": 117
+        },
+        "max_request_seconds": 0.04276165599912929,
+        "first_packet_utc": 1794539897.014446,
+        "last_packet_utc": 1794539987.720242,
+        "measurement_start_utc": 1794539927,
+        "measurement_end_utc": 1794539987,
+        "observation_ready_utc": 1794539890.565112,
+        "observation_stop_signal_utc": 1794539993.5580156,
+        "largest_timestamp_regression_seconds": 3.409385681152344e-05,
+        "clock_probe_count": 8,
+        "max_clock_probe_gap_seconds": 17.826528549194336,
+        "failed_legitimate_requests_remain_benign": true,
+        "study_training_ready": false,
+        "scope": "Controlled declared legitimate scenario; not inferred public idle labels, final testing, model results or an unseen environment."
+      }
+    },
+    {
+      "entry_index": 25,
+      "entry": {
+        "role": "C1",
+        "condition": "mixed_keepalive",
+        "repeat": 3,
+        "clients": 3,
+        "warmup": 30,
+        "duration": 60,
+        "client_seeds": [
+          47500101,
+          47500202,
+          47500303
+        ],
+        "down_seed": 47505001,
+        "up_seed": 47505002
+      },
+      "state": "quality_pass",
+      "start_utc": 1794539997.043599,
+      "session": "benign-stress-c1-mixed_keepalive-1b6e614418",
+      "audit": {
+        "session": "benign-stress-c1-mixed_keepalive-1b6e614418",
+        "role": "C1",
+        "condition": "mixed_keepalive",
+        "repeat": 3,
+        "engineering_quality_pass": true,
+        "eligible_for_development": true,
+        "pcap_sha256": "110aae5ce98baf0cc05eaa75a519624266e6b6903ce9a5a93acd37c088781a91",
+        "plan_sha256": "d646e6460f7c7a7ceb8cfb4f34d305a41180265f6dcafbc2e3d07ee963211c30",
+        "counts": {
+          "frames": 28785,
+          "inbound": 10344,
+          "measurement_frames": 18566,
+          "outbound": 18441
+        },
+        "kernel_capture_drops": 0,
+        "router_qdisc_drops": 0,
+        "router_qdisc_drops_are_legitimate_network_outcomes": true,
+        "client_outcomes": {
+          "complete": 482,
+          "method_GET": 399,
+          "method_HEAD": 83
+        },
+        "max_request_seconds": 0.15150336099941342,
+        "first_packet_utc": 1794540008.008682,
+        "last_packet_utc": 1794540098.140776,
+        "measurement_start_utc": 1794540038,
+        "measurement_end_utc": 1794540098,
+        "observation_ready_utc": 1794540000.736692,
+        "observation_stop_signal_utc": 1794540104.5457013,
+        "largest_timestamp_regression_seconds": 0.0014770030975341797,
+        "clock_probe_count": 8,
+        "max_clock_probe_gap_seconds": 18.032623529434204,
+        "failed_legitimate_requests_remain_benign": true,
+        "study_training_ready": false,
+        "scope": "Controlled declared legitimate scenario; not inferred public idle labels, final testing, model results or an unseen environment."
+      }
+    },
+    {
+      "entry_index": 26,
+      "entry": {
+        "role": "C2",
+        "condition": "mixed_keepalive",
+        "repeat": 3,
+        "clients": 3,
+        "warmup": 30,
+        "duration": 60,
+        "client_seeds": [
+          47600101,
+          47600202,
+          47600303
+        ],
+        "down_seed": 47605001,
+        "up_seed": 47605002
+      },
+      "state": "quality_pass",
+      "start_utc": 1794540108.3463702,
+      "session": "benign-stress-c2-mixed_keepalive-75b2542d70",
+      "audit": {
+        "session": "benign-stress-c2-mixed_keepalive-75b2542d70",
+        "role": "C2",
+        "condition": "mixed_keepalive",
+        "repeat": 3,
+        "engineering_quality_pass": true,
+        "eligible_for_development": true,
+        "pcap_sha256": "d992990308fc4bfd6115464e1fa06803bdfb4b908d53b8ff8298cf7e4137e299",
+        "plan_sha256": "d646e6460f7c7a7ceb8cfb4f34d305a41180265f6dcafbc2e3d07ee963211c30",
+        "counts": {
+          "frames": 26634,
+          "inbound": 10025,
+          "measurement_frames": 17289,
+          "outbound": 16609
+        },
+        "kernel_capture_drops": 0,
+        "router_qdisc_drops": 0,
+        "router_qdisc_drops_are_legitimate_network_outcomes": true,
+        "client_outcomes": {
+          "complete": 486,
+          "method_GET": 387,
+          "method_HEAD": 99
+        },
+        "max_request_seconds": 0.042660002000047825,
+        "first_packet_utc": 1794540118.005349,
+        "last_packet_utc": 1794540208.573445,
+        "measurement_start_utc": 1794540148,
+        "measurement_end_utc": 1794540208,
+        "observation_ready_utc": 1794540111.9325159,
+        "observation_stop_signal_utc": 1794540214.5476806,
+        "largest_timestamp_regression_seconds": 0.00017499923706054688,
+        "clock_probe_count": 8,
+        "max_clock_probe_gap_seconds": 16.978123903274536,
+        "failed_legitimate_requests_remain_benign": true,
+        "study_training_ready": false,
+        "scope": "Controlled declared legitimate scenario; not inferred public idle labels, final testing, model results or an unseen environment."
+      }
+    },
+    {
+      "entry_index": 27,
+      "entry": {
+        "role": "V",
+        "condition": "mixed_keepalive",
+        "repeat": 3,
+        "clients": 3,
+        "warmup": 30,
+        "duration": 60,
+        "client_seeds": [
+          47700101,
+          47700202,
+          47700303
+        ],
+        "down_seed": 47705001,
+        "up_seed": 47705002
+      },
+      "state": "quality_pass",
+      "start_utc": 1794540218.0376809,
+      "session": "benign-stress-v-mixed_keepalive-7f35bf5f23",
+      "audit": {
+        "session": "benign-stress-v-mixed_keepalive-7f35bf5f23",
+        "role": "V",
+        "condition": "mixed_keepalive",
+        "repeat": 3,
+        "engineering_quality_pass": true,
+        "eligible_for_development": true,
+        "pcap_sha256": "fb2905db8ab19a776db0585f5e65f9946f5e1fe1eb01bcb905340b84f6ba916f",
+        "plan_sha256": "d646e6460f7c7a7ceb8cfb4f34d305a41180265f6dcafbc2e3d07ee963211c30",
+        "counts": {
+          "frames": 26130,
+          "inbound": 9865,
+          "measurement_frames": 17436,
+          "outbound": 16265
+        },
+        "kernel_capture_drops": 0,
+        "router_qdisc_drops": 0,
+        "router_qdisc_drops_are_legitimate_network_outcomes": true,
+        "client_outcomes": {
+          "complete": 477,
+          "method_HEAD": 102,
+          "method_GET": 375
+        },
+        "max_request_seconds": 0.06083704199954809,
+        "first_packet_utc": 1794540228.010316,
+        "last_packet_utc": 1794540318.666809,
+        "measurement_start_utc": 1794540258,
+        "measurement_end_utc": 1794540318,
+        "observation_ready_utc": 1794540221.4434805,
+        "observation_stop_signal_utc": 1794540324.4517395,
+        "largest_timestamp_regression_seconds": 6.794929504394531e-05,
+        "clock_probe_count": 8,
+        "max_clock_probe_gap_seconds": 17.136515378952026,
+        "failed_legitimate_requests_remain_benign": true,
+        "study_training_ready": false,
+        "scope": "Controlled declared legitimate scenario; not inferred public idle labels, final testing, model results or an unseen environment."
+      }
+    },
+    {
+      "entry_index": 28,
+      "entry": {
+        "role": "T",
+        "condition": "long_download",
+        "repeat": 3,
+        "clients": 3,
+        "warmup": 30,
+        "duration": 60,
+        "client_seeds": [
+          47800101,
+          47800202,
+          47800303
+        ],
+        "down_seed": 47805001,
+        "up_seed": 47805002
+      },
+      "state": "quality_pass",
+      "start_utc": 1794540327.8439748,
+      "session": "benign-stress-t-long_download-f95b8003f3",
+      "audit": {
+        "session": "benign-stress-t-long_download-f95b8003f3",
+        "role": "T",
+        "condition": "long_download",
+        "repeat": 3,
+        "engineering_quality_pass": true,
+        "eligible_for_development": true,
+        "pcap_sha256": "0f71c77ae41cfbe40f7190dd8e898259c493bcbc7163c0f68c9a0f314c849e9a",
+        "plan_sha256": "d646e6460f7c7a7ceb8cfb4f34d305a41180265f6dcafbc2e3d07ee963211c30",
+        "counts": {
+          "frames": 8554,
+          "inbound": 3896,
+          "measurement_frames": 4624,
+          "outbound": 4658
+        },
+        "kernel_capture_drops": 0,
+        "router_qdisc_drops": 284,
+        "router_qdisc_drops_are_legitimate_network_outcomes": true,
+        "client_outcomes": {
+          "failed": 3,
+          "method_GET": 7,
+          "complete": 4
+        },
+        "max_request_seconds": 51.29259469099998,
+        "first_packet_utc": 1794540337.042625,
+        "last_packet_utc": 1794540439.896117,
+        "measurement_start_utc": 1794540367,
+        "measurement_end_utc": 1794540427,
+        "observation_ready_utc": 1794540331.178388,
+        "observation_stop_signal_utc": 1794540440.4068158,
+        "largest_timestamp_regression_seconds": 2.5033950805664062e-05,
+        "clock_probe_count": 8,
+        "max_clock_probe_gap_seconds": 16.968947649002075,
+        "failed_legitimate_requests_remain_benign": true,
+        "study_training_ready": false,
+        "scope": "Controlled declared legitimate scenario; not inferred public idle labels, final testing, model results or an unseen environment."
+      }
+    },
+    {
+      "entry_index": 29,
+      "entry": {
+        "role": "C1",
+        "condition": "long_download",
+        "repeat": 3,
+        "clients": 3,
+        "warmup": 30,
+        "duration": 60,
+        "client_seeds": [
+          47900101,
+          47900202,
+          47900303
+        ],
+        "down_seed": 47905001,
+        "up_seed": 47905002
+      },
+      "state": "quality_pass",
+      "start_utc": 1794540443.4452999,
+      "session": "benign-stress-c1-long_download-555e0a11ac",
+      "audit": {
+        "session": "benign-stress-c1-long_download-555e0a11ac",
+        "role": "C1",
+        "condition": "long_download",
+        "repeat": 3,
+        "engineering_quality_pass": true,
+        "eligible_for_development": true,
+        "pcap_sha256": "4ad5985e704e794cb5eaa17fae5e2ebe2e7e69b12964d715255c12da4d35e3b4",
+        "plan_sha256": "d646e6460f7c7a7ceb8cfb4f34d305a41180265f6dcafbc2e3d07ee963211c30",
+        "counts": {
+          "frames": 8537,
+          "inbound": 3882,
+          "measurement_frames": 4569,
+          "outbound": 4655
+        },
+        "kernel_capture_drops": 0,
+        "router_qdisc_drops": 271,
+        "router_qdisc_drops_are_legitimate_network_outcomes": true,
+        "client_outcomes": {
+          "failed": 3,
+          "method_GET": 7,
+          "complete": 4
+        },
+        "max_request_seconds": 51.59362399600013,
+        "first_packet_utc": 1794540453.051771,
+        "last_packet_utc": 1794540556.13392,
+        "measurement_start_utc": 1794540483,
+        "measurement_end_utc": 1794540543,
+        "observation_ready_utc": 1794540446.657241,
+        "observation_stop_signal_utc": 1794540556.6901307,
+        "largest_timestamp_regression_seconds": 0.0,
+        "clock_probe_count": 9,
+        "max_clock_probe_gap_seconds": 17.238039255142212,
+        "failed_legitimate_requests_remain_benign": true,
+        "study_training_ready": false,
+        "scope": "Controlled declared legitimate scenario; not inferred public idle labels, final testing, model results or an unseen environment."
+      }
+    },
+    {
+      "entry_index": 30,
+      "entry": {
+        "role": "C2",
+        "condition": "long_download",
+        "repeat": 3,
+        "clients": 3,
+        "warmup": 30,
+        "duration": 60,
+        "client_seeds": [
+          48000101,
+          48000202,
+          48000303
+        ],
+        "down_seed": 48005001,
+        "up_seed": 48005002
+      },
+      "state": "quality_pass",
+      "start_utc": 1794540559.742485,
+      "session": "benign-stress-c2-long_download-a1e68b1502",
+      "audit": {
+        "session": "benign-stress-c2-long_download-a1e68b1502",
+        "role": "C2",
+        "condition": "long_download",
+        "repeat": 3,
+        "engineering_quality_pass": true,
+        "eligible_for_development": true,
+        "pcap_sha256": "0627ee6c2db515a863adbda58a502b16f9a4da779deb7b0dbe89e6fd585363c1",
+        "plan_sha256": "d646e6460f7c7a7ceb8cfb4f34d305a41180265f6dcafbc2e3d07ee963211c30",
+        "counts": {
+          "frames": 8648,
+          "inbound": 3961,
+          "measurement_frames": 4582,
+          "outbound": 4687
+        },
+        "kernel_capture_drops": 0,
+        "router_qdisc_drops": 305,
+        "router_qdisc_drops_are_legitimate_network_outcomes": true,
+        "client_outcomes": {
+          "failed": 3,
+          "method_GET": 7,
+          "complete": 4
+        },
+        "max_request_seconds": 51.56827294300001,
+        "first_packet_utc": 1794540569.052382,
+        "last_packet_utc": 1794540672.121552,
+        "measurement_start_utc": 1794540599,
+        "measurement_end_utc": 1794540659,
+        "observation_ready_utc": 1794540563.150034,
+        "observation_stop_signal_utc": 1794540672.5726395,
+        "largest_timestamp_regression_seconds": 0.0,
+        "clock_probe_count": 9,
+        "max_clock_probe_gap_seconds": 16.84813618659973,
+        "failed_legitimate_requests_remain_benign": true,
+        "study_training_ready": false,
+        "scope": "Controlled declared legitimate scenario; not inferred public idle labels, final testing, model results or an unseen environment."
+      }
+    },
+    {
+      "entry_index": 31,
+      "entry": {
+        "role": "V",
+        "condition": "long_download",
+        "repeat": 3,
+        "clients": 3,
+        "warmup": 30,
+        "duration": 60,
+        "client_seeds": [
+          48100101,
+          48100202,
+          48100303
+        ],
+        "down_seed": 48105001,
+        "up_seed": 48105002
+      },
+      "state": "quality_pass",
+      "start_utc": 1794540675.544966,
+      "session": "benign-stress-v-long_download-9cd70d69eb",
+      "audit": {
+        "session": "benign-stress-v-long_download-9cd70d69eb",
+        "role": "V",
+        "condition": "long_download",
+        "repeat": 3,
+        "engineering_quality_pass": true,
+        "eligible_for_development": true,
+        "pcap_sha256": "1c2bd4cc96eaab22c28777bac69e17056e578acbde5b5b094d8b487ad1ae25cb",
+        "plan_sha256": "d646e6460f7c7a7ceb8cfb4f34d305a41180265f6dcafbc2e3d07ee963211c30",
+        "counts": {
+          "frames": 8543,
+          "inbound": 3904,
+          "measurement_frames": 4535,
+          "outbound": 4639
+        },
+        "kernel_capture_drops": 0,
+        "router_qdisc_drops": 261,
+        "router_qdisc_drops_are_legitimate_network_outcomes": true,
+        "client_outcomes": {
+          "failed": 3,
+          "method_GET": 7,
+          "complete": 4
+        },
+        "max_request_seconds": 51.53788260500005,
+        "first_packet_utc": 1794540685.061108,
+        "last_packet_utc": 1794540787.888708,
+        "measurement_start_utc": 1794540715,
+        "measurement_end_utc": 1794540775,
+        "observation_ready_utc": 1794540678.895339,
+        "observation_stop_signal_utc": 1794540788.729649,
+        "largest_timestamp_regression_seconds": 0.0,
+        "clock_probe_count": 9,
+        "max_clock_probe_gap_seconds": 17.184950828552246,
+        "failed_legitimate_requests_remain_benign": true,
+        "study_training_ready": false,
+        "scope": "Controlled declared legitimate scenario; not inferred public idle labels, final testing, model results or an unseen environment."
+      }
+    },
+    {
+      "entry_index": 32,
+      "entry": {
+        "role": "T",
+        "condition": "congested_mixed",
+        "repeat": 3,
+        "clients": 3,
+        "warmup": 30,
+        "duration": 60,
+        "client_seeds": [
+          48200101,
+          48200202,
+          48200303
+        ],
+        "down_seed": 48205001,
+        "up_seed": 48205002
+      },
+      "state": "quality_pass",
+      "start_utc": 1794540791.6987517,
+      "session": "benign-stress-t-congested_mixed-274d900485",
+      "audit": {
+        "session": "benign-stress-t-congested_mixed-274d900485",
+        "role": "T",
+        "condition": "congested_mixed",
+        "repeat": 3,
+        "engineering_quality_pass": true,
+        "eligible_for_development": true,
+        "pcap_sha256": "0c829b285ce078152ccd49c3cb3579f20d9c96442debf6bc81f17418c220650e",
+        "plan_sha256": "d646e6460f7c7a7ceb8cfb4f34d305a41180265f6dcafbc2e3d07ee963211c30",
+        "counts": {
+          "frames": 4395,
+          "inbound": 2062,
+          "measurement_frames": 2674,
+          "outbound": 2333
+        },
+        "kernel_capture_drops": 0,
+        "router_qdisc_drops": 152,
+        "router_qdisc_drops_are_legitimate_network_outcomes": true,
+        "client_outcomes": {
+          "complete": 40,
+          "method_GET": 65,
+          "failed": 38,
+          "method_HEAD": 13
+        },
+        "max_request_seconds": 11.068495183000778,
+        "first_packet_utc": 1794540802.073347,
+        "last_packet_utc": 1794540900.659881,
+        "measurement_start_utc": 1794540832,
+        "measurement_end_utc": 1794540892,
+        "observation_ready_utc": 1794540795.7746093,
+        "observation_stop_signal_utc": 1794540901.4091463,
+        "largest_timestamp_regression_seconds": 0.0,
+        "clock_probe_count": 8,
+        "max_clock_probe_gap_seconds": 17.599268913269043,
+        "failed_legitimate_requests_remain_benign": true,
+        "study_training_ready": false,
+        "scope": "Controlled declared legitimate scenario; not inferred public idle labels, final testing, model results or an unseen environment."
+      }
+    },
+    {
+      "entry_index": 33,
+      "entry": {
+        "role": "C1",
+        "condition": "congested_mixed",
+        "repeat": 3,
+        "clients": 3,
+        "warmup": 30,
+        "duration": 60,
+        "client_seeds": [
+          48300101,
+          48300202,
+          48300303
+        ],
+        "down_seed": 48305001,
+        "up_seed": 48305002
+      },
+      "state": "quality_pass",
+      "start_utc": 1794540904.2912807,
+      "session": "benign-stress-c1-congested_mixed-e43a33cb1a",
+      "audit": {
+        "session": "benign-stress-c1-congested_mixed-e43a33cb1a",
+        "role": "C1",
+        "condition": "congested_mixed",
+        "repeat": 3,
+        "engineering_quality_pass": true,
+        "eligible_for_development": true,
+        "pcap_sha256": "950defc632268b5c4cade9f1a5363b33f531e1370cc8fa45c12c84694ebb3c13",
+        "plan_sha256": "d646e6460f7c7a7ceb8cfb4f34d305a41180265f6dcafbc2e3d07ee963211c30",
+        "counts": {
+          "frames": 4289,
+          "inbound": 2031,
+          "measurement_frames": 2745,
+          "outbound": 2258
+        },
+        "kernel_capture_drops": 0,
+        "router_qdisc_drops": 97,
+        "router_qdisc_drops_are_legitimate_network_outcomes": true,
+        "client_outcomes": {
+          "complete": 38,
+          "method_GET": 60,
+          "failed": 38,
+          "method_HEAD": 16
+        },
+        "max_request_seconds": 11.502733018000072,
+        "first_packet_utc": 1794540914.063826,
+        "last_packet_utc": 1794541008.703586,
+        "measurement_start_utc": 1794540944,
+        "measurement_end_utc": 1794541004,
+        "observation_ready_utc": 1794540907.880307,
+        "observation_stop_signal_utc": 1794541010.497494,
+        "largest_timestamp_regression_seconds": 0.0,
+        "clock_probe_count": 8,
+        "max_clock_probe_gap_seconds": 16.89373230934143,
+        "failed_legitimate_requests_remain_benign": true,
+        "study_training_ready": false,
+        "scope": "Controlled declared legitimate scenario; not inferred public idle labels, final testing, model results or an unseen environment."
+      }
+    },
+    {
+      "entry_index": 34,
+      "entry": {
+        "role": "C2",
+        "condition": "congested_mixed",
+        "repeat": 3,
+        "clients": 3,
+        "warmup": 30,
+        "duration": 60,
+        "client_seeds": [
+          48400101,
+          48400202,
+          48400303
+        ],
+        "down_seed": 48405001,
+        "up_seed": 48405002
+      },
+      "state": "quality_pass",
+      "start_utc": 1794541013.4665442,
+      "session": "benign-stress-c2-congested_mixed-d7ccc90a5a",
+      "audit": {
+        "session": "benign-stress-c2-congested_mixed-d7ccc90a5a",
+        "role": "C2",
+        "condition": "congested_mixed",
+        "repeat": 3,
+        "engineering_quality_pass": true,
+        "eligible_for_development": true,
+        "pcap_sha256": "57a45ecb18b01e6faf7b2df5a416e92c3b0e87ec421fd215243c0ea406ff7105",
+        "plan_sha256": "d646e6460f7c7a7ceb8cfb4f34d305a41180265f6dcafbc2e3d07ee963211c30",
+        "counts": {
+          "frames": 4143,
+          "inbound": 1984,
+          "measurement_frames": 2695,
+          "outbound": 2159
+        },
+        "kernel_capture_drops": 0,
+        "router_qdisc_drops": 109,
+        "router_qdisc_drops_are_legitimate_network_outcomes": true,
+        "client_outcomes": {
+          "complete": 27,
+          "method_HEAD": 18,
+          "method_GET": 48,
+          "failed": 39
+        },
+        "max_request_seconds": 11.795504116999837,
+        "first_packet_utc": 1794541023.063274,
+        "last_packet_utc": 1794541118.548704,
+        "measurement_start_utc": 1794541053,
+        "measurement_end_utc": 1794541113,
+        "observation_ready_utc": 1794541016.888555,
+        "observation_stop_signal_utc": 1794541119.9022272,
+        "largest_timestamp_regression_seconds": 0.0,
+        "clock_probe_count": 8,
+        "max_clock_probe_gap_seconds": 17.01402759552002,
+        "failed_legitimate_requests_remain_benign": true,
+        "study_training_ready": false,
+        "scope": "Controlled declared legitimate scenario; not inferred public idle labels, final testing, model results or an unseen environment."
+      }
+    },
+    {
+      "entry_index": 35,
+      "entry": {
+        "role": "V",
+        "condition": "congested_mixed",
+        "repeat": 3,
+        "clients": 3,
+        "warmup": 30,
+        "duration": 60,
+        "client_seeds": [
+          48500101,
+          48500202,
+          48500303
+        ],
+        "down_seed": 48505001,
+        "up_seed": 48505002
+      },
+      "state": "quality_pass",
+      "start_utc": 1794541124.42103,
+      "session": "benign-stress-v-congested_mixed-231c6e2a7d",
+      "audit": {
+        "session": "benign-stress-v-congested_mixed-231c6e2a7d",
+        "role": "V",
+        "condition": "congested_mixed",
+        "repeat": 3,
+        "engineering_quality_pass": true,
+        "eligible_for_development": true,
+        "pcap_sha256": "70f0bd28c726de572cdeb7a6c9982401ce3cb411821c2b05b1693e23dca75f9c",
+        "plan_sha256": "d646e6460f7c7a7ceb8cfb4f34d305a41180265f6dcafbc2e3d07ee963211c30",
+        "counts": {
+          "frames": 4184,
+          "inbound": 1969,
+          "measurement_frames": 2697,
+          "outbound": 2215
+        },
+        "kernel_capture_drops": 0,
+        "router_qdisc_drops": 143,
+        "router_qdisc_drops_are_legitimate_network_outcomes": true,
+        "client_outcomes": {
+          "failed": 39,
+          "method_GET": 55,
+          "complete": 25,
+          "method_HEAD": 9
+        },
+        "max_request_seconds": 11.59771994699986,
+        "first_packet_utc": 1794541137.06371,
+        "last_packet_utc": 1794541232.238681,
+        "measurement_start_utc": 1794541167,
+        "measurement_end_utc": 1794541227,
+        "observation_ready_utc": 1794541129.273612,
+        "observation_stop_signal_utc": 1794541233.5915232,
+        "largest_timestamp_regression_seconds": 0.0,
+        "clock_probe_count": 8,
+        "max_clock_probe_gap_seconds": 17.83926510810852,
+        "failed_legitimate_requests_remain_benign": true,
+        "study_training_ready": false,
+        "scope": "Controlled declared legitimate scenario; not inferred public idle labels, final testing, model results or an unseen environment."
+      }
+    }
+  ],
+  "study_training_ready": false,
+  "all_declared_entries_passed": true
+}

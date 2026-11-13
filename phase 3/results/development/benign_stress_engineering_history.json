@@ -1,0 +1,326 @@
+{
+  "date": "2026-11-13",
+  "versions": [
+    {
+      "version": 1,
+      "plan_sha256": "d8b963248861a2ee4fa1127f2fc37bccb1d628175adc788a3631f20cdc62e393",
+      "batch_sha256": "5e49ecd9c268f4ad60bee02a5175fd206c055d6e3e1667c8bfa2cbc95f1a229b",
+      "attempts": [
+        {
+          "condition": "mixed_keepalive",
+          "session": "benign-stress-preflight-mixed_keepalive-4b0cf61b42",
+          "batch_state": "failed_preserved",
+          "session_state": "collected_audit_pending",
+          "session_manifest_sha256": "9909d8b27da02b68892f4e15c4c6aaaf5479a3e1a425a50d00baa97d7e5a8e9b",
+          "outcomes": {
+            "attempts": 108,
+            "complete": 0,
+            "failed": 108,
+            "bytes": 0
+          },
+          "errors": {
+            "TimeoutError": 108
+          },
+          "measurement_schedule": {
+            "warmup_start_utc": 1794507766,
+            "measurement_start_utc": 1794507796,
+            "measurement_end_utc": 1794507856
+          },
+          "capture_observation": {
+            "start_utc": 1794507756.136876,
+            "ready_utc": 1794507757.1437333,
+            "stop_signal_utc": 1794507862.4834378,
+            "copy_finished_utc": 1794507862.556801,
+            "premature_exit": false,
+            "tcpdump_exit_code": 0,
+            "interface": "eth0",
+            "filter": "tcp port 80",
+            "packet_buffer_kib": 32768,
+            "linux_write_then_bulk_copy": true
+          },
+          "cleanup_exit_code": 0,
+          "all_preflights_excluded_from_model_data": true
+        }
+      ]
+    },
+    {
+      "version": 2,
+      "plan_sha256": "10670d32b16e5c4105d4f373befb9780c286bbf2acec5d336c844c3f108a0b32",
+      "batch_sha256": "2fceba42e53298e39e35bf39c5a34733e3f2b32b82fcb94ff9ccb7e60b6a8a7e",
+      "attempts": [
+        {
+          "condition": "mixed_keepalive",
+          "session": "benign-stress-preflight-mixed_keepalive-e21738958e",
+          "batch_state": "quality_pass",
+          "session_state": "collected_audit_pending",
+          "session_manifest_sha256": "d1619063d93c6246f28e6853f87d77d9602d28587d45afed9407b56a54d33c9d",
+          "outcomes": {
+            "attempts": 431,
+            "complete": 362,
+            "failed": 69,
+            "bytes": 18919424
+          },
+          "errors": {
+            "ResponseNotReady": 69
+          },
+          "measurement_schedule": {
+            "warmup_start_utc": 1794508012,
+            "measurement_start_utc": 1794508042,
+            "measurement_end_utc": 1794508102
+          },
+          "capture_observation": {
+            "start_utc": 1794508003.0840151,
+            "ready_utc": 1794508004.0940218,
+            "stop_signal_utc": 1794508108.483264,
+            "copy_finished_utc": 1794508109.7818449,
+            "premature_exit": false,
+            "tcpdump_exit_code": 0,
+            "interface": "eth0",
+            "filter": "tcp port 80",
+            "packet_buffer_kib": 32768,
+            "linux_write_then_bulk_copy": true
+          },
+          "cleanup_exit_code": 0,
+          "all_preflights_excluded_from_model_data": true
+        },
+        {
+          "condition": "long_download",
+          "session": "benign-stress-preflight-long_download-bdc8e31cf7",
+          "batch_state": "failed_preserved",
+          "session_state": "collected_audit_pending",
+          "session_manifest_sha256": "98a50f59c6d6e2f3006b65c93022c7017ffdede6fb490e39309c532874589ee7",
+          "outcomes": {
+            "attempts": 7,
+            "complete": 4,
+            "failed": 3,
+            "bytes": 5660520
+          },
+          "errors": {
+            "TimeoutError": 2,
+            "RemoteDisconnected": 1
+          },
+          "measurement_schedule": {
+            "warmup_start_utc": 1794508126,
+            "measurement_start_utc": 1794508156,
+            "measurement_end_utc": 1794508216
+          },
+          "capture_observation": {
+            "start_utc": 1794508117.3039088,
+            "ready_utc": 1794508118.3096268,
+            "stop_signal_utc": 1794508229.850775,
+            "copy_finished_utc": 1794508230.09609,
+            "premature_exit": false,
+            "tcpdump_exit_code": 0,
+            "interface": "eth0",
+            "filter": "tcp port 80",
+            "packet_buffer_kib": 32768,
+            "linux_write_then_bulk_copy": true
+          },
+          "cleanup_exit_code": 0,
+          "all_preflights_excluded_from_model_data": true
+        }
+      ]
+    },
+    {
+      "version": 4,
+      "plan_sha256": "6372f91d7f1f0cee71d4c78e15c357f2bdc0a24536b66587cc25ae811f9f1106",
+      "batch_sha256": "6930ab737dbc2bf389e5218e8f518a94b9332bb732e96938754b259504488d1f",
+      "attempts": [
+        {
+          "condition": "mixed_keepalive",
+          "session": "benign-stress-preflight-mixed_keepalive-f5faccb88d",
+          "batch_state": "quality_pass",
+          "session_state": "collected_audit_pending",
+          "session_manifest_sha256": "da9722a0bfc2eaec2f3e329667335c5187ebd6ee059ec8f1a8ed95035a9e2a95",
+          "outcomes": {
+            "attempts": 481,
+            "complete": 481,
+            "failed": 0,
+            "bytes": 23924736
+          },
+          "errors": {},
+          "measurement_schedule": {
+            "warmup_start_utc": 1794508418,
+            "measurement_start_utc": 1794508448,
+            "measurement_end_utc": 1794508508
+          },
+          "capture_observation": {
+            "start_utc": 1794508407.872152,
+            "ready_utc": 1794508408.876368,
+            "stop_signal_utc": 1794508514.7074263,
+            "copy_finished_utc": 1794508516.2585294,
+            "premature_exit": false,
+            "tcpdump_exit_code": 0,
+            "interface": "eth0",
+            "filter": "tcp port 80 and ether host f2:1f:5a:61:d2:ed",
+            "web_mac": "f2:1f:5a:61:d2:ed",
+            "packet_buffer_kib": 32768,
+            "linux_write_then_bulk_copy": true
+          },
+          "cleanup_exit_code": 0,
+          "all_preflights_excluded_from_model_data": true
+        },
+        {
+          "condition": "long_download",
+          "session": "benign-stress-preflight-long_download-6356794b15",
+          "batch_state": "failed_preserved",
+          "session_state": "failed",
+          "session_manifest_sha256": "34308df5a8ab91e76bd660579bda5942c66cff867b6f7805a0d255b91451b9ed",
+          "outcomes": {
+            "attempts": 3,
+            "complete": 0,
+            "failed": 3,
+            "bytes": 2214528
+          },
+          "errors": {
+            "TimeoutError": 3
+          },
+          "measurement_schedule": {
+            "warmup_start_utc": 1794508537,
+            "measurement_start_utc": 1794508567,
+            "measurement_end_utc": 1794508627
+          },
+          "capture_observation": {
+            "start_utc": 1794508526.6398566,
+            "ready_utc": 1794508527.6450865,
+            "stop_signal_utc": 1794508577.207881,
+            "copy_finished_utc": 1794508577.464286,
+            "premature_exit": false,
+            "tcpdump_exit_code": 0,
+            "interface": "eth0",
+            "filter": "tcp port 80 and ether host e6:25:9b:57:ee:63",
+            "web_mac": "e6:25:9b:57:ee:63",
+            "packet_buffer_kib": 32768,
+            "linux_write_then_bulk_copy": true
+          },
+          "cleanup_exit_code": 0,
+          "all_preflights_excluded_from_model_data": true
+        }
+      ]
+    },
+    {
+      "version": 5,
+      "plan_sha256": "d646e6460f7c7a7ceb8cfb4f34d305a41180265f6dcafbc2e3d07ee963211c30",
+      "batch_sha256": "844b64baebc475a8c9ed88d0525942f97cdaea5a306a53f86ca60f4afef8f46a",
+      "attempts": [
+        {
+          "condition": "mixed_keepalive",
+          "session": "benign-stress-preflight-mixed_keepalive-3bcb8f05b8",
+          "batch_state": "quality_pass",
+          "session_state": "collected_audit_pending",
+          "session_manifest_sha256": "85fe5d028264c9371873c553d9498672c66d62a196aea4aac3b6eeb495204393",
+          "outcomes": {
+            "attempts": 490,
+            "complete": 490,
+            "failed": 0,
+            "bytes": 24141824
+          },
+          "errors": {},
+          "measurement_schedule": {
+            "warmup_start_utc": 1794536809,
+            "measurement_start_utc": 1794536839,
+            "measurement_end_utc": 1794536899
+          },
+          "capture_observation": {
+            "start_utc": 1794536801.5808434,
+            "ready_utc": 1794536802.5883687,
+            "stop_signal_utc": 1794536905.5936384,
+            "copy_finished_utc": 1794536905.949625,
+            "premature_exit": false,
+            "tcpdump_exit_code": 0,
+            "interface": "eth0",
+            "filter": "tcp port 80 and ether host 2e:ac:a6:6b:e9:49",
+            "web_mac": "2e:ac:a6:6b:e9:49",
+            "packet_buffer_kib": 32768,
+            "linux_write_then_bulk_copy": true
+          },
+          "cleanup_exit_code": 0,
+          "all_preflights_excluded_from_model_data": true
+        },
+        {
+          "condition": "long_download",
+          "session": "benign-stress-preflight-long_download-ae70ef2932",
+          "batch_state": "quality_pass",
+          "session_state": "collected_audit_pending",
+          "session_manifest_sha256": "8fabb6b4d6387e35bbd2adb5e42adf9bb6bba2a1fd92e64d8e3c288f70bfcf3a",
+          "outcomes": {
+            "attempts": 7,
+            "complete": 4,
+            "failed": 3,
+            "bytes": 5701064
+          },
+          "errors": {
+            "TimeoutError": 2,
+            "RemoteDisconnected": 1
+          },
+          "measurement_schedule": {
+            "warmup_start_utc": 1794536920,
+            "measurement_start_utc": 1794536950,
+            "measurement_end_utc": 1794537010
+          },
+          "capture_observation": {
+            "start_utc": 1794536912.229678,
+            "ready_utc": 1794536913.235322,
+            "stop_signal_utc": 1794537023.8643513,
+            "copy_finished_utc": 1794537024.0519376,
+            "premature_exit": false,
+            "tcpdump_exit_code": 0,
+            "interface": "eth0",
+            "filter": "tcp port 80 and ether host 6e:f1:02:48:35:e6",
+            "web_mac": "6e:f1:02:48:35:e6",
+            "packet_buffer_kib": 32768,
+            "linux_write_then_bulk_copy": true
+          },
+          "cleanup_exit_code": 0,
+          "all_preflights_excluded_from_model_data": true
+        },
+        {
+          "condition": "congested_mixed",
+          "session": "benign-stress-preflight-congested_mixed-794c04b456",
+          "batch_state": "quality_pass",
+          "session_state": "collected_audit_pending",
+          "session_manifest_sha256": "dbda0a328a7177ffe72c54b50c43e2602f3f6e86e4279a798c2841ee56a2843e",
+          "outcomes": {
+            "attempts": 77,
+            "complete": 37,
+            "failed": 40,
+            "bytes": 1721461
+          },
+          "errors": {
+            "TimeoutError": 40
+          },
+          "measurement_schedule": {
+            "warmup_start_utc": 1794537037,
+            "measurement_start_utc": 1794537067,
+            "measurement_end_utc": 1794537127
+          },
+          "capture_observation": {
+            "start_utc": 1794537029.464523,
+            "ready_utc": 1794537030.4677975,
+            "stop_signal_utc": 1794537133.4921641,
+            "copy_finished_utc": 1794537133.6229138,
+            "premature_exit": false,
+            "tcpdump_exit_code": 0,
+            "interface": "eth0",
+            "filter": "tcp port 80 and ether host c2:ce:17:5a:ad:2d",
+            "web_mac": "c2:ce:17:5a:ad:2d",
+            "packet_buffer_kib": 32768,
+            "linux_write_then_bulk_copy": true
+          },
+          "cleanup_exit_code": 0,
+          "all_preflights_excluded_from_model_data": true
+        }
+      ]
+    }
+  ],
+  "declared_but_unrun_versions": [
+    3
+  ],
+  "corrections": [
+    "v2 mixed audit quality flag established capture scope at that checkpoint only; HEAD/read1 generator defects prevent accepting its local failures as legitimate stress outcomes.",
+    "v2 long capture contained two forwarded bridge copies after client shutdown; its MAC audit rejected it. v4 scopes capture to the actual web MAC.",
+    "v4 long had incomplete observation and inconsistent later client times. Do not repair it by filling missing windows or treating the interruption as congestion.",
+    "v5 preflights and every earlier attempt remain excluded. Only independently declared v5 development entries can enter the next input whitelist."
+  ],
+  "study_training_ready": false
+}

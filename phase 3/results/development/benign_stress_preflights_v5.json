@@ -1,0 +1,183 @@
+{
+  "plan_sha256": "d646e6460f7c7a7ceb8cfb4f34d305a41180265f6dcafbc2e3d07ee963211c30",
+  "scope": "Excluded preflight",
+  "attempts": [
+    {
+      "entry_index": 0,
+      "entry": {
+        "role": "PREFLIGHT",
+        "condition": "mixed_keepalive",
+        "repeat": 0,
+        "clients": 3,
+        "warmup": 30,
+        "duration": 60,
+        "client_seeds": [
+          90000101,
+          90000202,
+          90000303
+        ],
+        "down_seed": 90005001,
+        "up_seed": 90005002
+      },
+      "state": "quality_pass",
+      "start_utc": 1794536798.9117706,
+      "session": "benign-stress-preflight-mixed_keepalive-3bcb8f05b8",
+      "audit": {
+        "session": "benign-stress-preflight-mixed_keepalive-3bcb8f05b8",
+        "role": "PREFLIGHT",
+        "condition": "mixed_keepalive",
+        "repeat": 0,
+        "engineering_quality_pass": true,
+        "eligible_for_development": false,
+        "pcap_sha256": "05b146567c6768ccf4a9bf72822030765aed7a501244ce35709fc80e50e0a6a4",
+        "plan_sha256": "d646e6460f7c7a7ceb8cfb4f34d305a41180265f6dcafbc2e3d07ee963211c30",
+        "counts": {
+          "frames": 27379,
+          "inbound": 10008,
+          "measurement_frames": 18818,
+          "outbound": 17371
+        },
+        "kernel_capture_drops": 0,
+        "router_qdisc_drops": 0,
+        "router_qdisc_drops_are_legitimate_network_outcomes": true,
+        "client_outcomes": {
+          "complete": 490,
+          "method_GET": 395,
+          "method_HEAD": 95
+        },
+        "max_request_seconds": 0.03921507300015037,
+        "first_packet_utc": 1794536809.012382,
+        "last_packet_utc": 1794536899.314855,
+        "measurement_start_utc": 1794536839,
+        "measurement_end_utc": 1794536899,
+        "observation_ready_utc": 1794536802.5883687,
+        "observation_stop_signal_utc": 1794536905.5936384,
+        "largest_timestamp_regression_seconds": 0.0005321502685546875,
+        "clock_probe_count": 8,
+        "max_clock_probe_gap_seconds": 17.125555753707886,
+        "failed_legitimate_requests_remain_benign": true,
+        "study_training_ready": false,
+        "scope": "Controlled declared legitimate scenario; not inferred public idle labels, final testing, model results or an unseen environment."
+      }
+    },
+    {
+      "entry_index": 1,
+      "entry": {
+        "role": "PREFLIGHT",
+        "condition": "long_download",
+        "repeat": 0,
+        "clients": 3,
+        "warmup": 30,
+        "duration": 60,
+        "client_seeds": [
+          90100101,
+          90100202,
+          90100303
+        ],
+        "down_seed": 90105001,
+        "up_seed": 90105002
+      },
+      "state": "quality_pass",
+      "start_utc": 1794536909.2804956,
+      "session": "benign-stress-preflight-long_download-ae70ef2932",
+      "audit": {
+        "session": "benign-stress-preflight-long_download-ae70ef2932",
+        "role": "PREFLIGHT",
+        "condition": "long_download",
+        "repeat": 0,
+        "engineering_quality_pass": true,
+        "eligible_for_development": false,
+        "pcap_sha256": "b00296c7c6f27ceeee148e13559a8c1bcb265543ac25e20f1d1a9421e8ba9835",
+        "plan_sha256": "d646e6460f7c7a7ceb8cfb4f34d305a41180265f6dcafbc2e3d07ee963211c30",
+        "counts": {
+          "frames": 8454,
+          "inbound": 3828,
+          "measurement_frames": 4628,
+          "outbound": 4626
+        },
+        "kernel_capture_drops": 0,
+        "router_qdisc_drops": 242,
+        "router_qdisc_drops_are_legitimate_network_outcomes": true,
+        "client_outcomes": {
+          "failed": 3,
+          "method_GET": 7,
+          "complete": 4
+        },
+        "max_request_seconds": 51.59040922200006,
+        "first_packet_utc": 1794536920.051646,
+        "last_packet_utc": 1794537023.142182,
+        "measurement_start_utc": 1794536950,
+        "measurement_end_utc": 1794537010,
+        "observation_ready_utc": 1794536913.235322,
+        "observation_stop_signal_utc": 1794537023.8643513,
+        "largest_timestamp_regression_seconds": 0.0,
+        "clock_probe_count": 9,
+        "max_clock_probe_gap_seconds": 17.557757139205933,
+        "failed_legitimate_requests_remain_benign": true,
+        "study_training_ready": false,
+        "scope": "Controlled declared legitimate scenario; not inferred public idle labels, final testing, model results or an unseen environment."
+      }
+    },
+    {
+      "entry_index": 2,
+      "entry": {
+        "role": "PREFLIGHT",
+        "condition": "congested_mixed",
+        "repeat": 0,
+        "clients": 3,
+        "warmup": 30,
+        "duration": 60,
+        "client_seeds": [
+          90200101,
+          90200202,
+          90200303
+        ],
+        "down_seed": 90205001,
+        "up_seed": 90205002
+      },
+      "state": "quality_pass",
+      "start_utc": 1794537026.6923542,
+      "session": "benign-stress-preflight-congested_mixed-794c04b456",
+      "audit": {
+        "session": "benign-stress-preflight-congested_mixed-794c04b456",
+        "role": "PREFLIGHT",
+        "condition": "congested_mixed",
+        "repeat": 0,
+        "engineering_quality_pass": true,
+        "eligible_for_development": false,
+        "pcap_sha256": "62902a7ae61feccd3ec5bcc5088547694d1437864236b76cddcd5b0c94657976",
+        "plan_sha256": "d646e6460f7c7a7ceb8cfb4f34d305a41180265f6dcafbc2e3d07ee963211c30",
+        "counts": {
+          "frames": 4182,
+          "inbound": 1952,
+          "measurement_frames": 2715,
+          "outbound": 2230
+        },
+        "kernel_capture_drops": 0,
+        "router_qdisc_drops": 164,
+        "router_qdisc_drops_are_legitimate_network_outcomes": true,
+        "client_outcomes": {
+          "complete": 37,
+          "method_HEAD": 13,
+          "failed": 40,
+          "method_GET": 64
+        },
+        "max_request_seconds": 11.596515782000097,
+        "first_packet_utc": 1794537037.0728,
+        "last_packet_utc": 1794537132.939998,
+        "measurement_start_utc": 1794537067,
+        "measurement_end_utc": 1794537127,
+        "observation_ready_utc": 1794537030.4677975,
+        "observation_stop_signal_utc": 1794537133.4921641,
+        "largest_timestamp_regression_seconds": 0.0,
+        "clock_probe_count": 8,
+        "max_clock_probe_gap_seconds": 17.385595321655273,
+        "failed_legitimate_requests_remain_benign": true,
+        "study_training_ready": false,
+        "scope": "Controlled declared legitimate scenario; not inferred public idle labels, final testing, model results or an unseen environment."
+      }
+    }
+  ],
+  "study_training_ready": false,
+  "all_declared_entries_passed": true
+}

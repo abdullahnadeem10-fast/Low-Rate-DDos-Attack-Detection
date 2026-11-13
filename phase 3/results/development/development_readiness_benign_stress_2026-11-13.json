@@ -1,0 +1,83 @@
+{
+  "date": "2026-11-13",
+  "registry": "results/development/study_development_manifest_v5.json",
+  "registry_sha256": "885b74ab85552ac381d54f271fee9950b1dd64c48846b96a536bfb9e603e7735",
+  "component_sha256": "2785ea86007408c8a2f44e4b2c3ab69a414ed2b409cc30746a02b9b29940a7f3",
+  "summary_csv_sha256": "0cad854ee3ea662e932260363ef16423684118f647fc71fd4ff391bc9bc6e10c",
+  "raw_evidence_hashes_sha256": "1edb621feddd15cf3c3951978fb7c04a81754c23dcd73a619721667dc3509ff4",
+  "validation_summary_sha256": "7667c767fe38ef7ee27ed3ccb153ee8deedc34dbb838ab7ee7edc36be9de6ff8",
+  "source_code_sha256": "aa5092885c0a4f863130049233f3fda701efbbcdf011cbddbba2d99ef3cdaa5f",
+  "selected_stress_sessions": 36,
+  "additional_benign_measurement_windows": 2160,
+  "total_candidate_labelled_windows": 6206,
+  "total_groups": 56,
+  "windows_by_role_and_y": {
+    "T": {
+      "0": 2044,
+      "1": 1076
+    },
+    "C1": {
+      "0": 1209,
+      "1": 0
+    },
+    "C2": {
+      "0": 962,
+      "1": 0
+    },
+    "V": {
+      "0": 871,
+      "1": 44
+    }
+  },
+  "conditions": [
+    {
+      "condition": "congested_mixed",
+      "sessions": 12,
+      "measurement_windows": 720,
+      "complete_requests": 515,
+      "failed_requests": 412,
+      "frames": 50065,
+      "kernel_capture_drops": 0,
+      "router_qdisc_drops": 1401,
+      "requests_whole_session": 927,
+      "max_request_seconds": 11.831658,
+      "max_observed_active_age_seconds": 29.276511
+    },
+    {
+      "condition": "long_download",
+      "sessions": 12,
+      "measurement_windows": 720,
+      "complete_requests": 47,
+      "failed_requests": 39,
+      "frames": 103166,
+      "kernel_capture_drops": 0,
+      "router_qdisc_drops": 3410,
+      "requests_whole_session": 86,
+      "max_request_seconds": 55.701632,
+      "max_observed_active_age_seconds": 51.957588
+    },
+    {
+      "condition": "mixed_keepalive",
+      "sessions": 12,
+      "measurement_windows": 720,
+      "complete_requests": 5759,
+      "failed_requests": 0,
+      "frames": 331761,
+      "kernel_capture_drops": 0,
+      "router_qdisc_drops": 0,
+      "requests_whole_session": 5759,
+      "max_request_seconds": 0.151503,
+      "max_observed_active_age_seconds": 5.02893
+    }
+  ],
+  "excluded_successful_preflights": 3,
+  "all_superseded_stress_sessions_excluded": true,
+  "study_training_ready": false,
+  "main_packet_window_model_trained": false,
+  "final_attack_tests_run": 0,
+  "sparse_attack_validation_and_source_path_confounding_resolved": false,
+  "reserved_slow_family_entire_external_source_and_cic2019_final_candidate_unused": true,
+  "request_count_scope": "All warm-up/measurement/drain request outcomes; model windows are measurement only.",
+  "scope": "Controlled legitimate engineering/development coverage, not independent environments, population FPR, denial impact or classifier efficacy.",
+  "exact_next_action": "Write plan/model_development_v1.json: qualify the sparse V selection criterion, prespecify source/path sensitivity controls and missing-label/persistence calibration policy, then fit matched development branches/baselines without opening final sources."
+}

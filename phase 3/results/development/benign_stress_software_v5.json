@@ -1,0 +1,19 @@
+{
+  "python": "3.12.16",
+  "kernel": "6.18.58.1-microsoft-standard-WSL2",
+  "packages": {
+    "tc": "tc utility, iproute2-6.15.0, libbpf 1.5.0",
+    "tcpdump": "tcpdump version 4.99.5",
+    "ethtool": "ethtool version 6.14.2"
+  },
+  "embedded_sha256": {
+    "client.py": "3fda7a14e563118d61feeb749cd6f9c7cd007b7e9e6dab9eb09b0fd8446d5712",
+    "network.py": "793a32d088a62b7fb7f167d85d75bbafff8c30e75394f6c7138b19b1581d202b",
+    "capture.py": "f151012a1b1fead121b2ccee1b3e611fb09f8fda17901cefc0c9c36558d85412"
+  },
+  "date": "2026-11-13",
+  "image_content_id": "sha256:bcd95e916f898bfad243bd3d4e8ccaf542cbe9d870e782ee62c45e5473f8112b",
+  "verified_parent_image": "sha256:78168ae6e29ac8739ef00b6d99939c9ea94a15a64bc77b8631dc0cebb9d27b60",
+  "embedded_sources_byte_identical_to_stress_v5": true,
+  "scope": "Same embedded image as stress v4; stress v5 changes host runner/clock audit only. No final freeze."
+}

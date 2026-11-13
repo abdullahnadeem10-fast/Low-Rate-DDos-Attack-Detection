@@ -1,0 +1,4 @@
+condition,sessions,measurement_windows,complete_requests,failed_requests,frames,kernel_capture_drops,router_qdisc_drops,requests_whole_session,max_request_seconds,max_observed_active_age_seconds
+congested_mixed,12,720,515,412,50065,0,1401,927,11.831658,29.276511
+long_download,12,720,47,39,103166,0,3410,86,55.701632,51.957588
+mixed_keepalive,12,720,5759,0,331761,0,0,5759,0.151503,5.02893

@@ -1,0 +1,2172 @@
+{
+  "date": "2026-11-13",
+  "version": "study_development_manifest_v5",
+  "scope": "Engineering whitelist plus declared repeated legitimate stress. No fitted/frozen main model or final efficacy results.",
+  "source_evidence_sha256": {
+    "results/development/study_development_manifest_v3.json": "9951795d8148492b945e8dc12d72e3dea3511c7c934c20b86584eef87a42eed0",
+    "results/development/cic2019_causal_v1.json": "a37b92b99077ce63b061c1300fad5ea057b683e9a89c426a2f60ae9ec6138fff",
+    "results/development/cic2019_packet_inventory_v1.json": "2c4da13f6b31949485c601fc4daf407eee1e42daa11473bb7f5f9e0d062a6043",
+    "results/development/cic2019_corroboration_v1.json": "05b2ad60035327458e62dbced611f657720d6edbe0df2a0d5899d8c67bb383ee",
+    "results/development/cic2019_acquisition_v1.json": "4831d06d71919023ce24d0d430e8b5a2ddb4cd1d539f923f8d49ca5b7ea4b251",
+    "results/development/study_development_manifest_v4.json": "b4a17e4b0e6445f6d76cb4a15b3550d5b25f3aea811ca8ad40e4fc9b47e0c0c1",
+    "plan/benign_stress_v5.json": "d646e6460f7c7a7ceb8cfb4f34d305a41180265f6dcafbc2e3d07ee963211c30",
+    "results/development/benign_stress_batch_v5.json": "b9badd4d1bf18df22c251f27596ed46919e9a20c957171e1cb3150eef54295b9"
+  },
+  "source_code_sha256": "6b6f00054f76ab9da8cf8bfcaafa793aa26fc6e87ce0175810bfcdbd5e76b710",
+  "predictor_columns": [
+    "packets_in",
+    "packets_out",
+    "bytes_in",
+    "bytes_out",
+    "syn_in",
+    "ack_in",
+    "rst_in",
+    "synack_out",
+    "handshakes_completed",
+    "new_connections",
+    "distinct_sources",
+    "packet_length_mean",
+    "packet_length_std",
+    "inbound_iat_mean",
+    "inbound_iat_std",
+    "active_connections",
+    "known_age_connections",
+    "unknown_age_connections",
+    "active_age_mean",
+    "active_age_max",
+    "uncompleted_fraction",
+    "handshake_to_syn_ratio",
+    "in_out_byte_ratio",
+    "packet_rate_change",
+    "packets_in_mean_5",
+    "packets_in_std_5",
+    "packets_in_mean_10",
+    "packets_in_std_10",
+    "packets_in_mean_20",
+    "packets_in_std_20"
+  ],
+  "metadata_columns_excluded_from_predictors": [
+    "session_id",
+    "role",
+    "condition",
+    "y",
+    "utc_second",
+    "history_complete"
+  ],
+  "ae_signed_predictor_columns": [
+    "packet_rate_change"
+  ],
+  "ae_signed_column_indices": [
+    23
+  ],
+  "groups": [
+    {
+      "id": "friday-http-72-21-91-29-80",
+      "role": "T",
+      "condition": "public_http",
+      "source": "Friday_public",
+      "table": "data/development/public_partitioned_v1/friday-http-72-21-91-29-80/model_windows.csv",
+      "sha256": "63e91dbb7deecb115db707b3c5242fd25689d03c0a2cfb532404c7ea2fa0e198",
+      "expected_rows": 1229,
+      "capture_sha256": "beff0dcce1eebc9b2454582f4dc8ed0ba0112b2c619a710bf03af93147254cd0",
+      "raw_start": 1499451900,
+      "raw_end": 1499457760,
+      "group_unit": "benign_destination",
+      "expected_y": 0,
+      "packet_extraction_quality_accepted": true,
+      "timeline_coverage": {
+        "labelled_runs": 857,
+        "longest_consecutive_labelled_run_seconds": 7,
+        "gaps_between_retained_rows": 856
+      }
+    },
+    {
+      "id": "friday-http-23-61-187-27-80",
+      "role": "C1",
+      "condition": "public_http",
+      "source": "Friday_public",
+      "table": "data/development/public_partitioned_v1/friday-http-23-61-187-27-80/model_windows.csv",
+      "sha256": "3c69080272e91ac38a8d778945aff664cd26532b628a1c92455c154fc28a72ef",
+      "expected_rows": 494,
+      "capture_sha256": "beff0dcce1eebc9b2454582f4dc8ed0ba0112b2c619a710bf03af93147254cd0",
+      "raw_start": 1499451900,
+      "raw_end": 1499457760,
+      "group_unit": "benign_destination",
+      "expected_y": 0,
+      "packet_extraction_quality_accepted": true,
+      "timeline_coverage": {
+        "labelled_runs": 348,
+        "longest_consecutive_labelled_run_seconds": 12,
+        "gaps_between_retained_rows": 347
+      }
+    },
+    {
+      "id": "friday-http-23-52-155-27-80",
+      "role": "C2",
+      "condition": "public_http",
+      "source": "Friday_public",
+      "table": "data/development/public_partitioned_v1/friday-http-23-52-155-27-80/model_windows.csv",
+      "sha256": "0870ade29c7ddfbb0a23b8dec1e8f3523ce4b5e3422940da3a34f19b5210a2e7",
+      "expected_rows": 246,
+      "capture_sha256": "beff0dcce1eebc9b2454582f4dc8ed0ba0112b2c619a710bf03af93147254cd0",
+      "raw_start": 1499451900,
+      "raw_end": 1499457760,
+      "group_unit": "benign_destination",
+      "expected_y": 0,
+      "packet_extraction_quality_accepted": true,
+      "timeline_coverage": {
+        "labelled_runs": 137,
+        "longest_consecutive_labelled_run_seconds": 6,
+        "gaps_between_retained_rows": 136
+      }
+    },
+    {
+      "id": "friday-http-119-205-194-11-80",
+      "role": "T",
+      "condition": "public_http",
+      "source": "Friday_public",
+      "table": "data/development/public_partitioned_v1/friday-http-119-205-194-11-80/model_windows.csv",
+      "sha256": "16cb7f6b1e067379a790977ccce8a3fdc629749318ed5d3f62670f716600a1a3",
+      "expected_rows": 100,
+      "capture_sha256": "beff0dcce1eebc9b2454582f4dc8ed0ba0112b2c619a710bf03af93147254cd0",
+      "raw_start": 1499451900,
+      "raw_end": 1499457760,
+      "group_unit": "benign_destination",
+      "expected_y": 0,
+      "packet_extraction_quality_accepted": true,
+      "timeline_coverage": {
+        "labelled_runs": 49,
+        "longest_consecutive_labelled_run_seconds": 4,
+        "gaps_between_retained_rows": 48
+      }
+    },
+    {
+      "id": "friday-http-23-54-187-27-80",
+      "role": "V",
+      "condition": "public_http",
+      "source": "Friday_public",
+      "table": "data/development/public_partitioned_v1/friday-http-23-54-187-27-80/model_windows.csv",
+      "sha256": "49c5c27ee9a8234fc52eebdc8e0d6b65fcc6e050416991756c2695d025e2deb4",
+      "expected_rows": 81,
+      "capture_sha256": "beff0dcce1eebc9b2454582f4dc8ed0ba0112b2c619a710bf03af93147254cd0",
+      "raw_start": 1499451900,
+      "raw_end": 1499457760,
+      "group_unit": "benign_destination",
+      "expected_y": 0,
+      "packet_extraction_quality_accepted": true,
+      "timeline_coverage": {
+        "labelled_runs": 73,
+        "longest_consecutive_labelled_run_seconds": 3,
+        "gaps_between_retained_rows": 72
+      }
+    },
+    {
+      "id": "friday-http-119-205-194-14-80",
+      "role": "V",
+      "condition": "public_http",
+      "source": "Friday_public",
+      "table": "data/development/public_partitioned_v1/friday-http-119-205-194-14-80/model_windows.csv",
+      "sha256": "5435fd5d58bd79c69e9aa5f6f4aeeca75ed74b9695417ef4b1d3860abdc90b4c",
+      "expected_rows": 74,
+      "capture_sha256": "beff0dcce1eebc9b2454582f4dc8ed0ba0112b2c619a710bf03af93147254cd0",
+      "raw_start": 1499451900,
+      "raw_end": 1499457760,
+      "group_unit": "benign_destination",
+      "expected_y": 0,
+      "packet_extraction_quality_accepted": true,
+      "timeline_coverage": {
+        "labelled_runs": 38,
+        "longest_consecutive_labelled_run_seconds": 5,
+        "gaps_between_retained_rows": 37
+      }
+    },
+    {
+      "id": "benign-t-ordinary-fbf3c0fd39d6",
+      "role": "T",
+      "condition": "ordinary",
+      "source": "lab_benign_v3",
+      "table": "data/lab_development/benign-t-ordinary-fbf3c0fd39d6/model_windows.csv",
+      "sha256": "e8523cdf54b4cd3fedeb70103e37b84aa9d38fa695e1cdc4abfc2b7acf08fb8a",
+      "expected_rows": 58,
+      "capture_sha256": "c5d6fb5e95289783835d7807201ed896071c585a1f182a5bf469442d6257c25a",
+      "group_unit": "whole_fresh_lab_session",
+      "expected_y": 0,
+      "packet_extraction_quality_accepted": true,
+      "timeline_coverage": {
+        "labelled_runs": 1,
+        "longest_consecutive_labelled_run_seconds": 58,
+        "gaps_between_retained_rows": 0
+      }
+    },
+    {
+      "id": "benign-t-bursts-9d3f427692b4",
+      "role": "T",
+      "condition": "bursts",
+      "source": "lab_benign_v3",
+      "table": "data/lab_development/benign-t-bursts-9d3f427692b4/model_windows.csv",
+      "sha256": "576852c77eeb4e1612d83524c2ee57bc80c185d51bacc830b064673801339355",
+      "expected_rows": 59,
+      "capture_sha256": "c41c8ac55edef9309934a11e79ae7cca61c37dacb1f67807d8fc7efac35b1ee1",
+      "group_unit": "whole_fresh_lab_session",
+      "expected_y": 0,
+      "packet_extraction_quality_accepted": true,
+      "timeline_coverage": {
+        "labelled_runs": 1,
+        "longest_consecutive_labelled_run_seconds": 59,
+        "gaps_between_retained_rows": 0
+      }
+    },
+    {
+      "id": "benign-t-flash-6dfb5f6a0c9a",
+      "role": "T",
+      "condition": "flash",
+      "source": "lab_benign_v3",
+      "table": "data/lab_development/benign-t-flash-6dfb5f6a0c9a/model_windows.csv",
+      "sha256": "2d83383199aab00b562bf96e63930574a27724804b2ebf46de07c55c4921b567",
+      "expected_rows": 58,
+      "capture_sha256": "2b53486173758ec40cd8005bf07c8b2362586ab9b18f4630ea4e6300b83efd9d",
+      "group_unit": "whole_fresh_lab_session",
+      "expected_y": 0,
+      "packet_extraction_quality_accepted": true,
+      "timeline_coverage": {
+        "labelled_runs": 1,
+        "longest_consecutive_labelled_run_seconds": 58,
+        "gaps_between_retained_rows": 0
+      }
+    },
+    {
+      "id": "benign-c1-ordinary-2316cadf3878",
+      "role": "C1",
+      "condition": "ordinary",
+      "source": "lab_benign_v3",
+      "table": "data/lab_development/benign-c1-ordinary-2316cadf3878/model_windows.csv",
+      "sha256": "b993bc58a16c589c7e3b74f7527fa3f9be490ba47c05327e51e941edb0f9ac77",
+      "expected_rows": 58,
+      "capture_sha256": "a21f0f0cb0276c4705f21f39a89d18052d0b776df9105771869c401e6db9256f",
+      "group_unit": "whole_fresh_lab_session",
+      "expected_y": 0,
+      "packet_extraction_quality_accepted": true,
+      "timeline_coverage": {
+        "labelled_runs": 1,
+        "longest_consecutive_labelled_run_seconds": 58,
+        "gaps_between_retained_rows": 0
+      }
+    },
+    {
+      "id": "benign-c1-bursts-8b284ce4f436",
+      "role": "C1",
+      "condition": "bursts",
+      "source": "lab_benign_v3",
+      "table": "data/lab_development/benign-c1-bursts-8b284ce4f436/model_windows.csv",
+      "sha256": "8c452150809a36e70155040f06da504c3b35eea9267066a8462f96e30a327a7f",
+      "expected_rows": 58,
+      "capture_sha256": "663cf62c2db58d2df5f58315e0a69089a114df65b0a81692e494440b521490eb",
+      "group_unit": "whole_fresh_lab_session",
+      "expected_y": 0,
+      "packet_extraction_quality_accepted": true,
+      "timeline_coverage": {
+        "labelled_runs": 1,
+        "longest_consecutive_labelled_run_seconds": 58,
+        "gaps_between_retained_rows": 0
+      }
+    },
+    {
+      "id": "benign-c1-flash-4b04780c2ca3",
+      "role": "C1",
+      "condition": "flash",
+      "source": "lab_benign_v3",
+      "table": "data/lab_development/benign-c1-flash-4b04780c2ca3/model_windows.csv",
+      "sha256": "ec54530b2e15e7665f586ac27795807dc60918b12ac97f7ea8e2473fb34b033e",
+      "expected_rows": 59,
+      "capture_sha256": "f105a4253d1c1f970e8135068530fd1fda5b8abffe9de0193bd1432cb20c27b7",
+      "group_unit": "whole_fresh_lab_session",
+      "expected_y": 0,
+      "packet_extraction_quality_accepted": true,
+      "timeline_coverage": {
+        "labelled_runs": 1,
+        "longest_consecutive_labelled_run_seconds": 59,
+        "gaps_between_retained_rows": 0
+      }
+    },
+    {
+      "id": "benign-c2-ordinary-51699d630e2d",
+      "role": "C2",
+      "condition": "ordinary",
+      "source": "lab_benign_v3",
+      "table": "data/lab_development/benign-c2-ordinary-51699d630e2d/model_windows.csv",
+      "sha256": "ca8c0e40121d8905201b7338833108a577d715b995a5e2bf15f8fcdaef35a8aa",
+      "expected_rows": 58,
+      "capture_sha256": "e2b5baeca53b7a66a2efee43e5c30dab8a854581d8e5b693fdb314e83c599724",
+      "group_unit": "whole_fresh_lab_session",
+      "expected_y": 0,
+      "packet_extraction_quality_accepted": true,
+      "timeline_coverage": {
+        "labelled_runs": 1,
+        "longest_consecutive_labelled_run_seconds": 58,
+        "gaps_between_retained_rows": 0
+      }
+    },
+    {
+      "id": "benign-c2-bursts-a165286b93f7",
+      "role": "C2",
+      "condition": "bursts",
+      "source": "lab_benign_v3",
+      "table": "data/lab_development/benign-c2-bursts-a165286b93f7/model_windows.csv",
+      "sha256": "776076bfba6070259dd53d5442f3b835b44361060407ba2ae54d62c2d5725169",
+      "expected_rows": 59,
+      "capture_sha256": "728725f84e65e86a41e0fa7191cb5fca23e019ff2edebb6d02efe1f68049e2f0",
+      "group_unit": "whole_fresh_lab_session",
+      "expected_y": 0,
+      "packet_extraction_quality_accepted": true,
+      "timeline_coverage": {
+        "labelled_runs": 1,
+        "longest_consecutive_labelled_run_seconds": 59,
+        "gaps_between_retained_rows": 0
+      }
+    },
+    {
+      "id": "benign-c2-flash-a3b4572a7a37",
+      "role": "C2",
+      "condition": "flash",
+      "source": "lab_benign_v3",
+      "table": "data/lab_development/benign-c2-flash-a3b4572a7a37/model_windows.csv",
+      "sha256": "ad1f4217a099f397d5aa91ced1c46beeceba7b200fbf7609eb24260042141473",
+      "expected_rows": 59,
+      "capture_sha256": "3a576f7795ab1e639f11828f946e610ef4ab28c864b9896edad1e38c77ec04c6",
+      "group_unit": "whole_fresh_lab_session",
+      "expected_y": 0,
+      "packet_extraction_quality_accepted": true,
+      "timeline_coverage": {
+        "labelled_runs": 1,
+        "longest_consecutive_labelled_run_seconds": 59,
+        "gaps_between_retained_rows": 0
+      }
+    },
+    {
+      "id": "benign-v-ordinary-668865d0f2db",
+      "role": "V",
+      "condition": "ordinary",
+      "source": "lab_benign_v3",
+      "table": "data/lab_development/benign-v-ordinary-668865d0f2db/model_windows.csv",
+      "sha256": "ac2ba7128bcdac1a6644913711c0bb84aaa341783a2313607272d501c93e9c40",
+      "expected_rows": 59,
+      "capture_sha256": "6d05476a6f82d4d38abc6528e27950b72132807aec619fb6fffb55d5d4293efe",
+      "group_unit": "whole_fresh_lab_session",
+      "expected_y": 0,
+      "packet_extraction_quality_accepted": true,
+      "timeline_coverage": {
+        "labelled_runs": 1,
+        "longest_consecutive_labelled_run_seconds": 59,
+        "gaps_between_retained_rows": 0
+      }
+    },
+    {
+      "id": "benign-v-bursts-0f1a58c9937d",
+      "role": "V",
+      "condition": "bursts",
+      "source": "lab_benign_v3",
+      "table": "data/lab_development/benign-v-bursts-0f1a58c9937d/model_windows.csv",
+      "sha256": "92adac3f98d66a12efa42974727e8e57b48663fa31961c5a715e9702adeabf84",
+      "expected_rows": 59,
+      "capture_sha256": "34599b51d69819d159ea5778df6c37489c95393cb25e8b7e756e68c4a65e1c86",
+      "group_unit": "whole_fresh_lab_session",
+      "expected_y": 0,
+      "packet_extraction_quality_accepted": true,
+      "timeline_coverage": {
+        "labelled_runs": 1,
+        "longest_consecutive_labelled_run_seconds": 59,
+        "gaps_between_retained_rows": 0
+      }
+    },
+    {
+      "id": "benign-v-flash-0832aeee7ee0",
+      "role": "V",
+      "condition": "flash",
+      "source": "lab_benign_v3",
+      "table": "data/lab_development/benign-v-flash-0832aeee7ee0/model_windows.csv",
+      "sha256": "a5af097668a71c26100a283704d8260421c4f383fd4554ac26492ab323128a8a",
+      "expected_rows": 58,
+      "capture_sha256": "90176e4a98c241aa7c6470829f27c84a99a4907f088c269d356ee3de4eac6b4e",
+      "group_unit": "whole_fresh_lab_session",
+      "expected_y": 0,
+      "packet_extraction_quality_accepted": true,
+      "timeline_coverage": {
+        "labelled_runs": 1,
+        "longest_consecutive_labelled_run_seconds": 58,
+        "gaps_between_retained_rows": 0
+      }
+    },
+    {
+      "id": "friday-ddos-whole-t",
+      "role": "T",
+      "condition": "public_known_ddos",
+      "source": "Friday_public",
+      "table": "data/development/public_partitioned_v3/friday-ddos-whole-t/model_windows.csv",
+      "sha256": "4bbdef2385573a11a7b871d270105e65f5f8a18a39d7e2dcc1bea5b455468fc8",
+      "expected_rows": 1076,
+      "capture_sha256": "beff0dcce1eebc9b2454582f4dc8ed0ba0112b2c619a710bf03af93147254cd0",
+      "raw_start": 1499428780,
+      "raw_end": 1499457761,
+      "group_unit": "whole_capture_attack_destination",
+      "expected_y": 1,
+      "packet_extraction_quality_accepted": true,
+      "timeline_coverage": {
+        "labelled_runs": 106,
+        "longest_consecutive_labelled_run_seconds": 195,
+        "gaps_between_retained_rows": 105
+      }
+    },
+    {
+      "id": "cic2019-03-11-syn-tcp443-v",
+      "role": "V",
+      "condition": "public_syn_tcp443",
+      "source": "CIC-DDoS2019_03-11",
+      "table": "data/development/cic2019_v/causal_v1/model_windows.csv",
+      "sha256": "8f1538cb7f9eef2aad0f8015447044d1bfd1e331897e8058cc54b3252e5d21a4",
+      "expected_rows": 44,
+      "source_archive_sha256": "cdc8935296cab7a2354d4fd32939f7d5e6c592371e5fb89d6a3094cc05dc38c5",
+      "packet_inventory_sha256": "2c4da13f6b31949485c601fc4daf407eee1e42daa11473bb7f5f9e0d062a6043",
+      "raw_start": 1541247497,
+      "raw_end": 1541277416,
+      "group_unit": "whole_provided_source_destination_stream",
+      "parent_recording": "CIC-DDoS2019/03-11",
+      "expected_y": 1,
+      "packet_extraction_quality_accepted": true,
+      "onset_evidence": "Count-corroborated current-window proxy; no exact onset or denial-impact claim.",
+      "timeline_coverage": {
+        "labelled_runs": 40,
+        "longest_consecutive_labelled_run_seconds": 2,
+        "gaps_between_retained_rows": 39
+      }
+    },
+    {
+      "id": "benign-stress-t-mixed_keepalive-3122de7bcc",
+      "role": "T",
+      "condition": "mixed_keepalive",
+      "source": "Controlled_benign_stress_v5",
+      "table": "data/lab_stress_v5/benign-stress-t-mixed_keepalive-3122de7bcc/causal_observed_v5/model_windows.csv",
+      "sha256": "f803cb6ae2db2f92d2a5a9926fe27e376c2268f53367cd3da7b4c754c682db1c",
+      "expected_rows": 60,
+      "expected_y": 0,
+      "capture_sha256": "3f89d585385c587eb2d8c36ff887e0896fa5ce6682f208a8d1ee3d25dcde28e2",
+      "session_manifest_sha256": "a41142cad5a4e0c75fa70b8c097748b57e8be40b79aaff75984c9d7e18552f6a",
+      "replay_report_sha256": "8366ed2e160955689a288f0d1d16108ebab0181ebe854dc4179df8e2a4569eda",
+      "plan_sha256": "d646e6460f7c7a7ceb8cfb4f34d305a41180265f6dcafbc2e3d07ee963211c30",
+      "repeat": 1,
+      "group_unit": "whole_fresh_benign_session",
+      "parent_recording": "benign-stress-t-mixed_keepalive-3122de7bcc",
+      "packet_extraction_quality_accepted": true,
+      "client_outcomes": {
+        "complete": 471,
+        "method_GET": 386,
+        "method_HEAD": 85
+      },
+      "kernel_capture_drops": 0,
+      "router_qdisc_drops": 0,
+      "raw_start": 1794537202,
+      "raw_end": 1794537298.4462242,
+      "timeline_coverage": {
+        "labelled_runs": 1,
+        "longest_consecutive_labelled_run_seconds": 60,
+        "gaps_between_retained_rows": 0
+      }
+    },
+    {
+      "id": "benign-stress-c1-mixed_keepalive-215ced6d10",
+      "role": "C1",
+      "condition": "mixed_keepalive",
+      "source": "Controlled_benign_stress_v5",
+      "table": "data/lab_stress_v5/benign-stress-c1-mixed_keepalive-215ced6d10/causal_observed_v5/model_windows.csv",
+      "sha256": "faaf9d06f3e0a12bb4b248b74dbdfb36fa131bf4a45192ef2d1de404908c257c",
+      "expected_rows": 60,
+      "expected_y": 0,
+      "capture_sha256": "66e797f306cf7ff3809dc1c1299f4466d65e9c909b1338d2d080fe9a3c57eb73",
+      "session_manifest_sha256": "6de2bd2535a80d7d9f8d21573e9cbe730e6549005b7caca8f68a5d13e36aa8b9",
+      "replay_report_sha256": "33fe8d2dbb767687460bec51822af8f77021c67213dd8744db2fc891b8397861",
+      "plan_sha256": "d646e6460f7c7a7ceb8cfb4f34d305a41180265f6dcafbc2e3d07ee963211c30",
+      "repeat": 1,
+      "group_unit": "whole_fresh_benign_session",
+      "parent_recording": "benign-stress-c1-mixed_keepalive-215ced6d10",
+      "packet_extraction_quality_accepted": true,
+      "client_outcomes": {
+        "complete": 474,
+        "method_GET": 369,
+        "method_HEAD": 105
+      },
+      "kernel_capture_drops": 0,
+      "router_qdisc_drops": 0,
+      "raw_start": 1794537312,
+      "raw_end": 1794537408.6287165,
+      "timeline_coverage": {
+        "labelled_runs": 1,
+        "longest_consecutive_labelled_run_seconds": 60,
+        "gaps_between_retained_rows": 0
+      }
+    },
+    {
+      "id": "benign-stress-c2-mixed_keepalive-c37af26849",
+      "role": "C2",
+      "condition": "mixed_keepalive",
+      "source": "Controlled_benign_stress_v5",
+      "table": "data/lab_stress_v5/benign-stress-c2-mixed_keepalive-c37af26849/causal_observed_v5/model_windows.csv",
+      "sha256": "2762b7e7b5062b4a02575fa47c636dce8979fa6d6b2e4f0f701262df491b12a0",
+      "expected_rows": 60,
+      "expected_y": 0,
+      "capture_sha256": "f6e6118f9565c6ce69a8d75bdb9410f419f549a8ebafd98919e82d834dfdade2",
+      "session_manifest_sha256": "864993776030b776477e6c64b711edaf32e74bb522b79fdeecc94daad7ac8611",
+      "replay_report_sha256": "f50af5e8bbb7a92a25402127a3b3ba1027d822d9f51b676e4acf53f0dd24e293",
+      "plan_sha256": "d646e6460f7c7a7ceb8cfb4f34d305a41180265f6dcafbc2e3d07ee963211c30",
+      "repeat": 1,
+      "group_unit": "whole_fresh_benign_session",
+      "parent_recording": "benign-stress-c2-mixed_keepalive-c37af26849",
+      "packet_extraction_quality_accepted": true,
+      "client_outcomes": {
+        "complete": 481,
+        "method_HEAD": 112,
+        "method_GET": 369
+      },
+      "kernel_capture_drops": 0,
+      "router_qdisc_drops": 0,
+      "raw_start": 1794537421,
+      "raw_end": 1794537517.3469136,
+      "timeline_coverage": {
+        "labelled_runs": 1,
+        "longest_consecutive_labelled_run_seconds": 60,
+        "gaps_between_retained_rows": 0
+      }
+    },
+    {
+      "id": "benign-stress-v-mixed_keepalive-ff7829693e",
+      "role": "V",
+      "condition": "mixed_keepalive",
+      "source": "Controlled_benign_stress_v5",
+      "table": "data/lab_stress_v5/benign-stress-v-mixed_keepalive-ff7829693e/causal_observed_v5/model_windows.csv",
+      "sha256": "b4d2ea99e370b7e8b69c46cf1ca0bd72e10e7d2c6979b9cd053e3bb0a37148c4",
+      "expected_rows": 60,
+      "expected_y": 0,
+      "capture_sha256": "e67c6f96c472357fee442394713de3863fb60408a88c48b38877ae5f145280e3",
+      "session_manifest_sha256": "df6b64d62f703a942fa605fea7506c9740a66ccb39d9f61815950cd4b188b42e",
+      "replay_report_sha256": "b99b8d2e4063991eb7cc2ba74ad26a8ab8b9df0e0df3d52e18de03e718973881",
+      "plan_sha256": "d646e6460f7c7a7ceb8cfb4f34d305a41180265f6dcafbc2e3d07ee963211c30",
+      "repeat": 1,
+      "group_unit": "whole_fresh_benign_session",
+      "parent_recording": "benign-stress-v-mixed_keepalive-ff7829693e",
+      "packet_extraction_quality_accepted": true,
+      "client_outcomes": {
+        "complete": 486,
+        "method_GET": 392,
+        "method_HEAD": 94
+      },
+      "kernel_capture_drops": 0,
+      "router_qdisc_drops": 0,
+      "raw_start": 1794537530,
+      "raw_end": 1794537626.5901356,
+      "timeline_coverage": {
+        "labelled_runs": 1,
+        "longest_consecutive_labelled_run_seconds": 60,
+        "gaps_between_retained_rows": 0
+      }
+    },
+    {
+      "id": "benign-stress-t-long_download-4fb857735a",
+      "role": "T",
+      "condition": "long_download",
+      "source": "Controlled_benign_stress_v5",
+      "table": "data/lab_stress_v5/benign-stress-t-long_download-4fb857735a/causal_observed_v5/model_windows.csv",
+      "sha256": "85ff57bb87f96b53016f90cd9ab022e1acff8333507affde3098ef598c630295",
+      "expected_rows": 60,
+      "expected_y": 0,
+      "capture_sha256": "c5753c665ab9bc072f64bc43928d99a2ea4263ad78d00c45f0cfddaae2abcc9e",
+      "session_manifest_sha256": "47cfa3d59ff94af2df46b453efe8132da550abbb939ae1529d07fbf18e6bfea0",
+      "replay_report_sha256": "b4088b5e0b54f5eaabf0e0422df20087279a3580956dbc67111efbb56a42e9c4",
+      "plan_sha256": "d646e6460f7c7a7ceb8cfb4f34d305a41180265f6dcafbc2e3d07ee963211c30",
+      "repeat": 1,
+      "group_unit": "whole_fresh_benign_session",
+      "parent_recording": "benign-stress-t-long_download-4fb857735a",
+      "packet_extraction_quality_accepted": true,
+      "client_outcomes": {
+        "failed": 3,
+        "method_GET": 7,
+        "complete": 4
+      },
+      "kernel_capture_drops": 0,
+      "router_qdisc_drops": 353,
+      "raw_start": 1794537640,
+      "raw_end": 1794537743.5788121,
+      "timeline_coverage": {
+        "labelled_runs": 1,
+        "longest_consecutive_labelled_run_seconds": 60,
+        "gaps_between_retained_rows": 0
+      }
+    },
+    {
+      "id": "benign-stress-c1-long_download-5c90b1b2ae",
+      "role": "C1",
+      "condition": "long_download",
+      "source": "Controlled_benign_stress_v5",
+      "table": "data/lab_stress_v5/benign-stress-c1-long_download-5c90b1b2ae/causal_observed_v5/model_windows.csv",
+      "sha256": "cc19fff6cf573547adcd71c78884d1f4bcfd7ac32fb944e4ad7f3cd3a4da888d",
+      "expected_rows": 60,
+      "expected_y": 0,
+      "capture_sha256": "6f6376c4ee83b7d1af54f9b87bd8653bcd570aa5dcbd414a1127ae5660d4c8d9",
+      "session_manifest_sha256": "0f503bc4e57d78bfe48ac816a127c43578eda102248dcf5a67f077434ffe05c5",
+      "replay_report_sha256": "e490d8edb647572f4df9ce63f48fcb5b8d077bd3c2b4f4bdd99645786a38eb4b",
+      "plan_sha256": "d646e6460f7c7a7ceb8cfb4f34d305a41180265f6dcafbc2e3d07ee963211c30",
+      "repeat": 1,
+      "group_unit": "whole_fresh_benign_session",
+      "parent_recording": "benign-stress-c1-long_download-5c90b1b2ae",
+      "packet_extraction_quality_accepted": true,
+      "client_outcomes": {
+        "complete": 4,
+        "method_GET": 7,
+        "failed": 3
+      },
+      "kernel_capture_drops": 0,
+      "router_qdisc_drops": 269,
+      "raw_start": 1794537756,
+      "raw_end": 1794537859.9092245,
+      "timeline_coverage": {
+        "labelled_runs": 1,
+        "longest_consecutive_labelled_run_seconds": 60,
+        "gaps_between_retained_rows": 0
+      }
+    },
+    {
+      "id": "benign-stress-c2-long_download-533b0f8dd9",
+      "role": "C2",
+      "condition": "long_download",
+      "source": "Controlled_benign_stress_v5",
+      "table": "data/lab_stress_v5/benign-stress-c2-long_download-533b0f8dd9/causal_observed_v5/model_windows.csv",
+      "sha256": "e83c70e582ca3dc46987614da958393b7cc64bc6186b1daab6211b15436d7f6b",
+      "expected_rows": 60,
+      "expected_y": 0,
+      "capture_sha256": "3150efdba3f1e0de902c9f03ce895c455c25461002818e0ae0b1ed9b26320ba0",
+      "session_manifest_sha256": "9b7db3aac07975ee293aab37e23a848da1086dae2e39f55ff062e1c994c71509",
+      "replay_report_sha256": "c7d25369ba0ad196dda384c261ccee1a75953e8ea5a31864f91c0501ec1e7813",
+      "plan_sha256": "d646e6460f7c7a7ceb8cfb4f34d305a41180265f6dcafbc2e3d07ee963211c30",
+      "repeat": 1,
+      "group_unit": "whole_fresh_benign_session",
+      "parent_recording": "benign-stress-c2-long_download-533b0f8dd9",
+      "packet_extraction_quality_accepted": true,
+      "client_outcomes": {
+        "complete": 4,
+        "method_GET": 7,
+        "failed": 3
+      },
+      "kernel_capture_drops": 0,
+      "router_qdisc_drops": 241,
+      "raw_start": 1794537873,
+      "raw_end": 1794537976.8613653,
+      "timeline_coverage": {
+        "labelled_runs": 1,
+        "longest_consecutive_labelled_run_seconds": 60,
+        "gaps_between_retained_rows": 0
+      }
+    },
+    {
+      "id": "benign-stress-v-long_download-183a404804",
+      "role": "V",
+      "condition": "long_download",
+      "source": "Controlled_benign_stress_v5",
+      "table": "data/lab_stress_v5/benign-stress-v-long_download-183a404804/causal_observed_v5/model_windows.csv",
+      "sha256": "c12d86392375999becd2d57e15cadd9719cb20ac45538455e61b5f68d21f853b",
+      "expected_rows": 60,
+      "expected_y": 0,
+      "capture_sha256": "7a904248704766b5bea0a68aa6f9f1d0c6b5e1ee92891f235b505dfe3cc15573",
+      "session_manifest_sha256": "7ea4c81b2367ed28771ccd45eeceb4b5885b3f498a7bf6eb771c6082e6649074",
+      "replay_report_sha256": "6c179abe4e2a24b48cea579d564ff2f62437b849848d3bb8d779f2fbee619ed9",
+      "plan_sha256": "d646e6460f7c7a7ceb8cfb4f34d305a41180265f6dcafbc2e3d07ee963211c30",
+      "repeat": 1,
+      "group_unit": "whole_fresh_benign_session",
+      "parent_recording": "benign-stress-v-long_download-183a404804",
+      "packet_extraction_quality_accepted": true,
+      "client_outcomes": {
+        "failed": 4,
+        "method_GET": 6,
+        "complete": 2
+      },
+      "kernel_capture_drops": 0,
+      "router_qdisc_drops": 379,
+      "raw_start": 1794537994,
+      "raw_end": 1794538097.8274043,
+      "timeline_coverage": {
+        "labelled_runs": 1,
+        "longest_consecutive_labelled_run_seconds": 60,
+        "gaps_between_retained_rows": 0
+      }
+    },
+    {
+      "id": "benign-stress-t-congested_mixed-6dd382a779",
+      "role": "T",
+      "condition": "congested_mixed",
+      "source": "Controlled_benign_stress_v5",
+      "table": "data/lab_stress_v5/benign-stress-t-congested_mixed-6dd382a779/causal_observed_v5/model_windows.csv",
+      "sha256": "d833077a055a8416988fcdd2efa2eb6885cb332054b3be3463b8fba66419e6f2",
+      "expected_rows": 60,
+      "expected_y": 0,
+      "capture_sha256": "826097d5728b9a41994120c5c669d4a39d4f1f8d2b055748fd51dc0bc2e763d8",
+      "session_manifest_sha256": "40253e916cfe13c6baf95fe7b058e3f2e65c1f356be41bec58c1de5405dad1f3",
+      "replay_report_sha256": "3bade5bfcbfeea80f5ea1c1a3bc700f400a46c948342a72b23853abb7b0af86b",
+      "plan_sha256": "d646e6460f7c7a7ceb8cfb4f34d305a41180265f6dcafbc2e3d07ee963211c30",
+      "repeat": 1,
+      "group_unit": "whole_fresh_benign_session",
+      "parent_recording": "benign-stress-t-congested_mixed-6dd382a779",
+      "packet_extraction_quality_accepted": true,
+      "client_outcomes": {
+        "complete": 57,
+        "method_GET": 65,
+        "failed": 27,
+        "method_HEAD": 19
+      },
+      "kernel_capture_drops": 0,
+      "router_qdisc_drops": 82,
+      "raw_start": 1794538111,
+      "raw_end": 1794538207.3747191,
+      "timeline_coverage": {
+        "labelled_runs": 1,
+        "longest_consecutive_labelled_run_seconds": 60,
+        "gaps_between_retained_rows": 0
+      }
+    },
+    {
+      "id": "benign-stress-c1-congested_mixed-b182048442",
+      "role": "C1",
+      "condition": "congested_mixed",
+      "source": "Controlled_benign_stress_v5",
+      "table": "data/lab_stress_v5/benign-stress-c1-congested_mixed-b182048442/causal_observed_v5/model_windows.csv",
+      "sha256": "52319e5a4e2553d0f2b84cd47e0315412d9fb3faffa35d4ac051a61c218fbcb1",
+      "expected_rows": 60,
+      "expected_y": 0,
+      "capture_sha256": "57a6fda41910c1158316dfda154a80feadd17a51800977b294d78586acfa004f",
+      "session_manifest_sha256": "335166b39a9b4ce5f0b54479eba7e99e76a6c2a2e522bb4a15f2a54e7785fc8f",
+      "replay_report_sha256": "82e43f355191b6c4df00436d1d773e8e3d8417d6001329a3dbe853f3c3d7d8de",
+      "plan_sha256": "d646e6460f7c7a7ceb8cfb4f34d305a41180265f6dcafbc2e3d07ee963211c30",
+      "repeat": 1,
+      "group_unit": "whole_fresh_benign_session",
+      "parent_recording": "benign-stress-c1-congested_mixed-b182048442",
+      "packet_extraction_quality_accepted": true,
+      "client_outcomes": {
+        "complete": 56,
+        "method_GET": 76,
+        "method_HEAD": 11,
+        "failed": 31
+      },
+      "kernel_capture_drops": 0,
+      "router_qdisc_drops": 73,
+      "raw_start": 1794538220,
+      "raw_end": 1794538316.4295766,
+      "timeline_coverage": {
+        "labelled_runs": 1,
+        "longest_consecutive_labelled_run_seconds": 60,
+        "gaps_between_retained_rows": 0
+      }
+    },
+    {
+      "id": "benign-stress-c2-congested_mixed-44ce540670",
+      "role": "C2",
+      "condition": "congested_mixed",
+      "source": "Controlled_benign_stress_v5",
+      "table": "data/lab_stress_v5/benign-stress-c2-congested_mixed-44ce540670/causal_observed_v5/model_windows.csv",
+      "sha256": "1b2f335dec0473886d222596fe93196118e113c863e51e9cb118447a45fc7cfe",
+      "expected_rows": 60,
+      "expected_y": 0,
+      "capture_sha256": "912de147b6818a361414f2dd6a3f4b5d6773f961dd4028f3eb3c0f782e211167",
+      "session_manifest_sha256": "af91c488eadcce87d46e1353712b106ba154530421a4d490b764b12dd0cf340a",
+      "replay_report_sha256": "267230da2efd91fe766ac017a1417b26ef5ff3a40c3337dd689ebbcfc4807add",
+      "plan_sha256": "d646e6460f7c7a7ceb8cfb4f34d305a41180265f6dcafbc2e3d07ee963211c30",
+      "repeat": 1,
+      "group_unit": "whole_fresh_benign_session",
+      "parent_recording": "benign-stress-c2-congested_mixed-44ce540670",
+      "packet_extraction_quality_accepted": true,
+      "client_outcomes": {
+        "complete": 56,
+        "method_GET": 70,
+        "failed": 29,
+        "method_HEAD": 15
+      },
+      "kernel_capture_drops": 0,
+      "router_qdisc_drops": 131,
+      "raw_start": 1794538329,
+      "raw_end": 1794538425.5868878,
+      "timeline_coverage": {
+        "labelled_runs": 1,
+        "longest_consecutive_labelled_run_seconds": 60,
+        "gaps_between_retained_rows": 0
+      }
+    },
+    {
+      "id": "benign-stress-v-congested_mixed-5f8678504e",
+      "role": "V",
+      "condition": "congested_mixed",
+      "source": "Controlled_benign_stress_v5",
+      "table": "data/lab_stress_v5/benign-stress-v-congested_mixed-5f8678504e/causal_observed_v5/model_windows.csv",
+      "sha256": "208f3a0e0675470a5917829bd9248bfc81cf9c3bd6c4ee79d5e632a5a5c4e61a",
+      "expected_rows": 60,
+      "expected_y": 0,
+      "capture_sha256": "19e69b6072e6021eec1c2872bc292ca14d29a7b32593f8457fe3638e77eeae6b",
+      "session_manifest_sha256": "394a7199f68958a19ad5a505f3b108c9e9e5609d55d719d006de69855bdf4190",
+      "replay_report_sha256": "1a38a732efc88b8d8a504285d3fd2d184085367fd4581fbfe2db61fe4e03bf44",
+      "plan_sha256": "d646e6460f7c7a7ceb8cfb4f34d305a41180265f6dcafbc2e3d07ee963211c30",
+      "repeat": 1,
+      "group_unit": "whole_fresh_benign_session",
+      "parent_recording": "benign-stress-v-congested_mixed-5f8678504e",
+      "packet_extraction_quality_accepted": true,
+      "client_outcomes": {
+        "complete": 43,
+        "method_GET": 61,
+        "failed": 33,
+        "method_HEAD": 15
+      },
+      "kernel_capture_drops": 0,
+      "router_qdisc_drops": 92,
+      "raw_start": 1794538438,
+      "raw_end": 1794538536.8401647,
+      "timeline_coverage": {
+        "labelled_runs": 1,
+        "longest_consecutive_labelled_run_seconds": 60,
+        "gaps_between_retained_rows": 0
+      }
+    },
+    {
+      "id": "benign-stress-t-mixed_keepalive-54ebf562d7",
+      "role": "T",
+      "condition": "mixed_keepalive",
+      "source": "Controlled_benign_stress_v5",
+      "table": "data/lab_stress_v5/benign-stress-t-mixed_keepalive-54ebf562d7/causal_observed_v5/model_windows.csv",
+      "sha256": "9bfb8d775ff68c4a0a22b75040717638fd697211599d33e511a0099239a79f55",
+      "expected_rows": 60,
+      "expected_y": 0,
+      "capture_sha256": "8936d324614fc36060d05210395fa2ddbfec5182dfb0c021f982125e12a174ea",
+      "session_manifest_sha256": "e86f19367426ee7d97d37373937887906214f58957b4c437d6283a7a39cb4f8b",
+      "replay_report_sha256": "3537e3960c327e4af22230a0de833d7b5af62738a71779d16af9d761192b4c2f",
+      "plan_sha256": "d646e6460f7c7a7ceb8cfb4f34d305a41180265f6dcafbc2e3d07ee963211c30",
+      "repeat": 2,
+      "group_unit": "whole_fresh_benign_session",
+      "parent_recording": "benign-stress-t-mixed_keepalive-54ebf562d7",
+      "packet_extraction_quality_accepted": true,
+      "client_outcomes": {
+        "complete": 474,
+        "method_GET": 373,
+        "method_HEAD": 101
+      },
+      "kernel_capture_drops": 0,
+      "router_qdisc_drops": 0,
+      "raw_start": 1794538549,
+      "raw_end": 1794538645.4610317,
+      "timeline_coverage": {
+        "labelled_runs": 1,
+        "longest_consecutive_labelled_run_seconds": 60,
+        "gaps_between_retained_rows": 0
+      }
+    },
+    {
+      "id": "benign-stress-c1-mixed_keepalive-cd19f866d3",
+      "role": "C1",
+      "condition": "mixed_keepalive",
+      "source": "Controlled_benign_stress_v5",
+      "table": "data/lab_stress_v5/benign-stress-c1-mixed_keepalive-cd19f866d3/causal_observed_v5/model_windows.csv",
+      "sha256": "623c3011984b004fbf0bc5f838e747a645e54015acf7b34637e2a302db41cfef",
+      "expected_rows": 60,
+      "expected_y": 0,
+      "capture_sha256": "ca3e830ccb342b2239e18d4025b037f1d41e81ea29d1921eb680fbd08e16e8f2",
+      "session_manifest_sha256": "89bfb69737b35360c4caf158247a758f89892fa8e0162762c3800ff4b934985b",
+      "replay_report_sha256": "9a06786b82166a77f478a8200f246880a48508bdcdaba297019d18b4a1b102d2",
+      "plan_sha256": "d646e6460f7c7a7ceb8cfb4f34d305a41180265f6dcafbc2e3d07ee963211c30",
+      "repeat": 2,
+      "group_unit": "whole_fresh_benign_session",
+      "parent_recording": "benign-stress-c1-mixed_keepalive-cd19f866d3",
+      "packet_extraction_quality_accepted": true,
+      "client_outcomes": {
+        "complete": 479,
+        "method_GET": 377,
+        "method_HEAD": 102
+      },
+      "kernel_capture_drops": 0,
+      "router_qdisc_drops": 0,
+      "raw_start": 1794538658,
+      "raw_end": 1794538754.588035,
+      "timeline_coverage": {
+        "labelled_runs": 1,
+        "longest_consecutive_labelled_run_seconds": 60,
+        "gaps_between_retained_rows": 0
+      }
+    },
+    {
+      "id": "benign-stress-c2-mixed_keepalive-126bc8d5c2",
+      "role": "C2",
+      "condition": "mixed_keepalive",
+      "source": "Controlled_benign_stress_v5",
+      "table": "data/lab_stress_v5/benign-stress-c2-mixed_keepalive-126bc8d5c2/causal_observed_v5/model_windows.csv",
+      "sha256": "e97bfb8b704de54b15e2590eda763a6f5456f849073a836f8ac5532e155b241c",
+      "expected_rows": 60,
+      "expected_y": 0,
+      "capture_sha256": "7eba13851cd10d7a6eaa22f1d1330d45175ac527880b2d8b4f57a2d9913f3d39",
+      "session_manifest_sha256": "f95d65fea9325cb9afe998714d32c3e737386244d4e2513a255031855d6eed0b",
+      "replay_report_sha256": "0498ded66f26014f619f195902403ad3c8fb70c475c927ba71a5b96ad3a5f8bd",
+      "plan_sha256": "d646e6460f7c7a7ceb8cfb4f34d305a41180265f6dcafbc2e3d07ee963211c30",
+      "repeat": 2,
+      "group_unit": "whole_fresh_benign_session",
+      "parent_recording": "benign-stress-c2-mixed_keepalive-126bc8d5c2",
+      "packet_extraction_quality_accepted": true,
+      "client_outcomes": {
+        "complete": 483,
+        "method_HEAD": 94,
+        "method_GET": 389
+      },
+      "kernel_capture_drops": 0,
+      "router_qdisc_drops": 0,
+      "raw_start": 1794538767,
+      "raw_end": 1794538863.4965184,
+      "timeline_coverage": {
+        "labelled_runs": 1,
+        "longest_consecutive_labelled_run_seconds": 60,
+        "gaps_between_retained_rows": 0
+      }
+    },
+    {
+      "id": "benign-stress-v-mixed_keepalive-3debf7a108",
+      "role": "V",
+      "condition": "mixed_keepalive",
+      "source": "Controlled_benign_stress_v5",
+      "table": "data/lab_stress_v5/benign-stress-v-mixed_keepalive-3debf7a108/causal_observed_v5/model_windows.csv",
+      "sha256": "92e6a77fb551e1ce9f81d27a97480df8c18b7b90bce79e238d5e3dfd79c0bafd",
+      "expected_rows": 60,
+      "expected_y": 0,
+      "capture_sha256": "aa18a009502b346f6735d00b952c22a7e1b64dee11ae5c7dddc569b7a0716e1f",
+      "session_manifest_sha256": "de6e71817a5c304aa5caa856279b7fbc8be3d01a6252e22098efabb2c2b7c348",
+      "replay_report_sha256": "80980641798e9537493c29a51568907854df929a6dcb0eae50b44d5f93e85fd1",
+      "plan_sha256": "d646e6460f7c7a7ceb8cfb4f34d305a41180265f6dcafbc2e3d07ee963211c30",
+      "repeat": 2,
+      "group_unit": "whole_fresh_benign_session",
+      "parent_recording": "benign-stress-v-mixed_keepalive-3debf7a108",
+      "packet_extraction_quality_accepted": true,
+      "client_outcomes": {
+        "complete": 477,
+        "method_GET": 386,
+        "method_HEAD": 91
+      },
+      "kernel_capture_drops": 0,
+      "router_qdisc_drops": 0,
+      "raw_start": 1794538876,
+      "raw_end": 1794538972.4513447,
+      "timeline_coverage": {
+        "labelled_runs": 1,
+        "longest_consecutive_labelled_run_seconds": 60,
+        "gaps_between_retained_rows": 0
+      }
+    },
+    {
+      "id": "benign-stress-t-long_download-c832b29353",
+      "role": "T",
+      "condition": "long_download",
+      "source": "Controlled_benign_stress_v5",
+      "table": "data/lab_stress_v5/benign-stress-t-long_download-c832b29353/causal_observed_v5/model_windows.csv",
+      "sha256": "1eae5253f4113949e5bd56aca3d763f1ce9f707959b44ac7ef034a92badec834",
+      "expected_rows": 60,
+      "expected_y": 0,
+      "capture_sha256": "3e7bde7c4af0af9e01411c5e6b16c203fd4e53172087aa0e4fb343e7cff7ab94",
+      "session_manifest_sha256": "d1fc61d4dc0bc2d29cc9b7aa2765c35b1fa1931a65bca19a5332f2c460452332",
+      "replay_report_sha256": "76b5e5ebf7de5009c54edf262ce22845b5429ff79a7915725ad347311d91587c",
+      "plan_sha256": "d646e6460f7c7a7ceb8cfb4f34d305a41180265f6dcafbc2e3d07ee963211c30",
+      "repeat": 2,
+      "group_unit": "whole_fresh_benign_session",
+      "parent_recording": "benign-stress-t-long_download-c832b29353",
+      "packet_extraction_quality_accepted": true,
+      "client_outcomes": {
+        "failed": 3,
+        "method_GET": 7,
+        "complete": 4
+      },
+      "kernel_capture_drops": 0,
+      "router_qdisc_drops": 275,
+      "raw_start": 1794538986,
+      "raw_end": 1794539089.81333,
+      "timeline_coverage": {
+        "labelled_runs": 1,
+        "longest_consecutive_labelled_run_seconds": 60,
+        "gaps_between_retained_rows": 0
+      }
+    },
+    {
+      "id": "benign-stress-c1-long_download-59c8851497",
+      "role": "C1",
+      "condition": "long_download",
+      "source": "Controlled_benign_stress_v5",
+      "table": "data/lab_stress_v5/benign-stress-c1-long_download-59c8851497/causal_observed_v5/model_windows.csv",
+      "sha256": "38cf21fb2a7518ff643533d920aa473e81619b5f7ddf5373e291e81e6b56351c",
+      "expected_rows": 60,
+      "expected_y": 0,
+      "capture_sha256": "48276a9cd2abd6a5865cbc64d3cb7aa81b731b192f342a2c04b8233871f6e8a0",
+      "session_manifest_sha256": "46bec0accc304dc9f6029dd8b79e8be466d32ca178f09c92e64fe1661d4e2006",
+      "replay_report_sha256": "98586de8a8e1582a1bfb555decae772f87bc8fa74c8a7ffe294c968d76743406",
+      "plan_sha256": "d646e6460f7c7a7ceb8cfb4f34d305a41180265f6dcafbc2e3d07ee963211c30",
+      "repeat": 2,
+      "group_unit": "whole_fresh_benign_session",
+      "parent_recording": "benign-stress-c1-long_download-59c8851497",
+      "packet_extraction_quality_accepted": true,
+      "client_outcomes": {
+        "complete": 4,
+        "method_GET": 7,
+        "failed": 3
+      },
+      "kernel_capture_drops": 0,
+      "router_qdisc_drops": 254,
+      "raw_start": 1794539103,
+      "raw_end": 1794539206.5778062,
+      "timeline_coverage": {
+        "labelled_runs": 1,
+        "longest_consecutive_labelled_run_seconds": 60,
+        "gaps_between_retained_rows": 0
+      }
+    },
+    {
+      "id": "benign-stress-c2-long_download-38d62f5bf5",
+      "role": "C2",
+      "condition": "long_download",
+      "source": "Controlled_benign_stress_v5",
+      "table": "data/lab_stress_v5/benign-stress-c2-long_download-38d62f5bf5/causal_observed_v5/model_windows.csv",
+      "sha256": "6d7c9633d34c29b378485b1d7b1eb0177a20ad94847abcaf77a497e7de4a560e",
+      "expected_rows": 60,
+      "expected_y": 0,
+      "capture_sha256": "0453e53f1ff9e798fff8c6adaebae958f11b1ca6bad5c42282fc75223b4412e0",
+      "session_manifest_sha256": "c76211005445b6b7e9cfb22b7473c8dd35476b5b5524a0e8120d617f70f681b2",
+      "replay_report_sha256": "2c86df1f625e834a3190430f377b6a0b87558cf9039e7be43864264c731cd463",
+      "plan_sha256": "d646e6460f7c7a7ceb8cfb4f34d305a41180265f6dcafbc2e3d07ee963211c30",
+      "repeat": 2,
+      "group_unit": "whole_fresh_benign_session",
+      "parent_recording": "benign-stress-c2-long_download-38d62f5bf5",
+      "packet_extraction_quality_accepted": true,
+      "client_outcomes": {
+        "failed": 3,
+        "method_GET": 7,
+        "complete": 4
+      },
+      "kernel_capture_drops": 0,
+      "router_qdisc_drops": 306,
+      "raw_start": 1794539220,
+      "raw_end": 1794539323.7263153,
+      "timeline_coverage": {
+        "labelled_runs": 1,
+        "longest_consecutive_labelled_run_seconds": 60,
+        "gaps_between_retained_rows": 0
+      }
+    },
+    {
+      "id": "benign-stress-v-long_download-4df0752f2a",
+      "role": "V",
+      "condition": "long_download",
+      "source": "Controlled_benign_stress_v5",
+      "table": "data/lab_stress_v5/benign-stress-v-long_download-4df0752f2a/causal_observed_v5/model_windows.csv",
+      "sha256": "5513d04e4db83b7d110c34d9cb850695aee1cb269628b73ebe580de2cc126129",
+      "expected_rows": 60,
+      "expected_y": 0,
+      "capture_sha256": "d5508419a54062fbe07a533a6fdc97a394a3fa4dff70ffaeb81c29d553fbfc52",
+      "session_manifest_sha256": "b97a23cd119ce43dafae0799fb284abc51a034bfb60c7f85c1f518b17d6b41cd",
+      "replay_report_sha256": "e11feed018dcd0a791808bdd499c1feabdd30d6534cf1341bbea204bd3b423e1",
+      "plan_sha256": "d646e6460f7c7a7ceb8cfb4f34d305a41180265f6dcafbc2e3d07ee963211c30",
+      "repeat": 2,
+      "group_unit": "whole_fresh_benign_session",
+      "parent_recording": "benign-stress-v-long_download-4df0752f2a",
+      "packet_extraction_quality_accepted": true,
+      "client_outcomes": {
+        "failed": 5,
+        "method_GET": 10,
+        "complete": 5
+      },
+      "kernel_capture_drops": 0,
+      "router_qdisc_drops": 212,
+      "raw_start": 1794539337,
+      "raw_end": 1794539447.695082,
+      "timeline_coverage": {
+        "labelled_runs": 1,
+        "longest_consecutive_labelled_run_seconds": 60,
+        "gaps_between_retained_rows": 0
+      }
+    },
+    {
+      "id": "benign-stress-t-congested_mixed-0548e15a81",
+      "role": "T",
+      "condition": "congested_mixed",
+      "source": "Controlled_benign_stress_v5",
+      "table": "data/lab_stress_v5/benign-stress-t-congested_mixed-0548e15a81/causal_observed_v5/model_windows.csv",
+      "sha256": "169c2e8c51a50eb75a43ba964ea0a889d12cf194e468c2ced1dedf9d324b92f4",
+      "expected_rows": 60,
+      "expected_y": 0,
+      "capture_sha256": "970d7b6868d347e1ed6305b84609aef76924731b54d262bf59764e227a91f1ec",
+      "session_manifest_sha256": "c82a81ab5acc9847f8ad0b147397f709b285bd066b13d4483d646d4e4b4c95a5",
+      "replay_report_sha256": "ba91ec35c700f0ec30e1def11c448249203d46444bc4dca6edf138ba3ee889ce",
+      "plan_sha256": "d646e6460f7c7a7ceb8cfb4f34d305a41180265f6dcafbc2e3d07ee963211c30",
+      "repeat": 2,
+      "group_unit": "whole_fresh_benign_session",
+      "parent_recording": "benign-stress-t-congested_mixed-0548e15a81",
+      "packet_extraction_quality_accepted": true,
+      "client_outcomes": {
+        "complete": 40,
+        "method_GET": 62,
+        "failed": 34,
+        "method_HEAD": 12
+      },
+      "kernel_capture_drops": 0,
+      "router_qdisc_drops": 172,
+      "raw_start": 1794539461,
+      "raw_end": 1794539557.4213216,
+      "timeline_coverage": {
+        "labelled_runs": 1,
+        "longest_consecutive_labelled_run_seconds": 60,
+        "gaps_between_retained_rows": 0
+      }
+    },
+    {
+      "id": "benign-stress-c1-congested_mixed-e4b345ff96",
+      "role": "C1",
+      "condition": "congested_mixed",
+      "source": "Controlled_benign_stress_v5",
+      "table": "data/lab_stress_v5/benign-stress-c1-congested_mixed-e4b345ff96/causal_observed_v5/model_windows.csv",
+      "sha256": "a3349fdf22ce88ef35a2dc59739fed544486f8fd88b60d32c398c830de167103",
+      "expected_rows": 60,
+      "expected_y": 0,
+      "capture_sha256": "c92d35856d198fb9a6841cd483a82b4ade01c00220d444e8e42860361610f727",
+      "session_manifest_sha256": "b52058a5762c000fffb0b685790eb320c9d5aaae4521ac7c5134745f5575221b",
+      "replay_report_sha256": "720ac89b8c5f5f68ce6abed3423675e9e59d539560ed8da9e5332cb49565256b",
+      "plan_sha256": "d646e6460f7c7a7ceb8cfb4f34d305a41180265f6dcafbc2e3d07ee963211c30",
+      "repeat": 2,
+      "group_unit": "whole_fresh_benign_session",
+      "parent_recording": "benign-stress-c1-congested_mixed-e4b345ff96",
+      "packet_extraction_quality_accepted": true,
+      "client_outcomes": {
+        "complete": 37,
+        "method_GET": 64,
+        "failed": 38,
+        "method_HEAD": 11
+      },
+      "kernel_capture_drops": 0,
+      "router_qdisc_drops": 144,
+      "raw_start": 1794539570,
+      "raw_end": 1794539666.400904,
+      "timeline_coverage": {
+        "labelled_runs": 1,
+        "longest_consecutive_labelled_run_seconds": 60,
+        "gaps_between_retained_rows": 0
+      }
+    },
+    {
+      "id": "benign-stress-c2-congested_mixed-b6fdc9ba0c",
+      "role": "C2",
+      "condition": "congested_mixed",
+      "source": "Controlled_benign_stress_v5",
+      "table": "data/lab_stress_v5/benign-stress-c2-congested_mixed-b6fdc9ba0c/causal_observed_v5/model_windows.csv",
+      "sha256": "5f4b3b8b93a535a1ce920859e7700e478012aca1c0264f885b1d45f2dd9e92f9",
+      "expected_rows": 60,
+      "expected_y": 0,
+      "capture_sha256": "e4d7063a72f674726d6df7960b3c8d98c18f637625762b7eb454ab80f6c74354",
+      "session_manifest_sha256": "ad341bd5aaa2e14fe0735f0580f634148900d3f9561af4c754b034e5141c1127",
+      "replay_report_sha256": "efa6b665a081dcb4f08d43245230c40e6bc8c85b0e0460dcb77163c6aa1c9f4c",
+      "plan_sha256": "d646e6460f7c7a7ceb8cfb4f34d305a41180265f6dcafbc2e3d07ee963211c30",
+      "repeat": 2,
+      "group_unit": "whole_fresh_benign_session",
+      "parent_recording": "benign-stress-c2-congested_mixed-b6fdc9ba0c",
+      "packet_extraction_quality_accepted": true,
+      "client_outcomes": {
+        "complete": 54,
+        "method_HEAD": 15,
+        "failed": 31,
+        "method_GET": 70
+      },
+      "kernel_capture_drops": 0,
+      "router_qdisc_drops": 105,
+      "raw_start": 1794539679,
+      "raw_end": 1794539775.4581368,
+      "timeline_coverage": {
+        "labelled_runs": 1,
+        "longest_consecutive_labelled_run_seconds": 60,
+        "gaps_between_retained_rows": 0
+      }
+    },
+    {
+      "id": "benign-stress-v-congested_mixed-970796c787",
+      "role": "V",
+      "condition": "congested_mixed",
+      "source": "Controlled_benign_stress_v5",
+      "table": "data/lab_stress_v5/benign-stress-v-congested_mixed-970796c787/causal_observed_v5/model_windows.csv",
+      "sha256": "7327c2c423b4f2d949e12d27cefd9aa75b7299335c75f07d0e511e33bf4f085f",
+      "expected_rows": 60,
+      "expected_y": 0,
+      "capture_sha256": "ba0840783227d94ff31a44370b5924c73acfefb8ae52b474653cf1b25da54fbb",
+      "session_manifest_sha256": "7d6edb5490bbd58783cdebaa93689fc3a4181d07fd5d3198440d330d83d0f8de",
+      "replay_report_sha256": "f0f617ed386881001f54750c28f68bd7f6b7eec9bfd829f3671970c7923429c4",
+      "plan_sha256": "d646e6460f7c7a7ceb8cfb4f34d305a41180265f6dcafbc2e3d07ee963211c30",
+      "repeat": 2,
+      "group_unit": "whole_fresh_benign_session",
+      "parent_recording": "benign-stress-v-congested_mixed-970796c787",
+      "packet_extraction_quality_accepted": true,
+      "client_outcomes": {
+        "failed": 35,
+        "method_GET": 59,
+        "complete": 42,
+        "method_HEAD": 18
+      },
+      "kernel_capture_drops": 0,
+      "router_qdisc_drops": 101,
+      "raw_start": 1794539788,
+      "raw_end": 1794539884.6217842,
+      "timeline_coverage": {
+        "labelled_runs": 1,
+        "longest_consecutive_labelled_run_seconds": 60,
+        "gaps_between_retained_rows": 0
+      }
+    },
+    {
+      "id": "benign-stress-t-mixed_keepalive-1819bbbf75",
+      "role": "T",
+      "condition": "mixed_keepalive",
+      "source": "Controlled_benign_stress_v5",
+      "table": "data/lab_stress_v5/benign-stress-t-mixed_keepalive-1819bbbf75/causal_observed_v5/model_windows.csv",
+      "sha256": "9470358f4c40699f4fbbfc15bc26832c8e4ca6ee37972f748c65cdfa76adb31e",
+      "expected_rows": 60,
+      "expected_y": 0,
+      "capture_sha256": "eff23890e54ed6f1280a272a6b893217be2f3d7384678273ca4aa8def1591ddc",
+      "session_manifest_sha256": "0f7ed295c1462e143c4393c51a0cdc2031ce180a5a15e7741c9d18134a8364b7",
+      "replay_report_sha256": "5ca3830f2c97c151817798dfecc059c0f0a2d9c0e610ca51f8f42afae5bdf810",
+      "plan_sha256": "d646e6460f7c7a7ceb8cfb4f34d305a41180265f6dcafbc2e3d07ee963211c30",
+      "repeat": 3,
+      "group_unit": "whole_fresh_benign_session",
+      "parent_recording": "benign-stress-t-mixed_keepalive-1819bbbf75",
+      "packet_extraction_quality_accepted": true,
+      "client_outcomes": {
+        "complete": 489,
+        "method_GET": 372,
+        "method_HEAD": 117
+      },
+      "kernel_capture_drops": 0,
+      "router_qdisc_drops": 0,
+      "raw_start": 1794539897,
+      "raw_end": 1794539993.5580156,
+      "timeline_coverage": {
+        "labelled_runs": 1,
+        "longest_consecutive_labelled_run_seconds": 60,
+        "gaps_between_retained_rows": 0
+      }
+    },
+    {
+      "id": "benign-stress-c1-mixed_keepalive-1b6e614418",
+      "role": "C1",
+      "condition": "mixed_keepalive",
+      "source": "Controlled_benign_stress_v5",
+      "table": "data/lab_stress_v5/benign-stress-c1-mixed_keepalive-1b6e614418/causal_observed_v5/model_windows.csv",
+      "sha256": "710b35e8023442aaef2034ca2838de8678e45e78dd484c3c0b76907e1b864e7a",
+      "expected_rows": 60,
+      "expected_y": 0,
+      "capture_sha256": "110aae5ce98baf0cc05eaa75a519624266e6b6903ce9a5a93acd37c088781a91",
+      "session_manifest_sha256": "7d9311c6dd4d92f72276fdac5ab123dc7b8a62293c81852f5e22de7016bd8485",
+      "replay_report_sha256": "313faf9dfac456e96cf073582ca3c3b108207228180252ff511a8e6e4bcc10fe",
+      "plan_sha256": "d646e6460f7c7a7ceb8cfb4f34d305a41180265f6dcafbc2e3d07ee963211c30",
+      "repeat": 3,
+      "group_unit": "whole_fresh_benign_session",
+      "parent_recording": "benign-stress-c1-mixed_keepalive-1b6e614418",
+      "packet_extraction_quality_accepted": true,
+      "client_outcomes": {
+        "complete": 482,
+        "method_GET": 399,
+        "method_HEAD": 83
+      },
+      "kernel_capture_drops": 0,
+      "router_qdisc_drops": 0,
+      "raw_start": 1794540008,
+      "raw_end": 1794540104.5457013,
+      "timeline_coverage": {
+        "labelled_runs": 1,
+        "longest_consecutive_labelled_run_seconds": 60,
+        "gaps_between_retained_rows": 0
+      }
+    },
+    {
+      "id": "benign-stress-c2-mixed_keepalive-75b2542d70",
+      "role": "C2",
+      "condition": "mixed_keepalive",
+      "source": "Controlled_benign_stress_v5",
+      "table": "data/lab_stress_v5/benign-stress-c2-mixed_keepalive-75b2542d70/causal_observed_v5/model_windows.csv",
+      "sha256": "bb15109942bfbbede7e8d90ec92d65b0025ef95572e941c5aca2094121e07394",
+      "expected_rows": 60,
+      "expected_y": 0,
+      "capture_sha256": "d992990308fc4bfd6115464e1fa06803bdfb4b908d53b8ff8298cf7e4137e299",
+      "session_manifest_sha256": "b7fe506e5efe35da6d4ab47b18fe444e88612b5a01ceb8bab079297e5e349051",
+      "replay_report_sha256": "953f535449b3f28bf3c00ac6b5faf63192cbb4d7e1fcefdf478be225b8fca2d0",
+      "plan_sha256": "d646e6460f7c7a7ceb8cfb4f34d305a41180265f6dcafbc2e3d07ee963211c30",
+      "repeat": 3,
+      "group_unit": "whole_fresh_benign_session",
+      "parent_recording": "benign-stress-c2-mixed_keepalive-75b2542d70",
+      "packet_extraction_quality_accepted": true,
+      "client_outcomes": {
+        "complete": 486,
+        "method_GET": 387,
+        "method_HEAD": 99
+      },
+      "kernel_capture_drops": 0,
+      "router_qdisc_drops": 0,
+      "raw_start": 1794540118,
+      "raw_end": 1794540214.5476806,
+      "timeline_coverage": {
+        "labelled_runs": 1,
+        "longest_consecutive_labelled_run_seconds": 60,
+        "gaps_between_retained_rows": 0
+      }
+    },
+    {
+      "id": "benign-stress-v-mixed_keepalive-7f35bf5f23",
+      "role": "V",
+      "condition": "mixed_keepalive",
+      "source": "Controlled_benign_stress_v5",
+      "table": "data/lab_stress_v5/benign-stress-v-mixed_keepalive-7f35bf5f23/causal_observed_v5/model_windows.csv",
+      "sha256": "49d9320e9de40c84943878c216f6425578053d8b8ab81a9c4919bbf170c94938",
+      "expected_rows": 60,
+      "expected_y": 0,
+      "capture_sha256": "fb2905db8ab19a776db0585f5e65f9946f5e1fe1eb01bcb905340b84f6ba916f",
+      "session_manifest_sha256": "a60091af8a66c176d03ec332b60552c1c336e906e94101f8c1ea64d0ff469649",
+      "replay_report_sha256": "c89b0d9545699a41568038733f682e91f012fc3cf1242bbc163de0dc0ca04de3",
+      "plan_sha256": "d646e6460f7c7a7ceb8cfb4f34d305a41180265f6dcafbc2e3d07ee963211c30",
+      "repeat": 3,
+      "group_unit": "whole_fresh_benign_session",
+      "parent_recording": "benign-stress-v-mixed_keepalive-7f35bf5f23",
+      "packet_extraction_quality_accepted": true,
+      "client_outcomes": {
+        "complete": 477,
+        "method_HEAD": 102,
+        "method_GET": 375
+      },
+      "kernel_capture_drops": 0,
+      "router_qdisc_drops": 0,
+      "raw_start": 1794540228,
+      "raw_end": 1794540324.4517395,
+      "timeline_coverage": {
+        "labelled_runs": 1,
+        "longest_consecutive_labelled_run_seconds": 60,
+        "gaps_between_retained_rows": 0
+      }
+    },
+    {
+      "id": "benign-stress-t-long_download-f95b8003f3",
+      "role": "T",
+      "condition": "long_download",
+      "source": "Controlled_benign_stress_v5",
+      "table": "data/lab_stress_v5/benign-stress-t-long_download-f95b8003f3/causal_observed_v5/model_windows.csv",
+      "sha256": "04d743771e9e2f87e152a50455aa70b7c22252fa3a9489a62c14760c06a50511",
+      "expected_rows": 60,
+      "expected_y": 0,
+      "capture_sha256": "0f71c77ae41cfbe40f7190dd8e898259c493bcbc7163c0f68c9a0f314c849e9a",
+      "session_manifest_sha256": "b240e4408efd5e9c02c0ffa4ab1364d3e431e405aaa74cc870c6627d77d63ac0",
+      "replay_report_sha256": "fdf2c64639d0803b5ae919f210dbabac43cc7350a14c9948b291fff7b60a6652",
+      "plan_sha256": "d646e6460f7c7a7ceb8cfb4f34d305a41180265f6dcafbc2e3d07ee963211c30",
+      "repeat": 3,
+      "group_unit": "whole_fresh_benign_session",
+      "parent_recording": "benign-stress-t-long_download-f95b8003f3",
+      "packet_extraction_quality_accepted": true,
+      "client_outcomes": {
+        "failed": 3,
+        "method_GET": 7,
+        "complete": 4
+      },
+      "kernel_capture_drops": 0,
+      "router_qdisc_drops": 284,
+      "raw_start": 1794540337,
+      "raw_end": 1794540440.4068158,
+      "timeline_coverage": {
+        "labelled_runs": 1,
+        "longest_consecutive_labelled_run_seconds": 60,
+        "gaps_between_retained_rows": 0
+      }
+    },
+    {
+      "id": "benign-stress-c1-long_download-555e0a11ac",
+      "role": "C1",
+      "condition": "long_download",
+      "source": "Controlled_benign_stress_v5",
+      "table": "data/lab_stress_v5/benign-stress-c1-long_download-555e0a11ac/causal_observed_v5/model_windows.csv",
+      "sha256": "9b14a8a41c86ed83ad0232ef82e113f975e712d16aac9508b6dce46c451c8456",
+      "expected_rows": 60,
+      "expected_y": 0,
+      "capture_sha256": "4ad5985e704e794cb5eaa17fae5e2ebe2e7e69b12964d715255c12da4d35e3b4",
+      "session_manifest_sha256": "8513b6b59895b23d9e78fa9589297dae2e2f4244be20ec8b5477eb7012d0cb73",
+      "replay_report_sha256": "3d08b8432ee621505d38d5de7ebb314a8ff631857348a6f91b02fcdc99a1bf6d",
+      "plan_sha256": "d646e6460f7c7a7ceb8cfb4f34d305a41180265f6dcafbc2e3d07ee963211c30",
+      "repeat": 3,
+      "group_unit": "whole_fresh_benign_session",
+      "parent_recording": "benign-stress-c1-long_download-555e0a11ac",
+      "packet_extraction_quality_accepted": true,
+      "client_outcomes": {
+        "failed": 3,
+        "method_GET": 7,
+        "complete": 4
+      },
+      "kernel_capture_drops": 0,
+      "router_qdisc_drops": 271,
+      "raw_start": 1794540453,
+      "raw_end": 1794540556.6901307,
+      "timeline_coverage": {
+        "labelled_runs": 1,
+        "longest_consecutive_labelled_run_seconds": 60,
+        "gaps_between_retained_rows": 0
+      }
+    },
+    {
+      "id": "benign-stress-c2-long_download-a1e68b1502",
+      "role": "C2",
+      "condition": "long_download",
+      "source": "Controlled_benign_stress_v5",
+      "table": "data/lab_stress_v5/benign-stress-c2-long_download-a1e68b1502/causal_observed_v5/model_windows.csv",
+      "sha256": "b577a9851dfe3487cd7209860c7f45536baba8c230e903018dc3e2a82753402a",
+      "expected_rows": 60,
+      "expected_y": 0,
+      "capture_sha256": "0627ee6c2db515a863adbda58a502b16f9a4da779deb7b0dbe89e6fd585363c1",
+      "session_manifest_sha256": "acd8306892323556056b2a10b563ddc0abdf0d700c9fb72050124458e1e4f781",
+      "replay_report_sha256": "b1954c7425dabc5bffcf2bed3c67056058766b6ea616d0dc74d62241cee9645e",
+      "plan_sha256": "d646e6460f7c7a7ceb8cfb4f34d305a41180265f6dcafbc2e3d07ee963211c30",
+      "repeat": 3,
+      "group_unit": "whole_fresh_benign_session",
+      "parent_recording": "benign-stress-c2-long_download-a1e68b1502",
+      "packet_extraction_quality_accepted": true,
+      "client_outcomes": {
+        "failed": 3,
+        "method_GET": 7,
+        "complete": 4
+      },
+      "kernel_capture_drops": 0,
+      "router_qdisc_drops": 305,
+      "raw_start": 1794540569,
+      "raw_end": 1794540672.5726395,
+      "timeline_coverage": {
+        "labelled_runs": 1,
+        "longest_consecutive_labelled_run_seconds": 60,
+        "gaps_between_retained_rows": 0
+      }
+    },
+    {
+      "id": "benign-stress-v-long_download-9cd70d69eb",
+      "role": "V",
+      "condition": "long_download",
+      "source": "Controlled_benign_stress_v5",
+      "table": "data/lab_stress_v5/benign-stress-v-long_download-9cd70d69eb/causal_observed_v5/model_windows.csv",
+      "sha256": "e1c2e02932031c5a05139fdc74138a613e0474aa9596f38280d13fe78ae3957c",
+      "expected_rows": 60,
+      "expected_y": 0,
+      "capture_sha256": "1c2bd4cc96eaab22c28777bac69e17056e578acbde5b5b094d8b487ad1ae25cb",
+      "session_manifest_sha256": "01086c59ad62db26e32c575cab5210b1dd0b6d31601226694a31759de419460d",
+      "replay_report_sha256": "336577d4f8d7cbc61a66a433f5029cf46a28dec1242200b0e3b21856d30047d1",
+      "plan_sha256": "d646e6460f7c7a7ceb8cfb4f34d305a41180265f6dcafbc2e3d07ee963211c30",
+      "repeat": 3,
+      "group_unit": "whole_fresh_benign_session",
+      "parent_recording": "benign-stress-v-long_download-9cd70d69eb",
+      "packet_extraction_quality_accepted": true,
+      "client_outcomes": {
+        "failed": 3,
+        "method_GET": 7,
+        "complete": 4
+      },
+      "kernel_capture_drops": 0,
+      "router_qdisc_drops": 261,
+      "raw_start": 1794540685,
+      "raw_end": 1794540788.729649,
+      "timeline_coverage": {
+        "labelled_runs": 1,
+        "longest_consecutive_labelled_run_seconds": 60,
+        "gaps_between_retained_rows": 0
+      }
+    },
+    {
+      "id": "benign-stress-t-congested_mixed-274d900485",
+      "role": "T",
+      "condition": "congested_mixed",
+      "source": "Controlled_benign_stress_v5",
+      "table": "data/lab_stress_v5/benign-stress-t-congested_mixed-274d900485/causal_observed_v5/model_windows.csv",
+      "sha256": "8d0e1224b2a0083988b314e9f0a9ccd586df09d752afc4c477e1fddaa1747672",
+      "expected_rows": 60,
+      "expected_y": 0,
+      "capture_sha256": "0c829b285ce078152ccd49c3cb3579f20d9c96442debf6bc81f17418c220650e",
+      "session_manifest_sha256": "0719dc24374de148a283d5dd75a559176a26194e06ccaefa9737bd191d1b5796",
+      "replay_report_sha256": "148543562e4512d7db738829d227f01d93df91f2dc237679e8e1fe824e12e0ee",
+      "plan_sha256": "d646e6460f7c7a7ceb8cfb4f34d305a41180265f6dcafbc2e3d07ee963211c30",
+      "repeat": 3,
+      "group_unit": "whole_fresh_benign_session",
+      "parent_recording": "benign-stress-t-congested_mixed-274d900485",
+      "packet_extraction_quality_accepted": true,
+      "client_outcomes": {
+        "complete": 40,
+        "method_GET": 65,
+        "failed": 38,
+        "method_HEAD": 13
+      },
+      "kernel_capture_drops": 0,
+      "router_qdisc_drops": 152,
+      "raw_start": 1794540802,
+      "raw_end": 1794540901.4091463,
+      "timeline_coverage": {
+        "labelled_runs": 1,
+        "longest_consecutive_labelled_run_seconds": 60,
+        "gaps_between_retained_rows": 0
+      }
+    },
+    {
+      "id": "benign-stress-c1-congested_mixed-e43a33cb1a",
+      "role": "C1",
+      "condition": "congested_mixed",
+      "source": "Controlled_benign_stress_v5",
+      "table": "data/lab_stress_v5/benign-stress-c1-congested_mixed-e43a33cb1a/causal_observed_v5/model_windows.csv",
+      "sha256": "28eb1e26648b79ca2a77bb94e50de740221a4876288a8793251676343eb8d897",
+      "expected_rows": 60,
+      "expected_y": 0,
+      "capture_sha256": "950defc632268b5c4cade9f1a5363b33f531e1370cc8fa45c12c84694ebb3c13",
+      "session_manifest_sha256": "585bce1322f368f55fafef2675bc2ee1589b921e413d27fe9b3e32505932cd0d",
+      "replay_report_sha256": "f14e0dc4aa27b42f54bad6c59250be7b6b8fd5bc3578913a4bbd96b33eb449d2",
+      "plan_sha256": "d646e6460f7c7a7ceb8cfb4f34d305a41180265f6dcafbc2e3d07ee963211c30",
+      "repeat": 3,
+      "group_unit": "whole_fresh_benign_session",
+      "parent_recording": "benign-stress-c1-congested_mixed-e43a33cb1a",
+      "packet_extraction_quality_accepted": true,
+      "client_outcomes": {
+        "complete": 38,
+        "method_GET": 60,
+        "failed": 38,
+        "method_HEAD": 16
+      },
+      "kernel_capture_drops": 0,
+      "router_qdisc_drops": 97,
+      "raw_start": 1794540914,
+      "raw_end": 1794541010.497494,
+      "timeline_coverage": {
+        "labelled_runs": 1,
+        "longest_consecutive_labelled_run_seconds": 60,
+        "gaps_between_retained_rows": 0
+      }
+    },
+    {
+      "id": "benign-stress-c2-congested_mixed-d7ccc90a5a",
+      "role": "C2",
+      "condition": "congested_mixed",
+      "source": "Controlled_benign_stress_v5",
+      "table": "data/lab_stress_v5/benign-stress-c2-congested_mixed-d7ccc90a5a/causal_observed_v5/model_windows.csv",
+      "sha256": "3032a42ef4bd3e763e5bfb85a29209f37993c6412a6b968266571ab1572a92a5",
+      "expected_rows": 60,
+      "expected_y": 0,
+      "capture_sha256": "57a45ecb18b01e6faf7b2df5a416e92c3b0e87ec421fd215243c0ea406ff7105",
+      "session_manifest_sha256": "50771f2c6e5d96090a0496021949585091309d15147387d6b143aa31e47b3a14",
+      "replay_report_sha256": "261df7b5784085a77235cb431ff3084e1a024b7276dca59de262076645d6f815",
+      "plan_sha256": "d646e6460f7c7a7ceb8cfb4f34d305a41180265f6dcafbc2e3d07ee963211c30",
+      "repeat": 3,
+      "group_unit": "whole_fresh_benign_session",
+      "parent_recording": "benign-stress-c2-congested_mixed-d7ccc90a5a",
+      "packet_extraction_quality_accepted": true,
+      "client_outcomes": {
+        "complete": 27,
+        "method_HEAD": 18,
+        "method_GET": 48,
+        "failed": 39
+      },
+      "kernel_capture_drops": 0,
+      "router_qdisc_drops": 109,
+      "raw_start": 1794541023,
+      "raw_end": 1794541119.9022272,
+      "timeline_coverage": {
+        "labelled_runs": 1,
+        "longest_consecutive_labelled_run_seconds": 60,
+        "gaps_between_retained_rows": 0
+      }
+    },
+    {
+      "id": "benign-stress-v-congested_mixed-231c6e2a7d",
+      "role": "V",
+      "condition": "congested_mixed",
+      "source": "Controlled_benign_stress_v5",
+      "table": "data/lab_stress_v5/benign-stress-v-congested_mixed-231c6e2a7d/causal_observed_v5/model_windows.csv",
+      "sha256": "0dbd9e8c2b9cb6d9360c3a967771a93b3c4fa413cb73a987e24a36a0316bb385",
+      "expected_rows": 60,
+      "expected_y": 0,
+      "capture_sha256": "70f0bd28c726de572cdeb7a6c9982401ce3cb411821c2b05b1693e23dca75f9c",
+      "session_manifest_sha256": "dc969a4e4ab082789c176f71048f80acbb4da5d59303b1da8f7c43d2a1c39508",
+      "replay_report_sha256": "f56fcdbcfc1c85851c4610c06550aef325fabbb91f3efe8b96d07ce2b1036c01",
+      "plan_sha256": "d646e6460f7c7a7ceb8cfb4f34d305a41180265f6dcafbc2e3d07ee963211c30",
+      "repeat": 3,
+      "group_unit": "whole_fresh_benign_session",
+      "parent_recording": "benign-stress-v-congested_mixed-231c6e2a7d",
+      "packet_extraction_quality_accepted": true,
+      "client_outcomes": {
+        "failed": 39,
+        "method_GET": 55,
+        "complete": 25,
+        "method_HEAD": 9
+      },
+      "kernel_capture_drops": 0,
+      "router_qdisc_drops": 143,
+      "raw_start": 1794541137,
+      "raw_end": 1794541233.5915232,
+      "timeline_coverage": {
+        "labelled_runs": 1,
+        "longest_consecutive_labelled_run_seconds": 60,
+        "gaps_between_retained_rows": 0
+      }
+    }
+  ],
+  "windows_by_role_and_y": {
+    "T": {
+      "0": 2044,
+      "1": 1076
+    },
+    "C1": {
+      "0": 1209,
+      "1": 0
+    },
+    "C2": {
+      "0": 962,
+      "1": 0
+    },
+    "V": {
+      "0": 871,
+      "1": 44
+    }
+  },
+  "selected_lab_sessions": 48,
+  "public_benign_destination_groups": 6,
+  "known_attack_training_recordings": 1,
+  "independent_attack_validation_recordings": 1,
+  "independent_attack_V_packet_component_available": true,
+  "validation_coverage_adequate_for_headline_denial_or_generalization_claims": false,
+  "reserved_known_final_candidate": "Entire CIC-DDoS2019 01-12 payload/context/labels; unopened and unqualified.",
+  "independent_final_K_qualified": false,
+  "reserved_slow_family_and_entire_external_source_unused": true,
+  "study_training_ready": false,
+  "main_packet_window_model_trained": false,
+  "final_attack_tests_run": 0,
+  "descriptive_feature_distributions": {
+    "Friday_public/public_http/y=0": {
+      "packets_in": {
+        "n": 2224,
+        "p10": 1.0,
+        "median": 2.0,
+        "p90": 5.0,
+        "zero_fraction": 0.0170863309352518
+      },
+      "packets_out": {
+        "n": 2224,
+        "p10": 1.0,
+        "median": 2.0,
+        "p90": 5.0,
+        "zero_fraction": 0.03597122302158273
+      },
+      "inbound_iat_mean": {
+        "n": 2224,
+        "p10": 0.0,
+        "median": 5.9604644775390625e-06,
+        "p90": 0.1540098285675049,
+        "zero_fraction": 0.4608812949640288
+      },
+      "packet_length_mean": {
+        "n": 2224,
+        "p10": 60.0,
+        "median": 63.0,
+        "p90": 146.84000000000006,
+        "zero_fraction": 0.0
+      },
+      "active_connections": {
+        "n": 2224,
+        "p10": 3.0,
+        "median": 7.0,
+        "p90": 18.0,
+        "zero_fraction": 0.0
+      },
+      "unknown_age_connections": {
+        "n": 2224,
+        "p10": 0.0,
+        "median": 1.0,
+        "p90": 6.0,
+        "zero_fraction": 0.4033273381294964
+      },
+      "packet_rate_change": {
+        "n": 2224,
+        "p10": -2.0,
+        "median": 1.0,
+        "p90": 4.0,
+        "zero_fraction": 0.09532374100719425
+      },
+      "uncompleted_fraction": {
+        "n": 2224,
+        "p10": 0.0,
+        "median": 0.14285714285714285,
+        "p90": 0.6,
+        "zero_fraction": 0.3943345323741007
+      }
+    },
+    "lab_benign_v3/ordinary/y=0": {
+      "packets_in": {
+        "n": 233,
+        "p10": 34.0,
+        "median": 47.0,
+        "p90": 51.0,
+        "zero_fraction": 0.0
+      },
+      "packets_out": {
+        "n": 233,
+        "p10": 30.0,
+        "median": 45.0,
+        "p90": 45.0,
+        "zero_fraction": 0.0
+      },
+      "inbound_iat_mean": {
+        "n": 233,
+        "p10": 0.011886860847473145,
+        "median": 0.014532479372891512,
+        "p90": 0.017780932467034525,
+        "zero_fraction": 0.0
+      },
+      "packet_length_mean": {
+        "n": 233,
+        "p10": 589.0,
+        "median": 589.0000000000003,
+        "p90": 611.739130434783,
+        "zero_fraction": 0.0
+      },
+      "active_connections": {
+        "n": 233,
+        "p10": 40.2,
+        "median": 76.0,
+        "p90": 79.0,
+        "zero_fraction": 0.0
+      },
+      "unknown_age_connections": {
+        "n": 233,
+        "p10": 40.2,
+        "median": 76.0,
+        "p90": 79.0,
+        "zero_fraction": 0.0
+      },
+      "packet_rate_change": {
+        "n": 233,
+        "p10": -17.0,
+        "median": 0.0,
+        "p90": 17.0,
+        "zero_fraction": 0.19313304721030042
+      },
+      "uncompleted_fraction": {
+        "n": 233,
+        "p10": 1.0,
+        "median": 1.0,
+        "p90": 1.0,
+        "zero_fraction": 0.0
+      }
+    },
+    "lab_benign_v3/bursts/y=0": {
+      "packets_in": {
+        "n": 235,
+        "p10": 116.0,
+        "median": 136.0,
+        "p90": 454.0,
+        "zero_fraction": 0.0
+      },
+      "packets_out": {
+        "n": 235,
+        "p10": 105.0,
+        "median": 120.0,
+        "p90": 421.0,
+        "zero_fraction": 0.0
+      },
+      "inbound_iat_mean": {
+        "n": 235,
+        "p10": 0.001881583144176038,
+        "median": 0.0060249137878417985,
+        "p90": 0.007299523518003264,
+        "zero_fraction": 0.0
+      },
+      "packet_length_mean": {
+        "n": 235,
+        "p10": 588.2903663500676,
+        "median": 589.0000000000001,
+        "p90": 600.3359953366364,
+        "zero_fraction": 0.0
+      },
+      "active_connections": {
+        "n": 235,
+        "p10": 163.4,
+        "median": 362.0,
+        "p90": 384.0,
+        "zero_fraction": 0.0
+      },
+      "unknown_age_connections": {
+        "n": 235,
+        "p10": 163.4,
+        "median": 362.0,
+        "p90": 384.0,
+        "zero_fraction": 0.0
+      },
+      "packet_rate_change": {
+        "n": 235,
+        "p10": -193.0,
+        "median": 0.0,
+        "p90": 177.6,
+        "zero_fraction": 0.03404255319148936
+      },
+      "uncompleted_fraction": {
+        "n": 235,
+        "p10": 1.0,
+        "median": 1.0,
+        "p90": 1.0,
+        "zero_fraction": 0.0
+      }
+    },
+    "lab_benign_v3/flash/y=0": {
+      "packets_in": {
+        "n": 234,
+        "p10": 456.0,
+        "median": 523.0,
+        "p90": 594.0,
+        "zero_fraction": 0.0
+      },
+      "packets_out": {
+        "n": 234,
+        "p10": 418.6,
+        "median": 493.0,
+        "p90": 561.0,
+        "zero_fraction": 0.0
+      },
+      "inbound_iat_mean": {
+        "n": 234,
+        "p10": 0.0014098312491333082,
+        "median": 0.0016109396184519065,
+        "p90": 0.0018688782030854354,
+        "zero_fraction": 0.0
+      },
+      "packet_length_mean": {
+        "n": 234,
+        "p10": 587.523042021269,
+        "median": 588.9999999999992,
+        "p90": 590.3655352480415,
+        "zero_fraction": 0.0
+      },
+      "active_connections": {
+        "n": 234,
+        "p10": 281.6,
+        "median": 901.5,
+        "p90": 929.4000000000001,
+        "zero_fraction": 0.0
+      },
+      "unknown_age_connections": {
+        "n": 234,
+        "p10": 281.6,
+        "median": 901.5,
+        "p90": 929.4000000000001,
+        "zero_fraction": 0.0
+      },
+      "packet_rate_change": {
+        "n": 234,
+        "p10": -132.0,
+        "median": 1.0,
+        "p90": 133.0,
+        "zero_fraction": 0.01282051282051282
+      },
+      "uncompleted_fraction": {
+        "n": 234,
+        "p10": 1.0,
+        "median": 1.0,
+        "p90": 1.0,
+        "zero_fraction": 0.0
+      }
+    },
+    "Friday_public/public_known_ddos/y=1": {
+      "packets_in": {
+        "n": 1076,
+        "p10": 101.0,
+        "median": 675.0,
+        "p90": 1385.0,
+        "zero_fraction": 0.0009293680297397769
+      },
+      "packets_out": {
+        "n": 1076,
+        "p10": 82.5,
+        "median": 470.5,
+        "p90": 822.5,
+        "zero_fraction": 0.0
+      },
+      "inbound_iat_mean": {
+        "n": 1076,
+        "p10": 0.00024261497931744668,
+        "median": 0.0008262213253516779,
+        "p90": 0.0028231369415428077,
+        "zero_fraction": 0.0009293680297397769
+      },
+      "packet_length_mean": {
+        "n": 1076,
+        "p10": 791.471594767906,
+        "median": 994.2077417828252,
+        "p90": 1055.0033620195068,
+        "zero_fraction": 0.0
+      },
+      "active_connections": {
+        "n": 1076,
+        "p10": 365.0,
+        "median": 555.0,
+        "p90": 739.0,
+        "zero_fraction": 0.0009293680297397769
+      },
+      "unknown_age_connections": {
+        "n": 1076,
+        "p10": 2.0,
+        "median": 6.0,
+        "p90": 11.0,
+        "zero_fraction": 0.015799256505576207
+      },
+      "packet_rate_change": {
+        "n": 1076,
+        "p10": -990.0,
+        "median": 119.0,
+        "p90": 1147.5,
+        "zero_fraction": 0.0
+      },
+      "uncompleted_fraction": {
+        "n": 1076,
+        "p10": 0.005052653972981598,
+        "median": 0.011009752583603469,
+        "p90": 0.021060023654642223,
+        "zero_fraction": 0.01486988847583643
+      }
+    },
+    "CIC-DDoS2019_03-11/public_syn_tcp443/y=1": {
+      "packets_in": {
+        "n": 44,
+        "p10": 2.0,
+        "median": 2.0,
+        "p90": 4.0,
+        "zero_fraction": 0.0
+      },
+      "packets_out": {
+        "n": 44,
+        "p10": 0.0,
+        "median": 0.0,
+        "p90": 2.0,
+        "zero_fraction": 0.6590909090909091
+      },
+      "inbound_iat_mean": {
+        "n": 44,
+        "p10": 9.5367431640625e-07,
+        "median": 1.9073486328125e-06,
+        "p90": 0.057192198435465545,
+        "zero_fraction": 0.06818181818181818
+      },
+      "packet_length_mean": {
+        "n": 44,
+        "p10": 60.0,
+        "median": 60.0,
+        "p90": 60.0,
+        "zero_fraction": 0.0
+      },
+      "active_connections": {
+        "n": 44,
+        "p10": 0.2999999999999998,
+        "median": 4.0,
+        "p90": 6.0,
+        "zero_fraction": 0.11363636363636363
+      },
+      "unknown_age_connections": {
+        "n": 44,
+        "p10": 0.0,
+        "median": 0.0,
+        "p90": 0.0,
+        "zero_fraction": 1.0
+      },
+      "packet_rate_change": {
+        "n": 44,
+        "p10": 0.0,
+        "median": 2.0,
+        "p90": 4.0,
+        "zero_fraction": 0.22727272727272727
+      },
+      "uncompleted_fraction": {
+        "n": 44,
+        "p10": 0.2999999999999998,
+        "median": 1.0,
+        "p90": 1.0,
+        "zero_fraction": 0.11363636363636363
+      }
+    },
+    "Controlled_benign_stress_v5/mixed_keepalive/y=0": {
+      "packets_in": {
+        "n": 720,
+        "p10": 37.0,
+        "median": 96.0,
+        "p90": 212.10000000000002,
+        "zero_fraction": 0.0
+      },
+      "packets_out": {
+        "n": 720,
+        "p10": 55.0,
+        "median": 191.0,
+        "p90": 383.1,
+        "zero_fraction": 0.0
+      },
+      "inbound_iat_mean": {
+        "n": 720,
+        "p10": 0.0033125137875222753,
+        "median": 0.007595487166026873,
+        "p90": 0.01914271175861359,
+        "zero_fraction": 0.0
+      },
+      "packet_length_mean": {
+        "n": 720,
+        "p10": 698.8483082706766,
+        "median": 887.9491525423728,
+        "p90": 1090.4316005574753,
+        "zero_fraction": 0.0
+      },
+      "active_connections": {
+        "n": 720,
+        "p10": 21.0,
+        "median": 23.0,
+        "p90": 24.0,
+        "zero_fraction": 0.0
+      },
+      "unknown_age_connections": {
+        "n": 720,
+        "p10": 19.0,
+        "median": 20.0,
+        "p90": 21.0,
+        "zero_fraction": 0.0
+      },
+      "packet_rate_change": {
+        "n": 720,
+        "p10": -126.0,
+        "median": -2.0,
+        "p90": 128.0,
+        "zero_fraction": 0.0
+      },
+      "uncompleted_fraction": {
+        "n": 720,
+        "p10": 0.8636363636363636,
+        "median": 0.8695652173913043,
+        "p90": 0.9130434782608695,
+        "zero_fraction": 0.0
+      }
+    },
+    "Controlled_benign_stress_v5/long_download/y=0": {
+      "packets_in": {
+        "n": 720,
+        "p10": 24.0,
+        "median": 40.0,
+        "p90": 43.0,
+        "zero_fraction": 0.0
+      },
+      "packets_out": {
+        "n": 720,
+        "p10": 2.0,
+        "median": 57.0,
+        "p90": 65.0,
+        "zero_fraction": 0.08055555555555556
+      },
+      "inbound_iat_mean": {
+        "n": 720,
+        "p10": 0.02309036452904888,
+        "median": 0.02490003185394482,
+        "p90": 0.041155455423438035,
+        "zero_fraction": 0.0
+      },
+      "packet_length_mean": {
+        "n": 720,
+        "p10": 66.0,
+        "median": 929.230769230769,
+        "p90": 1088.4047587574357,
+        "zero_fraction": 0.0
+      },
+      "active_connections": {
+        "n": 720,
+        "p10": 3.0,
+        "median": 3.0,
+        "p90": 3.0,
+        "zero_fraction": 0.0
+      },
+      "unknown_age_connections": {
+        "n": 720,
+        "p10": 0.0,
+        "median": 0.0,
+        "p90": 0.0,
+        "zero_fraction": 0.9916666666666667
+      },
+      "packet_rate_change": {
+        "n": 720,
+        "p10": -9.0,
+        "median": 0.0,
+        "p90": 10.0,
+        "zero_fraction": 0.15
+      },
+      "uncompleted_fraction": {
+        "n": 720,
+        "p10": 0.0,
+        "median": 0.0,
+        "p90": 0.3333333333333333,
+        "zero_fraction": 0.8944444444444445
+      }
+    },
+    "Controlled_benign_stress_v5/congested_mixed/y=0": {
+      "packets_in": {
+        "n": 720,
+        "p10": 15.0,
+        "median": 21.0,
+        "p90": 26.0,
+        "zero_fraction": 0.0
+      },
+      "packets_out": {
+        "n": 720,
+        "p10": 4.0,
+        "median": 22.5,
+        "p90": 42.0,
+        "zero_fraction": 0.006944444444444444
+      },
+      "inbound_iat_mean": {
+        "n": 720,
+        "p10": 0.037675591230392456,
+        "median": 0.046655571460723876,
+        "p90": 0.06731365408216206,
+        "zero_fraction": 0.0
+      },
+      "packet_length_mean": {
+        "n": 720,
+        "p10": 126.80000000000007,
+        "median": 764.1220238095239,
+        "p90": 1023.7095483870971,
+        "zero_fraction": 0.0
+      },
+      "active_connections": {
+        "n": 720,
+        "p10": 3.0,
+        "median": 3.0,
+        "p90": 4.0,
+        "zero_fraction": 0.0
+      },
+      "unknown_age_connections": {
+        "n": 720,
+        "p10": 0.0,
+        "median": 0.0,
+        "p90": 1.0,
+        "zero_fraction": 0.8138888888888889
+      },
+      "packet_rate_change": {
+        "n": 720,
+        "p10": -7.0,
+        "median": 0.0,
+        "p90": 6.0,
+        "zero_fraction": 0.0763888888888889
+      },
+      "uncompleted_fraction": {
+        "n": 720,
+        "p10": 0.0,
+        "median": 0.125,
+        "p90": 0.6666666666666666,
+        "zero_fraction": 0.5
+      }
+    }
+  },
+  "negative_history_preserved": [
+    "public_partitions_v1: zero retained temporal-block attack rows",
+    "public_partitions_v2: zero retained rows after full TCP identity and unsafe-state propagation checks",
+    "Stress v1 two-bridge connectivity failure, v2 HEAD/read1 defect and flooded non-service copies, v3 unrun supersession, and interrupted v4 clock interval remain excluded."
+  ],
+  "remaining_gates": [
+    "Review sparse known-V representativeness and source/service/path confounding.",
+    "Define missing-label/gap-aware matched calibration before fitting.",
+    "Fit/select matched branches/baselines, calibrate, freeze, then qualify reserved final sources."
+  ],
+  "selected_stress_sessions": 36
+}

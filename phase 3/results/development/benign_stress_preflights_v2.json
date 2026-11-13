@@ -1,0 +1,87 @@
+{
+  "plan_sha256": "10670d32b16e5c4105d4f373befb9780c286bbf2acec5d336c844c3f108a0b32",
+  "scope": "Excluded preflight",
+  "attempts": [
+    {
+      "entry_index": 0,
+      "entry": {
+        "role": "PREFLIGHT",
+        "condition": "mixed_keepalive",
+        "repeat": 0,
+        "clients": 3,
+        "warmup": 30,
+        "duration": 60,
+        "client_seeds": [
+          60000101,
+          60000202,
+          60000303
+        ],
+        "down_seed": 60005001,
+        "up_seed": 60005002
+      },
+      "state": "quality_pass",
+      "start_utc": 1794507999.6939316,
+      "session": "benign-stress-preflight-mixed_keepalive-e21738958e",
+      "audit": {
+        "session": "benign-stress-preflight-mixed_keepalive-e21738958e",
+        "role": "PREFLIGHT",
+        "condition": "mixed_keepalive",
+        "repeat": 0,
+        "engineering_quality_pass": true,
+        "eligible_for_development": false,
+        "pcap_sha256": "40123c1f08cd8c208b5445b1c36700fb9021540332e336ade89f281c923228f1",
+        "plan_sha256": "10670d32b16e5c4105d4f373befb9780c286bbf2acec5d336c844c3f108a0b32",
+        "counts": {
+          "frames": 19292,
+          "inbound": 4956,
+          "measurement_frames": 12713,
+          "outbound": 14336
+        },
+        "kernel_capture_drops": 0,
+        "router_qdisc_drops": 0,
+        "router_qdisc_drops_are_legitimate_network_outcomes": true,
+        "client_outcomes": {
+          "complete": 362,
+          "method_GET": 338,
+          "method_HEAD": 93,
+          "failed": 69
+        },
+        "max_request_seconds": 0.3034797639999738,
+        "first_packet_utc": 1794508012.014227,
+        "last_packet_utc": 1794508102.284034,
+        "measurement_start_utc": 1794508042,
+        "measurement_end_utc": 1794508102,
+        "observation_ready_utc": 1794508004.0940218,
+        "observation_stop_signal_utc": 1794508108.483264,
+        "largest_timestamp_regression_seconds": 0.0,
+        "failed_legitimate_requests_remain_benign": true,
+        "study_training_ready": false,
+        "scope": "Controlled declared legitimate scenario; not inferred public idle labels, final testing, model results or an unseen environment."
+      }
+    },
+    {
+      "entry_index": 1,
+      "entry": {
+        "role": "PREFLIGHT",
+        "condition": "long_download",
+        "repeat": 0,
+        "clients": 3,
+        "warmup": 30,
+        "duration": 60,
+        "client_seeds": [
+          60100101,
+          60100202,
+          60100303
+        ],
+        "down_seed": 60105001,
+        "up_seed": 60105002
+      },
+      "state": "failed_preserved",
+      "start_utc": 1794508114.5318027,
+      "session": "benign-stress-preflight-long_download-bdc8e31cf7",
+      "error_type": "ValueError",
+      "error": "Packet bypassed declared router"
+    }
+  ],
+  "study_training_ready": false
+}

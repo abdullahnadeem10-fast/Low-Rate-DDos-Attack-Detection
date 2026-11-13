@@ -10,3 +10,6 @@
 "phase 3/plan/tcp_boundary_*.json" -text whitespace=cr-at-eol
 "phase 3/plan/cic2019_*.json" -text whitespace=cr-at-eol
 "phase 3/results/development/*.json" -text whitespace=cr-at-eol
+
+# Stress declarations are hashed before traffic.
+"phase 3/plan/benign_stress_*.json" -text whitespace=cr-at-eol

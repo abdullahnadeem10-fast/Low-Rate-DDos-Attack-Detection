@@ -1,0 +1,668 @@
+{
+  "version": "benign_stress_v4",
+  "date": "2026-11-12",
+  "state": "declared_before_traffic",
+  "tools_image": "sha256:bcd95e916f898bfad243bd3d4e8ccaf542cbe9d870e782ee62c45e5473f8112b",
+  "verified_parent_image": "sha256:78168ae6e29ac8739ef00b6d99939c9ea94a15a64bc77b8631dc0cebb9d27b60",
+  "web_image": "httpd:2.4@sha256:ce3b1e5ab31c4b1b6aba298b935cb88bc6ca1d643446b69d396406db5550bf68",
+  "profiles": {
+    "mixed_keepalive": {
+      "workload": "mixed",
+      "shaping": false,
+      "downlink": {
+        "rate_kbit": 0,
+        "delay_ms": 0,
+        "jitter_ms": 0,
+        "loss_percent": 0.0,
+        "limit": 512
+      },
+      "uplink": {
+        "rate_kbit": 0,
+        "delay_ms": 0,
+        "jitter_ms": 0,
+        "loss_percent": 0.0,
+        "limit": 512
+      }
+    },
+    "long_download": {
+      "workload": "bulk",
+      "shaping": true,
+      "downlink": {
+        "rate_kbit": 512,
+        "delay_ms": 40,
+        "jitter_ms": 0,
+        "loss_percent": 0.0,
+        "limit": 512
+      },
+      "uplink": {
+        "rate_kbit": 0,
+        "delay_ms": 40,
+        "jitter_ms": 0,
+        "loss_percent": 0.0,
+        "limit": 512
+      }
+    },
+    "congested_mixed": {
+      "workload": "mixed",
+      "shaping": true,
+      "downlink": {
+        "rate_kbit": 256,
+        "delay_ms": 120,
+        "jitter_ms": 20,
+        "loss_percent": 1.0,
+        "limit": 64
+      },
+      "uplink": {
+        "rate_kbit": 0,
+        "delay_ms": 60,
+        "jitter_ms": 10,
+        "loss_percent": 0.5,
+        "limit": 64
+      }
+    }
+  },
+  "source_sha256": {
+    "lab/stress_v4/capture.py": "f151012a1b1fead121b2ccee1b3e611fb09f8fda17901cefc0c9c36558d85412",
+    "lab/stress_v4/client.py": "3fda7a14e563118d61feeb749cd6f9c7cd007b7e9e6dab9eb09b0fd8446d5712",
+    "lab/stress_v4/network.py": "793a32d088a62b7fb7f167d85d75bbafff8c30e75394f6c7138b19b1581d202b",
+    "lab/stress_v4/stress_runner_v4.py": "122a5209c9f4c936aee06f14b4d457861690322237283a90edc8fa8859ec6a55",
+    "lab/stress_v4/Dockerfile": "0284c79d9f4ed312cc54c4bda3c2499bf28744595ee12e6adec97bca28ff1266",
+    "src/declare_benign_stress_v4.py": "c1415af32e7b517c27e1e19371538db9e20c9775792158656bfe26adba727380",
+    "src/audit_stress_session_v4.py": "13331df773fd1e8dacc451d47445d469b5bb74ca960fe86081ba6779da5a69b8",
+    "src/run_benign_stress_v4.py": "de00eef8458ed25c4ac22518ace7d6a5a126c8605e15cc040aaa247e36d43ed5"
+  },
+  "development_entries": [
+    {
+      "role": "T",
+      "condition": "mixed_keepalive",
+      "repeat": 1,
+      "clients": 3,
+      "warmup": 30,
+      "duration": 60,
+      "client_seeds": [
+        35000101,
+        35000202,
+        35000303
+      ],
+      "down_seed": 35005001,
+      "up_seed": 35005002
+    },
+    {
+      "role": "C1",
+      "condition": "mixed_keepalive",
+      "repeat": 1,
+      "clients": 3,
+      "warmup": 30,
+      "duration": 60,
+      "client_seeds": [
+        35100101,
+        35100202,
+        35100303
+      ],
+      "down_seed": 35105001,
+      "up_seed": 35105002
+    },
+    {
+      "role": "C2",
+      "condition": "mixed_keepalive",
+      "repeat": 1,
+      "clients": 3,
+      "warmup": 30,
+      "duration": 60,
+      "client_seeds": [
+        35200101,
+        35200202,
+        35200303
+      ],
+      "down_seed": 35205001,
+      "up_seed": 35205002
+    },
+    {
+      "role": "V",
+      "condition": "mixed_keepalive",
+      "repeat": 1,
+      "clients": 3,
+      "warmup": 30,
+      "duration": 60,
+      "client_seeds": [
+        35300101,
+        35300202,
+        35300303
+      ],
+      "down_seed": 35305001,
+      "up_seed": 35305002
+    },
+    {
+      "role": "T",
+      "condition": "long_download",
+      "repeat": 1,
+      "clients": 3,
+      "warmup": 30,
+      "duration": 60,
+      "client_seeds": [
+        35400101,
+        35400202,
+        35400303
+      ],
+      "down_seed": 35405001,
+      "up_seed": 35405002
+    },
+    {
+      "role": "C1",
+      "condition": "long_download",
+      "repeat": 1,
+      "clients": 3,
+      "warmup": 30,
+      "duration": 60,
+      "client_seeds": [
+        35500101,
+        35500202,
+        35500303
+      ],
+      "down_seed": 35505001,
+      "up_seed": 35505002
+    },
+    {
+      "role": "C2",
+      "condition": "long_download",
+      "repeat": 1,
+      "clients": 3,
+      "warmup": 30,
+      "duration": 60,
+      "client_seeds": [
+        35600101,
+        35600202,
+        35600303
+      ],
+      "down_seed": 35605001,
+      "up_seed": 35605002
+    },
+    {
+      "role": "V",
+      "condition": "long_download",
+      "repeat": 1,
+      "clients": 3,
+      "warmup": 30,
+      "duration": 60,
+      "client_seeds": [
+        35700101,
+        35700202,
+        35700303
+      ],
+      "down_seed": 35705001,
+      "up_seed": 35705002
+    },
+    {
+      "role": "T",
+      "condition": "congested_mixed",
+      "repeat": 1,
+      "clients": 3,
+      "warmup": 30,
+      "duration": 60,
+      "client_seeds": [
+        35800101,
+        35800202,
+        35800303
+      ],
+      "down_seed": 35805001,
+      "up_seed": 35805002
+    },
+    {
+      "role": "C1",
+      "condition": "congested_mixed",
+      "repeat": 1,
+      "clients": 3,
+      "warmup": 30,
+      "duration": 60,
+      "client_seeds": [
+        35900101,
+        35900202,
+        35900303
+      ],
+      "down_seed": 35905001,
+      "up_seed": 35905002
+    },
+    {
+      "role": "C2",
+      "condition": "congested_mixed",
+      "repeat": 1,
+      "clients": 3,
+      "warmup": 30,
+      "duration": 60,
+      "client_seeds": [
+        36000101,
+        36000202,
+        36000303
+      ],
+      "down_seed": 36005001,
+      "up_seed": 36005002
+    },
+    {
+      "role": "V",
+      "condition": "congested_mixed",
+      "repeat": 1,
+      "clients": 3,
+      "warmup": 30,
+      "duration": 60,
+      "client_seeds": [
+        36100101,
+        36100202,
+        36100303
+      ],
+      "down_seed": 36105001,
+      "up_seed": 36105002
+    },
+    {
+      "role": "T",
+      "condition": "mixed_keepalive",
+      "repeat": 2,
+      "clients": 3,
+      "warmup": 30,
+      "duration": 60,
+      "client_seeds": [
+        36200101,
+        36200202,
+        36200303
+      ],
+      "down_seed": 36205001,
+      "up_seed": 36205002
+    },
+    {
+      "role": "C1",
+      "condition": "mixed_keepalive",
+      "repeat": 2,
+      "clients": 3,
+      "warmup": 30,
+      "duration": 60,
+      "client_seeds": [
+        36300101,
+        36300202,
+        36300303
+      ],
+      "down_seed": 36305001,
+      "up_seed": 36305002
+    },
+    {
+      "role": "C2",
+      "condition": "mixed_keepalive",
+      "repeat": 2,
+      "clients": 3,
+      "warmup": 30,
+      "duration": 60,
+      "client_seeds": [
+        36400101,
+        36400202,
+        36400303
+      ],
+      "down_seed": 36405001,
+      "up_seed": 36405002
+    },
+    {
+      "role": "V",
+      "condition": "mixed_keepalive",
+      "repeat": 2,
+      "clients": 3,
+      "warmup": 30,
+      "duration": 60,
+      "client_seeds": [
+        36500101,
+        36500202,
+        36500303
+      ],
+      "down_seed": 36505001,
+      "up_seed": 36505002
+    },
+    {
+      "role": "T",
+      "condition": "long_download",
+      "repeat": 2,
+      "clients": 3,
+      "warmup": 30,
+      "duration": 60,
+      "client_seeds": [
+        36600101,
+        36600202,
+        36600303
+      ],
+      "down_seed": 36605001,
+      "up_seed": 36605002
+    },
+    {
+      "role": "C1",
+      "condition": "long_download",
+      "repeat": 2,
+      "clients": 3,
+      "warmup": 30,
+      "duration": 60,
+      "client_seeds": [
+        36700101,
+        36700202,
+        36700303
+      ],
+      "down_seed": 36705001,
+      "up_seed": 36705002
+    },
+    {
+      "role": "C2",
+      "condition": "long_download",
+      "repeat": 2,
+      "clients": 3,
+      "warmup": 30,
+      "duration": 60,
+      "client_seeds": [
+        36800101,
+        36800202,
+        36800303
+      ],
+      "down_seed": 36805001,
+      "up_seed": 36805002
+    },
+    {
+      "role": "V",
+      "condition": "long_download",
+      "repeat": 2,
+      "clients": 3,
+      "warmup": 30,
+      "duration": 60,
+      "client_seeds": [
+        36900101,
+        36900202,
+        36900303
+      ],
+      "down_seed": 36905001,
+      "up_seed": 36905002
+    },
+    {
+      "role": "T",
+      "condition": "congested_mixed",
+      "repeat": 2,
+      "clients": 3,
+      "warmup": 30,
+      "duration": 60,
+      "client_seeds": [
+        37000101,
+        37000202,
+        37000303
+      ],
+      "down_seed": 37005001,
+      "up_seed": 37005002
+    },
+    {
+      "role": "C1",
+      "condition": "congested_mixed",
+      "repeat": 2,
+      "clients": 3,
+      "warmup": 30,
+      "duration": 60,
+      "client_seeds": [
+        37100101,
+        37100202,
+        37100303
+      ],
+      "down_seed": 37105001,
+      "up_seed": 37105002
+    },
+    {
+      "role": "C2",
+      "condition": "congested_mixed",
+      "repeat": 2,
+      "clients": 3,
+      "warmup": 30,
+      "duration": 60,
+      "client_seeds": [
+        37200101,
+        37200202,
+        37200303
+      ],
+      "down_seed": 37205001,
+      "up_seed": 37205002
+    },
+    {
+      "role": "V",
+      "condition": "congested_mixed",
+      "repeat": 2,
+      "clients": 3,
+      "warmup": 30,
+      "duration": 60,
+      "client_seeds": [
+        37300101,
+        37300202,
+        37300303
+      ],
+      "down_seed": 37305001,
+      "up_seed": 37305002
+    },
+    {
+      "role": "T",
+      "condition": "mixed_keepalive",
+      "repeat": 3,
+      "clients": 3,
+      "warmup": 30,
+      "duration": 60,
+      "client_seeds": [
+        37400101,
+        37400202,
+        37400303
+      ],
+      "down_seed": 37405001,
+      "up_seed": 37405002
+    },
+    {
+      "role": "C1",
+      "condition": "mixed_keepalive",
+      "repeat": 3,
+      "clients": 3,
+      "warmup": 30,
+      "duration": 60,
+      "client_seeds": [
+        37500101,
+        37500202,
+        37500303
+      ],
+      "down_seed": 37505001,
+      "up_seed": 37505002
+    },
+    {
+      "role": "C2",
+      "condition": "mixed_keepalive",
+      "repeat": 3,
+      "clients": 3,
+      "warmup": 30,
+      "duration": 60,
+      "client_seeds": [
+        37600101,
+        37600202,
+        37600303
+      ],
+      "down_seed": 37605001,
+      "up_seed": 37605002
+    },
+    {
+      "role": "V",
+      "condition": "mixed_keepalive",
+      "repeat": 3,
+      "clients": 3,
+      "warmup": 30,
+      "duration": 60,
+      "client_seeds": [
+        37700101,
+        37700202,
+        37700303
+      ],
+      "down_seed": 37705001,
+      "up_seed": 37705002
+    },
+    {
+      "role": "T",
+      "condition": "long_download",
+      "repeat": 3,
+      "clients": 3,
+      "warmup": 30,
+      "duration": 60,
+      "client_seeds": [
+        37800101,
+        37800202,
+        37800303
+      ],
+      "down_seed": 37805001,
+      "up_seed": 37805002
+    },
+    {
+      "role": "C1",
+      "condition": "long_download",
+      "repeat": 3,
+      "clients": 3,
+      "warmup": 30,
+      "duration": 60,
+      "client_seeds": [
+        37900101,
+        37900202,
+        37900303
+      ],
+      "down_seed": 37905001,
+      "up_seed": 37905002
+    },
+    {
+      "role": "C2",
+      "condition": "long_download",
+      "repeat": 3,
+      "clients": 3,
+      "warmup": 30,
+      "duration": 60,
+      "client_seeds": [
+        38000101,
+        38000202,
+        38000303
+      ],
+      "down_seed": 38005001,
+      "up_seed": 38005002
+    },
+    {
+      "role": "V",
+      "condition": "long_download",
+      "repeat": 3,
+      "clients": 3,
+      "warmup": 30,
+      "duration": 60,
+      "client_seeds": [
+        38100101,
+        38100202,
+        38100303
+      ],
+      "down_seed": 38105001,
+      "up_seed": 38105002
+    },
+    {
+      "role": "T",
+      "condition": "congested_mixed",
+      "repeat": 3,
+      "clients": 3,
+      "warmup": 30,
+      "duration": 60,
+      "client_seeds": [
+        38200101,
+        38200202,
+        38200303
+      ],
+      "down_seed": 38205001,
+      "up_seed": 38205002
+    },
+    {
+      "role": "C1",
+      "condition": "congested_mixed",
+      "repeat": 3,
+      "clients": 3,
+      "warmup": 30,
+      "duration": 60,
+      "client_seeds": [
+        38300101,
+        38300202,
+        38300303
+      ],
+      "down_seed": 38305001,
+      "up_seed": 38305002
+    },
+    {
+      "role": "C2",
+      "condition": "congested_mixed",
+      "repeat": 3,
+      "clients": 3,
+      "warmup": 30,
+      "duration": 60,
+      "client_seeds": [
+        38400101,
+        38400202,
+        38400303
+      ],
+      "down_seed": 38405001,
+      "up_seed": 38405002
+    },
+    {
+      "role": "V",
+      "condition": "congested_mixed",
+      "repeat": 3,
+      "clients": 3,
+      "warmup": 30,
+      "duration": 60,
+      "client_seeds": [
+        38500101,
+        38500202,
+        38500303
+      ],
+      "down_seed": 38505001,
+      "up_seed": 38505002
+    }
+  ],
+  "excluded_preflights": [
+    {
+      "role": "PREFLIGHT",
+      "condition": "mixed_keepalive",
+      "repeat": 0,
+      "clients": 3,
+      "warmup": 30,
+      "duration": 60,
+      "client_seeds": [
+        80000101,
+        80000202,
+        80000303
+      ],
+      "down_seed": 80005001,
+      "up_seed": 80005002
+    },
+    {
+      "role": "PREFLIGHT",
+      "condition": "long_download",
+      "repeat": 0,
+      "clients": 3,
+      "warmup": 30,
+      "duration": 60,
+      "client_seeds": [
+        80100101,
+        80100202,
+        80100303
+      ],
+      "down_seed": 80105001,
+      "up_seed": 80105002
+    },
+    {
+      "role": "PREFLIGHT",
+      "condition": "congested_mixed",
+      "repeat": 0,
+      "clients": 3,
+      "warmup": 30,
+      "duration": 60,
+      "client_seeds": [
+        80200101,
+        80200202,
+        80200303
+      ],
+      "down_seed": 80205001,
+      "up_seed": 80205002
+    }
+  ],
+  "selection": "Engineering quality only; retain legitimate request errors, timeouts, aborts and configured network loss.",
+  "observation": "Known capture ready/stop wall bounds; replay full measurement interval, including observed idle tails. New wrapper required before registry integration.",
+  "scope": "Benign development; no slow mechanisms, final tests, model fitting or held-out source access.",
+  "repetitions": "Three fresh sessions per role/profile; same host and image, not independent environments.",
+  "study_training_ready": false
+}

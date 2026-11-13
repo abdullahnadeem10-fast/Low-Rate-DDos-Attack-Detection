@@ -1,0 +1,9 @@
+{
+  "date": "2026-11-12",
+  "tests_run": 95,
+  "failures": 0,
+  "errors": 0,
+  "successful": true,
+  "log_sha256": "ae4e564c9c4522bbefdb4d9fd5da748f82c8a009dfd74d98994dfc2d757fe420",
+  "scope": "Offline engineering guards including separate stress versions and observed idle-tail replay; not classifier efficacy or final research testing."
+}

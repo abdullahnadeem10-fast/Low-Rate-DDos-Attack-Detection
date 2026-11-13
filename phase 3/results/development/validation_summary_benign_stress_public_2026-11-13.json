@@ -1,0 +1,9 @@
+{
+  "date": "2026-11-13",
+  "tests_run": 129,
+  "failures": 0,
+  "errors": 0,
+  "successful": true,
+  "log_sha256": "6a2626bfe9e0f2a2180e76e956ba3f75d8d1b58b6f0153ea664057a587941ea6",
+  "scope": "Public-checkout offline engineering checks. Includes archived-version regression guards, not independent traffic experiments. No efficacy/final-test claim."
+}

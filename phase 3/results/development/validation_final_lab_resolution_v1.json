@@ -1,0 +1,9 @@
+{
+  "tests_run": 225,
+  "failures": 0,
+  "errors": 0,
+  "skipped": 0,
+  "all_tests_passed": true,
+  "elapsed_seconds": 10.415032299992163,
+  "scope": "Offline immutable-reference recovery and preserved policy/engineering fixtures; no new final traffic or model/threshold changes."
+}

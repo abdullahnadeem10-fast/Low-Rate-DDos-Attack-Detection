@@ -1,5 +1,7 @@
 # Final lab acquisition v1
 
+Current continuation uses the separately sealed [exact-image resolution recovery](../../plan/FINAL_LAB_RESOLUTION_RECOVERY_REVIEW.md). The original runner preserves a pre-traffic reference failure and intentionally refuses to retry it. Use the recovery runner, which qualifies and scores each new catalog unit automatically; the original command examples below are historical for the first checkpoint. Do not rescore completed units.
+
 This new directory leaves all frozen development/model/evaluation sources unchanged. The scripts run only against the fixed private service `172.28.240.100:80`, on one internal Docker bridge with forced router host routes. No published ports, NAT, host networking, host NIC changes, arbitrary target arguments, image builds or downloads are supported.
 
 The immutable source-slot declarations are `../../plan/final_lab_lab_benign_acquisition_v1.json` and `../../plan/final_lab_lab_slow_acquisition_v1.json`. Their anchors are under `../../results/qualification/`. They bind all new scripts, the original model/evaluation freeze, image content IDs, validation and the exact collection catalog before traffic. The existing tool image supplies its hash-verified network helper; new scripts are mounted read-only. Apache's default request-read timeout module stays enabled. A bounded shell CGI body reader provides the POST target, with complete POST probes checking functionality before attacks. No timeouts are weakened to make attacks effective.

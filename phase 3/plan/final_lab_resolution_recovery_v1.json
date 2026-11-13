@@ -1,0 +1,1565 @@
+{
+  "version": "final_lab_resolution_recovery_v1",
+  "sealed_at_utc": 1794567577.009742,
+  "freeze_sha256": "063a838d5fe45b1d38e536ca589959214871961dcb944a868203e98e15712bfe",
+  "source_sha256": {
+    "src/final_lab_resolution_recovery_v1.py": "9c4eaa6ac39220f34c15c201184fd433680c8e51a9a46cb4cd701edd02e4b685",
+    "src/test_final_lab_resolution_recovery_v1.py": "e4ac4453659d3e12a25d1c95c302856c27bbd809bb3bbf9aeb29fb08b1e8e31c"
+  },
+  "original_acquisition_sha256": {
+    "lab_benign": "97c66026ecbe6347099c579b066b8df0ee8e0fe13ef1a8c49320013f4633e7a9",
+    "lab_slow": "01c8e563e2220ce19982dc6388b0da412bede167833eadb5952473eb730ce9a1"
+  },
+  "original_ledger_snapshot": {
+    "path": "data/final_lab_resolution_v1/pre_resolution_batch.json",
+    "sha256": "87849f03edc7f0bac1dbc757e5f7f28e67f33fea4238f02c31e35d9d8b07ffe5"
+  },
+  "failure_evidence": {
+    "path": "results/qualification/final_lab_resolution_failure_v1.json",
+    "sha256": "a493a5491d7df467ace4c07d460479b464a6c6098e8068b41cd1ae435a1742e6"
+  },
+  "validation": {
+    "path": "results/development/validation_final_lab_resolution_v1.json",
+    "sha256": "f61d301dae10f7a3f4416ad8e4164e62fe66f09ace2df3416fe71c6042841fc8"
+  },
+  "exact_image_identity": {
+    "id": "sha256:ce3b1e5ab31c4b1b6aba298b935cb88bc6ca1d643446b69d396406db5550bf68",
+    "repo_digests": [
+      "httpd@sha256:ce3b1e5ab31c4b1b6aba298b935cb88bc6ca1d643446b69d396406db5550bf68"
+    ],
+    "architecture": "amd64",
+    "os": "linux",
+    "layers": [
+      "sha256:dd57f90311a2567b55ff22eeacff1602fd04ad7566e315957731359eab173b90",
+      "sha256:9113f6b631c959c12d3f4b6f0a31d2b9ac5797e2c0cbf54fa7f51fcba7c667f1",
+      "sha256:5f70bf18a086007016e948b04aed3b82103a36bea41755b6cddfaf10ace3c6ef",
+      "sha256:be0bece3c279ab22a2c89941257b95d517223799df1abb8ffc602bdfc140b45a",
+      "sha256:c6c0973fd3a353f1496ede88a81367f039730ba10a58a656638a86b81056a291",
+      "sha256:6c002f91dbdc3a93de31610782dca95252ab894dec35e7829e26d5117b6253bc"
+    ]
+  },
+  "planned_units": [
+    {
+      "id": "final-b-014",
+      "kind": "benign",
+      "condition": "flash",
+      "repeat": 4,
+      "preflight": false,
+      "warmup": 60,
+      "duration": 180,
+      "agent_seeds": [
+        790514222,
+        1158327425,
+        1819893345,
+        364882962,
+        1823346333,
+        1590703759,
+        1200287957
+      ],
+      "net_seeds": [
+        1464180091,
+        1705835041
+      ],
+      "run_order": 1
+    },
+    {
+      "id": "final-b-017",
+      "kind": "benign",
+      "condition": "long_lived_or_congested",
+      "repeat": 2,
+      "preflight": false,
+      "warmup": 60,
+      "duration": 180,
+      "agent_seeds": [
+        1870973038,
+        1869195089,
+        1602130572,
+        1791011718,
+        1625023345,
+        924456571,
+        800076917
+      ],
+      "net_seeds": [
+        510082545,
+        2005675561
+      ],
+      "run_order": 2
+    },
+    {
+      "id": "final-b-001",
+      "kind": "benign",
+      "condition": "ordinary",
+      "repeat": 1,
+      "preflight": false,
+      "warmup": 60,
+      "duration": 180,
+      "agent_seeds": [
+        237598246,
+        617345024,
+        1288710754,
+        1360469321,
+        2096100226,
+        1140133853,
+        1185291859
+      ],
+      "net_seeds": [
+        1741693921,
+        376945311
+      ],
+      "run_order": 3
+    },
+    {
+      "id": "final-a-038",
+      "kind": "attack",
+      "condition": "slow_request_body",
+      "repeat": 3,
+      "preflight": false,
+      "warmup": 60,
+      "duration": 240,
+      "agent_seeds": [
+        184709813,
+        1665682845,
+        1746081353,
+        666332521,
+        894016182,
+        746863189,
+        319025865
+      ],
+      "net_seeds": [
+        531055255,
+        1544474189
+      ],
+      "mechanism": "slow_request_body",
+      "sources": 3,
+      "connections": 60,
+      "interval": 5,
+      "run_order": 4
+    },
+    {
+      "id": "final-a-002",
+      "kind": "attack",
+      "condition": "incomplete_header",
+      "repeat": 2,
+      "preflight": false,
+      "warmup": 60,
+      "duration": 240,
+      "agent_seeds": [
+        1934058064,
+        1831552394,
+        1605762225,
+        1991218138,
+        700040293,
+        2034106277,
+        1682121781
+      ],
+      "net_seeds": [
+        1734370567,
+        1918663595
+      ],
+      "mechanism": "incomplete_header",
+      "sources": 1,
+      "connections": 10,
+      "interval": 20,
+      "run_order": 5
+    },
+    {
+      "id": "final-a-040",
+      "kind": "attack",
+      "condition": "slow_request_body",
+      "repeat": 5,
+      "preflight": false,
+      "warmup": 60,
+      "duration": 240,
+      "agent_seeds": [
+        150710377,
+        1883781686,
+        1388353324,
+        429205801,
+        920915229,
+        837740895,
+        1305860582
+      ],
+      "net_seeds": [
+        1032254131,
+        753312889
+      ],
+      "mechanism": "slow_request_body",
+      "sources": 3,
+      "connections": 60,
+      "interval": 5,
+      "run_order": 6
+    },
+    {
+      "id": "final-a-022",
+      "kind": "attack",
+      "condition": "slow_request_body",
+      "repeat": 2,
+      "preflight": false,
+      "warmup": 60,
+      "duration": 240,
+      "agent_seeds": [
+        337341088,
+        100457589,
+        979826638,
+        2020029377,
+        1698532788,
+        663943859,
+        777866525
+      ],
+      "net_seeds": [
+        1563100315,
+        1826985032
+      ],
+      "mechanism": "slow_request_body",
+      "sources": 1,
+      "connections": 10,
+      "interval": 20,
+      "run_order": 7
+    },
+    {
+      "id": "final-b-005",
+      "kind": "benign",
+      "condition": "ordinary",
+      "repeat": 5,
+      "preflight": false,
+      "warmup": 60,
+      "duration": 180,
+      "agent_seeds": [
+        1314213430,
+        553202478,
+        2000334872,
+        888963048,
+        1914491590,
+        1993199330,
+        2070497678
+      ],
+      "net_seeds": [
+        515187444,
+        947514845
+      ],
+      "run_order": 8
+    },
+    {
+      "id": "final-b-003",
+      "kind": "benign",
+      "condition": "ordinary",
+      "repeat": 3,
+      "preflight": false,
+      "warmup": 60,
+      "duration": 180,
+      "agent_seeds": [
+        156947773,
+        1922805261,
+        1003402599,
+        1887767018,
+        1418054099,
+        1503466602,
+        1754395820
+      ],
+      "net_seeds": [
+        1259842038,
+        913794754
+      ],
+      "run_order": 9
+    },
+    {
+      "id": "final-b-007",
+      "kind": "benign",
+      "condition": "bursts",
+      "repeat": 2,
+      "preflight": false,
+      "warmup": 60,
+      "duration": 180,
+      "agent_seeds": [
+        867163194,
+        1867932873,
+        481037754,
+        1082215508,
+        1478138067,
+        2025585010,
+        1001612513
+      ],
+      "net_seeds": [
+        1462732963,
+        2009632311
+      ],
+      "run_order": 10
+    },
+    {
+      "id": "final-a-012",
+      "kind": "attack",
+      "condition": "incomplete_header",
+      "repeat": 2,
+      "preflight": false,
+      "warmup": 60,
+      "duration": 240,
+      "agent_seeds": [
+        1835093682,
+        1532625728,
+        181310458,
+        1711080146,
+        463223779,
+        1348631356,
+        216771072
+      ],
+      "net_seeds": [
+        901094190,
+        2025062359
+      ],
+      "mechanism": "incomplete_header",
+      "sources": 3,
+      "connections": 10,
+      "interval": 20,
+      "run_order": 11
+    },
+    {
+      "id": "final-a-014",
+      "kind": "attack",
+      "condition": "incomplete_header",
+      "repeat": 4,
+      "preflight": false,
+      "warmup": 60,
+      "duration": 240,
+      "agent_seeds": [
+        1335676407,
+        1440991618,
+        942788834,
+        1929443678,
+        901236194,
+        2077324418,
+        442762719
+      ],
+      "net_seeds": [
+        2090147422,
+        753667375
+      ],
+      "mechanism": "incomplete_header",
+      "sources": 3,
+      "connections": 10,
+      "interval": 20,
+      "run_order": 12
+    },
+    {
+      "id": "final-b-019",
+      "kind": "benign",
+      "condition": "long_lived_or_congested",
+      "repeat": 4,
+      "preflight": false,
+      "warmup": 60,
+      "duration": 180,
+      "agent_seeds": [
+        1851631982,
+        852712412,
+        897719072,
+        469835978,
+        1744589897,
+        2045054390,
+        125349370
+      ],
+      "net_seeds": [
+        335270337,
+        970263749
+      ],
+      "run_order": 13
+    },
+    {
+      "id": "final-a-026",
+      "kind": "attack",
+      "condition": "slow_request_body",
+      "repeat": 1,
+      "preflight": false,
+      "warmup": 60,
+      "duration": 240,
+      "agent_seeds": [
+        1740443331,
+        929895472,
+        1907430894,
+        415422415,
+        1998559566,
+        1716401689,
+        279581228
+      ],
+      "net_seeds": [
+        527823872,
+        975286584
+      ],
+      "mechanism": "slow_request_body",
+      "sources": 1,
+      "connections": 60,
+      "interval": 5,
+      "run_order": 14
+    },
+    {
+      "id": "final-a-017",
+      "kind": "attack",
+      "condition": "incomplete_header",
+      "repeat": 2,
+      "preflight": false,
+      "warmup": 60,
+      "duration": 240,
+      "agent_seeds": [
+        1986680784,
+        537250660,
+        1860148989,
+        1551647351,
+        1444591765,
+        1314760522,
+        1697328858
+      ],
+      "net_seeds": [
+        442490866,
+        1043281333
+      ],
+      "mechanism": "incomplete_header",
+      "sources": 3,
+      "connections": 60,
+      "interval": 5,
+      "run_order": 15
+    },
+    {
+      "id": "final-a-023",
+      "kind": "attack",
+      "condition": "slow_request_body",
+      "repeat": 3,
+      "preflight": false,
+      "warmup": 60,
+      "duration": 240,
+      "agent_seeds": [
+        245654240,
+        1044120190,
+        849741737,
+        1675619408,
+        933332183,
+        738243166,
+        2041307878
+      ],
+      "net_seeds": [
+        1417637140,
+        1123133823
+      ],
+      "mechanism": "slow_request_body",
+      "sources": 1,
+      "connections": 10,
+      "interval": 20,
+      "run_order": 16
+    },
+    {
+      "id": "final-a-027",
+      "kind": "attack",
+      "condition": "slow_request_body",
+      "repeat": 2,
+      "preflight": false,
+      "warmup": 60,
+      "duration": 240,
+      "agent_seeds": [
+        2022997567,
+        778475941,
+        295667050,
+        1989269165,
+        1246251885,
+        1426850933,
+        1028862926
+      ],
+      "net_seeds": [
+        1195989076,
+        1174674206
+      ],
+      "mechanism": "slow_request_body",
+      "sources": 1,
+      "connections": 60,
+      "interval": 5,
+      "run_order": 17
+    },
+    {
+      "id": "final-a-005",
+      "kind": "attack",
+      "condition": "incomplete_header",
+      "repeat": 5,
+      "preflight": false,
+      "warmup": 60,
+      "duration": 240,
+      "agent_seeds": [
+        404350436,
+        1951811737,
+        1945779840,
+        670589795,
+        184498480,
+        1833270841,
+        1755121016
+      ],
+      "net_seeds": [
+        320144942,
+        1743915648
+      ],
+      "mechanism": "incomplete_header",
+      "sources": 1,
+      "connections": 10,
+      "interval": 20,
+      "run_order": 18
+    },
+    {
+      "id": "final-a-019",
+      "kind": "attack",
+      "condition": "incomplete_header",
+      "repeat": 4,
+      "preflight": false,
+      "warmup": 60,
+      "duration": 240,
+      "agent_seeds": [
+        1103779004,
+        254530525,
+        1425686721,
+        828991933,
+        527508773,
+        874741604,
+        156687688
+      ],
+      "net_seeds": [
+        1693495604,
+        581521558
+      ],
+      "mechanism": "incomplete_header",
+      "sources": 3,
+      "connections": 60,
+      "interval": 5,
+      "run_order": 19
+    },
+    {
+      "id": "final-a-011",
+      "kind": "attack",
+      "condition": "incomplete_header",
+      "repeat": 1,
+      "preflight": false,
+      "warmup": 60,
+      "duration": 240,
+      "agent_seeds": [
+        1340712633,
+        639423220,
+        539414043,
+        744251887,
+        173905280,
+        643364615,
+        685699230
+      ],
+      "net_seeds": [
+        1030553019,
+        1236468862
+      ],
+      "mechanism": "incomplete_header",
+      "sources": 3,
+      "connections": 10,
+      "interval": 20,
+      "run_order": 20
+    },
+    {
+      "id": "final-b-020",
+      "kind": "benign",
+      "condition": "long_lived_or_congested",
+      "repeat": 5,
+      "preflight": false,
+      "warmup": 60,
+      "duration": 180,
+      "agent_seeds": [
+        1977294243,
+        477802784,
+        1512827594,
+        1042417428,
+        1029291381,
+        350963569,
+        367586762
+      ],
+      "net_seeds": [
+        1645099757,
+        606036753
+      ],
+      "run_order": 21
+    },
+    {
+      "id": "final-a-030",
+      "kind": "attack",
+      "condition": "slow_request_body",
+      "repeat": 5,
+      "preflight": false,
+      "warmup": 60,
+      "duration": 240,
+      "agent_seeds": [
+        1082746697,
+        1078384267,
+        843259478,
+        1374263234,
+        784741428,
+        1728665321,
+        2051132090
+      ],
+      "net_seeds": [
+        1564980824,
+        1519711462
+      ],
+      "mechanism": "slow_request_body",
+      "sources": 1,
+      "connections": 60,
+      "interval": 5,
+      "run_order": 22
+    },
+    {
+      "id": "final-b-018",
+      "kind": "benign",
+      "condition": "long_lived_or_congested",
+      "repeat": 3,
+      "preflight": false,
+      "warmup": 60,
+      "duration": 180,
+      "agent_seeds": [
+        1028248081,
+        1553491905,
+        1848895094,
+        1012099050,
+        431477725,
+        2044153927,
+        1174498174
+      ],
+      "net_seeds": [
+        652577298,
+        1249150773
+      ],
+      "run_order": 23
+    },
+    {
+      "id": "final-a-024",
+      "kind": "attack",
+      "condition": "slow_request_body",
+      "repeat": 4,
+      "preflight": false,
+      "warmup": 60,
+      "duration": 240,
+      "agent_seeds": [
+        2078402335,
+        1266793917,
+        1090083264,
+        391874490,
+        488188095,
+        645701485,
+        134157976
+      ],
+      "net_seeds": [
+        1955490478,
+        590157420
+      ],
+      "mechanism": "slow_request_body",
+      "sources": 1,
+      "connections": 10,
+      "interval": 20,
+      "run_order": 24
+    },
+    {
+      "id": "final-a-003",
+      "kind": "attack",
+      "condition": "incomplete_header",
+      "repeat": 3,
+      "preflight": false,
+      "warmup": 60,
+      "duration": 240,
+      "agent_seeds": [
+        683788400,
+        1065957763,
+        2079631481,
+        256638102,
+        1476988540,
+        1992109875,
+        220605517
+      ],
+      "net_seeds": [
+        161397322,
+        730826354
+      ],
+      "mechanism": "incomplete_header",
+      "sources": 1,
+      "connections": 10,
+      "interval": 20,
+      "run_order": 25
+    },
+    {
+      "id": "final-b-012",
+      "kind": "benign",
+      "condition": "flash",
+      "repeat": 2,
+      "preflight": false,
+      "warmup": 60,
+      "duration": 180,
+      "agent_seeds": [
+        865953538,
+        938983335,
+        1397208397,
+        1923674710,
+        423428325,
+        814250868,
+        1420823649
+      ],
+      "net_seeds": [
+        859062369,
+        1400478059
+      ],
+      "run_order": 26
+    },
+    {
+      "id": "final-a-004",
+      "kind": "attack",
+      "condition": "incomplete_header",
+      "repeat": 4,
+      "preflight": false,
+      "warmup": 60,
+      "duration": 240,
+      "agent_seeds": [
+        886032352,
+        329943891,
+        1053011802,
+        794283686,
+        2090919194,
+        417017047,
+        223578782
+      ],
+      "net_seeds": [
+        1511889201,
+        1949789876
+      ],
+      "mechanism": "incomplete_header",
+      "sources": 1,
+      "connections": 10,
+      "interval": 20,
+      "run_order": 27
+    },
+    {
+      "id": "final-a-029",
+      "kind": "attack",
+      "condition": "slow_request_body",
+      "repeat": 4,
+      "preflight": false,
+      "warmup": 60,
+      "duration": 240,
+      "agent_seeds": [
+        1042276809,
+        2083526312,
+        367790090,
+        1059248826,
+        311232959,
+        1813887195,
+        1716311189
+      ],
+      "net_seeds": [
+        957184663,
+        270015203
+      ],
+      "mechanism": "slow_request_body",
+      "sources": 1,
+      "connections": 60,
+      "interval": 5,
+      "run_order": 28
+    },
+    {
+      "id": "final-a-028",
+      "kind": "attack",
+      "condition": "slow_request_body",
+      "repeat": 3,
+      "preflight": false,
+      "warmup": 60,
+      "duration": 240,
+      "agent_seeds": [
+        927498896,
+        1973825367,
+        705461010,
+        1747886671,
+        365426232,
+        227125835,
+        635509345
+      ],
+      "net_seeds": [
+        757082483,
+        285569935
+      ],
+      "mechanism": "slow_request_body",
+      "sources": 1,
+      "connections": 60,
+      "interval": 5,
+      "run_order": 29
+    },
+    {
+      "id": "final-a-031",
+      "kind": "attack",
+      "condition": "slow_request_body",
+      "repeat": 1,
+      "preflight": false,
+      "warmup": 60,
+      "duration": 240,
+      "agent_seeds": [
+        616331629,
+        1784957167,
+        1145629145,
+        427591157,
+        1981208213,
+        1412912329,
+        2058753611
+      ],
+      "net_seeds": [
+        2071672012,
+        854793670
+      ],
+      "mechanism": "slow_request_body",
+      "sources": 3,
+      "connections": 10,
+      "interval": 20,
+      "run_order": 30
+    },
+    {
+      "id": "final-a-039",
+      "kind": "attack",
+      "condition": "slow_request_body",
+      "repeat": 4,
+      "preflight": false,
+      "warmup": 60,
+      "duration": 240,
+      "agent_seeds": [
+        1978788939,
+        1406846334,
+        1231937447,
+        812305789,
+        1983506462,
+        1849557256,
+        989042510
+      ],
+      "net_seeds": [
+        196318297,
+        458868457
+      ],
+      "mechanism": "slow_request_body",
+      "sources": 3,
+      "connections": 60,
+      "interval": 5,
+      "run_order": 31
+    },
+    {
+      "id": "final-b-016",
+      "kind": "benign",
+      "condition": "long_lived_or_congested",
+      "repeat": 1,
+      "preflight": false,
+      "warmup": 60,
+      "duration": 180,
+      "agent_seeds": [
+        1404712703,
+        1316339823,
+        1162849816,
+        1076689438,
+        1384454036,
+        1548297888,
+        520052173
+      ],
+      "net_seeds": [
+        1523420408,
+        160652838
+      ],
+      "run_order": 32
+    },
+    {
+      "id": "final-b-015",
+      "kind": "benign",
+      "condition": "flash",
+      "repeat": 5,
+      "preflight": false,
+      "warmup": 60,
+      "duration": 180,
+      "agent_seeds": [
+        1916031931,
+        1088499067,
+        621679765,
+        1745729750,
+        1040934302,
+        1213322180,
+        895352142
+      ],
+      "net_seeds": [
+        646050294,
+        536742731
+      ],
+      "run_order": 33
+    },
+    {
+      "id": "final-a-006",
+      "kind": "attack",
+      "condition": "incomplete_header",
+      "repeat": 1,
+      "preflight": false,
+      "warmup": 60,
+      "duration": 240,
+      "agent_seeds": [
+        1146762797,
+        1072179595,
+        756664060,
+        1451486410,
+        1133315289,
+        1649204543,
+        728179293
+      ],
+      "net_seeds": [
+        1294292964,
+        1340662900
+      ],
+      "mechanism": "incomplete_header",
+      "sources": 1,
+      "connections": 60,
+      "interval": 5,
+      "run_order": 34
+    },
+    {
+      "id": "final-a-037",
+      "kind": "attack",
+      "condition": "slow_request_body",
+      "repeat": 2,
+      "preflight": false,
+      "warmup": 60,
+      "duration": 240,
+      "agent_seeds": [
+        1536021465,
+        953305056,
+        623485202,
+        286241380,
+        2016776174,
+        1408146943,
+        288985223
+      ],
+      "net_seeds": [
+        1826357322,
+        1886769479
+      ],
+      "mechanism": "slow_request_body",
+      "sources": 3,
+      "connections": 60,
+      "interval": 5,
+      "run_order": 35
+    },
+    {
+      "id": "final-a-015",
+      "kind": "attack",
+      "condition": "incomplete_header",
+      "repeat": 5,
+      "preflight": false,
+      "warmup": 60,
+      "duration": 240,
+      "agent_seeds": [
+        1136452555,
+        1221041147,
+        2006781667,
+        1581219945,
+        1178858565,
+        1776449348,
+        1502616334
+      ],
+      "net_seeds": [
+        1102528373,
+        945170315
+      ],
+      "mechanism": "incomplete_header",
+      "sources": 3,
+      "connections": 10,
+      "interval": 20,
+      "run_order": 36
+    },
+    {
+      "id": "final-a-013",
+      "kind": "attack",
+      "condition": "incomplete_header",
+      "repeat": 3,
+      "preflight": false,
+      "warmup": 60,
+      "duration": 240,
+      "agent_seeds": [
+        1977097267,
+        896277385,
+        982085356,
+        689758655,
+        743074623,
+        645045111,
+        971629171
+      ],
+      "net_seeds": [
+        1443672321,
+        1716212469
+      ],
+      "mechanism": "incomplete_header",
+      "sources": 3,
+      "connections": 10,
+      "interval": 20,
+      "run_order": 37
+    },
+    {
+      "id": "final-b-006",
+      "kind": "benign",
+      "condition": "bursts",
+      "repeat": 1,
+      "preflight": false,
+      "warmup": 60,
+      "duration": 180,
+      "agent_seeds": [
+        1132681248,
+        725037715,
+        1766561840,
+        1675775886,
+        368219537,
+        1474957231,
+        496310258
+      ],
+      "net_seeds": [
+        1310535166,
+        2046493843
+      ],
+      "run_order": 38
+    },
+    {
+      "id": "final-a-035",
+      "kind": "attack",
+      "condition": "slow_request_body",
+      "repeat": 5,
+      "preflight": false,
+      "warmup": 60,
+      "duration": 240,
+      "agent_seeds": [
+        935469722,
+        2081394066,
+        2093180158,
+        2002053134,
+        1523620735,
+        1460486419,
+        1001936109
+      ],
+      "net_seeds": [
+        1948842761,
+        585763182
+      ],
+      "mechanism": "slow_request_body",
+      "sources": 3,
+      "connections": 10,
+      "interval": 20,
+      "run_order": 39
+    },
+    {
+      "id": "final-a-036",
+      "kind": "attack",
+      "condition": "slow_request_body",
+      "repeat": 1,
+      "preflight": false,
+      "warmup": 60,
+      "duration": 240,
+      "agent_seeds": [
+        342088495,
+        339715302,
+        1220475080,
+        1857507642,
+        466747492,
+        240312163,
+        847392260
+      ],
+      "net_seeds": [
+        1118927351,
+        1632436265
+      ],
+      "mechanism": "slow_request_body",
+      "sources": 3,
+      "connections": 60,
+      "interval": 5,
+      "run_order": 40
+    },
+    {
+      "id": "final-a-021",
+      "kind": "attack",
+      "condition": "slow_request_body",
+      "repeat": 1,
+      "preflight": false,
+      "warmup": 60,
+      "duration": 240,
+      "agent_seeds": [
+        686219201,
+        662084470,
+        447712638,
+        1767348082,
+        930163901,
+        243957502,
+        306874308
+      ],
+      "net_seeds": [
+        1111579720,
+        1091319776
+      ],
+      "mechanism": "slow_request_body",
+      "sources": 1,
+      "connections": 10,
+      "interval": 20,
+      "run_order": 41
+    },
+    {
+      "id": "final-a-032",
+      "kind": "attack",
+      "condition": "slow_request_body",
+      "repeat": 2,
+      "preflight": false,
+      "warmup": 60,
+      "duration": 240,
+      "agent_seeds": [
+        1389776566,
+        1935738235,
+        1480985246,
+        492686963,
+        1266461569,
+        627786828,
+        1211035830
+      ],
+      "net_seeds": [
+        1832342115,
+        834098671
+      ],
+      "mechanism": "slow_request_body",
+      "sources": 3,
+      "connections": 10,
+      "interval": 20,
+      "run_order": 42
+    },
+    {
+      "id": "final-a-033",
+      "kind": "attack",
+      "condition": "slow_request_body",
+      "repeat": 3,
+      "preflight": false,
+      "warmup": 60,
+      "duration": 240,
+      "agent_seeds": [
+        1051311385,
+        1689027874,
+        1842559938,
+        1655732836,
+        835473948,
+        1548564996,
+        1655462485
+      ],
+      "net_seeds": [
+        1088964370,
+        716443454
+      ],
+      "mechanism": "slow_request_body",
+      "sources": 3,
+      "connections": 10,
+      "interval": 20,
+      "run_order": 43
+    },
+    {
+      "id": "final-a-007",
+      "kind": "attack",
+      "condition": "incomplete_header",
+      "repeat": 2,
+      "preflight": false,
+      "warmup": 60,
+      "duration": 240,
+      "agent_seeds": [
+        290341430,
+        1029881381,
+        526491601,
+        882306774,
+        734734888,
+        902567914,
+        1611944567
+      ],
+      "net_seeds": [
+        197185048,
+        1656529345
+      ],
+      "mechanism": "incomplete_header",
+      "sources": 1,
+      "connections": 60,
+      "interval": 5,
+      "run_order": 44
+    },
+    {
+      "id": "final-a-018",
+      "kind": "attack",
+      "condition": "incomplete_header",
+      "repeat": 3,
+      "preflight": false,
+      "warmup": 60,
+      "duration": 240,
+      "agent_seeds": [
+        908729242,
+        1594083892,
+        114746122,
+        1418580453,
+        197882923,
+        1316912331,
+        257488589
+      ],
+      "net_seeds": [
+        1058865492,
+        593487461
+      ],
+      "mechanism": "incomplete_header",
+      "sources": 3,
+      "connections": 60,
+      "interval": 5,
+      "run_order": 45
+    },
+    {
+      "id": "final-a-025",
+      "kind": "attack",
+      "condition": "slow_request_body",
+      "repeat": 5,
+      "preflight": false,
+      "warmup": 60,
+      "duration": 240,
+      "agent_seeds": [
+        357412728,
+        271547665,
+        2077824012,
+        1743426705,
+        235658398,
+        656911136,
+        1486563278
+      ],
+      "net_seeds": [
+        254669530,
+        1194460385
+      ],
+      "mechanism": "slow_request_body",
+      "sources": 1,
+      "connections": 10,
+      "interval": 20,
+      "run_order": 46
+    },
+    {
+      "id": "final-b-002",
+      "kind": "benign",
+      "condition": "ordinary",
+      "repeat": 2,
+      "preflight": false,
+      "warmup": 60,
+      "duration": 180,
+      "agent_seeds": [
+        1167705923,
+        152738351,
+        1039704234,
+        1782043365,
+        1913776490,
+        607635004,
+        1023151576
+      ],
+      "net_seeds": [
+        1689328494,
+        430288606
+      ],
+      "run_order": 47
+    },
+    {
+      "id": "final-a-034",
+      "kind": "attack",
+      "condition": "slow_request_body",
+      "repeat": 4,
+      "preflight": false,
+      "warmup": 60,
+      "duration": 240,
+      "agent_seeds": [
+        1451069332,
+        739122765,
+        577273190,
+        1571222813,
+        1615343412,
+        1343607231,
+        1519611367
+      ],
+      "net_seeds": [
+        1590819594,
+        831169846
+      ],
+      "mechanism": "slow_request_body",
+      "sources": 3,
+      "connections": 10,
+      "interval": 20,
+      "run_order": 48
+    },
+    {
+      "id": "final-a-001",
+      "kind": "attack",
+      "condition": "incomplete_header",
+      "repeat": 1,
+      "preflight": false,
+      "warmup": 60,
+      "duration": 240,
+      "agent_seeds": [
+        1045357295,
+        1963432132,
+        414619991,
+        1213996275,
+        542525895,
+        1689725568,
+        462559318
+      ],
+      "net_seeds": [
+        1190620081,
+        1418207824
+      ],
+      "mechanism": "incomplete_header",
+      "sources": 1,
+      "connections": 10,
+      "interval": 20,
+      "run_order": 49
+    },
+    {
+      "id": "final-b-013",
+      "kind": "benign",
+      "condition": "flash",
+      "repeat": 3,
+      "preflight": false,
+      "warmup": 60,
+      "duration": 180,
+      "agent_seeds": [
+        1738034201,
+        877845098,
+        1785991696,
+        1230765139,
+        541348816,
+        1145951196,
+        1159308665
+      ],
+      "net_seeds": [
+        2095393575,
+        431535179
+      ],
+      "run_order": 50
+    },
+    {
+      "id": "final-b-008",
+      "kind": "benign",
+      "condition": "bursts",
+      "repeat": 3,
+      "preflight": false,
+      "warmup": 60,
+      "duration": 180,
+      "agent_seeds": [
+        1452507927,
+        402976751,
+        1409921113,
+        259154831,
+        1934370180,
+        571833273,
+        494112584
+      ],
+      "net_seeds": [
+        342353002,
+        880658612
+      ],
+      "run_order": 51
+    },
+    {
+      "id": "final-b-009",
+      "kind": "benign",
+      "condition": "bursts",
+      "repeat": 4,
+      "preflight": false,
+      "warmup": 60,
+      "duration": 180,
+      "agent_seeds": [
+        1230538246,
+        483618367,
+        1473349181,
+        817370401,
+        1559839364,
+        2085676876,
+        1850224331
+      ],
+      "net_seeds": [
+        400893231,
+        1857592909
+      ],
+      "run_order": 52
+    },
+    {
+      "id": "final-a-009",
+      "kind": "attack",
+      "condition": "incomplete_header",
+      "repeat": 4,
+      "preflight": false,
+      "warmup": 60,
+      "duration": 240,
+      "agent_seeds": [
+        679114240,
+        722924670,
+        451277685,
+        1740201090,
+        476197329,
+        478936113,
+        909585014
+      ],
+      "net_seeds": [
+        493999011,
+        1380645754
+      ],
+      "mechanism": "incomplete_header",
+      "sources": 1,
+      "connections": 60,
+      "interval": 5,
+      "run_order": 53
+    },
+    {
+      "id": "final-b-004",
+      "kind": "benign",
+      "condition": "ordinary",
+      "repeat": 4,
+      "preflight": false,
+      "warmup": 60,
+      "duration": 180,
+      "agent_seeds": [
+        952702899,
+        1594772589,
+        682231887,
+        573142426,
+        612974688,
+        1077281598,
+        421154341
+      ],
+      "net_seeds": [
+        1505471553,
+        1222421163
+      ],
+      "run_order": 54
+    },
+    {
+      "id": "final-b-011",
+      "kind": "benign",
+      "condition": "flash",
+      "repeat": 1,
+      "preflight": false,
+      "warmup": 60,
+      "duration": 180,
+      "agent_seeds": [
+        418486029,
+        584823862,
+        486389295,
+        230622671,
+        422871255,
+        1007477151,
+        1125166988
+      ],
+      "net_seeds": [
+        1184692385,
+        1011972690
+      ],
+      "run_order": 55
+    },
+    {
+      "id": "final-a-010",
+      "kind": "attack",
+      "condition": "incomplete_header",
+      "repeat": 5,
+      "preflight": false,
+      "warmup": 60,
+      "duration": 240,
+      "agent_seeds": [
+        653108840,
+        606713897,
+        1654180995,
+        342793589,
+        1792128391,
+        966027985,
+        165479727
+      ],
+      "net_seeds": [
+        1463563368,
+        142445289
+      ],
+      "mechanism": "incomplete_header",
+      "sources": 1,
+      "connections": 60,
+      "interval": 5,
+      "run_order": 56
+    },
+    {
+      "id": "final-a-020",
+      "kind": "attack",
+      "condition": "incomplete_header",
+      "repeat": 5,
+      "preflight": false,
+      "warmup": 60,
+      "duration": 240,
+      "agent_seeds": [
+        313862637,
+        1135553019,
+        368274890,
+        560978578,
+        1242348636,
+        763836955,
+        361369529
+      ],
+      "net_seeds": [
+        690842450,
+        1454773994
+      ],
+      "mechanism": "incomplete_header",
+      "sources": 3,
+      "connections": 60,
+      "interval": 5,
+      "run_order": 57
+    },
+    {
+      "id": "final-a-016",
+      "kind": "attack",
+      "condition": "incomplete_header",
+      "repeat": 1,
+      "preflight": false,
+      "warmup": 60,
+      "duration": 240,
+      "agent_seeds": [
+        1327929892,
+        463422641,
+        2014146821,
+        1085742976,
+        1009683638,
+        1843942046,
+        991996095
+      ],
+      "net_seeds": [
+        320307169,
+        470703587
+      ],
+      "mechanism": "incomplete_header",
+      "sources": 3,
+      "connections": 60,
+      "interval": 5,
+      "run_order": 58
+    },
+    {
+      "id": "final-a-008",
+      "kind": "attack",
+      "condition": "incomplete_header",
+      "repeat": 3,
+      "preflight": false,
+      "warmup": 60,
+      "duration": 240,
+      "agent_seeds": [
+        750551920,
+        1529473653,
+        1295666180,
+        1502100115,
+        1517290890,
+        115659640,
+        1623592421
+      ],
+      "net_seeds": [
+        1317466205,
+        1197800129
+      ],
+      "mechanism": "incomplete_header",
+      "sources": 1,
+      "connections": 60,
+      "interval": 5,
+      "run_order": 59
+    }
+  ],
+  "declared_before_any_recovery_traffic": true,
+  "allowed_change": "Inspect exact content ID and add compose overlay {services:{web:{image:<sameID>}}}; verify actual container Image. No other configuration mutation.",
+  "unchanged": "All catalog entries, seeds, order, targets, schedules, traffic, network/resource/service settings, original sources, feature/label math, models, maps, thresholds, metrics.",
+  "failure_policy": "Original pre-traffic failure remains; this is its explicit one-time reviewed recovery, never outcome-based recollection. Any new failed/partial capture stops the runner.",
+  "scope": "Reference-resolution engineering only, no research result selected or tuning. All future outcomes retained."
+}

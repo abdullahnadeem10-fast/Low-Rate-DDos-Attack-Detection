@@ -1,0 +1,28 @@
+{
+  "unit_id": "final-b-014",
+  "original_attempt_start_utc": 1794567185.0566924,
+  "failure_stage": "Pinned tag@digest image inspect, before prepare/compose/traffic",
+  "original_error_type": "CalledProcessError",
+  "failure_preserved": true,
+  "raw_directory_created": false,
+  "traffic_generated": false,
+  "original_ledger_snapshot_sha256": "87849f03edc7f0bac1dbc757e5f7f28e67f33fea4238f02c31e35d9d8b07ffe5",
+  "resolved_image_identity": {
+    "id": "sha256:ce3b1e5ab31c4b1b6aba298b935cb88bc6ca1d643446b69d396406db5550bf68",
+    "repo_digests": [
+      "httpd@sha256:ce3b1e5ab31c4b1b6aba298b935cb88bc6ca1d643446b69d396406db5550bf68"
+    ],
+    "architecture": "amd64",
+    "os": "linux",
+    "layers": [
+      "sha256:dd57f90311a2567b55ff22eeacff1602fd04ad7566e315957731359eab173b90",
+      "sha256:9113f6b631c959c12d3f4b6f0a31d2b9ac5797e2c0cbf54fa7f51fcba7c667f1",
+      "sha256:5f70bf18a086007016e948b04aed3b82103a36bea41755b6cddfaf10ace3c6ef",
+      "sha256:be0bece3c279ab22a2c89941257b95d517223799df1abb8ffc602bdfc140b45a",
+      "sha256:c6c0973fd3a353f1496ede88a81367f039730ba10a58a656638a86b81056a291",
+      "sha256:6c002f91dbdc3a93de31610782dca95252ab894dec35e7829e26d5117b6253bc"
+    ]
+  },
+  "change": "Resolve identical image content ID locally; overlay only services.web.image. No pulls/builds or changed settings.",
+  "private_command_path_redacted": true
+}

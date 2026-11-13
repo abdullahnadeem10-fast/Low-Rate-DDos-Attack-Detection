@@ -1,0 +1,9 @@
+{
+  "tests_run": 225,
+  "failures": 0,
+  "errors": 0,
+  "skipped": 0,
+  "all_tests_passed": true,
+  "elapsed_seconds": 4.829397399997106,
+  "scope": "Sanitized public checkout offline engineering/policy checks; no final data, snapshots or weights copied/opened."
+}

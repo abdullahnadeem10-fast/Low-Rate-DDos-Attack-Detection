@@ -55,10 +55,13 @@ Start with a small, real packet-capture test. A checked box means there is evide
 - [ ] Seal and qualify separate public slow/K/external source acquisition addenda before opening those payloads. Lab preflights do not establish public-source compatibility or attack efficacy.
 - [x] Collect/qualify/score first final benign unit `final-b-010` on all 117 cases; preserve high hybrid/AE false-alarm failure without retuning. [Partial checkpoint](../results/final/final_lab_checkpoint_v1.json). This does not complete any full-matrix/attack efficacy item.
 
+- [x] Preserve a no-traffic image-reference failure and separately seal/test an exact-content recovery; 225 root/public fixtures pass. [Review](FINAL_LAB_RESOLUTION_RECOVERY_REVIEW.md).
+- [x] Complete the next three final benign units and first slow-body trial in fixed order, all 117 cases each; save 585-row v2 evidence including high benign FPR and one conditional attack hit. [Checkpoint v2](../results/final/final_lab_checkpoint_v2.json). Full-matrix items remain incomplete.
+
 ## 3. Final tests and reporting
 
 - [ ] Score the known-attack and withheld slow-family sessions; report per-family recall, missed episodes, false alarms and delay with an explicit measurement basis.
-- [ ] Complete final benign stress sessions (at least five per condition) and isolated distributed sessions (40 planned attack episodes). Current 1/20 benign and 0/40 attacks; 59 catalog units remain. Preserve service impact, capture quality, misses and failed/unsupported units. Benign isolation preflights pass.
+- [ ] Complete final benign stress sessions (at least five per condition) and isolated distributed sessions (40 planned attack episodes). Current 4/20 benign and 1/40 attack trials; 55 catalog units remain. Preserve service impact, capture quality, misses and failed/unsupported units. Benign isolation preflights pass.
 - [ ] Run matched ablations and paired session-level comparisons. Keep repeats/seeds distinct from independent traffic sessions.
 - [ ] Run frozen CSE-CIC-IDS2018 transfer on compatible packet data or record the precise limitation.
 - [ ] Produce paper-ready tables, figures, reproducibility notes and the results section.

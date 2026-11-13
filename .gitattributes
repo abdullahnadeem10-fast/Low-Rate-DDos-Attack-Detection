@@ -30,3 +30,6 @@
 "phase 3/plan/final_lab_*_acquisition_*.json" -text whitespace=cr-at-eol
 "phase 3/results/qualification/*.json" -text whitespace=cr-at-eol
 "phase 3/results/final/*.json" -text whitespace=cr-at-eol
+
+# The exact-image recovery is declared before resumed traffic.
+"phase 3/plan/final_lab_resolution_recovery_*.json" -text whitespace=cr-at-eol

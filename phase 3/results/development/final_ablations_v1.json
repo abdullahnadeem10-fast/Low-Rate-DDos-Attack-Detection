@@ -1,0 +1,6262 @@
+{
+  "date": "2026-11-13",
+  "plan": "plan/final_ablations_v1.json",
+  "plan_sha256": "0f140866c31a6436ca0cc4345209ae5a5f589930ea4897f4765df9eeb4ff8529",
+  "development_results_sha256": "cc260213515921b6f47bf7f98a92f0869a0d8b5fa8a117b23b10cb368c7db52c",
+  "private_artifacts": {
+    "no_rate_history_HGB_7.joblib": {
+      "path": "data/final_ablations_v1/no_rate_history_HGB_7.joblib",
+      "sha256": "4977e5619f40b13e1b8dca69ef0dd193cb3fb9e9e86fb77557fbd49e5455420a"
+    },
+    "no_rate_history_HGB_7_calibration_scores.npz": {
+      "path": "data/final_ablations_v1/no_rate_history_HGB_7_calibration_scores.npz",
+      "sha256": "d4886db71c90ee601e00e632e6e6a3622852492a9d1449d526c7d96c3377273c"
+    },
+    "no_rate_history_AE_7.joblib": {
+      "path": "data/final_ablations_v1/no_rate_history_AE_7.joblib",
+      "sha256": "de61ce28fa63d4532066efa38141cf6dcda3a77ba44a06e7d126e851a6704fea"
+    },
+    "no_rate_history_AE_7_calibration_scores.npz": {
+      "path": "data/final_ablations_v1/no_rate_history_AE_7_calibration_scores.npz",
+      "sha256": "4a9d62d5cb018ac651e9b70778a848cf4f97374885cd21f1920dd65b6f9cba35"
+    },
+    "no_rate_history_HGB_19.joblib": {
+      "path": "data/final_ablations_v1/no_rate_history_HGB_19.joblib",
+      "sha256": "6707e17e78144dd7e48e06617d8a6069d36969c27b14e8afb523cd0a93e14b8b"
+    },
+    "no_rate_history_HGB_19_calibration_scores.npz": {
+      "path": "data/final_ablations_v1/no_rate_history_HGB_19_calibration_scores.npz",
+      "sha256": "d4886db71c90ee601e00e632e6e6a3622852492a9d1449d526c7d96c3377273c"
+    },
+    "no_rate_history_AE_19.joblib": {
+      "path": "data/final_ablations_v1/no_rate_history_AE_19.joblib",
+      "sha256": "f0fca8a596a5be94d5dfb00645f2d4aa1bb9db75dfb6421de1208c39b06b7729"
+    },
+    "no_rate_history_AE_19_calibration_scores.npz": {
+      "path": "data/final_ablations_v1/no_rate_history_AE_19_calibration_scores.npz",
+      "sha256": "68475c523a8e3c2381fb1fae947a17257862392c954c8a23958fa4d8266ccd3e"
+    },
+    "no_rate_history_HGB_42.joblib": {
+      "path": "data/final_ablations_v1/no_rate_history_HGB_42.joblib",
+      "sha256": "e46a120780907651971acb6b5b84774ec854f9db674c2dc5c30d3ddbf41b9bb4"
+    },
+    "no_rate_history_HGB_42_calibration_scores.npz": {
+      "path": "data/final_ablations_v1/no_rate_history_HGB_42_calibration_scores.npz",
+      "sha256": "d4886db71c90ee601e00e632e6e6a3622852492a9d1449d526c7d96c3377273c"
+    },
+    "no_rate_history_AE_42.joblib": {
+      "path": "data/final_ablations_v1/no_rate_history_AE_42.joblib",
+      "sha256": "43e18021ce18d27f773a2de14933aa13411f6fef2ca7d9eec5d1c56c338e8dc9"
+    },
+    "no_rate_history_AE_42_calibration_scores.npz": {
+      "path": "data/final_ablations_v1/no_rate_history_AE_42_calibration_scores.npz",
+      "sha256": "c8c4b5dbc8349d9aeeba7afa23d4cc9e53a6456fccfeb837085bfc9849fd96fb"
+    },
+    "no_rate_history_HGB_73.joblib": {
+      "path": "data/final_ablations_v1/no_rate_history_HGB_73.joblib",
+      "sha256": "7fa6a3ea04b33719022f96b94dbffa66e988367373d603894f4281cb0462f4ac"
+    },
+    "no_rate_history_HGB_73_calibration_scores.npz": {
+      "path": "data/final_ablations_v1/no_rate_history_HGB_73_calibration_scores.npz",
+      "sha256": "d4886db71c90ee601e00e632e6e6a3622852492a9d1449d526c7d96c3377273c"
+    },
+    "no_rate_history_AE_73.joblib": {
+      "path": "data/final_ablations_v1/no_rate_history_AE_73.joblib",
+      "sha256": "8e9499470b8ed1ac5340ac55d44066f5505465c6bf1a70ef951c95f276543196"
+    },
+    "no_rate_history_AE_73_calibration_scores.npz": {
+      "path": "data/final_ablations_v1/no_rate_history_AE_73_calibration_scores.npz",
+      "sha256": "5ced5e559a98f9260f3a70ab21fe12f1c99329af397175ca132827c09dbd1059"
+    },
+    "no_rate_history_HGB_101.joblib": {
+      "path": "data/final_ablations_v1/no_rate_history_HGB_101.joblib",
+      "sha256": "c9569a7b901d434f0129fa45cdf79f23f6b8de31c8ffa68a6b1701f886b57d4e"
+    },
+    "no_rate_history_HGB_101_calibration_scores.npz": {
+      "path": "data/final_ablations_v1/no_rate_history_HGB_101_calibration_scores.npz",
+      "sha256": "d4886db71c90ee601e00e632e6e6a3622852492a9d1449d526c7d96c3377273c"
+    },
+    "no_rate_history_AE_101.joblib": {
+      "path": "data/final_ablations_v1/no_rate_history_AE_101.joblib",
+      "sha256": "f11ea61c2371d2a36f4652889f1e93f63552acbc96e3cdc38e5117c60d5ee6ad"
+    },
+    "no_rate_history_AE_101_calibration_scores.npz": {
+      "path": "data/final_ablations_v1/no_rate_history_AE_101_calibration_scores.npz",
+      "sha256": "6015a781650b79c669b86c467eaec0e6ff850d266486d4e7fd94bd1e90ed483d"
+    },
+    "no_tcp_state_iat_HGB_7.joblib": {
+      "path": "data/final_ablations_v1/no_tcp_state_iat_HGB_7.joblib",
+      "sha256": "3188952a2c54ab5da920409b52ad0d969e753dd5aa6070466530aa0ceae7ae8f"
+    },
+    "no_tcp_state_iat_HGB_7_calibration_scores.npz": {
+      "path": "data/final_ablations_v1/no_tcp_state_iat_HGB_7_calibration_scores.npz",
+      "sha256": "4b98fdb989b5805cff6b4bd7804df1bfadd49cf927412b733eb1b76819b786ee"
+    },
+    "no_tcp_state_iat_AE_7.joblib": {
+      "path": "data/final_ablations_v1/no_tcp_state_iat_AE_7.joblib",
+      "sha256": "06848dea99f5136a92e0fd2b901ee946206208f7357a05185898aa073bc6647e"
+    },
+    "no_tcp_state_iat_AE_7_calibration_scores.npz": {
+      "path": "data/final_ablations_v1/no_tcp_state_iat_AE_7_calibration_scores.npz",
+      "sha256": "b2162ec383df9a108b806d3e5c7adfe6a349da56eb93e92bb867648521f15422"
+    },
+    "no_tcp_state_iat_HGB_19.joblib": {
+      "path": "data/final_ablations_v1/no_tcp_state_iat_HGB_19.joblib",
+      "sha256": "b736513caad43589f7fae5c6cb1a1d5f12a9b535d8aa593cd6da3b8db7c60180"
+    },
+    "no_tcp_state_iat_HGB_19_calibration_scores.npz": {
+      "path": "data/final_ablations_v1/no_tcp_state_iat_HGB_19_calibration_scores.npz",
+      "sha256": "4b98fdb989b5805cff6b4bd7804df1bfadd49cf927412b733eb1b76819b786ee"
+    },
+    "no_tcp_state_iat_AE_19.joblib": {
+      "path": "data/final_ablations_v1/no_tcp_state_iat_AE_19.joblib",
+      "sha256": "f28d998cba74076931416428b6cf84d21664abce9c98de23cd28ab593f8fcdff"
+    },
+    "no_tcp_state_iat_AE_19_calibration_scores.npz": {
+      "path": "data/final_ablations_v1/no_tcp_state_iat_AE_19_calibration_scores.npz",
+      "sha256": "a6c1cda118a3a2555fad6179c90cb40e8bd84ba0ea2a63fd43f494fe3654c178"
+    },
+    "no_tcp_state_iat_HGB_42.joblib": {
+      "path": "data/final_ablations_v1/no_tcp_state_iat_HGB_42.joblib",
+      "sha256": "94d0f4b465901d8c3087c1e516e2afc02a523b442b30f139d09408a2f98feeb5"
+    },
+    "no_tcp_state_iat_HGB_42_calibration_scores.npz": {
+      "path": "data/final_ablations_v1/no_tcp_state_iat_HGB_42_calibration_scores.npz",
+      "sha256": "4b98fdb989b5805cff6b4bd7804df1bfadd49cf927412b733eb1b76819b786ee"
+    },
+    "no_tcp_state_iat_AE_42.joblib": {
+      "path": "data/final_ablations_v1/no_tcp_state_iat_AE_42.joblib",
+      "sha256": "b3f310ec68729440671d76099f3215140b4b8326bd256de372f6f63ccd94427c"
+    },
+    "no_tcp_state_iat_AE_42_calibration_scores.npz": {
+      "path": "data/final_ablations_v1/no_tcp_state_iat_AE_42_calibration_scores.npz",
+      "sha256": "d53f7db110c4586931080414c56f72a39055b3fd03598899e72f5c912f6b4074"
+    },
+    "no_tcp_state_iat_HGB_73.joblib": {
+      "path": "data/final_ablations_v1/no_tcp_state_iat_HGB_73.joblib",
+      "sha256": "0b4f75229293612d1da66a07a5427bd1412a81368042d14394cdc2186f15c6be"
+    },
+    "no_tcp_state_iat_HGB_73_calibration_scores.npz": {
+      "path": "data/final_ablations_v1/no_tcp_state_iat_HGB_73_calibration_scores.npz",
+      "sha256": "4b98fdb989b5805cff6b4bd7804df1bfadd49cf927412b733eb1b76819b786ee"
+    },
+    "no_tcp_state_iat_AE_73.joblib": {
+      "path": "data/final_ablations_v1/no_tcp_state_iat_AE_73.joblib",
+      "sha256": "21be2630311433d5f80083e9872386bf9d54f5ca1e476597ecee0abb8a1fe065"
+    },
+    "no_tcp_state_iat_AE_73_calibration_scores.npz": {
+      "path": "data/final_ablations_v1/no_tcp_state_iat_AE_73_calibration_scores.npz",
+      "sha256": "42e9dd28223fccd13d4c1d10f4085fc623520c19225f0d7756daafeb4c6dd62c"
+    },
+    "no_tcp_state_iat_HGB_101.joblib": {
+      "path": "data/final_ablations_v1/no_tcp_state_iat_HGB_101.joblib",
+      "sha256": "a26c24cdb204d85d96479e5cfcd1216a5802473af7599a6e79284e4f7c2d3520"
+    },
+    "no_tcp_state_iat_HGB_101_calibration_scores.npz": {
+      "path": "data/final_ablations_v1/no_tcp_state_iat_HGB_101_calibration_scores.npz",
+      "sha256": "4b98fdb989b5805cff6b4bd7804df1bfadd49cf927412b733eb1b76819b786ee"
+    },
+    "no_tcp_state_iat_AE_101.joblib": {
+      "path": "data/final_ablations_v1/no_tcp_state_iat_AE_101.joblib",
+      "sha256": "57ac364762aa3a329a2ecc567ae4ea9d062b3c268b9585e10abeaa9fc90282c5"
+    },
+    "no_tcp_state_iat_AE_101_calibration_scores.npz": {
+      "path": "data/final_ablations_v1/no_tcp_state_iat_AE_101_calibration_scores.npz",
+      "sha256": "47a8eff286a1b7e3e6d147dd172748ce91d7bd12e52ab864e5ad46cda91b6493"
+    },
+    "no_hgb_class_weights_HGB_7.joblib": {
+      "path": "data/final_ablations_v1/no_hgb_class_weights_HGB_7.joblib",
+      "sha256": "eb9542953474d1fafa3536fac9a0c03f6ef449cd019e5aa209998818ba523a10"
+    },
+    "no_hgb_class_weights_HGB_7_calibration_scores.npz": {
+      "path": "data/final_ablations_v1/no_hgb_class_weights_HGB_7_calibration_scores.npz",
+      "sha256": "4f726575bb67758ee9c12ee9b93c073006f6e203e5d7ede48e1f54fdde9a925f"
+    },
+    "no_hgb_class_weights_AE_7_calibration_scores.npz": {
+      "path": "data/final_ablations_v1/no_hgb_class_weights_AE_7_calibration_scores.npz",
+      "sha256": "64570e5746b0ef4438e72769e463c8ecaedce765cd75bf9f2b150da88f8aff32"
+    },
+    "no_hgb_class_weights_HGB_19.joblib": {
+      "path": "data/final_ablations_v1/no_hgb_class_weights_HGB_19.joblib",
+      "sha256": "1cc36e07b681dd51d60679aec7c66e439a6acb98f4bdc47854668c82be9f5bea"
+    },
+    "no_hgb_class_weights_HGB_19_calibration_scores.npz": {
+      "path": "data/final_ablations_v1/no_hgb_class_weights_HGB_19_calibration_scores.npz",
+      "sha256": "4f726575bb67758ee9c12ee9b93c073006f6e203e5d7ede48e1f54fdde9a925f"
+    },
+    "no_hgb_class_weights_AE_19_calibration_scores.npz": {
+      "path": "data/final_ablations_v1/no_hgb_class_weights_AE_19_calibration_scores.npz",
+      "sha256": "ecf8542f41e654cbda87ced39e59a5d305b5831c46e39c348842b3ba337020fc"
+    },
+    "no_hgb_class_weights_HGB_42.joblib": {
+      "path": "data/final_ablations_v1/no_hgb_class_weights_HGB_42.joblib",
+      "sha256": "5c9c02d1a8c6dd65a570f6ca24c6daef33e1c5bda5bfd917aadb37ba60ce67e4"
+    },
+    "no_hgb_class_weights_HGB_42_calibration_scores.npz": {
+      "path": "data/final_ablations_v1/no_hgb_class_weights_HGB_42_calibration_scores.npz",
+      "sha256": "4f726575bb67758ee9c12ee9b93c073006f6e203e5d7ede48e1f54fdde9a925f"
+    },
+    "no_hgb_class_weights_AE_42_calibration_scores.npz": {
+      "path": "data/final_ablations_v1/no_hgb_class_weights_AE_42_calibration_scores.npz",
+      "sha256": "bacd76f8652f4157ae48be1e1977032b2445dd6589718976cfb8d407a27951e1"
+    },
+    "no_hgb_class_weights_HGB_73.joblib": {
+      "path": "data/final_ablations_v1/no_hgb_class_weights_HGB_73.joblib",
+      "sha256": "a1f52e4d4820577c97470f50d3e1a3929b7a3e61fb9e2d5b328b44b3b8b79881"
+    },
+    "no_hgb_class_weights_HGB_73_calibration_scores.npz": {
+      "path": "data/final_ablations_v1/no_hgb_class_weights_HGB_73_calibration_scores.npz",
+      "sha256": "4f726575bb67758ee9c12ee9b93c073006f6e203e5d7ede48e1f54fdde9a925f"
+    },
+    "no_hgb_class_weights_AE_73_calibration_scores.npz": {
+      "path": "data/final_ablations_v1/no_hgb_class_weights_AE_73_calibration_scores.npz",
+      "sha256": "eedb03895291c5418f260ee0692efe9ca286a48e69d6d085f1db4492c5b06bae"
+    },
+    "no_hgb_class_weights_HGB_101.joblib": {
+      "path": "data/final_ablations_v1/no_hgb_class_weights_HGB_101.joblib",
+      "sha256": "b1866c8688135eb63cf54f4a83e418338a7bba91dfe906c3fc956d3b08a08dc8"
+    },
+    "no_hgb_class_weights_HGB_101_calibration_scores.npz": {
+      "path": "data/final_ablations_v1/no_hgb_class_weights_HGB_101_calibration_scores.npz",
+      "sha256": "4f726575bb67758ee9c12ee9b93c073006f6e203e5d7ede48e1f54fdde9a925f"
+    },
+    "no_hgb_class_weights_AE_101_calibration_scores.npz": {
+      "path": "data/final_ablations_v1/no_hgb_class_weights_AE_101_calibration_scores.npz",
+      "sha256": "d935bca7e16244dda61761977ce3806bdd794cec1f189fe38f31847e3f48effa"
+    },
+    "no_persistence_HGB_7_calibration_scores.npz": {
+      "path": "data/final_ablations_v1/no_persistence_HGB_7_calibration_scores.npz",
+      "sha256": "a5b2bfb80e5de717e928a08c926cb1578d0ee989a4129b8271acced2bf6229f4"
+    },
+    "no_persistence_AE_7_calibration_scores.npz": {
+      "path": "data/final_ablations_v1/no_persistence_AE_7_calibration_scores.npz",
+      "sha256": "64570e5746b0ef4438e72769e463c8ecaedce765cd75bf9f2b150da88f8aff32"
+    },
+    "no_persistence_HGB_19_calibration_scores.npz": {
+      "path": "data/final_ablations_v1/no_persistence_HGB_19_calibration_scores.npz",
+      "sha256": "a5b2bfb80e5de717e928a08c926cb1578d0ee989a4129b8271acced2bf6229f4"
+    },
+    "no_persistence_AE_19_calibration_scores.npz": {
+      "path": "data/final_ablations_v1/no_persistence_AE_19_calibration_scores.npz",
+      "sha256": "ecf8542f41e654cbda87ced39e59a5d305b5831c46e39c348842b3ba337020fc"
+    },
+    "no_persistence_HGB_42_calibration_scores.npz": {
+      "path": "data/final_ablations_v1/no_persistence_HGB_42_calibration_scores.npz",
+      "sha256": "a5b2bfb80e5de717e928a08c926cb1578d0ee989a4129b8271acced2bf6229f4"
+    },
+    "no_persistence_AE_42_calibration_scores.npz": {
+      "path": "data/final_ablations_v1/no_persistence_AE_42_calibration_scores.npz",
+      "sha256": "bacd76f8652f4157ae48be1e1977032b2445dd6589718976cfb8d407a27951e1"
+    },
+    "no_persistence_HGB_73_calibration_scores.npz": {
+      "path": "data/final_ablations_v1/no_persistence_HGB_73_calibration_scores.npz",
+      "sha256": "a5b2bfb80e5de717e928a08c926cb1578d0ee989a4129b8271acced2bf6229f4"
+    },
+    "no_persistence_AE_73_calibration_scores.npz": {
+      "path": "data/final_ablations_v1/no_persistence_AE_73_calibration_scores.npz",
+      "sha256": "eedb03895291c5418f260ee0692efe9ca286a48e69d6d085f1db4492c5b06bae"
+    },
+    "no_persistence_HGB_101_calibration_scores.npz": {
+      "path": "data/final_ablations_v1/no_persistence_HGB_101_calibration_scores.npz",
+      "sha256": "a5b2bfb80e5de717e928a08c926cb1578d0ee989a4129b8271acced2bf6229f4"
+    },
+    "no_persistence_AE_101_calibration_scores.npz": {
+      "path": "data/final_ablations_v1/no_persistence_AE_101_calibration_scores.npz",
+      "sha256": "d935bca7e16244dda61761977ce3806bdd794cec1f189fe38f31847e3f48effa"
+    }
+  },
+  "operating_points": [
+    {
+      "variant": "no_rate_history",
+      "method": "HGB",
+      "seed": 7,
+      "k": 1,
+      "h": 1,
+      "threshold": 0.024032704749811333,
+      "C2": {
+        "overall": {
+          "eligible_windows": 962,
+          "false_positive_windows": 0,
+          "fpr": 0.0,
+          "allowed_false_positive_windows": 9
+        },
+        "stratum:ordinary": {
+          "eligible_windows": 484,
+          "false_positive_windows": 0,
+          "fpr": 0.0,
+          "allowed_false_positive_windows": 4
+        },
+        "condition:public_http": {
+          "eligible_windows": 246,
+          "false_positive_windows": 0,
+          "fpr": 0.0,
+          "allowed_false_positive_windows": 2
+        },
+        "condition:ordinary": {
+          "eligible_windows": 58,
+          "false_positive_windows": 0,
+          "fpr": 0.0,
+          "allowed_false_positive_windows": 0
+        },
+        "stratum:stress": {
+          "eligible_windows": 478,
+          "false_positive_windows": 0,
+          "fpr": 0.0,
+          "allowed_false_positive_windows": 4
+        },
+        "condition:bursts": {
+          "eligible_windows": 59,
+          "false_positive_windows": 0,
+          "fpr": 0.0,
+          "allowed_false_positive_windows": 0
+        },
+        "condition:flash": {
+          "eligible_windows": 59,
+          "false_positive_windows": 0,
+          "fpr": 0.0,
+          "allowed_false_positive_windows": 0
+        },
+        "condition:mixed_keepalive": {
+          "eligible_windows": 180,
+          "false_positive_windows": 0,
+          "fpr": 0.0,
+          "allowed_false_positive_windows": 1
+        },
+        "condition:long_download": {
+          "eligible_windows": 180,
+          "false_positive_windows": 0,
+          "fpr": 0.0,
+          "allowed_false_positive_windows": 1
+        },
+        "condition:congested_mixed": {
+          "eligible_windows": 180,
+          "false_positive_windows": 0,
+          "fpr": 0.0,
+          "allowed_false_positive_windows": 1
+        }
+      },
+      "components": {
+        "HGB": {
+          "path": "data/final_ablations_v1/no_rate_history_HGB_7.joblib",
+          "sha256": "4977e5619f40b13e1b8dca69ef0dd193cb3fb9e9e86fb77557fbd49e5455420a",
+          "features": [
+            "packets_in",
+            "packets_out",
+            "bytes_in",
+            "bytes_out",
+            "syn_in",
+            "ack_in",
+            "rst_in",
+            "synack_out",
+            "handshakes_completed",
+            "new_connections",
+            "distinct_sources",
+            "packet_length_mean",
+            "packet_length_std",
+            "inbound_iat_mean",
+            "inbound_iat_std",
+            "active_connections",
+            "known_age_connections",
+            "unknown_age_connections",
+            "active_age_mean",
+            "active_age_max",
+            "uncompleted_fraction",
+            "handshake_to_syn_ratio",
+            "in_out_byte_ratio"
+          ]
+        }
+      }
+    },
+    {
+      "variant": "no_rate_history",
+      "method": "AE",
+      "seed": 7,
+      "k": 3,
+      "h": 5,
+      "threshold": 0.08903246303768365,
+      "C2": {
+        "overall": {
+          "eligible_windows": 681,
+          "false_positive_windows": 1,
+          "fpr": 0.0014684287812041115,
+          "allowed_false_positive_windows": 6
+        },
+        "stratum:ordinary": {
+          "eligible_windows": 235,
+          "false_positive_windows": 0,
+          "fpr": 0.0,
+          "allowed_false_positive_windows": 2
+        },
+        "condition:public_http": {
+          "eligible_windows": 13,
+          "false_positive_windows": 0,
+          "fpr": 0.0,
+          "allowed_false_positive_windows": 0
+        },
+        "condition:ordinary": {
+          "eligible_windows": 54,
+          "false_positive_windows": 0,
+          "fpr": 0.0,
+          "allowed_false_positive_windows": 0
+        },
+        "stratum:stress": {
+          "eligible_windows": 446,
+          "false_positive_windows": 1,
+          "fpr": 0.002242152466367713,
+          "allowed_false_positive_windows": 4
+        },
+        "condition:bursts": {
+          "eligible_windows": 55,
+          "false_positive_windows": 0,
+          "fpr": 0.0,
+          "allowed_false_positive_windows": 0
+        },
+        "condition:flash": {
+          "eligible_windows": 55,
+          "false_positive_windows": 0,
+          "fpr": 0.0,
+          "allowed_false_positive_windows": 0
+        },
+        "condition:mixed_keepalive": {
+          "eligible_windows": 168,
+          "false_positive_windows": 0,
+          "fpr": 0.0,
+          "allowed_false_positive_windows": 1
+        },
+        "condition:long_download": {
+          "eligible_windows": 168,
+          "false_positive_windows": 0,
+          "fpr": 0.0,
+          "allowed_false_positive_windows": 1
+        },
+        "condition:congested_mixed": {
+          "eligible_windows": 168,
+          "false_positive_windows": 1,
+          "fpr": 0.005952380952380952,
+          "allowed_false_positive_windows": 1
+        }
+      },
+      "components": {
+        "AE": {
+          "path": "data/final_ablations_v1/no_rate_history_AE_7.joblib",
+          "sha256": "de61ce28fa63d4532066efa38141cf6dcda3a77ba44a06e7d126e851a6704fea",
+          "features": [
+            "packets_in",
+            "packets_out",
+            "bytes_in",
+            "bytes_out",
+            "syn_in",
+            "ack_in",
+            "rst_in",
+            "synack_out",
+            "handshakes_completed",
+            "new_connections",
+            "distinct_sources",
+            "packet_length_mean",
+            "packet_length_std",
+            "inbound_iat_mean",
+            "inbound_iat_std",
+            "active_connections",
+            "known_age_connections",
+            "unknown_age_connections",
+            "active_age_mean",
+            "active_age_max",
+            "uncompleted_fraction",
+            "handshake_to_syn_ratio",
+            "in_out_byte_ratio"
+          ]
+        }
+      }
+    },
+    {
+      "variant": "no_rate_history",
+      "method": "hybrid",
+      "seed": 7,
+      "k": 3,
+      "h": 5,
+      "threshold": 0.9991728701406121,
+      "C2": {
+        "overall": {
+          "eligible_windows": 681,
+          "false_positive_windows": 0,
+          "fpr": 0.0,
+          "allowed_false_positive_windows": 6
+        },
+        "stratum:ordinary": {
+          "eligible_windows": 235,
+          "false_positive_windows": 0,
+          "fpr": 0.0,
+          "allowed_false_positive_windows": 2
+        },
+        "condition:public_http": {
+          "eligible_windows": 13,
+          "false_positive_windows": 0,
+          "fpr": 0.0,
+          "allowed_false_positive_windows": 0
+        },
+        "condition:ordinary": {
+          "eligible_windows": 54,
+          "false_positive_windows": 0,
+          "fpr": 0.0,
+          "allowed_false_positive_windows": 0
+        },
+        "stratum:stress": {
+          "eligible_windows": 446,
+          "false_positive_windows": 0,
+          "fpr": 0.0,
+          "allowed_false_positive_windows": 4
+        },
+        "condition:bursts": {
+          "eligible_windows": 55,
+          "false_positive_windows": 0,
+          "fpr": 0.0,
+          "allowed_false_positive_windows": 0
+        },
+        "condition:flash": {
+          "eligible_windows": 55,
+          "false_positive_windows": 0,
+          "fpr": 0.0,
+          "allowed_false_positive_windows": 0
+        },
+        "condition:mixed_keepalive": {
+          "eligible_windows": 168,
+          "false_positive_windows": 0,
+          "fpr": 0.0,
+          "allowed_false_positive_windows": 1
+        },
+        "condition:long_download": {
+          "eligible_windows": 168,
+          "false_positive_windows": 0,
+          "fpr": 0.0,
+          "allowed_false_positive_windows": 1
+        },
+        "condition:congested_mixed": {
+          "eligible_windows": 168,
+          "false_positive_windows": 0,
+          "fpr": 0.0,
+          "allowed_false_positive_windows": 1
+        }
+      },
+      "components": {
+        "HGB": {
+          "path": "data/final_ablations_v1/no_rate_history_HGB_7.joblib",
+          "sha256": "4977e5619f40b13e1b8dca69ef0dd193cb3fb9e9e86fb77557fbd49e5455420a",
+          "features": [
+            "packets_in",
+            "packets_out",
+            "bytes_in",
+            "bytes_out",
+            "syn_in",
+            "ack_in",
+            "rst_in",
+            "synack_out",
+            "handshakes_completed",
+            "new_connections",
+            "distinct_sources",
+            "packet_length_mean",
+            "packet_length_std",
+            "inbound_iat_mean",
+            "inbound_iat_std",
+            "active_connections",
+            "known_age_connections",
+            "unknown_age_connections",
+            "active_age_mean",
+            "active_age_max",
+            "uncompleted_fraction",
+            "handshake_to_syn_ratio",
+            "in_out_byte_ratio"
+          ]
+        },
+        "AE": {
+          "path": "data/final_ablations_v1/no_rate_history_AE_7.joblib",
+          "sha256": "de61ce28fa63d4532066efa38141cf6dcda3a77ba44a06e7d126e851a6704fea",
+          "features": [
+            "packets_in",
+            "packets_out",
+            "bytes_in",
+            "bytes_out",
+            "syn_in",
+            "ack_in",
+            "rst_in",
+            "synack_out",
+            "handshakes_completed",
+            "new_connections",
+            "distinct_sources",
+            "packet_length_mean",
+            "packet_length_std",
+            "inbound_iat_mean",
+            "inbound_iat_std",
+            "active_connections",
+            "known_age_connections",
+            "unknown_age_connections",
+            "active_age_mean",
+            "active_age_max",
+            "uncompleted_fraction",
+            "handshake_to_syn_ratio",
+            "in_out_byte_ratio"
+          ]
+        }
+      }
+    },
+    {
+      "variant": "no_rate_history",
+      "method": "HGB",
+      "seed": 19,
+      "k": 1,
+      "h": 1,
+      "threshold": 0.024032704749811333,
+      "C2": {
+        "overall": {
+          "eligible_windows": 962,
+          "false_positive_windows": 0,
+          "fpr": 0.0,
+          "allowed_false_positive_windows": 9
+        },
+        "stratum:ordinary": {
+          "eligible_windows": 484,
+          "false_positive_windows": 0,
+          "fpr": 0.0,
+          "allowed_false_positive_windows": 4
+        },
+        "condition:public_http": {
+          "eligible_windows": 246,
+          "false_positive_windows": 0,
+          "fpr": 0.0,
+          "allowed_false_positive_windows": 2
+        },
+        "condition:ordinary": {
+          "eligible_windows": 58,
+          "false_positive_windows": 0,
+          "fpr": 0.0,
+          "allowed_false_positive_windows": 0
+        },
+        "stratum:stress": {
+          "eligible_windows": 478,
+          "false_positive_windows": 0,
+          "fpr": 0.0,
+          "allowed_false_positive_windows": 4
+        },
+        "condition:bursts": {
+          "eligible_windows": 59,
+          "false_positive_windows": 0,
+          "fpr": 0.0,
+          "allowed_false_positive_windows": 0
+        },
+        "condition:flash": {
+          "eligible_windows": 59,
+          "false_positive_windows": 0,
+          "fpr": 0.0,
+          "allowed_false_positive_windows": 0
+        },
+        "condition:mixed_keepalive": {
+          "eligible_windows": 180,
+          "false_positive_windows": 0,
+          "fpr": 0.0,
+          "allowed_false_positive_windows": 1
+        },
+        "condition:long_download": {
+          "eligible_windows": 180,
+          "false_positive_windows": 0,
+          "fpr": 0.0,
+          "allowed_false_positive_windows": 1
+        },
+        "condition:congested_mixed": {
+          "eligible_windows": 180,
+          "false_positive_windows": 0,
+          "fpr": 0.0,
+          "allowed_false_positive_windows": 1
+        }
+      },
+      "components": {
+        "HGB": {
+          "path": "data/final_ablations_v1/no_rate_history_HGB_19.joblib",
+          "sha256": "6707e17e78144dd7e48e06617d8a6069d36969c27b14e8afb523cd0a93e14b8b",
+          "features": [
+            "packets_in",
+            "packets_out",
+            "bytes_in",
+            "bytes_out",
+            "syn_in",
+            "ack_in",
+            "rst_in",
+            "synack_out",
+            "handshakes_completed",
+            "new_connections",
+            "distinct_sources",
+            "packet_length_mean",
+            "packet_length_std",
+            "inbound_iat_mean",
+            "inbound_iat_std",
+            "active_connections",
+            "known_age_connections",
+            "unknown_age_connections",
+            "active_age_mean",
+            "active_age_max",
+            "uncompleted_fraction",
+            "handshake_to_syn_ratio",
+            "in_out_byte_ratio"
+          ]
+        }
+      }
+    },
+    {
+      "variant": "no_rate_history",
+      "method": "AE",
+      "seed": 19,
+      "k": 3,
+      "h": 5,
+      "threshold": 0.08070138010380219,
+      "C2": {
+        "overall": {
+          "eligible_windows": 681,
+          "false_positive_windows": 1,
+          "fpr": 0.0014684287812041115,
+          "allowed_false_positive_windows": 6
+        },
+        "stratum:ordinary": {
+          "eligible_windows": 235,
+          "false_positive_windows": 0,
+          "fpr": 0.0,
+          "allowed_false_positive_windows": 2
+        },
+        "condition:public_http": {
+          "eligible_windows": 13,
+          "false_positive_windows": 0,
+          "fpr": 0.0,
+          "allowed_false_positive_windows": 0
+        },
+        "condition:ordinary": {
+          "eligible_windows": 54,
+          "false_positive_windows": 0,
+          "fpr": 0.0,
+          "allowed_false_positive_windows": 0
+        },
+        "stratum:stress": {
+          "eligible_windows": 446,
+          "false_positive_windows": 1,
+          "fpr": 0.002242152466367713,
+          "allowed_false_positive_windows": 4
+        },
+        "condition:bursts": {
+          "eligible_windows": 55,
+          "false_positive_windows": 0,
+          "fpr": 0.0,
+          "allowed_false_positive_windows": 0
+        },
+        "condition:flash": {
+          "eligible_windows": 55,
+          "false_positive_windows": 0,
+          "fpr": 0.0,
+          "allowed_false_positive_windows": 0
+        },
+        "condition:mixed_keepalive": {
+          "eligible_windows": 168,
+          "false_positive_windows": 0,
+          "fpr": 0.0,
+          "allowed_false_positive_windows": 1
+        },
+        "condition:long_download": {
+          "eligible_windows": 168,
+          "false_positive_windows": 0,
+          "fpr": 0.0,
+          "allowed_false_positive_windows": 1
+        },
+        "condition:congested_mixed": {
+          "eligible_windows": 168,
+          "false_positive_windows": 1,
+          "fpr": 0.005952380952380952,
+          "allowed_false_positive_windows": 1
+        }
+      },
+      "components": {
+        "AE": {
+          "path": "data/final_ablations_v1/no_rate_history_AE_19.joblib",
+          "sha256": "f0fca8a596a5be94d5dfb00645f2d4aa1bb9db75dfb6421de1208c39b06b7729",
+          "features": [
+            "packets_in",
+            "packets_out",
+            "bytes_in",
+            "bytes_out",
+            "syn_in",
+            "ack_in",
+            "rst_in",
+            "synack_out",
+            "handshakes_completed",
+            "new_connections",
+            "distinct_sources",
+            "packet_length_mean",
+            "packet_length_std",
+            "inbound_iat_mean",
+            "inbound_iat_std",
+            "active_connections",
+            "known_age_connections",
+            "unknown_age_connections",
+            "active_age_mean",
+            "active_age_max",
+            "uncompleted_fraction",
+            "handshake_to_syn_ratio",
+            "in_out_byte_ratio"
+          ]
+        }
+      }
+    },
+    {
+      "variant": "no_rate_history",
+      "method": "hybrid",
+      "seed": 19,
+      "k": 3,
+      "h": 5,
+      "threshold": 0.9991728701406121,
+      "C2": {
+        "overall": {
+          "eligible_windows": 681,
+          "false_positive_windows": 0,
+          "fpr": 0.0,
+          "allowed_false_positive_windows": 6
+        },
+        "stratum:ordinary": {
+          "eligible_windows": 235,
+          "false_positive_windows": 0,
+          "fpr": 0.0,
+          "allowed_false_positive_windows": 2
+        },
+        "condition:public_http": {
+          "eligible_windows": 13,
+          "false_positive_windows": 0,
+          "fpr": 0.0,
+          "allowed_false_positive_windows": 0
+        },
+        "condition:ordinary": {
+          "eligible_windows": 54,
+          "false_positive_windows": 0,
+          "fpr": 0.0,
+          "allowed_false_positive_windows": 0
+        },
+        "stratum:stress": {
+          "eligible_windows": 446,
+          "false_positive_windows": 0,
+          "fpr": 0.0,
+          "allowed_false_positive_windows": 4
+        },
+        "condition:bursts": {
+          "eligible_windows": 55,
+          "false_positive_windows": 0,
+          "fpr": 0.0,
+          "allowed_false_positive_windows": 0
+        },
+        "condition:flash": {
+          "eligible_windows": 55,
+          "false_positive_windows": 0,
+          "fpr": 0.0,
+          "allowed_false_positive_windows": 0
+        },
+        "condition:mixed_keepalive": {
+          "eligible_windows": 168,
+          "false_positive_windows": 0,
+          "fpr": 0.0,
+          "allowed_false_positive_windows": 1
+        },
+        "condition:long_download": {
+          "eligible_windows": 168,
+          "false_positive_windows": 0,
+          "fpr": 0.0,
+          "allowed_false_positive_windows": 1
+        },
+        "condition:congested_mixed": {
+          "eligible_windows": 168,
+          "false_positive_windows": 0,
+          "fpr": 0.0,
+          "allowed_false_positive_windows": 1
+        }
+      },
+      "components": {
+        "HGB": {
+          "path": "data/final_ablations_v1/no_rate_history_HGB_19.joblib",
+          "sha256": "6707e17e78144dd7e48e06617d8a6069d36969c27b14e8afb523cd0a93e14b8b",
+          "features": [
+            "packets_in",
+            "packets_out",
+            "bytes_in",
+            "bytes_out",
+            "syn_in",
+            "ack_in",
+            "rst_in",
+            "synack_out",
+            "handshakes_completed",
+            "new_connections",
+            "distinct_sources",
+            "packet_length_mean",
+            "packet_length_std",
+            "inbound_iat_mean",
+            "inbound_iat_std",
+            "active_connections",
+            "known_age_connections",
+            "unknown_age_connections",
+            "active_age_mean",
+            "active_age_max",
+            "uncompleted_fraction",
+            "handshake_to_syn_ratio",
+            "in_out_byte_ratio"
+          ]
+        },
+        "AE": {
+          "path": "data/final_ablations_v1/no_rate_history_AE_19.joblib",
+          "sha256": "f0fca8a596a5be94d5dfb00645f2d4aa1bb9db75dfb6421de1208c39b06b7729",
+          "features": [
+            "packets_in",
+            "packets_out",
+            "bytes_in",
+            "bytes_out",
+            "syn_in",
+            "ack_in",
+            "rst_in",
+            "synack_out",
+            "handshakes_completed",
+            "new_connections",
+            "distinct_sources",
+            "packet_length_mean",
+            "packet_length_std",
+            "inbound_iat_mean",
+            "inbound_iat_std",
+            "active_connections",
+            "known_age_connections",
+            "unknown_age_connections",
+            "active_age_mean",
+            "active_age_max",
+            "uncompleted_fraction",
+            "handshake_to_syn_ratio",
+            "in_out_byte_ratio"
+          ]
+        }
+      }
+    },
+    {
+      "variant": "no_rate_history",
+      "method": "HGB",
+      "seed": 42,
+      "k": 1,
+      "h": 1,
+      "threshold": 0.024032704749811333,
+      "C2": {
+        "overall": {
+          "eligible_windows": 962,
+          "false_positive_windows": 0,
+          "fpr": 0.0,
+          "allowed_false_positive_windows": 9
+        },
+        "stratum:ordinary": {
+          "eligible_windows": 484,
+          "false_positive_windows": 0,
+          "fpr": 0.0,
+          "allowed_false_positive_windows": 4
+        },
+        "condition:public_http": {
+          "eligible_windows": 246,
+          "false_positive_windows": 0,
+          "fpr": 0.0,
+          "allowed_false_positive_windows": 2
+        },
+        "condition:ordinary": {
+          "eligible_windows": 58,
+          "false_positive_windows": 0,
+          "fpr": 0.0,
+          "allowed_false_positive_windows": 0
+        },
+        "stratum:stress": {
+          "eligible_windows": 478,
+          "false_positive_windows": 0,
+          "fpr": 0.0,
+          "allowed_false_positive_windows": 4
+        },
+        "condition:bursts": {
+          "eligible_windows": 59,
+          "false_positive_windows": 0,
+          "fpr": 0.0,
+          "allowed_false_positive_windows": 0
+        },
+        "condition:flash": {
+          "eligible_windows": 59,
+          "false_positive_windows": 0,
+          "fpr": 0.0,
+          "allowed_false_positive_windows": 0
+        },
+        "condition:mixed_keepalive": {
+          "eligible_windows": 180,
+          "false_positive_windows": 0,
+          "fpr": 0.0,
+          "allowed_false_positive_windows": 1
+        },
+        "condition:long_download": {
+          "eligible_windows": 180,
+          "false_positive_windows": 0,
+          "fpr": 0.0,
+          "allowed_false_positive_windows": 1
+        },
+        "condition:congested_mixed": {
+          "eligible_windows": 180,
+          "false_positive_windows": 0,
+          "fpr": 0.0,
+          "allowed_false_positive_windows": 1
+        }
+      },
+      "components": {
+        "HGB": {
+          "path": "data/final_ablations_v1/no_rate_history_HGB_42.joblib",
+          "sha256": "e46a120780907651971acb6b5b84774ec854f9db674c2dc5c30d3ddbf41b9bb4",
+          "features": [
+            "packets_in",
+            "packets_out",
+            "bytes_in",
+            "bytes_out",
+            "syn_in",
+            "ack_in",
+            "rst_in",
+            "synack_out",
+            "handshakes_completed",
+            "new_connections",
+            "distinct_sources",
+            "packet_length_mean",
+            "packet_length_std",
+            "inbound_iat_mean",
+            "inbound_iat_std",
+            "active_connections",
+            "known_age_connections",
+            "unknown_age_connections",
+            "active_age_mean",
+            "active_age_max",
+            "uncompleted_fraction",
+            "handshake_to_syn_ratio",
+            "in_out_byte_ratio"
+          ]
+        }
+      }
+    },
+    {
+      "variant": "no_rate_history",
+      "method": "AE",
+      "seed": 42,
+      "k": 3,
+      "h": 5,
+      "threshold": 0.10295016936969707,
+      "C2": {
+        "overall": {
+          "eligible_windows": 681,
+          "false_positive_windows": 0,
+          "fpr": 0.0,
+          "allowed_false_positive_windows": 6
+        },
+        "stratum:ordinary": {
+          "eligible_windows": 235,
+          "false_positive_windows": 0,
+          "fpr": 0.0,
+          "allowed_false_positive_windows": 2
+        },
+        "condition:public_http": {
+          "eligible_windows": 13,
+          "false_positive_windows": 0,
+          "fpr": 0.0,
+          "allowed_false_positive_windows": 0
+        },
+        "condition:ordinary": {
+          "eligible_windows": 54,
+          "false_positive_windows": 0,
+          "fpr": 0.0,
+          "allowed_false_positive_windows": 0
+        },
+        "stratum:stress": {
+          "eligible_windows": 446,
+          "false_positive_windows": 0,
+          "fpr": 0.0,
+          "allowed_false_positive_windows": 4
+        },
+        "condition:bursts": {
+          "eligible_windows": 55,
+          "false_positive_windows": 0,
+          "fpr": 0.0,
+          "allowed_false_positive_windows": 0
+        },
+        "condition:flash": {
+          "eligible_windows": 55,
+          "false_positive_windows": 0,
+          "fpr": 0.0,
+          "allowed_false_positive_windows": 0
+        },
+        "condition:mixed_keepalive": {
+          "eligible_windows": 168,
+          "false_positive_windows": 0,
+          "fpr": 0.0,
+          "allowed_false_positive_windows": 1
+        },
+        "condition:long_download": {
+          "eligible_windows": 168,
+          "false_positive_windows": 0,
+          "fpr": 0.0,
+          "allowed_false_positive_windows": 1
+        },
+        "condition:congested_mixed": {
+          "eligible_windows": 168,
+          "false_positive_windows": 0,
+          "fpr": 0.0,
+          "allowed_false_positive_windows": 1
+        }
+      },
+      "components": {
+        "AE": {
+          "path": "data/final_ablations_v1/no_rate_history_AE_42.joblib",
+          "sha256": "43e18021ce18d27f773a2de14933aa13411f6fef2ca7d9eec5d1c56c338e8dc9",
+          "features": [
+            "packets_in",
+            "packets_out",
+            "bytes_in",
+            "bytes_out",
+            "syn_in",
+            "ack_in",
+            "rst_in",
+            "synack_out",
+            "handshakes_completed",
+            "new_connections",
+            "distinct_sources",
+            "packet_length_mean",
+            "packet_length_std",
+            "inbound_iat_mean",
+            "inbound_iat_std",
+            "active_connections",
+            "known_age_connections",
+            "unknown_age_connections",
+            "active_age_mean",
+            "active_age_max",
+            "uncompleted_fraction",
+            "handshake_to_syn_ratio",
+            "in_out_byte_ratio"
+          ]
+        }
+      }
+    },
+    {
+      "variant": "no_rate_history",
+      "method": "hybrid",
+      "seed": 42,
+      "k": 3,
+      "h": 5,
+      "threshold": 0.9991728701406121,
+      "C2": {
+        "overall": {
+          "eligible_windows": 681,
+          "false_positive_windows": 0,
+          "fpr": 0.0,
+          "allowed_false_positive_windows": 6
+        },
+        "stratum:ordinary": {
+          "eligible_windows": 235,
+          "false_positive_windows": 0,
+          "fpr": 0.0,
+          "allowed_false_positive_windows": 2
+        },
+        "condition:public_http": {
+          "eligible_windows": 13,
+          "false_positive_windows": 0,
+          "fpr": 0.0,
+          "allowed_false_positive_windows": 0
+        },
+        "condition:ordinary": {
+          "eligible_windows": 54,
+          "false_positive_windows": 0,
+          "fpr": 0.0,
+          "allowed_false_positive_windows": 0
+        },
+        "stratum:stress": {
+          "eligible_windows": 446,
+          "false_positive_windows": 0,
+          "fpr": 0.0,
+          "allowed_false_positive_windows": 4
+        },
+        "condition:bursts": {
+          "eligible_windows": 55,
+          "false_positive_windows": 0,
+          "fpr": 0.0,
+          "allowed_false_positive_windows": 0
+        },
+        "condition:flash": {
+          "eligible_windows": 55,
+          "false_positive_windows": 0,
+          "fpr": 0.0,
+          "allowed_false_positive_windows": 0
+        },
+        "condition:mixed_keepalive": {
+          "eligible_windows": 168,
+          "false_positive_windows": 0,
+          "fpr": 0.0,
+          "allowed_false_positive_windows": 1
+        },
+        "condition:long_download": {
+          "eligible_windows": 168,
+          "false_positive_windows": 0,
+          "fpr": 0.0,
+          "allowed_false_positive_windows": 1
+        },
+        "condition:congested_mixed": {
+          "eligible_windows": 168,
+          "false_positive_windows": 0,
+          "fpr": 0.0,
+          "allowed_false_positive_windows": 1
+        }
+      },
+      "components": {
+        "HGB": {
+          "path": "data/final_ablations_v1/no_rate_history_HGB_42.joblib",
+          "sha256": "e46a120780907651971acb6b5b84774ec854f9db674c2dc5c30d3ddbf41b9bb4",
+          "features": [
+            "packets_in",
+            "packets_out",
+            "bytes_in",
+            "bytes_out",
+            "syn_in",
+            "ack_in",
+            "rst_in",
+            "synack_out",
+            "handshakes_completed",
+            "new_connections",
+            "distinct_sources",
+            "packet_length_mean",
+            "packet_length_std",
+            "inbound_iat_mean",
+            "inbound_iat_std",
+            "active_connections",
+            "known_age_connections",
+            "unknown_age_connections",
+            "active_age_mean",
+            "active_age_max",
+            "uncompleted_fraction",
+            "handshake_to_syn_ratio",
+            "in_out_byte_ratio"
+          ]
+        },
+        "AE": {
+          "path": "data/final_ablations_v1/no_rate_history_AE_42.joblib",
+          "sha256": "43e18021ce18d27f773a2de14933aa13411f6fef2ca7d9eec5d1c56c338e8dc9",
+          "features": [
+            "packets_in",
+            "packets_out",
+            "bytes_in",
+            "bytes_out",
+            "syn_in",
+            "ack_in",
+            "rst_in",
+            "synack_out",
+            "handshakes_completed",
+            "new_connections",
+            "distinct_sources",
+            "packet_length_mean",
+            "packet_length_std",
+            "inbound_iat_mean",
+            "inbound_iat_std",
+            "active_connections",
+            "known_age_connections",
+            "unknown_age_connections",
+            "active_age_mean",
+            "active_age_max",
+            "uncompleted_fraction",
+            "handshake_to_syn_ratio",
+            "in_out_byte_ratio"
+          ]
+        }
+      }
+    },
+    {
+      "variant": "no_rate_history",
+      "method": "HGB",
+      "seed": 73,
+      "k": 1,
+      "h": 1,
+      "threshold": 0.024032704749811333,
+      "C2": {
+        "overall": {
+          "eligible_windows": 962,
+          "false_positive_windows": 0,
+          "fpr": 0.0,
+          "allowed_false_positive_windows": 9
+        },
+        "stratum:ordinary": {
+          "eligible_windows": 484,
+          "false_positive_windows": 0,
+          "fpr": 0.0,
+          "allowed_false_positive_windows": 4
+        },
+        "condition:public_http": {
+          "eligible_windows": 246,
+          "false_positive_windows": 0,
+          "fpr": 0.0,
+          "allowed_false_positive_windows": 2
+        },
+        "condition:ordinary": {
+          "eligible_windows": 58,
+          "false_positive_windows": 0,
+          "fpr": 0.0,
+          "allowed_false_positive_windows": 0
+        },
+        "stratum:stress": {
+          "eligible_windows": 478,
+          "false_positive_windows": 0,
+          "fpr": 0.0,
+          "allowed_false_positive_windows": 4
+        },
+        "condition:bursts": {
+          "eligible_windows": 59,
+          "false_positive_windows": 0,
+          "fpr": 0.0,
+          "allowed_false_positive_windows": 0
+        },
+        "condition:flash": {
+          "eligible_windows": 59,
+          "false_positive_windows": 0,
+          "fpr": 0.0,
+          "allowed_false_positive_windows": 0
+        },
+        "condition:mixed_keepalive": {
+          "eligible_windows": 180,
+          "false_positive_windows": 0,
+          "fpr": 0.0,
+          "allowed_false_positive_windows": 1
+        },
+        "condition:long_download": {
+          "eligible_windows": 180,
+          "false_positive_windows": 0,
+          "fpr": 0.0,
+          "allowed_false_positive_windows": 1
+        },
+        "condition:congested_mixed": {
+          "eligible_windows": 180,
+          "false_positive_windows": 0,
+          "fpr": 0.0,
+          "allowed_false_positive_windows": 1
+        }
+      },
+      "components": {
+        "HGB": {
+          "path": "data/final_ablations_v1/no_rate_history_HGB_73.joblib",
+          "sha256": "7fa6a3ea04b33719022f96b94dbffa66e988367373d603894f4281cb0462f4ac",
+          "features": [
+            "packets_in",
+            "packets_out",
+            "bytes_in",
+            "bytes_out",
+            "syn_in",
+            "ack_in",
+            "rst_in",
+            "synack_out",
+            "handshakes_completed",
+            "new_connections",
+            "distinct_sources",
+            "packet_length_mean",
+            "packet_length_std",
+            "inbound_iat_mean",
+            "inbound_iat_std",
+            "active_connections",
+            "known_age_connections",
+            "unknown_age_connections",
+            "active_age_mean",
+            "active_age_max",
+            "uncompleted_fraction",
+            "handshake_to_syn_ratio",
+            "in_out_byte_ratio"
+          ]
+        }
+      }
+    },
+    {
+      "variant": "no_rate_history",
+      "method": "AE",
+      "seed": 73,
+      "k": 3,
+      "h": 5,
+      "threshold": 0.11754049815090385,
+      "C2": {
+        "overall": {
+          "eligible_windows": 681,
+          "false_positive_windows": 0,
+          "fpr": 0.0,
+          "allowed_false_positive_windows": 6
+        },
+        "stratum:ordinary": {
+          "eligible_windows": 235,
+          "false_positive_windows": 0,
+          "fpr": 0.0,
+          "allowed_false_positive_windows": 2
+        },
+        "condition:public_http": {
+          "eligible_windows": 13,
+          "false_positive_windows": 0,
+          "fpr": 0.0,
+          "allowed_false_positive_windows": 0
+        },
+        "condition:ordinary": {
+          "eligible_windows": 54,
+          "false_positive_windows": 0,
+          "fpr": 0.0,
+          "allowed_false_positive_windows": 0
+        },
+        "stratum:stress": {
+          "eligible_windows": 446,
+          "false_positive_windows": 0,
+          "fpr": 0.0,
+          "allowed_false_positive_windows": 4
+        },
+        "condition:bursts": {
+          "eligible_windows": 55,
+          "false_positive_windows": 0,
+          "fpr": 0.0,
+          "allowed_false_positive_windows": 0
+        },
+        "condition:flash": {
+          "eligible_windows": 55,
+          "false_positive_windows": 0,
+          "fpr": 0.0,
+          "allowed_false_positive_windows": 0
+        },
+        "condition:mixed_keepalive": {
+          "eligible_windows": 168,
+          "false_positive_windows": 0,
+          "fpr": 0.0,
+          "allowed_false_positive_windows": 1
+        },
+        "condition:long_download": {
+          "eligible_windows": 168,
+          "false_positive_windows": 0,
+          "fpr": 0.0,
+          "allowed_false_positive_windows": 1
+        },
+        "condition:congested_mixed": {
+          "eligible_windows": 168,
+          "false_positive_windows": 0,
+          "fpr": 0.0,
+          "allowed_false_positive_windows": 1
+        }
+      },
+      "components": {
+        "AE": {
+          "path": "data/final_ablations_v1/no_rate_history_AE_73.joblib",
+          "sha256": "8e9499470b8ed1ac5340ac55d44066f5505465c6bf1a70ef951c95f276543196",
+          "features": [
+            "packets_in",
+            "packets_out",
+            "bytes_in",
+            "bytes_out",
+            "syn_in",
+            "ack_in",
+            "rst_in",
+            "synack_out",
+            "handshakes_completed",
+            "new_connections",
+            "distinct_sources",
+            "packet_length_mean",
+            "packet_length_std",
+            "inbound_iat_mean",
+            "inbound_iat_std",
+            "active_connections",
+            "known_age_connections",
+            "unknown_age_connections",
+            "active_age_mean",
+            "active_age_max",
+            "uncompleted_fraction",
+            "handshake_to_syn_ratio",
+            "in_out_byte_ratio"
+          ]
+        }
+      }
+    },
+    {
+      "variant": "no_rate_history",
+      "method": "hybrid",
+      "seed": 73,
+      "k": 3,
+      "h": 5,
+      "threshold": 0.9991728701406121,
+      "C2": {
+        "overall": {
+          "eligible_windows": 681,
+          "false_positive_windows": 0,
+          "fpr": 0.0,
+          "allowed_false_positive_windows": 6
+        },
+        "stratum:ordinary": {
+          "eligible_windows": 235,
+          "false_positive_windows": 0,
+          "fpr": 0.0,
+          "allowed_false_positive_windows": 2
+        },
+        "condition:public_http": {
+          "eligible_windows": 13,
+          "false_positive_windows": 0,
+          "fpr": 0.0,
+          "allowed_false_positive_windows": 0
+        },
+        "condition:ordinary": {
+          "eligible_windows": 54,
+          "false_positive_windows": 0,
+          "fpr": 0.0,
+          "allowed_false_positive_windows": 0
+        },
+        "stratum:stress": {
+          "eligible_windows": 446,
+          "false_positive_windows": 0,
+          "fpr": 0.0,
+          "allowed_false_positive_windows": 4
+        },
+        "condition:bursts": {
+          "eligible_windows": 55,
+          "false_positive_windows": 0,
+          "fpr": 0.0,
+          "allowed_false_positive_windows": 0
+        },
+        "condition:flash": {
+          "eligible_windows": 55,
+          "false_positive_windows": 0,
+          "fpr": 0.0,
+          "allowed_false_positive_windows": 0
+        },
+        "condition:mixed_keepalive": {
+          "eligible_windows": 168,
+          "false_positive_windows": 0,
+          "fpr": 0.0,
+          "allowed_false_positive_windows": 1
+        },
+        "condition:long_download": {
+          "eligible_windows": 168,
+          "false_positive_windows": 0,
+          "fpr": 0.0,
+          "allowed_false_positive_windows": 1
+        },
+        "condition:congested_mixed": {
+          "eligible_windows": 168,
+          "false_positive_windows": 0,
+          "fpr": 0.0,
+          "allowed_false_positive_windows": 1
+        }
+      },
+      "components": {
+        "HGB": {
+          "path": "data/final_ablations_v1/no_rate_history_HGB_73.joblib",
+          "sha256": "7fa6a3ea04b33719022f96b94dbffa66e988367373d603894f4281cb0462f4ac",
+          "features": [
+            "packets_in",
+            "packets_out",
+            "bytes_in",
+            "bytes_out",
+            "syn_in",
+            "ack_in",
+            "rst_in",
+            "synack_out",
+            "handshakes_completed",
+            "new_connections",
+            "distinct_sources",
+            "packet_length_mean",
+            "packet_length_std",
+            "inbound_iat_mean",
+            "inbound_iat_std",
+            "active_connections",
+            "known_age_connections",
+            "unknown_age_connections",
+            "active_age_mean",
+            "active_age_max",
+            "uncompleted_fraction",
+            "handshake_to_syn_ratio",
+            "in_out_byte_ratio"
+          ]
+        },
+        "AE": {
+          "path": "data/final_ablations_v1/no_rate_history_AE_73.joblib",
+          "sha256": "8e9499470b8ed1ac5340ac55d44066f5505465c6bf1a70ef951c95f276543196",
+          "features": [
+            "packets_in",
+            "packets_out",
+            "bytes_in",
+            "bytes_out",
+            "syn_in",
+            "ack_in",
+            "rst_in",
+            "synack_out",
+            "handshakes_completed",
+            "new_connections",
+            "distinct_sources",
+            "packet_length_mean",
+            "packet_length_std",
+            "inbound_iat_mean",
+            "inbound_iat_std",
+            "active_connections",
+            "known_age_connections",
+            "unknown_age_connections",
+            "active_age_mean",
+            "active_age_max",
+            "uncompleted_fraction",
+            "handshake_to_syn_ratio",
+            "in_out_byte_ratio"
+          ]
+        }
+      }
+    },
+    {
+      "variant": "no_rate_history",
+      "method": "HGB",
+      "seed": 101,
+      "k": 1,
+      "h": 1,
+      "threshold": 0.024032704749811333,
+      "C2": {
+        "overall": {
+          "eligible_windows": 962,
+          "false_positive_windows": 0,
+          "fpr": 0.0,
+          "allowed_false_positive_windows": 9
+        },
+        "stratum:ordinary": {
+          "eligible_windows": 484,
+          "false_positive_windows": 0,
+          "fpr": 0.0,
+          "allowed_false_positive_windows": 4
+        },
+        "condition:public_http": {
+          "eligible_windows": 246,
+          "false_positive_windows": 0,
+          "fpr": 0.0,
+          "allowed_false_positive_windows": 2
+        },
+        "condition:ordinary": {
+          "eligible_windows": 58,
+          "false_positive_windows": 0,
+          "fpr": 0.0,
+          "allowed_false_positive_windows": 0
+        },
+        "stratum:stress": {
+          "eligible_windows": 478,
+          "false_positive_windows": 0,
+          "fpr": 0.0,
+          "allowed_false_positive_windows": 4
+        },
+        "condition:bursts": {
+          "eligible_windows": 59,
+          "false_positive_windows": 0,
+          "fpr": 0.0,
+          "allowed_false_positive_windows": 0
+        },
+        "condition:flash": {
+          "eligible_windows": 59,
+          "false_positive_windows": 0,
+          "fpr": 0.0,
+          "allowed_false_positive_windows": 0
+        },
+        "condition:mixed_keepalive": {
+          "eligible_windows": 180,
+          "false_positive_windows": 0,
+          "fpr": 0.0,
+          "allowed_false_positive_windows": 1
+        },
+        "condition:long_download": {
+          "eligible_windows": 180,
+          "false_positive_windows": 0,
+          "fpr": 0.0,
+          "allowed_false_positive_windows": 1
+        },
+        "condition:congested_mixed": {
+          "eligible_windows": 180,
+          "false_positive_windows": 0,
+          "fpr": 0.0,
+          "allowed_false_positive_windows": 1
+        }
+      },
+      "components": {
+        "HGB": {
+          "path": "data/final_ablations_v1/no_rate_history_HGB_101.joblib",
+          "sha256": "c9569a7b901d434f0129fa45cdf79f23f6b8de31c8ffa68a6b1701f886b57d4e",
+          "features": [
+            "packets_in",
+            "packets_out",
+            "bytes_in",
+            "bytes_out",
+            "syn_in",
+            "ack_in",
+            "rst_in",
+            "synack_out",
+            "handshakes_completed",
+            "new_connections",
+            "distinct_sources",
+            "packet_length_mean",
+            "packet_length_std",
+            "inbound_iat_mean",
+            "inbound_iat_std",
+            "active_connections",
+            "known_age_connections",
+            "unknown_age_connections",
+            "active_age_mean",
+            "active_age_max",
+            "uncompleted_fraction",
+            "handshake_to_syn_ratio",
+            "in_out_byte_ratio"
+          ]
+        }
+      }
+    },
+    {
+      "variant": "no_rate_history",
+      "method": "AE",
+      "seed": 101,
+      "k": 3,
+      "h": 5,
+      "threshold": 0.1194237126811385,
+      "C2": {
+        "overall": {
+          "eligible_windows": 681,
+          "false_positive_windows": 0,
+          "fpr": 0.0,
+          "allowed_false_positive_windows": 6
+        },
+        "stratum:ordinary": {
+          "eligible_windows": 235,
+          "false_positive_windows": 0,
+          "fpr": 0.0,
+          "allowed_false_positive_windows": 2
+        },
+        "condition:public_http": {
+          "eligible_windows": 13,
+          "false_positive_windows": 0,
+          "fpr": 0.0,
+          "allowed_false_positive_windows": 0
+        },
+        "condition:ordinary": {
+          "eligible_windows": 54,
+          "false_positive_windows": 0,
+          "fpr": 0.0,
+          "allowed_false_positive_windows": 0
+        },
+        "stratum:stress": {
+          "eligible_windows": 446,
+          "false_positive_windows": 0,
+          "fpr": 0.0,
+          "allowed_false_positive_windows": 4
+        },
+        "condition:bursts": {
+          "eligible_windows": 55,
+          "false_positive_windows": 0,
+          "fpr": 0.0,
+          "allowed_false_positive_windows": 0
+        },
+        "condition:flash": {
+          "eligible_windows": 55,
+          "false_positive_windows": 0,
+          "fpr": 0.0,
+          "allowed_false_positive_windows": 0
+        },
+        "condition:mixed_keepalive": {
+          "eligible_windows": 168,
+          "false_positive_windows": 0,
+          "fpr": 0.0,
+          "allowed_false_positive_windows": 1
+        },
+        "condition:long_download": {
+          "eligible_windows": 168,
+          "false_positive_windows": 0,
+          "fpr": 0.0,
+          "allowed_false_positive_windows": 1
+        },
+        "condition:congested_mixed": {
+          "eligible_windows": 168,
+          "false_positive_windows": 0,
+          "fpr": 0.0,
+          "allowed_false_positive_windows": 1
+        }
+      },
+      "components": {
+        "AE": {
+          "path": "data/final_ablations_v1/no_rate_history_AE_101.joblib",
+          "sha256": "f11ea61c2371d2a36f4652889f1e93f63552acbc96e3cdc38e5117c60d5ee6ad",
+          "features": [
+            "packets_in",
+            "packets_out",
+            "bytes_in",
+            "bytes_out",
+            "syn_in",
+            "ack_in",
+            "rst_in",
+            "synack_out",
+            "handshakes_completed",
+            "new_connections",
+            "distinct_sources",
+            "packet_length_mean",
+            "packet_length_std",
+            "inbound_iat_mean",
+            "inbound_iat_std",
+            "active_connections",
+            "known_age_connections",
+            "unknown_age_connections",
+            "active_age_mean",
+            "active_age_max",
+            "uncompleted_fraction",
+            "handshake_to_syn_ratio",
+            "in_out_byte_ratio"
+          ]
+        }
+      }
+    },
+    {
+      "variant": "no_rate_history",
+      "method": "hybrid",
+      "seed": 101,
+      "k": 3,
+      "h": 5,
+      "threshold": 0.9991728701406121,
+      "C2": {
+        "overall": {
+          "eligible_windows": 681,
+          "false_positive_windows": 0,
+          "fpr": 0.0,
+          "allowed_false_positive_windows": 6
+        },
+        "stratum:ordinary": {
+          "eligible_windows": 235,
+          "false_positive_windows": 0,
+          "fpr": 0.0,
+          "allowed_false_positive_windows": 2
+        },
+        "condition:public_http": {
+          "eligible_windows": 13,
+          "false_positive_windows": 0,
+          "fpr": 0.0,
+          "allowed_false_positive_windows": 0
+        },
+        "condition:ordinary": {
+          "eligible_windows": 54,
+          "false_positive_windows": 0,
+          "fpr": 0.0,
+          "allowed_false_positive_windows": 0
+        },
+        "stratum:stress": {
+          "eligible_windows": 446,
+          "false_positive_windows": 0,
+          "fpr": 0.0,
+          "allowed_false_positive_windows": 4
+        },
+        "condition:bursts": {
+          "eligible_windows": 55,
+          "false_positive_windows": 0,
+          "fpr": 0.0,
+          "allowed_false_positive_windows": 0
+        },
+        "condition:flash": {
+          "eligible_windows": 55,
+          "false_positive_windows": 0,
+          "fpr": 0.0,
+          "allowed_false_positive_windows": 0
+        },
+        "condition:mixed_keepalive": {
+          "eligible_windows": 168,
+          "false_positive_windows": 0,
+          "fpr": 0.0,
+          "allowed_false_positive_windows": 1
+        },
+        "condition:long_download": {
+          "eligible_windows": 168,
+          "false_positive_windows": 0,
+          "fpr": 0.0,
+          "allowed_false_positive_windows": 1
+        },
+        "condition:congested_mixed": {
+          "eligible_windows": 168,
+          "false_positive_windows": 0,
+          "fpr": 0.0,
+          "allowed_false_positive_windows": 1
+        }
+      },
+      "components": {
+        "HGB": {
+          "path": "data/final_ablations_v1/no_rate_history_HGB_101.joblib",
+          "sha256": "c9569a7b901d434f0129fa45cdf79f23f6b8de31c8ffa68a6b1701f886b57d4e",
+          "features": [
+            "packets_in",
+            "packets_out",
+            "bytes_in",
+            "bytes_out",
+            "syn_in",
+            "ack_in",
+            "rst_in",
+            "synack_out",
+            "handshakes_completed",
+            "new_connections",
+            "distinct_sources",
+            "packet_length_mean",
+            "packet_length_std",
+            "inbound_iat_mean",
+            "inbound_iat_std",
+            "active_connections",
+            "known_age_connections",
+            "unknown_age_connections",
+            "active_age_mean",
+            "active_age_max",
+            "uncompleted_fraction",
+            "handshake_to_syn_ratio",
+            "in_out_byte_ratio"
+          ]
+        },
+        "AE": {
+          "path": "data/final_ablations_v1/no_rate_history_AE_101.joblib",
+          "sha256": "f11ea61c2371d2a36f4652889f1e93f63552acbc96e3cdc38e5117c60d5ee6ad",
+          "features": [
+            "packets_in",
+            "packets_out",
+            "bytes_in",
+            "bytes_out",
+            "syn_in",
+            "ack_in",
+            "rst_in",
+            "synack_out",
+            "handshakes_completed",
+            "new_connections",
+            "distinct_sources",
+            "packet_length_mean",
+            "packet_length_std",
+            "inbound_iat_mean",
+            "inbound_iat_std",
+            "active_connections",
+            "known_age_connections",
+            "unknown_age_connections",
+            "active_age_mean",
+            "active_age_max",
+            "uncompleted_fraction",
+            "handshake_to_syn_ratio",
+            "in_out_byte_ratio"
+          ]
+        }
+      }
+    },
+    {
+      "variant": "no_tcp_state_iat",
+      "method": "HGB",
+      "seed": 7,
+      "k": 1,
+      "h": 1,
+      "threshold": 4.4402553108909205e-05,
+      "C2": {
+        "overall": {
+          "eligible_windows": 962,
+          "false_positive_windows": 1,
+          "fpr": 0.0010395010395010396,
+          "allowed_false_positive_windows": 9
+        },
+        "stratum:ordinary": {
+          "eligible_windows": 484,
+          "false_positive_windows": 1,
+          "fpr": 0.002066115702479339,
+          "allowed_false_positive_windows": 4
+        },
+        "condition:public_http": {
+          "eligible_windows": 246,
+          "false_positive_windows": 0,
+          "fpr": 0.0,
+          "allowed_false_positive_windows": 2
+        },
+        "condition:ordinary": {
+          "eligible_windows": 58,
+          "false_positive_windows": 0,
+          "fpr": 0.0,
+          "allowed_false_positive_windows": 0
+        },
+        "stratum:stress": {
+          "eligible_windows": 478,
+          "false_positive_windows": 0,
+          "fpr": 0.0,
+          "allowed_false_positive_windows": 4
+        },
+        "condition:bursts": {
+          "eligible_windows": 59,
+          "false_positive_windows": 0,
+          "fpr": 0.0,
+          "allowed_false_positive_windows": 0
+        },
+        "condition:flash": {
+          "eligible_windows": 59,
+          "false_positive_windows": 0,
+          "fpr": 0.0,
+          "allowed_false_positive_windows": 0
+        },
+        "condition:mixed_keepalive": {
+          "eligible_windows": 180,
+          "false_positive_windows": 1,
+          "fpr": 0.005555555555555556,
+          "allowed_false_positive_windows": 1
+        },
+        "condition:long_download": {
+          "eligible_windows": 180,
+          "false_positive_windows": 0,
+          "fpr": 0.0,
+          "allowed_false_positive_windows": 1
+        },
+        "condition:congested_mixed": {
+          "eligible_windows": 180,
+          "false_positive_windows": 0,
+          "fpr": 0.0,
+          "allowed_false_positive_windows": 1
+        }
+      },
+      "components": {
+        "HGB": {
+          "path": "data/final_ablations_v1/no_tcp_state_iat_HGB_7.joblib",
+          "sha256": "3188952a2c54ab5da920409b52ad0d969e753dd5aa6070466530aa0ceae7ae8f",
+          "features": [
+            "packets_in",
+            "packets_out",
+            "bytes_in",
+            "bytes_out",
+            "distinct_sources",
+            "packet_length_mean",
+            "packet_length_std",
+            "in_out_byte_ratio",
+            "packet_rate_change",
+            "packets_in_mean_5",
+            "packets_in_std_5",
+            "packets_in_mean_10",
+            "packets_in_std_10",
+            "packets_in_mean_20",
+            "packets_in_std_20"
+          ]
+        }
+      }
+    },
+    {
+      "variant": "no_tcp_state_iat",
+      "method": "AE",
+      "seed": 7,
+      "k": 3,
+      "h": 5,
+      "threshold": 0.0853257842621128,
+      "C2": {
+        "overall": {
+          "eligible_windows": 681,
+          "false_positive_windows": 0,
+          "fpr": 0.0,
+          "allowed_false_positive_windows": 6
+        },
+        "stratum:ordinary": {
+          "eligible_windows": 235,
+          "false_positive_windows": 0,
+          "fpr": 0.0,
+          "allowed_false_positive_windows": 2
+        },
+        "condition:public_http": {
+          "eligible_windows": 13,
+          "false_positive_windows": 0,
+          "fpr": 0.0,
+          "allowed_false_positive_windows": 0
+        },
+        "condition:ordinary": {
+          "eligible_windows": 54,
+          "false_positive_windows": 0,
+          "fpr": 0.0,
+          "allowed_false_positive_windows": 0
+        },
+        "stratum:stress": {
+          "eligible_windows": 446,
+          "false_positive_windows": 0,
+          "fpr": 0.0,
+          "allowed_false_positive_windows": 4
+        },
+        "condition:bursts": {
+          "eligible_windows": 55,
+          "false_positive_windows": 0,
+          "fpr": 0.0,
+          "allowed_false_positive_windows": 0
+        },
+        "condition:flash": {
+          "eligible_windows": 55,
+          "false_positive_windows": 0,
+          "fpr": 0.0,
+          "allowed_false_positive_windows": 0
+        },
+        "condition:mixed_keepalive": {
+          "eligible_windows": 168,
+          "false_positive_windows": 0,
+          "fpr": 0.0,
+          "allowed_false_positive_windows": 1
+        },
+        "condition:long_download": {
+          "eligible_windows": 168,
+          "false_positive_windows": 0,
+          "fpr": 0.0,
+          "allowed_false_positive_windows": 1
+        },
+        "condition:congested_mixed": {
+          "eligible_windows": 168,
+          "false_positive_windows": 0,
+          "fpr": 0.0,
+          "allowed_false_positive_windows": 1
+        }
+      },
+      "components": {
+        "AE": {
+          "path": "data/final_ablations_v1/no_tcp_state_iat_AE_7.joblib",
+          "sha256": "06848dea99f5136a92e0fd2b901ee946206208f7357a05185898aa073bc6647e",
+          "features": [
+            "packets_in",
+            "packets_out",
+            "bytes_in",
+            "bytes_out",
+            "distinct_sources",
+            "packet_length_mean",
+            "packet_length_std",
+            "in_out_byte_ratio",
+            "packet_rate_change",
+            "packets_in_mean_5",
+            "packets_in_std_5",
+            "packets_in_mean_10",
+            "packets_in_std_10",
+            "packets_in_mean_20",
+            "packets_in_std_20"
+          ]
+        }
+      }
+    },
+    {
+      "variant": "no_tcp_state_iat",
+      "method": "hybrid",
+      "seed": 7,
+      "k": 3,
+      "h": 5,
+      "threshold": 0.9834574028122415,
+      "C2": {
+        "overall": {
+          "eligible_windows": 681,
+          "false_positive_windows": 0,
+          "fpr": 0.0,
+          "allowed_false_positive_windows": 6
+        },
+        "stratum:ordinary": {
+          "eligible_windows": 235,
+          "false_positive_windows": 0,
+          "fpr": 0.0,
+          "allowed_false_positive_windows": 2
+        },
+        "condition:public_http": {
+          "eligible_windows": 13,
+          "false_positive_windows": 0,
+          "fpr": 0.0,
+          "allowed_false_positive_windows": 0
+        },
+        "condition:ordinary": {
+          "eligible_windows": 54,
+          "false_positive_windows": 0,
+          "fpr": 0.0,
+          "allowed_false_positive_windows": 0
+        },
+        "stratum:stress": {
+          "eligible_windows": 446,
+          "false_positive_windows": 0,
+          "fpr": 0.0,
+          "allowed_false_positive_windows": 4
+        },
+        "condition:bursts": {
+          "eligible_windows": 55,
+          "false_positive_windows": 0,
+          "fpr": 0.0,
+          "allowed_false_positive_windows": 0
+        },
+        "condition:flash": {
+          "eligible_windows": 55,
+          "false_positive_windows": 0,
+          "fpr": 0.0,
+          "allowed_false_positive_windows": 0
+        },
+        "condition:mixed_keepalive": {
+          "eligible_windows": 168,
+          "false_positive_windows": 0,
+          "fpr": 0.0,
+          "allowed_false_positive_windows": 1
+        },
+        "condition:long_download": {
+          "eligible_windows": 168,
+          "false_positive_windows": 0,
+          "fpr": 0.0,
+          "allowed_false_positive_windows": 1
+        },
+        "condition:congested_mixed": {
+          "eligible_windows": 168,
+          "false_positive_windows": 0,
+          "fpr": 0.0,
+          "allowed_false_positive_windows": 1
+        }
+      },
+      "components": {
+        "HGB": {
+          "path": "data/final_ablations_v1/no_tcp_state_iat_HGB_7.joblib",
+          "sha256": "3188952a2c54ab5da920409b52ad0d969e753dd5aa6070466530aa0ceae7ae8f",
+          "features": [
+            "packets_in",
+            "packets_out",
+            "bytes_in",
+            "bytes_out",
+            "distinct_sources",
+            "packet_length_mean",
+            "packet_length_std",
+            "in_out_byte_ratio",
+            "packet_rate_change",
+            "packets_in_mean_5",
+            "packets_in_std_5",
+            "packets_in_mean_10",
+            "packets_in_std_10",
+            "packets_in_mean_20",
+            "packets_in_std_20"
+          ]
+        },
+        "AE": {
+          "path": "data/final_ablations_v1/no_tcp_state_iat_AE_7.joblib",
+          "sha256": "06848dea99f5136a92e0fd2b901ee946206208f7357a05185898aa073bc6647e",
+          "features": [
+            "packets_in",
+            "packets_out",
+            "bytes_in",
+            "bytes_out",
+            "distinct_sources",
+            "packet_length_mean",
+            "packet_length_std",
+            "in_out_byte_ratio",
+            "packet_rate_change",
+            "packets_in_mean_5",
+            "packets_in_std_5",
+            "packets_in_mean_10",
+            "packets_in_std_10",
+            "packets_in_mean_20",
+            "packets_in_std_20"
+          ]
+        }
+      }
+    },
+    {
+      "variant": "no_tcp_state_iat",
+      "method": "HGB",
+      "seed": 19,
+      "k": 1,
+      "h": 1,
+      "threshold": 4.4402553108909205e-05,
+      "C2": {
+        "overall": {
+          "eligible_windows": 962,
+          "false_positive_windows": 1,
+          "fpr": 0.0010395010395010396,
+          "allowed_false_positive_windows": 9
+        },
+        "stratum:ordinary": {
+          "eligible_windows": 484,
+          "false_positive_windows": 1,
+          "fpr": 0.002066115702479339,
+          "allowed_false_positive_windows": 4
+        },
+        "condition:public_http": {
+          "eligible_windows": 246,
+          "false_positive_windows": 0,
+          "fpr": 0.0,
+          "allowed_false_positive_windows": 2
+        },
+        "condition:ordinary": {
+          "eligible_windows": 58,
+          "false_positive_windows": 0,
+          "fpr": 0.0,
+          "allowed_false_positive_windows": 0
+        },
+        "stratum:stress": {
+          "eligible_windows": 478,
+          "false_positive_windows": 0,
+          "fpr": 0.0,
+          "allowed_false_positive_windows": 4
+        },
+        "condition:bursts": {
+          "eligible_windows": 59,
+          "false_positive_windows": 0,
+          "fpr": 0.0,
+          "allowed_false_positive_windows": 0
+        },
+        "condition:flash": {
+          "eligible_windows": 59,
+          "false_positive_windows": 0,
+          "fpr": 0.0,
+          "allowed_false_positive_windows": 0
+        },
+        "condition:mixed_keepalive": {
+          "eligible_windows": 180,
+          "false_positive_windows": 1,
+          "fpr": 0.005555555555555556,
+          "allowed_false_positive_windows": 1
+        },
+        "condition:long_download": {
+          "eligible_windows": 180,
+          "false_positive_windows": 0,
+          "fpr": 0.0,
+          "allowed_false_positive_windows": 1
+        },
+        "condition:congested_mixed": {
+          "eligible_windows": 180,
+          "false_positive_windows": 0,
+          "fpr": 0.0,
+          "allowed_false_positive_windows": 1
+        }
+      },
+      "components": {
+        "HGB": {
+          "path": "data/final_ablations_v1/no_tcp_state_iat_HGB_19.joblib",
+          "sha256": "b736513caad43589f7fae5c6cb1a1d5f12a9b535d8aa593cd6da3b8db7c60180",
+          "features": [
+            "packets_in",
+            "packets_out",
+            "bytes_in",
+            "bytes_out",
+            "distinct_sources",
+            "packet_length_mean",
+            "packet_length_std",
+            "in_out_byte_ratio",
+            "packet_rate_change",
+            "packets_in_mean_5",
+            "packets_in_std_5",
+            "packets_in_mean_10",
+            "packets_in_std_10",
+            "packets_in_mean_20",
+            "packets_in_std_20"
+          ]
+        }
+      }
+    },
+    {
+      "variant": "no_tcp_state_iat",
+      "method": "AE",
+      "seed": 19,
+      "k": 3,
+      "h": 5,
+      "threshold": 0.11779132010210798,
+      "C2": {
+        "overall": {
+          "eligible_windows": 681,
+          "false_positive_windows": 0,
+          "fpr": 0.0,
+          "allowed_false_positive_windows": 6
+        },
+        "stratum:ordinary": {
+          "eligible_windows": 235,
+          "false_positive_windows": 0,
+          "fpr": 0.0,
+          "allowed_false_positive_windows": 2
+        },
+        "condition:public_http": {
+          "eligible_windows": 13,
+          "false_positive_windows": 0,
+          "fpr": 0.0,
+          "allowed_false_positive_windows": 0
+        },
+        "condition:ordinary": {
+          "eligible_windows": 54,
+          "false_positive_windows": 0,
+          "fpr": 0.0,
+          "allowed_false_positive_windows": 0
+        },
+        "stratum:stress": {
+          "eligible_windows": 446,
+          "false_positive_windows": 0,
+          "fpr": 0.0,
+          "allowed_false_positive_windows": 4
+        },
+        "condition:bursts": {
+          "eligible_windows": 55,
+          "false_positive_windows": 0,
+          "fpr": 0.0,
+          "allowed_false_positive_windows": 0
+        },
+        "condition:flash": {
+          "eligible_windows": 55,
+          "false_positive_windows": 0,
+          "fpr": 0.0,
+          "allowed_false_positive_windows": 0
+        },
+        "condition:mixed_keepalive": {
+          "eligible_windows": 168,
+          "false_positive_windows": 0,
+          "fpr": 0.0,
+          "allowed_false_positive_windows": 1
+        },
+        "condition:long_download": {
+          "eligible_windows": 168,
+          "false_positive_windows": 0,
+          "fpr": 0.0,
+          "allowed_false_positive_windows": 1
+        },
+        "condition:congested_mixed": {
+          "eligible_windows": 168,
+          "false_positive_windows": 0,
+          "fpr": 0.0,
+          "allowed_false_positive_windows": 1
+        }
+      },
+      "components": {
+        "AE": {
+          "path": "data/final_ablations_v1/no_tcp_state_iat_AE_19.joblib",
+          "sha256": "f28d998cba74076931416428b6cf84d21664abce9c98de23cd28ab593f8fcdff",
+          "features": [
+            "packets_in",
+            "packets_out",
+            "bytes_in",
+            "bytes_out",
+            "distinct_sources",
+            "packet_length_mean",
+            "packet_length_std",
+            "in_out_byte_ratio",
+            "packet_rate_change",
+            "packets_in_mean_5",
+            "packets_in_std_5",
+            "packets_in_mean_10",
+            "packets_in_std_10",
+            "packets_in_mean_20",
+            "packets_in_std_20"
+          ]
+        }
+      }
+    },
+    {
+      "variant": "no_tcp_state_iat",
+      "method": "hybrid",
+      "seed": 19,
+      "k": 3,
+      "h": 5,
+      "threshold": 0.9933829611248967,
+      "C2": {
+        "overall": {
+          "eligible_windows": 681,
+          "false_positive_windows": 0,
+          "fpr": 0.0,
+          "allowed_false_positive_windows": 6
+        },
+        "stratum:ordinary": {
+          "eligible_windows": 235,
+          "false_positive_windows": 0,
+          "fpr": 0.0,
+          "allowed_false_positive_windows": 2
+        },
+        "condition:public_http": {
+          "eligible_windows": 13,
+          "false_positive_windows": 0,
+          "fpr": 0.0,
+          "allowed_false_positive_windows": 0
+        },
+        "condition:ordinary": {
+          "eligible_windows": 54,
+          "false_positive_windows": 0,
+          "fpr": 0.0,
+          "allowed_false_positive_windows": 0
+        },
+        "stratum:stress": {
+          "eligible_windows": 446,
+          "false_positive_windows": 0,
+          "fpr": 0.0,
+          "allowed_false_positive_windows": 4
+        },
+        "condition:bursts": {
+          "eligible_windows": 55,
+          "false_positive_windows": 0,
+          "fpr": 0.0,
+          "allowed_false_positive_windows": 0
+        },
+        "condition:flash": {
+          "eligible_windows": 55,
+          "false_positive_windows": 0,
+          "fpr": 0.0,
+          "allowed_false_positive_windows": 0
+        },
+        "condition:mixed_keepalive": {
+          "eligible_windows": 168,
+          "false_positive_windows": 0,
+          "fpr": 0.0,
+          "allowed_false_positive_windows": 1
+        },
+        "condition:long_download": {
+          "eligible_windows": 168,
+          "false_positive_windows": 0,
+          "fpr": 0.0,
+          "allowed_false_positive_windows": 1
+        },
+        "condition:congested_mixed": {
+          "eligible_windows": 168,
+          "false_positive_windows": 0,
+          "fpr": 0.0,
+          "allowed_false_positive_windows": 1
+        }
+      },
+      "components": {
+        "HGB": {
+          "path": "data/final_ablations_v1/no_tcp_state_iat_HGB_19.joblib",
+          "sha256": "b736513caad43589f7fae5c6cb1a1d5f12a9b535d8aa593cd6da3b8db7c60180",
+          "features": [
+            "packets_in",
+            "packets_out",
+            "bytes_in",
+            "bytes_out",
+            "distinct_sources",
+            "packet_length_mean",
+            "packet_length_std",
+            "in_out_byte_ratio",
+            "packet_rate_change",
+            "packets_in_mean_5",
+            "packets_in_std_5",
+            "packets_in_mean_10",
+            "packets_in_std_10",
+            "packets_in_mean_20",
+            "packets_in_std_20"
+          ]
+        },
+        "AE": {
+          "path": "data/final_ablations_v1/no_tcp_state_iat_AE_19.joblib",
+          "sha256": "f28d998cba74076931416428b6cf84d21664abce9c98de23cd28ab593f8fcdff",
+          "features": [
+            "packets_in",
+            "packets_out",
+            "bytes_in",
+            "bytes_out",
+            "distinct_sources",
+            "packet_length_mean",
+            "packet_length_std",
+            "in_out_byte_ratio",
+            "packet_rate_change",
+            "packets_in_mean_5",
+            "packets_in_std_5",
+            "packets_in_mean_10",
+            "packets_in_std_10",
+            "packets_in_mean_20",
+            "packets_in_std_20"
+          ]
+        }
+      }
+    },
+    {
+      "variant": "no_tcp_state_iat",
+      "method": "HGB",
+      "seed": 42,
+      "k": 1,
+      "h": 1,
+      "threshold": 4.4402553108909205e-05,
+      "C2": {
+        "overall": {
+          "eligible_windows": 962,
+          "false_positive_windows": 1,
+          "fpr": 0.0010395010395010396,
+          "allowed_false_positive_windows": 9
+        },
+        "stratum:ordinary": {
+          "eligible_windows": 484,
+          "false_positive_windows": 1,
+          "fpr": 0.002066115702479339,
+          "allowed_false_positive_windows": 4
+        },
+        "condition:public_http": {
+          "eligible_windows": 246,
+          "false_positive_windows": 0,
+          "fpr": 0.0,
+          "allowed_false_positive_windows": 2
+        },
+        "condition:ordinary": {
+          "eligible_windows": 58,
+          "false_positive_windows": 0,
+          "fpr": 0.0,
+          "allowed_false_positive_windows": 0
+        },
+        "stratum:stress": {
+          "eligible_windows": 478,
+          "false_positive_windows": 0,
+          "fpr": 0.0,
+          "allowed_false_positive_windows": 4
+        },
+        "condition:bursts": {
+          "eligible_windows": 59,
+          "false_positive_windows": 0,
+          "fpr": 0.0,
+          "allowed_false_positive_windows": 0
+        },
+        "condition:flash": {
+          "eligible_windows": 59,
+          "false_positive_windows": 0,
+          "fpr": 0.0,
+          "allowed_false_positive_windows": 0
+        },
+        "condition:mixed_keepalive": {
+          "eligible_windows": 180,
+          "false_positive_windows": 1,
+          "fpr": 0.005555555555555556,
+          "allowed_false_positive_windows": 1
+        },
+        "condition:long_download": {
+          "eligible_windows": 180,
+          "false_positive_windows": 0,
+          "fpr": 0.0,
+          "allowed_false_positive_windows": 1
+        },
+        "condition:congested_mixed": {
+          "eligible_windows": 180,
+          "false_positive_windows": 0,
+          "fpr": 0.0,
+          "allowed_false_positive_windows": 1
+        }
+      },
+      "components": {
+        "HGB": {
+          "path": "data/final_ablations_v1/no_tcp_state_iat_HGB_42.joblib",
+          "sha256": "94d0f4b465901d8c3087c1e516e2afc02a523b442b30f139d09408a2f98feeb5",
+          "features": [
+            "packets_in",
+            "packets_out",
+            "bytes_in",
+            "bytes_out",
+            "distinct_sources",
+            "packet_length_mean",
+            "packet_length_std",
+            "in_out_byte_ratio",
+            "packet_rate_change",
+            "packets_in_mean_5",
+            "packets_in_std_5",
+            "packets_in_mean_10",
+            "packets_in_std_10",
+            "packets_in_mean_20",
+            "packets_in_std_20"
+          ]
+        }
+      }
+    },
+    {
+      "variant": "no_tcp_state_iat",
+      "method": "AE",
+      "seed": 42,
+      "k": 3,
+      "h": 5,
+      "threshold": 0.14314740905581894,
+      "C2": {
+        "overall": {
+          "eligible_windows": 681,
+          "false_positive_windows": 0,
+          "fpr": 0.0,
+          "allowed_false_positive_windows": 6
+        },
+        "stratum:ordinary": {
+          "eligible_windows": 235,
+          "false_positive_windows": 0,
+          "fpr": 0.0,
+          "allowed_false_positive_windows": 2
+        },
+        "condition:public_http": {
+          "eligible_windows": 13,
+          "false_positive_windows": 0,
+          "fpr": 0.0,
+          "allowed_false_positive_windows": 0
+        },
+        "condition:ordinary": {
+          "eligible_windows": 54,
+          "false_positive_windows": 0,
+          "fpr": 0.0,
+          "allowed_false_positive_windows": 0
+        },
+        "stratum:stress": {
+          "eligible_windows": 446,
+          "false_positive_windows": 0,
+          "fpr": 0.0,
+          "allowed_false_positive_windows": 4
+        },
+        "condition:bursts": {
+          "eligible_windows": 55,
+          "false_positive_windows": 0,
+          "fpr": 0.0,
+          "allowed_false_positive_windows": 0
+        },
+        "condition:flash": {
+          "eligible_windows": 55,
+          "false_positive_windows": 0,
+          "fpr": 0.0,
+          "allowed_false_positive_windows": 0
+        },
+        "condition:mixed_keepalive": {
+          "eligible_windows": 168,
+          "false_positive_windows": 0,
+          "fpr": 0.0,
+          "allowed_false_positive_windows": 1
+        },
+        "condition:long_download": {
+          "eligible_windows": 168,
+          "false_positive_windows": 0,
+          "fpr": 0.0,
+          "allowed_false_positive_windows": 1
+        },
+        "condition:congested_mixed": {
+          "eligible_windows": 168,
+          "false_positive_windows": 0,
+          "fpr": 0.0,
+          "allowed_false_positive_windows": 1
+        }
+      },
+      "components": {
+        "AE": {
+          "path": "data/final_ablations_v1/no_tcp_state_iat_AE_42.joblib",
+          "sha256": "b3f310ec68729440671d76099f3215140b4b8326bd256de372f6f63ccd94427c",
+          "features": [
+            "packets_in",
+            "packets_out",
+            "bytes_in",
+            "bytes_out",
+            "distinct_sources",
+            "packet_length_mean",
+            "packet_length_std",
+            "in_out_byte_ratio",
+            "packet_rate_change",
+            "packets_in_mean_5",
+            "packets_in_std_5",
+            "packets_in_mean_10",
+            "packets_in_std_10",
+            "packets_in_mean_20",
+            "packets_in_std_20"
+          ]
+        }
+      }
+    },
+    {
+      "variant": "no_tcp_state_iat",
+      "method": "hybrid",
+      "seed": 42,
+      "k": 3,
+      "h": 5,
+      "threshold": 0.9966914805624483,
+      "C2": {
+        "overall": {
+          "eligible_windows": 681,
+          "false_positive_windows": 0,
+          "fpr": 0.0,
+          "allowed_false_positive_windows": 6
+        },
+        "stratum:ordinary": {
+          "eligible_windows": 235,
+          "false_positive_windows": 0,
+          "fpr": 0.0,
+          "allowed_false_positive_windows": 2
+        },
+        "condition:public_http": {
+          "eligible_windows": 13,
+          "false_positive_windows": 0,
+          "fpr": 0.0,
+          "allowed_false_positive_windows": 0
+        },
+        "condition:ordinary": {
+          "eligible_windows": 54,
+          "false_positive_windows": 0,
+          "fpr": 0.0,
+          "allowed_false_positive_windows": 0
+        },
+        "stratum:stress": {
+          "eligible_windows": 446,
+          "false_positive_windows": 0,
+          "fpr": 0.0,
+          "allowed_false_positive_windows": 4
+        },
+        "condition:bursts": {
+          "eligible_windows": 55,
+          "false_positive_windows": 0,
+          "fpr": 0.0,
+          "allowed_false_positive_windows": 0
+        },
+        "condition:flash": {
+          "eligible_windows": 55,
+          "false_positive_windows": 0,
+          "fpr": 0.0,
+          "allowed_false_positive_windows": 0
+        },
+        "condition:mixed_keepalive": {
+          "eligible_windows": 168,
+          "false_positive_windows": 0,
+          "fpr": 0.0,
+          "allowed_false_positive_windows": 1
+        },
+        "condition:long_download": {
+          "eligible_windows": 168,
+          "false_positive_windows": 0,
+          "fpr": 0.0,
+          "allowed_false_positive_windows": 1
+        },
+        "condition:congested_mixed": {
+          "eligible_windows": 168,
+          "false_positive_windows": 0,
+          "fpr": 0.0,
+          "allowed_false_positive_windows": 1
+        }
+      },
+      "components": {
+        "HGB": {
+          "path": "data/final_ablations_v1/no_tcp_state_iat_HGB_42.joblib",
+          "sha256": "94d0f4b465901d8c3087c1e516e2afc02a523b442b30f139d09408a2f98feeb5",
+          "features": [
+            "packets_in",
+            "packets_out",
+            "bytes_in",
+            "bytes_out",
+            "distinct_sources",
+            "packet_length_mean",
+            "packet_length_std",
+            "in_out_byte_ratio",
+            "packet_rate_change",
+            "packets_in_mean_5",
+            "packets_in_std_5",
+            "packets_in_mean_10",
+            "packets_in_std_10",
+            "packets_in_mean_20",
+            "packets_in_std_20"
+          ]
+        },
+        "AE": {
+          "path": "data/final_ablations_v1/no_tcp_state_iat_AE_42.joblib",
+          "sha256": "b3f310ec68729440671d76099f3215140b4b8326bd256de372f6f63ccd94427c",
+          "features": [
+            "packets_in",
+            "packets_out",
+            "bytes_in",
+            "bytes_out",
+            "distinct_sources",
+            "packet_length_mean",
+            "packet_length_std",
+            "in_out_byte_ratio",
+            "packet_rate_change",
+            "packets_in_mean_5",
+            "packets_in_std_5",
+            "packets_in_mean_10",
+            "packets_in_std_10",
+            "packets_in_mean_20",
+            "packets_in_std_20"
+          ]
+        }
+      }
+    },
+    {
+      "variant": "no_tcp_state_iat",
+      "method": "HGB",
+      "seed": 73,
+      "k": 1,
+      "h": 1,
+      "threshold": 4.4402553108909205e-05,
+      "C2": {
+        "overall": {
+          "eligible_windows": 962,
+          "false_positive_windows": 1,
+          "fpr": 0.0010395010395010396,
+          "allowed_false_positive_windows": 9
+        },
+        "stratum:ordinary": {
+          "eligible_windows": 484,
+          "false_positive_windows": 1,
+          "fpr": 0.002066115702479339,
+          "allowed_false_positive_windows": 4
+        },
+        "condition:public_http": {
+          "eligible_windows": 246,
+          "false_positive_windows": 0,
+          "fpr": 0.0,
+          "allowed_false_positive_windows": 2
+        },
+        "condition:ordinary": {
+          "eligible_windows": 58,
+          "false_positive_windows": 0,
+          "fpr": 0.0,
+          "allowed_false_positive_windows": 0
+        },
+        "stratum:stress": {
+          "eligible_windows": 478,
+          "false_positive_windows": 0,
+          "fpr": 0.0,
+          "allowed_false_positive_windows": 4
+        },
+        "condition:bursts": {
+          "eligible_windows": 59,
+          "false_positive_windows": 0,
+          "fpr": 0.0,
+          "allowed_false_positive_windows": 0
+        },
+        "condition:flash": {
+          "eligible_windows": 59,
+          "false_positive_windows": 0,
+          "fpr": 0.0,
+          "allowed_false_positive_windows": 0
+        },
+        "condition:mixed_keepalive": {
+          "eligible_windows": 180,
+          "false_positive_windows": 1,
+          "fpr": 0.005555555555555556,
+          "allowed_false_positive_windows": 1
+        },
+        "condition:long_download": {
+          "eligible_windows": 180,
+          "false_positive_windows": 0,
+          "fpr": 0.0,
+          "allowed_false_positive_windows": 1
+        },
+        "condition:congested_mixed": {
+          "eligible_windows": 180,
+          "false_positive_windows": 0,
+          "fpr": 0.0,
+          "allowed_false_positive_windows": 1
+        }
+      },
+      "components": {
+        "HGB": {
+          "path": "data/final_ablations_v1/no_tcp_state_iat_HGB_73.joblib",
+          "sha256": "0b4f75229293612d1da66a07a5427bd1412a81368042d14394cdc2186f15c6be",
+          "features": [
+            "packets_in",
+            "packets_out",
+            "bytes_in",
+            "bytes_out",
+            "distinct_sources",
+            "packet_length_mean",
+            "packet_length_std",
+            "in_out_byte_ratio",
+            "packet_rate_change",
+            "packets_in_mean_5",
+            "packets_in_std_5",
+            "packets_in_mean_10",
+            "packets_in_std_10",
+            "packets_in_mean_20",
+            "packets_in_std_20"
+          ]
+        }
+      }
+    },
+    {
+      "variant": "no_tcp_state_iat",
+      "method": "AE",
+      "seed": 73,
+      "k": 3,
+      "h": 5,
+      "threshold": 0.12919180999175958,
+      "C2": {
+        "overall": {
+          "eligible_windows": 681,
+          "false_positive_windows": 0,
+          "fpr": 0.0,
+          "allowed_false_positive_windows": 6
+        },
+        "stratum:ordinary": {
+          "eligible_windows": 235,
+          "false_positive_windows": 0,
+          "fpr": 0.0,
+          "allowed_false_positive_windows": 2
+        },
+        "condition:public_http": {
+          "eligible_windows": 13,
+          "false_positive_windows": 0,
+          "fpr": 0.0,
+          "allowed_false_positive_windows": 0
+        },
+        "condition:ordinary": {
+          "eligible_windows": 54,
+          "false_positive_windows": 0,
+          "fpr": 0.0,
+          "allowed_false_positive_windows": 0
+        },
+        "stratum:stress": {
+          "eligible_windows": 446,
+          "false_positive_windows": 0,
+          "fpr": 0.0,
+          "allowed_false_positive_windows": 4
+        },
+        "condition:bursts": {
+          "eligible_windows": 55,
+          "false_positive_windows": 0,
+          "fpr": 0.0,
+          "allowed_false_positive_windows": 0
+        },
+        "condition:flash": {
+          "eligible_windows": 55,
+          "false_positive_windows": 0,
+          "fpr": 0.0,
+          "allowed_false_positive_windows": 0
+        },
+        "condition:mixed_keepalive": {
+          "eligible_windows": 168,
+          "false_positive_windows": 0,
+          "fpr": 0.0,
+          "allowed_false_positive_windows": 1
+        },
+        "condition:long_download": {
+          "eligible_windows": 168,
+          "false_positive_windows": 0,
+          "fpr": 0.0,
+          "allowed_false_positive_windows": 1
+        },
+        "condition:congested_mixed": {
+          "eligible_windows": 168,
+          "false_positive_windows": 0,
+          "fpr": 0.0,
+          "allowed_false_positive_windows": 1
+        }
+      },
+      "components": {
+        "AE": {
+          "path": "data/final_ablations_v1/no_tcp_state_iat_AE_73.joblib",
+          "sha256": "21be2630311433d5f80083e9872386bf9d54f5ca1e476597ecee0abb8a1fe065",
+          "features": [
+            "packets_in",
+            "packets_out",
+            "bytes_in",
+            "bytes_out",
+            "distinct_sources",
+            "packet_length_mean",
+            "packet_length_std",
+            "in_out_byte_ratio",
+            "packet_rate_change",
+            "packets_in_mean_5",
+            "packets_in_std_5",
+            "packets_in_mean_10",
+            "packets_in_std_10",
+            "packets_in_mean_20",
+            "packets_in_std_20"
+          ]
+        }
+      }
+    },
+    {
+      "variant": "no_tcp_state_iat",
+      "method": "hybrid",
+      "seed": 73,
+      "k": 3,
+      "h": 5,
+      "threshold": 0.9966914805624483,
+      "C2": {
+        "overall": {
+          "eligible_windows": 681,
+          "false_positive_windows": 0,
+          "fpr": 0.0,
+          "allowed_false_positive_windows": 6
+        },
+        "stratum:ordinary": {
+          "eligible_windows": 235,
+          "false_positive_windows": 0,
+          "fpr": 0.0,
+          "allowed_false_positive_windows": 2
+        },
+        "condition:public_http": {
+          "eligible_windows": 13,
+          "false_positive_windows": 0,
+          "fpr": 0.0,
+          "allowed_false_positive_windows": 0
+        },
+        "condition:ordinary": {
+          "eligible_windows": 54,
+          "false_positive_windows": 0,
+          "fpr": 0.0,
+          "allowed_false_positive_windows": 0
+        },
+        "stratum:stress": {
+          "eligible_windows": 446,
+          "false_positive_windows": 0,
+          "fpr": 0.0,
+          "allowed_false_positive_windows": 4
+        },
+        "condition:bursts": {
+          "eligible_windows": 55,
+          "false_positive_windows": 0,
+          "fpr": 0.0,
+          "allowed_false_positive_windows": 0
+        },
+        "condition:flash": {
+          "eligible_windows": 55,
+          "false_positive_windows": 0,
+          "fpr": 0.0,
+          "allowed_false_positive_windows": 0
+        },
+        "condition:mixed_keepalive": {
+          "eligible_windows": 168,
+          "false_positive_windows": 0,
+          "fpr": 0.0,
+          "allowed_false_positive_windows": 1
+        },
+        "condition:long_download": {
+          "eligible_windows": 168,
+          "false_positive_windows": 0,
+          "fpr": 0.0,
+          "allowed_false_positive_windows": 1
+        },
+        "condition:congested_mixed": {
+          "eligible_windows": 168,
+          "false_positive_windows": 0,
+          "fpr": 0.0,
+          "allowed_false_positive_windows": 1
+        }
+      },
+      "components": {
+        "HGB": {
+          "path": "data/final_ablations_v1/no_tcp_state_iat_HGB_73.joblib",
+          "sha256": "0b4f75229293612d1da66a07a5427bd1412a81368042d14394cdc2186f15c6be",
+          "features": [
+            "packets_in",
+            "packets_out",
+            "bytes_in",
+            "bytes_out",
+            "distinct_sources",
+            "packet_length_mean",
+            "packet_length_std",
+            "in_out_byte_ratio",
+            "packet_rate_change",
+            "packets_in_mean_5",
+            "packets_in_std_5",
+            "packets_in_mean_10",
+            "packets_in_std_10",
+            "packets_in_mean_20",
+            "packets_in_std_20"
+          ]
+        },
+        "AE": {
+          "path": "data/final_ablations_v1/no_tcp_state_iat_AE_73.joblib",
+          "sha256": "21be2630311433d5f80083e9872386bf9d54f5ca1e476597ecee0abb8a1fe065",
+          "features": [
+            "packets_in",
+            "packets_out",
+            "bytes_in",
+            "bytes_out",
+            "distinct_sources",
+            "packet_length_mean",
+            "packet_length_std",
+            "in_out_byte_ratio",
+            "packet_rate_change",
+            "packets_in_mean_5",
+            "packets_in_std_5",
+            "packets_in_mean_10",
+            "packets_in_std_10",
+            "packets_in_mean_20",
+            "packets_in_std_20"
+          ]
+        }
+      }
+    },
+    {
+      "variant": "no_tcp_state_iat",
+      "method": "HGB",
+      "seed": 101,
+      "k": 1,
+      "h": 1,
+      "threshold": 4.4402553108909205e-05,
+      "C2": {
+        "overall": {
+          "eligible_windows": 962,
+          "false_positive_windows": 1,
+          "fpr": 0.0010395010395010396,
+          "allowed_false_positive_windows": 9
+        },
+        "stratum:ordinary": {
+          "eligible_windows": 484,
+          "false_positive_windows": 1,
+          "fpr": 0.002066115702479339,
+          "allowed_false_positive_windows": 4
+        },
+        "condition:public_http": {
+          "eligible_windows": 246,
+          "false_positive_windows": 0,
+          "fpr": 0.0,
+          "allowed_false_positive_windows": 2
+        },
+        "condition:ordinary": {
+          "eligible_windows": 58,
+          "false_positive_windows": 0,
+          "fpr": 0.0,
+          "allowed_false_positive_windows": 0
+        },
+        "stratum:stress": {
+          "eligible_windows": 478,
+          "false_positive_windows": 0,
+          "fpr": 0.0,
+          "allowed_false_positive_windows": 4
+        },
+        "condition:bursts": {
+          "eligible_windows": 59,
+          "false_positive_windows": 0,
+          "fpr": 0.0,
+          "allowed_false_positive_windows": 0
+        },
+        "condition:flash": {
+          "eligible_windows": 59,
+          "false_positive_windows": 0,
+          "fpr": 0.0,
+          "allowed_false_positive_windows": 0
+        },
+        "condition:mixed_keepalive": {
+          "eligible_windows": 180,
+          "false_positive_windows": 1,
+          "fpr": 0.005555555555555556,
+          "allowed_false_positive_windows": 1
+        },
+        "condition:long_download": {
+          "eligible_windows": 180,
+          "false_positive_windows": 0,
+          "fpr": 0.0,
+          "allowed_false_positive_windows": 1
+        },
+        "condition:congested_mixed": {
+          "eligible_windows": 180,
+          "false_positive_windows": 0,
+          "fpr": 0.0,
+          "allowed_false_positive_windows": 1
+        }
+      },
+      "components": {
+        "HGB": {
+          "path": "data/final_ablations_v1/no_tcp_state_iat_HGB_101.joblib",
+          "sha256": "a26c24cdb204d85d96479e5cfcd1216a5802473af7599a6e79284e4f7c2d3520",
+          "features": [
+            "packets_in",
+            "packets_out",
+            "bytes_in",
+            "bytes_out",
+            "distinct_sources",
+            "packet_length_mean",
+            "packet_length_std",
+            "in_out_byte_ratio",
+            "packet_rate_change",
+            "packets_in_mean_5",
+            "packets_in_std_5",
+            "packets_in_mean_10",
+            "packets_in_std_10",
+            "packets_in_mean_20",
+            "packets_in_std_20"
+          ]
+        }
+      }
+    },
+    {
+      "variant": "no_tcp_state_iat",
+      "method": "AE",
+      "seed": 101,
+      "k": 3,
+      "h": 5,
+      "threshold": 0.0874447363788854,
+      "C2": {
+        "overall": {
+          "eligible_windows": 681,
+          "false_positive_windows": 0,
+          "fpr": 0.0,
+          "allowed_false_positive_windows": 6
+        },
+        "stratum:ordinary": {
+          "eligible_windows": 235,
+          "false_positive_windows": 0,
+          "fpr": 0.0,
+          "allowed_false_positive_windows": 2
+        },
+        "condition:public_http": {
+          "eligible_windows": 13,
+          "false_positive_windows": 0,
+          "fpr": 0.0,
+          "allowed_false_positive_windows": 0
+        },
+        "condition:ordinary": {
+          "eligible_windows": 54,
+          "false_positive_windows": 0,
+          "fpr": 0.0,
+          "allowed_false_positive_windows": 0
+        },
+        "stratum:stress": {
+          "eligible_windows": 446,
+          "false_positive_windows": 0,
+          "fpr": 0.0,
+          "allowed_false_positive_windows": 4
+        },
+        "condition:bursts": {
+          "eligible_windows": 55,
+          "false_positive_windows": 0,
+          "fpr": 0.0,
+          "allowed_false_positive_windows": 0
+        },
+        "condition:flash": {
+          "eligible_windows": 55,
+          "false_positive_windows": 0,
+          "fpr": 0.0,
+          "allowed_false_positive_windows": 0
+        },
+        "condition:mixed_keepalive": {
+          "eligible_windows": 168,
+          "false_positive_windows": 0,
+          "fpr": 0.0,
+          "allowed_false_positive_windows": 1
+        },
+        "condition:long_download": {
+          "eligible_windows": 168,
+          "false_positive_windows": 0,
+          "fpr": 0.0,
+          "allowed_false_positive_windows": 1
+        },
+        "condition:congested_mixed": {
+          "eligible_windows": 168,
+          "false_positive_windows": 0,
+          "fpr": 0.0,
+          "allowed_false_positive_windows": 1
+        }
+      },
+      "components": {
+        "AE": {
+          "path": "data/final_ablations_v1/no_tcp_state_iat_AE_101.joblib",
+          "sha256": "57ac364762aa3a329a2ecc567ae4ea9d062b3c268b9585e10abeaa9fc90282c5",
+          "features": [
+            "packets_in",
+            "packets_out",
+            "bytes_in",
+            "bytes_out",
+            "distinct_sources",
+            "packet_length_mean",
+            "packet_length_std",
+            "in_out_byte_ratio",
+            "packet_rate_change",
+            "packets_in_mean_5",
+            "packets_in_std_5",
+            "packets_in_mean_10",
+            "packets_in_std_10",
+            "packets_in_mean_20",
+            "packets_in_std_20"
+          ]
+        }
+      }
+    },
+    {
+      "variant": "no_tcp_state_iat",
+      "method": "hybrid",
+      "seed": 101,
+      "k": 3,
+      "h": 5,
+      "threshold": 0.9983457402812241,
+      "C2": {
+        "overall": {
+          "eligible_windows": 681,
+          "false_positive_windows": 0,
+          "fpr": 0.0,
+          "allowed_false_positive_windows": 6
+        },
+        "stratum:ordinary": {
+          "eligible_windows": 235,
+          "false_positive_windows": 0,
+          "fpr": 0.0,
+          "allowed_false_positive_windows": 2
+        },
+        "condition:public_http": {
+          "eligible_windows": 13,
+          "false_positive_windows": 0,
+          "fpr": 0.0,
+          "allowed_false_positive_windows": 0
+        },
+        "condition:ordinary": {
+          "eligible_windows": 54,
+          "false_positive_windows": 0,
+          "fpr": 0.0,
+          "allowed_false_positive_windows": 0
+        },
+        "stratum:stress": {
+          "eligible_windows": 446,
+          "false_positive_windows": 0,
+          "fpr": 0.0,
+          "allowed_false_positive_windows": 4
+        },
+        "condition:bursts": {
+          "eligible_windows": 55,
+          "false_positive_windows": 0,
+          "fpr": 0.0,
+          "allowed_false_positive_windows": 0
+        },
+        "condition:flash": {
+          "eligible_windows": 55,
+          "false_positive_windows": 0,
+          "fpr": 0.0,
+          "allowed_false_positive_windows": 0
+        },
+        "condition:mixed_keepalive": {
+          "eligible_windows": 168,
+          "false_positive_windows": 0,
+          "fpr": 0.0,
+          "allowed_false_positive_windows": 1
+        },
+        "condition:long_download": {
+          "eligible_windows": 168,
+          "false_positive_windows": 0,
+          "fpr": 0.0,
+          "allowed_false_positive_windows": 1
+        },
+        "condition:congested_mixed": {
+          "eligible_windows": 168,
+          "false_positive_windows": 0,
+          "fpr": 0.0,
+          "allowed_false_positive_windows": 1
+        }
+      },
+      "components": {
+        "HGB": {
+          "path": "data/final_ablations_v1/no_tcp_state_iat_HGB_101.joblib",
+          "sha256": "a26c24cdb204d85d96479e5cfcd1216a5802473af7599a6e79284e4f7c2d3520",
+          "features": [
+            "packets_in",
+            "packets_out",
+            "bytes_in",
+            "bytes_out",
+            "distinct_sources",
+            "packet_length_mean",
+            "packet_length_std",
+            "in_out_byte_ratio",
+            "packet_rate_change",
+            "packets_in_mean_5",
+            "packets_in_std_5",
+            "packets_in_mean_10",
+            "packets_in_std_10",
+            "packets_in_mean_20",
+            "packets_in_std_20"
+          ]
+        },
+        "AE": {
+          "path": "data/final_ablations_v1/no_tcp_state_iat_AE_101.joblib",
+          "sha256": "57ac364762aa3a329a2ecc567ae4ea9d062b3c268b9585e10abeaa9fc90282c5",
+          "features": [
+            "packets_in",
+            "packets_out",
+            "bytes_in",
+            "bytes_out",
+            "distinct_sources",
+            "packet_length_mean",
+            "packet_length_std",
+            "in_out_byte_ratio",
+            "packet_rate_change",
+            "packets_in_mean_5",
+            "packets_in_std_5",
+            "packets_in_mean_10",
+            "packets_in_std_10",
+            "packets_in_mean_20",
+            "packets_in_std_20"
+          ]
+        }
+      }
+    },
+    {
+      "variant": "no_hgb_class_weights",
+      "method": "HGB",
+      "seed": 7,
+      "k": 1,
+      "h": 1,
+      "threshold": 0.00033116397036111144,
+      "C2": {
+        "overall": {
+          "eligible_windows": 962,
+          "false_positive_windows": 1,
+          "fpr": 0.0010395010395010396,
+          "allowed_false_positive_windows": 9
+        },
+        "stratum:ordinary": {
+          "eligible_windows": 484,
+          "false_positive_windows": 1,
+          "fpr": 0.002066115702479339,
+          "allowed_false_positive_windows": 4
+        },
+        "condition:public_http": {
+          "eligible_windows": 246,
+          "false_positive_windows": 1,
+          "fpr": 0.0040650406504065045,
+          "allowed_false_positive_windows": 2
+        },
+        "condition:ordinary": {
+          "eligible_windows": 58,
+          "false_positive_windows": 0,
+          "fpr": 0.0,
+          "allowed_false_positive_windows": 0
+        },
+        "stratum:stress": {
+          "eligible_windows": 478,
+          "false_positive_windows": 0,
+          "fpr": 0.0,
+          "allowed_false_positive_windows": 4
+        },
+        "condition:bursts": {
+          "eligible_windows": 59,
+          "false_positive_windows": 0,
+          "fpr": 0.0,
+          "allowed_false_positive_windows": 0
+        },
+        "condition:flash": {
+          "eligible_windows": 59,
+          "false_positive_windows": 0,
+          "fpr": 0.0,
+          "allowed_false_positive_windows": 0
+        },
+        "condition:mixed_keepalive": {
+          "eligible_windows": 180,
+          "false_positive_windows": 0,
+          "fpr": 0.0,
+          "allowed_false_positive_windows": 1
+        },
+        "condition:long_download": {
+          "eligible_windows": 180,
+          "false_positive_windows": 0,
+          "fpr": 0.0,
+          "allowed_false_positive_windows": 1
+        },
+        "condition:congested_mixed": {
+          "eligible_windows": 180,
+          "false_positive_windows": 0,
+          "fpr": 0.0,
+          "allowed_false_positive_windows": 1
+        }
+      },
+      "components": {
+        "HGB": {
+          "path": "data/final_ablations_v1/no_hgb_class_weights_HGB_7.joblib",
+          "sha256": "eb9542953474d1fafa3536fac9a0c03f6ef449cd019e5aa209998818ba523a10",
+          "features": [
+            "packets_in",
+            "packets_out",
+            "bytes_in",
+            "bytes_out",
+            "syn_in",
+            "ack_in",
+            "rst_in",
+            "synack_out",
+            "handshakes_completed",
+            "new_connections",
+            "distinct_sources",
+            "packet_length_mean",
+            "packet_length_std",
+            "inbound_iat_mean",
+            "inbound_iat_std",
+            "active_connections",
+            "known_age_connections",
+            "unknown_age_connections",
+            "active_age_mean",
+            "active_age_max",
+            "uncompleted_fraction",
+            "handshake_to_syn_ratio",
+            "in_out_byte_ratio",
+            "packet_rate_change",
+            "packets_in_mean_5",
+            "packets_in_std_5",
+            "packets_in_mean_10",
+            "packets_in_std_10",
+            "packets_in_mean_20",
+            "packets_in_std_20"
+          ]
+        }
+      }
+    },
+    {
+      "variant": "no_hgb_class_weights",
+      "method": "hybrid",
+      "seed": 7,
+      "k": 3,
+      "h": 5,
+      "threshold": 0.9917287014061208,
+      "C2": {
+        "overall": {
+          "eligible_windows": 681,
+          "false_positive_windows": 0,
+          "fpr": 0.0,
+          "allowed_false_positive_windows": 6
+        },
+        "stratum:ordinary": {
+          "eligible_windows": 235,
+          "false_positive_windows": 0,
+          "fpr": 0.0,
+          "allowed_false_positive_windows": 2
+        },
+        "condition:public_http": {
+          "eligible_windows": 13,
+          "false_positive_windows": 0,
+          "fpr": 0.0,
+          "allowed_false_positive_windows": 0
+        },
+        "condition:ordinary": {
+          "eligible_windows": 54,
+          "false_positive_windows": 0,
+          "fpr": 0.0,
+          "allowed_false_positive_windows": 0
+        },
+        "stratum:stress": {
+          "eligible_windows": 446,
+          "false_positive_windows": 0,
+          "fpr": 0.0,
+          "allowed_false_positive_windows": 4
+        },
+        "condition:bursts": {
+          "eligible_windows": 55,
+          "false_positive_windows": 0,
+          "fpr": 0.0,
+          "allowed_false_positive_windows": 0
+        },
+        "condition:flash": {
+          "eligible_windows": 55,
+          "false_positive_windows": 0,
+          "fpr": 0.0,
+          "allowed_false_positive_windows": 0
+        },
+        "condition:mixed_keepalive": {
+          "eligible_windows": 168,
+          "false_positive_windows": 0,
+          "fpr": 0.0,
+          "allowed_false_positive_windows": 1
+        },
+        "condition:long_download": {
+          "eligible_windows": 168,
+          "false_positive_windows": 0,
+          "fpr": 0.0,
+          "allowed_false_positive_windows": 1
+        },
+        "condition:congested_mixed": {
+          "eligible_windows": 168,
+          "false_positive_windows": 0,
+          "fpr": 0.0,
+          "allowed_false_positive_windows": 1
+        }
+      },
+      "components": {
+        "HGB": {
+          "path": "data/final_ablations_v1/no_hgb_class_weights_HGB_7.joblib",
+          "sha256": "eb9542953474d1fafa3536fac9a0c03f6ef449cd019e5aa209998818ba523a10",
+          "features": [
+            "packets_in",
+            "packets_out",
+            "bytes_in",
+            "bytes_out",
+            "syn_in",
+            "ack_in",
+            "rst_in",
+            "synack_out",
+            "handshakes_completed",
+            "new_connections",
+            "distinct_sources",
+            "packet_length_mean",
+            "packet_length_std",
+            "inbound_iat_mean",
+            "inbound_iat_std",
+            "active_connections",
+            "known_age_connections",
+            "unknown_age_connections",
+            "active_age_mean",
+            "active_age_max",
+            "uncompleted_fraction",
+            "handshake_to_syn_ratio",
+            "in_out_byte_ratio",
+            "packet_rate_change",
+            "packets_in_mean_5",
+            "packets_in_std_5",
+            "packets_in_mean_10",
+            "packets_in_std_10",
+            "packets_in_mean_20",
+            "packets_in_std_20"
+          ]
+        },
+        "AE": {
+          "path": "data/packet_model_development_v1/main_AE_7.joblib",
+          "sha256": "59d3010aa4ab74f33c98b445798079e83ae4823707f8fced4ca0588e40cd4e54",
+          "features": [
+            "packets_in",
+            "packets_out",
+            "bytes_in",
+            "bytes_out",
+            "syn_in",
+            "ack_in",
+            "rst_in",
+            "synack_out",
+            "handshakes_completed",
+            "new_connections",
+            "distinct_sources",
+            "packet_length_mean",
+            "packet_length_std",
+            "inbound_iat_mean",
+            "inbound_iat_std",
+            "active_connections",
+            "known_age_connections",
+            "unknown_age_connections",
+            "active_age_mean",
+            "active_age_max",
+            "uncompleted_fraction",
+            "handshake_to_syn_ratio",
+            "in_out_byte_ratio",
+            "packet_rate_change",
+            "packets_in_mean_5",
+            "packets_in_std_5",
+            "packets_in_mean_10",
+            "packets_in_std_10",
+            "packets_in_mean_20",
+            "packets_in_std_20"
+          ]
+        }
+      }
+    },
+    {
+      "variant": "no_hgb_class_weights",
+      "method": "HGB",
+      "seed": 19,
+      "k": 1,
+      "h": 1,
+      "threshold": 0.00033116397036111144,
+      "C2": {
+        "overall": {
+          "eligible_windows": 962,
+          "false_positive_windows": 1,
+          "fpr": 0.0010395010395010396,
+          "allowed_false_positive_windows": 9
+        },
+        "stratum:ordinary": {
+          "eligible_windows": 484,
+          "false_positive_windows": 1,
+          "fpr": 0.002066115702479339,
+          "allowed_false_positive_windows": 4
+        },
+        "condition:public_http": {
+          "eligible_windows": 246,
+          "false_positive_windows": 1,
+          "fpr": 0.0040650406504065045,
+          "allowed_false_positive_windows": 2
+        },
+        "condition:ordinary": {
+          "eligible_windows": 58,
+          "false_positive_windows": 0,
+          "fpr": 0.0,
+          "allowed_false_positive_windows": 0
+        },
+        "stratum:stress": {
+          "eligible_windows": 478,
+          "false_positive_windows": 0,
+          "fpr": 0.0,
+          "allowed_false_positive_windows": 4
+        },
+        "condition:bursts": {
+          "eligible_windows": 59,
+          "false_positive_windows": 0,
+          "fpr": 0.0,
+          "allowed_false_positive_windows": 0
+        },
+        "condition:flash": {
+          "eligible_windows": 59,
+          "false_positive_windows": 0,
+          "fpr": 0.0,
+          "allowed_false_positive_windows": 0
+        },
+        "condition:mixed_keepalive": {
+          "eligible_windows": 180,
+          "false_positive_windows": 0,
+          "fpr": 0.0,
+          "allowed_false_positive_windows": 1
+        },
+        "condition:long_download": {
+          "eligible_windows": 180,
+          "false_positive_windows": 0,
+          "fpr": 0.0,
+          "allowed_false_positive_windows": 1
+        },
+        "condition:congested_mixed": {
+          "eligible_windows": 180,
+          "false_positive_windows": 0,
+          "fpr": 0.0,
+          "allowed_false_positive_windows": 1
+        }
+      },
+      "components": {
+        "HGB": {
+          "path": "data/final_ablations_v1/no_hgb_class_weights_HGB_19.joblib",
+          "sha256": "1cc36e07b681dd51d60679aec7c66e439a6acb98f4bdc47854668c82be9f5bea",
+          "features": [
+            "packets_in",
+            "packets_out",
+            "bytes_in",
+            "bytes_out",
+            "syn_in",
+            "ack_in",
+            "rst_in",
+            "synack_out",
+            "handshakes_completed",
+            "new_connections",
+            "distinct_sources",
+            "packet_length_mean",
+            "packet_length_std",
+            "inbound_iat_mean",
+            "inbound_iat_std",
+            "active_connections",
+            "known_age_connections",
+            "unknown_age_connections",
+            "active_age_mean",
+            "active_age_max",
+            "uncompleted_fraction",
+            "handshake_to_syn_ratio",
+            "in_out_byte_ratio",
+            "packet_rate_change",
+            "packets_in_mean_5",
+            "packets_in_std_5",
+            "packets_in_mean_10",
+            "packets_in_std_10",
+            "packets_in_mean_20",
+            "packets_in_std_20"
+          ]
+        }
+      }
+    },
+    {
+      "variant": "no_hgb_class_weights",
+      "method": "hybrid",
+      "seed": 19,
+      "k": 3,
+      "h": 5,
+      "threshold": 0.9917287014061208,
+      "C2": {
+        "overall": {
+          "eligible_windows": 681,
+          "false_positive_windows": 0,
+          "fpr": 0.0,
+          "allowed_false_positive_windows": 6
+        },
+        "stratum:ordinary": {
+          "eligible_windows": 235,
+          "false_positive_windows": 0,
+          "fpr": 0.0,
+          "allowed_false_positive_windows": 2
+        },
+        "condition:public_http": {
+          "eligible_windows": 13,
+          "false_positive_windows": 0,
+          "fpr": 0.0,
+          "allowed_false_positive_windows": 0
+        },
+        "condition:ordinary": {
+          "eligible_windows": 54,
+          "false_positive_windows": 0,
+          "fpr": 0.0,
+          "allowed_false_positive_windows": 0
+        },
+        "stratum:stress": {
+          "eligible_windows": 446,
+          "false_positive_windows": 0,
+          "fpr": 0.0,
+          "allowed_false_positive_windows": 4
+        },
+        "condition:bursts": {
+          "eligible_windows": 55,
+          "false_positive_windows": 0,
+          "fpr": 0.0,
+          "allowed_false_positive_windows": 0
+        },
+        "condition:flash": {
+          "eligible_windows": 55,
+          "false_positive_windows": 0,
+          "fpr": 0.0,
+          "allowed_false_positive_windows": 0
+        },
+        "condition:mixed_keepalive": {
+          "eligible_windows": 168,
+          "false_positive_windows": 0,
+          "fpr": 0.0,
+          "allowed_false_positive_windows": 1
+        },
+        "condition:long_download": {
+          "eligible_windows": 168,
+          "false_positive_windows": 0,
+          "fpr": 0.0,
+          "allowed_false_positive_windows": 1
+        },
+        "condition:congested_mixed": {
+          "eligible_windows": 168,
+          "false_positive_windows": 0,
+          "fpr": 0.0,
+          "allowed_false_positive_windows": 1
+        }
+      },
+      "components": {
+        "HGB": {
+          "path": "data/final_ablations_v1/no_hgb_class_weights_HGB_19.joblib",
+          "sha256": "1cc36e07b681dd51d60679aec7c66e439a6acb98f4bdc47854668c82be9f5bea",
+          "features": [
+            "packets_in",
+            "packets_out",
+            "bytes_in",
+            "bytes_out",
+            "syn_in",
+            "ack_in",
+            "rst_in",
+            "synack_out",
+            "handshakes_completed",
+            "new_connections",
+            "distinct_sources",
+            "packet_length_mean",
+            "packet_length_std",
+            "inbound_iat_mean",
+            "inbound_iat_std",
+            "active_connections",
+            "known_age_connections",
+            "unknown_age_connections",
+            "active_age_mean",
+            "active_age_max",
+            "uncompleted_fraction",
+            "handshake_to_syn_ratio",
+            "in_out_byte_ratio",
+            "packet_rate_change",
+            "packets_in_mean_5",
+            "packets_in_std_5",
+            "packets_in_mean_10",
+            "packets_in_std_10",
+            "packets_in_mean_20",
+            "packets_in_std_20"
+          ]
+        },
+        "AE": {
+          "path": "data/packet_model_development_v1/main_AE_19.joblib",
+          "sha256": "624a48eabd5d83341be1f3541c80745438e1720e8b25cae4737f363a4089214c",
+          "features": [
+            "packets_in",
+            "packets_out",
+            "bytes_in",
+            "bytes_out",
+            "syn_in",
+            "ack_in",
+            "rst_in",
+            "synack_out",
+            "handshakes_completed",
+            "new_connections",
+            "distinct_sources",
+            "packet_length_mean",
+            "packet_length_std",
+            "inbound_iat_mean",
+            "inbound_iat_std",
+            "active_connections",
+            "known_age_connections",
+            "unknown_age_connections",
+            "active_age_mean",
+            "active_age_max",
+            "uncompleted_fraction",
+            "handshake_to_syn_ratio",
+            "in_out_byte_ratio",
+            "packet_rate_change",
+            "packets_in_mean_5",
+            "packets_in_std_5",
+            "packets_in_mean_10",
+            "packets_in_std_10",
+            "packets_in_mean_20",
+            "packets_in_std_20"
+          ]
+        }
+      }
+    },
+    {
+      "variant": "no_hgb_class_weights",
+      "method": "HGB",
+      "seed": 42,
+      "k": 1,
+      "h": 1,
+      "threshold": 0.00033116397036111144,
+      "C2": {
+        "overall": {
+          "eligible_windows": 962,
+          "false_positive_windows": 1,
+          "fpr": 0.0010395010395010396,
+          "allowed_false_positive_windows": 9
+        },
+        "stratum:ordinary": {
+          "eligible_windows": 484,
+          "false_positive_windows": 1,
+          "fpr": 0.002066115702479339,
+          "allowed_false_positive_windows": 4
+        },
+        "condition:public_http": {
+          "eligible_windows": 246,
+          "false_positive_windows": 1,
+          "fpr": 0.0040650406504065045,
+          "allowed_false_positive_windows": 2
+        },
+        "condition:ordinary": {
+          "eligible_windows": 58,
+          "false_positive_windows": 0,
+          "fpr": 0.0,
+          "allowed_false_positive_windows": 0
+        },
+        "stratum:stress": {
+          "eligible_windows": 478,
+          "false_positive_windows": 0,
+          "fpr": 0.0,
+          "allowed_false_positive_windows": 4
+        },
+        "condition:bursts": {
+          "eligible_windows": 59,
+          "false_positive_windows": 0,
+          "fpr": 0.0,
+          "allowed_false_positive_windows": 0
+        },
+        "condition:flash": {
+          "eligible_windows": 59,
+          "false_positive_windows": 0,
+          "fpr": 0.0,
+          "allowed_false_positive_windows": 0
+        },
+        "condition:mixed_keepalive": {
+          "eligible_windows": 180,
+          "false_positive_windows": 0,
+          "fpr": 0.0,
+          "allowed_false_positive_windows": 1
+        },
+        "condition:long_download": {
+          "eligible_windows": 180,
+          "false_positive_windows": 0,
+          "fpr": 0.0,
+          "allowed_false_positive_windows": 1
+        },
+        "condition:congested_mixed": {
+          "eligible_windows": 180,
+          "false_positive_windows": 0,
+          "fpr": 0.0,
+          "allowed_false_positive_windows": 1
+        }
+      },
+      "components": {
+        "HGB": {
+          "path": "data/final_ablations_v1/no_hgb_class_weights_HGB_42.joblib",
+          "sha256": "5c9c02d1a8c6dd65a570f6ca24c6daef33e1c5bda5bfd917aadb37ba60ce67e4",
+          "features": [
+            "packets_in",
+            "packets_out",
+            "bytes_in",
+            "bytes_out",
+            "syn_in",
+            "ack_in",
+            "rst_in",
+            "synack_out",
+            "handshakes_completed",
+            "new_connections",
+            "distinct_sources",
+            "packet_length_mean",
+            "packet_length_std",
+            "inbound_iat_mean",
+            "inbound_iat_std",
+            "active_connections",
+            "known_age_connections",
+            "unknown_age_connections",
+            "active_age_mean",
+            "active_age_max",
+            "uncompleted_fraction",
+            "handshake_to_syn_ratio",
+            "in_out_byte_ratio",
+            "packet_rate_change",
+            "packets_in_mean_5",
+            "packets_in_std_5",
+            "packets_in_mean_10",
+            "packets_in_std_10",
+            "packets_in_mean_20",
+            "packets_in_std_20"
+          ]
+        }
+      }
+    },
+    {
+      "variant": "no_hgb_class_weights",
+      "method": "hybrid",
+      "seed": 42,
+      "k": 3,
+      "h": 5,
+      "threshold": 0.9917287014061208,
+      "C2": {
+        "overall": {
+          "eligible_windows": 681,
+          "false_positive_windows": 0,
+          "fpr": 0.0,
+          "allowed_false_positive_windows": 6
+        },
+        "stratum:ordinary": {
+          "eligible_windows": 235,
+          "false_positive_windows": 0,
+          "fpr": 0.0,
+          "allowed_false_positive_windows": 2
+        },
+        "condition:public_http": {
+          "eligible_windows": 13,
+          "false_positive_windows": 0,
+          "fpr": 0.0,
+          "allowed_false_positive_windows": 0
+        },
+        "condition:ordinary": {
+          "eligible_windows": 54,
+          "false_positive_windows": 0,
+          "fpr": 0.0,
+          "allowed_false_positive_windows": 0
+        },
+        "stratum:stress": {
+          "eligible_windows": 446,
+          "false_positive_windows": 0,
+          "fpr": 0.0,
+          "allowed_false_positive_windows": 4
+        },
+        "condition:bursts": {
+          "eligible_windows": 55,
+          "false_positive_windows": 0,
+          "fpr": 0.0,
+          "allowed_false_positive_windows": 0
+        },
+        "condition:flash": {
+          "eligible_windows": 55,
+          "false_positive_windows": 0,
+          "fpr": 0.0,
+          "allowed_false_positive_windows": 0
+        },
+        "condition:mixed_keepalive": {
+          "eligible_windows": 168,
+          "false_positive_windows": 0,
+          "fpr": 0.0,
+          "allowed_false_positive_windows": 1
+        },
+        "condition:long_download": {
+          "eligible_windows": 168,
+          "false_positive_windows": 0,
+          "fpr": 0.0,
+          "allowed_false_positive_windows": 1
+        },
+        "condition:congested_mixed": {
+          "eligible_windows": 168,
+          "false_positive_windows": 0,
+          "fpr": 0.0,
+          "allowed_false_positive_windows": 1
+        }
+      },
+      "components": {
+        "HGB": {
+          "path": "data/final_ablations_v1/no_hgb_class_weights_HGB_42.joblib",
+          "sha256": "5c9c02d1a8c6dd65a570f6ca24c6daef33e1c5bda5bfd917aadb37ba60ce67e4",
+          "features": [
+            "packets_in",
+            "packets_out",
+            "bytes_in",
+            "bytes_out",
+            "syn_in",
+            "ack_in",
+            "rst_in",
+            "synack_out",
+            "handshakes_completed",
+            "new_connections",
+            "distinct_sources",
+            "packet_length_mean",
+            "packet_length_std",
+            "inbound_iat_mean",
+            "inbound_iat_std",
+            "active_connections",
+            "known_age_connections",
+            "unknown_age_connections",
+            "active_age_mean",
+            "active_age_max",
+            "uncompleted_fraction",
+            "handshake_to_syn_ratio",
+            "in_out_byte_ratio",
+            "packet_rate_change",
+            "packets_in_mean_5",
+            "packets_in_std_5",
+            "packets_in_mean_10",
+            "packets_in_std_10",
+            "packets_in_mean_20",
+            "packets_in_std_20"
+          ]
+        },
+        "AE": {
+          "path": "data/packet_model_development_v1/main_AE_42.joblib",
+          "sha256": "e2026bd980f2053e340b5a2e6eda554a0548e7149cf528f075e3514f898cffb9",
+          "features": [
+            "packets_in",
+            "packets_out",
+            "bytes_in",
+            "bytes_out",
+            "syn_in",
+            "ack_in",
+            "rst_in",
+            "synack_out",
+            "handshakes_completed",
+            "new_connections",
+            "distinct_sources",
+            "packet_length_mean",
+            "packet_length_std",
+            "inbound_iat_mean",
+            "inbound_iat_std",
+            "active_connections",
+            "known_age_connections",
+            "unknown_age_connections",
+            "active_age_mean",
+            "active_age_max",
+            "uncompleted_fraction",
+            "handshake_to_syn_ratio",
+            "in_out_byte_ratio",
+            "packet_rate_change",
+            "packets_in_mean_5",
+            "packets_in_std_5",
+            "packets_in_mean_10",
+            "packets_in_std_10",
+            "packets_in_mean_20",
+            "packets_in_std_20"
+          ]
+        }
+      }
+    },
+    {
+      "variant": "no_hgb_class_weights",
+      "method": "HGB",
+      "seed": 73,
+      "k": 1,
+      "h": 1,
+      "threshold": 0.00033116397036111144,
+      "C2": {
+        "overall": {
+          "eligible_windows": 962,
+          "false_positive_windows": 1,
+          "fpr": 0.0010395010395010396,
+          "allowed_false_positive_windows": 9
+        },
+        "stratum:ordinary": {
+          "eligible_windows": 484,
+          "false_positive_windows": 1,
+          "fpr": 0.002066115702479339,
+          "allowed_false_positive_windows": 4
+        },
+        "condition:public_http": {
+          "eligible_windows": 246,
+          "false_positive_windows": 1,
+          "fpr": 0.0040650406504065045,
+          "allowed_false_positive_windows": 2
+        },
+        "condition:ordinary": {
+          "eligible_windows": 58,
+          "false_positive_windows": 0,
+          "fpr": 0.0,
+          "allowed_false_positive_windows": 0
+        },
+        "stratum:stress": {
+          "eligible_windows": 478,
+          "false_positive_windows": 0,
+          "fpr": 0.0,
+          "allowed_false_positive_windows": 4
+        },
+        "condition:bursts": {
+          "eligible_windows": 59,
+          "false_positive_windows": 0,
+          "fpr": 0.0,
+          "allowed_false_positive_windows": 0
+        },
+        "condition:flash": {
+          "eligible_windows": 59,
+          "false_positive_windows": 0,
+          "fpr": 0.0,
+          "allowed_false_positive_windows": 0
+        },
+        "condition:mixed_keepalive": {
+          "eligible_windows": 180,
+          "false_positive_windows": 0,
+          "fpr": 0.0,
+          "allowed_false_positive_windows": 1
+        },
+        "condition:long_download": {
+          "eligible_windows": 180,
+          "false_positive_windows": 0,
+          "fpr": 0.0,
+          "allowed_false_positive_windows": 1
+        },
+        "condition:congested_mixed": {
+          "eligible_windows": 180,
+          "false_positive_windows": 0,
+          "fpr": 0.0,
+          "allowed_false_positive_windows": 1
+        }
+      },
+      "components": {
+        "HGB": {
+          "path": "data/final_ablations_v1/no_hgb_class_weights_HGB_73.joblib",
+          "sha256": "a1f52e4d4820577c97470f50d3e1a3929b7a3e61fb9e2d5b328b44b3b8b79881",
+          "features": [
+            "packets_in",
+            "packets_out",
+            "bytes_in",
+            "bytes_out",
+            "syn_in",
+            "ack_in",
+            "rst_in",
+            "synack_out",
+            "handshakes_completed",
+            "new_connections",
+            "distinct_sources",
+            "packet_length_mean",
+            "packet_length_std",
+            "inbound_iat_mean",
+            "inbound_iat_std",
+            "active_connections",
+            "known_age_connections",
+            "unknown_age_connections",
+            "active_age_mean",
+            "active_age_max",
+            "uncompleted_fraction",
+            "handshake_to_syn_ratio",
+            "in_out_byte_ratio",
+            "packet_rate_change",
+            "packets_in_mean_5",
+            "packets_in_std_5",
+            "packets_in_mean_10",
+            "packets_in_std_10",
+            "packets_in_mean_20",
+            "packets_in_std_20"
+          ]
+        }
+      }
+    },
+    {
+      "variant": "no_hgb_class_weights",
+      "method": "hybrid",
+      "seed": 73,
+      "k": 3,
+      "h": 5,
+      "threshold": 0.9917287014061208,
+      "C2": {
+        "overall": {
+          "eligible_windows": 681,
+          "false_positive_windows": 0,
+          "fpr": 0.0,
+          "allowed_false_positive_windows": 6
+        },
+        "stratum:ordinary": {
+          "eligible_windows": 235,
+          "false_positive_windows": 0,
+          "fpr": 0.0,
+          "allowed_false_positive_windows": 2
+        },
+        "condition:public_http": {
+          "eligible_windows": 13,
+          "false_positive_windows": 0,
+          "fpr": 0.0,
+          "allowed_false_positive_windows": 0
+        },
+        "condition:ordinary": {
+          "eligible_windows": 54,
+          "false_positive_windows": 0,
+          "fpr": 0.0,
+          "allowed_false_positive_windows": 0
+        },
+        "stratum:stress": {
+          "eligible_windows": 446,
+          "false_positive_windows": 0,
+          "fpr": 0.0,
+          "allowed_false_positive_windows": 4
+        },
+        "condition:bursts": {
+          "eligible_windows": 55,
+          "false_positive_windows": 0,
+          "fpr": 0.0,
+          "allowed_false_positive_windows": 0
+        },
+        "condition:flash": {
+          "eligible_windows": 55,
+          "false_positive_windows": 0,
+          "fpr": 0.0,
+          "allowed_false_positive_windows": 0
+        },
+        "condition:mixed_keepalive": {
+          "eligible_windows": 168,
+          "false_positive_windows": 0,
+          "fpr": 0.0,
+          "allowed_false_positive_windows": 1
+        },
+        "condition:long_download": {
+          "eligible_windows": 168,
+          "false_positive_windows": 0,
+          "fpr": 0.0,
+          "allowed_false_positive_windows": 1
+        },
+        "condition:congested_mixed": {
+          "eligible_windows": 168,
+          "false_positive_windows": 0,
+          "fpr": 0.0,
+          "allowed_false_positive_windows": 1
+        }
+      },
+      "components": {
+        "HGB": {
+          "path": "data/final_ablations_v1/no_hgb_class_weights_HGB_73.joblib",
+          "sha256": "a1f52e4d4820577c97470f50d3e1a3929b7a3e61fb9e2d5b328b44b3b8b79881",
+          "features": [
+            "packets_in",
+            "packets_out",
+            "bytes_in",
+            "bytes_out",
+            "syn_in",
+            "ack_in",
+            "rst_in",
+            "synack_out",
+            "handshakes_completed",
+            "new_connections",
+            "distinct_sources",
+            "packet_length_mean",
+            "packet_length_std",
+            "inbound_iat_mean",
+            "inbound_iat_std",
+            "active_connections",
+            "known_age_connections",
+            "unknown_age_connections",
+            "active_age_mean",
+            "active_age_max",
+            "uncompleted_fraction",
+            "handshake_to_syn_ratio",
+            "in_out_byte_ratio",
+            "packet_rate_change",
+            "packets_in_mean_5",
+            "packets_in_std_5",
+            "packets_in_mean_10",
+            "packets_in_std_10",
+            "packets_in_mean_20",
+            "packets_in_std_20"
+          ]
+        },
+        "AE": {
+          "path": "data/packet_model_development_v1/main_AE_73.joblib",
+          "sha256": "23137760536f22115103f34dff3f556fc2bde9975a929077b7c9e58551461112",
+          "features": [
+            "packets_in",
+            "packets_out",
+            "bytes_in",
+            "bytes_out",
+            "syn_in",
+            "ack_in",
+            "rst_in",
+            "synack_out",
+            "handshakes_completed",
+            "new_connections",
+            "distinct_sources",
+            "packet_length_mean",
+            "packet_length_std",
+            "inbound_iat_mean",
+            "inbound_iat_std",
+            "active_connections",
+            "known_age_connections",
+            "unknown_age_connections",
+            "active_age_mean",
+            "active_age_max",
+            "uncompleted_fraction",
+            "handshake_to_syn_ratio",
+            "in_out_byte_ratio",
+            "packet_rate_change",
+            "packets_in_mean_5",
+            "packets_in_std_5",
+            "packets_in_mean_10",
+            "packets_in_std_10",
+            "packets_in_mean_20",
+            "packets_in_std_20"
+          ]
+        }
+      }
+    },
+    {
+      "variant": "no_hgb_class_weights",
+      "method": "HGB",
+      "seed": 101,
+      "k": 1,
+      "h": 1,
+      "threshold": 0.00033116397036111144,
+      "C2": {
+        "overall": {
+          "eligible_windows": 962,
+          "false_positive_windows": 1,
+          "fpr": 0.0010395010395010396,
+          "allowed_false_positive_windows": 9
+        },
+        "stratum:ordinary": {
+          "eligible_windows": 484,
+          "false_positive_windows": 1,
+          "fpr": 0.002066115702479339,
+          "allowed_false_positive_windows": 4
+        },
+        "condition:public_http": {
+          "eligible_windows": 246,
+          "false_positive_windows": 1,
+          "fpr": 0.0040650406504065045,
+          "allowed_false_positive_windows": 2
+        },
+        "condition:ordinary": {
+          "eligible_windows": 58,
+          "false_positive_windows": 0,
+          "fpr": 0.0,
+          "allowed_false_positive_windows": 0
+        },
+        "stratum:stress": {
+          "eligible_windows": 478,
+          "false_positive_windows": 0,
+          "fpr": 0.0,
+          "allowed_false_positive_windows": 4
+        },
+        "condition:bursts": {
+          "eligible_windows": 59,
+          "false_positive_windows": 0,
+          "fpr": 0.0,
+          "allowed_false_positive_windows": 0
+        },
+        "condition:flash": {
+          "eligible_windows": 59,
+          "false_positive_windows": 0,
+          "fpr": 0.0,
+          "allowed_false_positive_windows": 0
+        },
+        "condition:mixed_keepalive": {
+          "eligible_windows": 180,
+          "false_positive_windows": 0,
+          "fpr": 0.0,
+          "allowed_false_positive_windows": 1
+        },
+        "condition:long_download": {
+          "eligible_windows": 180,
+          "false_positive_windows": 0,
+          "fpr": 0.0,
+          "allowed_false_positive_windows": 1
+        },
+        "condition:congested_mixed": {
+          "eligible_windows": 180,
+          "false_positive_windows": 0,
+          "fpr": 0.0,
+          "allowed_false_positive_windows": 1
+        }
+      },
+      "components": {
+        "HGB": {
+          "path": "data/final_ablations_v1/no_hgb_class_weights_HGB_101.joblib",
+          "sha256": "b1866c8688135eb63cf54f4a83e418338a7bba91dfe906c3fc956d3b08a08dc8",
+          "features": [
+            "packets_in",
+            "packets_out",
+            "bytes_in",
+            "bytes_out",
+            "syn_in",
+            "ack_in",
+            "rst_in",
+            "synack_out",
+            "handshakes_completed",
+            "new_connections",
+            "distinct_sources",
+            "packet_length_mean",
+            "packet_length_std",
+            "inbound_iat_mean",
+            "inbound_iat_std",
+            "active_connections",
+            "known_age_connections",
+            "unknown_age_connections",
+            "active_age_mean",
+            "active_age_max",
+            "uncompleted_fraction",
+            "handshake_to_syn_ratio",
+            "in_out_byte_ratio",
+            "packet_rate_change",
+            "packets_in_mean_5",
+            "packets_in_std_5",
+            "packets_in_mean_10",
+            "packets_in_std_10",
+            "packets_in_mean_20",
+            "packets_in_std_20"
+          ]
+        }
+      }
+    },
+    {
+      "variant": "no_hgb_class_weights",
+      "method": "hybrid",
+      "seed": 101,
+      "k": 3,
+      "h": 5,
+      "threshold": 0.9917287014061208,
+      "C2": {
+        "overall": {
+          "eligible_windows": 681,
+          "false_positive_windows": 0,
+          "fpr": 0.0,
+          "allowed_false_positive_windows": 6
+        },
+        "stratum:ordinary": {
+          "eligible_windows": 235,
+          "false_positive_windows": 0,
+          "fpr": 0.0,
+          "allowed_false_positive_windows": 2
+        },
+        "condition:public_http": {
+          "eligible_windows": 13,
+          "false_positive_windows": 0,
+          "fpr": 0.0,
+          "allowed_false_positive_windows": 0
+        },
+        "condition:ordinary": {
+          "eligible_windows": 54,
+          "false_positive_windows": 0,
+          "fpr": 0.0,
+          "allowed_false_positive_windows": 0
+        },
+        "stratum:stress": {
+          "eligible_windows": 446,
+          "false_positive_windows": 0,
+          "fpr": 0.0,
+          "allowed_false_positive_windows": 4
+        },
+        "condition:bursts": {
+          "eligible_windows": 55,
+          "false_positive_windows": 0,
+          "fpr": 0.0,
+          "allowed_false_positive_windows": 0
+        },
+        "condition:flash": {
+          "eligible_windows": 55,
+          "false_positive_windows": 0,
+          "fpr": 0.0,
+          "allowed_false_positive_windows": 0
+        },
+        "condition:mixed_keepalive": {
+          "eligible_windows": 168,
+          "false_positive_windows": 0,
+          "fpr": 0.0,
+          "allowed_false_positive_windows": 1
+        },
+        "condition:long_download": {
+          "eligible_windows": 168,
+          "false_positive_windows": 0,
+          "fpr": 0.0,
+          "allowed_false_positive_windows": 1
+        },
+        "condition:congested_mixed": {
+          "eligible_windows": 168,
+          "false_positive_windows": 0,
+          "fpr": 0.0,
+          "allowed_false_positive_windows": 1
+        }
+      },
+      "components": {
+        "HGB": {
+          "path": "data/final_ablations_v1/no_hgb_class_weights_HGB_101.joblib",
+          "sha256": "b1866c8688135eb63cf54f4a83e418338a7bba91dfe906c3fc956d3b08a08dc8",
+          "features": [
+            "packets_in",
+            "packets_out",
+            "bytes_in",
+            "bytes_out",
+            "syn_in",
+            "ack_in",
+            "rst_in",
+            "synack_out",
+            "handshakes_completed",
+            "new_connections",
+            "distinct_sources",
+            "packet_length_mean",
+            "packet_length_std",
+            "inbound_iat_mean",
+            "inbound_iat_std",
+            "active_connections",
+            "known_age_connections",
+            "unknown_age_connections",
+            "active_age_mean",
+            "active_age_max",
+            "uncompleted_fraction",
+            "handshake_to_syn_ratio",
+            "in_out_byte_ratio",
+            "packet_rate_change",
+            "packets_in_mean_5",
+            "packets_in_std_5",
+            "packets_in_mean_10",
+            "packets_in_std_10",
+            "packets_in_mean_20",
+            "packets_in_std_20"
+          ]
+        },
+        "AE": {
+          "path": "data/packet_model_development_v1/main_AE_101.joblib",
+          "sha256": "c2430b8915e6f7b8c7c0d63a7cbae40cfbe3b4e90437a19e34841204bdcd056c",
+          "features": [
+            "packets_in",
+            "packets_out",
+            "bytes_in",
+            "bytes_out",
+            "syn_in",
+            "ack_in",
+            "rst_in",
+            "synack_out",
+            "handshakes_completed",
+            "new_connections",
+            "distinct_sources",
+            "packet_length_mean",
+            "packet_length_std",
+            "inbound_iat_mean",
+            "inbound_iat_std",
+            "active_connections",
+            "known_age_connections",
+            "unknown_age_connections",
+            "active_age_mean",
+            "active_age_max",
+            "uncompleted_fraction",
+            "handshake_to_syn_ratio",
+            "in_out_byte_ratio",
+            "packet_rate_change",
+            "packets_in_mean_5",
+            "packets_in_std_5",
+            "packets_in_mean_10",
+            "packets_in_std_10",
+            "packets_in_mean_20",
+            "packets_in_std_20"
+          ]
+        }
+      }
+    },
+    {
+      "variant": "no_persistence",
+      "method": "AE",
+      "seed": 7,
+      "k": 1,
+      "h": 1,
+      "threshold": 0.25844520914809127,
+      "C2": {
+        "overall": {
+          "eligible_windows": 962,
+          "false_positive_windows": 2,
+          "fpr": 0.002079002079002079,
+          "allowed_false_positive_windows": 9
+        },
+        "stratum:ordinary": {
+          "eligible_windows": 484,
+          "false_positive_windows": 2,
+          "fpr": 0.004132231404958678,
+          "allowed_false_positive_windows": 4
+        },
+        "condition:public_http": {
+          "eligible_windows": 246,
+          "false_positive_windows": 2,
+          "fpr": 0.008130081300813009,
+          "allowed_false_positive_windows": 2
+        },
+        "condition:ordinary": {
+          "eligible_windows": 58,
+          "false_positive_windows": 0,
+          "fpr": 0.0,
+          "allowed_false_positive_windows": 0
+        },
+        "stratum:stress": {
+          "eligible_windows": 478,
+          "false_positive_windows": 0,
+          "fpr": 0.0,
+          "allowed_false_positive_windows": 4
+        },
+        "condition:bursts": {
+          "eligible_windows": 59,
+          "false_positive_windows": 0,
+          "fpr": 0.0,
+          "allowed_false_positive_windows": 0
+        },
+        "condition:flash": {
+          "eligible_windows": 59,
+          "false_positive_windows": 0,
+          "fpr": 0.0,
+          "allowed_false_positive_windows": 0
+        },
+        "condition:mixed_keepalive": {
+          "eligible_windows": 180,
+          "false_positive_windows": 0,
+          "fpr": 0.0,
+          "allowed_false_positive_windows": 1
+        },
+        "condition:long_download": {
+          "eligible_windows": 180,
+          "false_positive_windows": 0,
+          "fpr": 0.0,
+          "allowed_false_positive_windows": 1
+        },
+        "condition:congested_mixed": {
+          "eligible_windows": 180,
+          "false_positive_windows": 0,
+          "fpr": 0.0,
+          "allowed_false_positive_windows": 1
+        }
+      },
+      "components": {
+        "AE": {
+          "path": "data/packet_model_development_v1/main_AE_7.joblib",
+          "sha256": "59d3010aa4ab74f33c98b445798079e83ae4823707f8fced4ca0588e40cd4e54",
+          "features": [
+            "packets_in",
+            "packets_out",
+            "bytes_in",
+            "bytes_out",
+            "syn_in",
+            "ack_in",
+            "rst_in",
+            "synack_out",
+            "handshakes_completed",
+            "new_connections",
+            "distinct_sources",
+            "packet_length_mean",
+            "packet_length_std",
+            "inbound_iat_mean",
+            "inbound_iat_std",
+            "active_connections",
+            "known_age_connections",
+            "unknown_age_connections",
+            "active_age_mean",
+            "active_age_max",
+            "uncompleted_fraction",
+            "handshake_to_syn_ratio",
+            "in_out_byte_ratio",
+            "packet_rate_change",
+            "packets_in_mean_5",
+            "packets_in_std_5",
+            "packets_in_mean_10",
+            "packets_in_std_10",
+            "packets_in_mean_20",
+            "packets_in_std_20"
+          ]
+        }
+      }
+    },
+    {
+      "variant": "no_persistence",
+      "method": "hybrid",
+      "seed": 7,
+      "k": 1,
+      "h": 1,
+      "threshold": 0.9942100909842845,
+      "C2": {
+        "overall": {
+          "eligible_windows": 962,
+          "false_positive_windows": 2,
+          "fpr": 0.002079002079002079,
+          "allowed_false_positive_windows": 9
+        },
+        "stratum:ordinary": {
+          "eligible_windows": 484,
+          "false_positive_windows": 2,
+          "fpr": 0.004132231404958678,
+          "allowed_false_positive_windows": 4
+        },
+        "condition:public_http": {
+          "eligible_windows": 246,
+          "false_positive_windows": 2,
+          "fpr": 0.008130081300813009,
+          "allowed_false_positive_windows": 2
+        },
+        "condition:ordinary": {
+          "eligible_windows": 58,
+          "false_positive_windows": 0,
+          "fpr": 0.0,
+          "allowed_false_positive_windows": 0
+        },
+        "stratum:stress": {
+          "eligible_windows": 478,
+          "false_positive_windows": 0,
+          "fpr": 0.0,
+          "allowed_false_positive_windows": 4
+        },
+        "condition:bursts": {
+          "eligible_windows": 59,
+          "false_positive_windows": 0,
+          "fpr": 0.0,
+          "allowed_false_positive_windows": 0
+        },
+        "condition:flash": {
+          "eligible_windows": 59,
+          "false_positive_windows": 0,
+          "fpr": 0.0,
+          "allowed_false_positive_windows": 0
+        },
+        "condition:mixed_keepalive": {
+          "eligible_windows": 180,
+          "false_positive_windows": 0,
+          "fpr": 0.0,
+          "allowed_false_positive_windows": 1
+        },
+        "condition:long_download": {
+          "eligible_windows": 180,
+          "false_positive_windows": 0,
+          "fpr": 0.0,
+          "allowed_false_positive_windows": 1
+        },
+        "condition:congested_mixed": {
+          "eligible_windows": 180,
+          "false_positive_windows": 0,
+          "fpr": 0.0,
+          "allowed_false_positive_windows": 1
+        }
+      },
+      "components": {
+        "HGB": {
+          "path": "data/packet_model_development_v1/main_HGB_7.joblib",
+          "sha256": "03364f3a41453b346fab2e9ffdf374a3a3ae0060ff301751e8b84cb66b6c2768",
+          "features": [
+            "packets_in",
+            "packets_out",
+            "bytes_in",
+            "bytes_out",
+            "syn_in",
+            "ack_in",
+            "rst_in",
+            "synack_out",
+            "handshakes_completed",
+            "new_connections",
+            "distinct_sources",
+            "packet_length_mean",
+            "packet_length_std",
+            "inbound_iat_mean",
+            "inbound_iat_std",
+            "active_connections",
+            "known_age_connections",
+            "unknown_age_connections",
+            "active_age_mean",
+            "active_age_max",
+            "uncompleted_fraction",
+            "handshake_to_syn_ratio",
+            "in_out_byte_ratio",
+            "packet_rate_change",
+            "packets_in_mean_5",
+            "packets_in_std_5",
+            "packets_in_mean_10",
+            "packets_in_std_10",
+            "packets_in_mean_20",
+            "packets_in_std_20"
+          ]
+        },
+        "AE": {
+          "path": "data/packet_model_development_v1/main_AE_7.joblib",
+          "sha256": "59d3010aa4ab74f33c98b445798079e83ae4823707f8fced4ca0588e40cd4e54",
+          "features": [
+            "packets_in",
+            "packets_out",
+            "bytes_in",
+            "bytes_out",
+            "syn_in",
+            "ack_in",
+            "rst_in",
+            "synack_out",
+            "handshakes_completed",
+            "new_connections",
+            "distinct_sources",
+            "packet_length_mean",
+            "packet_length_std",
+            "inbound_iat_mean",
+            "inbound_iat_std",
+            "active_connections",
+            "known_age_connections",
+            "unknown_age_connections",
+            "active_age_mean",
+            "active_age_max",
+            "uncompleted_fraction",
+            "handshake_to_syn_ratio",
+            "in_out_byte_ratio",
+            "packet_rate_change",
+            "packets_in_mean_5",
+            "packets_in_std_5",
+            "packets_in_mean_10",
+            "packets_in_std_10",
+            "packets_in_mean_20",
+            "packets_in_std_20"
+          ]
+        }
+      }
+    },
+    {
+      "variant": "no_persistence",
+      "method": "AE",
+      "seed": 19,
+      "k": 1,
+      "h": 1,
+      "threshold": 0.5182144199822443,
+      "C2": {
+        "overall": {
+          "eligible_windows": 962,
+          "false_positive_windows": 2,
+          "fpr": 0.002079002079002079,
+          "allowed_false_positive_windows": 9
+        },
+        "stratum:ordinary": {
+          "eligible_windows": 484,
+          "false_positive_windows": 0,
+          "fpr": 0.0,
+          "allowed_false_positive_windows": 4
+        },
+        "condition:public_http": {
+          "eligible_windows": 246,
+          "false_positive_windows": 0,
+          "fpr": 0.0,
+          "allowed_false_positive_windows": 2
+        },
+        "condition:ordinary": {
+          "eligible_windows": 58,
+          "false_positive_windows": 0,
+          "fpr": 0.0,
+          "allowed_false_positive_windows": 0
+        },
+        "stratum:stress": {
+          "eligible_windows": 478,
+          "false_positive_windows": 2,
+          "fpr": 0.0041841004184100415,
+          "allowed_false_positive_windows": 4
+        },
+        "condition:bursts": {
+          "eligible_windows": 59,
+          "false_positive_windows": 0,
+          "fpr": 0.0,
+          "allowed_false_positive_windows": 0
+        },
+        "condition:flash": {
+          "eligible_windows": 59,
+          "false_positive_windows": 0,
+          "fpr": 0.0,
+          "allowed_false_positive_windows": 0
+        },
+        "condition:mixed_keepalive": {
+          "eligible_windows": 180,
+          "false_positive_windows": 0,
+          "fpr": 0.0,
+          "allowed_false_positive_windows": 1
+        },
+        "condition:long_download": {
+          "eligible_windows": 180,
+          "false_positive_windows": 1,
+          "fpr": 0.005555555555555556,
+          "allowed_false_positive_windows": 1
+        },
+        "condition:congested_mixed": {
+          "eligible_windows": 180,
+          "false_positive_windows": 1,
+          "fpr": 0.005555555555555556,
+          "allowed_false_positive_windows": 1
+        }
+      },
+      "components": {
+        "AE": {
+          "path": "data/packet_model_development_v1/main_AE_19.joblib",
+          "sha256": "624a48eabd5d83341be1f3541c80745438e1720e8b25cae4737f363a4089214c",
+          "features": [
+            "packets_in",
+            "packets_out",
+            "bytes_in",
+            "bytes_out",
+            "syn_in",
+            "ack_in",
+            "rst_in",
+            "synack_out",
+            "handshakes_completed",
+            "new_connections",
+            "distinct_sources",
+            "packet_length_mean",
+            "packet_length_std",
+            "inbound_iat_mean",
+            "inbound_iat_std",
+            "active_connections",
+            "known_age_connections",
+            "unknown_age_connections",
+            "active_age_mean",
+            "active_age_max",
+            "uncompleted_fraction",
+            "handshake_to_syn_ratio",
+            "in_out_byte_ratio",
+            "packet_rate_change",
+            "packets_in_mean_5",
+            "packets_in_std_5",
+            "packets_in_mean_10",
+            "packets_in_std_10",
+            "packets_in_mean_20",
+            "packets_in_std_20"
+          ]
+        }
+      }
+    },
+    {
+      "variant": "no_persistence",
+      "method": "hybrid",
+      "seed": 19,
+      "k": 1,
+      "h": 1,
+      "threshold": 1.0,
+      "C2": {
+        "overall": {
+          "eligible_windows": 962,
+          "false_positive_windows": 0,
+          "fpr": 0.0,
+          "allowed_false_positive_windows": 9
+        },
+        "stratum:ordinary": {
+          "eligible_windows": 484,
+          "false_positive_windows": 0,
+          "fpr": 0.0,
+          "allowed_false_positive_windows": 4
+        },
+        "condition:public_http": {
+          "eligible_windows": 246,
+          "false_positive_windows": 0,
+          "fpr": 0.0,
+          "allowed_false_positive_windows": 2
+        },
+        "condition:ordinary": {
+          "eligible_windows": 58,
+          "false_positive_windows": 0,
+          "fpr": 0.0,
+          "allowed_false_positive_windows": 0
+        },
+        "stratum:stress": {
+          "eligible_windows": 478,
+          "false_positive_windows": 0,
+          "fpr": 0.0,
+          "allowed_false_positive_windows": 4
+        },
+        "condition:bursts": {
+          "eligible_windows": 59,
+          "false_positive_windows": 0,
+          "fpr": 0.0,
+          "allowed_false_positive_windows": 0
+        },
+        "condition:flash": {
+          "eligible_windows": 59,
+          "false_positive_windows": 0,
+          "fpr": 0.0,
+          "allowed_false_positive_windows": 0
+        },
+        "condition:mixed_keepalive": {
+          "eligible_windows": 180,
+          "false_positive_windows": 0,
+          "fpr": 0.0,
+          "allowed_false_positive_windows": 1
+        },
+        "condition:long_download": {
+          "eligible_windows": 180,
+          "false_positive_windows": 0,
+          "fpr": 0.0,
+          "allowed_false_positive_windows": 1
+        },
+        "condition:congested_mixed": {
+          "eligible_windows": 180,
+          "false_positive_windows": 0,
+          "fpr": 0.0,
+          "allowed_false_positive_windows": 1
+        }
+      },
+      "components": {
+        "HGB": {
+          "path": "data/packet_model_development_v1/main_HGB_19.joblib",
+          "sha256": "5bf6db5fb67194ebd2aea5f78005df69b483775a28c2bb7b5689a2ac653131dd",
+          "features": [
+            "packets_in",
+            "packets_out",
+            "bytes_in",
+            "bytes_out",
+            "syn_in",
+            "ack_in",
+            "rst_in",
+            "synack_out",
+            "handshakes_completed",
+            "new_connections",
+            "distinct_sources",
+            "packet_length_mean",
+            "packet_length_std",
+            "inbound_iat_mean",
+            "inbound_iat_std",
+            "active_connections",
+            "known_age_connections",
+            "unknown_age_connections",
+            "active_age_mean",
+            "active_age_max",
+            "uncompleted_fraction",
+            "handshake_to_syn_ratio",
+            "in_out_byte_ratio",
+            "packet_rate_change",
+            "packets_in_mean_5",
+            "packets_in_std_5",
+            "packets_in_mean_10",
+            "packets_in_std_10",
+            "packets_in_mean_20",
+            "packets_in_std_20"
+          ]
+        },
+        "AE": {
+          "path": "data/packet_model_development_v1/main_AE_19.joblib",
+          "sha256": "624a48eabd5d83341be1f3541c80745438e1720e8b25cae4737f363a4089214c",
+          "features": [
+            "packets_in",
+            "packets_out",
+            "bytes_in",
+            "bytes_out",
+            "syn_in",
+            "ack_in",
+            "rst_in",
+            "synack_out",
+            "handshakes_completed",
+            "new_connections",
+            "distinct_sources",
+            "packet_length_mean",
+            "packet_length_std",
+            "inbound_iat_mean",
+            "inbound_iat_std",
+            "active_connections",
+            "known_age_connections",
+            "unknown_age_connections",
+            "active_age_mean",
+            "active_age_max",
+            "uncompleted_fraction",
+            "handshake_to_syn_ratio",
+            "in_out_byte_ratio",
+            "packet_rate_change",
+            "packets_in_mean_5",
+            "packets_in_std_5",
+            "packets_in_mean_10",
+            "packets_in_std_10",
+            "packets_in_mean_20",
+            "packets_in_std_20"
+          ]
+        }
+      }
+    },
+    {
+      "variant": "no_persistence",
+      "method": "AE",
+      "seed": 42,
+      "k": 1,
+      "h": 1,
+      "threshold": 0.2527113485345073,
+      "C2": {
+        "overall": {
+          "eligible_windows": 962,
+          "false_positive_windows": 2,
+          "fpr": 0.002079002079002079,
+          "allowed_false_positive_windows": 9
+        },
+        "stratum:ordinary": {
+          "eligible_windows": 484,
+          "false_positive_windows": 0,
+          "fpr": 0.0,
+          "allowed_false_positive_windows": 4
+        },
+        "condition:public_http": {
+          "eligible_windows": 246,
+          "false_positive_windows": 0,
+          "fpr": 0.0,
+          "allowed_false_positive_windows": 2
+        },
+        "condition:ordinary": {
+          "eligible_windows": 58,
+          "false_positive_windows": 0,
+          "fpr": 0.0,
+          "allowed_false_positive_windows": 0
+        },
+        "stratum:stress": {
+          "eligible_windows": 478,
+          "false_positive_windows": 2,
+          "fpr": 0.0041841004184100415,
+          "allowed_false_positive_windows": 4
+        },
+        "condition:bursts": {
+          "eligible_windows": 59,
+          "false_positive_windows": 0,
+          "fpr": 0.0,
+          "allowed_false_positive_windows": 0
+        },
+        "condition:flash": {
+          "eligible_windows": 59,
+          "false_positive_windows": 0,
+          "fpr": 0.0,
+          "allowed_false_positive_windows": 0
+        },
+        "condition:mixed_keepalive": {
+          "eligible_windows": 180,
+          "false_positive_windows": 0,
+          "fpr": 0.0,
+          "allowed_false_positive_windows": 1
+        },
+        "condition:long_download": {
+          "eligible_windows": 180,
+          "false_positive_windows": 1,
+          "fpr": 0.005555555555555556,
+          "allowed_false_positive_windows": 1
+        },
+        "condition:congested_mixed": {
+          "eligible_windows": 180,
+          "false_positive_windows": 1,
+          "fpr": 0.005555555555555556,
+          "allowed_false_positive_windows": 1
+        }
+      },
+      "components": {
+        "AE": {
+          "path": "data/packet_model_development_v1/main_AE_42.joblib",
+          "sha256": "e2026bd980f2053e340b5a2e6eda554a0548e7149cf528f075e3514f898cffb9",
+          "features": [
+            "packets_in",
+            "packets_out",
+            "bytes_in",
+            "bytes_out",
+            "syn_in",
+            "ack_in",
+            "rst_in",
+            "synack_out",
+            "handshakes_completed",
+            "new_connections",
+            "distinct_sources",
+            "packet_length_mean",
+            "packet_length_std",
+            "inbound_iat_mean",
+            "inbound_iat_std",
+            "active_connections",
+            "known_age_connections",
+            "unknown_age_connections",
+            "active_age_mean",
+            "active_age_max",
+            "uncompleted_fraction",
+            "handshake_to_syn_ratio",
+            "in_out_byte_ratio",
+            "packet_rate_change",
+            "packets_in_mean_5",
+            "packets_in_std_5",
+            "packets_in_mean_10",
+            "packets_in_std_10",
+            "packets_in_mean_20",
+            "packets_in_std_20"
+          ]
+        }
+      }
+    },
+    {
+      "variant": "no_persistence",
+      "method": "hybrid",
+      "seed": 42,
+      "k": 1,
+      "h": 1,
+      "threshold": 0.9950372208436724,
+      "C2": {
+        "overall": {
+          "eligible_windows": 962,
+          "false_positive_windows": 2,
+          "fpr": 0.002079002079002079,
+          "allowed_false_positive_windows": 9
+        },
+        "stratum:ordinary": {
+          "eligible_windows": 484,
+          "false_positive_windows": 0,
+          "fpr": 0.0,
+          "allowed_false_positive_windows": 4
+        },
+        "condition:public_http": {
+          "eligible_windows": 246,
+          "false_positive_windows": 0,
+          "fpr": 0.0,
+          "allowed_false_positive_windows": 2
+        },
+        "condition:ordinary": {
+          "eligible_windows": 58,
+          "false_positive_windows": 0,
+          "fpr": 0.0,
+          "allowed_false_positive_windows": 0
+        },
+        "stratum:stress": {
+          "eligible_windows": 478,
+          "false_positive_windows": 2,
+          "fpr": 0.0041841004184100415,
+          "allowed_false_positive_windows": 4
+        },
+        "condition:bursts": {
+          "eligible_windows": 59,
+          "false_positive_windows": 0,
+          "fpr": 0.0,
+          "allowed_false_positive_windows": 0
+        },
+        "condition:flash": {
+          "eligible_windows": 59,
+          "false_positive_windows": 0,
+          "fpr": 0.0,
+          "allowed_false_positive_windows": 0
+        },
+        "condition:mixed_keepalive": {
+          "eligible_windows": 180,
+          "false_positive_windows": 0,
+          "fpr": 0.0,
+          "allowed_false_positive_windows": 1
+        },
+        "condition:long_download": {
+          "eligible_windows": 180,
+          "false_positive_windows": 1,
+          "fpr": 0.005555555555555556,
+          "allowed_false_positive_windows": 1
+        },
+        "condition:congested_mixed": {
+          "eligible_windows": 180,
+          "false_positive_windows": 1,
+          "fpr": 0.005555555555555556,
+          "allowed_false_positive_windows": 1
+        }
+      },
+      "components": {
+        "HGB": {
+          "path": "data/packet_model_development_v1/main_HGB_42.joblib",
+          "sha256": "45d05e317e5c20645f13f9614ea8f871c330db26e8c2e714b58406a5181cbe45",
+          "features": [
+            "packets_in",
+            "packets_out",
+            "bytes_in",
+            "bytes_out",
+            "syn_in",
+            "ack_in",
+            "rst_in",
+            "synack_out",
+            "handshakes_completed",
+            "new_connections",
+            "distinct_sources",
+            "packet_length_mean",
+            "packet_length_std",
+            "inbound_iat_mean",
+            "inbound_iat_std",
+            "active_connections",
+            "known_age_connections",
+            "unknown_age_connections",
+            "active_age_mean",
+            "active_age_max",
+            "uncompleted_fraction",
+            "handshake_to_syn_ratio",
+            "in_out_byte_ratio",
+            "packet_rate_change",
+            "packets_in_mean_5",
+            "packets_in_std_5",
+            "packets_in_mean_10",
+            "packets_in_std_10",
+            "packets_in_mean_20",
+            "packets_in_std_20"
+          ]
+        },
+        "AE": {
+          "path": "data/packet_model_development_v1/main_AE_42.joblib",
+          "sha256": "e2026bd980f2053e340b5a2e6eda554a0548e7149cf528f075e3514f898cffb9",
+          "features": [
+            "packets_in",
+            "packets_out",
+            "bytes_in",
+            "bytes_out",
+            "syn_in",
+            "ack_in",
+            "rst_in",
+            "synack_out",
+            "handshakes_completed",
+            "new_connections",
+            "distinct_sources",
+            "packet_length_mean",
+            "packet_length_std",
+            "inbound_iat_mean",
+            "inbound_iat_std",
+            "active_connections",
+            "known_age_connections",
+            "unknown_age_connections",
+            "active_age_mean",
+            "active_age_max",
+            "uncompleted_fraction",
+            "handshake_to_syn_ratio",
+            "in_out_byte_ratio",
+            "packet_rate_change",
+            "packets_in_mean_5",
+            "packets_in_std_5",
+            "packets_in_mean_10",
+            "packets_in_std_10",
+            "packets_in_mean_20",
+            "packets_in_std_20"
+          ]
+        }
+      }
+    },
+    {
+      "variant": "no_persistence",
+      "method": "AE",
+      "seed": 73,
+      "k": 1,
+      "h": 1,
+      "threshold": 0.26276084213093626,
+      "C2": {
+        "overall": {
+          "eligible_windows": 962,
+          "false_positive_windows": 3,
+          "fpr": 0.0031185031185031187,
+          "allowed_false_positive_windows": 9
+        },
+        "stratum:ordinary": {
+          "eligible_windows": 484,
+          "false_positive_windows": 2,
+          "fpr": 0.004132231404958678,
+          "allowed_false_positive_windows": 4
+        },
+        "condition:public_http": {
+          "eligible_windows": 246,
+          "false_positive_windows": 2,
+          "fpr": 0.008130081300813009,
+          "allowed_false_positive_windows": 2
+        },
+        "condition:ordinary": {
+          "eligible_windows": 58,
+          "false_positive_windows": 0,
+          "fpr": 0.0,
+          "allowed_false_positive_windows": 0
+        },
+        "stratum:stress": {
+          "eligible_windows": 478,
+          "false_positive_windows": 1,
+          "fpr": 0.0020920502092050207,
+          "allowed_false_positive_windows": 4
+        },
+        "condition:bursts": {
+          "eligible_windows": 59,
+          "false_positive_windows": 0,
+          "fpr": 0.0,
+          "allowed_false_positive_windows": 0
+        },
+        "condition:flash": {
+          "eligible_windows": 59,
+          "false_positive_windows": 0,
+          "fpr": 0.0,
+          "allowed_false_positive_windows": 0
+        },
+        "condition:mixed_keepalive": {
+          "eligible_windows": 180,
+          "false_positive_windows": 0,
+          "fpr": 0.0,
+          "allowed_false_positive_windows": 1
+        },
+        "condition:long_download": {
+          "eligible_windows": 180,
+          "false_positive_windows": 0,
+          "fpr": 0.0,
+          "allowed_false_positive_windows": 1
+        },
+        "condition:congested_mixed": {
+          "eligible_windows": 180,
+          "false_positive_windows": 1,
+          "fpr": 0.005555555555555556,
+          "allowed_false_positive_windows": 1
+        }
+      },
+      "components": {
+        "AE": {
+          "path": "data/packet_model_development_v1/main_AE_73.joblib",
+          "sha256": "23137760536f22115103f34dff3f556fc2bde9975a929077b7c9e58551461112",
+          "features": [
+            "packets_in",
+            "packets_out",
+            "bytes_in",
+            "bytes_out",
+            "syn_in",
+            "ack_in",
+            "rst_in",
+            "synack_out",
+            "handshakes_completed",
+            "new_connections",
+            "distinct_sources",
+            "packet_length_mean",
+            "packet_length_std",
+            "inbound_iat_mean",
+            "inbound_iat_std",
+            "active_connections",
+            "known_age_connections",
+            "unknown_age_connections",
+            "active_age_mean",
+            "active_age_max",
+            "uncompleted_fraction",
+            "handshake_to_syn_ratio",
+            "in_out_byte_ratio",
+            "packet_rate_change",
+            "packets_in_mean_5",
+            "packets_in_std_5",
+            "packets_in_mean_10",
+            "packets_in_std_10",
+            "packets_in_mean_20",
+            "packets_in_std_20"
+          ]
+        }
+      }
+    },
+    {
+      "variant": "no_persistence",
+      "method": "hybrid",
+      "seed": 73,
+      "k": 1,
+      "h": 1,
+      "threshold": 0.9958643507030603,
+      "C2": {
+        "overall": {
+          "eligible_windows": 962,
+          "false_positive_windows": 3,
+          "fpr": 0.0031185031185031187,
+          "allowed_false_positive_windows": 9
+        },
+        "stratum:ordinary": {
+          "eligible_windows": 484,
+          "false_positive_windows": 2,
+          "fpr": 0.004132231404958678,
+          "allowed_false_positive_windows": 4
+        },
+        "condition:public_http": {
+          "eligible_windows": 246,
+          "false_positive_windows": 2,
+          "fpr": 0.008130081300813009,
+          "allowed_false_positive_windows": 2
+        },
+        "condition:ordinary": {
+          "eligible_windows": 58,
+          "false_positive_windows": 0,
+          "fpr": 0.0,
+          "allowed_false_positive_windows": 0
+        },
+        "stratum:stress": {
+          "eligible_windows": 478,
+          "false_positive_windows": 1,
+          "fpr": 0.0020920502092050207,
+          "allowed_false_positive_windows": 4
+        },
+        "condition:bursts": {
+          "eligible_windows": 59,
+          "false_positive_windows": 0,
+          "fpr": 0.0,
+          "allowed_false_positive_windows": 0
+        },
+        "condition:flash": {
+          "eligible_windows": 59,
+          "false_positive_windows": 0,
+          "fpr": 0.0,
+          "allowed_false_positive_windows": 0
+        },
+        "condition:mixed_keepalive": {
+          "eligible_windows": 180,
+          "false_positive_windows": 0,
+          "fpr": 0.0,
+          "allowed_false_positive_windows": 1
+        },
+        "condition:long_download": {
+          "eligible_windows": 180,
+          "false_positive_windows": 0,
+          "fpr": 0.0,
+          "allowed_false_positive_windows": 1
+        },
+        "condition:congested_mixed": {
+          "eligible_windows": 180,
+          "false_positive_windows": 1,
+          "fpr": 0.005555555555555556,
+          "allowed_false_positive_windows": 1
+        }
+      },
+      "components": {
+        "HGB": {
+          "path": "data/packet_model_development_v1/main_HGB_73.joblib",
+          "sha256": "7e273275f3febc3bf637cd0a708a89998517e9cc1c81c91d7712d5f65759b3e3",
+          "features": [
+            "packets_in",
+            "packets_out",
+            "bytes_in",
+            "bytes_out",
+            "syn_in",
+            "ack_in",
+            "rst_in",
+            "synack_out",
+            "handshakes_completed",
+            "new_connections",
+            "distinct_sources",
+            "packet_length_mean",
+            "packet_length_std",
+            "inbound_iat_mean",
+            "inbound_iat_std",
+            "active_connections",
+            "known_age_connections",
+            "unknown_age_connections",
+            "active_age_mean",
+            "active_age_max",
+            "uncompleted_fraction",
+            "handshake_to_syn_ratio",
+            "in_out_byte_ratio",
+            "packet_rate_change",
+            "packets_in_mean_5",
+            "packets_in_std_5",
+            "packets_in_mean_10",
+            "packets_in_std_10",
+            "packets_in_mean_20",
+            "packets_in_std_20"
+          ]
+        },
+        "AE": {
+          "path": "data/packet_model_development_v1/main_AE_73.joblib",
+          "sha256": "23137760536f22115103f34dff3f556fc2bde9975a929077b7c9e58551461112",
+          "features": [
+            "packets_in",
+            "packets_out",
+            "bytes_in",
+            "bytes_out",
+            "syn_in",
+            "ack_in",
+            "rst_in",
+            "synack_out",
+            "handshakes_completed",
+            "new_connections",
+            "distinct_sources",
+            "packet_length_mean",
+            "packet_length_std",
+            "inbound_iat_mean",
+            "inbound_iat_std",
+            "active_connections",
+            "known_age_connections",
+            "unknown_age_connections",
+            "active_age_mean",
+            "active_age_max",
+            "uncompleted_fraction",
+            "handshake_to_syn_ratio",
+            "in_out_byte_ratio",
+            "packet_rate_change",
+            "packets_in_mean_5",
+            "packets_in_std_5",
+            "packets_in_mean_10",
+            "packets_in_std_10",
+            "packets_in_mean_20",
+            "packets_in_std_20"
+          ]
+        }
+      }
+    },
+    {
+      "variant": "no_persistence",
+      "method": "AE",
+      "seed": 101,
+      "k": 1,
+      "h": 1,
+      "threshold": 0.41456869737163377,
+      "C2": {
+        "overall": {
+          "eligible_windows": 962,
+          "false_positive_windows": 1,
+          "fpr": 0.0010395010395010396,
+          "allowed_false_positive_windows": 9
+        },
+        "stratum:ordinary": {
+          "eligible_windows": 484,
+          "false_positive_windows": 0,
+          "fpr": 0.0,
+          "allowed_false_positive_windows": 4
+        },
+        "condition:public_http": {
+          "eligible_windows": 246,
+          "false_positive_windows": 0,
+          "fpr": 0.0,
+          "allowed_false_positive_windows": 2
+        },
+        "condition:ordinary": {
+          "eligible_windows": 58,
+          "false_positive_windows": 0,
+          "fpr": 0.0,
+          "allowed_false_positive_windows": 0
+        },
+        "stratum:stress": {
+          "eligible_windows": 478,
+          "false_positive_windows": 1,
+          "fpr": 0.0020920502092050207,
+          "allowed_false_positive_windows": 4
+        },
+        "condition:bursts": {
+          "eligible_windows": 59,
+          "false_positive_windows": 0,
+          "fpr": 0.0,
+          "allowed_false_positive_windows": 0
+        },
+        "condition:flash": {
+          "eligible_windows": 59,
+          "false_positive_windows": 0,
+          "fpr": 0.0,
+          "allowed_false_positive_windows": 0
+        },
+        "condition:mixed_keepalive": {
+          "eligible_windows": 180,
+          "false_positive_windows": 0,
+          "fpr": 0.0,
+          "allowed_false_positive_windows": 1
+        },
+        "condition:long_download": {
+          "eligible_windows": 180,
+          "false_positive_windows": 0,
+          "fpr": 0.0,
+          "allowed_false_positive_windows": 1
+        },
+        "condition:congested_mixed": {
+          "eligible_windows": 180,
+          "false_positive_windows": 1,
+          "fpr": 0.005555555555555556,
+          "allowed_false_positive_windows": 1
+        }
+      },
+      "components": {
+        "AE": {
+          "path": "data/packet_model_development_v1/main_AE_101.joblib",
+          "sha256": "c2430b8915e6f7b8c7c0d63a7cbae40cfbe3b4e90437a19e34841204bdcd056c",
+          "features": [
+            "packets_in",
+            "packets_out",
+            "bytes_in",
+            "bytes_out",
+            "syn_in",
+            "ack_in",
+            "rst_in",
+            "synack_out",
+            "handshakes_completed",
+            "new_connections",
+            "distinct_sources",
+            "packet_length_mean",
+            "packet_length_std",
+            "inbound_iat_mean",
+            "inbound_iat_std",
+            "active_connections",
+            "known_age_connections",
+            "unknown_age_connections",
+            "active_age_mean",
+            "active_age_max",
+            "uncompleted_fraction",
+            "handshake_to_syn_ratio",
+            "in_out_byte_ratio",
+            "packet_rate_change",
+            "packets_in_mean_5",
+            "packets_in_std_5",
+            "packets_in_mean_10",
+            "packets_in_std_10",
+            "packets_in_mean_20",
+            "packets_in_std_20"
+          ]
+        }
+      }
+    },
+    {
+      "variant": "no_persistence",
+      "method": "hybrid",
+      "seed": 101,
+      "k": 1,
+      "h": 1,
+      "threshold": 0.9983457402812241,
+      "C2": {
+        "overall": {
+          "eligible_windows": 962,
+          "false_positive_windows": 1,
+          "fpr": 0.0010395010395010396,
+          "allowed_false_positive_windows": 9
+        },
+        "stratum:ordinary": {
+          "eligible_windows": 484,
+          "false_positive_windows": 0,
+          "fpr": 0.0,
+          "allowed_false_positive_windows": 4
+        },
+        "condition:public_http": {
+          "eligible_windows": 246,
+          "false_positive_windows": 0,
+          "fpr": 0.0,
+          "allowed_false_positive_windows": 2
+        },
+        "condition:ordinary": {
+          "eligible_windows": 58,
+          "false_positive_windows": 0,
+          "fpr": 0.0,
+          "allowed_false_positive_windows": 0
+        },
+        "stratum:stress": {
+          "eligible_windows": 478,
+          "false_positive_windows": 1,
+          "fpr": 0.0020920502092050207,
+          "allowed_false_positive_windows": 4
+        },
+        "condition:bursts": {
+          "eligible_windows": 59,
+          "false_positive_windows": 0,
+          "fpr": 0.0,
+          "allowed_false_positive_windows": 0
+        },
+        "condition:flash": {
+          "eligible_windows": 59,
+          "false_positive_windows": 0,
+          "fpr": 0.0,
+          "allowed_false_positive_windows": 0
+        },
+        "condition:mixed_keepalive": {
+          "eligible_windows": 180,
+          "false_positive_windows": 0,
+          "fpr": 0.0,
+          "allowed_false_positive_windows": 1
+        },
+        "condition:long_download": {
+          "eligible_windows": 180,
+          "false_positive_windows": 0,
+          "fpr": 0.0,
+          "allowed_false_positive_windows": 1
+        },
+        "condition:congested_mixed": {
+          "eligible_windows": 180,
+          "false_positive_windows": 1,
+          "fpr": 0.005555555555555556,
+          "allowed_false_positive_windows": 1
+        }
+      },
+      "components": {
+        "HGB": {
+          "path": "data/packet_model_development_v1/main_HGB_101.joblib",
+          "sha256": "46fac1bb47fae458dbce542eead065b4befa0ba50707267beb540a865f4b4f32",
+          "features": [
+            "packets_in",
+            "packets_out",
+            "bytes_in",
+            "bytes_out",
+            "syn_in",
+            "ack_in",
+            "rst_in",
+            "synack_out",
+            "handshakes_completed",
+            "new_connections",
+            "distinct_sources",
+            "packet_length_mean",
+            "packet_length_std",
+            "inbound_iat_mean",
+            "inbound_iat_std",
+            "active_connections",
+            "known_age_connections",
+            "unknown_age_connections",
+            "active_age_mean",
+            "active_age_max",
+            "uncompleted_fraction",
+            "handshake_to_syn_ratio",
+            "in_out_byte_ratio",
+            "packet_rate_change",
+            "packets_in_mean_5",
+            "packets_in_std_5",
+            "packets_in_mean_10",
+            "packets_in_std_10",
+            "packets_in_mean_20",
+            "packets_in_std_20"
+          ]
+        },
+        "AE": {
+          "path": "data/packet_model_development_v1/main_AE_101.joblib",
+          "sha256": "c2430b8915e6f7b8c7c0d63a7cbae40cfbe3b4e90437a19e34841204bdcd056c",
+          "features": [
+            "packets_in",
+            "packets_out",
+            "bytes_in",
+            "bytes_out",
+            "syn_in",
+            "ack_in",
+            "rst_in",
+            "synack_out",
+            "handshakes_completed",
+            "new_connections",
+            "distinct_sources",
+            "packet_length_mean",
+            "packet_length_std",
+            "inbound_iat_mean",
+            "inbound_iat_std",
+            "active_connections",
+            "known_age_connections",
+            "unknown_age_connections",
+            "active_age_mean",
+            "active_age_max",
+            "uncompleted_fraction",
+            "handshake_to_syn_ratio",
+            "in_out_byte_ratio",
+            "packet_rate_change",
+            "packets_in_mean_5",
+            "packets_in_std_5",
+            "packets_in_mean_10",
+            "packets_in_std_10",
+            "packets_in_mean_20",
+            "packets_in_std_20"
+          ]
+        }
+      }
+    }
+  ],
+  "fit_trace": [
+    {
+      "variant": "no_rate_history",
+      "method": "HGB",
+      "seed": 7,
+      "predictors": 23,
+      "signed_indices": [],
+      "fit_role": "T_both_classes",
+      "early_stop_role": null,
+      "best_epoch": null,
+      "sample_weights_used": true
+    },
+    {
+      "variant": "no_rate_history",
+      "method": "AE",
+      "seed": 7,
+      "predictors": 23,
+      "signed_indices": [],
+      "fit_role": "T_benign",
+      "early_stop_role": "V_benign",
+      "best_epoch": 100,
+      "sample_weights_used": false
+    },
+    {
+      "variant": "no_rate_history",
+      "method": "HGB",
+      "seed": 19,
+      "predictors": 23,
+      "signed_indices": [],
+      "fit_role": "T_both_classes",
+      "early_stop_role": null,
+      "best_epoch": null,
+      "sample_weights_used": true
+    },
+    {
+      "variant": "no_rate_history",
+      "method": "AE",
+      "seed": 19,
+      "predictors": 23,
+      "signed_indices": [],
+      "fit_role": "T_benign",
+      "early_stop_role": "V_benign",
+      "best_epoch": 100,
+      "sample_weights_used": false
+    },
+    {
+      "variant": "no_rate_history",
+      "method": "HGB",
+      "seed": 42,
+      "predictors": 23,
+      "signed_indices": [],
+      "fit_role": "T_both_classes",
+      "early_stop_role": null,
+      "best_epoch": null,
+      "sample_weights_used": true
+    },
+    {
+      "variant": "no_rate_history",
+      "method": "AE",
+      "seed": 42,
+      "predictors": 23,
+      "signed_indices": [],
+      "fit_role": "T_benign",
+      "early_stop_role": "V_benign",
+      "best_epoch": 100,
+      "sample_weights_used": false
+    },
+    {
+      "variant": "no_rate_history",
+      "method": "HGB",
+      "seed": 73,
+      "predictors": 23,
+      "signed_indices": [],
+      "fit_role": "T_both_classes",
+      "early_stop_role": null,
+      "best_epoch": null,
+      "sample_weights_used": true
+    },
+    {
+      "variant": "no_rate_history",
+      "method": "AE",
+      "seed": 73,
+      "predictors": 23,
+      "signed_indices": [],
+      "fit_role": "T_benign",
+      "early_stop_role": "V_benign",
+      "best_epoch": 100,
+      "sample_weights_used": false
+    },
+    {
+      "variant": "no_rate_history",
+      "method": "HGB",
+      "seed": 101,
+      "predictors": 23,
+      "signed_indices": [],
+      "fit_role": "T_both_classes",
+      "early_stop_role": null,
+      "best_epoch": null,
+      "sample_weights_used": true
+    },
+    {
+      "variant": "no_rate_history",
+      "method": "AE",
+      "seed": 101,
+      "predictors": 23,
+      "signed_indices": [],
+      "fit_role": "T_benign",
+      "early_stop_role": "V_benign",
+      "best_epoch": 100,
+      "sample_weights_used": false
+    },
+    {
+      "variant": "no_tcp_state_iat",
+      "method": "HGB",
+      "seed": 7,
+      "predictors": 15,
+      "signed_indices": [
+        8
+      ],
+      "fit_role": "T_both_classes",
+      "early_stop_role": null,
+      "best_epoch": null,
+      "sample_weights_used": true
+    },
+    {
+      "variant": "no_tcp_state_iat",
+      "method": "AE",
+      "seed": 7,
+      "predictors": 15,
+      "signed_indices": [
+        8
+      ],
+      "fit_role": "T_benign",
+      "early_stop_role": "V_benign",
+      "best_epoch": 100,
+      "sample_weights_used": false
+    },
+    {
+      "variant": "no_tcp_state_iat",
+      "method": "HGB",
+      "seed": 19,
+      "predictors": 15,
+      "signed_indices": [
+        8
+      ],
+      "fit_role": "T_both_classes",
+      "early_stop_role": null,
+      "best_epoch": null,
+      "sample_weights_used": true
+    },
+    {
+      "variant": "no_tcp_state_iat",
+      "method": "AE",
+      "seed": 19,
+      "predictors": 15,
+      "signed_indices": [
+        8
+      ],
+      "fit_role": "T_benign",
+      "early_stop_role": "V_benign",
+      "best_epoch": 100,
+      "sample_weights_used": false
+    },
+    {
+      "variant": "no_tcp_state_iat",
+      "method": "HGB",
+      "seed": 42,
+      "predictors": 15,
+      "signed_indices": [
+        8
+      ],
+      "fit_role": "T_both_classes",
+      "early_stop_role": null,
+      "best_epoch": null,
+      "sample_weights_used": true
+    },
+    {
+      "variant": "no_tcp_state_iat",
+      "method": "AE",
+      "seed": 42,
+      "predictors": 15,
+      "signed_indices": [
+        8
+      ],
+      "fit_role": "T_benign",
+      "early_stop_role": "V_benign",
+      "best_epoch": 100,
+      "sample_weights_used": false
+    },
+    {
+      "variant": "no_tcp_state_iat",
+      "method": "HGB",
+      "seed": 73,
+      "predictors": 15,
+      "signed_indices": [
+        8
+      ],
+      "fit_role": "T_both_classes",
+      "early_stop_role": null,
+      "best_epoch": null,
+      "sample_weights_used": true
+    },
+    {
+      "variant": "no_tcp_state_iat",
+      "method": "AE",
+      "seed": 73,
+      "predictors": 15,
+      "signed_indices": [
+        8
+      ],
+      "fit_role": "T_benign",
+      "early_stop_role": "V_benign",
+      "best_epoch": 100,
+      "sample_weights_used": false
+    },
+    {
+      "variant": "no_tcp_state_iat",
+      "method": "HGB",
+      "seed": 101,
+      "predictors": 15,
+      "signed_indices": [
+        8
+      ],
+      "fit_role": "T_both_classes",
+      "early_stop_role": null,
+      "best_epoch": null,
+      "sample_weights_used": true
+    },
+    {
+      "variant": "no_tcp_state_iat",
+      "method": "AE",
+      "seed": 101,
+      "predictors": 15,
+      "signed_indices": [
+        8
+      ],
+      "fit_role": "T_benign",
+      "early_stop_role": "V_benign",
+      "best_epoch": 100,
+      "sample_weights_used": false
+    },
+    {
+      "variant": "no_hgb_class_weights",
+      "method": "HGB",
+      "seed": 7,
+      "predictors": 30,
+      "signed_indices": [
+        23
+      ],
+      "fit_role": "T_both_classes",
+      "early_stop_role": null,
+      "best_epoch": null,
+      "sample_weights_used": false
+    },
+    {
+      "variant": "no_hgb_class_weights",
+      "method": "HGB",
+      "seed": 19,
+      "predictors": 30,
+      "signed_indices": [
+        23
+      ],
+      "fit_role": "T_both_classes",
+      "early_stop_role": null,
+      "best_epoch": null,
+      "sample_weights_used": false
+    },
+    {
+      "variant": "no_hgb_class_weights",
+      "method": "HGB",
+      "seed": 42,
+      "predictors": 30,
+      "signed_indices": [
+        23
+      ],
+      "fit_role": "T_both_classes",
+      "early_stop_role": null,
+      "best_epoch": null,
+      "sample_weights_used": false
+    },
+    {
+      "variant": "no_hgb_class_weights",
+      "method": "HGB",
+      "seed": 73,
+      "predictors": 30,
+      "signed_indices": [
+        23
+      ],
+      "fit_role": "T_both_classes",
+      "early_stop_role": null,
+      "best_epoch": null,
+      "sample_weights_used": false
+    },
+    {
+      "variant": "no_hgb_class_weights",
+      "method": "HGB",
+      "seed": 101,
+      "predictors": 30,
+      "signed_indices": [
+        23
+      ],
+      "fit_role": "T_both_classes",
+      "early_stop_role": null,
+      "best_epoch": null,
+      "sample_weights_used": false
+    }
+  ],
+  "new_weight_bundles": 25,
+  "new_operating_points": 50,
+  "attack_V_scores_computed": false,
+  "final_sources_opened": false,
+  "scope": "Prepared/calibrated factor controls only; no final outcomes and no primary-model change."
+}

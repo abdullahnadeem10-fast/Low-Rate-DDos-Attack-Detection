@@ -1,0 +1,11 @@
+{
+  "date": "2026-11-13",
+  "tests_run": 195,
+  "failures": 0,
+  "errors": 0,
+  "skipped": 0,
+  "all_tests_passed": true,
+  "elapsed_seconds": 4.200409599987324,
+  "scope": "Offline engineering/policy fixtures only; no reserved source access or efficacy experiment.",
+  "command": "python -X utf8 -m unittest discover -s \"phase 3/src\" -p \"test*.py\" -v"
+}

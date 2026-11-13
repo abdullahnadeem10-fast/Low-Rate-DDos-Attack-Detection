@@ -1,0 +1,124 @@
+{
+  "version": "blind_final_protocol_v1",
+  "declared_before_reserved_access": true,
+  "claim": "Frozen confirmatory comparison at qualified observed scope; hypothesis remains unproven. No population, live-latency, zero-day or fusion-superiority claim from development.",
+  "primary": {
+    "candidate": "main:hybrid:7",
+    "comparator": "main:AE:7",
+    "outcomes": [
+      "per-family window recall",
+      "eligible benign window FPR"
+    ],
+    "interpretation": "Report both outcomes and trade-off; no outcome-based winner selection. Seed7 was prespecified, not selected for performance."
+  },
+  "secondary": {
+    "seeds": [
+      7,
+      19,
+      42,
+      73,
+      101
+    ],
+    "methods": [
+      "HGB",
+      "AE",
+      "hybrid",
+      "RF",
+      "IF",
+      "LR",
+      "rate"
+    ],
+    "controls": [
+      "mapped_branch_control",
+      "drop_volume",
+      "lab_benign_T_only",
+      "no_rate_history",
+      "no_tcp_state_iat",
+      "no_hgb_class_weights",
+      "no_persistence"
+    ],
+    "selection": "No promotion, refitting, new searches, C1 refit, threshold adjustment or epoch extension after final access."
+  },
+  "development_limits": [
+    "V is44 SYN-labelled seconds in40 runs from one recording, max2s; no observed TLS functionality or denial impact.",
+    "No matched benign target/source coverage; class/service/path confounding persists.",
+    "Main AE seeds reach100/100 epoch cap; convergence is unestablished.",
+    "h5 public C2 eligibility13/246, public V1/155. C2 empirical1% is not final/population FPR guarantee.",
+    "Hybrid recall varies20.45-88.64% across seeds; AE86.36-100%. Some AE/IF V FPR exceeds1%."
+  ],
+  "features": {
+    "count": 30,
+    "signed": "packet_rate_change",
+    "metadata_excluded": true,
+    "core": "src/causal_features.py",
+    "policy": "Split/source first, core reset per group/observation segment, conservative50s start guard, omit partial tail, no cross-group state. Preserve full observed idle timeline; idle public truth stays unknown."
+  },
+  "decisions": {
+    "strict_threshold": true,
+    "persistence": "Frozen kth-largest trailing-h, gaps/invalid feature history =>unknown, never compress clock.",
+    "onset": "New alert only after five preceding valid nonalerts. Startup/gap alarm is unqualified. Short off gaps remain same alarm episode. Unknown truth never changes decision state.",
+    "availability": "Offline proxy=window end+1s fixed reorder=t+2. Measured live latency is a separate experiment."
+  },
+  "windows": {
+    "primary_support": "Common5 consecutive valid raw feature seconds; current positive label suffices; benign requires all5 truth labels benign. Own-h support is secondary.",
+    "unknown": "y=-1 never a negative; report excluded known labels and all-known recall/FPR bounds.",
+    "AP_AUC": "Trailing decision statistic on stated eligible support; undefined without both classes.",
+    "benign_burden": "Qualified new-alert starts/hour on at least6 consecutive valid known-benign seconds; report startup and unattributed starts separately."
+  },
+  "episodes": {
+    "credit": "Fresh qualified alert, originating window overlaps onset, availability<=onset+180s and<episode end; preexisting alarms get no immediate credit.",
+    "eligibility": "Exact-onset primary denominator requires same common5 input support, recent pre-onset history and complete fixed min(180s,duration) observation, independent of detection outcome.",
+    "censoring": "Incomplete/gapped episodes remain recorded, unscorable/censored, with bounds; fully observed misses remain misses, including ineffective attacks.",
+    "coarse_truth": "Onset interval gets diagnostic possible/guaranteed bounds only, no invented point delay/binary primary hit.",
+    "delay": "Penalty-coded restricted delay includes misses at min(180s,duration); detected-only median secondary. No inference of live speed from replay proxy."
+  },
+  "uncertainty": {
+    "bootstrap_draws": 2000,
+    "seed": 20261113,
+    "unit": "Pair models by session; average algorithm seeds within session, pool within parent, resample whole parent recordings within prespecified source/family/condition stratum.",
+    "unsupported": "N/A with<2 independent parents per stratum, missing pairs/seeds, absent metric denominator or parent spanning strata. Never treat windows, rotations or seeds as independent.",
+    "claims": "Descriptive conditional intervals; primary fixed-seed and secondary seed-averaged results separate. No multiple-comparison superiority claim."
+  },
+  "reserved_sources": [
+    "CICIDS2017/Wednesday complete slow-family/context",
+    "CIC-DDoS2019/01-12 complete supplied day",
+    "CSE-CIC-IDS2018 entire source",
+    "fresh final lab attack/benign sessions"
+  ],
+  "qualification": "After seal, predeclare source-specific acquisition/adapter hashes before payload access. Select endpoints/clock using provenance/count/label compatibility only, never scores. Record unsupported/failed units and outcome-independent exclusions. Shared all-week label archive envelope is not a blanket denial of unopened Wednesday member.",
+  "lab": {
+    "attack_episodes": 40,
+    "mechanisms": [
+      "incomplete_header",
+      "slow_request_body"
+    ],
+    "sources": [
+      1,
+      3
+    ],
+    "connection_timing_profiles": [
+      {
+        "connections_per_source": 10,
+        "interval_seconds": 20
+      },
+      {
+        "connections_per_source": 60,
+        "interval_seconds": 5
+      }
+    ],
+    "repeats": 5,
+    "minimum_benign_sessions": 20,
+    "benign_conditions": [
+      "ordinary",
+      "bursts",
+      "flash",
+      "long_lived_or_congested"
+    ],
+    "minimum_repeats_each": 5,
+    "session_policy": "Fresh isolated private lab only; benign verification first.>=60s observed warmup, independent core reset, all legitimate failures remain benign. Retain ineffective attacks and planned failures; log actual rate/service impact/packet loss separately.",
+    "duration": "Final acquisition addendum must fix durations/measurement intervals, seeds, order, image/collector/adapter hashes and impact probes before any final traffic. No outcome-driven duration/intensity tuning."
+  },
+  "scope": "Detection/evaluation only; no mitigation/blocking. Costs of feature extraction/inference and actual live availability measured separately from fitting/task runtime.",
+  "final_acquisition_ready": false,
+  "final_tests_run": false
+}

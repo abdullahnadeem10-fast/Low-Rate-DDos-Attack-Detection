@@ -1,0 +1,11 @@
+{
+  "date": "2026-11-13",
+  "tests_run": 195,
+  "failures": 0,
+  "errors": 0,
+  "skipped": 0,
+  "all_tests_passed": true,
+  "elapsed_seconds": 4.38196150001022,
+  "execution": "Sanitized public checkout, project-local host Python; no raw data/private weights copied.",
+  "scope": "Offline engineering/policy checks, not final efficacy experiments."
+}

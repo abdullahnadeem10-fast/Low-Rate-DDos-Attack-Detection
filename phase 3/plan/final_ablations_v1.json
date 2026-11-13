@@ -1,0 +1,86 @@
+{
+  "date": "2026-11-13",
+  "version": "final_ablations_v1",
+  "declared_before_fitting": true,
+  "development_policy_sha256": "d1819fdfb38e1c5f011fda58ef14ed7f8e74d51d148a4e1aeb80a0a68dfeaafd",
+  "development_results_sha256": "cc260213515921b6f47bf7f98a92f0869a0d8b5fa8a117b23b10cb368c7db52c",
+  "source_sha256": {
+    "src/prepare_final_ablations.py": "da256cf4c1d0a25a444d2a9123d05389748bd0d927f07e057ed2633fdcba9d96",
+    "src/test_final_ablations.py": "8835417f19af451cef84c52e4d1bf959568796c331bb72c51b28b2eb4df5ab97",
+    "src/packet_model_policy.py": "bf94f55e09c87895d4c86da172db81de805d85501f4f14eb6fd2974042ad2e5a",
+    "src/run_packet_model_development.py": "fdaa34d9227f65d2dfc2638fe803d44c0fc3d915c156fdd9c60aa3358b6046a8",
+    "src/benign_autoencoder.py": "272eeeeeb4d0c8c93d5c4f4ccb94e6803bf7de6c1aee4539aa18bc2f32defbd0"
+  },
+  "variants": {
+    "no_rate_history": {
+      "remove": [
+        "packet_rate_change",
+        "packets_in_mean_5",
+        "packets_in_std_5",
+        "packets_in_mean_10",
+        "packets_in_std_10",
+        "packets_in_mean_20",
+        "packets_in_std_20"
+      ],
+      "methods": [
+        "HGB",
+        "AE",
+        "hybrid"
+      ]
+    },
+    "no_tcp_state_iat": {
+      "remove": [
+        "syn_in",
+        "ack_in",
+        "rst_in",
+        "synack_out",
+        "handshakes_completed",
+        "new_connections",
+        "inbound_iat_mean",
+        "inbound_iat_std",
+        "active_connections",
+        "known_age_connections",
+        "unknown_age_connections",
+        "active_age_mean",
+        "active_age_max",
+        "uncompleted_fraction",
+        "handshake_to_syn_ratio"
+      ],
+      "methods": [
+        "HGB",
+        "AE",
+        "hybrid"
+      ]
+    },
+    "no_hgb_class_weights": {
+      "remove": [],
+      "methods": [
+        "HGB",
+        "hybrid"
+      ]
+    },
+    "no_persistence": {
+      "remove": [],
+      "methods": [
+        "AE",
+        "hybrid"
+      ]
+    }
+  },
+  "seeds": [
+    7,
+    19,
+    42,
+    73,
+    101
+  ],
+  "selection": "No search, no variant/seed promotion, no attack-V scoring. Primary hybrid seed7 remains fixed despite mixed development performance.",
+  "hyperparameters": "Inherit selected main HGB/AE settings; feature ablations refit on permitted T, AE early stopping benign V only. No epoch-budget extension.",
+  "rules": "Fix main method k/h; no-persistence sets1/1. Recompute C1 maps and joint C2 threshold with unchanged empirical budget/eligibility.",
+  "nonchanges": "Existing mapped-branch controls remove either hybrid branch. HGB already1/1, so no-persistence HGB is the existing main HGB, not another fit.",
+  "budget": "The completed v1 selection search is closed. These prespecified nonselectable factor controls do not add hyperparameter searches; unique trained HGB configurations total8 and AE total5, each below original12.",
+  "scope": "Development preparation for a frozen confirmatory suite, not final ablation results. All reserved sources remain unopened.",
+  "expected_new_weight_bundles": 25,
+  "expected_new_operating_points": 50,
+  "final_sources_opened": false
+}

@@ -1,0 +1,10 @@
+{
+  "freeze_sha256": "063a838d5fe45b1d38e536ca589959214871961dcb944a868203e98e15712bfe",
+  "cases": 117,
+  "group_score_arrays_reproduced": 3042,
+  "C1_C2_only": true,
+  "all_scores_match": true,
+  "absolute_tolerance": 1e-12,
+  "final_sources_opened": false,
+  "scope": "Read-only native/mapped/fused inference equivalence. No final performance evidence."
+}

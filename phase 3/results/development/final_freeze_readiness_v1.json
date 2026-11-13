@@ -1,0 +1,16 @@
+{
+  "date": "2026-11-13",
+  "model_evaluation_analysis_frozen": true,
+  "final_acquisition_ready": false,
+  "final_payloads_opened": false,
+  "final_attack_tests_run": 0,
+  "headline_generalization_readiness": false,
+  "source_path_confounding_resolved": false,
+  "offline_engineering_tests": 195,
+  "frozen_cases": 117,
+  "unique_weights": 66,
+  "C1_reference_arrays": 66,
+  "reproduced_C1_C2_arrays": 3042,
+  "freeze_sha256": "063a838d5fe45b1d38e536ca589959214871961dcb944a868203e98e15712bfe",
+  "next_action": "Prepare, fixture-test and seal the source-specific final-lab acquisition/collector/adapter addendum before any final traffic; retain all planned failures. Public final sources require separate pre-access declarations."
+}

@@ -16,3 +16,12 @@
 
 # Modelling policies are sealed before fitting.
 "phase 3/plan/model_development_*.json" -text whitespace=cr-at-eol
+
+# Blind protocol/ablation declarations are pinned byte-for-byte.
+"phase 3/plan/final_ablations_*.json" -text whitespace=cr-at-eol
+"phase 3/plan/blind_final_protocol_*.json" -text whitespace=cr-at-eol
+
+# Frozen source hashes include original line endings; no code normalization.
+"phase 3/src/*.py" -text whitespace=cr-at-eol
+"phase 3/lab/**" -text whitespace=cr-at-eol
+"phase 3/requirements*.txt" -text whitespace=cr-at-eol

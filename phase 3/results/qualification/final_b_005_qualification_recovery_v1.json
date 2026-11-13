@@ -1,0 +1,106 @@
+{
+  "freeze_sha256": "063a838d5fe45b1d38e536ca589959214871961dcb944a868203e98e15712bfe",
+  "acquisition_sha256": "97c66026ecbe6347099c579b066b8df0ee8e0fe13ef1a8c49320013f4633e7a9",
+  "source_slot": "lab_benign",
+  "source_id": "lab_final_benign",
+  "role": "K_BENIGN",
+  "parent_recording": "final-b-005",
+  "group_id": "final-b-005",
+  "raw_sha256": "8d9422ae9c0e663e31a4a0e94d6c032961a8bdacfc3bd48d12d767a000e58b47",
+  "qualification_pass": true,
+  "model_scores_used_for_qualification": false,
+  "unknown_or_idle_inferred_benign": false,
+  "feature_state_crosses_groups": false,
+  "feature_core_sha256": "24795f084da55ab93bb858e14bd35663fd85c86b994ed928cb5d80e481c5e708",
+  "predictor_columns": [
+    "packets_in",
+    "packets_out",
+    "bytes_in",
+    "bytes_out",
+    "syn_in",
+    "ack_in",
+    "rst_in",
+    "synack_out",
+    "handshakes_completed",
+    "new_connections",
+    "distinct_sources",
+    "packet_length_mean",
+    "packet_length_std",
+    "inbound_iat_mean",
+    "inbound_iat_std",
+    "active_connections",
+    "known_age_connections",
+    "unknown_age_connections",
+    "active_age_mean",
+    "active_age_max",
+    "uncompleted_fraction",
+    "handshake_to_syn_ratio",
+    "in_out_byte_ratio",
+    "packet_rate_change",
+    "packets_in_mean_5",
+    "packets_in_std_5",
+    "packets_in_mean_10",
+    "packets_in_std_10",
+    "packets_in_mean_20",
+    "packets_in_std_20"
+  ],
+  "qualified_after_seal_utc": 1794570957.6335762,
+  "payload_access_started_utc": 1794570677.525957,
+  "capture_started_utc": 1794570680.4102423,
+  "qualification_evidence": {
+    "provenance": {
+      "path": "data/final_lab_v1/final-b-005/qualified_v1/provenance.json",
+      "sha256": "d67d2369bab4f0e9a6eedde090634a94bf88f410af6d57fcd60245841e718243"
+    },
+    "clock_labels": {
+      "path": "data/final_lab_v1/final-b-005/qualified_v1/clock_labels.json",
+      "sha256": "14c844423bedbf341f9b358b0bd9d7863d6d9ec79f01f8e15ee1e43d7272e729"
+    },
+    "reference_recovery": {
+      "path": "data/final_lab_v1/final-b-005/qualified_v1/reference_recovery.json",
+      "sha256": "9e7e24f44e57c16dbdad549c065e3dc436b0fb585b7daa027d05e5c8470756f5"
+    }
+  },
+  "features": {
+    "path": "data/final_lab_v1/final-b-005/qualified_v1/features.csv",
+    "sha256": "523e454cd647447490982ed0ed4d0e911ff6d32d3b64ea28c82f790a5f802d05"
+  },
+  "ground_truth": {
+    "path": "data/final_lab_v1/final-b-005/qualified_v1/truth.csv",
+    "sha256": "f5fc360ecfc9b92070bf78e0ccae935ce2ec48a000bea067c61fb50dac0d8d0f"
+  },
+  "scorable_clock_segments": [
+    {
+      "start": 1794570681,
+      "end": 1794570934,
+      "core_reset": true,
+      "boundary_guard_seconds": 50
+    }
+  ],
+  "evaluation_intervals": [
+    [
+      1794570748,
+      1794570928
+    ]
+  ],
+  "episodes": [],
+  "packet_quality": {
+    "truncated_records": 0,
+    "selected_fragmented_tcp": 0,
+    "late_selected_dropped": 0,
+    "kernel_capture_drops": 0
+  },
+  "service": {
+    "protocol": "TCP",
+    "port": 80
+  },
+  "label_provenance_verified": true,
+  "clock_alignment_verified": true,
+  "isolated_private_lab_verified": true,
+  "all_planned_outcomes_retained": true,
+  "qualification_exclusions": {
+    "planned_episodes": 0,
+    "no_corroborated_initial_payload": 0,
+    "no_silent_replacement": true
+  }
+}

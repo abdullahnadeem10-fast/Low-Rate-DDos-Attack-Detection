@@ -1,0 +1,18 @@
+{
+  "checkpoint_sha256": "6d47e76c7d1090e2dcae4cea5e2b001024725fd4694540f20c3d1388aee82e04",
+  "source_sha256": "0bf30444cba81aa84c100ef302778c62011bebc6127014747820520af31cff7a",
+  "CSV_sha256": "fadd0367bf5adac322faadde0eb63edfbedda5f8ab823b15804b5f5dfa52cc9c",
+  "rows": 1053,
+  "canonical_sessions": 9,
+  "cases_per_session": 117,
+  "all_result_hashes_match": true,
+  "all_CSV_confusion_sums_match": true,
+  "all_condition_counts_match": true,
+  "original_model_and_acquisition_seals_intact": true,
+  "previous_v2_source_JSON_CSV_bytes_preserved": true,
+  "observed_exact_attack_trials": 4,
+  "failed_or_unscorable_trials_omitted": false,
+  "unresolved_recovery_attempts": 0,
+  "collector_lock_present": false,
+  "verification_scope": "Read-only checkpoint/data reconciliation. Existing 225 engineering checks remain on unchanged sealed sources; no redundant regression rerun, fitting, tuning or public held-out access."
+}

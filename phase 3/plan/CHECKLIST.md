@@ -58,10 +58,12 @@ Start with a small, real packet-capture test. A checked box means there is evide
 - [x] Preserve a no-traffic image-reference failure and separately seal/test an exact-content recovery; 225 root/public fixtures pass. [Review](FINAL_LAB_RESOLUTION_RECOVERY_REVIEW.md).
 - [x] Complete the next three final benign units and first slow-body trial in fixed order, all 117 cases each; save 585-row v2 evidence including high benign FPR and one conditional attack hit. [Checkpoint v2](../results/final/final_lab_checkpoint_v2.json). Full-matrix items remain incomplete.
 
+- [x] Complete the next header-low/body-high/body-low/ordinary batch in fixed order; preserve low window recall/slow hybrid alerts and healthy-service campaigns. [Checkpoint v3](../results/final/final_lab_checkpoint_v3.json), [1,053-row reconciliation](../results/final/final_lab_checkpoint_v3_audit.json). No settings changed or global completion inferred.
+
 ## 3. Final tests and reporting
 
 - [ ] Score the known-attack and withheld slow-family sessions; report per-family recall, missed episodes, false alarms and delay with an explicit measurement basis.
-- [ ] Complete final benign stress sessions (at least five per condition) and isolated distributed sessions (40 planned attack episodes). Current 4/20 benign and 1/40 attack trials; 55 catalog units remain. Preserve service impact, capture quality, misses and failed/unsupported units. Benign isolation preflights pass.
+- [ ] Complete final benign stress sessions (at least five per condition) and isolated distributed sessions (40 planned attack episodes). Current 5/20 benign and 4/40 attack trials; 51 catalog units remain. Preserve service impact, capture quality, misses and failed/unsupported units. Benign isolation preflights pass.
 - [ ] Run matched ablations and paired session-level comparisons. Keep repeats/seeds distinct from independent traffic sessions.
 - [ ] Run frozen CSE-CIC-IDS2018 transfer on compatible packet data or record the precise limitation.
 - [ ] Produce paper-ready tables, figures, reproducibility notes and the results section.

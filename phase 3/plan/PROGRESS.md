@@ -105,6 +105,18 @@ Declare and implement a broader benign development matrix with controlled conges
 - Fresh whole-session causal replay covered known observed idle tails by advancing the unchanged core, not zero-filled CSV rows. No state crosses partitions. The v5 whitelist keeps all 20 earlier groups once and adds 36 new benign groups: **56 groups/6,206 labelled windows**, T 2,044 benign/1,076 attack, C1 1,209 benign, C2 962 benign, V 871 benign/44 preliminary attack-present.
 - All **129 public-checkout offline checks passed**; counts include preserved-version regression guards, not independent experiments. Saved summary CSV, raw-evidence hash companion, readiness, coverage/source-class diagnostics and `BENIGN_STRESS_REVIEW.md`. Three same-host repeats are not independent environments. Sparse V, source/path/class confounding and the missing-label/persistence policy remain open. No main fitting/freeze/final attack test or reserved payload access occurred. Collection/replay jobs finished.
 
-## Next unchecked item
+## Prior recorded next action (historical)
 
 Write plan/model_development_v1.json: qualify the sparse V selection criterion, prespecify source/path sensitivity controls and missing-label/persistence calibration policy, then fit matched development branches/baselines without opening final sources. Read the v5 registry, current readiness and [NEXT_STEPS.md](NEXT_STEPS.md). Keep every final/slow/external reservation intact and preserve all earlier negative findings.
+
+
+## 2026-11-13: Exploratory causal packet-window models and calibration
+
+- Declared `model_development_v1.json` before fitting, hash d1819fdfb38e1c5f011fda58ef14ed7f8e74d51d148a4e1aeb80a0a68dfeaafd. Fixed native-score baselines versus C1 percentile-max hybrid, bounded configs/seeds, conservative known-benign persistence eligibility, full-clock permitted positive V history and fixed-rule source controls. No new source or reserved payload was opened.
+- Fitted HGB/RF/LR/IF/AE/rate+hybrid on the exact unchanged v5 tables. Fitted transforms/models use permitted T only, AE epoch choice benign V only; no C1/C2 fit. Joint C2 empirical budgets pass overall, ordinary/stress and each condition. Eligible C2 h1/3/5 support962/734/681; unknown/gap windows are not negatives. V rule comparison uses 44 positives and 669 common eligible negatives, while raw-score AP selection uses 915 known labels.
+- Preserved negative/mixed findings: seed 7 hybrid39/44 with 1/669 benign alerts versus AE 43/44 with 3/669; no demonstrated fusion superiority. Across five seeds hybrid recall 20.45–88.64%, AE 86.36–100%, at differing observed FPRs. Supervised/IF/rate calibrated primary rules miss all 44 proxy positives. Some V FPRs exceed1% despite C2 passing. Source controls vary hybrid performance. Every main AE selects epoch 100 at 100-epoch cap; no convergence claim.
+- All 146 offline engineering/policy checks pass. Independent audit verifies 99 private hashes, replays41 saved models, checks 21 imputer fit-role traces and independently recalculates67 operating points. No final freeze, novel-family/latency/denial test, independent generalization claim or final-source access occurred. Candidate/readiness/summary/review files record actual limitations; ignored weights/scores stay private. Training/audit jobs finished.
+
+## Next unchecked item
+
+Review the candidate and declared AE baseline under source/label-support limits, then write final-freeze/blind-evaluation protocol and fixtures before opening held-out sources. Any altered training/selection needs a new bounded declaration; do not overwrite v1 or promote the best observed seed/control. Read [NEXT_STEPS.md](NEXT_STEPS.md), [model review](PACKET_MODEL_DEVELOPMENT_REVIEW.md) and `../results/development/packet_model_readiness_v1.json`.

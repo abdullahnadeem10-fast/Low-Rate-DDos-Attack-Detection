@@ -1,0 +1,9 @@
+{
+  "date": "2026-11-13",
+  "tests_run": 146,
+  "failures": 0,
+  "errors": 0,
+  "successful": true,
+  "log_sha256": "fd7ca93963151d1e0891bc468d9faf120ede2c48795d653231fd5cea08612c35",
+  "scope": "Offline engineering/policy tests, including group-clock resets, missing labels, unknown V history, strict joint FPR budgets and fitted-role guards. No efficacy or final tests."
+}

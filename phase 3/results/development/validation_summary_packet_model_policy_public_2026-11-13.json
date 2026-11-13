@@ -1,0 +1,9 @@
+{
+  "date": "2026-11-13",
+  "tests_run": 146,
+  "failures": 0,
+  "errors": 0,
+  "successful": true,
+  "log_sha256": "159a6b3bff80d999f644f2390db24e6706f60d53c560a53fed31b1f49ca26642",
+  "scope": "Public-checkout offline policy/engineering checks. Counts include archived-version regressions, not independent experiments or efficacy/final validation."
+}

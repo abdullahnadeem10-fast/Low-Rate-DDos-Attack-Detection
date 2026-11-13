@@ -13,3 +13,6 @@
 
 # Stress declarations are hashed before traffic.
 "phase 3/plan/benign_stress_*.json" -text whitespace=cr-at-eol
+
+# Modelling policies are sealed before fitting.
+"phase 3/plan/model_development_*.json" -text whitespace=cr-at-eol

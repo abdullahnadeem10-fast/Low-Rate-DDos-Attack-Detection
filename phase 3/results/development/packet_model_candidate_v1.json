@@ -1,0 +1,41 @@
+{
+  "date": "2026-11-13",
+  "primary_method": "hybrid",
+  "primary_seed": 7,
+  "seed_prespecified_not_selected_by_outcome": true,
+  "plan_sha256": "d1819fdfb38e1c5f011fda58ef14ed7f8e74d51d148a4e1aeb80a0a68dfeaafd",
+  "report_sha256": "cc260213515921b6f47bf7f98a92f0869a0d8b5fa8a117b23b10cb368c7db52c",
+  "registry_sha256": "885b74ab85552ac381d54f271fee9950b1dd64c48846b96a536bfb9e603e7735",
+  "components": {
+    "main_HGB_7.joblib": {
+      "path": "data/packet_model_development_v1/main_HGB_7.joblib",
+      "sha256": "03364f3a41453b346fab2e9ffdf374a3a3ae0060ff301751e8b84cb66b6c2768"
+    },
+    "main_AE_7.joblib": {
+      "path": "data/packet_model_development_v1/main_AE_7.joblib",
+      "sha256": "59d3010aa4ab74f33c98b445798079e83ae4823707f8fced4ca0588e40cd4e54"
+    },
+    "main_HGB_7_scores.npz": {
+      "path": "data/packet_model_development_v1/main_HGB_7_scores.npz",
+      "sha256": "13dbac7f8673fec0c229efb5780128f6734bdecfeed184beee108c281b108453"
+    },
+    "main_AE_7_scores.npz": {
+      "path": "data/packet_model_development_v1/main_AE_7_scores.npz",
+      "sha256": "0ff47c41b7c519ffea9f5ccf5115c3b374da0f6ea0c86e0781a253f22e8ea5f0"
+    },
+    "operating_rules.json": {
+      "path": "data/packet_model_development_v1/operating_rules.json",
+      "sha256": "a928c5da461b113f7c22c86a7d2fa856ace81615c69496f0dda7a5c2b3c07822"
+    }
+  },
+  "decision": {
+    "k": 3,
+    "h": 5,
+    "strict_threshold": 0.9867659222497932,
+    "mapping": "Right C1 empirical percentiles, max across HGB/AE. C1 references reconstruct from private native C1 score arrays.",
+    "state": "Reset per whole group; insufficient/missing decision history is undefined, never benign."
+  },
+  "final_model_frozen": false,
+  "final_scoring_authorized_by_this_manifest": false,
+  "scope": "Concrete provisional candidate for review; this manifest is not a final freeze or evidence of superiority."
+}

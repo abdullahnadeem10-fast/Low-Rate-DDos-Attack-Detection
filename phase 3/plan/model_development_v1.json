@@ -1,0 +1,281 @@
+{
+  "date": "2026-11-13",
+  "version": "model_development_v1",
+  "declared_before_main_fitting": true,
+  "scope": "Exploratory causal packet-window DEVELOPMENT only. No final freeze, unseen-family result, live delay, denial-impact or broad-generalization claim.",
+  "registry": "results/development/study_development_manifest_v5.json",
+  "registry_sha256": "885b74ab85552ac381d54f271fee9950b1dd64c48846b96a536bfb9e603e7735",
+  "source_sha256": {
+    "src/packet_model_policy.py": "bf94f55e09c87895d4c86da172db81de805d85501f4f14eb6fd2974042ad2e5a",
+    "src/declare_packet_model_development.py": "97b083abc9b31918513ef3b1d539665fb73746e434da87f2b3ebadda1052a16b",
+    "src/run_packet_model_development.py": "fdaa34d9227f65d2dfc2638fe803d44c0fc3d915c156fdd9c60aa3358b6046a8",
+    "src/test_packet_model_policy.py": "15c6b045151e8ad146f9cf436fe9e78b97c8dae52ca7e72e67b2ec045d8307eb",
+    "src/benign_autoencoder.py": "272eeeeeb4d0c8c93d5c4f4ccb94e6803bf7de6c1aee4539aa18bc2f32defbd0"
+  },
+  "software": {
+    "python": "3.12.14",
+    "numpy": "2.3.5",
+    "sklearn": "1.7.2",
+    "threads": 2
+  },
+  "predictor_columns": [
+    "packets_in",
+    "packets_out",
+    "bytes_in",
+    "bytes_out",
+    "syn_in",
+    "ack_in",
+    "rst_in",
+    "synack_out",
+    "handshakes_completed",
+    "new_connections",
+    "distinct_sources",
+    "packet_length_mean",
+    "packet_length_std",
+    "inbound_iat_mean",
+    "inbound_iat_std",
+    "active_connections",
+    "known_age_connections",
+    "unknown_age_connections",
+    "active_age_mean",
+    "active_age_max",
+    "uncompleted_fraction",
+    "handshake_to_syn_ratio",
+    "in_out_byte_ratio",
+    "packet_rate_change",
+    "packets_in_mean_5",
+    "packets_in_std_5",
+    "packets_in_mean_10",
+    "packets_in_std_10",
+    "packets_in_mean_20",
+    "packets_in_std_20"
+  ],
+  "excluded_metadata": [
+    "session_id",
+    "role",
+    "condition",
+    "y",
+    "utc_second",
+    "history_complete"
+  ],
+  "ae_signed_predictor": "packet_rate_change",
+  "ae_signed_index": 23,
+  "group_ownership": "Exact 56-group whitelist once; no packet/feature/fitted state crosses roles. Entire Friday target T and entire provided CIC2019 03-11 V.",
+  "validation_positive_context": {
+    "path": "data/development/cic2019_v/causal_v1/features.csv",
+    "sha256": "ab16051ec3b5a249cca1d92c54620c41e04fccaa0f8a2b113df300e87b1ed056",
+    "eligible_start": 1541247547,
+    "eligible_end": 1541277366,
+    "use": "Only scores from already permitted whole-V features for preceding decision history. Unknown labels remain -1; they never fit models/maps, enter negatives, or gain labels."
+  },
+  "seeds": [
+    7,
+    19,
+    42,
+    73,
+    101
+  ],
+  "primary_seed": 7,
+  "primary_seed_not_selected_by_outcome": true,
+  "configurations": {
+    "HGB": [
+      {
+        "max_iter": 50,
+        "max_leaf_nodes": 15,
+        "learning_rate": 0.1,
+        "l2_regularization": 0.0,
+        "early_stopping": false
+      },
+      {
+        "max_iter": 100,
+        "max_leaf_nodes": 15,
+        "learning_rate": 0.1,
+        "l2_regularization": 0.0,
+        "early_stopping": false
+      },
+      {
+        "max_iter": 200,
+        "max_leaf_nodes": 15,
+        "learning_rate": 0.1,
+        "l2_regularization": 0.0,
+        "early_stopping": false
+      }
+    ],
+    "RF": [
+      {
+        "n_estimators": 100,
+        "max_depth": 6,
+        "class_weight": "balanced",
+        "n_jobs": 2
+      },
+      {
+        "n_estimators": 100,
+        "max_depth": 12,
+        "class_weight": "balanced",
+        "n_jobs": 2
+      },
+      {
+        "n_estimators": 100,
+        "max_depth": null,
+        "class_weight": "balanced",
+        "n_jobs": 2
+      }
+    ],
+    "LR": [
+      {
+        "C": 0.1,
+        "class_weight": "balanced",
+        "max_iter": 2000,
+        "solver": "lbfgs"
+      },
+      {
+        "C": 1.0,
+        "class_weight": "balanced",
+        "max_iter": 2000,
+        "solver": "lbfgs"
+      },
+      {
+        "C": 10.0,
+        "class_weight": "balanced",
+        "max_iter": 2000,
+        "solver": "lbfgs"
+      }
+    ],
+    "IF": [
+      {
+        "n_estimators": 100,
+        "max_samples": 128,
+        "contamination": "auto",
+        "n_jobs": 2
+      },
+      {
+        "n_estimators": 100,
+        "max_samples": 256,
+        "contamination": "auto",
+        "n_jobs": 2
+      }
+    ],
+    "AE": [
+      {
+        "hidden_layers": [
+          32,
+          16,
+          8,
+          16,
+          32
+        ],
+        "adam_learning_rate": 0.001,
+        "batch_size": 256,
+        "max_epochs": 100,
+        "patience": 10
+      }
+    ],
+    "rate": [
+      {
+        "feature": "packets_in"
+      }
+    ]
+  },
+  "deterministic_methods": [
+    "LR",
+    "rate"
+  ],
+  "stochastic_methods": [
+    "HGB",
+    "RF",
+    "IF",
+    "AE"
+  ],
+  "fitting": {
+    "supervised": "Only T known benign+known attack; inverse class frequency weights for HGB, balanced LR/RF.",
+    "anomaly": "Only benign T fits IF/AE and their transforms; AE epochs selected on benign V only.",
+    "transforms": "No fitted transforms from V/C1/C2. Supervised LR signed-log/median/robust fitted on T. IF signed-log/median/robust fitted on benign T. AE frozen BenignAutoencoder with dynamic signed index for reduced schema."
+  },
+  "configuration_selection": {
+    "metric": "Mean raw-score AP on exactly 915 known V windows, no unknown windows or onset metrics.",
+    "seeds": "Average five seeds for stochastic methods; LR one deterministic fit.",
+    "tie": "Configuration order: lower HGB iterations, shallower RF, smaller LR C / IF max_samples.",
+    "qualification": "Exploratory only: 44 positive seconds in one sparse source, source/class/path confounded. Not an independent estimate after selection; does not resolve representativeness."
+  },
+  "scoring": {
+    "single_methods": "Raw native anomaly/positive-probability scores, high means attack. Rate packets_in; IF negative score_samples.",
+    "hybrid": "HGB and AE right empirical percentiles on disjoint known benign C1, max fusion; preserve ties and saturation at 1; no tail extrapolation.",
+    "branch_controls": "Mapped HGB-only and mapped AE-only at the chosen hybrid persistence, recalibrated C2; distinguish mapping effects from branch removal."
+  },
+  "persistence": {
+    "candidates": [
+      {
+        "k": 1,
+        "h": 1
+      },
+      {
+        "k": 2,
+        "h": 3
+      },
+      {
+        "k": 3,
+        "h": 5
+      }
+    ],
+    "comparison": "Strict score > tau; kth-largest trailing h statistic > tau.",
+    "resets": "Every group reset; nonconsecutive model-table times invalidate history, never compress/zero-fill gaps.",
+    "C2": "Only trailing h consecutive known-benign model windows count. Initial h-1 and every incomplete history excluded; no warm-up labels inferred.",
+    "V_positive": "Current corroborated positive only; prior complete-clock scores may have unknown labels in permitted full V source. Does not turn unknowns into ground truth.",
+    "V_negative": "Trailing h known-benign windows. Rule-selection FPR tie-break uses common 5-window known-benign support for comparable denominators.",
+    "selection": "Max mean V proxy positive-window recall, then min mean common-support benign V FPR, then candidate order 1/1,2/3,3/5. No episode/delay selection."
+  },
+  "calibration": {
+    "role": "C2 only",
+    "alpha": 0.01,
+    "groups": "All benign C2 whole groups; require nonempty overall, ordinary/stress and every condition stratum.",
+    "ordinary": [
+      "public_http",
+      "ordinary",
+      "mixed_keepalive"
+    ],
+    "stress": [
+      "bursts",
+      "flash",
+      "long_download",
+      "congested_mixed"
+    ],
+    "threshold": "Max of each stratum order statistic at n-floor(alpha*n)-1, with strict comparison; retain ties. n<100 requires zero exceedances.",
+    "guarantee": "Empirical eligible-window budget only. No population/final FPR guarantee; unsupported strata fail; zero attack recall/infinite-equivalent cutoff retained."
+  },
+  "sensitivity_controls": [
+    {
+      "id": "drop_volume",
+      "removed_predictors": [
+        "bytes_in",
+        "bytes_out",
+        "packet_length_mean",
+        "packet_length_std",
+        "in_out_byte_ratio"
+      ],
+      "fit": "Same chosen HGB config, AE settings and permitted T; fixed primary method rule, fresh C1/C2 calibration; diagnostic only."
+    },
+    {
+      "id": "lab_benign_T_only",
+      "removed_predictors": [],
+      "fit": "Remove public benign T only; retain whole positive T; no role reassignment. Same chosen config/rule, fresh benign transforms/C1/C2; diagnostic only."
+    }
+  ],
+  "configuration_budget": "At most 12 per learned family including score/rule controls: main HGB 3*3 +2 fixed-rule source controls +1 mapped branch; other families no larger. No sensitivity variant promoted by outcomes.",
+  "report": "All candidates/seeds/thresholds/stratum denominators, source-condition FPR, V labelled-window metrics and mapped saturation. No episode CIs or independent-attack counts; five seeds are algorithm repeats, not traffic recordings.",
+  "artifact_policy": "Ignored data/packet_model_development_v1 holds weights/references/scores and hashes; public small results/manifests only. Source/data changes fail; no silent overwrite/retraining.",
+  "reserved": [
+    "All Slowloris/Slowhttptest groups/context",
+    "Entire CSE-CIC-IDS2018 source including benign",
+    "Entire provided CIC2019 01-12 source/context/labels",
+    "All lab attack and final benign sessions"
+  ],
+  "exploratory_training_authorized": true,
+  "headline_generalization_readiness": false,
+  "final_model_frozen": false,
+  "final_attack_tests_run": 0,
+  "references": [
+    "https://scikit-learn.org/1.7/modules/generated/sklearn.ensemble.HistGradientBoostingClassifier.html",
+    "https://scikit-learn.org/1.7/modules/generated/sklearn.neural_network.MLPRegressor.html",
+    "https://scikit-learn.org/1.7/modules/generated/sklearn.ensemble.IsolationForest.html"
+  ]
+}

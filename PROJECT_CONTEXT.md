@@ -1,6 +1,26 @@
 # CNET project history and handoff context
 
-## Latest implementation update — 13 November 2026 (benign stress development)
+## Latest implementation update — 13 November 2026 (exploratory packet models)
+
+**Exploratory main packet-window models are now fitted and audited; no final freeze or final test has occurred.** The input whitelist remains `phase 3/results/development/study_development_manifest_v5.json`: 56 groups/6,206 known labelled windows, unchanged. Preserve every old registry/negative finding; only the v5 table whitelist is used once. Read `phase 3/plan/PACKET_MODEL_DEVELOPMENT_REVIEW.md`, `phase 3/results/development/packet_model_readiness_v1.json` and `phase 3/plan/NEXT_STEPS.md` before continuing.
+
+Policy `phase 3/plan/model_development_v1.json` was declared **before fitting**, SHA-256 `d1819fdfb38e1c5f011fda58ef14ed7f8e74d51d148a4e1aeb80a0a68dfeaafd`. It qualifies sparse V as an exploratory selection proxy, not independent/final evidence. Methods: HGB (iterations 50/100/200), RF (depth 6/12/unlimited), LR (C 0.1/1/10), IF (samples 128/256), fixed benign AE and a packet-rate baseline, plus HGB+AE C1 percentile-max fusion. Stochastic seeds 7/19/42/73/101 and deterministic single fits were declared; seed 7 is the primary candidate, never selected by outcome. Native-score standalone baselines are distinguished from percentile-mapped branch controls. Two fixed-rule sensitivity controls drop volume/length predictors or remove public benign T; neither is promoted.
+
+All fits use T only: supervised T 2,044 benign/1,076 attack; AE/IF fit benign T only, with benign-only fitted transforms and AE epoch selection on 871 known benign V windows. No C1/C2/unknown row fits a model. The reduced volume-control schema has 25 raw predictors/signed index 18; main 30 predictors retain signed packet_rate_change index 23. Lab-only benign fitting uses 715 benign T rows. All main AE seeds selected epoch 100/100; the cap was reached, not convergence established. HGB internal random validation is disabled. C1 has 1,209 known benign references for right-ECDF branch maps; values/ties at 1 are preserved, with no tail extrapolation.
+
+Persistence is strict score>threshold with 1-of-1/2-of-3/3-of-5 candidates. Each whole group resets state. C2 and V benign decisions require h consecutive known-benign model rows; missing clocks invalidate history, never compress gaps or fill unknowns with negatives. C2 eligible counts for h1/3/5 are 962/734/681. At h5 only 13/246 public C2 negatives and 1/155 public V negatives have complete known-benign history; excluded known labels are not counted as correct decisions. Only already permitted complete-clock CIC2019 V feature context is scored for positive-window decision history: 29,775 unknown context rows retain y=-1 and never enter fitted/reference/negative data. All rule comparisons use44 current known-positive proxy windows and common669 benign windows. AP configuration selection uses 915 current known V labels. Both choices use V, so their estimates are optimistically biased development results.
+
+C2 thresholds meet the empirical1% budget jointly overall, ordinary/stress and every benign condition, with strict ties and zero exceedances required for strata smaller than 100. This is not a population or final FPR guarantee. **No demonstrated fusion superiority:** primary seed 7 hybrid3-of-5 threshold 0.986765922250 detects 39/44 proxy windows with 1/669 V benign alerts; AE baseline43/44 with 3/669. Across five seeds, hybrid recall ranges20.45–88.64% (mean73.64%) versus AE 86.36–100% (mean96.36%), at different observed V FPRs. HGB/RF/LR/IF/rate miss all 44 proxy positives at selected settings. Some AE/IF V FPRs exceed1% despite passing C2. Source-control variants change hybrid recall substantially. Preserve all these negative findings; do not pick the best seed/variant or present these proxy windows as independent attacks, live delay, denial impact or zero-day efficacy.
+
+Independent audit verified 99 private artifact hashes, reloaded/reproduced 41 selected weight bundles, checked 21 fitted-imputer role traces and independently recalculated all 67 operating points; all score/fusion/budget checks pass. **146 offline engineering/policy tests pass.** The roughly 36-second timer covers fitting/scoring/calibration/artifact processing, excluding initial loading and final report writing; it is not inference/live latency. Evidence is in `phase 3/results/development/packet_model_development_v1.json`, `packet_model_development_audit_v1.json`, compact summary CSV and candidate/readiness files. Weights/native/fused scores/C1 references remain under ignored `phase 3/data/packet_model_development_v1/`. Models are provisional; transfer exact originals or record a new version, never overwrite v1.
+
+**Final/model headline readiness remains false.** Sparse known V, missing matched benign-target controls, class/service/path confounding, same-host repetitions and limited persistence-label support remain. The current candidate manifest packages the prespecified seed 7 hybrid for review; it explicitly does not authorize final scoring or claim superiority. No reserved Slowloris/Slowhttptest context, entire CSE-CIC-IDS2018 source, CIC2019 01-12 payload/context/labels, lab attack or final benign session has been opened. Friday target stays T; provided CIC2019 03-11 stays V. No collection/training/audit job is active.
+
+**Exact next action:** review the declared hybrid-versus-AE trade-off and source/label-support limits, then write a separate final-freeze and blind-evaluation protocol with fixed claim scope, all primary/baseline/ablation hashes, alert-onset/censoring/gap rules and fixtures before opening reserved sources. Preserve v1. Any changed training/selection or epoch budget needs a new bounded predeclared version. Do not silently promote a diagnostic variant or consume final data to improve validation. After the appropriate freeze, qualify final source compatibility/labels and conduct reserved tests, including misses/ineffective attacks and transfer limitations.
+
+Publication continues to exclude raw data, weights/environments/credentials/private student identifiers and preserves the sanitized Phase2 proposal. Resolve the current commit with `git log -1`; prior verified checkpoint is `e7743b4c4b128dea65b8f26af7384ec13bec3476`. Earlier dated statuses below are historical, including statements that no main model existed at those checkpoints.
+
+## Prior implementation checkpoint — 13 November 2026 (benign stress development)
 
 **Authoritative input whitelist: `phase 3/results/development/study_development_manifest_v5.json`.** It contains **56 groups and 6,206 candidate labelled windows**: T **2,044 benign + 1,076 attack-present**; C1 **1,209 benign**; C2 **962 benign**; V **871 benign + 44 preliminary attack-present**. Use each listed table once. Preserve all older registries and negative findings, without pooling superseded sessions or temporal blocks.
 
@@ -223,7 +243,7 @@ The final factual/methodological review is documented in `phase 2/FINAL_REVIEW.m
 
 ## Workspace and project
 
-- Workspace: the project root; the original workspace keeps a nested public checkout at `github-repo/`, while a fresh clone works directly from its root.
+- Workspace: the project root; this original workspace has a nested public checkout at `github-repo/`, while a fresh clone works directly from its root.
 - User-facing deliverables folder: `phase 2` inside the workspace.
 - Course: Computer Networks.
 - Project title: Machine Learning-Based Detection of Previously Unseen Low-Rate DDoS Attacks.
@@ -382,7 +402,7 @@ The following first three items are the current LaTeX workflow. Word-related det
 
 Bundled Python used during creation:
 
-Use the project-local Python 3.12 environment under `phase 3/.venv/`; rediscover bundled runtime paths on another machine.
+Use the project-local Python 3.12 environment under `phase 3/.venv/`; rediscover runtime paths on another machine.
 
 If continuing on another machine or runtime, rediscover dependencies and available document tools rather than assuming that path exists. Read applicable skills and repository instructions before editing.
 

@@ -1,0 +1,39 @@
+{
+  "date": "2026-11-13",
+  "exploratory_model_policy_declared": true,
+  "packet_window_models_fitted": true,
+  "source_data_unchanged": true,
+  "source_path_confounding_resolved": false,
+  "final_model_frozen": false,
+  "final_attack_tests_run": 0,
+  "headline_generalization_readiness": false,
+  "plan_sha256": "d1819fdfb38e1c5f011fda58ef14ed7f8e74d51d148a4e1aeb80a0a68dfeaafd",
+  "report_sha256": "cc260213515921b6f47bf7f98a92f0869a0d8b5fa8a117b23b10cb368c7db52c",
+  "audit_sha256": "026f2a1f0d53b17db66cc74a5f57dc9d54565b6f6cc47a5e6287626bda88ef2f",
+  "summary_csv_sha256": "b0f531450e1943c6989398ede4d1f516270a48abbffdd075fd442f02ab484e57",
+  "candidate_sha256": "c64cddead64e3ee81e5a68cc903c25d0994b9362d4bca6863ef4b9fc2e48cc99",
+  "source_code_sha256": "32a74a620646913a9c3508e8fe73d3e55bef4520677d7f545d0d8132756af345",
+  "private_weight_bundles": 41,
+  "private_artifacts": 99,
+  "operating_points": 67,
+  "offline_policy_tests": 146,
+  "V_selection_known_rows": 915,
+  "V_rule_comparison": {
+    "positive": 44,
+    "benign": 669
+  },
+  "C2_eligible_by_h": {
+    "1": 962,
+    "3": 734,
+    "5": 681
+  },
+  "important_findings": [
+    "No demonstrated hybrid superiority: lower proxy recall than AE, with lower observed V benign FPR; observed V rates differ despite the common C2 budget.",
+    "HGB/RF/LR/IF/rate selected primary rules miss all 44 proxy positives; preserve this negative cross-source result.",
+    "Hybrid proxy recall varies across seeds and the lab-only benign training sensitivity control; variants are diagnostic and not promoted.",
+    "Every main AE seed selected epoch100 at the 100-epoch cap. This is not convergence evidence or permission to silently extend training.",
+    "For 3-of-5, public C2 support is only 13/246 known benign windows and public V support 1/155. Do not generalize eligible-history FPR to excluded labelled windows.",
+    "All V outcomes influenced model/rule selection; these are biased development estimates from one sparse attack source, not independent/final validation."
+  ],
+  "next_action": "Review the provisional seed-7 hybrid versus the declared AE baseline and sensitivity results, qualify the claim/label-support limitations, then write a separate final-freeze and blind-evaluation protocol before opening reserved sources. Preserve v1; any revised training/selection needs a new bounded declaration."
+}

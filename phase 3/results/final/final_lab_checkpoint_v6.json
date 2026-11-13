@@ -1,0 +1,4974 @@
+{
+  "version": "final_lab_checkpoint_v6",
+  "freeze_sha256": "063a838d5fe45b1d38e536ca589959214871961dcb944a868203e98e15712bfe",
+  "completed_final_sessions": 21,
+  "final_benign_completed": 8,
+  "final_attack_completed": 13,
+  "remaining_catalog_sessions": 39,
+  "next_catalog_unit": {
+    "id": "final-b-020",
+    "kind": "benign",
+    "condition": "long_lived_or_congested",
+    "repeat": 5,
+    "preflight": false,
+    "warmup": 60,
+    "duration": 180,
+    "agent_seeds": [
+      1977294243,
+      477802784,
+      1512827594,
+      1042417428,
+      1029291381,
+      350963569,
+      367586762
+    ],
+    "net_seeds": [
+      1645099757,
+      606036753
+    ],
+    "run_order": 21
+  },
+  "unresolved_attempts": [],
+  "original_pretraffic_resolution_failure_retained": true,
+  "source_sha256": "fae463f33bfee30fa0cc1698fa45b6370648cdd97dbdf444b2aa715530f2e182",
+  "result_sha256": {
+    "results/final/final-b-010.json": "bbb499a8393cb66ce395e9e46c91ee75b68c3725f61e8c483c0689c49c7ac7c3",
+    "results/final/final-b-014.json": "c5e06e0d8a7d6a3116d1d7948a3dd82a4385eb97a7e7e98487f0cc4708ee6246",
+    "results/final/final-b-017.json": "17863322768f34a9a739133d2b2d04d98f83dc46f20c6d769f1a8566bfb2beed",
+    "results/final/final-b-001.json": "bf6663f6affefba12334df39022c49c0e12f7025f57971c62a0e31edd1282209",
+    "results/final/final-a-038.json": "b19ed8971536bb2d1646aea7f03bc2ea40d685ed5ac22390709d00b51fc96924",
+    "results/final/final-a-002.json": "861c6a8a10e24a2263f084918ab3ff48281bed9efd7a4b9cc5636fff7d687b5e",
+    "results/final/final-a-040.json": "cd206c19224c6d5fdf25c1d401d822184a2704e0c229bef1c5e0a4284585dfac",
+    "results/final/final-a-022.json": "96c8280e1772031ccfff635fb9e6d4b7b313c03dc925796babf985306f6be3e9",
+    "results/final/final-b-005.json": "b0489ed7ffe218945c57f0ce5bcd015a2b55f769c2f52f1d6f8b99663521f816",
+    "results/final/final-b-003.json": "08f5ff59adf55e80c1c7bdf4224b5def9b26e836eb7a010a34e778a19baabf9a",
+    "results/final/final-b-007.json": "244ba829f27ecde25ae263517dcd17a99c7c051e3a3408046231ef4a9cf1f008",
+    "results/final/final-a-012.json": "4b9b4e0b90f3c5f1190a5c3e7b861858c6338779e7b1b5fc3fb944a1effb00a4",
+    "results/final/final-a-014.json": "d82eff75fa6a8dea60686172ac84e7b6562aaeef25ea3ce4ffb3f147b4d53d7a",
+    "results/final/final-b-019.json": "c8f1f476409003d07136e36c70e44f3bffa6765d612c15e37cca3ee3f1f573d7",
+    "results/final/final-a-026.json": "cac32867b001d2973fb28d4bec6364bc0e766481307cb8fc67e19c4c71292676",
+    "results/final/final-a-017.json": "d3e732fe0dd28096fec101e98572bba900129fc959d21123b5c82918eff4edd3",
+    "results/final/final-a-023.json": "c27e16ae9bb547e8fc0f87f9649c314f1d673db648dc324b06da4dfd61aef3ed",
+    "results/final/final-a-027.json": "a8cede8bf0811cfbc3d29272997b9cd139333f032f9c2d988d40c74190e7ec6f",
+    "results/final/final-a-005.json": "26e826e983d45e3f70029381c41089f5757df2db71bb09f0591a9b7c14a69d83",
+    "results/final/final-a-019.json": "3bac17f085b0bb3e17bab8d404c1aa4bb49d8838f08a337d0d78a94fc0717515",
+    "results/final/final-a-011.json": "90efc6ddac1d27217c25822850ea8752955fd3917852703c7d3df73a22dcc56c"
+  },
+  "units": [
+    {
+      "unit_id": "final-b-010",
+      "kind": "benign",
+      "condition": "bursts",
+      "run_order": 0,
+      "factors": {
+        "repeat": 5,
+        "sources": null,
+        "connections": null,
+        "interval": null,
+        "warmup": 60,
+        "duration": 180
+      },
+      "qualification_exclusions": {
+        "planned_episodes": 0,
+        "no_corroborated_initial_payload": 0,
+        "no_silent_replacement": true
+      },
+      "observed_load_and_service": {
+        "status": "observed_private_evidence",
+        "service_by_endpoint": {
+          "warmup": {
+            "complete_GET_small": {
+              "scheduled_slots": 30,
+              "timely_successes": 30,
+              "failed_or_skipped": 0,
+              "skipped_slots": 0,
+              "failure_reason_counts": {},
+              "timely_latency_median_seconds": 0.009627288499984843,
+              "timely_latency_p95_seconds": 0.015225170750051115
+            },
+            "complete_POST_CGI": {
+              "scheduled_slots": 30,
+              "timely_successes": 30,
+              "failed_or_skipped": 0,
+              "skipped_slots": 0,
+              "failure_reason_counts": {},
+              "timely_latency_median_seconds": 0.011251034999929743,
+              "timely_latency_p95_seconds": 0.018232045300004527
+            }
+          },
+          "measurement": {
+            "complete_GET_small": {
+              "scheduled_slots": 90,
+              "timely_successes": 90,
+              "failed_or_skipped": 0,
+              "skipped_slots": 0,
+              "failure_reason_counts": {},
+              "timely_latency_median_seconds": 0.010420802499993442,
+              "timely_latency_p95_seconds": 0.014445728150019476
+            },
+            "complete_POST_CGI": {
+              "scheduled_slots": 90,
+              "timely_successes": 90,
+              "failed_or_skipped": 0,
+              "skipped_slots": 0,
+              "failure_reason_counts": {},
+              "timely_latency_median_seconds": 0.009959578999996666,
+              "timely_latency_p95_seconds": 0.01942224570001372
+            }
+          }
+        }
+      },
+      "main": {
+        "hybrid": {
+          "window": {
+            "TP": 0,
+            "FN": 0,
+            "FP": 150,
+            "TN": 30,
+            "eligible_positive": 0,
+            "eligible_benign": 180,
+            "total_known_positive": 0,
+            "total_known_benign": 180,
+            "unknown_windows": 0,
+            "excluded_known_positive": 0,
+            "excluded_known_benign": 0,
+            "recall": null,
+            "fpr": 0.8333333333333334,
+            "precision": 0.0,
+            "f1": 0.0,
+            "AP": null,
+            "ROC_AUC": null,
+            "all_known_recall_bounds": null,
+            "all_known_fpr_bounds": [
+              0.8333333333333334,
+              0.8333333333333334
+            ],
+            "score_basis": "kth-largest trailing-h decision statistic on stated eligible support",
+            "common_label_history": 5
+          },
+          "episodes": [],
+          "episode_summary": {
+            "total_recorded_episodes": 0,
+            "scorable_exact_episodes": 0,
+            "hits": 0,
+            "misses": 0,
+            "unscored_or_censored_episodes": 0,
+            "episode_recall": null,
+            "all_recorded_hit_bounds": null,
+            "mean_penalty_coded_restricted_delay_seconds": null,
+            "exact_detected_delay_median_seconds": null,
+            "latency_scope": "Restricted delay includes fully observed misses at their fixed horizon; no detected-only speed superiority claim."
+          },
+          "alert_burden": {
+            "qualified_false_alert_starts": 0,
+            "eligible_benign_seconds": 180,
+            "false_alert_starts_per_hour": 0.0,
+            "unattributed_qualified_starts": 0,
+            "unqualified_startup_or_gap_starts": 0,
+            "scope": "Event-start burden conditional on benign context, separate from alarm-window FPR."
+          },
+          "pre_measurement": {
+            "status": "frozen_trace_reproduced",
+            "alarm_active": true,
+            "qualified_starts_before_measurement": 0,
+            "unqualified_starts_before_measurement": 1
+          }
+        },
+        "AE": {
+          "window": {
+            "TP": 0,
+            "FN": 0,
+            "FP": 152,
+            "TN": 28,
+            "eligible_positive": 0,
+            "eligible_benign": 180,
+            "total_known_positive": 0,
+            "total_known_benign": 180,
+            "unknown_windows": 0,
+            "excluded_known_positive": 0,
+            "excluded_known_benign": 0,
+            "recall": null,
+            "fpr": 0.8444444444444444,
+            "precision": 0.0,
+            "f1": 0.0,
+            "AP": null,
+            "ROC_AUC": null,
+            "all_known_recall_bounds": null,
+            "all_known_fpr_bounds": [
+              0.8444444444444444,
+              0.8444444444444444
+            ],
+            "score_basis": "kth-largest trailing-h decision statistic on stated eligible support",
+            "common_label_history": 5
+          },
+          "episodes": [],
+          "episode_summary": {
+            "total_recorded_episodes": 0,
+            "scorable_exact_episodes": 0,
+            "hits": 0,
+            "misses": 0,
+            "unscored_or_censored_episodes": 0,
+            "episode_recall": null,
+            "all_recorded_hit_bounds": null,
+            "mean_penalty_coded_restricted_delay_seconds": null,
+            "exact_detected_delay_median_seconds": null,
+            "latency_scope": "Restricted delay includes fully observed misses at their fixed horizon; no detected-only speed superiority claim."
+          },
+          "alert_burden": {
+            "qualified_false_alert_starts": 0,
+            "eligible_benign_seconds": 180,
+            "false_alert_starts_per_hour": 0.0,
+            "unattributed_qualified_starts": 0,
+            "unqualified_startup_or_gap_starts": 0,
+            "scope": "Event-start burden conditional on benign context, separate from alarm-window FPR."
+          },
+          "pre_measurement": {
+            "status": "frozen_trace_reproduced",
+            "alarm_active": true,
+            "qualified_starts_before_measurement": 0,
+            "unqualified_starts_before_measurement": 1
+          }
+        }
+      }
+    },
+    {
+      "unit_id": "final-b-014",
+      "kind": "benign",
+      "condition": "flash",
+      "run_order": 1,
+      "factors": {
+        "repeat": 4,
+        "sources": null,
+        "connections": null,
+        "interval": null,
+        "warmup": 60,
+        "duration": 180
+      },
+      "qualification_exclusions": {
+        "planned_episodes": 0,
+        "no_corroborated_initial_payload": 0,
+        "no_silent_replacement": true
+      },
+      "observed_load_and_service": {
+        "status": "observed_private_evidence",
+        "service_by_endpoint": {
+          "warmup": {
+            "complete_GET_small": {
+              "scheduled_slots": 30,
+              "timely_successes": 30,
+              "failed_or_skipped": 0,
+              "skipped_slots": 0,
+              "failure_reason_counts": {},
+              "timely_latency_median_seconds": 0.006267054500000313,
+              "timely_latency_p95_seconds": 0.016505078250008857
+            },
+            "complete_POST_CGI": {
+              "scheduled_slots": 30,
+              "timely_successes": 30,
+              "failed_or_skipped": 0,
+              "skipped_slots": 0,
+              "failure_reason_counts": {},
+              "timely_latency_median_seconds": 0.009904228500005274,
+              "timely_latency_p95_seconds": 0.02002579970000795
+            }
+          },
+          "measurement": {
+            "complete_GET_small": {
+              "scheduled_slots": 90,
+              "timely_successes": 90,
+              "failed_or_skipped": 0,
+              "skipped_slots": 0,
+              "failure_reason_counts": {},
+              "timely_latency_median_seconds": 0.006487091500019915,
+              "timely_latency_p95_seconds": 0.013634353699987398
+            },
+            "complete_POST_CGI": {
+              "scheduled_slots": 90,
+              "timely_successes": 90,
+              "failed_or_skipped": 0,
+              "skipped_slots": 0,
+              "failure_reason_counts": {},
+              "timely_latency_median_seconds": 0.008197203499946681,
+              "timely_latency_p95_seconds": 0.017123058299983993
+            }
+          }
+        }
+      },
+      "main": {
+        "hybrid": {
+          "window": {
+            "TP": 0,
+            "FN": 0,
+            "FP": 180,
+            "TN": 0,
+            "eligible_positive": 0,
+            "eligible_benign": 180,
+            "total_known_positive": 0,
+            "total_known_benign": 180,
+            "unknown_windows": 0,
+            "excluded_known_positive": 0,
+            "excluded_known_benign": 0,
+            "recall": null,
+            "fpr": 1.0,
+            "precision": 0.0,
+            "f1": 0.0,
+            "AP": null,
+            "ROC_AUC": null,
+            "all_known_recall_bounds": null,
+            "all_known_fpr_bounds": [
+              1.0,
+              1.0
+            ],
+            "score_basis": "kth-largest trailing-h decision statistic on stated eligible support",
+            "common_label_history": 5
+          },
+          "episodes": [],
+          "episode_summary": {
+            "total_recorded_episodes": 0,
+            "scorable_exact_episodes": 0,
+            "hits": 0,
+            "misses": 0,
+            "unscored_or_censored_episodes": 0,
+            "episode_recall": null,
+            "all_recorded_hit_bounds": null,
+            "mean_penalty_coded_restricted_delay_seconds": null,
+            "exact_detected_delay_median_seconds": null,
+            "latency_scope": "Restricted delay includes fully observed misses at their fixed horizon; no detected-only speed superiority claim."
+          },
+          "alert_burden": {
+            "qualified_false_alert_starts": 0,
+            "eligible_benign_seconds": 180,
+            "false_alert_starts_per_hour": 0.0,
+            "unattributed_qualified_starts": 0,
+            "unqualified_startup_or_gap_starts": 0,
+            "scope": "Event-start burden conditional on benign context, separate from alarm-window FPR."
+          },
+          "pre_measurement": {
+            "status": "frozen_trace_reproduced",
+            "alarm_active": true,
+            "qualified_starts_before_measurement": 0,
+            "unqualified_starts_before_measurement": 1
+          }
+        },
+        "AE": {
+          "window": {
+            "TP": 0,
+            "FN": 0,
+            "FP": 0,
+            "TN": 180,
+            "eligible_positive": 0,
+            "eligible_benign": 180,
+            "total_known_positive": 0,
+            "total_known_benign": 180,
+            "unknown_windows": 0,
+            "excluded_known_positive": 0,
+            "excluded_known_benign": 0,
+            "recall": null,
+            "fpr": 0.0,
+            "precision": null,
+            "f1": null,
+            "AP": null,
+            "ROC_AUC": null,
+            "all_known_recall_bounds": null,
+            "all_known_fpr_bounds": [
+              0.0,
+              0.0
+            ],
+            "score_basis": "kth-largest trailing-h decision statistic on stated eligible support",
+            "common_label_history": 5
+          },
+          "episodes": [],
+          "episode_summary": {
+            "total_recorded_episodes": 0,
+            "scorable_exact_episodes": 0,
+            "hits": 0,
+            "misses": 0,
+            "unscored_or_censored_episodes": 0,
+            "episode_recall": null,
+            "all_recorded_hit_bounds": null,
+            "mean_penalty_coded_restricted_delay_seconds": null,
+            "exact_detected_delay_median_seconds": null,
+            "latency_scope": "Restricted delay includes fully observed misses at their fixed horizon; no detected-only speed superiority claim."
+          },
+          "alert_burden": {
+            "qualified_false_alert_starts": 0,
+            "eligible_benign_seconds": 180,
+            "false_alert_starts_per_hour": 0.0,
+            "unattributed_qualified_starts": 0,
+            "unqualified_startup_or_gap_starts": 0,
+            "scope": "Event-start burden conditional on benign context, separate from alarm-window FPR."
+          },
+          "pre_measurement": {
+            "status": "frozen_trace_reproduced",
+            "alarm_active": false,
+            "qualified_starts_before_measurement": 0,
+            "unqualified_starts_before_measurement": 0
+          }
+        }
+      }
+    },
+    {
+      "unit_id": "final-b-017",
+      "kind": "benign",
+      "condition": "long_lived_or_congested",
+      "run_order": 2,
+      "factors": {
+        "repeat": 2,
+        "sources": null,
+        "connections": null,
+        "interval": null,
+        "warmup": 60,
+        "duration": 180
+      },
+      "qualification_exclusions": {
+        "planned_episodes": 0,
+        "no_corroborated_initial_payload": 0,
+        "no_silent_replacement": true
+      },
+      "observed_load_and_service": {
+        "status": "observed_private_evidence",
+        "service_by_endpoint": {
+          "warmup": {
+            "complete_GET_small": {
+              "scheduled_slots": 30,
+              "timely_successes": 1,
+              "failed_or_skipped": 29,
+              "skipped_slots": 0,
+              "failure_reason_counts": {
+                "error:TimeoutError": 29
+              },
+              "timely_latency_median_seconds": 0.26433560500004205,
+              "timely_latency_p95_seconds": 0.26433560500004205
+            },
+            "complete_POST_CGI": {
+              "scheduled_slots": 30,
+              "timely_successes": 1,
+              "failed_or_skipped": 29,
+              "skipped_slots": 0,
+              "failure_reason_counts": {
+                "error:TimeoutError": 29
+              },
+              "timely_latency_median_seconds": 0.6129426549999835,
+              "timely_latency_p95_seconds": 0.6129426549999835
+            }
+          },
+          "measurement": {
+            "complete_GET_small": {
+              "scheduled_slots": 90,
+              "timely_successes": 0,
+              "failed_or_skipped": 90,
+              "skipped_slots": 0,
+              "failure_reason_counts": {
+                "error:TimeoutError": 90
+              },
+              "timely_latency_median_seconds": null,
+              "timely_latency_p95_seconds": null
+            },
+            "complete_POST_CGI": {
+              "scheduled_slots": 90,
+              "timely_successes": 0,
+              "failed_or_skipped": 90,
+              "skipped_slots": 0,
+              "failure_reason_counts": {
+                "error:TimeoutError": 90
+              },
+              "timely_latency_median_seconds": null,
+              "timely_latency_p95_seconds": null
+            }
+          }
+        }
+      },
+      "main": {
+        "hybrid": {
+          "window": {
+            "TP": 0,
+            "FN": 0,
+            "FP": 88,
+            "TN": 92,
+            "eligible_positive": 0,
+            "eligible_benign": 180,
+            "total_known_positive": 0,
+            "total_known_benign": 180,
+            "unknown_windows": 0,
+            "excluded_known_positive": 0,
+            "excluded_known_benign": 0,
+            "recall": null,
+            "fpr": 0.4888888888888889,
+            "precision": 0.0,
+            "f1": 0.0,
+            "AP": null,
+            "ROC_AUC": null,
+            "all_known_recall_bounds": null,
+            "all_known_fpr_bounds": [
+              0.4888888888888889,
+              0.4888888888888889
+            ],
+            "score_basis": "kth-largest trailing-h decision statistic on stated eligible support",
+            "common_label_history": 5
+          },
+          "episodes": [],
+          "episode_summary": {
+            "total_recorded_episodes": 0,
+            "scorable_exact_episodes": 0,
+            "hits": 0,
+            "misses": 0,
+            "unscored_or_censored_episodes": 0,
+            "episode_recall": null,
+            "all_recorded_hit_bounds": null,
+            "mean_penalty_coded_restricted_delay_seconds": null,
+            "exact_detected_delay_median_seconds": null,
+            "latency_scope": "Restricted delay includes fully observed misses at their fixed horizon; no detected-only speed superiority claim."
+          },
+          "alert_burden": {
+            "qualified_false_alert_starts": 7,
+            "eligible_benign_seconds": 180,
+            "false_alert_starts_per_hour": 140.0,
+            "unattributed_qualified_starts": 0,
+            "unqualified_startup_or_gap_starts": 0,
+            "scope": "Event-start burden conditional on benign context, separate from alarm-window FPR."
+          },
+          "pre_measurement": {
+            "status": "frozen_trace_reproduced",
+            "alarm_active": false,
+            "qualified_starts_before_measurement": 0,
+            "unqualified_starts_before_measurement": 1
+          }
+        },
+        "AE": {
+          "window": {
+            "TP": 0,
+            "FN": 0,
+            "FP": 162,
+            "TN": 18,
+            "eligible_positive": 0,
+            "eligible_benign": 180,
+            "total_known_positive": 0,
+            "total_known_benign": 180,
+            "unknown_windows": 0,
+            "excluded_known_positive": 0,
+            "excluded_known_benign": 0,
+            "recall": null,
+            "fpr": 0.9,
+            "precision": 0.0,
+            "f1": 0.0,
+            "AP": null,
+            "ROC_AUC": null,
+            "all_known_recall_bounds": null,
+            "all_known_fpr_bounds": [
+              0.9,
+              0.9
+            ],
+            "score_basis": "kth-largest trailing-h decision statistic on stated eligible support",
+            "common_label_history": 5
+          },
+          "episodes": [],
+          "episode_summary": {
+            "total_recorded_episodes": 0,
+            "scorable_exact_episodes": 0,
+            "hits": 0,
+            "misses": 0,
+            "unscored_or_censored_episodes": 0,
+            "episode_recall": null,
+            "all_recorded_hit_bounds": null,
+            "mean_penalty_coded_restricted_delay_seconds": null,
+            "exact_detected_delay_median_seconds": null,
+            "latency_scope": "Restricted delay includes fully observed misses at their fixed horizon; no detected-only speed superiority claim."
+          },
+          "alert_burden": {
+            "qualified_false_alert_starts": 1,
+            "eligible_benign_seconds": 180,
+            "false_alert_starts_per_hour": 20.0,
+            "unattributed_qualified_starts": 0,
+            "unqualified_startup_or_gap_starts": 0,
+            "scope": "Event-start burden conditional on benign context, separate from alarm-window FPR."
+          },
+          "pre_measurement": {
+            "status": "frozen_trace_reproduced",
+            "alarm_active": false,
+            "qualified_starts_before_measurement": 0,
+            "unqualified_starts_before_measurement": 1
+          }
+        }
+      }
+    },
+    {
+      "unit_id": "final-b-001",
+      "kind": "benign",
+      "condition": "ordinary",
+      "run_order": 3,
+      "factors": {
+        "repeat": 1,
+        "sources": null,
+        "connections": null,
+        "interval": null,
+        "warmup": 60,
+        "duration": 180
+      },
+      "qualification_exclusions": {
+        "planned_episodes": 0,
+        "no_corroborated_initial_payload": 0,
+        "no_silent_replacement": true
+      },
+      "observed_load_and_service": {
+        "status": "observed_private_evidence",
+        "service_by_endpoint": {
+          "warmup": {
+            "complete_GET_small": {
+              "scheduled_slots": 30,
+              "timely_successes": 30,
+              "failed_or_skipped": 0,
+              "skipped_slots": 0,
+              "failure_reason_counts": {},
+              "timely_latency_median_seconds": 0.0073810320000120555,
+              "timely_latency_p95_seconds": 0.014211568449997
+            },
+            "complete_POST_CGI": {
+              "scheduled_slots": 30,
+              "timely_successes": 30,
+              "failed_or_skipped": 0,
+              "skipped_slots": 0,
+              "failure_reason_counts": {},
+              "timely_latency_median_seconds": 0.010730854000030376,
+              "timely_latency_p95_seconds": 0.015423798099953956
+            }
+          },
+          "measurement": {
+            "complete_GET_small": {
+              "scheduled_slots": 90,
+              "timely_successes": 90,
+              "failed_or_skipped": 0,
+              "skipped_slots": 0,
+              "failure_reason_counts": {},
+              "timely_latency_median_seconds": 0.006090572000061911,
+              "timely_latency_p95_seconds": 0.01237939344998722
+            },
+            "complete_POST_CGI": {
+              "scheduled_slots": 90,
+              "timely_successes": 90,
+              "failed_or_skipped": 0,
+              "skipped_slots": 0,
+              "failure_reason_counts": {},
+              "timely_latency_median_seconds": 0.009241151999958674,
+              "timely_latency_p95_seconds": 0.016518181099888805
+            }
+          }
+        }
+      },
+      "main": {
+        "hybrid": {
+          "window": {
+            "TP": 0,
+            "FN": 0,
+            "FP": 0,
+            "TN": 180,
+            "eligible_positive": 0,
+            "eligible_benign": 180,
+            "total_known_positive": 0,
+            "total_known_benign": 180,
+            "unknown_windows": 0,
+            "excluded_known_positive": 0,
+            "excluded_known_benign": 0,
+            "recall": null,
+            "fpr": 0.0,
+            "precision": null,
+            "f1": null,
+            "AP": null,
+            "ROC_AUC": null,
+            "all_known_recall_bounds": null,
+            "all_known_fpr_bounds": [
+              0.0,
+              0.0
+            ],
+            "score_basis": "kth-largest trailing-h decision statistic on stated eligible support",
+            "common_label_history": 5
+          },
+          "episodes": [],
+          "episode_summary": {
+            "total_recorded_episodes": 0,
+            "scorable_exact_episodes": 0,
+            "hits": 0,
+            "misses": 0,
+            "unscored_or_censored_episodes": 0,
+            "episode_recall": null,
+            "all_recorded_hit_bounds": null,
+            "mean_penalty_coded_restricted_delay_seconds": null,
+            "exact_detected_delay_median_seconds": null,
+            "latency_scope": "Restricted delay includes fully observed misses at their fixed horizon; no detected-only speed superiority claim."
+          },
+          "alert_burden": {
+            "qualified_false_alert_starts": 0,
+            "eligible_benign_seconds": 180,
+            "false_alert_starts_per_hour": 0.0,
+            "unattributed_qualified_starts": 0,
+            "unqualified_startup_or_gap_starts": 0,
+            "scope": "Event-start burden conditional on benign context, separate from alarm-window FPR."
+          },
+          "pre_measurement": {
+            "status": "frozen_trace_reproduced",
+            "alarm_active": false,
+            "qualified_starts_before_measurement": 0,
+            "unqualified_starts_before_measurement": 0
+          }
+        },
+        "AE": {
+          "window": {
+            "TP": 0,
+            "FN": 0,
+            "FP": 0,
+            "TN": 180,
+            "eligible_positive": 0,
+            "eligible_benign": 180,
+            "total_known_positive": 0,
+            "total_known_benign": 180,
+            "unknown_windows": 0,
+            "excluded_known_positive": 0,
+            "excluded_known_benign": 0,
+            "recall": null,
+            "fpr": 0.0,
+            "precision": null,
+            "f1": null,
+            "AP": null,
+            "ROC_AUC": null,
+            "all_known_recall_bounds": null,
+            "all_known_fpr_bounds": [
+              0.0,
+              0.0
+            ],
+            "score_basis": "kth-largest trailing-h decision statistic on stated eligible support",
+            "common_label_history": 5
+          },
+          "episodes": [],
+          "episode_summary": {
+            "total_recorded_episodes": 0,
+            "scorable_exact_episodes": 0,
+            "hits": 0,
+            "misses": 0,
+            "unscored_or_censored_episodes": 0,
+            "episode_recall": null,
+            "all_recorded_hit_bounds": null,
+            "mean_penalty_coded_restricted_delay_seconds": null,
+            "exact_detected_delay_median_seconds": null,
+            "latency_scope": "Restricted delay includes fully observed misses at their fixed horizon; no detected-only speed superiority claim."
+          },
+          "alert_burden": {
+            "qualified_false_alert_starts": 0,
+            "eligible_benign_seconds": 180,
+            "false_alert_starts_per_hour": 0.0,
+            "unattributed_qualified_starts": 0,
+            "unqualified_startup_or_gap_starts": 0,
+            "scope": "Event-start burden conditional on benign context, separate from alarm-window FPR."
+          },
+          "pre_measurement": {
+            "status": "frozen_trace_reproduced",
+            "alarm_active": false,
+            "qualified_starts_before_measurement": 0,
+            "unqualified_starts_before_measurement": 0
+          }
+        }
+      }
+    },
+    {
+      "unit_id": "final-a-038",
+      "kind": "attack",
+      "condition": "slow_request_body",
+      "run_order": 4,
+      "factors": {
+        "repeat": 3,
+        "sources": 3,
+        "connections": 60,
+        "interval": 5,
+        "warmup": 60,
+        "duration": 240
+      },
+      "qualification_exclusions": {
+        "planned_episodes": 1,
+        "no_corroborated_initial_payload": 0,
+        "no_silent_replacement": true
+      },
+      "observed_load_and_service": {
+        "status": "observed_private_evidence",
+        "service_by_endpoint": {
+          "warmup": {
+            "complete_GET_small": {
+              "scheduled_slots": 30,
+              "timely_successes": 30,
+              "failed_or_skipped": 0,
+              "skipped_slots": 0,
+              "failure_reason_counts": {},
+              "timely_latency_median_seconds": 0.0061733945000241874,
+              "timely_latency_p95_seconds": 0.012787555350053024
+            },
+            "complete_POST_CGI": {
+              "scheduled_slots": 30,
+              "timely_successes": 30,
+              "failed_or_skipped": 0,
+              "skipped_slots": 0,
+              "failure_reason_counts": {},
+              "timely_latency_median_seconds": 0.009156297999879826,
+              "timely_latency_p95_seconds": 0.016948509049939272
+            }
+          },
+          "measurement": {
+            "complete_GET_small": {
+              "scheduled_slots": 120,
+              "timely_successes": 67,
+              "failed_or_skipped": 53,
+              "skipped_slots": 0,
+              "failure_reason_counts": {
+                "error:TimeoutError": 53
+              },
+              "timely_latency_median_seconds": 0.006903839999949923,
+              "timely_latency_p95_seconds": 0.6041432969999732
+            },
+            "complete_POST_CGI": {
+              "scheduled_slots": 120,
+              "timely_successes": 7,
+              "failed_or_skipped": 113,
+              "skipped_slots": 0,
+              "failure_reason_counts": {
+                "error:TimeoutError": 61,
+                "error:RemoteDisconnected": 9,
+                "HTTP_503": 31,
+                "HTTP_500": 7,
+                "error:IncompleteRead": 5
+              },
+              "timely_latency_median_seconds": 0.28868283099996006,
+              "timely_latency_p95_seconds": 0.9269567692001373
+            }
+          }
+        },
+        "attack_inbound_observed": {
+          "per_source": {
+            "172.28.240.21": {
+              "inbound_frames": 11159,
+              "captured_Ethernet_bytes": 942414,
+              "TCP_payload_bytes": 192920
+            },
+            "172.28.240.20": {
+              "inbound_frames": 11263,
+              "captured_Ethernet_bytes": 951843,
+              "TCP_payload_bytes": 195325
+            },
+            "172.28.240.22": {
+              "inbound_frames": 11554,
+              "captured_Ethernet_bytes": 977814,
+              "TCP_payload_bytes": 201658
+            }
+          },
+          "measurement_seconds": 240,
+          "mean_captured_Ethernet_bits_per_second": 95735.7,
+          "peak_one_second_captured_Ethernet_bits": 494216,
+          "scope": "Client-to-service observed capture bytes including retransmissions/TCP overhead; excludes preamble/FCS/IFG. Not nominal configured rate or proven link saturation/worker occupancy."
+        }
+      },
+      "main": {
+        "hybrid": {
+          "window": {
+            "TP": 238,
+            "FN": 1,
+            "FP": 0,
+            "TN": 0,
+            "eligible_positive": 239,
+            "eligible_benign": 0,
+            "total_known_positive": 239,
+            "total_known_benign": 0,
+            "unknown_windows": 1,
+            "excluded_known_positive": 0,
+            "excluded_known_benign": 0,
+            "recall": 0.99581589958159,
+            "fpr": null,
+            "precision": 1.0,
+            "f1": 0.9979035639412998,
+            "AP": null,
+            "ROC_AUC": null,
+            "all_known_recall_bounds": [
+              0.99581589958159,
+              0.99581589958159
+            ],
+            "all_known_fpr_bounds": null,
+            "score_basis": "kth-largest trailing-h decision statistic on stated eligible support",
+            "common_label_history": 5
+          },
+          "episodes": [
+            {
+              "episode_id": "final-a-038",
+              "family": "slow_request_body",
+              "impact_class": "See measured probe failures/latencies; no automatic denial assertion",
+              "onset_interval_utc": [
+                1794568535.05446,
+                1794568535.05446
+              ],
+              "end_exclusive_utc": 1794568775.0,
+              "observed_detection": true,
+              "episode_recall_eligible": true,
+              "binary_episode_hit": 1,
+              "delay_seconds": 3.945539951324463,
+              "replay_latency_basis": "Window end + fixed1s reorder, not measured live end-to-end latency.",
+              "status": "detected",
+              "observed_alert_delay_seconds": 3.945539951324463,
+              "preexisting_alarm_at_onset": false,
+              "restricted_delay_seconds": 3.945539951324463,
+              "observation_complete_until_limit": true
+            }
+          ],
+          "episode_summary": {
+            "total_recorded_episodes": 1,
+            "scorable_exact_episodes": 1,
+            "hits": 1,
+            "misses": 0,
+            "unscored_or_censored_episodes": 0,
+            "episode_recall": 1.0,
+            "all_recorded_hit_bounds": [
+              1.0,
+              1.0
+            ],
+            "mean_penalty_coded_restricted_delay_seconds": 3.945539951324463,
+            "exact_detected_delay_median_seconds": 3.945539951324463,
+            "latency_scope": "Restricted delay includes fully observed misses at their fixed horizon; no detected-only speed superiority claim."
+          },
+          "alert_burden": {
+            "qualified_false_alert_starts": 0,
+            "eligible_benign_seconds": 0,
+            "false_alert_starts_per_hour": null,
+            "unattributed_qualified_starts": 1,
+            "unqualified_startup_or_gap_starts": 0,
+            "scope": "Event-start burden conditional on benign context, separate from alarm-window FPR."
+          },
+          "pre_measurement": {
+            "status": "frozen_trace_reproduced",
+            "alarm_active": false,
+            "qualified_starts_before_measurement": 0,
+            "unqualified_starts_before_measurement": 0
+          }
+        },
+        "AE": {
+          "window": {
+            "TP": 238,
+            "FN": 1,
+            "FP": 0,
+            "TN": 0,
+            "eligible_positive": 239,
+            "eligible_benign": 0,
+            "total_known_positive": 239,
+            "total_known_benign": 0,
+            "unknown_windows": 1,
+            "excluded_known_positive": 0,
+            "excluded_known_benign": 0,
+            "recall": 0.99581589958159,
+            "fpr": null,
+            "precision": 1.0,
+            "f1": 0.9979035639412998,
+            "AP": null,
+            "ROC_AUC": null,
+            "all_known_recall_bounds": [
+              0.99581589958159,
+              0.99581589958159
+            ],
+            "all_known_fpr_bounds": null,
+            "score_basis": "kth-largest trailing-h decision statistic on stated eligible support",
+            "common_label_history": 5
+          },
+          "episodes": [
+            {
+              "episode_id": "final-a-038",
+              "family": "slow_request_body",
+              "impact_class": "See measured probe failures/latencies; no automatic denial assertion",
+              "onset_interval_utc": [
+                1794568535.05446,
+                1794568535.05446
+              ],
+              "end_exclusive_utc": 1794568775.0,
+              "observed_detection": true,
+              "episode_recall_eligible": true,
+              "binary_episode_hit": 1,
+              "delay_seconds": 3.945539951324463,
+              "replay_latency_basis": "Window end + fixed1s reorder, not measured live end-to-end latency.",
+              "status": "detected",
+              "observed_alert_delay_seconds": 3.945539951324463,
+              "preexisting_alarm_at_onset": false,
+              "restricted_delay_seconds": 3.945539951324463,
+              "observation_complete_until_limit": true
+            }
+          ],
+          "episode_summary": {
+            "total_recorded_episodes": 1,
+            "scorable_exact_episodes": 1,
+            "hits": 1,
+            "misses": 0,
+            "unscored_or_censored_episodes": 0,
+            "episode_recall": 1.0,
+            "all_recorded_hit_bounds": [
+              1.0,
+              1.0
+            ],
+            "mean_penalty_coded_restricted_delay_seconds": 3.945539951324463,
+            "exact_detected_delay_median_seconds": 3.945539951324463,
+            "latency_scope": "Restricted delay includes fully observed misses at their fixed horizon; no detected-only speed superiority claim."
+          },
+          "alert_burden": {
+            "qualified_false_alert_starts": 0,
+            "eligible_benign_seconds": 0,
+            "false_alert_starts_per_hour": null,
+            "unattributed_qualified_starts": 1,
+            "unqualified_startup_or_gap_starts": 0,
+            "scope": "Event-start burden conditional on benign context, separate from alarm-window FPR."
+          },
+          "pre_measurement": {
+            "status": "frozen_trace_reproduced",
+            "alarm_active": false,
+            "qualified_starts_before_measurement": 0,
+            "unqualified_starts_before_measurement": 0
+          }
+        }
+      }
+    },
+    {
+      "unit_id": "final-a-002",
+      "kind": "attack",
+      "condition": "incomplete_header",
+      "run_order": 5,
+      "factors": {
+        "repeat": 2,
+        "sources": 1,
+        "connections": 10,
+        "interval": 20,
+        "warmup": 60,
+        "duration": 240
+      },
+      "qualification_exclusions": {
+        "planned_episodes": 1,
+        "no_corroborated_initial_payload": 0,
+        "no_silent_replacement": true
+      },
+      "observed_load_and_service": {
+        "status": "observed_private_evidence",
+        "service_by_endpoint": {
+          "warmup": {
+            "complete_GET_small": {
+              "scheduled_slots": 30,
+              "timely_successes": 30,
+              "failed_or_skipped": 0,
+              "skipped_slots": 0,
+              "failure_reason_counts": {},
+              "timely_latency_median_seconds": 0.007348916999996291,
+              "timely_latency_p95_seconds": 0.015012180000001856
+            },
+            "complete_POST_CGI": {
+              "scheduled_slots": 30,
+              "timely_successes": 30,
+              "failed_or_skipped": 0,
+              "skipped_slots": 0,
+              "failure_reason_counts": {},
+              "timely_latency_median_seconds": 0.010194495500003953,
+              "timely_latency_p95_seconds": 0.017665919250000606
+            }
+          },
+          "measurement": {
+            "complete_GET_small": {
+              "scheduled_slots": 120,
+              "timely_successes": 120,
+              "failed_or_skipped": 0,
+              "skipped_slots": 0,
+              "failure_reason_counts": {},
+              "timely_latency_median_seconds": 0.006159071999995547,
+              "timely_latency_p95_seconds": 0.01432595180001499
+            },
+            "complete_POST_CGI": {
+              "scheduled_slots": 120,
+              "timely_successes": 120,
+              "failed_or_skipped": 0,
+              "skipped_slots": 0,
+              "failure_reason_counts": {},
+              "timely_latency_median_seconds": 0.00783296649998988,
+              "timely_latency_p95_seconds": 0.0174144915500122
+            }
+          }
+        },
+        "attack_inbound_observed": {
+          "per_source": {
+            "172.28.240.20": {
+              "inbound_frames": 633,
+              "captured_Ethernet_bytes": 51918,
+              "TCP_payload_bytes": 9260
+            }
+          },
+          "measurement_seconds": 240,
+          "mean_captured_Ethernet_bits_per_second": 1730.6,
+          "peak_one_second_captured_Ethernet_bits": 20232,
+          "scope": "Client-to-service observed capture bytes including retransmissions/TCP overhead; excludes preamble/FCS/IFG. Not nominal configured rate or proven link saturation/worker occupancy."
+        }
+      },
+      "main": {
+        "hybrid": {
+          "window": {
+            "TP": 41,
+            "FN": 198,
+            "FP": 0,
+            "TN": 0,
+            "eligible_positive": 239,
+            "eligible_benign": 0,
+            "total_known_positive": 239,
+            "total_known_benign": 0,
+            "unknown_windows": 1,
+            "excluded_known_positive": 0,
+            "excluded_known_benign": 0,
+            "recall": 0.17154811715481172,
+            "fpr": null,
+            "precision": 1.0,
+            "f1": 0.29285714285714287,
+            "AP": null,
+            "ROC_AUC": null,
+            "all_known_recall_bounds": [
+              0.17154811715481172,
+              0.17154811715481172
+            ],
+            "all_known_fpr_bounds": null,
+            "score_basis": "kth-largest trailing-h decision statistic on stated eligible support",
+            "common_label_history": 5
+          },
+          "episodes": [
+            {
+              "episode_id": "final-a-002",
+              "family": "incomplete_header",
+              "impact_class": "See measured probe failures/latencies; no automatic denial assertion",
+              "onset_interval_utc": [
+                1794569711.116746,
+                1794569711.116746
+              ],
+              "end_exclusive_utc": 1794569951.0,
+              "observed_detection": true,
+              "episode_recall_eligible": true,
+              "binary_episode_hit": 1,
+              "delay_seconds": 60.883254051208496,
+              "replay_latency_basis": "Window end + fixed1s reorder, not measured live end-to-end latency.",
+              "status": "detected",
+              "observed_alert_delay_seconds": 60.883254051208496,
+              "preexisting_alarm_at_onset": false,
+              "restricted_delay_seconds": 60.883254051208496,
+              "observation_complete_until_limit": true
+            }
+          ],
+          "episode_summary": {
+            "total_recorded_episodes": 1,
+            "scorable_exact_episodes": 1,
+            "hits": 1,
+            "misses": 0,
+            "unscored_or_censored_episodes": 0,
+            "episode_recall": 1.0,
+            "all_recorded_hit_bounds": [
+              1.0,
+              1.0
+            ],
+            "mean_penalty_coded_restricted_delay_seconds": 60.883254051208496,
+            "exact_detected_delay_median_seconds": 60.883254051208496,
+            "latency_scope": "Restricted delay includes fully observed misses at their fixed horizon; no detected-only speed superiority claim."
+          },
+          "alert_burden": {
+            "qualified_false_alert_starts": 0,
+            "eligible_benign_seconds": 0,
+            "false_alert_starts_per_hour": null,
+            "unattributed_qualified_starts": 7,
+            "unqualified_startup_or_gap_starts": 0,
+            "scope": "Event-start burden conditional on benign context, separate from alarm-window FPR."
+          },
+          "pre_measurement": {
+            "status": "frozen_trace_reproduced",
+            "alarm_active": false,
+            "qualified_starts_before_measurement": 0,
+            "unqualified_starts_before_measurement": 0
+          }
+        },
+        "AE": {
+          "window": {
+            "TP": 238,
+            "FN": 1,
+            "FP": 0,
+            "TN": 0,
+            "eligible_positive": 239,
+            "eligible_benign": 0,
+            "total_known_positive": 239,
+            "total_known_benign": 0,
+            "unknown_windows": 1,
+            "excluded_known_positive": 0,
+            "excluded_known_benign": 0,
+            "recall": 0.99581589958159,
+            "fpr": null,
+            "precision": 1.0,
+            "f1": 0.9979035639412998,
+            "AP": null,
+            "ROC_AUC": null,
+            "all_known_recall_bounds": [
+              0.99581589958159,
+              0.99581589958159
+            ],
+            "all_known_fpr_bounds": null,
+            "score_basis": "kth-largest trailing-h decision statistic on stated eligible support",
+            "common_label_history": 5
+          },
+          "episodes": [
+            {
+              "episode_id": "final-a-002",
+              "family": "incomplete_header",
+              "impact_class": "See measured probe failures/latencies; no automatic denial assertion",
+              "onset_interval_utc": [
+                1794569711.116746,
+                1794569711.116746
+              ],
+              "end_exclusive_utc": 1794569951.0,
+              "observed_detection": true,
+              "episode_recall_eligible": true,
+              "binary_episode_hit": 1,
+              "delay_seconds": 3.883254051208496,
+              "replay_latency_basis": "Window end + fixed1s reorder, not measured live end-to-end latency.",
+              "status": "detected",
+              "observed_alert_delay_seconds": 3.883254051208496,
+              "preexisting_alarm_at_onset": false,
+              "restricted_delay_seconds": 3.883254051208496,
+              "observation_complete_until_limit": true
+            }
+          ],
+          "episode_summary": {
+            "total_recorded_episodes": 1,
+            "scorable_exact_episodes": 1,
+            "hits": 1,
+            "misses": 0,
+            "unscored_or_censored_episodes": 0,
+            "episode_recall": 1.0,
+            "all_recorded_hit_bounds": [
+              1.0,
+              1.0
+            ],
+            "mean_penalty_coded_restricted_delay_seconds": 3.883254051208496,
+            "exact_detected_delay_median_seconds": 3.883254051208496,
+            "latency_scope": "Restricted delay includes fully observed misses at their fixed horizon; no detected-only speed superiority claim."
+          },
+          "alert_burden": {
+            "qualified_false_alert_starts": 0,
+            "eligible_benign_seconds": 0,
+            "false_alert_starts_per_hour": null,
+            "unattributed_qualified_starts": 1,
+            "unqualified_startup_or_gap_starts": 0,
+            "scope": "Event-start burden conditional on benign context, separate from alarm-window FPR."
+          },
+          "pre_measurement": {
+            "status": "frozen_trace_reproduced",
+            "alarm_active": false,
+            "qualified_starts_before_measurement": 0,
+            "unqualified_starts_before_measurement": 0
+          }
+        }
+      }
+    },
+    {
+      "unit_id": "final-a-040",
+      "kind": "attack",
+      "condition": "slow_request_body",
+      "run_order": 6,
+      "factors": {
+        "repeat": 5,
+        "sources": 3,
+        "connections": 60,
+        "interval": 5,
+        "warmup": 60,
+        "duration": 240
+      },
+      "qualification_exclusions": {
+        "planned_episodes": 1,
+        "no_corroborated_initial_payload": 0,
+        "no_silent_replacement": true
+      },
+      "observed_load_and_service": {
+        "status": "observed_private_evidence",
+        "service_by_endpoint": {
+          "warmup": {
+            "complete_GET_small": {
+              "scheduled_slots": 30,
+              "timely_successes": 30,
+              "failed_or_skipped": 0,
+              "skipped_slots": 0,
+              "failure_reason_counts": {},
+              "timely_latency_median_seconds": 0.00869953549999991,
+              "timely_latency_p95_seconds": 0.015372091599985536
+            },
+            "complete_POST_CGI": {
+              "scheduled_slots": 30,
+              "timely_successes": 30,
+              "failed_or_skipped": 0,
+              "skipped_slots": 0,
+              "failure_reason_counts": {},
+              "timely_latency_median_seconds": 0.009894475999999486,
+              "timely_latency_p95_seconds": 0.018573493600024447
+            }
+          },
+          "measurement": {
+            "complete_GET_small": {
+              "scheduled_slots": 120,
+              "timely_successes": 84,
+              "failed_or_skipped": 36,
+              "skipped_slots": 0,
+              "failure_reason_counts": {
+                "error:TimeoutError": 36
+              },
+              "timely_latency_median_seconds": 0.007802193000031821,
+              "timely_latency_p95_seconds": 0.20795897989998746
+            },
+            "complete_POST_CGI": {
+              "scheduled_slots": 120,
+              "timely_successes": 15,
+              "failed_or_skipped": 105,
+              "skipped_slots": 0,
+              "failure_reason_counts": {
+                "error:TimeoutError": 45,
+                "HTTP_500": 20,
+                "error:IncompleteRead": 4,
+                "HTTP_503": 29,
+                "error:RemoteDisconnected": 7
+              },
+              "timely_latency_median_seconds": 0.008870498000078442,
+              "timely_latency_p95_seconds": 0.022398847200054205
+            }
+          }
+        },
+        "attack_inbound_observed": {
+          "per_source": {
+            "172.28.240.20": {
+              "inbound_frames": 8842,
+              "captured_Ethernet_bytes": 740387,
+              "TCP_payload_bytes": 146943
+            },
+            "172.28.240.21": {
+              "inbound_frames": 8461,
+              "captured_Ethernet_bytes": 706802,
+              "TCP_payload_bytes": 139040
+            },
+            "172.28.240.22": {
+              "inbound_frames": 8939,
+              "captured_Ethernet_bytes": 749043,
+              "TCP_payload_bytes": 149053
+            }
+          },
+          "measurement_seconds": 240,
+          "mean_captured_Ethernet_bits_per_second": 73207.73333333334,
+          "peak_one_second_captured_Ethernet_bits": 487976,
+          "scope": "Client-to-service observed capture bytes including retransmissions/TCP overhead; excludes preamble/FCS/IFG. Not nominal configured rate or proven link saturation/worker occupancy."
+        }
+      },
+      "main": {
+        "hybrid": {
+          "window": {
+            "TP": 238,
+            "FN": 1,
+            "FP": 0,
+            "TN": 0,
+            "eligible_positive": 239,
+            "eligible_benign": 0,
+            "total_known_positive": 239,
+            "total_known_benign": 0,
+            "unknown_windows": 1,
+            "excluded_known_positive": 0,
+            "excluded_known_benign": 0,
+            "recall": 0.99581589958159,
+            "fpr": null,
+            "precision": 1.0,
+            "f1": 0.9979035639412998,
+            "AP": null,
+            "ROC_AUC": null,
+            "all_known_recall_bounds": [
+              0.99581589958159,
+              0.99581589958159
+            ],
+            "all_known_fpr_bounds": null,
+            "score_basis": "kth-largest trailing-h decision statistic on stated eligible support",
+            "common_label_history": 5
+          },
+          "episodes": [
+            {
+              "episode_id": "final-a-040",
+              "family": "slow_request_body",
+              "impact_class": "See measured probe failures/latencies; no automatic denial assertion",
+              "onset_interval_utc": [
+                1794570058.039451,
+                1794570058.039451
+              ],
+              "end_exclusive_utc": 1794570298.0,
+              "observed_detection": true,
+              "episode_recall_eligible": true,
+              "binary_episode_hit": 1,
+              "delay_seconds": 3.9605491161346436,
+              "replay_latency_basis": "Window end + fixed1s reorder, not measured live end-to-end latency.",
+              "status": "detected",
+              "observed_alert_delay_seconds": 3.9605491161346436,
+              "preexisting_alarm_at_onset": false,
+              "restricted_delay_seconds": 3.9605491161346436,
+              "observation_complete_until_limit": true
+            }
+          ],
+          "episode_summary": {
+            "total_recorded_episodes": 1,
+            "scorable_exact_episodes": 1,
+            "hits": 1,
+            "misses": 0,
+            "unscored_or_censored_episodes": 0,
+            "episode_recall": 1.0,
+            "all_recorded_hit_bounds": [
+              1.0,
+              1.0
+            ],
+            "mean_penalty_coded_restricted_delay_seconds": 3.9605491161346436,
+            "exact_detected_delay_median_seconds": 3.9605491161346436,
+            "latency_scope": "Restricted delay includes fully observed misses at their fixed horizon; no detected-only speed superiority claim."
+          },
+          "alert_burden": {
+            "qualified_false_alert_starts": 0,
+            "eligible_benign_seconds": 0,
+            "false_alert_starts_per_hour": null,
+            "unattributed_qualified_starts": 1,
+            "unqualified_startup_or_gap_starts": 0,
+            "scope": "Event-start burden conditional on benign context, separate from alarm-window FPR."
+          },
+          "pre_measurement": {
+            "status": "frozen_trace_reproduced",
+            "alarm_active": false,
+            "qualified_starts_before_measurement": 0,
+            "unqualified_starts_before_measurement": 0
+          }
+        },
+        "AE": {
+          "window": {
+            "TP": 238,
+            "FN": 1,
+            "FP": 0,
+            "TN": 0,
+            "eligible_positive": 239,
+            "eligible_benign": 0,
+            "total_known_positive": 239,
+            "total_known_benign": 0,
+            "unknown_windows": 1,
+            "excluded_known_positive": 0,
+            "excluded_known_benign": 0,
+            "recall": 0.99581589958159,
+            "fpr": null,
+            "precision": 1.0,
+            "f1": 0.9979035639412998,
+            "AP": null,
+            "ROC_AUC": null,
+            "all_known_recall_bounds": [
+              0.99581589958159,
+              0.99581589958159
+            ],
+            "all_known_fpr_bounds": null,
+            "score_basis": "kth-largest trailing-h decision statistic on stated eligible support",
+            "common_label_history": 5
+          },
+          "episodes": [
+            {
+              "episode_id": "final-a-040",
+              "family": "slow_request_body",
+              "impact_class": "See measured probe failures/latencies; no automatic denial assertion",
+              "onset_interval_utc": [
+                1794570058.039451,
+                1794570058.039451
+              ],
+              "end_exclusive_utc": 1794570298.0,
+              "observed_detection": true,
+              "episode_recall_eligible": true,
+              "binary_episode_hit": 1,
+              "delay_seconds": 3.9605491161346436,
+              "replay_latency_basis": "Window end + fixed1s reorder, not measured live end-to-end latency.",
+              "status": "detected",
+              "observed_alert_delay_seconds": 3.9605491161346436,
+              "preexisting_alarm_at_onset": false,
+              "restricted_delay_seconds": 3.9605491161346436,
+              "observation_complete_until_limit": true
+            }
+          ],
+          "episode_summary": {
+            "total_recorded_episodes": 1,
+            "scorable_exact_episodes": 1,
+            "hits": 1,
+            "misses": 0,
+            "unscored_or_censored_episodes": 0,
+            "episode_recall": 1.0,
+            "all_recorded_hit_bounds": [
+              1.0,
+              1.0
+            ],
+            "mean_penalty_coded_restricted_delay_seconds": 3.9605491161346436,
+            "exact_detected_delay_median_seconds": 3.9605491161346436,
+            "latency_scope": "Restricted delay includes fully observed misses at their fixed horizon; no detected-only speed superiority claim."
+          },
+          "alert_burden": {
+            "qualified_false_alert_starts": 0,
+            "eligible_benign_seconds": 0,
+            "false_alert_starts_per_hour": null,
+            "unattributed_qualified_starts": 1,
+            "unqualified_startup_or_gap_starts": 0,
+            "scope": "Event-start burden conditional on benign context, separate from alarm-window FPR."
+          },
+          "pre_measurement": {
+            "status": "frozen_trace_reproduced",
+            "alarm_active": false,
+            "qualified_starts_before_measurement": 0,
+            "unqualified_starts_before_measurement": 0
+          }
+        }
+      }
+    },
+    {
+      "unit_id": "final-a-022",
+      "kind": "attack",
+      "condition": "slow_request_body",
+      "run_order": 7,
+      "factors": {
+        "repeat": 2,
+        "sources": 1,
+        "connections": 10,
+        "interval": 20,
+        "warmup": 60,
+        "duration": 240
+      },
+      "qualification_exclusions": {
+        "planned_episodes": 1,
+        "no_corroborated_initial_payload": 0,
+        "no_silent_replacement": true
+      },
+      "observed_load_and_service": {
+        "status": "observed_private_evidence",
+        "service_by_endpoint": {
+          "warmup": {
+            "complete_GET_small": {
+              "scheduled_slots": 30,
+              "timely_successes": 30,
+              "failed_or_skipped": 0,
+              "skipped_slots": 0,
+              "failure_reason_counts": {},
+              "timely_latency_median_seconds": 0.00841628849997278,
+              "timely_latency_p95_seconds": 0.014681939949991826
+            },
+            "complete_POST_CGI": {
+              "scheduled_slots": 30,
+              "timely_successes": 30,
+              "failed_or_skipped": 0,
+              "skipped_slots": 0,
+              "failure_reason_counts": {},
+              "timely_latency_median_seconds": 0.011793454999974529,
+              "timely_latency_p95_seconds": 0.018464383149972716
+            }
+          },
+          "measurement": {
+            "complete_GET_small": {
+              "scheduled_slots": 120,
+              "timely_successes": 120,
+              "failed_or_skipped": 0,
+              "skipped_slots": 0,
+              "failure_reason_counts": {},
+              "timely_latency_median_seconds": 0.009095081999987542,
+              "timely_latency_p95_seconds": 0.01528976790008869
+            },
+            "complete_POST_CGI": {
+              "scheduled_slots": 120,
+              "timely_successes": 120,
+              "failed_or_skipped": 0,
+              "skipped_slots": 0,
+              "failure_reason_counts": {},
+              "timely_latency_median_seconds": 0.010217030999967847,
+              "timely_latency_p95_seconds": 0.019486173100091264
+            }
+          }
+        },
+        "attack_inbound_observed": {
+          "per_source": {
+            "172.28.240.20": {
+              "inbound_frames": 693,
+              "captured_Ethernet_bytes": 60685,
+              "TCP_payload_bytes": 13987
+            }
+          },
+          "measurement_seconds": 240,
+          "mean_captured_Ethernet_bits_per_second": 2022.8333333333333,
+          "peak_one_second_captured_Ethernet_bits": 25760,
+          "scope": "Client-to-service observed capture bytes including retransmissions/TCP overhead; excludes preamble/FCS/IFG. Not nominal configured rate or proven link saturation/worker occupancy."
+        }
+      },
+      "main": {
+        "hybrid": {
+          "window": {
+            "TP": 45,
+            "FN": 194,
+            "FP": 0,
+            "TN": 0,
+            "eligible_positive": 239,
+            "eligible_benign": 0,
+            "total_known_positive": 239,
+            "total_known_benign": 0,
+            "unknown_windows": 1,
+            "excluded_known_positive": 0,
+            "excluded_known_benign": 0,
+            "recall": 0.18828451882845187,
+            "fpr": null,
+            "precision": 1.0,
+            "f1": 0.31690140845070425,
+            "AP": null,
+            "ROC_AUC": null,
+            "all_known_recall_bounds": [
+              0.18828451882845187,
+              0.18828451882845187
+            ],
+            "all_known_fpr_bounds": null,
+            "score_basis": "kth-largest trailing-h decision statistic on stated eligible support",
+            "common_label_history": 5
+          },
+          "episodes": [
+            {
+              "episode_id": "final-a-022",
+              "family": "slow_request_body",
+              "impact_class": "See measured probe failures/latencies; no automatic denial assertion",
+              "onset_interval_utc": [
+                1794570403.190075,
+                1794570403.190075
+              ],
+              "end_exclusive_utc": 1794570643.0,
+              "observed_detection": true,
+              "episode_recall_eligible": true,
+              "binary_episode_hit": 1,
+              "delay_seconds": 39.8099250793457,
+              "replay_latency_basis": "Window end + fixed1s reorder, not measured live end-to-end latency.",
+              "status": "detected",
+              "observed_alert_delay_seconds": 39.8099250793457,
+              "preexisting_alarm_at_onset": false,
+              "restricted_delay_seconds": 39.8099250793457,
+              "observation_complete_until_limit": true
+            }
+          ],
+          "episode_summary": {
+            "total_recorded_episodes": 1,
+            "scorable_exact_episodes": 1,
+            "hits": 1,
+            "misses": 0,
+            "unscored_or_censored_episodes": 0,
+            "episode_recall": 1.0,
+            "all_recorded_hit_bounds": [
+              1.0,
+              1.0
+            ],
+            "mean_penalty_coded_restricted_delay_seconds": 39.8099250793457,
+            "exact_detected_delay_median_seconds": 39.8099250793457,
+            "latency_scope": "Restricted delay includes fully observed misses at their fixed horizon; no detected-only speed superiority claim."
+          },
+          "alert_burden": {
+            "qualified_false_alert_starts": 0,
+            "eligible_benign_seconds": 0,
+            "false_alert_starts_per_hour": null,
+            "unattributed_qualified_starts": 6,
+            "unqualified_startup_or_gap_starts": 0,
+            "scope": "Event-start burden conditional on benign context, separate from alarm-window FPR."
+          },
+          "pre_measurement": {
+            "status": "frozen_trace_reproduced",
+            "alarm_active": false,
+            "qualified_starts_before_measurement": 0,
+            "unqualified_starts_before_measurement": 0
+          }
+        },
+        "AE": {
+          "window": {
+            "TP": 238,
+            "FN": 1,
+            "FP": 0,
+            "TN": 0,
+            "eligible_positive": 239,
+            "eligible_benign": 0,
+            "total_known_positive": 239,
+            "total_known_benign": 0,
+            "unknown_windows": 1,
+            "excluded_known_positive": 0,
+            "excluded_known_benign": 0,
+            "recall": 0.99581589958159,
+            "fpr": null,
+            "precision": 1.0,
+            "f1": 0.9979035639412998,
+            "AP": null,
+            "ROC_AUC": null,
+            "all_known_recall_bounds": [
+              0.99581589958159,
+              0.99581589958159
+            ],
+            "all_known_fpr_bounds": null,
+            "score_basis": "kth-largest trailing-h decision statistic on stated eligible support",
+            "common_label_history": 5
+          },
+          "episodes": [
+            {
+              "episode_id": "final-a-022",
+              "family": "slow_request_body",
+              "impact_class": "See measured probe failures/latencies; no automatic denial assertion",
+              "onset_interval_utc": [
+                1794570403.190075,
+                1794570403.190075
+              ],
+              "end_exclusive_utc": 1794570643.0,
+              "observed_detection": true,
+              "episode_recall_eligible": true,
+              "binary_episode_hit": 1,
+              "delay_seconds": 3.809925079345703,
+              "replay_latency_basis": "Window end + fixed1s reorder, not measured live end-to-end latency.",
+              "status": "detected",
+              "observed_alert_delay_seconds": 3.809925079345703,
+              "preexisting_alarm_at_onset": false,
+              "restricted_delay_seconds": 3.809925079345703,
+              "observation_complete_until_limit": true
+            }
+          ],
+          "episode_summary": {
+            "total_recorded_episodes": 1,
+            "scorable_exact_episodes": 1,
+            "hits": 1,
+            "misses": 0,
+            "unscored_or_censored_episodes": 0,
+            "episode_recall": 1.0,
+            "all_recorded_hit_bounds": [
+              1.0,
+              1.0
+            ],
+            "mean_penalty_coded_restricted_delay_seconds": 3.809925079345703,
+            "exact_detected_delay_median_seconds": 3.809925079345703,
+            "latency_scope": "Restricted delay includes fully observed misses at their fixed horizon; no detected-only speed superiority claim."
+          },
+          "alert_burden": {
+            "qualified_false_alert_starts": 0,
+            "eligible_benign_seconds": 0,
+            "false_alert_starts_per_hour": null,
+            "unattributed_qualified_starts": 1,
+            "unqualified_startup_or_gap_starts": 0,
+            "scope": "Event-start burden conditional on benign context, separate from alarm-window FPR."
+          },
+          "pre_measurement": {
+            "status": "frozen_trace_reproduced",
+            "alarm_active": false,
+            "qualified_starts_before_measurement": 0,
+            "unqualified_starts_before_measurement": 0
+          }
+        }
+      }
+    },
+    {
+      "unit_id": "final-b-005",
+      "kind": "benign",
+      "condition": "ordinary",
+      "run_order": 8,
+      "factors": {
+        "repeat": 5,
+        "sources": null,
+        "connections": null,
+        "interval": null,
+        "warmup": 60,
+        "duration": 180
+      },
+      "qualification_exclusions": {
+        "planned_episodes": 0,
+        "no_corroborated_initial_payload": 0,
+        "no_silent_replacement": true
+      },
+      "observed_load_and_service": {
+        "status": "observed_private_evidence",
+        "service_by_endpoint": {
+          "warmup": {
+            "complete_GET_small": {
+              "scheduled_slots": 30,
+              "timely_successes": 30,
+              "failed_or_skipped": 0,
+              "skipped_slots": 0,
+              "failure_reason_counts": {},
+              "timely_latency_median_seconds": 0.007693361999940862,
+              "timely_latency_p95_seconds": 0.015179498050110849
+            },
+            "complete_POST_CGI": {
+              "scheduled_slots": 30,
+              "timely_successes": 30,
+              "failed_or_skipped": 0,
+              "skipped_slots": 0,
+              "failure_reason_counts": {},
+              "timely_latency_median_seconds": 0.011633374499979254,
+              "timely_latency_p95_seconds": 0.017981257949998053
+            }
+          },
+          "measurement": {
+            "complete_GET_small": {
+              "scheduled_slots": 90,
+              "timely_successes": 90,
+              "failed_or_skipped": 0,
+              "skipped_slots": 0,
+              "failure_reason_counts": {},
+              "timely_latency_median_seconds": 0.007514908500070305,
+              "timely_latency_p95_seconds": 0.01463788450002994
+            },
+            "complete_POST_CGI": {
+              "scheduled_slots": 90,
+              "timely_successes": 90,
+              "failed_or_skipped": 0,
+              "skipped_slots": 0,
+              "failure_reason_counts": {},
+              "timely_latency_median_seconds": 0.010855526999989706,
+              "timely_latency_p95_seconds": 0.01764195564999227
+            }
+          }
+        }
+      },
+      "main": {
+        "hybrid": {
+          "window": {
+            "TP": 0,
+            "FN": 0,
+            "FP": 0,
+            "TN": 180,
+            "eligible_positive": 0,
+            "eligible_benign": 180,
+            "total_known_positive": 0,
+            "total_known_benign": 180,
+            "unknown_windows": 0,
+            "excluded_known_positive": 0,
+            "excluded_known_benign": 0,
+            "recall": null,
+            "fpr": 0.0,
+            "precision": null,
+            "f1": null,
+            "AP": null,
+            "ROC_AUC": null,
+            "all_known_recall_bounds": null,
+            "all_known_fpr_bounds": [
+              0.0,
+              0.0
+            ],
+            "score_basis": "kth-largest trailing-h decision statistic on stated eligible support",
+            "common_label_history": 5
+          },
+          "episodes": [],
+          "episode_summary": {
+            "total_recorded_episodes": 0,
+            "scorable_exact_episodes": 0,
+            "hits": 0,
+            "misses": 0,
+            "unscored_or_censored_episodes": 0,
+            "episode_recall": null,
+            "all_recorded_hit_bounds": null,
+            "mean_penalty_coded_restricted_delay_seconds": null,
+            "exact_detected_delay_median_seconds": null,
+            "latency_scope": "Restricted delay includes fully observed misses at their fixed horizon; no detected-only speed superiority claim."
+          },
+          "alert_burden": {
+            "qualified_false_alert_starts": 0,
+            "eligible_benign_seconds": 180,
+            "false_alert_starts_per_hour": 0.0,
+            "unattributed_qualified_starts": 0,
+            "unqualified_startup_or_gap_starts": 0,
+            "scope": "Event-start burden conditional on benign context, separate from alarm-window FPR."
+          },
+          "pre_measurement": {
+            "status": "frozen_trace_reproduced",
+            "alarm_active": false,
+            "qualified_starts_before_measurement": 0,
+            "unqualified_starts_before_measurement": 0
+          }
+        },
+        "AE": {
+          "window": {
+            "TP": 0,
+            "FN": 0,
+            "FP": 0,
+            "TN": 180,
+            "eligible_positive": 0,
+            "eligible_benign": 180,
+            "total_known_positive": 0,
+            "total_known_benign": 180,
+            "unknown_windows": 0,
+            "excluded_known_positive": 0,
+            "excluded_known_benign": 0,
+            "recall": null,
+            "fpr": 0.0,
+            "precision": null,
+            "f1": null,
+            "AP": null,
+            "ROC_AUC": null,
+            "all_known_recall_bounds": null,
+            "all_known_fpr_bounds": [
+              0.0,
+              0.0
+            ],
+            "score_basis": "kth-largest trailing-h decision statistic on stated eligible support",
+            "common_label_history": 5
+          },
+          "episodes": [],
+          "episode_summary": {
+            "total_recorded_episodes": 0,
+            "scorable_exact_episodes": 0,
+            "hits": 0,
+            "misses": 0,
+            "unscored_or_censored_episodes": 0,
+            "episode_recall": null,
+            "all_recorded_hit_bounds": null,
+            "mean_penalty_coded_restricted_delay_seconds": null,
+            "exact_detected_delay_median_seconds": null,
+            "latency_scope": "Restricted delay includes fully observed misses at their fixed horizon; no detected-only speed superiority claim."
+          },
+          "alert_burden": {
+            "qualified_false_alert_starts": 0,
+            "eligible_benign_seconds": 180,
+            "false_alert_starts_per_hour": 0.0,
+            "unattributed_qualified_starts": 0,
+            "unqualified_startup_or_gap_starts": 0,
+            "scope": "Event-start burden conditional on benign context, separate from alarm-window FPR."
+          },
+          "pre_measurement": {
+            "status": "frozen_trace_reproduced",
+            "alarm_active": false,
+            "qualified_starts_before_measurement": 0,
+            "unqualified_starts_before_measurement": 0
+          }
+        }
+      }
+    },
+    {
+      "unit_id": "final-b-003",
+      "kind": "benign",
+      "condition": "ordinary",
+      "run_order": 9,
+      "factors": {
+        "repeat": 3,
+        "sources": null,
+        "connections": null,
+        "interval": null,
+        "warmup": 60,
+        "duration": 180
+      },
+      "qualification_exclusions": {
+        "planned_episodes": 0,
+        "no_corroborated_initial_payload": 0,
+        "no_silent_replacement": true
+      },
+      "observed_load_and_service": {
+        "status": "observed_private_evidence",
+        "service_by_endpoint": {
+          "warmup": {
+            "complete_GET_small": {
+              "scheduled_slots": 30,
+              "timely_successes": 30,
+              "failed_or_skipped": 0,
+              "skipped_slots": 0,
+              "failure_reason_counts": {},
+              "timely_latency_median_seconds": 0.008158758000000432,
+              "timely_latency_p95_seconds": 0.015605823900001781
+            },
+            "complete_POST_CGI": {
+              "scheduled_slots": 30,
+              "timely_successes": 30,
+              "failed_or_skipped": 0,
+              "skipped_slots": 0,
+              "failure_reason_counts": {},
+              "timely_latency_median_seconds": 0.011631110999999805,
+              "timely_latency_p95_seconds": 0.018356556250000367
+            }
+          },
+          "measurement": {
+            "complete_GET_small": {
+              "scheduled_slots": 90,
+              "timely_successes": 90,
+              "failed_or_skipped": 0,
+              "skipped_slots": 0,
+              "failure_reason_counts": {},
+              "timely_latency_median_seconds": 0.010504537999999286,
+              "timely_latency_p95_seconds": 0.01578054819999721
+            },
+            "complete_POST_CGI": {
+              "scheduled_slots": 90,
+              "timely_successes": 90,
+              "failed_or_skipped": 0,
+              "skipped_slots": 0,
+              "failure_reason_counts": {},
+              "timely_latency_median_seconds": 0.011738864500003388,
+              "timely_latency_p95_seconds": 0.018116770050001917
+            }
+          }
+        }
+      },
+      "main": {
+        "hybrid": {
+          "window": {
+            "TP": 0,
+            "FN": 0,
+            "FP": 0,
+            "TN": 180,
+            "eligible_positive": 0,
+            "eligible_benign": 180,
+            "total_known_positive": 0,
+            "total_known_benign": 180,
+            "unknown_windows": 0,
+            "excluded_known_positive": 0,
+            "excluded_known_benign": 0,
+            "recall": null,
+            "fpr": 0.0,
+            "precision": null,
+            "f1": null,
+            "AP": null,
+            "ROC_AUC": null,
+            "all_known_recall_bounds": null,
+            "all_known_fpr_bounds": [
+              0.0,
+              0.0
+            ],
+            "score_basis": "kth-largest trailing-h decision statistic on stated eligible support",
+            "common_label_history": 5
+          },
+          "episodes": [],
+          "episode_summary": {
+            "total_recorded_episodes": 0,
+            "scorable_exact_episodes": 0,
+            "hits": 0,
+            "misses": 0,
+            "unscored_or_censored_episodes": 0,
+            "episode_recall": null,
+            "all_recorded_hit_bounds": null,
+            "mean_penalty_coded_restricted_delay_seconds": null,
+            "exact_detected_delay_median_seconds": null,
+            "latency_scope": "Restricted delay includes fully observed misses at their fixed horizon; no detected-only speed superiority claim."
+          },
+          "alert_burden": {
+            "qualified_false_alert_starts": 0,
+            "eligible_benign_seconds": 180,
+            "false_alert_starts_per_hour": 0.0,
+            "unattributed_qualified_starts": 0,
+            "unqualified_startup_or_gap_starts": 0,
+            "scope": "Event-start burden conditional on benign context, separate from alarm-window FPR."
+          },
+          "pre_measurement": {
+            "status": "frozen_trace_reproduced",
+            "alarm_active": false,
+            "qualified_starts_before_measurement": 0,
+            "unqualified_starts_before_measurement": 0
+          }
+        },
+        "AE": {
+          "window": {
+            "TP": 0,
+            "FN": 0,
+            "FP": 0,
+            "TN": 180,
+            "eligible_positive": 0,
+            "eligible_benign": 180,
+            "total_known_positive": 0,
+            "total_known_benign": 180,
+            "unknown_windows": 0,
+            "excluded_known_positive": 0,
+            "excluded_known_benign": 0,
+            "recall": null,
+            "fpr": 0.0,
+            "precision": null,
+            "f1": null,
+            "AP": null,
+            "ROC_AUC": null,
+            "all_known_recall_bounds": null,
+            "all_known_fpr_bounds": [
+              0.0,
+              0.0
+            ],
+            "score_basis": "kth-largest trailing-h decision statistic on stated eligible support",
+            "common_label_history": 5
+          },
+          "episodes": [],
+          "episode_summary": {
+            "total_recorded_episodes": 0,
+            "scorable_exact_episodes": 0,
+            "hits": 0,
+            "misses": 0,
+            "unscored_or_censored_episodes": 0,
+            "episode_recall": null,
+            "all_recorded_hit_bounds": null,
+            "mean_penalty_coded_restricted_delay_seconds": null,
+            "exact_detected_delay_median_seconds": null,
+            "latency_scope": "Restricted delay includes fully observed misses at their fixed horizon; no detected-only speed superiority claim."
+          },
+          "alert_burden": {
+            "qualified_false_alert_starts": 0,
+            "eligible_benign_seconds": 180,
+            "false_alert_starts_per_hour": 0.0,
+            "unattributed_qualified_starts": 0,
+            "unqualified_startup_or_gap_starts": 0,
+            "scope": "Event-start burden conditional on benign context, separate from alarm-window FPR."
+          },
+          "pre_measurement": {
+            "status": "frozen_trace_reproduced",
+            "alarm_active": false,
+            "qualified_starts_before_measurement": 0,
+            "unqualified_starts_before_measurement": 0
+          }
+        }
+      }
+    },
+    {
+      "unit_id": "final-b-007",
+      "kind": "benign",
+      "condition": "bursts",
+      "run_order": 10,
+      "factors": {
+        "repeat": 2,
+        "sources": null,
+        "connections": null,
+        "interval": null,
+        "warmup": 60,
+        "duration": 180
+      },
+      "qualification_exclusions": {
+        "planned_episodes": 0,
+        "no_corroborated_initial_payload": 0,
+        "no_silent_replacement": true
+      },
+      "observed_load_and_service": {
+        "status": "observed_private_evidence",
+        "service_by_endpoint": {
+          "warmup": {
+            "complete_GET_small": {
+              "scheduled_slots": 30,
+              "timely_successes": 30,
+              "failed_or_skipped": 0,
+              "skipped_slots": 0,
+              "failure_reason_counts": {},
+              "timely_latency_median_seconds": 0.012598663499971963,
+              "timely_latency_p95_seconds": 0.015881226249993573
+            },
+            "complete_POST_CGI": {
+              "scheduled_slots": 30,
+              "timely_successes": 30,
+              "failed_or_skipped": 0,
+              "skipped_slots": 0,
+              "failure_reason_counts": {},
+              "timely_latency_median_seconds": 0.011670721499996262,
+              "timely_latency_p95_seconds": 0.0180353507000035
+            }
+          },
+          "measurement": {
+            "complete_GET_small": {
+              "scheduled_slots": 90,
+              "timely_successes": 90,
+              "failed_or_skipped": 0,
+              "skipped_slots": 0,
+              "failure_reason_counts": {},
+              "timely_latency_median_seconds": 0.01289085650000743,
+              "timely_latency_p95_seconds": 0.01621422360001361
+            },
+            "complete_POST_CGI": {
+              "scheduled_slots": 90,
+              "timely_successes": 90,
+              "failed_or_skipped": 0,
+              "skipped_slots": 0,
+              "failure_reason_counts": {},
+              "timely_latency_median_seconds": 0.011740489500027707,
+              "timely_latency_p95_seconds": 0.01999835060002226
+            }
+          }
+        }
+      },
+      "main": {
+        "hybrid": {
+          "window": {
+            "TP": 0,
+            "FN": 0,
+            "FP": 150,
+            "TN": 30,
+            "eligible_positive": 0,
+            "eligible_benign": 180,
+            "total_known_positive": 0,
+            "total_known_benign": 180,
+            "unknown_windows": 0,
+            "excluded_known_positive": 0,
+            "excluded_known_benign": 0,
+            "recall": null,
+            "fpr": 0.8333333333333334,
+            "precision": 0.0,
+            "f1": 0.0,
+            "AP": null,
+            "ROC_AUC": null,
+            "all_known_recall_bounds": null,
+            "all_known_fpr_bounds": [
+              0.8333333333333334,
+              0.8333333333333334
+            ],
+            "score_basis": "kth-largest trailing-h decision statistic on stated eligible support",
+            "common_label_history": 5
+          },
+          "episodes": [],
+          "episode_summary": {
+            "total_recorded_episodes": 0,
+            "scorable_exact_episodes": 0,
+            "hits": 0,
+            "misses": 0,
+            "unscored_or_censored_episodes": 0,
+            "episode_recall": null,
+            "all_recorded_hit_bounds": null,
+            "mean_penalty_coded_restricted_delay_seconds": null,
+            "exact_detected_delay_median_seconds": null,
+            "latency_scope": "Restricted delay includes fully observed misses at their fixed horizon; no detected-only speed superiority claim."
+          },
+          "alert_burden": {
+            "qualified_false_alert_starts": 0,
+            "eligible_benign_seconds": 180,
+            "false_alert_starts_per_hour": 0.0,
+            "unattributed_qualified_starts": 0,
+            "unqualified_startup_or_gap_starts": 0,
+            "scope": "Event-start burden conditional on benign context, separate from alarm-window FPR."
+          },
+          "pre_measurement": {
+            "status": "frozen_trace_reproduced",
+            "alarm_active": true,
+            "qualified_starts_before_measurement": 0,
+            "unqualified_starts_before_measurement": 1
+          }
+        },
+        "AE": {
+          "window": {
+            "TP": 0,
+            "FN": 0,
+            "FP": 152,
+            "TN": 28,
+            "eligible_positive": 0,
+            "eligible_benign": 180,
+            "total_known_positive": 0,
+            "total_known_benign": 180,
+            "unknown_windows": 0,
+            "excluded_known_positive": 0,
+            "excluded_known_benign": 0,
+            "recall": null,
+            "fpr": 0.8444444444444444,
+            "precision": 0.0,
+            "f1": 0.0,
+            "AP": null,
+            "ROC_AUC": null,
+            "all_known_recall_bounds": null,
+            "all_known_fpr_bounds": [
+              0.8444444444444444,
+              0.8444444444444444
+            ],
+            "score_basis": "kth-largest trailing-h decision statistic on stated eligible support",
+            "common_label_history": 5
+          },
+          "episodes": [],
+          "episode_summary": {
+            "total_recorded_episodes": 0,
+            "scorable_exact_episodes": 0,
+            "hits": 0,
+            "misses": 0,
+            "unscored_or_censored_episodes": 0,
+            "episode_recall": null,
+            "all_recorded_hit_bounds": null,
+            "mean_penalty_coded_restricted_delay_seconds": null,
+            "exact_detected_delay_median_seconds": null,
+            "latency_scope": "Restricted delay includes fully observed misses at their fixed horizon; no detected-only speed superiority claim."
+          },
+          "alert_burden": {
+            "qualified_false_alert_starts": 0,
+            "eligible_benign_seconds": 180,
+            "false_alert_starts_per_hour": 0.0,
+            "unattributed_qualified_starts": 0,
+            "unqualified_startup_or_gap_starts": 0,
+            "scope": "Event-start burden conditional on benign context, separate from alarm-window FPR."
+          },
+          "pre_measurement": {
+            "status": "frozen_trace_reproduced",
+            "alarm_active": true,
+            "qualified_starts_before_measurement": 0,
+            "unqualified_starts_before_measurement": 1
+          }
+        }
+      }
+    },
+    {
+      "unit_id": "final-a-012",
+      "kind": "attack",
+      "condition": "incomplete_header",
+      "run_order": 11,
+      "factors": {
+        "repeat": 2,
+        "sources": 3,
+        "connections": 10,
+        "interval": 20,
+        "warmup": 60,
+        "duration": 240
+      },
+      "qualification_exclusions": {
+        "planned_episodes": 1,
+        "no_corroborated_initial_payload": 0,
+        "no_silent_replacement": true
+      },
+      "observed_load_and_service": {
+        "status": "observed_private_evidence",
+        "service_by_endpoint": {
+          "warmup": {
+            "complete_GET_small": {
+              "scheduled_slots": 30,
+              "timely_successes": 30,
+              "failed_or_skipped": 0,
+              "skipped_slots": 0,
+              "failure_reason_counts": {},
+              "timely_latency_median_seconds": 0.011451644499970826,
+              "timely_latency_p95_seconds": 0.014816179499985083
+            },
+            "complete_POST_CGI": {
+              "scheduled_slots": 30,
+              "timely_successes": 30,
+              "failed_or_skipped": 0,
+              "skipped_slots": 0,
+              "failure_reason_counts": {},
+              "timely_latency_median_seconds": 0.009758634500030894,
+              "timely_latency_p95_seconds": 0.019149686250068496
+            }
+          },
+          "measurement": {
+            "complete_GET_small": {
+              "scheduled_slots": 120,
+              "timely_successes": 120,
+              "failed_or_skipped": 0,
+              "skipped_slots": 0,
+              "failure_reason_counts": {},
+              "timely_latency_median_seconds": 0.007670731499956673,
+              "timely_latency_p95_seconds": 0.015319137599942677
+            },
+            "complete_POST_CGI": {
+              "scheduled_slots": 120,
+              "timely_successes": 120,
+              "failed_or_skipped": 0,
+              "skipped_slots": 0,
+              "failure_reason_counts": {},
+              "timely_latency_median_seconds": 0.010074742000028891,
+              "timely_latency_p95_seconds": 0.019304575300049007
+            }
+          }
+        },
+        "attack_inbound_observed": {
+          "per_source": {
+            "172.28.240.21": {
+              "inbound_frames": 630,
+              "captured_Ethernet_bytes": 51720,
+              "TCP_payload_bytes": 9260
+            },
+            "172.28.240.22": {
+              "inbound_frames": 632,
+              "captured_Ethernet_bytes": 51852,
+              "TCP_payload_bytes": 9260
+            },
+            "172.28.240.20": {
+              "inbound_frames": 631,
+              "captured_Ethernet_bytes": 51786,
+              "TCP_payload_bytes": 9260
+            }
+          },
+          "measurement_seconds": 240,
+          "mean_captured_Ethernet_bits_per_second": 5178.6,
+          "peak_one_second_captured_Ethernet_bits": 67440,
+          "scope": "Client-to-service observed capture bytes including retransmissions/TCP overhead; excludes preamble/FCS/IFG. Not nominal configured rate or proven link saturation/worker occupancy."
+        }
+      },
+      "main": {
+        "hybrid": {
+          "window": {
+            "TP": 238,
+            "FN": 1,
+            "FP": 0,
+            "TN": 0,
+            "eligible_positive": 239,
+            "eligible_benign": 0,
+            "total_known_positive": 239,
+            "total_known_benign": 0,
+            "unknown_windows": 1,
+            "excluded_known_positive": 0,
+            "excluded_known_benign": 0,
+            "recall": 0.99581589958159,
+            "fpr": null,
+            "precision": 1.0,
+            "f1": 0.9979035639412998,
+            "AP": null,
+            "ROC_AUC": null,
+            "all_known_recall_bounds": [
+              0.99581589958159,
+              0.99581589958159
+            ],
+            "all_known_fpr_bounds": null,
+            "score_basis": "kth-largest trailing-h decision statistic on stated eligible support",
+            "common_label_history": 5
+          },
+          "episodes": [
+            {
+              "episode_id": "final-a-012",
+              "family": "incomplete_header",
+              "impact_class": "See measured probe failures/latencies; no automatic denial assertion",
+              "onset_interval_utc": [
+                1794580788.244314,
+                1794580788.244314
+              ],
+              "end_exclusive_utc": 1794581028.0,
+              "observed_detection": true,
+              "episode_recall_eligible": true,
+              "binary_episode_hit": 1,
+              "delay_seconds": 3.755686044692993,
+              "replay_latency_basis": "Window end + fixed1s reorder, not measured live end-to-end latency.",
+              "status": "detected",
+              "observed_alert_delay_seconds": 3.755686044692993,
+              "preexisting_alarm_at_onset": false,
+              "restricted_delay_seconds": 3.755686044692993,
+              "observation_complete_until_limit": true
+            }
+          ],
+          "episode_summary": {
+            "total_recorded_episodes": 1,
+            "scorable_exact_episodes": 1,
+            "hits": 1,
+            "misses": 0,
+            "unscored_or_censored_episodes": 0,
+            "episode_recall": 1.0,
+            "all_recorded_hit_bounds": [
+              1.0,
+              1.0
+            ],
+            "mean_penalty_coded_restricted_delay_seconds": 3.755686044692993,
+            "exact_detected_delay_median_seconds": 3.755686044692993,
+            "latency_scope": "Restricted delay includes fully observed misses at their fixed horizon; no detected-only speed superiority claim."
+          },
+          "alert_burden": {
+            "qualified_false_alert_starts": 0,
+            "eligible_benign_seconds": 0,
+            "false_alert_starts_per_hour": null,
+            "unattributed_qualified_starts": 1,
+            "unqualified_startup_or_gap_starts": 0,
+            "scope": "Event-start burden conditional on benign context, separate from alarm-window FPR."
+          },
+          "pre_measurement": {
+            "status": "frozen_trace_reproduced",
+            "alarm_active": false,
+            "qualified_starts_before_measurement": 0,
+            "unqualified_starts_before_measurement": 0
+          }
+        },
+        "AE": {
+          "window": {
+            "TP": 238,
+            "FN": 1,
+            "FP": 0,
+            "TN": 0,
+            "eligible_positive": 239,
+            "eligible_benign": 0,
+            "total_known_positive": 239,
+            "total_known_benign": 0,
+            "unknown_windows": 1,
+            "excluded_known_positive": 0,
+            "excluded_known_benign": 0,
+            "recall": 0.99581589958159,
+            "fpr": null,
+            "precision": 1.0,
+            "f1": 0.9979035639412998,
+            "AP": null,
+            "ROC_AUC": null,
+            "all_known_recall_bounds": [
+              0.99581589958159,
+              0.99581589958159
+            ],
+            "all_known_fpr_bounds": null,
+            "score_basis": "kth-largest trailing-h decision statistic on stated eligible support",
+            "common_label_history": 5
+          },
+          "episodes": [
+            {
+              "episode_id": "final-a-012",
+              "family": "incomplete_header",
+              "impact_class": "See measured probe failures/latencies; no automatic denial assertion",
+              "onset_interval_utc": [
+                1794580788.244314,
+                1794580788.244314
+              ],
+              "end_exclusive_utc": 1794581028.0,
+              "observed_detection": true,
+              "episode_recall_eligible": true,
+              "binary_episode_hit": 1,
+              "delay_seconds": 3.755686044692993,
+              "replay_latency_basis": "Window end + fixed1s reorder, not measured live end-to-end latency.",
+              "status": "detected",
+              "observed_alert_delay_seconds": 3.755686044692993,
+              "preexisting_alarm_at_onset": false,
+              "restricted_delay_seconds": 3.755686044692993,
+              "observation_complete_until_limit": true
+            }
+          ],
+          "episode_summary": {
+            "total_recorded_episodes": 1,
+            "scorable_exact_episodes": 1,
+            "hits": 1,
+            "misses": 0,
+            "unscored_or_censored_episodes": 0,
+            "episode_recall": 1.0,
+            "all_recorded_hit_bounds": [
+              1.0,
+              1.0
+            ],
+            "mean_penalty_coded_restricted_delay_seconds": 3.755686044692993,
+            "exact_detected_delay_median_seconds": 3.755686044692993,
+            "latency_scope": "Restricted delay includes fully observed misses at their fixed horizon; no detected-only speed superiority claim."
+          },
+          "alert_burden": {
+            "qualified_false_alert_starts": 0,
+            "eligible_benign_seconds": 0,
+            "false_alert_starts_per_hour": null,
+            "unattributed_qualified_starts": 1,
+            "unqualified_startup_or_gap_starts": 0,
+            "scope": "Event-start burden conditional on benign context, separate from alarm-window FPR."
+          },
+          "pre_measurement": {
+            "status": "frozen_trace_reproduced",
+            "alarm_active": false,
+            "qualified_starts_before_measurement": 0,
+            "unqualified_starts_before_measurement": 0
+          }
+        }
+      }
+    },
+    {
+      "unit_id": "final-a-014",
+      "kind": "attack",
+      "condition": "incomplete_header",
+      "run_order": 12,
+      "factors": {
+        "repeat": 4,
+        "sources": 3,
+        "connections": 10,
+        "interval": 20,
+        "warmup": 60,
+        "duration": 240
+      },
+      "qualification_exclusions": {
+        "planned_episodes": 1,
+        "no_corroborated_initial_payload": 0,
+        "no_silent_replacement": true
+      },
+      "observed_load_and_service": {
+        "status": "observed_private_evidence",
+        "service_by_endpoint": {
+          "warmup": {
+            "complete_GET_small": {
+              "scheduled_slots": 30,
+              "timely_successes": 30,
+              "failed_or_skipped": 0,
+              "skipped_slots": 0,
+              "failure_reason_counts": {},
+              "timely_latency_median_seconds": 0.010585753999976077,
+              "timely_latency_p95_seconds": 0.01531215105001138
+            },
+            "complete_POST_CGI": {
+              "scheduled_slots": 30,
+              "timely_successes": 30,
+              "failed_or_skipped": 0,
+              "skipped_slots": 0,
+              "failure_reason_counts": {},
+              "timely_latency_median_seconds": 0.010295261999942795,
+              "timely_latency_p95_seconds": 0.01848445529994933
+            }
+          },
+          "measurement": {
+            "complete_GET_small": {
+              "scheduled_slots": 120,
+              "timely_successes": 120,
+              "failed_or_skipped": 0,
+              "skipped_slots": 0,
+              "failure_reason_counts": {},
+              "timely_latency_median_seconds": 0.011717869000108294,
+              "timely_latency_p95_seconds": 0.015615300250101428
+            },
+            "complete_POST_CGI": {
+              "scheduled_slots": 120,
+              "timely_successes": 120,
+              "failed_or_skipped": 0,
+              "skipped_slots": 0,
+              "failure_reason_counts": {},
+              "timely_latency_median_seconds": 0.011732744000028106,
+              "timely_latency_p95_seconds": 0.018000109199897453
+            }
+          }
+        },
+        "attack_inbound_observed": {
+          "per_source": {
+            "172.28.240.21": {
+              "inbound_frames": 630,
+              "captured_Ethernet_bytes": 51720,
+              "TCP_payload_bytes": 9260
+            },
+            "172.28.240.22": {
+              "inbound_frames": 630,
+              "captured_Ethernet_bytes": 51720,
+              "TCP_payload_bytes": 9260
+            },
+            "172.28.240.20": {
+              "inbound_frames": 630,
+              "captured_Ethernet_bytes": 51720,
+              "TCP_payload_bytes": 9260
+            }
+          },
+          "measurement_seconds": 240,
+          "mean_captured_Ethernet_bits_per_second": 5172.0,
+          "peak_one_second_captured_Ethernet_bits": 67440,
+          "scope": "Client-to-service observed capture bytes including retransmissions/TCP overhead; excludes preamble/FCS/IFG. Not nominal configured rate or proven link saturation/worker occupancy."
+        }
+      },
+      "main": {
+        "hybrid": {
+          "window": {
+            "TP": 238,
+            "FN": 1,
+            "FP": 0,
+            "TN": 0,
+            "eligible_positive": 239,
+            "eligible_benign": 0,
+            "total_known_positive": 239,
+            "total_known_benign": 0,
+            "unknown_windows": 1,
+            "excluded_known_positive": 0,
+            "excluded_known_benign": 0,
+            "recall": 0.99581589958159,
+            "fpr": null,
+            "precision": 1.0,
+            "f1": 0.9979035639412998,
+            "AP": null,
+            "ROC_AUC": null,
+            "all_known_recall_bounds": [
+              0.99581589958159,
+              0.99581589958159
+            ],
+            "all_known_fpr_bounds": null,
+            "score_basis": "kth-largest trailing-h decision statistic on stated eligible support",
+            "common_label_history": 5
+          },
+          "episodes": [
+            {
+              "episode_id": "final-a-014",
+              "family": "incomplete_header",
+              "impact_class": "See measured probe failures/latencies; no automatic denial assertion",
+              "onset_interval_utc": [
+                1794581135.149216,
+                1794581135.149216
+              ],
+              "end_exclusive_utc": 1794581375.0,
+              "observed_detection": true,
+              "episode_recall_eligible": true,
+              "binary_episode_hit": 1,
+              "delay_seconds": 3.8507840633392334,
+              "replay_latency_basis": "Window end + fixed1s reorder, not measured live end-to-end latency.",
+              "status": "detected",
+              "observed_alert_delay_seconds": 3.8507840633392334,
+              "preexisting_alarm_at_onset": false,
+              "restricted_delay_seconds": 3.8507840633392334,
+              "observation_complete_until_limit": true
+            }
+          ],
+          "episode_summary": {
+            "total_recorded_episodes": 1,
+            "scorable_exact_episodes": 1,
+            "hits": 1,
+            "misses": 0,
+            "unscored_or_censored_episodes": 0,
+            "episode_recall": 1.0,
+            "all_recorded_hit_bounds": [
+              1.0,
+              1.0
+            ],
+            "mean_penalty_coded_restricted_delay_seconds": 3.8507840633392334,
+            "exact_detected_delay_median_seconds": 3.8507840633392334,
+            "latency_scope": "Restricted delay includes fully observed misses at their fixed horizon; no detected-only speed superiority claim."
+          },
+          "alert_burden": {
+            "qualified_false_alert_starts": 0,
+            "eligible_benign_seconds": 0,
+            "false_alert_starts_per_hour": null,
+            "unattributed_qualified_starts": 1,
+            "unqualified_startup_or_gap_starts": 0,
+            "scope": "Event-start burden conditional on benign context, separate from alarm-window FPR."
+          },
+          "pre_measurement": {
+            "status": "frozen_trace_reproduced",
+            "alarm_active": false,
+            "qualified_starts_before_measurement": 0,
+            "unqualified_starts_before_measurement": 0
+          }
+        },
+        "AE": {
+          "window": {
+            "TP": 238,
+            "FN": 1,
+            "FP": 0,
+            "TN": 0,
+            "eligible_positive": 239,
+            "eligible_benign": 0,
+            "total_known_positive": 239,
+            "total_known_benign": 0,
+            "unknown_windows": 1,
+            "excluded_known_positive": 0,
+            "excluded_known_benign": 0,
+            "recall": 0.99581589958159,
+            "fpr": null,
+            "precision": 1.0,
+            "f1": 0.9979035639412998,
+            "AP": null,
+            "ROC_AUC": null,
+            "all_known_recall_bounds": [
+              0.99581589958159,
+              0.99581589958159
+            ],
+            "all_known_fpr_bounds": null,
+            "score_basis": "kth-largest trailing-h decision statistic on stated eligible support",
+            "common_label_history": 5
+          },
+          "episodes": [
+            {
+              "episode_id": "final-a-014",
+              "family": "incomplete_header",
+              "impact_class": "See measured probe failures/latencies; no automatic denial assertion",
+              "onset_interval_utc": [
+                1794581135.149216,
+                1794581135.149216
+              ],
+              "end_exclusive_utc": 1794581375.0,
+              "observed_detection": true,
+              "episode_recall_eligible": true,
+              "binary_episode_hit": 1,
+              "delay_seconds": 3.8507840633392334,
+              "replay_latency_basis": "Window end + fixed1s reorder, not measured live end-to-end latency.",
+              "status": "detected",
+              "observed_alert_delay_seconds": 3.8507840633392334,
+              "preexisting_alarm_at_onset": false,
+              "restricted_delay_seconds": 3.8507840633392334,
+              "observation_complete_until_limit": true
+            }
+          ],
+          "episode_summary": {
+            "total_recorded_episodes": 1,
+            "scorable_exact_episodes": 1,
+            "hits": 1,
+            "misses": 0,
+            "unscored_or_censored_episodes": 0,
+            "episode_recall": 1.0,
+            "all_recorded_hit_bounds": [
+              1.0,
+              1.0
+            ],
+            "mean_penalty_coded_restricted_delay_seconds": 3.8507840633392334,
+            "exact_detected_delay_median_seconds": 3.8507840633392334,
+            "latency_scope": "Restricted delay includes fully observed misses at their fixed horizon; no detected-only speed superiority claim."
+          },
+          "alert_burden": {
+            "qualified_false_alert_starts": 0,
+            "eligible_benign_seconds": 0,
+            "false_alert_starts_per_hour": null,
+            "unattributed_qualified_starts": 1,
+            "unqualified_startup_or_gap_starts": 0,
+            "scope": "Event-start burden conditional on benign context, separate from alarm-window FPR."
+          },
+          "pre_measurement": {
+            "status": "frozen_trace_reproduced",
+            "alarm_active": false,
+            "qualified_starts_before_measurement": 0,
+            "unqualified_starts_before_measurement": 0
+          }
+        }
+      }
+    },
+    {
+      "unit_id": "final-b-019",
+      "kind": "benign",
+      "condition": "long_lived_or_congested",
+      "run_order": 13,
+      "factors": {
+        "repeat": 4,
+        "sources": null,
+        "connections": null,
+        "interval": null,
+        "warmup": 60,
+        "duration": 180
+      },
+      "qualification_exclusions": {
+        "planned_episodes": 0,
+        "no_corroborated_initial_payload": 0,
+        "no_silent_replacement": true
+      },
+      "observed_load_and_service": {
+        "status": "observed_private_evidence",
+        "service_by_endpoint": {
+          "warmup": {
+            "complete_GET_small": {
+              "scheduled_slots": 30,
+              "timely_successes": 2,
+              "failed_or_skipped": 28,
+              "skipped_slots": 0,
+              "failure_reason_counts": {
+                "error:TimeoutError": 28
+              },
+              "timely_latency_median_seconds": 1.0521788270000032,
+              "timely_latency_p95_seconds": 1.765794701300005
+            },
+            "complete_POST_CGI": {
+              "scheduled_slots": 30,
+              "timely_successes": 0,
+              "failed_or_skipped": 30,
+              "skipped_slots": 0,
+              "failure_reason_counts": {
+                "error:TimeoutError": 30
+              },
+              "timely_latency_median_seconds": null,
+              "timely_latency_p95_seconds": null
+            }
+          },
+          "measurement": {
+            "complete_GET_small": {
+              "scheduled_slots": 90,
+              "timely_successes": 0,
+              "failed_or_skipped": 90,
+              "skipped_slots": 0,
+              "failure_reason_counts": {
+                "error:TimeoutError": 90
+              },
+              "timely_latency_median_seconds": null,
+              "timely_latency_p95_seconds": null
+            },
+            "complete_POST_CGI": {
+              "scheduled_slots": 90,
+              "timely_successes": 0,
+              "failed_or_skipped": 90,
+              "skipped_slots": 0,
+              "failure_reason_counts": {
+                "error:TimeoutError": 90
+              },
+              "timely_latency_median_seconds": null,
+              "timely_latency_p95_seconds": null
+            }
+          }
+        }
+      },
+      "main": {
+        "hybrid": {
+          "window": {
+            "TP": 0,
+            "FN": 0,
+            "FP": 90,
+            "TN": 90,
+            "eligible_positive": 0,
+            "eligible_benign": 180,
+            "total_known_positive": 0,
+            "total_known_benign": 180,
+            "unknown_windows": 0,
+            "excluded_known_positive": 0,
+            "excluded_known_benign": 0,
+            "recall": null,
+            "fpr": 0.5,
+            "precision": 0.0,
+            "f1": 0.0,
+            "AP": null,
+            "ROC_AUC": null,
+            "all_known_recall_bounds": null,
+            "all_known_fpr_bounds": [
+              0.5,
+              0.5
+            ],
+            "score_basis": "kth-largest trailing-h decision statistic on stated eligible support",
+            "common_label_history": 5
+          },
+          "episodes": [],
+          "episode_summary": {
+            "total_recorded_episodes": 0,
+            "scorable_exact_episodes": 0,
+            "hits": 0,
+            "misses": 0,
+            "unscored_or_censored_episodes": 0,
+            "episode_recall": null,
+            "all_recorded_hit_bounds": null,
+            "mean_penalty_coded_restricted_delay_seconds": null,
+            "exact_detected_delay_median_seconds": null,
+            "latency_scope": "Restricted delay includes fully observed misses at their fixed horizon; no detected-only speed superiority claim."
+          },
+          "alert_burden": {
+            "qualified_false_alert_starts": 8,
+            "eligible_benign_seconds": 180,
+            "false_alert_starts_per_hour": 160.0,
+            "unattributed_qualified_starts": 0,
+            "unqualified_startup_or_gap_starts": 0,
+            "scope": "Event-start burden conditional on benign context, separate from alarm-window FPR."
+          },
+          "pre_measurement": {
+            "status": "frozen_trace_reproduced",
+            "alarm_active": true,
+            "qualified_starts_before_measurement": 0,
+            "unqualified_starts_before_measurement": 1
+          }
+        },
+        "AE": {
+          "window": {
+            "TP": 0,
+            "FN": 0,
+            "FP": 161,
+            "TN": 19,
+            "eligible_positive": 0,
+            "eligible_benign": 180,
+            "total_known_positive": 0,
+            "total_known_benign": 180,
+            "unknown_windows": 0,
+            "excluded_known_positive": 0,
+            "excluded_known_benign": 0,
+            "recall": null,
+            "fpr": 0.8944444444444445,
+            "precision": 0.0,
+            "f1": 0.0,
+            "AP": null,
+            "ROC_AUC": null,
+            "all_known_recall_bounds": null,
+            "all_known_fpr_bounds": [
+              0.8944444444444445,
+              0.8944444444444445
+            ],
+            "score_basis": "kth-largest trailing-h decision statistic on stated eligible support",
+            "common_label_history": 5
+          },
+          "episodes": [],
+          "episode_summary": {
+            "total_recorded_episodes": 0,
+            "scorable_exact_episodes": 0,
+            "hits": 0,
+            "misses": 0,
+            "unscored_or_censored_episodes": 0,
+            "episode_recall": null,
+            "all_recorded_hit_bounds": null,
+            "mean_penalty_coded_restricted_delay_seconds": null,
+            "exact_detected_delay_median_seconds": null,
+            "latency_scope": "Restricted delay includes fully observed misses at their fixed horizon; no detected-only speed superiority claim."
+          },
+          "alert_burden": {
+            "qualified_false_alert_starts": 1,
+            "eligible_benign_seconds": 180,
+            "false_alert_starts_per_hour": 20.0,
+            "unattributed_qualified_starts": 0,
+            "unqualified_startup_or_gap_starts": 0,
+            "scope": "Event-start burden conditional on benign context, separate from alarm-window FPR."
+          },
+          "pre_measurement": {
+            "status": "frozen_trace_reproduced",
+            "alarm_active": true,
+            "qualified_starts_before_measurement": 0,
+            "unqualified_starts_before_measurement": 1
+          }
+        }
+      }
+    },
+    {
+      "unit_id": "final-a-026",
+      "kind": "attack",
+      "condition": "slow_request_body",
+      "run_order": 14,
+      "factors": {
+        "repeat": 1,
+        "sources": 1,
+        "connections": 60,
+        "interval": 5,
+        "warmup": 60,
+        "duration": 240
+      },
+      "qualification_exclusions": {
+        "planned_episodes": 1,
+        "no_corroborated_initial_payload": 0,
+        "no_silent_replacement": true
+      },
+      "observed_load_and_service": {
+        "status": "observed_private_evidence",
+        "service_by_endpoint": {
+          "warmup": {
+            "complete_GET_small": {
+              "scheduled_slots": 30,
+              "timely_successes": 30,
+              "failed_or_skipped": 0,
+              "skipped_slots": 0,
+              "failure_reason_counts": {},
+              "timely_latency_median_seconds": 0.013270136999977922,
+              "timely_latency_p95_seconds": 0.016243817300022556
+            },
+            "complete_POST_CGI": {
+              "scheduled_slots": 30,
+              "timely_successes": 30,
+              "failed_or_skipped": 0,
+              "skipped_slots": 0,
+              "failure_reason_counts": {},
+              "timely_latency_median_seconds": 0.010459221999980173,
+              "timely_latency_p95_seconds": 0.01774756089997993
+            }
+          },
+          "measurement": {
+            "complete_GET_small": {
+              "scheduled_slots": 120,
+              "timely_successes": 120,
+              "failed_or_skipped": 0,
+              "skipped_slots": 0,
+              "failure_reason_counts": {},
+              "timely_latency_median_seconds": 0.010806126000005634,
+              "timely_latency_p95_seconds": 0.015557312100000331
+            },
+            "complete_POST_CGI": {
+              "scheduled_slots": 120,
+              "timely_successes": 19,
+              "failed_or_skipped": 101,
+              "skipped_slots": 0,
+              "failure_reason_counts": {
+                "HTTP_500": 2,
+                "HTTP_503": 20,
+                "error:TimeoutError": 57,
+                "error:IncompleteRead": 6,
+                "error:RemoteDisconnected": 16
+              },
+              "timely_latency_median_seconds": 0.00841361400000551,
+              "timely_latency_p95_seconds": 0.020056147100001438
+            }
+          }
+        },
+        "attack_inbound_observed": {
+          "per_source": {
+            "172.28.240.20": {
+              "inbound_frames": 7826,
+              "captured_Ethernet_bytes": 653755,
+              "TCP_payload_bytes": 128607
+            }
+          },
+          "measurement_seconds": 240,
+          "mean_captured_Ethernet_bits_per_second": 21791.833333333332,
+          "peak_one_second_captured_Ethernet_bits": 163000,
+          "scope": "Client-to-service observed capture bytes including retransmissions/TCP overhead; excludes preamble/FCS/IFG. Not nominal configured rate or proven link saturation/worker occupancy."
+        }
+      },
+      "main": {
+        "hybrid": {
+          "window": {
+            "TP": 238,
+            "FN": 1,
+            "FP": 0,
+            "TN": 0,
+            "eligible_positive": 239,
+            "eligible_benign": 0,
+            "total_known_positive": 239,
+            "total_known_benign": 0,
+            "unknown_windows": 1,
+            "excluded_known_positive": 0,
+            "excluded_known_benign": 0,
+            "recall": 0.99581589958159,
+            "fpr": null,
+            "precision": 1.0,
+            "f1": 0.9979035639412998,
+            "AP": null,
+            "ROC_AUC": null,
+            "all_known_recall_bounds": [
+              0.99581589958159,
+              0.99581589958159
+            ],
+            "all_known_fpr_bounds": null,
+            "score_basis": "kth-largest trailing-h decision statistic on stated eligible support",
+            "common_label_history": 5
+          },
+          "episodes": [
+            {
+              "episode_id": "final-a-026",
+              "family": "slow_request_body",
+              "impact_class": "See measured probe failures/latencies; no automatic denial assertion",
+              "onset_interval_utc": [
+                1794585983.065212,
+                1794585983.065212
+              ],
+              "end_exclusive_utc": 1794586223.0,
+              "observed_detection": true,
+              "episode_recall_eligible": true,
+              "binary_episode_hit": 1,
+              "delay_seconds": 3.9347879886627197,
+              "replay_latency_basis": "Window end + fixed1s reorder, not measured live end-to-end latency.",
+              "status": "detected",
+              "observed_alert_delay_seconds": 3.9347879886627197,
+              "preexisting_alarm_at_onset": false,
+              "restricted_delay_seconds": 3.9347879886627197,
+              "observation_complete_until_limit": true
+            }
+          ],
+          "episode_summary": {
+            "total_recorded_episodes": 1,
+            "scorable_exact_episodes": 1,
+            "hits": 1,
+            "misses": 0,
+            "unscored_or_censored_episodes": 0,
+            "episode_recall": 1.0,
+            "all_recorded_hit_bounds": [
+              1.0,
+              1.0
+            ],
+            "mean_penalty_coded_restricted_delay_seconds": 3.9347879886627197,
+            "exact_detected_delay_median_seconds": 3.9347879886627197,
+            "latency_scope": "Restricted delay includes fully observed misses at their fixed horizon; no detected-only speed superiority claim."
+          },
+          "alert_burden": {
+            "qualified_false_alert_starts": 0,
+            "eligible_benign_seconds": 0,
+            "false_alert_starts_per_hour": null,
+            "unattributed_qualified_starts": 1,
+            "unqualified_startup_or_gap_starts": 0,
+            "scope": "Event-start burden conditional on benign context, separate from alarm-window FPR."
+          },
+          "pre_measurement": {
+            "status": "frozen_trace_reproduced",
+            "alarm_active": false,
+            "qualified_starts_before_measurement": 0,
+            "unqualified_starts_before_measurement": 0
+          }
+        },
+        "AE": {
+          "window": {
+            "TP": 238,
+            "FN": 1,
+            "FP": 0,
+            "TN": 0,
+            "eligible_positive": 239,
+            "eligible_benign": 0,
+            "total_known_positive": 239,
+            "total_known_benign": 0,
+            "unknown_windows": 1,
+            "excluded_known_positive": 0,
+            "excluded_known_benign": 0,
+            "recall": 0.99581589958159,
+            "fpr": null,
+            "precision": 1.0,
+            "f1": 0.9979035639412998,
+            "AP": null,
+            "ROC_AUC": null,
+            "all_known_recall_bounds": [
+              0.99581589958159,
+              0.99581589958159
+            ],
+            "all_known_fpr_bounds": null,
+            "score_basis": "kth-largest trailing-h decision statistic on stated eligible support",
+            "common_label_history": 5
+          },
+          "episodes": [
+            {
+              "episode_id": "final-a-026",
+              "family": "slow_request_body",
+              "impact_class": "See measured probe failures/latencies; no automatic denial assertion",
+              "onset_interval_utc": [
+                1794585983.065212,
+                1794585983.065212
+              ],
+              "end_exclusive_utc": 1794586223.0,
+              "observed_detection": true,
+              "episode_recall_eligible": true,
+              "binary_episode_hit": 1,
+              "delay_seconds": 3.9347879886627197,
+              "replay_latency_basis": "Window end + fixed1s reorder, not measured live end-to-end latency.",
+              "status": "detected",
+              "observed_alert_delay_seconds": 3.9347879886627197,
+              "preexisting_alarm_at_onset": false,
+              "restricted_delay_seconds": 3.9347879886627197,
+              "observation_complete_until_limit": true
+            }
+          ],
+          "episode_summary": {
+            "total_recorded_episodes": 1,
+            "scorable_exact_episodes": 1,
+            "hits": 1,
+            "misses": 0,
+            "unscored_or_censored_episodes": 0,
+            "episode_recall": 1.0,
+            "all_recorded_hit_bounds": [
+              1.0,
+              1.0
+            ],
+            "mean_penalty_coded_restricted_delay_seconds": 3.9347879886627197,
+            "exact_detected_delay_median_seconds": 3.9347879886627197,
+            "latency_scope": "Restricted delay includes fully observed misses at their fixed horizon; no detected-only speed superiority claim."
+          },
+          "alert_burden": {
+            "qualified_false_alert_starts": 0,
+            "eligible_benign_seconds": 0,
+            "false_alert_starts_per_hour": null,
+            "unattributed_qualified_starts": 1,
+            "unqualified_startup_or_gap_starts": 0,
+            "scope": "Event-start burden conditional on benign context, separate from alarm-window FPR."
+          },
+          "pre_measurement": {
+            "status": "frozen_trace_reproduced",
+            "alarm_active": false,
+            "qualified_starts_before_measurement": 0,
+            "unqualified_starts_before_measurement": 0
+          }
+        }
+      }
+    },
+    {
+      "unit_id": "final-a-017",
+      "kind": "attack",
+      "condition": "incomplete_header",
+      "run_order": 15,
+      "factors": {
+        "repeat": 2,
+        "sources": 3,
+        "connections": 60,
+        "interval": 5,
+        "warmup": 60,
+        "duration": 240
+      },
+      "qualification_exclusions": {
+        "planned_episodes": 1,
+        "no_corroborated_initial_payload": 0,
+        "no_silent_replacement": true
+      },
+      "observed_load_and_service": {
+        "status": "observed_private_evidence",
+        "service_by_endpoint": {
+          "warmup": {
+            "complete_GET_small": {
+              "scheduled_slots": 30,
+              "timely_successes": 30,
+              "failed_or_skipped": 0,
+              "skipped_slots": 0,
+              "failure_reason_counts": {},
+              "timely_latency_median_seconds": 0.006878702499989231,
+              "timely_latency_p95_seconds": 0.015572818550032251
+            },
+            "complete_POST_CGI": {
+              "scheduled_slots": 30,
+              "timely_successes": 30,
+              "failed_or_skipped": 0,
+              "skipped_slots": 0,
+              "failure_reason_counts": {},
+              "timely_latency_median_seconds": 0.010170666500073366,
+              "timely_latency_p95_seconds": 0.01900164554999719
+            }
+          },
+          "measurement": {
+            "complete_GET_small": {
+              "scheduled_slots": 120,
+              "timely_successes": 119,
+              "failed_or_skipped": 1,
+              "skipped_slots": 0,
+              "failure_reason_counts": {
+                "error:TimeoutError": 1
+              },
+              "timely_latency_median_seconds": 0.008526545999984592,
+              "timely_latency_p95_seconds": 0.015821067899992155
+            },
+            "complete_POST_CGI": {
+              "scheduled_slots": 120,
+              "timely_successes": 119,
+              "failed_or_skipped": 1,
+              "skipped_slots": 0,
+              "failure_reason_counts": {
+                "error:TimeoutError": 1
+              },
+              "timely_latency_median_seconds": 0.009952318000046034,
+              "timely_latency_p95_seconds": 0.019974356699924554
+            }
+          }
+        },
+        "attack_inbound_observed": {
+          "per_source": {
+            "172.28.240.21": {
+              "inbound_frames": 5871,
+              "captured_Ethernet_bytes": 470644,
+              "TCP_payload_bytes": 77890
+            },
+            "172.28.240.22": {
+              "inbound_frames": 5865,
+              "captured_Ethernet_bytes": 470260,
+              "TCP_payload_bytes": 77890
+            },
+            "172.28.240.20": {
+              "inbound_frames": 5834,
+              "captured_Ethernet_bytes": 468214,
+              "TCP_payload_bytes": 77890
+            }
+          },
+          "measurement_seconds": 240,
+          "mean_captured_Ethernet_bits_per_second": 46970.6,
+          "peak_one_second_captured_Ethernet_bits": 393168,
+          "scope": "Client-to-service observed capture bytes including retransmissions/TCP overhead; excludes preamble/FCS/IFG. Not nominal configured rate or proven link saturation/worker occupancy."
+        }
+      },
+      "main": {
+        "hybrid": {
+          "window": {
+            "TP": 238,
+            "FN": 1,
+            "FP": 0,
+            "TN": 0,
+            "eligible_positive": 239,
+            "eligible_benign": 0,
+            "total_known_positive": 239,
+            "total_known_benign": 0,
+            "unknown_windows": 1,
+            "excluded_known_positive": 0,
+            "excluded_known_benign": 0,
+            "recall": 0.99581589958159,
+            "fpr": null,
+            "precision": 1.0,
+            "f1": 0.9979035639412998,
+            "AP": null,
+            "ROC_AUC": null,
+            "all_known_recall_bounds": [
+              0.99581589958159,
+              0.99581589958159
+            ],
+            "all_known_fpr_bounds": null,
+            "score_basis": "kth-largest trailing-h decision statistic on stated eligible support",
+            "common_label_history": 5
+          },
+          "episodes": [
+            {
+              "episode_id": "final-a-017",
+              "family": "incomplete_header",
+              "impact_class": "See measured probe failures/latencies; no automatic denial assertion",
+              "onset_interval_utc": [
+                1794586330.033386,
+                1794586330.033386
+              ],
+              "end_exclusive_utc": 1794586570.0,
+              "observed_detection": true,
+              "episode_recall_eligible": true,
+              "binary_episode_hit": 1,
+              "delay_seconds": 3.966614007949829,
+              "replay_latency_basis": "Window end + fixed1s reorder, not measured live end-to-end latency.",
+              "status": "detected",
+              "observed_alert_delay_seconds": 3.966614007949829,
+              "preexisting_alarm_at_onset": false,
+              "restricted_delay_seconds": 3.966614007949829,
+              "observation_complete_until_limit": true
+            }
+          ],
+          "episode_summary": {
+            "total_recorded_episodes": 1,
+            "scorable_exact_episodes": 1,
+            "hits": 1,
+            "misses": 0,
+            "unscored_or_censored_episodes": 0,
+            "episode_recall": 1.0,
+            "all_recorded_hit_bounds": [
+              1.0,
+              1.0
+            ],
+            "mean_penalty_coded_restricted_delay_seconds": 3.966614007949829,
+            "exact_detected_delay_median_seconds": 3.966614007949829,
+            "latency_scope": "Restricted delay includes fully observed misses at their fixed horizon; no detected-only speed superiority claim."
+          },
+          "alert_burden": {
+            "qualified_false_alert_starts": 0,
+            "eligible_benign_seconds": 0,
+            "false_alert_starts_per_hour": null,
+            "unattributed_qualified_starts": 1,
+            "unqualified_startup_or_gap_starts": 0,
+            "scope": "Event-start burden conditional on benign context, separate from alarm-window FPR."
+          },
+          "pre_measurement": {
+            "status": "frozen_trace_reproduced",
+            "alarm_active": false,
+            "qualified_starts_before_measurement": 0,
+            "unqualified_starts_before_measurement": 0
+          }
+        },
+        "AE": {
+          "window": {
+            "TP": 238,
+            "FN": 1,
+            "FP": 0,
+            "TN": 0,
+            "eligible_positive": 239,
+            "eligible_benign": 0,
+            "total_known_positive": 239,
+            "total_known_benign": 0,
+            "unknown_windows": 1,
+            "excluded_known_positive": 0,
+            "excluded_known_benign": 0,
+            "recall": 0.99581589958159,
+            "fpr": null,
+            "precision": 1.0,
+            "f1": 0.9979035639412998,
+            "AP": null,
+            "ROC_AUC": null,
+            "all_known_recall_bounds": [
+              0.99581589958159,
+              0.99581589958159
+            ],
+            "all_known_fpr_bounds": null,
+            "score_basis": "kth-largest trailing-h decision statistic on stated eligible support",
+            "common_label_history": 5
+          },
+          "episodes": [
+            {
+              "episode_id": "final-a-017",
+              "family": "incomplete_header",
+              "impact_class": "See measured probe failures/latencies; no automatic denial assertion",
+              "onset_interval_utc": [
+                1794586330.033386,
+                1794586330.033386
+              ],
+              "end_exclusive_utc": 1794586570.0,
+              "observed_detection": true,
+              "episode_recall_eligible": true,
+              "binary_episode_hit": 1,
+              "delay_seconds": 3.966614007949829,
+              "replay_latency_basis": "Window end + fixed1s reorder, not measured live end-to-end latency.",
+              "status": "detected",
+              "observed_alert_delay_seconds": 3.966614007949829,
+              "preexisting_alarm_at_onset": false,
+              "restricted_delay_seconds": 3.966614007949829,
+              "observation_complete_until_limit": true
+            }
+          ],
+          "episode_summary": {
+            "total_recorded_episodes": 1,
+            "scorable_exact_episodes": 1,
+            "hits": 1,
+            "misses": 0,
+            "unscored_or_censored_episodes": 0,
+            "episode_recall": 1.0,
+            "all_recorded_hit_bounds": [
+              1.0,
+              1.0
+            ],
+            "mean_penalty_coded_restricted_delay_seconds": 3.966614007949829,
+            "exact_detected_delay_median_seconds": 3.966614007949829,
+            "latency_scope": "Restricted delay includes fully observed misses at their fixed horizon; no detected-only speed superiority claim."
+          },
+          "alert_burden": {
+            "qualified_false_alert_starts": 0,
+            "eligible_benign_seconds": 0,
+            "false_alert_starts_per_hour": null,
+            "unattributed_qualified_starts": 1,
+            "unqualified_startup_or_gap_starts": 0,
+            "scope": "Event-start burden conditional on benign context, separate from alarm-window FPR."
+          },
+          "pre_measurement": {
+            "status": "frozen_trace_reproduced",
+            "alarm_active": false,
+            "qualified_starts_before_measurement": 0,
+            "unqualified_starts_before_measurement": 0
+          }
+        }
+      }
+    },
+    {
+      "unit_id": "final-a-023",
+      "kind": "attack",
+      "condition": "slow_request_body",
+      "run_order": 16,
+      "factors": {
+        "repeat": 3,
+        "sources": 1,
+        "connections": 10,
+        "interval": 20,
+        "warmup": 60,
+        "duration": 240
+      },
+      "qualification_exclusions": {
+        "planned_episodes": 1,
+        "no_corroborated_initial_payload": 0,
+        "no_silent_replacement": true
+      },
+      "observed_load_and_service": {
+        "status": "observed_private_evidence",
+        "service_by_endpoint": {
+          "warmup": {
+            "complete_GET_small": {
+              "scheduled_slots": 30,
+              "timely_successes": 30,
+              "failed_or_skipped": 0,
+              "skipped_slots": 0,
+              "failure_reason_counts": {},
+              "timely_latency_median_seconds": 0.013055291000114266,
+              "timely_latency_p95_seconds": 0.015909998100033816
+            },
+            "complete_POST_CGI": {
+              "scheduled_slots": 30,
+              "timely_successes": 30,
+              "failed_or_skipped": 0,
+              "skipped_slots": 0,
+              "failure_reason_counts": {},
+              "timely_latency_median_seconds": 0.014690339499907168,
+              "timely_latency_p95_seconds": 0.0187945017999823
+            }
+          },
+          "measurement": {
+            "complete_GET_small": {
+              "scheduled_slots": 120,
+              "timely_successes": 120,
+              "failed_or_skipped": 0,
+              "skipped_slots": 0,
+              "failure_reason_counts": {},
+              "timely_latency_median_seconds": 0.009405571000002055,
+              "timely_latency_p95_seconds": 0.015356815049972283
+            },
+            "complete_POST_CGI": {
+              "scheduled_slots": 120,
+              "timely_successes": 120,
+              "failed_or_skipped": 0,
+              "skipped_slots": 0,
+              "failure_reason_counts": {},
+              "timely_latency_median_seconds": 0.010935836499925244,
+              "timely_latency_p95_seconds": 0.019529663499929482
+            }
+          }
+        },
+        "attack_inbound_observed": {
+          "per_source": {
+            "172.28.240.20": {
+              "inbound_frames": 691,
+              "captured_Ethernet_bytes": 60552,
+              "TCP_payload_bytes": 13986
+            }
+          },
+          "measurement_seconds": 240,
+          "mean_captured_Ethernet_bits_per_second": 2018.4,
+          "peak_one_second_captured_Ethernet_bits": 25840,
+          "scope": "Client-to-service observed capture bytes including retransmissions/TCP overhead; excludes preamble/FCS/IFG. Not nominal configured rate or proven link saturation/worker occupancy."
+        }
+      },
+      "main": {
+        "hybrid": {
+          "window": {
+            "TP": 27,
+            "FN": 212,
+            "FP": 0,
+            "TN": 0,
+            "eligible_positive": 239,
+            "eligible_benign": 0,
+            "total_known_positive": 239,
+            "total_known_benign": 0,
+            "unknown_windows": 1,
+            "excluded_known_positive": 0,
+            "excluded_known_benign": 0,
+            "recall": 0.11297071129707113,
+            "fpr": null,
+            "precision": 1.0,
+            "f1": 0.20300751879699247,
+            "AP": null,
+            "ROC_AUC": null,
+            "all_known_recall_bounds": [
+              0.11297071129707113,
+              0.11297071129707113
+            ],
+            "all_known_fpr_bounds": null,
+            "score_basis": "kth-largest trailing-h decision statistic on stated eligible support",
+            "common_label_history": 5
+          },
+          "episodes": [
+            {
+              "episode_id": "final-a-023",
+              "family": "slow_request_body",
+              "impact_class": "See measured probe failures/latencies; no automatic denial assertion",
+              "onset_interval_utc": [
+                1794586676.025109,
+                1794586676.025109
+              ],
+              "end_exclusive_utc": 1794586916.0,
+              "observed_detection": true,
+              "episode_recall_eligible": true,
+              "binary_episode_hit": 1,
+              "delay_seconds": 15.974890947341919,
+              "replay_latency_basis": "Window end + fixed1s reorder, not measured live end-to-end latency.",
+              "status": "detected",
+              "observed_alert_delay_seconds": 15.974890947341919,
+              "preexisting_alarm_at_onset": false,
+              "restricted_delay_seconds": 15.974890947341919,
+              "observation_complete_until_limit": true
+            }
+          ],
+          "episode_summary": {
+            "total_recorded_episodes": 1,
+            "scorable_exact_episodes": 1,
+            "hits": 1,
+            "misses": 0,
+            "unscored_or_censored_episodes": 0,
+            "episode_recall": 1.0,
+            "all_recorded_hit_bounds": [
+              1.0,
+              1.0
+            ],
+            "mean_penalty_coded_restricted_delay_seconds": 15.974890947341919,
+            "exact_detected_delay_median_seconds": 15.974890947341919,
+            "latency_scope": "Restricted delay includes fully observed misses at their fixed horizon; no detected-only speed superiority claim."
+          },
+          "alert_burden": {
+            "qualified_false_alert_starts": 0,
+            "eligible_benign_seconds": 0,
+            "false_alert_starts_per_hour": null,
+            "unattributed_qualified_starts": 6,
+            "unqualified_startup_or_gap_starts": 0,
+            "scope": "Event-start burden conditional on benign context, separate from alarm-window FPR."
+          },
+          "pre_measurement": {
+            "status": "frozen_trace_reproduced",
+            "alarm_active": false,
+            "qualified_starts_before_measurement": 0,
+            "unqualified_starts_before_measurement": 0
+          }
+        },
+        "AE": {
+          "window": {
+            "TP": 236,
+            "FN": 3,
+            "FP": 0,
+            "TN": 0,
+            "eligible_positive": 239,
+            "eligible_benign": 0,
+            "total_known_positive": 239,
+            "total_known_benign": 0,
+            "unknown_windows": 1,
+            "excluded_known_positive": 0,
+            "excluded_known_benign": 0,
+            "recall": 0.9874476987447699,
+            "fpr": null,
+            "precision": 1.0,
+            "f1": 0.9936842105263158,
+            "AP": null,
+            "ROC_AUC": null,
+            "all_known_recall_bounds": [
+              0.9874476987447699,
+              0.9874476987447699
+            ],
+            "all_known_fpr_bounds": null,
+            "score_basis": "kth-largest trailing-h decision statistic on stated eligible support",
+            "common_label_history": 5
+          },
+          "episodes": [
+            {
+              "episode_id": "final-a-023",
+              "family": "slow_request_body",
+              "impact_class": "See measured probe failures/latencies; no automatic denial assertion",
+              "onset_interval_utc": [
+                1794586676.025109,
+                1794586676.025109
+              ],
+              "end_exclusive_utc": 1794586916.0,
+              "observed_detection": true,
+              "episode_recall_eligible": true,
+              "binary_episode_hit": 1,
+              "delay_seconds": 5.974890947341919,
+              "replay_latency_basis": "Window end + fixed1s reorder, not measured live end-to-end latency.",
+              "status": "detected",
+              "observed_alert_delay_seconds": 5.974890947341919,
+              "preexisting_alarm_at_onset": false,
+              "restricted_delay_seconds": 5.974890947341919,
+              "observation_complete_until_limit": true
+            }
+          ],
+          "episode_summary": {
+            "total_recorded_episodes": 1,
+            "scorable_exact_episodes": 1,
+            "hits": 1,
+            "misses": 0,
+            "unscored_or_censored_episodes": 0,
+            "episode_recall": 1.0,
+            "all_recorded_hit_bounds": [
+              1.0,
+              1.0
+            ],
+            "mean_penalty_coded_restricted_delay_seconds": 5.974890947341919,
+            "exact_detected_delay_median_seconds": 5.974890947341919,
+            "latency_scope": "Restricted delay includes fully observed misses at their fixed horizon; no detected-only speed superiority claim."
+          },
+          "alert_burden": {
+            "qualified_false_alert_starts": 0,
+            "eligible_benign_seconds": 0,
+            "false_alert_starts_per_hour": null,
+            "unattributed_qualified_starts": 1,
+            "unqualified_startup_or_gap_starts": 0,
+            "scope": "Event-start burden conditional on benign context, separate from alarm-window FPR."
+          },
+          "pre_measurement": {
+            "status": "frozen_trace_reproduced",
+            "alarm_active": false,
+            "qualified_starts_before_measurement": 0,
+            "unqualified_starts_before_measurement": 0
+          }
+        }
+      }
+    },
+    {
+      "unit_id": "final-a-027",
+      "kind": "attack",
+      "condition": "slow_request_body",
+      "run_order": 17,
+      "factors": {
+        "repeat": 2,
+        "sources": 1,
+        "connections": 60,
+        "interval": 5,
+        "warmup": 60,
+        "duration": 240
+      },
+      "qualification_exclusions": {
+        "planned_episodes": 1,
+        "no_corroborated_initial_payload": 0,
+        "no_silent_replacement": true
+      },
+      "observed_load_and_service": {
+        "status": "observed_private_evidence",
+        "service_by_endpoint": {
+          "warmup": {
+            "complete_GET_small": {
+              "scheduled_slots": 30,
+              "timely_successes": 30,
+              "failed_or_skipped": 0,
+              "skipped_slots": 0,
+              "failure_reason_counts": {},
+              "timely_latency_median_seconds": 0.009139099999998734,
+              "timely_latency_p95_seconds": 0.01487572500000116
+            },
+            "complete_POST_CGI": {
+              "scheduled_slots": 30,
+              "timely_successes": 30,
+              "failed_or_skipped": 0,
+              "skipped_slots": 0,
+              "failure_reason_counts": {},
+              "timely_latency_median_seconds": 0.010941083000000518,
+              "timely_latency_p95_seconds": 0.019621622950000802
+            }
+          },
+          "measurement": {
+            "complete_GET_small": {
+              "scheduled_slots": 120,
+              "timely_successes": 120,
+              "failed_or_skipped": 0,
+              "skipped_slots": 0,
+              "failure_reason_counts": {},
+              "timely_latency_median_seconds": 0.007624380999999403,
+              "timely_latency_p95_seconds": 0.01511798605002852
+            },
+            "complete_POST_CGI": {
+              "scheduled_slots": 120,
+              "timely_successes": 26,
+              "failed_or_skipped": 94,
+              "skipped_slots": 0,
+              "failure_reason_counts": {
+                "HTTP_500": 4,
+                "HTTP_503": 18,
+                "error:TimeoutError": 49,
+                "error:IncompleteRead": 3,
+                "error:RemoteDisconnected": 20
+              },
+              "timely_latency_median_seconds": 0.008249831999989965,
+              "timely_latency_p95_seconds": 0.01800695249997375
+            }
+          }
+        },
+        "attack_inbound_observed": {
+          "per_source": {
+            "172.28.240.20": {
+              "inbound_frames": 6688,
+              "captured_Ethernet_bytes": 555128,
+              "TCP_payload_bytes": 106584
+            }
+          },
+          "measurement_seconds": 240,
+          "mean_captured_Ethernet_bits_per_second": 18504.266666666666,
+          "peak_one_second_captured_Ethernet_bits": 163520,
+          "scope": "Client-to-service observed capture bytes including retransmissions/TCP overhead; excludes preamble/FCS/IFG. Not nominal configured rate or proven link saturation/worker occupancy."
+        }
+      },
+      "main": {
+        "hybrid": {
+          "window": {
+            "TP": 238,
+            "FN": 1,
+            "FP": 0,
+            "TN": 0,
+            "eligible_positive": 239,
+            "eligible_benign": 0,
+            "total_known_positive": 239,
+            "total_known_benign": 0,
+            "unknown_windows": 1,
+            "excluded_known_positive": 0,
+            "excluded_known_benign": 0,
+            "recall": 0.99581589958159,
+            "fpr": null,
+            "precision": 1.0,
+            "f1": 0.9979035639412998,
+            "AP": null,
+            "ROC_AUC": null,
+            "all_known_recall_bounds": [
+              0.99581589958159,
+              0.99581589958159
+            ],
+            "all_known_fpr_bounds": null,
+            "score_basis": "kth-largest trailing-h decision statistic on stated eligible support",
+            "common_label_history": 5
+          },
+          "episodes": [
+            {
+              "episode_id": "final-a-027",
+              "family": "slow_request_body",
+              "impact_class": "See measured probe failures/latencies; no automatic denial assertion",
+              "onset_interval_utc": [
+                1794590256.067088,
+                1794590256.067088
+              ],
+              "end_exclusive_utc": 1794590496.0,
+              "observed_detection": true,
+              "episode_recall_eligible": true,
+              "binary_episode_hit": 1,
+              "delay_seconds": 3.9329121112823486,
+              "replay_latency_basis": "Window end + fixed1s reorder, not measured live end-to-end latency.",
+              "status": "detected",
+              "observed_alert_delay_seconds": 3.9329121112823486,
+              "preexisting_alarm_at_onset": false,
+              "restricted_delay_seconds": 3.9329121112823486,
+              "observation_complete_until_limit": true
+            }
+          ],
+          "episode_summary": {
+            "total_recorded_episodes": 1,
+            "scorable_exact_episodes": 1,
+            "hits": 1,
+            "misses": 0,
+            "unscored_or_censored_episodes": 0,
+            "episode_recall": 1.0,
+            "all_recorded_hit_bounds": [
+              1.0,
+              1.0
+            ],
+            "mean_penalty_coded_restricted_delay_seconds": 3.9329121112823486,
+            "exact_detected_delay_median_seconds": 3.9329121112823486,
+            "latency_scope": "Restricted delay includes fully observed misses at their fixed horizon; no detected-only speed superiority claim."
+          },
+          "alert_burden": {
+            "qualified_false_alert_starts": 0,
+            "eligible_benign_seconds": 0,
+            "false_alert_starts_per_hour": null,
+            "unattributed_qualified_starts": 1,
+            "unqualified_startup_or_gap_starts": 0,
+            "scope": "Event-start burden conditional on benign context, separate from alarm-window FPR."
+          },
+          "pre_measurement": {
+            "status": "frozen_trace_reproduced",
+            "alarm_active": false,
+            "qualified_starts_before_measurement": 0,
+            "unqualified_starts_before_measurement": 0
+          }
+        },
+        "AE": {
+          "window": {
+            "TP": 238,
+            "FN": 1,
+            "FP": 0,
+            "TN": 0,
+            "eligible_positive": 239,
+            "eligible_benign": 0,
+            "total_known_positive": 239,
+            "total_known_benign": 0,
+            "unknown_windows": 1,
+            "excluded_known_positive": 0,
+            "excluded_known_benign": 0,
+            "recall": 0.99581589958159,
+            "fpr": null,
+            "precision": 1.0,
+            "f1": 0.9979035639412998,
+            "AP": null,
+            "ROC_AUC": null,
+            "all_known_recall_bounds": [
+              0.99581589958159,
+              0.99581589958159
+            ],
+            "all_known_fpr_bounds": null,
+            "score_basis": "kth-largest trailing-h decision statistic on stated eligible support",
+            "common_label_history": 5
+          },
+          "episodes": [
+            {
+              "episode_id": "final-a-027",
+              "family": "slow_request_body",
+              "impact_class": "See measured probe failures/latencies; no automatic denial assertion",
+              "onset_interval_utc": [
+                1794590256.067088,
+                1794590256.067088
+              ],
+              "end_exclusive_utc": 1794590496.0,
+              "observed_detection": true,
+              "episode_recall_eligible": true,
+              "binary_episode_hit": 1,
+              "delay_seconds": 3.9329121112823486,
+              "replay_latency_basis": "Window end + fixed1s reorder, not measured live end-to-end latency.",
+              "status": "detected",
+              "observed_alert_delay_seconds": 3.9329121112823486,
+              "preexisting_alarm_at_onset": false,
+              "restricted_delay_seconds": 3.9329121112823486,
+              "observation_complete_until_limit": true
+            }
+          ],
+          "episode_summary": {
+            "total_recorded_episodes": 1,
+            "scorable_exact_episodes": 1,
+            "hits": 1,
+            "misses": 0,
+            "unscored_or_censored_episodes": 0,
+            "episode_recall": 1.0,
+            "all_recorded_hit_bounds": [
+              1.0,
+              1.0
+            ],
+            "mean_penalty_coded_restricted_delay_seconds": 3.9329121112823486,
+            "exact_detected_delay_median_seconds": 3.9329121112823486,
+            "latency_scope": "Restricted delay includes fully observed misses at their fixed horizon; no detected-only speed superiority claim."
+          },
+          "alert_burden": {
+            "qualified_false_alert_starts": 0,
+            "eligible_benign_seconds": 0,
+            "false_alert_starts_per_hour": null,
+            "unattributed_qualified_starts": 1,
+            "unqualified_startup_or_gap_starts": 0,
+            "scope": "Event-start burden conditional on benign context, separate from alarm-window FPR."
+          },
+          "pre_measurement": {
+            "status": "frozen_trace_reproduced",
+            "alarm_active": false,
+            "qualified_starts_before_measurement": 0,
+            "unqualified_starts_before_measurement": 0
+          }
+        }
+      }
+    },
+    {
+      "unit_id": "final-a-005",
+      "kind": "attack",
+      "condition": "incomplete_header",
+      "run_order": 18,
+      "factors": {
+        "repeat": 5,
+        "sources": 1,
+        "connections": 10,
+        "interval": 20,
+        "warmup": 60,
+        "duration": 240
+      },
+      "qualification_exclusions": {
+        "planned_episodes": 1,
+        "no_corroborated_initial_payload": 0,
+        "no_silent_replacement": true
+      },
+      "observed_load_and_service": {
+        "status": "observed_private_evidence",
+        "service_by_endpoint": {
+          "warmup": {
+            "complete_GET_small": {
+              "scheduled_slots": 30,
+              "timely_successes": 30,
+              "failed_or_skipped": 0,
+              "skipped_slots": 0,
+              "failure_reason_counts": {},
+              "timely_latency_median_seconds": 0.011974876499976972,
+              "timely_latency_p95_seconds": 0.015878364500005657
+            },
+            "complete_POST_CGI": {
+              "scheduled_slots": 30,
+              "timely_successes": 30,
+              "failed_or_skipped": 0,
+              "skipped_slots": 0,
+              "failure_reason_counts": {},
+              "timely_latency_median_seconds": 0.010985236000010445,
+              "timely_latency_p95_seconds": 0.017727986299988174
+            }
+          },
+          "measurement": {
+            "complete_GET_small": {
+              "scheduled_slots": 120,
+              "timely_successes": 120,
+              "failed_or_skipped": 0,
+              "skipped_slots": 0,
+              "failure_reason_counts": {},
+              "timely_latency_median_seconds": 0.008425386500050536,
+              "timely_latency_p95_seconds": 0.015045928750004123
+            },
+            "complete_POST_CGI": {
+              "scheduled_slots": 120,
+              "timely_successes": 120,
+              "failed_or_skipped": 0,
+              "skipped_slots": 0,
+              "failure_reason_counts": {},
+              "timely_latency_median_seconds": 0.010023477999993702,
+              "timely_latency_p95_seconds": 0.019194167700030105
+            }
+          }
+        },
+        "attack_inbound_observed": {
+          "per_source": {
+            "172.28.240.20": {
+              "inbound_frames": 635,
+              "captured_Ethernet_bytes": 52050,
+              "TCP_payload_bytes": 9260
+            }
+          },
+          "measurement_seconds": 240,
+          "mean_captured_Ethernet_bits_per_second": 1735.0,
+          "peak_one_second_captured_Ethernet_bits": 22480,
+          "scope": "Client-to-service observed capture bytes including retransmissions/TCP overhead; excludes preamble/FCS/IFG. Not nominal configured rate or proven link saturation/worker occupancy."
+        }
+      },
+      "main": {
+        "hybrid": {
+          "window": {
+            "TP": 21,
+            "FN": 218,
+            "FP": 0,
+            "TN": 0,
+            "eligible_positive": 239,
+            "eligible_benign": 0,
+            "total_known_positive": 239,
+            "total_known_benign": 0,
+            "unknown_windows": 1,
+            "excluded_known_positive": 0,
+            "excluded_known_benign": 0,
+            "recall": 0.08786610878661087,
+            "fpr": null,
+            "precision": 1.0,
+            "f1": 0.16153846153846155,
+            "AP": null,
+            "ROC_AUC": null,
+            "all_known_recall_bounds": [
+              0.08786610878661087,
+              0.08786610878661087
+            ],
+            "all_known_fpr_bounds": null,
+            "score_basis": "kth-largest trailing-h decision statistic on stated eligible support",
+            "common_label_history": 5
+          },
+          "episodes": [
+            {
+              "episode_id": "final-a-005",
+              "family": "incomplete_header",
+              "impact_class": "See measured probe failures/latencies; no automatic denial assertion",
+              "onset_interval_utc": [
+                1794590602.231959,
+                1794590602.231959
+              ],
+              "end_exclusive_utc": 1794590842.0,
+              "observed_detection": true,
+              "episode_recall_eligible": true,
+              "binary_episode_hit": 1,
+              "delay_seconds": 47.768040895462036,
+              "replay_latency_basis": "Window end + fixed1s reorder, not measured live end-to-end latency.",
+              "status": "detected",
+              "observed_alert_delay_seconds": 47.768040895462036,
+              "preexisting_alarm_at_onset": false,
+              "restricted_delay_seconds": 47.768040895462036,
+              "observation_complete_until_limit": true
+            }
+          ],
+          "episode_summary": {
+            "total_recorded_episodes": 1,
+            "scorable_exact_episodes": 1,
+            "hits": 1,
+            "misses": 0,
+            "unscored_or_censored_episodes": 0,
+            "episode_recall": 1.0,
+            "all_recorded_hit_bounds": [
+              1.0,
+              1.0
+            ],
+            "mean_penalty_coded_restricted_delay_seconds": 47.768040895462036,
+            "exact_detected_delay_median_seconds": 47.768040895462036,
+            "latency_scope": "Restricted delay includes fully observed misses at their fixed horizon; no detected-only speed superiority claim."
+          },
+          "alert_burden": {
+            "qualified_false_alert_starts": 0,
+            "eligible_benign_seconds": 0,
+            "false_alert_starts_per_hour": null,
+            "unattributed_qualified_starts": 7,
+            "unqualified_startup_or_gap_starts": 0,
+            "scope": "Event-start burden conditional on benign context, separate from alarm-window FPR."
+          },
+          "pre_measurement": {
+            "status": "frozen_trace_reproduced",
+            "alarm_active": false,
+            "qualified_starts_before_measurement": 0,
+            "unqualified_starts_before_measurement": 0
+          }
+        },
+        "AE": {
+          "window": {
+            "TP": 237,
+            "FN": 2,
+            "FP": 0,
+            "TN": 0,
+            "eligible_positive": 239,
+            "eligible_benign": 0,
+            "total_known_positive": 239,
+            "total_known_benign": 0,
+            "unknown_windows": 1,
+            "excluded_known_positive": 0,
+            "excluded_known_benign": 0,
+            "recall": 0.9916317991631799,
+            "fpr": null,
+            "precision": 1.0,
+            "f1": 0.9957983193277311,
+            "AP": null,
+            "ROC_AUC": null,
+            "all_known_recall_bounds": [
+              0.9916317991631799,
+              0.9916317991631799
+            ],
+            "all_known_fpr_bounds": null,
+            "score_basis": "kth-largest trailing-h decision statistic on stated eligible support",
+            "common_label_history": 5
+          },
+          "episodes": [
+            {
+              "episode_id": "final-a-005",
+              "family": "incomplete_header",
+              "impact_class": "See measured probe failures/latencies; no automatic denial assertion",
+              "onset_interval_utc": [
+                1794590602.231959,
+                1794590602.231959
+              ],
+              "end_exclusive_utc": 1794590842.0,
+              "observed_detection": true,
+              "episode_recall_eligible": true,
+              "binary_episode_hit": 1,
+              "delay_seconds": 3.768040895462036,
+              "replay_latency_basis": "Window end + fixed1s reorder, not measured live end-to-end latency.",
+              "status": "detected",
+              "observed_alert_delay_seconds": 3.768040895462036,
+              "preexisting_alarm_at_onset": false,
+              "restricted_delay_seconds": 3.768040895462036,
+              "observation_complete_until_limit": true
+            }
+          ],
+          "episode_summary": {
+            "total_recorded_episodes": 1,
+            "scorable_exact_episodes": 1,
+            "hits": 1,
+            "misses": 0,
+            "unscored_or_censored_episodes": 0,
+            "episode_recall": 1.0,
+            "all_recorded_hit_bounds": [
+              1.0,
+              1.0
+            ],
+            "mean_penalty_coded_restricted_delay_seconds": 3.768040895462036,
+            "exact_detected_delay_median_seconds": 3.768040895462036,
+            "latency_scope": "Restricted delay includes fully observed misses at their fixed horizon; no detected-only speed superiority claim."
+          },
+          "alert_burden": {
+            "qualified_false_alert_starts": 0,
+            "eligible_benign_seconds": 0,
+            "false_alert_starts_per_hour": null,
+            "unattributed_qualified_starts": 1,
+            "unqualified_startup_or_gap_starts": 0,
+            "scope": "Event-start burden conditional on benign context, separate from alarm-window FPR."
+          },
+          "pre_measurement": {
+            "status": "frozen_trace_reproduced",
+            "alarm_active": false,
+            "qualified_starts_before_measurement": 0,
+            "unqualified_starts_before_measurement": 0
+          }
+        }
+      }
+    },
+    {
+      "unit_id": "final-a-019",
+      "kind": "attack",
+      "condition": "incomplete_header",
+      "run_order": 19,
+      "factors": {
+        "repeat": 4,
+        "sources": 3,
+        "connections": 60,
+        "interval": 5,
+        "warmup": 60,
+        "duration": 240
+      },
+      "qualification_exclusions": {
+        "planned_episodes": 1,
+        "no_corroborated_initial_payload": 0,
+        "no_silent_replacement": true
+      },
+      "observed_load_and_service": {
+        "status": "observed_private_evidence",
+        "service_by_endpoint": {
+          "warmup": {
+            "complete_GET_small": {
+              "scheduled_slots": 30,
+              "timely_successes": 30,
+              "failed_or_skipped": 0,
+              "skipped_slots": 0,
+              "failure_reason_counts": {},
+              "timely_latency_median_seconds": 0.011722713500034843,
+              "timely_latency_p95_seconds": 0.014814323649949302
+            },
+            "complete_POST_CGI": {
+              "scheduled_slots": 30,
+              "timely_successes": 30,
+              "failed_or_skipped": 0,
+              "skipped_slots": 0,
+              "failure_reason_counts": {},
+              "timely_latency_median_seconds": 0.011616924000009021,
+              "timely_latency_p95_seconds": 0.018694607099951098
+            }
+          },
+          "measurement": {
+            "complete_GET_small": {
+              "scheduled_slots": 120,
+              "timely_successes": 120,
+              "failed_or_skipped": 0,
+              "skipped_slots": 0,
+              "failure_reason_counts": {},
+              "timely_latency_median_seconds": 0.007509785500019461,
+              "timely_latency_p95_seconds": 0.015277359399971146
+            },
+            "complete_POST_CGI": {
+              "scheduled_slots": 120,
+              "timely_successes": 119,
+              "failed_or_skipped": 1,
+              "skipped_slots": 0,
+              "failure_reason_counts": {
+                "error:TimeoutError": 1
+              },
+              "timely_latency_median_seconds": 0.011446769000031054,
+              "timely_latency_p95_seconds": 0.020821250600033637
+            }
+          }
+        },
+        "attack_inbound_observed": {
+          "per_source": {
+            "172.28.240.20": {
+              "inbound_frames": 5897,
+              "captured_Ethernet_bytes": 472372,
+              "TCP_payload_bytes": 77890
+            },
+            "172.28.240.21": {
+              "inbound_frames": 5882,
+              "captured_Ethernet_bytes": 471382,
+              "TCP_payload_bytes": 77890
+            },
+            "172.28.240.22": {
+              "inbound_frames": 5922,
+              "captured_Ethernet_bytes": 474011,
+              "TCP_payload_bytes": 77879
+            }
+          },
+          "measurement_seconds": 240,
+          "mean_captured_Ethernet_bits_per_second": 47258.833333333336,
+          "peak_one_second_captured_Ethernet_bits": 402152,
+          "scope": "Client-to-service observed capture bytes including retransmissions/TCP overhead; excludes preamble/FCS/IFG. Not nominal configured rate or proven link saturation/worker occupancy."
+        }
+      },
+      "main": {
+        "hybrid": {
+          "window": {
+            "TP": 238,
+            "FN": 1,
+            "FP": 0,
+            "TN": 0,
+            "eligible_positive": 239,
+            "eligible_benign": 0,
+            "total_known_positive": 239,
+            "total_known_benign": 0,
+            "unknown_windows": 1,
+            "excluded_known_positive": 0,
+            "excluded_known_benign": 0,
+            "recall": 0.99581589958159,
+            "fpr": null,
+            "precision": 1.0,
+            "f1": 0.9979035639412998,
+            "AP": null,
+            "ROC_AUC": null,
+            "all_known_recall_bounds": [
+              0.99581589958159,
+              0.99581589958159
+            ],
+            "all_known_fpr_bounds": null,
+            "score_basis": "kth-largest trailing-h decision statistic on stated eligible support",
+            "common_label_history": 5
+          },
+          "episodes": [
+            {
+              "episode_id": "final-a-019",
+              "family": "incomplete_header",
+              "impact_class": "See measured probe failures/latencies; no automatic denial assertion",
+              "onset_interval_utc": [
+                1794590951.019693,
+                1794590951.019693
+              ],
+              "end_exclusive_utc": 1794591191.0,
+              "observed_detection": true,
+              "episode_recall_eligible": true,
+              "binary_episode_hit": 1,
+              "delay_seconds": 3.980307102203369,
+              "replay_latency_basis": "Window end + fixed1s reorder, not measured live end-to-end latency.",
+              "status": "detected",
+              "observed_alert_delay_seconds": 3.980307102203369,
+              "preexisting_alarm_at_onset": false,
+              "restricted_delay_seconds": 3.980307102203369,
+              "observation_complete_until_limit": true
+            }
+          ],
+          "episode_summary": {
+            "total_recorded_episodes": 1,
+            "scorable_exact_episodes": 1,
+            "hits": 1,
+            "misses": 0,
+            "unscored_or_censored_episodes": 0,
+            "episode_recall": 1.0,
+            "all_recorded_hit_bounds": [
+              1.0,
+              1.0
+            ],
+            "mean_penalty_coded_restricted_delay_seconds": 3.980307102203369,
+            "exact_detected_delay_median_seconds": 3.980307102203369,
+            "latency_scope": "Restricted delay includes fully observed misses at their fixed horizon; no detected-only speed superiority claim."
+          },
+          "alert_burden": {
+            "qualified_false_alert_starts": 0,
+            "eligible_benign_seconds": 0,
+            "false_alert_starts_per_hour": null,
+            "unattributed_qualified_starts": 1,
+            "unqualified_startup_or_gap_starts": 0,
+            "scope": "Event-start burden conditional on benign context, separate from alarm-window FPR."
+          },
+          "pre_measurement": {
+            "status": "frozen_trace_reproduced",
+            "alarm_active": false,
+            "qualified_starts_before_measurement": 0,
+            "unqualified_starts_before_measurement": 0
+          }
+        },
+        "AE": {
+          "window": {
+            "TP": 238,
+            "FN": 1,
+            "FP": 0,
+            "TN": 0,
+            "eligible_positive": 239,
+            "eligible_benign": 0,
+            "total_known_positive": 239,
+            "total_known_benign": 0,
+            "unknown_windows": 1,
+            "excluded_known_positive": 0,
+            "excluded_known_benign": 0,
+            "recall": 0.99581589958159,
+            "fpr": null,
+            "precision": 1.0,
+            "f1": 0.9979035639412998,
+            "AP": null,
+            "ROC_AUC": null,
+            "all_known_recall_bounds": [
+              0.99581589958159,
+              0.99581589958159
+            ],
+            "all_known_fpr_bounds": null,
+            "score_basis": "kth-largest trailing-h decision statistic on stated eligible support",
+            "common_label_history": 5
+          },
+          "episodes": [
+            {
+              "episode_id": "final-a-019",
+              "family": "incomplete_header",
+              "impact_class": "See measured probe failures/latencies; no automatic denial assertion",
+              "onset_interval_utc": [
+                1794590951.019693,
+                1794590951.019693
+              ],
+              "end_exclusive_utc": 1794591191.0,
+              "observed_detection": true,
+              "episode_recall_eligible": true,
+              "binary_episode_hit": 1,
+              "delay_seconds": 3.980307102203369,
+              "replay_latency_basis": "Window end + fixed1s reorder, not measured live end-to-end latency.",
+              "status": "detected",
+              "observed_alert_delay_seconds": 3.980307102203369,
+              "preexisting_alarm_at_onset": false,
+              "restricted_delay_seconds": 3.980307102203369,
+              "observation_complete_until_limit": true
+            }
+          ],
+          "episode_summary": {
+            "total_recorded_episodes": 1,
+            "scorable_exact_episodes": 1,
+            "hits": 1,
+            "misses": 0,
+            "unscored_or_censored_episodes": 0,
+            "episode_recall": 1.0,
+            "all_recorded_hit_bounds": [
+              1.0,
+              1.0
+            ],
+            "mean_penalty_coded_restricted_delay_seconds": 3.980307102203369,
+            "exact_detected_delay_median_seconds": 3.980307102203369,
+            "latency_scope": "Restricted delay includes fully observed misses at their fixed horizon; no detected-only speed superiority claim."
+          },
+          "alert_burden": {
+            "qualified_false_alert_starts": 0,
+            "eligible_benign_seconds": 0,
+            "false_alert_starts_per_hour": null,
+            "unattributed_qualified_starts": 1,
+            "unqualified_startup_or_gap_starts": 0,
+            "scope": "Event-start burden conditional on benign context, separate from alarm-window FPR."
+          },
+          "pre_measurement": {
+            "status": "frozen_trace_reproduced",
+            "alarm_active": false,
+            "qualified_starts_before_measurement": 0,
+            "unqualified_starts_before_measurement": 0
+          }
+        }
+      }
+    },
+    {
+      "unit_id": "final-a-011",
+      "kind": "attack",
+      "condition": "incomplete_header",
+      "run_order": 20,
+      "factors": {
+        "repeat": 1,
+        "sources": 3,
+        "connections": 10,
+        "interval": 20,
+        "warmup": 60,
+        "duration": 240
+      },
+      "qualification_exclusions": {
+        "planned_episodes": 1,
+        "no_corroborated_initial_payload": 0,
+        "no_silent_replacement": true
+      },
+      "observed_load_and_service": {
+        "status": "observed_private_evidence",
+        "service_by_endpoint": {
+          "warmup": {
+            "complete_GET_small": {
+              "scheduled_slots": 30,
+              "timely_successes": 30,
+              "failed_or_skipped": 0,
+              "skipped_slots": 0,
+              "failure_reason_counts": {},
+              "timely_latency_median_seconds": 0.010881812000093305,
+              "timely_latency_p95_seconds": 0.015092077500014511
+            },
+            "complete_POST_CGI": {
+              "scheduled_slots": 30,
+              "timely_successes": 30,
+              "failed_or_skipped": 0,
+              "skipped_slots": 0,
+              "failure_reason_counts": {},
+              "timely_latency_median_seconds": 0.01203342500002691,
+              "timely_latency_p95_seconds": 0.01900995425004339
+            }
+          },
+          "measurement": {
+            "complete_GET_small": {
+              "scheduled_slots": 120,
+              "timely_successes": 120,
+              "failed_or_skipped": 0,
+              "skipped_slots": 0,
+              "failure_reason_counts": {},
+              "timely_latency_median_seconds": 0.009471882000070764,
+              "timely_latency_p95_seconds": 0.015617598699930114
+            },
+            "complete_POST_CGI": {
+              "scheduled_slots": 120,
+              "timely_successes": 120,
+              "failed_or_skipped": 0,
+              "skipped_slots": 0,
+              "failure_reason_counts": {},
+              "timely_latency_median_seconds": 0.00963624150006126,
+              "timely_latency_p95_seconds": 0.018631567300064943
+            }
+          }
+        },
+        "attack_inbound_observed": {
+          "per_source": {
+            "172.28.240.20": {
+              "inbound_frames": 633,
+              "captured_Ethernet_bytes": 51918,
+              "TCP_payload_bytes": 9260
+            },
+            "172.28.240.21": {
+              "inbound_frames": 640,
+              "captured_Ethernet_bytes": 52380,
+              "TCP_payload_bytes": 9260
+            },
+            "172.28.240.22": {
+              "inbound_frames": 636,
+              "captured_Ethernet_bytes": 52116,
+              "TCP_payload_bytes": 9260
+            }
+          },
+          "measurement_seconds": 240,
+          "mean_captured_Ethernet_bits_per_second": 5213.8,
+          "peak_one_second_captured_Ethernet_bits": 67440,
+          "scope": "Client-to-service observed capture bytes including retransmissions/TCP overhead; excludes preamble/FCS/IFG. Not nominal configured rate or proven link saturation/worker occupancy."
+        }
+      },
+      "main": {
+        "hybrid": {
+          "window": {
+            "TP": 238,
+            "FN": 1,
+            "FP": 0,
+            "TN": 0,
+            "eligible_positive": 239,
+            "eligible_benign": 0,
+            "total_known_positive": 239,
+            "total_known_benign": 0,
+            "unknown_windows": 1,
+            "excluded_known_positive": 0,
+            "excluded_known_benign": 0,
+            "recall": 0.99581589958159,
+            "fpr": null,
+            "precision": 1.0,
+            "f1": 0.9979035639412998,
+            "AP": null,
+            "ROC_AUC": null,
+            "all_known_recall_bounds": [
+              0.99581589958159,
+              0.99581589958159
+            ],
+            "all_known_fpr_bounds": null,
+            "score_basis": "kth-largest trailing-h decision statistic on stated eligible support",
+            "common_label_history": 5
+          },
+          "episodes": [
+            {
+              "episode_id": "final-a-011",
+              "family": "incomplete_header",
+              "impact_class": "See measured probe failures/latencies; no automatic denial assertion",
+              "onset_interval_utc": [
+                1794591298.053685,
+                1794591298.053685
+              ],
+              "end_exclusive_utc": 1794591538.0,
+              "observed_detection": true,
+              "episode_recall_eligible": true,
+              "binary_episode_hit": 1,
+              "delay_seconds": 3.946315050125122,
+              "replay_latency_basis": "Window end + fixed1s reorder, not measured live end-to-end latency.",
+              "status": "detected",
+              "observed_alert_delay_seconds": 3.946315050125122,
+              "preexisting_alarm_at_onset": false,
+              "restricted_delay_seconds": 3.946315050125122,
+              "observation_complete_until_limit": true
+            }
+          ],
+          "episode_summary": {
+            "total_recorded_episodes": 1,
+            "scorable_exact_episodes": 1,
+            "hits": 1,
+            "misses": 0,
+            "unscored_or_censored_episodes": 0,
+            "episode_recall": 1.0,
+            "all_recorded_hit_bounds": [
+              1.0,
+              1.0
+            ],
+            "mean_penalty_coded_restricted_delay_seconds": 3.946315050125122,
+            "exact_detected_delay_median_seconds": 3.946315050125122,
+            "latency_scope": "Restricted delay includes fully observed misses at their fixed horizon; no detected-only speed superiority claim."
+          },
+          "alert_burden": {
+            "qualified_false_alert_starts": 0,
+            "eligible_benign_seconds": 0,
+            "false_alert_starts_per_hour": null,
+            "unattributed_qualified_starts": 1,
+            "unqualified_startup_or_gap_starts": 0,
+            "scope": "Event-start burden conditional on benign context, separate from alarm-window FPR."
+          },
+          "pre_measurement": {
+            "status": "frozen_trace_reproduced",
+            "alarm_active": false,
+            "qualified_starts_before_measurement": 0,
+            "unqualified_starts_before_measurement": 0
+          }
+        },
+        "AE": {
+          "window": {
+            "TP": 238,
+            "FN": 1,
+            "FP": 0,
+            "TN": 0,
+            "eligible_positive": 239,
+            "eligible_benign": 0,
+            "total_known_positive": 239,
+            "total_known_benign": 0,
+            "unknown_windows": 1,
+            "excluded_known_positive": 0,
+            "excluded_known_benign": 0,
+            "recall": 0.99581589958159,
+            "fpr": null,
+            "precision": 1.0,
+            "f1": 0.9979035639412998,
+            "AP": null,
+            "ROC_AUC": null,
+            "all_known_recall_bounds": [
+              0.99581589958159,
+              0.99581589958159
+            ],
+            "all_known_fpr_bounds": null,
+            "score_basis": "kth-largest trailing-h decision statistic on stated eligible support",
+            "common_label_history": 5
+          },
+          "episodes": [
+            {
+              "episode_id": "final-a-011",
+              "family": "incomplete_header",
+              "impact_class": "See measured probe failures/latencies; no automatic denial assertion",
+              "onset_interval_utc": [
+                1794591298.053685,
+                1794591298.053685
+              ],
+              "end_exclusive_utc": 1794591538.0,
+              "observed_detection": true,
+              "episode_recall_eligible": true,
+              "binary_episode_hit": 1,
+              "delay_seconds": 3.946315050125122,
+              "replay_latency_basis": "Window end + fixed1s reorder, not measured live end-to-end latency.",
+              "status": "detected",
+              "observed_alert_delay_seconds": 3.946315050125122,
+              "preexisting_alarm_at_onset": false,
+              "restricted_delay_seconds": 3.946315050125122,
+              "observation_complete_until_limit": true
+            }
+          ],
+          "episode_summary": {
+            "total_recorded_episodes": 1,
+            "scorable_exact_episodes": 1,
+            "hits": 1,
+            "misses": 0,
+            "unscored_or_censored_episodes": 0,
+            "episode_recall": 1.0,
+            "all_recorded_hit_bounds": [
+              1.0,
+              1.0
+            ],
+            "mean_penalty_coded_restricted_delay_seconds": 3.946315050125122,
+            "exact_detected_delay_median_seconds": 3.946315050125122,
+            "latency_scope": "Restricted delay includes fully observed misses at their fixed horizon; no detected-only speed superiority claim."
+          },
+          "alert_burden": {
+            "qualified_false_alert_starts": 0,
+            "eligible_benign_seconds": 0,
+            "false_alert_starts_per_hour": null,
+            "unattributed_qualified_starts": 1,
+            "unqualified_startup_or_gap_starts": 0,
+            "scope": "Event-start burden conditional on benign context, separate from alarm-window FPR."
+          },
+          "pre_measurement": {
+            "status": "frozen_trace_reproduced",
+            "alarm_active": false,
+            "qualified_starts_before_measurement": 0,
+            "unqualified_starts_before_measurement": 0
+          }
+        }
+      }
+    }
+  ],
+  "primary_pooled_counts": {
+    "hybrid": {
+      "TP": 2276,
+      "FN": 831,
+      "FP": 658,
+      "TN": 782,
+      "observed_pooled_fpr": 0.45694444444444443,
+      "observed_pooled_recall": 0.7325394271000966
+    },
+    "AE": {
+      "TP": 3091,
+      "FN": 16,
+      "FP": 627,
+      "TN": 813,
+      "observed_pooled_fpr": 0.4354166666666667,
+      "observed_pooled_recall": 0.9948503379465723
+    }
+  },
+  "uncertainty": {
+    "primary_fixed_seed7": {
+      "recall": {
+        "status": "insufficient_independent_parents",
+        "difference": null,
+        "CI95": null,
+        "parent_count": 21
+      },
+      "fpr": {
+        "status": "insufficient_independent_parents",
+        "difference": null,
+        "CI95": null,
+        "parent_count": 21
+      }
+    },
+    "secondary_seed_averaged": {
+      "recall": {
+        "status": "insufficient_independent_parents",
+        "difference": null,
+        "CI95": null,
+        "parent_count": 21
+      },
+      "fpr": {
+        "status": "insufficient_independent_parents",
+        "difference": null,
+        "CI95": null,
+        "parent_count": 21
+      }
+    }
+  },
+  "public_slow_K_external_payloads_opened": false,
+  "headline_generalization_readiness": false,
+  "scope": "Partial same-host frozen evidence. Pooled windows are descriptive only; no model/variant promotion, retuning, population or zero-day/superiority claim.",
+  "limitations": [
+    "Source/service/path/load shift and sparse development V remain.",
+    "Report preexisting alarm state and alarm-window occupancy alongside starts. Zero new starts does not imply alarm-free operation.",
+    "Controlled campaign exposure is not packet maliciousness, proven worker occupancy or demonstrated denial. Service probes are separate impact evidence.",
+    "Include no-payload/failed/unscorable planned episodes from qualification ledgers when reporting all planned trials.",
+    "Unique reserved seed IDs and repeated same-host sessions are not independent environments. Unsupported paired-parent strata produce N/A."
+  ],
+  "attack_trial_accounting": {
+    "completed_planned_trials": 13,
+    "trials_with_observed_payload_onset": 13,
+    "no_corroborated_payload_trials": 0,
+    "primary_exact_scorable_episodes": 13,
+    "primary_censored_or_unscored_episodes": 0,
+    "scope": "Payload onset proves a controlled campaign, not successful denial. Include ineffective trials; no-payload trials remain unscorable, not benign/hit/miss."
+  },
+  "benign_counts_by_condition": {
+    "bursts": {
+      "hybrid": {
+        "completed_trials": 2,
+        "FP": 300,
+        "TN": 60,
+        "observed_fpr": 0.8333333333333334
+      },
+      "AE": {
+        "completed_trials": 2,
+        "FP": 304,
+        "TN": 56,
+        "observed_fpr": 0.8444444444444444
+      }
+    },
+    "flash": {
+      "hybrid": {
+        "completed_trials": 1,
+        "FP": 180,
+        "TN": 0,
+        "observed_fpr": 1.0
+      },
+      "AE": {
+        "completed_trials": 1,
+        "FP": 0,
+        "TN": 180,
+        "observed_fpr": 0.0
+      }
+    },
+    "long_lived_or_congested": {
+      "hybrid": {
+        "completed_trials": 2,
+        "FP": 178,
+        "TN": 182,
+        "observed_fpr": 0.49444444444444446
+      },
+      "AE": {
+        "completed_trials": 2,
+        "FP": 323,
+        "TN": 37,
+        "observed_fpr": 0.8972222222222223
+      }
+    },
+    "ordinary": {
+      "hybrid": {
+        "completed_trials": 3,
+        "FP": 0,
+        "TN": 540,
+        "observed_fpr": 0.0
+      },
+      "AE": {
+        "completed_trials": 3,
+        "FP": 0,
+        "TN": 540,
+        "observed_fpr": 0.0
+      }
+    }
+  },
+  "partial_mix_warning": "Pooled rates change with the observed condition mix; a lower pooled rate after extra ordinary sessions is not model improvement. No settings changed.",
+  "attack_factor_coverage": [
+    {
+      "family": "incomplete_header",
+      "sources": 1,
+      "connections_per_source": 10,
+      "interval_seconds": 20,
+      "planned_trials": 5,
+      "scored_trial_ids": [
+        "final-a-002",
+        "final-a-005"
+      ],
+      "remaining_unscored_ids": [
+        "final-a-003",
+        "final-a-004",
+        "final-a-001"
+      ],
+      "observed_payload_onset_trials": 2,
+      "exact_primary_scorable_episodes": 2
+    },
+    {
+      "family": "incomplete_header",
+      "sources": 1,
+      "connections_per_source": 60,
+      "interval_seconds": 5,
+      "planned_trials": 5,
+      "scored_trial_ids": [],
+      "remaining_unscored_ids": [
+        "final-a-006",
+        "final-a-007",
+        "final-a-009",
+        "final-a-010",
+        "final-a-008"
+      ],
+      "observed_payload_onset_trials": 0,
+      "exact_primary_scorable_episodes": 0
+    },
+    {
+      "family": "incomplete_header",
+      "sources": 3,
+      "connections_per_source": 10,
+      "interval_seconds": 20,
+      "planned_trials": 5,
+      "scored_trial_ids": [
+        "final-a-012",
+        "final-a-014",
+        "final-a-011"
+      ],
+      "remaining_unscored_ids": [
+        "final-a-015",
+        "final-a-013"
+      ],
+      "observed_payload_onset_trials": 3,
+      "exact_primary_scorable_episodes": 3
+    },
+    {
+      "family": "incomplete_header",
+      "sources": 3,
+      "connections_per_source": 60,
+      "interval_seconds": 5,
+      "planned_trials": 5,
+      "scored_trial_ids": [
+        "final-a-017",
+        "final-a-019"
+      ],
+      "remaining_unscored_ids": [
+        "final-a-018",
+        "final-a-020",
+        "final-a-016"
+      ],
+      "observed_payload_onset_trials": 2,
+      "exact_primary_scorable_episodes": 2
+    },
+    {
+      "family": "slow_request_body",
+      "sources": 1,
+      "connections_per_source": 10,
+      "interval_seconds": 20,
+      "planned_trials": 5,
+      "scored_trial_ids": [
+        "final-a-022",
+        "final-a-023"
+      ],
+      "remaining_unscored_ids": [
+        "final-a-024",
+        "final-a-021",
+        "final-a-025"
+      ],
+      "observed_payload_onset_trials": 2,
+      "exact_primary_scorable_episodes": 2
+    },
+    {
+      "family": "slow_request_body",
+      "sources": 1,
+      "connections_per_source": 60,
+      "interval_seconds": 5,
+      "planned_trials": 5,
+      "scored_trial_ids": [
+        "final-a-026",
+        "final-a-027"
+      ],
+      "remaining_unscored_ids": [
+        "final-a-030",
+        "final-a-029",
+        "final-a-028"
+      ],
+      "observed_payload_onset_trials": 2,
+      "exact_primary_scorable_episodes": 2
+    },
+    {
+      "family": "slow_request_body",
+      "sources": 3,
+      "connections_per_source": 10,
+      "interval_seconds": 20,
+      "planned_trials": 5,
+      "scored_trial_ids": [],
+      "remaining_unscored_ids": [
+        "final-a-031",
+        "final-a-035",
+        "final-a-032",
+        "final-a-033",
+        "final-a-034"
+      ],
+      "observed_payload_onset_trials": 0,
+      "exact_primary_scorable_episodes": 0
+    },
+    {
+      "family": "slow_request_body",
+      "sources": 3,
+      "connections_per_source": 60,
+      "interval_seconds": 5,
+      "planned_trials": 5,
+      "scored_trial_ids": [
+        "final-a-038",
+        "final-a-040"
+      ],
+      "remaining_unscored_ids": [
+        "final-a-039",
+        "final-a-037",
+        "final-a-036"
+      ],
+      "observed_payload_onset_trials": 2,
+      "exact_primary_scorable_episodes": 2
+    }
+  ],
+  "benign_condition_coverage": {
+    "bursts": {
+      "planned_trials": 5,
+      "scored_trial_ids": [
+        "final-b-010",
+        "final-b-007"
+      ]
+    },
+    "flash": {
+      "planned_trials": 5,
+      "scored_trial_ids": [
+        "final-b-014"
+      ]
+    },
+    "long_lived_or_congested": {
+      "planned_trials": 5,
+      "scored_trial_ids": [
+        "final-b-017",
+        "final-b-019"
+      ]
+    },
+    "ordinary": {
+      "planned_trials": 5,
+      "scored_trial_ids": [
+        "final-b-001",
+        "final-b-005",
+        "final-b-003"
+      ]
+    }
+  },
+  "attack_mix_warning": "Pooled recall changes with the observed family/source/intensity mix; a higher rate after different trials is not model learning or improvement. Campaign exposure is not successful denial.",
+  "probe_failure_interpretation": "Existing acquisition policy: complete HTTP200 with integrity, before a 2s deadline; 1s socket operations may time out earlier. Failed/skipped includes HTTP errors, disconnects, incomplete reads, timeouts and scheduler skips, not only elapsed-deadline overruns. Counts/criteria are unchanged; reason breakdown is descriptive.",
+  "case_summary_CSV": {
+    "path": "results/final/final_lab_case_summary_v6.csv",
+    "sha256": "17bb9629f9049b2e1c9778d6fe9440428af798599a8872a62309812e5b4517ca",
+    "rows": 2457
+  }
+}

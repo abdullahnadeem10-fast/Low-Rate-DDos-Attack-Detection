@@ -64,10 +64,12 @@ Start with a small, real packet-capture test. A checked box means there is evide
 
 - [x] Complete fixed shaped-long/body-high/header-high/body-low batch on all 117 cases, retaining high benign FPR and weak hybrid recall; clarify recorded probe failures without changing criteria. [Checkpoint v5](../results/final/final_lab_checkpoint_v5.json), [1,989-row/probe/capture audit](../results/final/final_lab_checkpoint_v5_audit.json), [probe definitions](PROBE_OUTCOME_DEFINITIONS.md). Full matrix remains incomplete.
 
+- [x] Complete fixed body-high/header-low/header-high/three-source header-low batch on all 117 cases, retaining repeated weak hybrid detection and healthy-service campaigns. [Checkpoint v6](../results/final/final_lab_checkpoint_v6.json), [2,457-row/full-cell/raw/probe audit](../results/final/final_lab_checkpoint_v6_audit.json), [read-only reconciliation utility](../src/audit_final_lab_checkpoint_v1.py). This does not complete the matrix.
+
 ## 3. Final tests and reporting
 
 - [ ] Score the known-attack and withheld slow-family sessions; report per-family recall, missed episodes, false alarms and delay with an explicit measurement basis.
-- [ ] Complete final benign stress sessions (at least five per condition) and isolated distributed sessions (40 planned attack episodes). Current 8/20 benign and 9/40 attack trials; 43 catalog units remain. Preserve service impact, capture quality, misses and failed/unsupported units. Benign isolation preflights pass.
+- [ ] Complete final benign stress sessions (at least five per condition) and isolated distributed sessions (40 planned attack episodes). Current 8/20 benign and 13/40 attack trials; 39 catalog units remain. Preserve service impact, capture quality, misses and failed/unsupported units. Benign isolation preflights pass.
 - [ ] Run matched ablations and paired session-level comparisons. Keep repeats/seeds distinct from independent traffic sessions.
 - [ ] Run frozen CSE-CIC-IDS2018 transfer on compatible packet data or record the precise limitation.
 - [ ] Produce paper-ready tables, figures, reproducibility notes and the results section.

@@ -1,0 +1,51 @@
+{
+  "checkpoint_sha256": "c045fdaad35d3ffa7ec4f81842e5f2a8f7e8d6dced68a04d2c02386f3ac829dd",
+  "source_sha256": "fae463f33bfee30fa0cc1698fa45b6370648cdd97dbdf444b2aa715530f2e182",
+  "CSV_sha256": "17bb9629f9049b2e1c9778d6fe9440428af798599a8872a62309812e5b4517ca",
+  "audit_source_sha256": "9ae80f9001f6fac61171a462755dcfc67c813989d19fc188633102ff2ad2d875",
+  "rows": 2457,
+  "canonical_sessions": 21,
+  "cases_per_session": 117,
+  "all_result_hashes_match": true,
+  "all_CSV_cells_match_scored_results": true,
+  "all_CSV_confusion_and_condition_counts_match": true,
+  "all_private_qualification_input_evidence_hashes_match": true,
+  "probe_failure_reason_and_slot_counts_match_qualification_ledgers": true,
+  "factor_coverage_matches_fixed_catalog": true,
+  "previous_checkpoint_version": 5,
+  "previous_source_JSON_CSV_bytes_preserved": true,
+  "original_model_acquisition_recovery_seals_intact": true,
+  "new_capture_structural_checks": [
+    {
+      "unit": "final-a-027",
+      "pcap_sha256": "ec4fe6f15bb3d0563ca295ace1fbcb5fc31fa281df7cf56321c276e8fa313d85",
+      "frames": 179576,
+      "full_Ethernet_IPv4_TCP_records": true,
+      "MF_or_fragment_offset_nonzero": 0
+    },
+    {
+      "unit": "final-a-005",
+      "pcap_sha256": "2ca988f578bd0fa58ad79fefa4891c50b3a00d27378f89496d7e7a3a00647512",
+      "frames": 170008,
+      "full_Ethernet_IPv4_TCP_records": true,
+      "MF_or_fragment_offset_nonzero": 0
+    },
+    {
+      "unit": "final-a-019",
+      "pcap_sha256": "2433a75d2f39d466a42f728c86d40c54c29763e68fd4cfdf449a7875f3b94da1",
+      "frames": 201428,
+      "full_Ethernet_IPv4_TCP_records": true,
+      "MF_or_fragment_offset_nonzero": 0
+    },
+    {
+      "unit": "final-a-011",
+      "pcap_sha256": "a4541048be5312e7d357fd08f05caf4cd3ffe95a15a5f5880ce735ad977ad876",
+      "frames": 168948,
+      "full_Ethernet_IPv4_TCP_records": true,
+      "MF_or_fragment_offset_nonzero": 0
+    }
+  ],
+  "unresolved_attempts": 0,
+  "collector_lock_present": false,
+  "scope": "Read-only actual data/hash/row/factor/probe/packet reconciliation. Previously passed 225 engineering checks remain on unchanged sealed sources; no fitting, tuning, recollection or public held-out access. Probe reason categories do not change criteria/counts. This audit does not establish model performance, independence or live latency."
+}

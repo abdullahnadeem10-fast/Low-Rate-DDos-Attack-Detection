@@ -1,0 +1,1135 @@
+{
+  "version": "final_lab_acquisition_v1",
+  "sealed_at_utc": 1794565144.5447385,
+  "freeze_sha256": "063a838d5fe45b1d38e536ca589959214871961dcb944a868203e98e15712bfe",
+  "declared_before_payload_access": true,
+  "model_scores_used_for_selection": false,
+  "source_sha256": {
+    "lab/final_v1/agent.py": "14f494ee7f5631e129d4e842862d8ac904fd4fa48c824cf286d52e5250786c3d",
+    "lab/final_v1/capture_final.py": "7b1accc8d3b2107badc989254c2f52b9177e8b4784ca376a437b0514f2646782",
+    "lab/final_v1/collector.py": "d2d281efefe18fd0ab3d3cd9132ea33eb1919e23cab1bd9670561844da5ecf3a",
+    "lab/final_v1/sink.sh": "f5a361f22caf7f21d3c354271dfa3371c062ff0bbd47999f06ac4840f8a92875",
+    "src/final_lab_policy_v1.py": "a646ae80cfc7f2f462ee7df5ab1cd1c5d3436d5bc5e295fd7c30a038057584e3",
+    "src/audit_final_lab_v1.py": "2cd933ed7a80f7c4bb3b3c3cbd6b0c50260cfd2e83bf64151f4596caaac9be74",
+    "src/run_final_lab_v1.py": "020f574343f284f1a6df419dacf37e2bbeecbe62ec97d9464ba2ba76c0dda49e",
+    "src/test_final_lab_v1.py": "37a0898b56da5bd4e84ddcc2c3b871c197ad87e740bf41b33895dc1cc8aca0f8"
+  },
+  "collection_order_seed": 20261114,
+  "engineering_validation": {
+    "path": "results/development/validation_final_lab_seal_2026-11-13.json",
+    "sha256": "7bb2893f1db12039efb87b12ba2e6a79493d0948f5f84accb6fc5eba9475d6d3",
+    "tests": 216
+  },
+  "runtime_checks": {
+    "path": "results/development/final_lab_runtime_checks_v1.json",
+    "sha256": "91b1745c3bbc902cee25c4f2185b50aba8ac01e0a58f3d0d04e78d1ce2d52832"
+  },
+  "qualification_rules": {
+    "fixed_private_service": "172.28.240.100:80",
+    "network": "One internal IPv4 Docker bridge; forced /32 router path; no NAT, published ports, host networking/NIC changes, image pulls or target options.",
+    "capture": "Web-MAC-scoped TCP80, nonpromiscuous, full snaplen, offloads disabled; reconcile tcpdump/frame counts, zero kernel drops/truncation/fragments/selected-late loss; router-MAC proof. Router qdisc drops are outcomes.",
+    "clocks": "Host/VM probes<=3s uncertainty envelope with0.5s margin,<=20s gaps, host loop pauses<=5s. Capture ready before warmup through measurement/drain. Complete seconds only;50s start guard; fresh unchanged core per unit.",
+    "labels": "Controlled agent provenance; all legitimate failures remain benign. Attack labels mean ongoing controlled campaign exposure after first log/token/PCAP-corroborated incomplete payload, including ineffective attacks. Not every packet malicious or demonstrated denial/occupancy. First partial second unknown; no initial payload=>unknown measurement and recorded unscorable planned episode. Observation tail unknown.",
+    "onset": "First observed PCAP initial payload with declared unique token and source/port, within1s of agent send log. Exact observed traffic onset; no inference of resource exhaustion onset. Fixed measurement end,180s frozen evaluation horizon.",
+    "outcomes": "Retain every attempt, service crash, ineffective attack, failed legitimate request and unsupported unit. No automatic recollection/replacement, threshold/model changes or exclusion from detector outcomes.",
+    "service": "Pinned Apache event MPM plus bounded shell CGI body reader; existing mod_reqtimeout/default request-read limits unchanged, Timeout60/KeepAlive10/max8 preserved. Complete POST and GET/HEAD corroborated before attacks.",
+    "impact": "Fixed1Hz alternating complete GET small/POST body probes, three bounded workers,2s request budget. Record late/failing/skipped slots and timely latency distributions separately for warmup/measurement. Probe evidence is service impact, not detector latency or population SLA.",
+    "inference": "No model/score loading in collector/auditor. Gated frozen scoring is a separate later step."
+  },
+  "software": {
+    "tools_image": "sha256:bcd95e916f898bfad243bd3d4e8ccaf542cbe9d870e782ee62c45e5473f8112b",
+    "apache_image": "httpd:2.4@sha256:ce3b1e5ab31c4b1b6aba298b935cb88bc6ca1d643446b69d396406db5550bf68",
+    "new_scripts": "Read-only bind mount, hashed above; no rebuild or package download."
+  },
+  "scheduling": "One session at a time; fixed shuffled global order across60 final units.60s warmup;180s benign/240s attack measurement,<=32s bounded drain. Three30s benign-only preflights are excluded.",
+  "independence": "Fresh per-unit containers/seeds/core; all same host/image/service. These are repeated trials, not independent environments. Parent is whole session; no windows/algorithm seeds as traffic replications.",
+  "preflight_gate": "All three excluded preflights require quality/replay pass; ordinary/flash require complete warm POST, long requires actual shaped traffic. No final traffic until all pass. No preflight enters models/final scoring.",
+  "reserved_seed_values_avoided": 1016,
+  "final_payloads_previously_accessed": false,
+  "model_changes": false,
+  "mitigation_or_blocking": false,
+  "source_slot": "lab_slow",
+  "planned_units": [
+    {
+      "id": "final-a-038",
+      "kind": "attack",
+      "condition": "slow_request_body",
+      "repeat": 3,
+      "preflight": false,
+      "warmup": 60,
+      "duration": 240,
+      "agent_seeds": [
+        184709813,
+        1665682845,
+        1746081353,
+        666332521,
+        894016182,
+        746863189,
+        319025865
+      ],
+      "net_seeds": [
+        531055255,
+        1544474189
+      ],
+      "mechanism": "slow_request_body",
+      "sources": 3,
+      "connections": 60,
+      "interval": 5,
+      "run_order": 4
+    },
+    {
+      "id": "final-a-002",
+      "kind": "attack",
+      "condition": "incomplete_header",
+      "repeat": 2,
+      "preflight": false,
+      "warmup": 60,
+      "duration": 240,
+      "agent_seeds": [
+        1934058064,
+        1831552394,
+        1605762225,
+        1991218138,
+        700040293,
+        2034106277,
+        1682121781
+      ],
+      "net_seeds": [
+        1734370567,
+        1918663595
+      ],
+      "mechanism": "incomplete_header",
+      "sources": 1,
+      "connections": 10,
+      "interval": 20,
+      "run_order": 5
+    },
+    {
+      "id": "final-a-040",
+      "kind": "attack",
+      "condition": "slow_request_body",
+      "repeat": 5,
+      "preflight": false,
+      "warmup": 60,
+      "duration": 240,
+      "agent_seeds": [
+        150710377,
+        1883781686,
+        1388353324,
+        429205801,
+        920915229,
+        837740895,
+        1305860582
+      ],
+      "net_seeds": [
+        1032254131,
+        753312889
+      ],
+      "mechanism": "slow_request_body",
+      "sources": 3,
+      "connections": 60,
+      "interval": 5,
+      "run_order": 6
+    },
+    {
+      "id": "final-a-022",
+      "kind": "attack",
+      "condition": "slow_request_body",
+      "repeat": 2,
+      "preflight": false,
+      "warmup": 60,
+      "duration": 240,
+      "agent_seeds": [
+        337341088,
+        100457589,
+        979826638,
+        2020029377,
+        1698532788,
+        663943859,
+        777866525
+      ],
+      "net_seeds": [
+        1563100315,
+        1826985032
+      ],
+      "mechanism": "slow_request_body",
+      "sources": 1,
+      "connections": 10,
+      "interval": 20,
+      "run_order": 7
+    },
+    {
+      "id": "final-a-012",
+      "kind": "attack",
+      "condition": "incomplete_header",
+      "repeat": 2,
+      "preflight": false,
+      "warmup": 60,
+      "duration": 240,
+      "agent_seeds": [
+        1835093682,
+        1532625728,
+        181310458,
+        1711080146,
+        463223779,
+        1348631356,
+        216771072
+      ],
+      "net_seeds": [
+        901094190,
+        2025062359
+      ],
+      "mechanism": "incomplete_header",
+      "sources": 3,
+      "connections": 10,
+      "interval": 20,
+      "run_order": 11
+    },
+    {
+      "id": "final-a-014",
+      "kind": "attack",
+      "condition": "incomplete_header",
+      "repeat": 4,
+      "preflight": false,
+      "warmup": 60,
+      "duration": 240,
+      "agent_seeds": [
+        1335676407,
+        1440991618,
+        942788834,
+        1929443678,
+        901236194,
+        2077324418,
+        442762719
+      ],
+      "net_seeds": [
+        2090147422,
+        753667375
+      ],
+      "mechanism": "incomplete_header",
+      "sources": 3,
+      "connections": 10,
+      "interval": 20,
+      "run_order": 12
+    },
+    {
+      "id": "final-a-026",
+      "kind": "attack",
+      "condition": "slow_request_body",
+      "repeat": 1,
+      "preflight": false,
+      "warmup": 60,
+      "duration": 240,
+      "agent_seeds": [
+        1740443331,
+        929895472,
+        1907430894,
+        415422415,
+        1998559566,
+        1716401689,
+        279581228
+      ],
+      "net_seeds": [
+        527823872,
+        975286584
+      ],
+      "mechanism": "slow_request_body",
+      "sources": 1,
+      "connections": 60,
+      "interval": 5,
+      "run_order": 14
+    },
+    {
+      "id": "final-a-017",
+      "kind": "attack",
+      "condition": "incomplete_header",
+      "repeat": 2,
+      "preflight": false,
+      "warmup": 60,
+      "duration": 240,
+      "agent_seeds": [
+        1986680784,
+        537250660,
+        1860148989,
+        1551647351,
+        1444591765,
+        1314760522,
+        1697328858
+      ],
+      "net_seeds": [
+        442490866,
+        1043281333
+      ],
+      "mechanism": "incomplete_header",
+      "sources": 3,
+      "connections": 60,
+      "interval": 5,
+      "run_order": 15
+    },
+    {
+      "id": "final-a-023",
+      "kind": "attack",
+      "condition": "slow_request_body",
+      "repeat": 3,
+      "preflight": false,
+      "warmup": 60,
+      "duration": 240,
+      "agent_seeds": [
+        245654240,
+        1044120190,
+        849741737,
+        1675619408,
+        933332183,
+        738243166,
+        2041307878
+      ],
+      "net_seeds": [
+        1417637140,
+        1123133823
+      ],
+      "mechanism": "slow_request_body",
+      "sources": 1,
+      "connections": 10,
+      "interval": 20,
+      "run_order": 16
+    },
+    {
+      "id": "final-a-027",
+      "kind": "attack",
+      "condition": "slow_request_body",
+      "repeat": 2,
+      "preflight": false,
+      "warmup": 60,
+      "duration": 240,
+      "agent_seeds": [
+        2022997567,
+        778475941,
+        295667050,
+        1989269165,
+        1246251885,
+        1426850933,
+        1028862926
+      ],
+      "net_seeds": [
+        1195989076,
+        1174674206
+      ],
+      "mechanism": "slow_request_body",
+      "sources": 1,
+      "connections": 60,
+      "interval": 5,
+      "run_order": 17
+    },
+    {
+      "id": "final-a-005",
+      "kind": "attack",
+      "condition": "incomplete_header",
+      "repeat": 5,
+      "preflight": false,
+      "warmup": 60,
+      "duration": 240,
+      "agent_seeds": [
+        404350436,
+        1951811737,
+        1945779840,
+        670589795,
+        184498480,
+        1833270841,
+        1755121016
+      ],
+      "net_seeds": [
+        320144942,
+        1743915648
+      ],
+      "mechanism": "incomplete_header",
+      "sources": 1,
+      "connections": 10,
+      "interval": 20,
+      "run_order": 18
+    },
+    {
+      "id": "final-a-019",
+      "kind": "attack",
+      "condition": "incomplete_header",
+      "repeat": 4,
+      "preflight": false,
+      "warmup": 60,
+      "duration": 240,
+      "agent_seeds": [
+        1103779004,
+        254530525,
+        1425686721,
+        828991933,
+        527508773,
+        874741604,
+        156687688
+      ],
+      "net_seeds": [
+        1693495604,
+        581521558
+      ],
+      "mechanism": "incomplete_header",
+      "sources": 3,
+      "connections": 60,
+      "interval": 5,
+      "run_order": 19
+    },
+    {
+      "id": "final-a-011",
+      "kind": "attack",
+      "condition": "incomplete_header",
+      "repeat": 1,
+      "preflight": false,
+      "warmup": 60,
+      "duration": 240,
+      "agent_seeds": [
+        1340712633,
+        639423220,
+        539414043,
+        744251887,
+        173905280,
+        643364615,
+        685699230
+      ],
+      "net_seeds": [
+        1030553019,
+        1236468862
+      ],
+      "mechanism": "incomplete_header",
+      "sources": 3,
+      "connections": 10,
+      "interval": 20,
+      "run_order": 20
+    },
+    {
+      "id": "final-a-030",
+      "kind": "attack",
+      "condition": "slow_request_body",
+      "repeat": 5,
+      "preflight": false,
+      "warmup": 60,
+      "duration": 240,
+      "agent_seeds": [
+        1082746697,
+        1078384267,
+        843259478,
+        1374263234,
+        784741428,
+        1728665321,
+        2051132090
+      ],
+      "net_seeds": [
+        1564980824,
+        1519711462
+      ],
+      "mechanism": "slow_request_body",
+      "sources": 1,
+      "connections": 60,
+      "interval": 5,
+      "run_order": 22
+    },
+    {
+      "id": "final-a-024",
+      "kind": "attack",
+      "condition": "slow_request_body",
+      "repeat": 4,
+      "preflight": false,
+      "warmup": 60,
+      "duration": 240,
+      "agent_seeds": [
+        2078402335,
+        1266793917,
+        1090083264,
+        391874490,
+        488188095,
+        645701485,
+        134157976
+      ],
+      "net_seeds": [
+        1955490478,
+        590157420
+      ],
+      "mechanism": "slow_request_body",
+      "sources": 1,
+      "connections": 10,
+      "interval": 20,
+      "run_order": 24
+    },
+    {
+      "id": "final-a-003",
+      "kind": "attack",
+      "condition": "incomplete_header",
+      "repeat": 3,
+      "preflight": false,
+      "warmup": 60,
+      "duration": 240,
+      "agent_seeds": [
+        683788400,
+        1065957763,
+        2079631481,
+        256638102,
+        1476988540,
+        1992109875,
+        220605517
+      ],
+      "net_seeds": [
+        161397322,
+        730826354
+      ],
+      "mechanism": "incomplete_header",
+      "sources": 1,
+      "connections": 10,
+      "interval": 20,
+      "run_order": 25
+    },
+    {
+      "id": "final-a-004",
+      "kind": "attack",
+      "condition": "incomplete_header",
+      "repeat": 4,
+      "preflight": false,
+      "warmup": 60,
+      "duration": 240,
+      "agent_seeds": [
+        886032352,
+        329943891,
+        1053011802,
+        794283686,
+        2090919194,
+        417017047,
+        223578782
+      ],
+      "net_seeds": [
+        1511889201,
+        1949789876
+      ],
+      "mechanism": "incomplete_header",
+      "sources": 1,
+      "connections": 10,
+      "interval": 20,
+      "run_order": 27
+    },
+    {
+      "id": "final-a-029",
+      "kind": "attack",
+      "condition": "slow_request_body",
+      "repeat": 4,
+      "preflight": false,
+      "warmup": 60,
+      "duration": 240,
+      "agent_seeds": [
+        1042276809,
+        2083526312,
+        367790090,
+        1059248826,
+        311232959,
+        1813887195,
+        1716311189
+      ],
+      "net_seeds": [
+        957184663,
+        270015203
+      ],
+      "mechanism": "slow_request_body",
+      "sources": 1,
+      "connections": 60,
+      "interval": 5,
+      "run_order": 28
+    },
+    {
+      "id": "final-a-028",
+      "kind": "attack",
+      "condition": "slow_request_body",
+      "repeat": 3,
+      "preflight": false,
+      "warmup": 60,
+      "duration": 240,
+      "agent_seeds": [
+        927498896,
+        1973825367,
+        705461010,
+        1747886671,
+        365426232,
+        227125835,
+        635509345
+      ],
+      "net_seeds": [
+        757082483,
+        285569935
+      ],
+      "mechanism": "slow_request_body",
+      "sources": 1,
+      "connections": 60,
+      "interval": 5,
+      "run_order": 29
+    },
+    {
+      "id": "final-a-031",
+      "kind": "attack",
+      "condition": "slow_request_body",
+      "repeat": 1,
+      "preflight": false,
+      "warmup": 60,
+      "duration": 240,
+      "agent_seeds": [
+        616331629,
+        1784957167,
+        1145629145,
+        427591157,
+        1981208213,
+        1412912329,
+        2058753611
+      ],
+      "net_seeds": [
+        2071672012,
+        854793670
+      ],
+      "mechanism": "slow_request_body",
+      "sources": 3,
+      "connections": 10,
+      "interval": 20,
+      "run_order": 30
+    },
+    {
+      "id": "final-a-039",
+      "kind": "attack",
+      "condition": "slow_request_body",
+      "repeat": 4,
+      "preflight": false,
+      "warmup": 60,
+      "duration": 240,
+      "agent_seeds": [
+        1978788939,
+        1406846334,
+        1231937447,
+        812305789,
+        1983506462,
+        1849557256,
+        989042510
+      ],
+      "net_seeds": [
+        196318297,
+        458868457
+      ],
+      "mechanism": "slow_request_body",
+      "sources": 3,
+      "connections": 60,
+      "interval": 5,
+      "run_order": 31
+    },
+    {
+      "id": "final-a-006",
+      "kind": "attack",
+      "condition": "incomplete_header",
+      "repeat": 1,
+      "preflight": false,
+      "warmup": 60,
+      "duration": 240,
+      "agent_seeds": [
+        1146762797,
+        1072179595,
+        756664060,
+        1451486410,
+        1133315289,
+        1649204543,
+        728179293
+      ],
+      "net_seeds": [
+        1294292964,
+        1340662900
+      ],
+      "mechanism": "incomplete_header",
+      "sources": 1,
+      "connections": 60,
+      "interval": 5,
+      "run_order": 34
+    },
+    {
+      "id": "final-a-037",
+      "kind": "attack",
+      "condition": "slow_request_body",
+      "repeat": 2,
+      "preflight": false,
+      "warmup": 60,
+      "duration": 240,
+      "agent_seeds": [
+        1536021465,
+        953305056,
+        623485202,
+        286241380,
+        2016776174,
+        1408146943,
+        288985223
+      ],
+      "net_seeds": [
+        1826357322,
+        1886769479
+      ],
+      "mechanism": "slow_request_body",
+      "sources": 3,
+      "connections": 60,
+      "interval": 5,
+      "run_order": 35
+    },
+    {
+      "id": "final-a-015",
+      "kind": "attack",
+      "condition": "incomplete_header",
+      "repeat": 5,
+      "preflight": false,
+      "warmup": 60,
+      "duration": 240,
+      "agent_seeds": [
+        1136452555,
+        1221041147,
+        2006781667,
+        1581219945,
+        1178858565,
+        1776449348,
+        1502616334
+      ],
+      "net_seeds": [
+        1102528373,
+        945170315
+      ],
+      "mechanism": "incomplete_header",
+      "sources": 3,
+      "connections": 10,
+      "interval": 20,
+      "run_order": 36
+    },
+    {
+      "id": "final-a-013",
+      "kind": "attack",
+      "condition": "incomplete_header",
+      "repeat": 3,
+      "preflight": false,
+      "warmup": 60,
+      "duration": 240,
+      "agent_seeds": [
+        1977097267,
+        896277385,
+        982085356,
+        689758655,
+        743074623,
+        645045111,
+        971629171
+      ],
+      "net_seeds": [
+        1443672321,
+        1716212469
+      ],
+      "mechanism": "incomplete_header",
+      "sources": 3,
+      "connections": 10,
+      "interval": 20,
+      "run_order": 37
+    },
+    {
+      "id": "final-a-035",
+      "kind": "attack",
+      "condition": "slow_request_body",
+      "repeat": 5,
+      "preflight": false,
+      "warmup": 60,
+      "duration": 240,
+      "agent_seeds": [
+        935469722,
+        2081394066,
+        2093180158,
+        2002053134,
+        1523620735,
+        1460486419,
+        1001936109
+      ],
+      "net_seeds": [
+        1948842761,
+        585763182
+      ],
+      "mechanism": "slow_request_body",
+      "sources": 3,
+      "connections": 10,
+      "interval": 20,
+      "run_order": 39
+    },
+    {
+      "id": "final-a-036",
+      "kind": "attack",
+      "condition": "slow_request_body",
+      "repeat": 1,
+      "preflight": false,
+      "warmup": 60,
+      "duration": 240,
+      "agent_seeds": [
+        342088495,
+        339715302,
+        1220475080,
+        1857507642,
+        466747492,
+        240312163,
+        847392260
+      ],
+      "net_seeds": [
+        1118927351,
+        1632436265
+      ],
+      "mechanism": "slow_request_body",
+      "sources": 3,
+      "connections": 60,
+      "interval": 5,
+      "run_order": 40
+    },
+    {
+      "id": "final-a-021",
+      "kind": "attack",
+      "condition": "slow_request_body",
+      "repeat": 1,
+      "preflight": false,
+      "warmup": 60,
+      "duration": 240,
+      "agent_seeds": [
+        686219201,
+        662084470,
+        447712638,
+        1767348082,
+        930163901,
+        243957502,
+        306874308
+      ],
+      "net_seeds": [
+        1111579720,
+        1091319776
+      ],
+      "mechanism": "slow_request_body",
+      "sources": 1,
+      "connections": 10,
+      "interval": 20,
+      "run_order": 41
+    },
+    {
+      "id": "final-a-032",
+      "kind": "attack",
+      "condition": "slow_request_body",
+      "repeat": 2,
+      "preflight": false,
+      "warmup": 60,
+      "duration": 240,
+      "agent_seeds": [
+        1389776566,
+        1935738235,
+        1480985246,
+        492686963,
+        1266461569,
+        627786828,
+        1211035830
+      ],
+      "net_seeds": [
+        1832342115,
+        834098671
+      ],
+      "mechanism": "slow_request_body",
+      "sources": 3,
+      "connections": 10,
+      "interval": 20,
+      "run_order": 42
+    },
+    {
+      "id": "final-a-033",
+      "kind": "attack",
+      "condition": "slow_request_body",
+      "repeat": 3,
+      "preflight": false,
+      "warmup": 60,
+      "duration": 240,
+      "agent_seeds": [
+        1051311385,
+        1689027874,
+        1842559938,
+        1655732836,
+        835473948,
+        1548564996,
+        1655462485
+      ],
+      "net_seeds": [
+        1088964370,
+        716443454
+      ],
+      "mechanism": "slow_request_body",
+      "sources": 3,
+      "connections": 10,
+      "interval": 20,
+      "run_order": 43
+    },
+    {
+      "id": "final-a-007",
+      "kind": "attack",
+      "condition": "incomplete_header",
+      "repeat": 2,
+      "preflight": false,
+      "warmup": 60,
+      "duration": 240,
+      "agent_seeds": [
+        290341430,
+        1029881381,
+        526491601,
+        882306774,
+        734734888,
+        902567914,
+        1611944567
+      ],
+      "net_seeds": [
+        197185048,
+        1656529345
+      ],
+      "mechanism": "incomplete_header",
+      "sources": 1,
+      "connections": 60,
+      "interval": 5,
+      "run_order": 44
+    },
+    {
+      "id": "final-a-018",
+      "kind": "attack",
+      "condition": "incomplete_header",
+      "repeat": 3,
+      "preflight": false,
+      "warmup": 60,
+      "duration": 240,
+      "agent_seeds": [
+        908729242,
+        1594083892,
+        114746122,
+        1418580453,
+        197882923,
+        1316912331,
+        257488589
+      ],
+      "net_seeds": [
+        1058865492,
+        593487461
+      ],
+      "mechanism": "incomplete_header",
+      "sources": 3,
+      "connections": 60,
+      "interval": 5,
+      "run_order": 45
+    },
+    {
+      "id": "final-a-025",
+      "kind": "attack",
+      "condition": "slow_request_body",
+      "repeat": 5,
+      "preflight": false,
+      "warmup": 60,
+      "duration": 240,
+      "agent_seeds": [
+        357412728,
+        271547665,
+        2077824012,
+        1743426705,
+        235658398,
+        656911136,
+        1486563278
+      ],
+      "net_seeds": [
+        254669530,
+        1194460385
+      ],
+      "mechanism": "slow_request_body",
+      "sources": 1,
+      "connections": 10,
+      "interval": 20,
+      "run_order": 46
+    },
+    {
+      "id": "final-a-034",
+      "kind": "attack",
+      "condition": "slow_request_body",
+      "repeat": 4,
+      "preflight": false,
+      "warmup": 60,
+      "duration": 240,
+      "agent_seeds": [
+        1451069332,
+        739122765,
+        577273190,
+        1571222813,
+        1615343412,
+        1343607231,
+        1519611367
+      ],
+      "net_seeds": [
+        1590819594,
+        831169846
+      ],
+      "mechanism": "slow_request_body",
+      "sources": 3,
+      "connections": 10,
+      "interval": 20,
+      "run_order": 48
+    },
+    {
+      "id": "final-a-001",
+      "kind": "attack",
+      "condition": "incomplete_header",
+      "repeat": 1,
+      "preflight": false,
+      "warmup": 60,
+      "duration": 240,
+      "agent_seeds": [
+        1045357295,
+        1963432132,
+        414619991,
+        1213996275,
+        542525895,
+        1689725568,
+        462559318
+      ],
+      "net_seeds": [
+        1190620081,
+        1418207824
+      ],
+      "mechanism": "incomplete_header",
+      "sources": 1,
+      "connections": 10,
+      "interval": 20,
+      "run_order": 49
+    },
+    {
+      "id": "final-a-009",
+      "kind": "attack",
+      "condition": "incomplete_header",
+      "repeat": 4,
+      "preflight": false,
+      "warmup": 60,
+      "duration": 240,
+      "agent_seeds": [
+        679114240,
+        722924670,
+        451277685,
+        1740201090,
+        476197329,
+        478936113,
+        909585014
+      ],
+      "net_seeds": [
+        493999011,
+        1380645754
+      ],
+      "mechanism": "incomplete_header",
+      "sources": 1,
+      "connections": 60,
+      "interval": 5,
+      "run_order": 53
+    },
+    {
+      "id": "final-a-010",
+      "kind": "attack",
+      "condition": "incomplete_header",
+      "repeat": 5,
+      "preflight": false,
+      "warmup": 60,
+      "duration": 240,
+      "agent_seeds": [
+        653108840,
+        606713897,
+        1654180995,
+        342793589,
+        1792128391,
+        966027985,
+        165479727
+      ],
+      "net_seeds": [
+        1463563368,
+        142445289
+      ],
+      "mechanism": "incomplete_header",
+      "sources": 1,
+      "connections": 60,
+      "interval": 5,
+      "run_order": 56
+    },
+    {
+      "id": "final-a-020",
+      "kind": "attack",
+      "condition": "incomplete_header",
+      "repeat": 5,
+      "preflight": false,
+      "warmup": 60,
+      "duration": 240,
+      "agent_seeds": [
+        313862637,
+        1135553019,
+        368274890,
+        560978578,
+        1242348636,
+        763836955,
+        361369529
+      ],
+      "net_seeds": [
+        690842450,
+        1454773994
+      ],
+      "mechanism": "incomplete_header",
+      "sources": 3,
+      "connections": 60,
+      "interval": 5,
+      "run_order": 57
+    },
+    {
+      "id": "final-a-016",
+      "kind": "attack",
+      "condition": "incomplete_header",
+      "repeat": 1,
+      "preflight": false,
+      "warmup": 60,
+      "duration": 240,
+      "agent_seeds": [
+        1327929892,
+        463422641,
+        2014146821,
+        1085742976,
+        1009683638,
+        1843942046,
+        991996095
+      ],
+      "net_seeds": [
+        320307169,
+        470703587
+      ],
+      "mechanism": "incomplete_header",
+      "sources": 3,
+      "connections": 60,
+      "interval": 5,
+      "run_order": 58
+    },
+    {
+      "id": "final-a-008",
+      "kind": "attack",
+      "condition": "incomplete_header",
+      "repeat": 3,
+      "preflight": false,
+      "warmup": 60,
+      "duration": 240,
+      "agent_seeds": [
+        750551920,
+        1529473653,
+        1295666180,
+        1502100115,
+        1517290890,
+        115659640,
+        1623592421
+      ],
+      "net_seeds": [
+        1317466205,
+        1197800129
+      ],
+      "mechanism": "incomplete_header",
+      "sources": 1,
+      "connections": 60,
+      "interval": 5,
+      "run_order": 59
+    }
+  ],
+  "excluded_preflights": []
+}

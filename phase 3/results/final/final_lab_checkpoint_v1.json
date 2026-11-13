@@ -1,0 +1,183 @@
+{
+  "date": "2026-11-13",
+  "model_evaluation_freeze_sha256": "063a838d5fe45b1d38e536ca589959214871961dcb944a868203e98e15712bfe",
+  "lab_acquisition_sealed": true,
+  "preflight_gate_pass": true,
+  "excluded_preflights": 3,
+  "excluded_preflight_frames": 219816,
+  "final_completed_sessions": 1,
+  "final_benign_completed": 1,
+  "final_attack_episodes_completed": 0,
+  "planned_final_benign": 20,
+  "planned_final_attacks": 40,
+  "remaining_final_sessions": 59,
+  "next_unit": "final-b-014",
+  "next_kind": "benign",
+  "next_condition": "flash",
+  "public_slow_K_external_payloads_opened": false,
+  "study_complete": false,
+  "headline_generalization_readiness": false,
+  "final_case_count": 117,
+  "all_first_unit_cases_completed": true,
+  "final_result_sha256": "bbb499a8393cb66ce395e9e46c91ee75b68c3725f61e8c483c0689c49c7ac7c3",
+  "qualification_sha256": "e10bfa9606ddb1261ada15efcb1a6bf59976b19483a69af6a8d49714760e5951",
+  "main_first_unit": {
+    "main:hybrid:7": {
+      "common_window_metrics": {
+        "TP": 0,
+        "FN": 0,
+        "FP": 150,
+        "TN": 30,
+        "eligible_positive": 0,
+        "eligible_benign": 180,
+        "total_known_positive": 0,
+        "total_known_benign": 180,
+        "unknown_windows": 0,
+        "excluded_known_positive": 0,
+        "excluded_known_benign": 0,
+        "recall": null,
+        "fpr": 0.8333333333333334,
+        "precision": 0.0,
+        "f1": 0.0,
+        "AP": null,
+        "ROC_AUC": null,
+        "all_known_recall_bounds": null,
+        "all_known_fpr_bounds": [
+          0.8333333333333334,
+          0.8333333333333334
+        ],
+        "score_basis": "kth-largest trailing-h decision statistic on stated eligible support",
+        "common_label_history": 5
+      },
+      "alert_burden": {
+        "qualified_false_alert_starts": 0,
+        "eligible_benign_seconds": 180,
+        "false_alert_starts_per_hour": 0.0,
+        "unattributed_qualified_starts": 0,
+        "unqualified_startup_or_gap_starts": 0,
+        "scope": "Event-start burden conditional on benign context, separate from alarm-window FPR."
+      }
+    },
+    "main:AE:7": {
+      "common_window_metrics": {
+        "TP": 0,
+        "FN": 0,
+        "FP": 152,
+        "TN": 28,
+        "eligible_positive": 0,
+        "eligible_benign": 180,
+        "total_known_positive": 0,
+        "total_known_benign": 180,
+        "unknown_windows": 0,
+        "excluded_known_positive": 0,
+        "excluded_known_benign": 0,
+        "recall": null,
+        "fpr": 0.8444444444444444,
+        "precision": 0.0,
+        "f1": 0.0,
+        "AP": null,
+        "ROC_AUC": null,
+        "all_known_recall_bounds": null,
+        "all_known_fpr_bounds": [
+          0.8444444444444444,
+          0.8444444444444444
+        ],
+        "score_basis": "kth-largest trailing-h decision statistic on stated eligible support",
+        "common_label_history": 5
+      },
+      "alert_burden": {
+        "qualified_false_alert_starts": 0,
+        "eligible_benign_seconds": 180,
+        "false_alert_starts_per_hour": 0.0,
+        "unattributed_qualified_starts": 0,
+        "unqualified_startup_or_gap_starts": 0,
+        "scope": "Event-start burden conditional on benign context, separate from alarm-window FPR."
+      }
+    },
+    "main:HGB:7": {
+      "common_window_metrics": {
+        "TP": 0,
+        "FN": 0,
+        "FP": 0,
+        "TN": 180,
+        "eligible_positive": 0,
+        "eligible_benign": 180,
+        "total_known_positive": 0,
+        "total_known_benign": 180,
+        "unknown_windows": 0,
+        "excluded_known_positive": 0,
+        "excluded_known_benign": 0,
+        "recall": null,
+        "fpr": 0.0,
+        "precision": null,
+        "f1": null,
+        "AP": null,
+        "ROC_AUC": null,
+        "all_known_recall_bounds": null,
+        "all_known_fpr_bounds": [
+          0.0,
+          0.0
+        ],
+        "score_basis": "kth-largest trailing-h decision statistic on stated eligible support",
+        "common_label_history": 5
+      },
+      "alert_burden": {
+        "qualified_false_alert_starts": 0,
+        "eligible_benign_seconds": 180,
+        "false_alert_starts_per_hour": 0.0,
+        "unattributed_qualified_starts": 0,
+        "unqualified_startup_or_gap_starts": 0,
+        "scope": "Event-start burden conditional on benign context, separate from alarm-window FPR."
+      }
+    },
+    "main:rate:7": {
+      "common_window_metrics": {
+        "TP": 0,
+        "FN": 0,
+        "FP": 0,
+        "TN": 180,
+        "eligible_positive": 0,
+        "eligible_benign": 180,
+        "total_known_positive": 0,
+        "total_known_benign": 180,
+        "unknown_windows": 0,
+        "excluded_known_positive": 0,
+        "excluded_known_benign": 0,
+        "recall": null,
+        "fpr": 0.0,
+        "precision": null,
+        "f1": null,
+        "AP": null,
+        "ROC_AUC": null,
+        "all_known_recall_bounds": null,
+        "all_known_fpr_bounds": [
+          0.0,
+          0.0
+        ],
+        "score_basis": "kth-largest trailing-h decision statistic on stated eligible support",
+        "common_label_history": 5
+      },
+      "alert_burden": {
+        "qualified_false_alert_starts": 0,
+        "eligible_benign_seconds": 180,
+        "false_alert_starts_per_hour": 0.0,
+        "unattributed_qualified_starts": 0,
+        "unqualified_startup_or_gap_starts": 0,
+        "scope": "Event-start burden conditional on benign context, separate from alarm-window FPR."
+      }
+    }
+  },
+  "preexisting_false_alarm_before_measurement": {
+    "main:hybrid:7": true,
+    "main:AE:7": true
+  },
+  "negative_findings": [
+    "First held-out benign burst session: hybrid150/180 false-positive windows(83.33%),AE152/180(84.44%); all180 benign windows eligible.",
+    "Both primary alarms were already active before measurement; zero qualified new onsets does not mean alarm-free operation.",
+    "One parent and no attack labels: recall, latency, paired confidence intervals and superiority are not established. Never tune from this final session.",
+    "Different complete-request/CGI-probe mix and fresh TCP sessions create application/load shift. Same-host trials are not independent environments.",
+    "567 unique reserved seed values include inactive agents/unshaped profiles; deterministic burst/flash/probe timing does not become independent because seed IDs differ."
+  ],
+  "scope": "Partial frozen research evidence, including a serious false-alarm failure. All earlier development/negative evidence preserved.",
+  "next_action": "Continue the exact catalog with run_final_lab_v1.py --final --limit 1 (next final-b-014 flash). Qualify and separately score each new unit; retain all failures. Do not rerun first-unit scoring or alter any sealed source/model/threshold."
+}

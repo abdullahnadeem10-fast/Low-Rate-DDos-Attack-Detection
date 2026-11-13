@@ -1,0 +1,585 @@
+{
+  "version": "final_lab_acquisition_v1",
+  "sealed_at_utc": 1794565144.5447385,
+  "freeze_sha256": "063a838d5fe45b1d38e536ca589959214871961dcb944a868203e98e15712bfe",
+  "declared_before_payload_access": true,
+  "model_scores_used_for_selection": false,
+  "source_sha256": {
+    "lab/final_v1/agent.py": "14f494ee7f5631e129d4e842862d8ac904fd4fa48c824cf286d52e5250786c3d",
+    "lab/final_v1/capture_final.py": "7b1accc8d3b2107badc989254c2f52b9177e8b4784ca376a437b0514f2646782",
+    "lab/final_v1/collector.py": "d2d281efefe18fd0ab3d3cd9132ea33eb1919e23cab1bd9670561844da5ecf3a",
+    "lab/final_v1/sink.sh": "f5a361f22caf7f21d3c354271dfa3371c062ff0bbd47999f06ac4840f8a92875",
+    "src/final_lab_policy_v1.py": "a646ae80cfc7f2f462ee7df5ab1cd1c5d3436d5bc5e295fd7c30a038057584e3",
+    "src/audit_final_lab_v1.py": "2cd933ed7a80f7c4bb3b3c3cbd6b0c50260cfd2e83bf64151f4596caaac9be74",
+    "src/run_final_lab_v1.py": "020f574343f284f1a6df419dacf37e2bbeecbe62ec97d9464ba2ba76c0dda49e",
+    "src/test_final_lab_v1.py": "37a0898b56da5bd4e84ddcc2c3b871c197ad87e740bf41b33895dc1cc8aca0f8"
+  },
+  "collection_order_seed": 20261114,
+  "engineering_validation": {
+    "path": "results/development/validation_final_lab_seal_2026-11-13.json",
+    "sha256": "7bb2893f1db12039efb87b12ba2e6a79493d0948f5f84accb6fc5eba9475d6d3",
+    "tests": 216
+  },
+  "runtime_checks": {
+    "path": "results/development/final_lab_runtime_checks_v1.json",
+    "sha256": "91b1745c3bbc902cee25c4f2185b50aba8ac01e0a58f3d0d04e78d1ce2d52832"
+  },
+  "qualification_rules": {
+    "fixed_private_service": "172.28.240.100:80",
+    "network": "One internal IPv4 Docker bridge; forced /32 router path; no NAT, published ports, host networking/NIC changes, image pulls or target options.",
+    "capture": "Web-MAC-scoped TCP80, nonpromiscuous, full snaplen, offloads disabled; reconcile tcpdump/frame counts, zero kernel drops/truncation/fragments/selected-late loss; router-MAC proof. Router qdisc drops are outcomes.",
+    "clocks": "Host/VM probes<=3s uncertainty envelope with0.5s margin,<=20s gaps, host loop pauses<=5s. Capture ready before warmup through measurement/drain. Complete seconds only;50s start guard; fresh unchanged core per unit.",
+    "labels": "Controlled agent provenance; all legitimate failures remain benign. Attack labels mean ongoing controlled campaign exposure after first log/token/PCAP-corroborated incomplete payload, including ineffective attacks. Not every packet malicious or demonstrated denial/occupancy. First partial second unknown; no initial payload=>unknown measurement and recorded unscorable planned episode. Observation tail unknown.",
+    "onset": "First observed PCAP initial payload with declared unique token and source/port, within1s of agent send log. Exact observed traffic onset; no inference of resource exhaustion onset. Fixed measurement end,180s frozen evaluation horizon.",
+    "outcomes": "Retain every attempt, service crash, ineffective attack, failed legitimate request and unsupported unit. No automatic recollection/replacement, threshold/model changes or exclusion from detector outcomes.",
+    "service": "Pinned Apache event MPM plus bounded shell CGI body reader; existing mod_reqtimeout/default request-read limits unchanged, Timeout60/KeepAlive10/max8 preserved. Complete POST and GET/HEAD corroborated before attacks.",
+    "impact": "Fixed1Hz alternating complete GET small/POST body probes, three bounded workers,2s request budget. Record late/failing/skipped slots and timely latency distributions separately for warmup/measurement. Probe evidence is service impact, not detector latency or population SLA.",
+    "inference": "No model/score loading in collector/auditor. Gated frozen scoring is a separate later step."
+  },
+  "software": {
+    "tools_image": "sha256:bcd95e916f898bfad243bd3d4e8ccaf542cbe9d870e782ee62c45e5473f8112b",
+    "apache_image": "httpd:2.4@sha256:ce3b1e5ab31c4b1b6aba298b935cb88bc6ca1d643446b69d396406db5550bf68",
+    "new_scripts": "Read-only bind mount, hashed above; no rebuild or package download."
+  },
+  "scheduling": "One session at a time; fixed shuffled global order across60 final units.60s warmup;180s benign/240s attack measurement,<=32s bounded drain. Three30s benign-only preflights are excluded.",
+  "independence": "Fresh per-unit containers/seeds/core; all same host/image/service. These are repeated trials, not independent environments. Parent is whole session; no windows/algorithm seeds as traffic replications.",
+  "preflight_gate": "All three excluded preflights require quality/replay pass; ordinary/flash require complete warm POST, long requires actual shaped traffic. No final traffic until all pass. No preflight enters models/final scoring.",
+  "reserved_seed_values_avoided": 1016,
+  "final_payloads_previously_accessed": false,
+  "model_changes": false,
+  "mitigation_or_blocking": false,
+  "source_slot": "lab_benign",
+  "planned_units": [
+    {
+      "id": "final-b-010",
+      "kind": "benign",
+      "condition": "bursts",
+      "repeat": 5,
+      "preflight": false,
+      "warmup": 60,
+      "duration": 180,
+      "agent_seeds": [
+        1832579160,
+        1040015185,
+        704816277,
+        478358451,
+        420296435,
+        907202778,
+        1677292949
+      ],
+      "net_seeds": [
+        668675057,
+        1852064551
+      ],
+      "run_order": 0
+    },
+    {
+      "id": "final-b-014",
+      "kind": "benign",
+      "condition": "flash",
+      "repeat": 4,
+      "preflight": false,
+      "warmup": 60,
+      "duration": 180,
+      "agent_seeds": [
+        790514222,
+        1158327425,
+        1819893345,
+        364882962,
+        1823346333,
+        1590703759,
+        1200287957
+      ],
+      "net_seeds": [
+        1464180091,
+        1705835041
+      ],
+      "run_order": 1
+    },
+    {
+      "id": "final-b-017",
+      "kind": "benign",
+      "condition": "long_lived_or_congested",
+      "repeat": 2,
+      "preflight": false,
+      "warmup": 60,
+      "duration": 180,
+      "agent_seeds": [
+        1870973038,
+        1869195089,
+        1602130572,
+        1791011718,
+        1625023345,
+        924456571,
+        800076917
+      ],
+      "net_seeds": [
+        510082545,
+        2005675561
+      ],
+      "run_order": 2
+    },
+    {
+      "id": "final-b-001",
+      "kind": "benign",
+      "condition": "ordinary",
+      "repeat": 1,
+      "preflight": false,
+      "warmup": 60,
+      "duration": 180,
+      "agent_seeds": [
+        237598246,
+        617345024,
+        1288710754,
+        1360469321,
+        2096100226,
+        1140133853,
+        1185291859
+      ],
+      "net_seeds": [
+        1741693921,
+        376945311
+      ],
+      "run_order": 3
+    },
+    {
+      "id": "final-b-005",
+      "kind": "benign",
+      "condition": "ordinary",
+      "repeat": 5,
+      "preflight": false,
+      "warmup": 60,
+      "duration": 180,
+      "agent_seeds": [
+        1314213430,
+        553202478,
+        2000334872,
+        888963048,
+        1914491590,
+        1993199330,
+        2070497678
+      ],
+      "net_seeds": [
+        515187444,
+        947514845
+      ],
+      "run_order": 8
+    },
+    {
+      "id": "final-b-003",
+      "kind": "benign",
+      "condition": "ordinary",
+      "repeat": 3,
+      "preflight": false,
+      "warmup": 60,
+      "duration": 180,
+      "agent_seeds": [
+        156947773,
+        1922805261,
+        1003402599,
+        1887767018,
+        1418054099,
+        1503466602,
+        1754395820
+      ],
+      "net_seeds": [
+        1259842038,
+        913794754
+      ],
+      "run_order": 9
+    },
+    {
+      "id": "final-b-007",
+      "kind": "benign",
+      "condition": "bursts",
+      "repeat": 2,
+      "preflight": false,
+      "warmup": 60,
+      "duration": 180,
+      "agent_seeds": [
+        867163194,
+        1867932873,
+        481037754,
+        1082215508,
+        1478138067,
+        2025585010,
+        1001612513
+      ],
+      "net_seeds": [
+        1462732963,
+        2009632311
+      ],
+      "run_order": 10
+    },
+    {
+      "id": "final-b-019",
+      "kind": "benign",
+      "condition": "long_lived_or_congested",
+      "repeat": 4,
+      "preflight": false,
+      "warmup": 60,
+      "duration": 180,
+      "agent_seeds": [
+        1851631982,
+        852712412,
+        897719072,
+        469835978,
+        1744589897,
+        2045054390,
+        125349370
+      ],
+      "net_seeds": [
+        335270337,
+        970263749
+      ],
+      "run_order": 13
+    },
+    {
+      "id": "final-b-020",
+      "kind": "benign",
+      "condition": "long_lived_or_congested",
+      "repeat": 5,
+      "preflight": false,
+      "warmup": 60,
+      "duration": 180,
+      "agent_seeds": [
+        1977294243,
+        477802784,
+        1512827594,
+        1042417428,
+        1029291381,
+        350963569,
+        367586762
+      ],
+      "net_seeds": [
+        1645099757,
+        606036753
+      ],
+      "run_order": 21
+    },
+    {
+      "id": "final-b-018",
+      "kind": "benign",
+      "condition": "long_lived_or_congested",
+      "repeat": 3,
+      "preflight": false,
+      "warmup": 60,
+      "duration": 180,
+      "agent_seeds": [
+        1028248081,
+        1553491905,
+        1848895094,
+        1012099050,
+        431477725,
+        2044153927,
+        1174498174
+      ],
+      "net_seeds": [
+        652577298,
+        1249150773
+      ],
+      "run_order": 23
+    },
+    {
+      "id": "final-b-012",
+      "kind": "benign",
+      "condition": "flash",
+      "repeat": 2,
+      "preflight": false,
+      "warmup": 60,
+      "duration": 180,
+      "agent_seeds": [
+        865953538,
+        938983335,
+        1397208397,
+        1923674710,
+        423428325,
+        814250868,
+        1420823649
+      ],
+      "net_seeds": [
+        859062369,
+        1400478059
+      ],
+      "run_order": 26
+    },
+    {
+      "id": "final-b-016",
+      "kind": "benign",
+      "condition": "long_lived_or_congested",
+      "repeat": 1,
+      "preflight": false,
+      "warmup": 60,
+      "duration": 180,
+      "agent_seeds": [
+        1404712703,
+        1316339823,
+        1162849816,
+        1076689438,
+        1384454036,
+        1548297888,
+        520052173
+      ],
+      "net_seeds": [
+        1523420408,
+        160652838
+      ],
+      "run_order": 32
+    },
+    {
+      "id": "final-b-015",
+      "kind": "benign",
+      "condition": "flash",
+      "repeat": 5,
+      "preflight": false,
+      "warmup": 60,
+      "duration": 180,
+      "agent_seeds": [
+        1916031931,
+        1088499067,
+        621679765,
+        1745729750,
+        1040934302,
+        1213322180,
+        895352142
+      ],
+      "net_seeds": [
+        646050294,
+        536742731
+      ],
+      "run_order": 33
+    },
+    {
+      "id": "final-b-006",
+      "kind": "benign",
+      "condition": "bursts",
+      "repeat": 1,
+      "preflight": false,
+      "warmup": 60,
+      "duration": 180,
+      "agent_seeds": [
+        1132681248,
+        725037715,
+        1766561840,
+        1675775886,
+        368219537,
+        1474957231,
+        496310258
+      ],
+      "net_seeds": [
+        1310535166,
+        2046493843
+      ],
+      "run_order": 38
+    },
+    {
+      "id": "final-b-002",
+      "kind": "benign",
+      "condition": "ordinary",
+      "repeat": 2,
+      "preflight": false,
+      "warmup": 60,
+      "duration": 180,
+      "agent_seeds": [
+        1167705923,
+        152738351,
+        1039704234,
+        1782043365,
+        1913776490,
+        607635004,
+        1023151576
+      ],
+      "net_seeds": [
+        1689328494,
+        430288606
+      ],
+      "run_order": 47
+    },
+    {
+      "id": "final-b-013",
+      "kind": "benign",
+      "condition": "flash",
+      "repeat": 3,
+      "preflight": false,
+      "warmup": 60,
+      "duration": 180,
+      "agent_seeds": [
+        1738034201,
+        877845098,
+        1785991696,
+        1230765139,
+        541348816,
+        1145951196,
+        1159308665
+      ],
+      "net_seeds": [
+        2095393575,
+        431535179
+      ],
+      "run_order": 50
+    },
+    {
+      "id": "final-b-008",
+      "kind": "benign",
+      "condition": "bursts",
+      "repeat": 3,
+      "preflight": false,
+      "warmup": 60,
+      "duration": 180,
+      "agent_seeds": [
+        1452507927,
+        402976751,
+        1409921113,
+        259154831,
+        1934370180,
+        571833273,
+        494112584
+      ],
+      "net_seeds": [
+        342353002,
+        880658612
+      ],
+      "run_order": 51
+    },
+    {
+      "id": "final-b-009",
+      "kind": "benign",
+      "condition": "bursts",
+      "repeat": 4,
+      "preflight": false,
+      "warmup": 60,
+      "duration": 180,
+      "agent_seeds": [
+        1230538246,
+        483618367,
+        1473349181,
+        817370401,
+        1559839364,
+        2085676876,
+        1850224331
+      ],
+      "net_seeds": [
+        400893231,
+        1857592909
+      ],
+      "run_order": 52
+    },
+    {
+      "id": "final-b-004",
+      "kind": "benign",
+      "condition": "ordinary",
+      "repeat": 4,
+      "preflight": false,
+      "warmup": 60,
+      "duration": 180,
+      "agent_seeds": [
+        952702899,
+        1594772589,
+        682231887,
+        573142426,
+        612974688,
+        1077281598,
+        421154341
+      ],
+      "net_seeds": [
+        1505471553,
+        1222421163
+      ],
+      "run_order": 54
+    },
+    {
+      "id": "final-b-011",
+      "kind": "benign",
+      "condition": "flash",
+      "repeat": 1,
+      "preflight": false,
+      "warmup": 60,
+      "duration": 180,
+      "agent_seeds": [
+        418486029,
+        584823862,
+        486389295,
+        230622671,
+        422871255,
+        1007477151,
+        1125166988
+      ],
+      "net_seeds": [
+        1184692385,
+        1011972690
+      ],
+      "run_order": 55
+    }
+  ],
+  "excluded_preflights": [
+    {
+      "id": "final-p-01",
+      "kind": "benign",
+      "condition": "ordinary",
+      "repeat": 0,
+      "preflight": true,
+      "warmup": 60,
+      "duration": 30,
+      "agent_seeds": [
+        132780145,
+        1630235163,
+        135364831,
+        466427697,
+        1899943751,
+        262150262,
+        673633020
+      ],
+      "net_seeds": [
+        1866964520,
+        1231917852
+      ],
+      "run_order": 0
+    },
+    {
+      "id": "final-p-02",
+      "kind": "benign",
+      "condition": "flash",
+      "repeat": 0,
+      "preflight": true,
+      "warmup": 60,
+      "duration": 30,
+      "agent_seeds": [
+        962696394,
+        521403858,
+        415052741,
+        1519097768,
+        553778386,
+        1162165434,
+        1861340619
+      ],
+      "net_seeds": [
+        735347051,
+        1640056260
+      ],
+      "run_order": 1
+    },
+    {
+      "id": "final-p-03",
+      "kind": "benign",
+      "condition": "long_lived_or_congested",
+      "repeat": 0,
+      "preflight": true,
+      "warmup": 60,
+      "duration": 30,
+      "agent_seeds": [
+        756396907,
+        1240898942,
+        676031801,
+        2012350337,
+        354161529,
+        1141895230,
+        1222859755
+      ],
+      "net_seeds": [
+        1934261943,
+        334196882
+      ],
+      "run_order": 2
+    }
+  ]
+}

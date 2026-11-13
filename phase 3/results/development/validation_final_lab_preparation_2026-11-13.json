@@ -1,0 +1,9 @@
+{
+  "tests_run": 216,
+  "failures": 0,
+  "errors": 0,
+  "skipped": 0,
+  "all_tests_passed": true,
+  "elapsed_seconds": 4.667902699991828,
+  "scope": "Offline final-lab engineering fixtures and preserved historical regression tests; no final traffic/source access."
+}

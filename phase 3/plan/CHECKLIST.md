@@ -51,12 +51,14 @@ Start with a small, real packet-capture test. A checked box means there is evide
 - [x] Review candidate/claim limits and seal the separate model/evaluation/analysis protocol before final access; preserve failed baselines, all source controls, label-support gaps and AE epoch ceiling. [Review](FINAL_FREEZE_REVIEW.md), [protocol](blind_final_protocol_v1.json), [freeze gate](../results/development/final_freeze_gate_v1.json). This integrity lock does not establish generalization readiness.
 - [x] Prepare declared factor ablations without final/attack-V scoring: 25 new weights, 50 extra operating points; independently audit 164 artifact hashes/66 weights/117 C2 budgets. [Ablation audit](../results/development/final_ablations_audit_v1.json).
 - [x] Pass 195 offline engineering/policy fixtures and reproduce 3,042 frozen C1/C2 score arrays at 1e-12. [Validation](../results/development/validation_final_protocol_2026-11-13.json), [adapter reproduction](../results/development/frozen_suite_reproduction_v1.json).
-- [ ] Seal source-specific final acquisition/collector/adapter addenda before payload access; declare durations/seeds/order/impact/clock/capture criteria, qualify source compatibility and verify benign lab isolation. A model seal alone does not authorize final collection.
+- [x] Seal final-lab acquisition/collector/adapter addenda before traffic, with fixed catalog/seeds/durations/impact/clock/capture criteria; pass all three excluded benign isolation/full-clock replay preflights. [Review](FINAL_LAB_ACQUISITION_REVIEW.md), [gate](../results/qualification/final_lab_preflight_gate_v1.json). 216 offline tests pass; public-source qualification remains separate.
+- [ ] Seal and qualify separate public slow/K/external source acquisition addenda before opening those payloads. Lab preflights do not establish public-source compatibility or attack efficacy.
+- [x] Collect/qualify/score first final benign unit `final-b-010` on all 117 cases; preserve high hybrid/AE false-alarm failure without retuning. [Partial checkpoint](../results/final/final_lab_checkpoint_v1.json). This does not complete any full-matrix/attack efficacy item.
 
 ## 3. Final tests and reporting
 
 - [ ] Score the known-attack and withheld slow-family sessions; report per-family recall, missed episodes, false alarms and delay with an explicit measurement basis.
-- [ ] Run final benign stress sessions (at least five per condition) and isolated distributed sessions (40 planned attack episodes); log service impact, capture quality and misses. Verify isolation with benign traffic first.
+- [ ] Complete final benign stress sessions (at least five per condition) and isolated distributed sessions (40 planned attack episodes). Current 1/20 benign and 0/40 attacks; 59 catalog units remain. Preserve service impact, capture quality, misses and failed/unsupported units. Benign isolation preflights pass.
 - [ ] Run matched ablations and paired session-level comparisons. Keep repeats/seeds distinct from independent traffic sessions.
 - [ ] Run frozen CSE-CIC-IDS2018 transfer on compatible packet data or record the precise limitation.
 - [ ] Produce paper-ready tables, figures, reproducibility notes and the results section.

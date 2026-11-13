@@ -1,0 +1,19 @@
+{
+  "tests_run": 216,
+  "failures": 0,
+  "errors": 0,
+  "skipped": 0,
+  "all_tests_passed": true,
+  "elapsed_seconds": 1.4351334000239149,
+  "source_sha256": {
+    "lab/final_v1/agent.py": "14f494ee7f5631e129d4e842862d8ac904fd4fa48c824cf286d52e5250786c3d",
+    "lab/final_v1/capture_final.py": "7b1accc8d3b2107badc989254c2f52b9177e8b4784ca376a437b0514f2646782",
+    "lab/final_v1/collector.py": "d2d281efefe18fd0ab3d3cd9132ea33eb1919e23cab1bd9670561844da5ecf3a",
+    "lab/final_v1/sink.sh": "f5a361f22caf7f21d3c354271dfa3371c062ff0bbd47999f06ac4840f8a92875",
+    "src/final_lab_policy_v1.py": "a646ae80cfc7f2f462ee7df5ab1cd1c5d3436d5bc5e295fd7c30a038057584e3",
+    "src/audit_final_lab_v1.py": "2cd933ed7a80f7c4bb3b3c3cbd6b0c50260cfd2e83bf64151f4596caaac9be74",
+    "src/run_final_lab_v1.py": "020f574343f284f1a6df419dacf37e2bbeecbe62ec97d9464ba2ba76c0dda49e",
+    "src/test_final_lab_v1.py": "37a0898b56da5bd4e84ddcc2c3b871c197ad87e740bf41b33895dc1cc8aca0f8"
+  },
+  "scope": "Offline final-lab engineering fixtures; no reserved payload or final traffic."
+}

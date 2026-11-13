@@ -1,0 +1,59 @@
+{
+  "acquisition_sha256": {
+    "lab_benign": "97c66026ecbe6347099c579b066b8df0ee8e0fe13ef1a8c49320013f4633e7a9",
+    "lab_slow": "01c8e563e2220ce19982dc6388b0da412bede167833eadb5952473eb730ce9a1"
+  },
+  "preflight_batch_sha256": "78c7b215bb9d63ed104af4e9a579076ad163ef7b426af73bdaad3b2d34a7c077",
+  "all_three_quality_and_full_clock_replays_pass": true,
+  "frames": 219816,
+  "preflight_measurement_rows": 90,
+  "unit_evidence": [
+    {
+      "unit": "final-p-01",
+      "session_sha256": "3b8ef604bb56b0af0b755a2df44580319dd93dbb10be3ddd016a264e730f92e3",
+      "pcap_sha256": "d7fafcb390eca3f4935d699210161a064c6d871636c176c29202c995b3944055",
+      "preflight_result_sha256": "bc2bb32252e1abef3db3e3da196574c4ecf55afda08bc924d7e7bfee56f0f582",
+      "feature_sha256": "5a6ff04ba278d9591762c5a19bcaabdf02cff19b432df26e8c19b986f7e7be82",
+      "truth_sha256": "0e159a4a1fb7cc233dc784cf2a0079785d46c562717b7cd3ea517c86ba257a6a",
+      "core_sha256": "24795f084da55ab93bb858e14bd35663fd85c86b994ed928cb5d80e481c5e708",
+      "replay_rows": 104,
+      "measurement_rows": 30,
+      "selected_packets": 48192,
+      "late_packets": 0,
+      "kernel_capture_drops": 0,
+      "excluded_from_models_and_final_results": true
+    },
+    {
+      "unit": "final-p-02",
+      "session_sha256": "20d683c13357361fc74d91d4bb2bcdb2e648721d0489a702d4e8a4d2daeec35e",
+      "pcap_sha256": "99ace76025d7d2c8de2a275372b1e4bfbdd4b92f8dc806cb4405d8dfe1f6815e",
+      "preflight_result_sha256": "5fe6c77643d5f97fea1702054aea4b5c9428bb6d86a7b940bcea6b46322160fe",
+      "feature_sha256": "0dac0337dfb1b92ebcd6c216a584b919b99df0225b0e3525236099f816a4b613",
+      "truth_sha256": "c4867c2587f8f88dcf31b4a579b796033f0ec8bd156f0bcba47ff268ba82c386",
+      "core_sha256": "24795f084da55ab93bb858e14bd35663fd85c86b994ed928cb5d80e481c5e708",
+      "replay_rows": 104,
+      "measurement_rows": 30,
+      "selected_packets": 162457,
+      "late_packets": 0,
+      "kernel_capture_drops": 0,
+      "excluded_from_models_and_final_results": true
+    },
+    {
+      "unit": "final-p-03",
+      "session_sha256": "f58f6478d8344ee20ae5d53f2d2dbab502f9584ac19ce66004a15cc526406518",
+      "pcap_sha256": "4394440d4579bb2f6f6127a00b112e7ef8f1a8bee201c5162d1e6d3717541f99",
+      "preflight_result_sha256": "4e68db76f2a31d7891475377c78249dd88d7ed9bc2d038d61b124511db6bef95",
+      "feature_sha256": "b0ffefe92e81e8758bbdcae6450626943d07c5e95aecff812b03435e34b40845",
+      "truth_sha256": "e52b9e47214d4edbbe2037a5348812017154b0379b6a32797859a82140366e9b",
+      "core_sha256": "24795f084da55ab93bb858e14bd35663fd85c86b994ed928cb5d80e481c5e708",
+      "replay_rows": 111,
+      "measurement_rows": 30,
+      "selected_packets": 9159,
+      "late_packets": 0,
+      "kernel_capture_drops": 0,
+      "excluded_from_models_and_final_results": true
+    }
+  ],
+  "final_attack_traffic_generated": false,
+  "scope": "Excluded benign engineering gate; no model fitting/calibration/scoring."
+}

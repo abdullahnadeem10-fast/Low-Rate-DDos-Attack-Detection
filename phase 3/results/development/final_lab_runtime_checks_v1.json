@@ -1,0 +1,13 @@
+{
+  "engine_version": "29.9.2",
+  "local_pinned_images_available": true,
+  "Apache_event_MPM_and_reqtimeout_loaded_by_default": true,
+  "CGI_module_and_shell_dd_available": true,
+  "initial_no_network_syntax_check": "Failed in test harness because /evidence was not mounted; no service traffic started.",
+  "corrected_no_network_Apache_syntax_check_passed": true,
+  "configuration_sha256": "497afe2c9b846f055433ca2ba92689e1db93fe603116bbd04cd890de1eaaa648",
+  "embedded_network_helper_sha256": "793a32d088a62b7fb7f167d85d75bbafff8c30e75394f6c7138b19b1581d202b",
+  "tools_image": "sha256:bcd95e916f898bfad243bd3d4e8ccaf542cbe9d870e782ee62c45e5473f8112b",
+  "apache_image": "httpd:2.4@sha256:ce3b1e5ab31c4b1b6aba298b935cb88bc6ca1d643446b69d396406db5550bf68",
+  "scope": "Local image inspection and network-none syntax checks only; no reserved payload, lab attack or final traffic."
+}

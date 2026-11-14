@@ -1,3 +1,13 @@
+# Execution handoff — friend computer / Claude Code
+
+Follow [CLAUDE_CODE_FRIEND_HANDOFF.md](CLAUDE_CODE_FRIEND_HANDOFF.md). The immediate next action is machine/runtime and private frozen-artifact verification, then metadata-first qualification of the friend's own data under a declared protocol. Git does not contain the model bundle. The owner prepared an ignored private ZIP; it must be transferred manually and extracted at the clone root.
+
+Finish existing ablation analysis and compatible unchanged-model transfer/cost/live-latency work first. Flow-only CSVs are not automatically compatible with causal packet windows; unreserved sources need a separate versioned extension, not a forged source ID or edited freeze. An optional new approach needs a separate V2 plan, permitted new development data, matched baselines and fresh untouched finals. Original 60 lab trials remain complete and excluded from development. No new test/model has been run for this handoff.
+
+The research work remaining is detailed below; these instructions change execution location, not the recorded evidence or readiness.
+
+---
+
 # Next gate — lab catalog complete; finish external and cost evidence
 
 **All 60 declared lab trials are qualified/scored and independently reconciled: 20 benign, 40 campaigns, 117 configurations each (7,020 evaluations). No lab collection/scoring process or live lock remains. Do not rerun lab trials.** Read root `PROJECT_CONTEXT.md`, [full results](FINAL_LAB_RESULTS_V2.md), [current readiness](../results/final/final_lab_readiness_v1.json), [v8 audit](../results/final/final_lab_checkpoint_v8_audit.json) and [export audit](../results/final/final_lab_report_v2_audit.json). All prior frozen sources/results and the unscheduled interruption archive remain intact.

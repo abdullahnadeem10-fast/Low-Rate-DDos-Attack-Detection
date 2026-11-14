@@ -68,6 +68,8 @@ Start with a small, real packet-capture test. A checked box means there is evide
 
 - [x] Preserve the dead unscheduled setup and original rolling ledger; separately seal an exact-settings continuation after 11 passing refusal fixtures, then complete the original remaining entries once. [Interruption review](FINAL_LAB_INTERRUPTION_REVIEW.md). No released/partly measured trial was restarted.
 
+- [x] Prepare friend/Claude Code continuation instructions and verify an ignored private original-model/C1 transfer bundle, without retraining or modifying final evidence. [Handoff](CLAUDE_CODE_FRIEND_HANDOFF.md). New data qualification and all new tests remain pending.
+
 ## 3. Final tests and reporting
 
 - [ ] Score the known-attack and withheld slow-family sessions; report per-family recall, missed episodes, false alarms and delay with an explicit measurement basis. The 40 controlled lab campaigns are complete; reserved public slow/K acquisition/qualification remains pending.

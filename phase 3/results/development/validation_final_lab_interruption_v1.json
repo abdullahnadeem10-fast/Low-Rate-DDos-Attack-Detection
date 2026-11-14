@@ -1,0 +1,8 @@
+{
+  "tests_run": 11,
+  "failures": 0,
+  "errors": 0,
+  "all_tests_passed": true,
+  "seconds": 0.20936870000002727,
+  "scope": "New unscheduled-setup restart guards only. The previously passed 225 sealed engineering checks remain unchanged and are not redundantly rerun. No Docker traffic, models, fitting, scoring or held-out payload access."
+}

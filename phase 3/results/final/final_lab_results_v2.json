@@ -1,0 +1,257 @@
+{
+  "version": "final_lab_results_v2",
+  "source_sha256": "01ddfb9de319ba71dd71bbb14bf92aa789bf76edd9373da315691a0320233c29",
+  "checkpoint_path": "results/final/final_lab_checkpoint_v8.json",
+  "checkpoint_sha256": "79b42a34fbc0dec8d93195c351af6fe6fffd214cb84cb6df5de163c2efbe8747",
+  "checkpoint_audit_sha256": "426b8789b8f9e9ca76be6f103b564013ac674c346644a8d87306b3f83b7aeff3",
+  "input_CSV_sha256": "94b686d578b229263f754bb276338e36ba7878a531cc46fcd364128b6eddd8cd",
+  "total_case_rows": 117,
+  "stratum_case_rows": 1404,
+  "canonical_sessions": 60,
+  "case_session_evaluations": 7020,
+  "all_strata_reconcile_to_totals": true,
+  "lab_catalog_complete": true,
+  "study_tests_complete": false,
+  "headline_generalization_readiness": false,
+  "primary_seed": 7,
+  "matched_primary_cases": {
+    "main:AE:7": {
+      "case_id": "main:AE:7",
+      "sessions": 60,
+      "TP": 9509,
+      "FN": 51,
+      "FP": 1581,
+      "TN": 2019,
+      "excluded_known_positive": 0,
+      "excluded_known_benign": 0,
+      "qualified_false_alert_starts": 9,
+      "eligible_benign_seconds": 3600,
+      "exact_scorable_episodes": 40,
+      "episode_hits": 40,
+      "episode_misses": 0,
+      "recall": 0.9946652719665272,
+      "fpr": 0.43916666666666665,
+      "precision": 0.857439134355275,
+      "f1": 0.9209685230024213,
+      "false_alert_starts_per_hour": 9.0,
+      "episode_recall": 1.0,
+      "miss_inclusive_mean_restricted_delay_seconds": 4.016038727760315
+    },
+    "main:HGB:7": {
+      "case_id": "main:HGB:7",
+      "sessions": 60,
+      "TP": 3750,
+      "FN": 5810,
+      "FP": 901,
+      "TN": 2699,
+      "excluded_known_positive": 0,
+      "excluded_known_benign": 0,
+      "qualified_false_alert_starts": 2,
+      "eligible_benign_seconds": 3600,
+      "exact_scorable_episodes": 40,
+      "episode_hits": 30,
+      "episode_misses": 10,
+      "recall": 0.3922594142259414,
+      "fpr": 0.25027777777777777,
+      "precision": 0.8062782197376909,
+      "f1": 0.5277601857715853,
+      "false_alert_starts_per_hour": 2.0,
+      "episode_recall": 0.75,
+      "miss_inclusive_mean_restricted_delay_seconds": 50.14893875718117
+    },
+    "main:IF:7": {
+      "case_id": "main:IF:7",
+      "sessions": 60,
+      "TP": 4773,
+      "FN": 4787,
+      "FP": 1190,
+      "TN": 2410,
+      "excluded_known_positive": 0,
+      "excluded_known_benign": 0,
+      "qualified_false_alert_starts": 14,
+      "eligible_benign_seconds": 3600,
+      "exact_scorable_episodes": 40,
+      "episode_hits": 40,
+      "episode_misses": 0,
+      "recall": 0.4992677824267782,
+      "fpr": 0.33055555555555555,
+      "precision": 0.8004360221365084,
+      "f1": 0.6149584487534626,
+      "false_alert_starts_per_hour": 14.0,
+      "episode_recall": 1.0,
+      "miss_inclusive_mean_restricted_delay_seconds": 3.316038727760315
+    },
+    "main:LR:7": {
+      "case_id": "main:LR:7",
+      "sessions": 60,
+      "TP": 912,
+      "FN": 8648,
+      "FP": 0,
+      "TN": 3600,
+      "excluded_known_positive": 0,
+      "excluded_known_benign": 0,
+      "qualified_false_alert_starts": 0,
+      "eligible_benign_seconds": 3600,
+      "exact_scorable_episodes": 40,
+      "episode_hits": 20,
+      "episode_misses": 20,
+      "recall": 0.09539748953974896,
+      "fpr": 0.0,
+      "precision": 1.0,
+      "f1": 0.17417876241405653,
+      "false_alert_starts_per_hour": 0.0,
+      "episode_recall": 0.5,
+      "miss_inclusive_mean_restricted_delay_seconds": 97.22168418169022
+    },
+    "main:RF:7": {
+      "case_id": "main:RF:7",
+      "sessions": 60,
+      "TP": 6962,
+      "FN": 2598,
+      "FP": 0,
+      "TN": 3600,
+      "excluded_known_positive": 0,
+      "excluded_known_benign": 0,
+      "qualified_false_alert_starts": 0,
+      "eligible_benign_seconds": 3600,
+      "exact_scorable_episodes": 40,
+      "episode_hits": 30,
+      "episode_misses": 10,
+      "recall": 0.7282426778242678,
+      "fpr": 0.0,
+      "precision": 1.0,
+      "f1": 0.8427551143929306,
+      "false_alert_starts_per_hour": 0.0,
+      "episode_recall": 0.75,
+      "miss_inclusive_mean_restricted_delay_seconds": 46.44893875718117
+    },
+    "main:hybrid:7": {
+      "case_id": "main:hybrid:7",
+      "sessions": 60,
+      "TP": 7476,
+      "FN": 2084,
+      "FP": 2129,
+      "TN": 1471,
+      "excluded_known_positive": 0,
+      "excluded_known_benign": 0,
+      "qualified_false_alert_starts": 33,
+      "eligible_benign_seconds": 3600,
+      "exact_scorable_episodes": 40,
+      "episode_hits": 40,
+      "episode_misses": 0,
+      "recall": 0.7820083682008369,
+      "fpr": 0.5913888888888889,
+      "precision": 0.7783446121811557,
+      "f1": 0.78017218888599,
+      "false_alert_starts_per_hour": 33.0,
+      "episode_recall": 1.0,
+      "miss_inclusive_mean_restricted_delay_seconds": 10.491038727760316
+    },
+    "main:rate:7": {
+      "case_id": "main:rate:7",
+      "sessions": 60,
+      "TP": 81,
+      "FN": 9479,
+      "FP": 642,
+      "TN": 2958,
+      "excluded_known_positive": 0,
+      "excluded_known_benign": 0,
+      "qualified_false_alert_starts": 6,
+      "eligible_benign_seconds": 3600,
+      "exact_scorable_episodes": 40,
+      "episode_hits": 9,
+      "episode_misses": 31,
+      "recall": 0.008472803347280334,
+      "fpr": 0.17833333333333334,
+      "precision": 0.11203319502074689,
+      "f1": 0.0157541573470777,
+      "false_alert_starts_per_hour": 6.0,
+      "episode_recall": 0.225,
+      "miss_inclusive_mean_restricted_delay_seconds": 150.11534707546235
+    }
+  },
+  "preserved_pre_schedule_interruption": {
+    "unit_id": "final-a-015",
+    "original_state": "started",
+    "plan_path": "plan/final_lab_interruption_resume_v1.json",
+    "plan_sha256": "db5bee1653c0ee38beb37f9c238d8b76932d3dd8f161150ffabc7fa6510f73f2",
+    "scope": "Original unscheduled setup is preserved as engineering history. No released or partly measured trial was restarted; all canonical trial outcomes retained. Host/engine interruption is disclosed, not an independent environment."
+  },
+  "uncertainty": {
+    "primary_fixed_seed7": {
+      "recall": {
+        "status": "descriptive_paired_parent_bootstrap",
+        "difference": 0.21265690376569035,
+        "CI95": [
+          0.10448483263598322,
+          0.3268593096234299
+        ],
+        "difference_order": [
+          "AE",
+          "hybrid"
+        ],
+        "draws": 2000,
+        "parent_count": 60,
+        "seed": 20261113,
+        "scope": "Conditional on observed source/session clusters; no window/seed independence or population FPR guarantee."
+      },
+      "fpr": {
+        "status": "descriptive_paired_parent_bootstrap",
+        "difference": -0.1522222222222222,
+        "CI95": [
+          -0.16138888888888892,
+          -0.1447222222222222
+        ],
+        "difference_order": [
+          "AE",
+          "hybrid"
+        ],
+        "draws": 2000,
+        "parent_count": 60,
+        "seed": 20261113,
+        "scope": "Conditional on observed source/session clusters; no window/seed independence or population FPR guarantee."
+      }
+    },
+    "secondary_seed_averaged": {
+      "recall": {
+        "status": "descriptive_paired_parent_bootstrap",
+        "difference": 0.13575313807531397,
+        "CI95": [
+          0.06694508368200831,
+          0.2079320083682003
+        ],
+        "difference_order": [
+          "AE",
+          "hybrid"
+        ],
+        "draws": 2000,
+        "parent_count": 60,
+        "seed": 20261113,
+        "scope": "Conditional on observed source/session clusters; no window/seed independence or population FPR guarantee."
+      },
+      "fpr": {
+        "status": "descriptive_paired_parent_bootstrap",
+        "difference": -0.11027777777777786,
+        "CI95": [
+          -0.11455555555555558,
+          -0.10610972222222216
+        ],
+        "difference_order": [
+          "AE",
+          "hybrid"
+        ],
+        "draws": 2000,
+        "parent_count": 60,
+        "seed": 20261113,
+        "scope": "Conditional on observed source/session clusters; no window/seed independence or population FPR guarantee."
+      }
+    }
+  },
+  "uncertainty_interpretation": "Frozen paired-parent bootstrap resamples observed recordings within declared strata, with seeds averaged inside sessions. Any available intervals are descriptive conditional same-host session variability, not independent environments, population guarantees or proof of superiority. Preserve N/A where unsupported.",
+  "scope": "Descriptive frozen same-host lab catalog. No fitting, tuning, new evaluation rule, variant promotion, live-latency, population, denial-efficacy or independent-domain claim.",
+  "artifacts": {
+    "results/final/final_lab_case_totals_v2.csv": "4e6ad587ce6cb193c2abc0eb6f022d265a25dc9dad089c3ebb369d29b6c563ef",
+    "results/final/final_lab_case_strata_v2.csv": "2cbd739abcb9c567a47cf452909230f7f0134635619e5315040134735aa2bdfd",
+    "plan/FINAL_LAB_RESULTS_V2.md": "fc7fde29b4aefd539569df82d1aa969f809f74dd1742b01f6d0edd4d3b4361de"
+  }
+}

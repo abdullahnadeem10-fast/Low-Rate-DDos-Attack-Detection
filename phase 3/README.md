@@ -1,5 +1,15 @@
 # Phase 3 — Experiment workspace
 
+## Current status — complete final lab catalog (14 November 2026)
+
+All 60 canonical lab trials are qualified/scored and audited (20 benign, 40 controlled campaigns, 117 configurations each, 7,020 evaluations). All 8 campaign cells and 4 benign conditions have 5 repeats. Read the [full results](plan/FINAL_LAB_RESULTS_V2.md), [v8 audit](results/final/final_lab_checkpoint_v8_audit.json), [all-case/stratum manifest](results/final/final_lab_results_v2.json), [current readiness](results/final/final_lab_readiness_v1.json) and [next gate](plan/NEXT_STEPS.md).
+
+Primary seed 7 hybrid recall 78.20% and benign FPR 59.14%; AE recall 99.47%, FPR 43.92%. Preserve the weak low-connection and severe false-alarm findings, all baselines/ablations/seeds, and the [archived unscheduled interruption review](plan/FINAL_LAB_INTERRUPTION_REVIEW.md). No released or partly measured trial was restarted. Delays are offline proxies; same-host recordings/windows/seeds are not independent environments. No fitting or final-result-driven tuning occurred.
+
+Do not rerun completed collection/scoring, recreate declarations or feed final raw/context/warmup into development/calibration. Public slow/K/external qualification/transfer and separate cost/measured live-latency work remain pending; lab completion is not full-study/generalization readiness. Historical commands below are engineering/development history, not the current next action. Full continuation from another machine requires exact ignored private bundles and images, including the original resolution snapshot and interruption archive.
+
+## Historical development descriptions (superseded)
+
 Track completed work in [plan/CHECKLIST.md](plan/CHECKLIST.md) and resume from [plan/PROGRESS.md](plan/PROGRESS.md). Phase 2 defines the study protocol. Files under `results/pilot` are engineering evidence, not paper results.
 
 For a different harness or machine, read the maintained root [PROJECT_CONTEXT.md](../PROJECT_CONTEXT.md) first. It includes the full handoff, source hashes, commands and exact next action; [AGENTS.md](../AGENTS.md) is the compatible-harness entry point. A clone includes code and small evidence, while raw datasets and the local environment must be transferred separately or recreated.

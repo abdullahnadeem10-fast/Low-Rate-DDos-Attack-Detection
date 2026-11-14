@@ -1,0 +1,10 @@
+{
+  "report_manifest_sha256": "bfea8d2d42d7cc2b015291c3bf8faeba4fe8a4c56966dc24c70f9bc428525426",
+  "all_artifact_and_report_source_hashes_match": true,
+  "case_totals_rows": 117,
+  "case_strata_rows": 1404,
+  "all_count_rate_episode_and_weighted_delay_totals_reconcile": true,
+  "primary_confusion_counts_match_audited_checkpoint": true,
+  "source_checkpoint_sha256": "79b42a34fbc0dec8d93195c351af6fe6fffd214cb84cb6df5de163c2efbe8747",
+  "scope": "Read-only numerical/hash reconciliation of all exported case/stratum tables; no new fitting, metrics, selection, independence or performance claim."
+}

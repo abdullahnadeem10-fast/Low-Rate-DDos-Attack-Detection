@@ -1,0 +1,297 @@
+{
+  "checkpoint_sha256": "79b42a34fbc0dec8d93195c351af6fe6fffd214cb84cb6df5de163c2efbe8747",
+  "source_sha256": "859a576abe5de9dcb3bfe7a5161c39f277869b88776e705d3f16476970f2bfd2",
+  "CSV_sha256": "94b686d578b229263f754bb276338e36ba7878a531cc46fcd364128b6eddd8cd",
+  "audit_source_sha256": "4d8eb4efe5b10496e9822a52ed795a5fcd69d940c88e02ce87a79137107a8550",
+  "rows": 7020,
+  "canonical_sessions": 60,
+  "cases_per_session": 117,
+  "all_result_hashes_match": true,
+  "all_CSV_cells_match_scored_results": true,
+  "all_CSV_confusion_and_condition_counts_match": true,
+  "all_private_qualification_input_evidence_hashes_match": true,
+  "probe_failure_reason_and_slot_counts_match_qualification_ledgers": true,
+  "factor_coverage_matches_fixed_catalog": true,
+  "previous_checkpoint_version": 6,
+  "previous_source_JSON_CSV_bytes_preserved": true,
+  "original_model_acquisition_recovery_seals_intact": true,
+  "interruption_resume_seal_and_preserved_setup_intact": true,
+  "new_capture_structural_checks": [
+    {
+      "unit": "final-b-020",
+      "pcap_sha256": "6e70a2a0053d47189080489a8195befeb4c7fd43dfc5c96f2b1e92f2641370b2",
+      "frames": 22014,
+      "full_Ethernet_IPv4_TCP_records": true,
+      "MF_or_fragment_offset_nonzero": 0
+    },
+    {
+      "unit": "final-a-030",
+      "pcap_sha256": "e6d2338820cb8a0787cd816bb92a2b520d26b70f6c5b7124194e6fcf363e52cc",
+      "frames": 182222,
+      "full_Ethernet_IPv4_TCP_records": true,
+      "MF_or_fragment_offset_nonzero": 0
+    },
+    {
+      "unit": "final-b-018",
+      "pcap_sha256": "426018ba243a3ef344c319a5f6c2de353d94eac147542356b5df2a5b40a4bc93",
+      "frames": 22214,
+      "full_Ethernet_IPv4_TCP_records": true,
+      "MF_or_fragment_offset_nonzero": 0
+    },
+    {
+      "unit": "final-a-024",
+      "pcap_sha256": "7138436f7518fe717a4b58cfa13b1f112670807d9838cee4f061c46f798c0e6d",
+      "frames": 170343,
+      "full_Ethernet_IPv4_TCP_records": true,
+      "MF_or_fragment_offset_nonzero": 0
+    },
+    {
+      "unit": "final-a-003",
+      "pcap_sha256": "62ab51d6eed9f886728c6f5091d2523ba5f3db0dfce85e5eff131ee534bea08d",
+      "frames": 168193,
+      "full_Ethernet_IPv4_TCP_records": true,
+      "MF_or_fragment_offset_nonzero": 0
+    },
+    {
+      "unit": "final-b-012",
+      "pcap_sha256": "215c09a3de9c95cae7278e24befc769d4ffbb0262c3143f162768223a91b609b",
+      "frames": 439545,
+      "full_Ethernet_IPv4_TCP_records": true,
+      "MF_or_fragment_offset_nonzero": 0
+    },
+    {
+      "unit": "final-a-004",
+      "pcap_sha256": "49aefbaaa61b6452ac85ba8f995351d90d227382b6eb6e0dbae493d7f2ca6429",
+      "frames": 169297,
+      "full_Ethernet_IPv4_TCP_records": true,
+      "MF_or_fragment_offset_nonzero": 0
+    },
+    {
+      "unit": "final-a-029",
+      "pcap_sha256": "878020381dd1f7330e156d58b9df91a458d8a89f6ffa88a35cd75a0cee6a99e5",
+      "frames": 178180,
+      "full_Ethernet_IPv4_TCP_records": true,
+      "MF_or_fragment_offset_nonzero": 0
+    },
+    {
+      "unit": "final-a-028",
+      "pcap_sha256": "03e4c8b6e67364f6245bedf5b6dd3be2e8057a28ecb98ab71f7deab32d19fa63",
+      "frames": 180283,
+      "full_Ethernet_IPv4_TCP_records": true,
+      "MF_or_fragment_offset_nonzero": 0
+    },
+    {
+      "unit": "final-a-031",
+      "pcap_sha256": "4555394bf1e21fafc81cf537c85d09df83f69d360e06cdbf446dfb9940c0d94e",
+      "frames": 171869,
+      "full_Ethernet_IPv4_TCP_records": true,
+      "MF_or_fragment_offset_nonzero": 0
+    },
+    {
+      "unit": "final-a-039",
+      "pcap_sha256": "9a301d24e1d322a78071b45cca43702229cec5ba700cd3777257a351f06372b1",
+      "frames": 162563,
+      "full_Ethernet_IPv4_TCP_records": true,
+      "MF_or_fragment_offset_nonzero": 0
+    },
+    {
+      "unit": "final-b-016",
+      "pcap_sha256": "b526277db1bc2cc8a0da0876f78df926e240b143df52a74056b08aa461f5ca30",
+      "frames": 22202,
+      "full_Ethernet_IPv4_TCP_records": true,
+      "MF_or_fragment_offset_nonzero": 0
+    },
+    {
+      "unit": "final-b-015",
+      "pcap_sha256": "9b8a23de50207e8b7f07666d71aa1fa6b7e8fb8367ffd4a7f8dc3480ee66e9bc",
+      "frames": 436423,
+      "full_Ethernet_IPv4_TCP_records": true,
+      "MF_or_fragment_offset_nonzero": 0
+    },
+    {
+      "unit": "final-a-006",
+      "pcap_sha256": "04446610901d2dbdf1970974ca0992e01d2ef7d98fec471fc6d73a890a75cfaf",
+      "frames": 181974,
+      "full_Ethernet_IPv4_TCP_records": true,
+      "MF_or_fragment_offset_nonzero": 0
+    },
+    {
+      "unit": "final-a-037",
+      "pcap_sha256": "c87d06423b5c827c8cd3bc4066e5cb41ed2ec0bcc91e65419d5ced41fb7f5910",
+      "frames": 163558,
+      "full_Ethernet_IPv4_TCP_records": true,
+      "MF_or_fragment_offset_nonzero": 0
+    },
+    {
+      "unit": "final-a-015",
+      "pcap_sha256": "0a7c8494a5332f4f5c2da2ecd8c468de02eb89738cda01cf78be6778af7ad2af",
+      "frames": 172189,
+      "full_Ethernet_IPv4_TCP_records": true,
+      "MF_or_fragment_offset_nonzero": 0
+    },
+    {
+      "unit": "final-a-013",
+      "pcap_sha256": "2e517d221694841d5bfdb6b4f218336d3686eb20d1aeb818eabe71e70faf5ed7",
+      "frames": 172013,
+      "full_Ethernet_IPv4_TCP_records": true,
+      "MF_or_fragment_offset_nonzero": 0
+    },
+    {
+      "unit": "final-b-006",
+      "pcap_sha256": "3584a2bd99a76e5125f87b1b2f728dbc598542fe4484c429dbe66fbb44bdda74",
+      "frames": 89770,
+      "full_Ethernet_IPv4_TCP_records": true,
+      "MF_or_fragment_offset_nonzero": 0
+    },
+    {
+      "unit": "final-a-035",
+      "pcap_sha256": "9c9587136c27646effdc459986c499376f511b4789d1dbbcfe5d786b54910e6d",
+      "frames": 171600,
+      "full_Ethernet_IPv4_TCP_records": true,
+      "MF_or_fragment_offset_nonzero": 0
+    },
+    {
+      "unit": "final-a-036",
+      "pcap_sha256": "720555809733a8bf414c5e56de71e6b2ed88ebe0c1eee2ccecb59f081b384cb2",
+      "frames": 162328,
+      "full_Ethernet_IPv4_TCP_records": true,
+      "MF_or_fragment_offset_nonzero": 0
+    },
+    {
+      "unit": "final-a-021",
+      "pcap_sha256": "2ac24c94f68ddef1fce7b8a76bf5b393626affed9d9f4dbb0d30bfcffde73f77",
+      "frames": 167109,
+      "full_Ethernet_IPv4_TCP_records": true,
+      "MF_or_fragment_offset_nonzero": 0
+    },
+    {
+      "unit": "final-a-032",
+      "pcap_sha256": "a33c00e210057a02416a464936cba5fa5c6acbfaa71f012eb9f5cc2fbdd287f5",
+      "frames": 169412,
+      "full_Ethernet_IPv4_TCP_records": true,
+      "MF_or_fragment_offset_nonzero": 0
+    },
+    {
+      "unit": "final-a-033",
+      "pcap_sha256": "b82ec7aafd25511769d7789ecdc975c44b46930c326686709fd6b8a89c34d58d",
+      "frames": 170419,
+      "full_Ethernet_IPv4_TCP_records": true,
+      "MF_or_fragment_offset_nonzero": 0
+    },
+    {
+      "unit": "final-a-007",
+      "pcap_sha256": "5ddf299eccbfaddee1e0ba08942ef23bcb26c9847cb4fbc308c2d3df71a08923",
+      "frames": 180324,
+      "full_Ethernet_IPv4_TCP_records": true,
+      "MF_or_fragment_offset_nonzero": 0
+    },
+    {
+      "unit": "final-a-018",
+      "pcap_sha256": "62fb2282956f9e08983c7d1c5b98dda13f1f9c1ef7dc23f56ddb55cc698e6a1f",
+      "frames": 202133,
+      "full_Ethernet_IPv4_TCP_records": true,
+      "MF_or_fragment_offset_nonzero": 0
+    },
+    {
+      "unit": "final-a-025",
+      "pcap_sha256": "68485bfc2bbd87f453884af288db7197928992165b035417f41250f61d3a21de",
+      "frames": 168594,
+      "full_Ethernet_IPv4_TCP_records": true,
+      "MF_or_fragment_offset_nonzero": 0
+    },
+    {
+      "unit": "final-b-002",
+      "pcap_sha256": "8297088a0d183d3c2979864db8ad19579e51781403e4f1a48a56dd46de08fcfb",
+      "frames": 132897,
+      "full_Ethernet_IPv4_TCP_records": true,
+      "MF_or_fragment_offset_nonzero": 0
+    },
+    {
+      "unit": "final-a-034",
+      "pcap_sha256": "e1d14de0611d249ac84e17a76f69eb2a20a998c9f86e39aa53a29e909c460c26",
+      "frames": 171815,
+      "full_Ethernet_IPv4_TCP_records": true,
+      "MF_or_fragment_offset_nonzero": 0
+    },
+    {
+      "unit": "final-a-001",
+      "pcap_sha256": "b331adfd7635832426c72d6acf1f72e5877dcee6a876b8a4e7e56ef057de971c",
+      "frames": 169607,
+      "full_Ethernet_IPv4_TCP_records": true,
+      "MF_or_fragment_offset_nonzero": 0
+    },
+    {
+      "unit": "final-b-013",
+      "pcap_sha256": "371b8915bdadef7f88253af1c149ac808e73d3961d73cac2913ff0914aa6380f",
+      "frames": 436677,
+      "full_Ethernet_IPv4_TCP_records": true,
+      "MF_or_fragment_offset_nonzero": 0
+    },
+    {
+      "unit": "final-b-008",
+      "pcap_sha256": "a58055d962c75a519a6a0daefb9f4432f18343aadb97c6aa356d03ced0a01a0b",
+      "frames": 89293,
+      "full_Ethernet_IPv4_TCP_records": true,
+      "MF_or_fragment_offset_nonzero": 0
+    },
+    {
+      "unit": "final-b-009",
+      "pcap_sha256": "cfb99a7b31328a726bdf6440303622b4ea514739ea70e8b026113326e71a82d1",
+      "frames": 89140,
+      "full_Ethernet_IPv4_TCP_records": true,
+      "MF_or_fragment_offset_nonzero": 0
+    },
+    {
+      "unit": "final-a-009",
+      "pcap_sha256": "fc44382c863706466a41f2f6eda621c1095e74c7bc259371ef232bc3bb1afef0",
+      "frames": 177731,
+      "full_Ethernet_IPv4_TCP_records": true,
+      "MF_or_fragment_offset_nonzero": 0
+    },
+    {
+      "unit": "final-b-004",
+      "pcap_sha256": "baeb95b92ed33016ea23e5205ddf74b712a5c068b2f2fd3dc333666b038aefcc",
+      "frames": 134633,
+      "full_Ethernet_IPv4_TCP_records": true,
+      "MF_or_fragment_offset_nonzero": 0
+    },
+    {
+      "unit": "final-b-011",
+      "pcap_sha256": "b51d9e81a369568246cb196b1e4dba626517b64d2ab956aab4a736f03783d958",
+      "frames": 437891,
+      "full_Ethernet_IPv4_TCP_records": true,
+      "MF_or_fragment_offset_nonzero": 0
+    },
+    {
+      "unit": "final-a-010",
+      "pcap_sha256": "653294eafa8e967d08171831badda3e819d5a95f6a99c870bffca2de52d7d5c9",
+      "frames": 178228,
+      "full_Ethernet_IPv4_TCP_records": true,
+      "MF_or_fragment_offset_nonzero": 0
+    },
+    {
+      "unit": "final-a-020",
+      "pcap_sha256": "bdbe8d109dff36537335d1adbe3198cf8720e7e13087c4ef3755ea36249fb21c",
+      "frames": 200803,
+      "full_Ethernet_IPv4_TCP_records": true,
+      "MF_or_fragment_offset_nonzero": 0
+    },
+    {
+      "unit": "final-a-016",
+      "pcap_sha256": "7196bcc7a577ecece8079b9183a4fa6e5b73fa13e881d8f3c16f2a832670ebe1",
+      "frames": 203090,
+      "full_Ethernet_IPv4_TCP_records": true,
+      "MF_or_fragment_offset_nonzero": 0
+    },
+    {
+      "unit": "final-a-008",
+      "pcap_sha256": "d9a87adf05967ff7c2e6f05e1c1e0a3c9653f8fb3b4ddbac051f371ec46f5846",
+      "frames": 180349,
+      "full_Ethernet_IPv4_TCP_records": true,
+      "MF_or_fragment_offset_nonzero": 0
+    }
+  ],
+  "unresolved_attempts": 0,
+  "collector_lock_present": false,
+  "scope": "Read-only actual data/hash/row/factor/probe/packet reconciliation. Previously passed 225 engineering checks remain on unchanged sealed sources; no fitting, tuning, recollection or public held-out access. Probe reason categories do not change criteria/counts. This audit does not establish model performance, independence or live latency."
+}

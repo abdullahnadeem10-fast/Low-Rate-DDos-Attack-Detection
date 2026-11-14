@@ -1,0 +1,55 @@
+{
+  "version": "final_lab_interruption_review_v1",
+  "resume_plan_path": "plan/final_lab_interruption_resume_v1.json",
+  "resume_plan_sha256": "db5bee1653c0ee38beb37f9c238d8b76932d3dd8f161150ffabc7fa6510f73f2",
+  "canonical_completed_before_interruption": 36,
+  "canonical_remaining_after_review": 24,
+  "interrupted_setup_unit": "final-a-015",
+  "original_legacy_record_retained": "started",
+  "schedule_released": false,
+  "seven_agents_failed_at_pinned_schedule_gate": true,
+  "server_HTTP_bytes": 0,
+  "agent_research_outputs_present": false,
+  "qualification_or_scoring_existed": false,
+  "unflushed_capture_bytes": 0,
+  "unflushed_capture_interpretation": "Not qualified or interpretable as zero TCP/benign evidence; preserved only as interruption artifact.",
+  "old_runner_inactive_verified": true,
+  "old_stale_lock_archived": true,
+  "prepared_files_archived_byte_exact": 20,
+  "interruption_root_cause": "Not conclusively diagnosed. Preserved agent traces show mount I/O errors while checking the unreleased schedule path; the runner and Docker engine were inactive when continuation was requested.",
+  "restart_scope": "Fresh schedule for a demonstrably unscheduled setup, then all original remaining catalog entries. Never retry a released/partly measured trial or tune from outcomes.",
+  "original_models_labels_features_settings_seeds_order_unchanged": true,
+  "public_held_out_payloads_opened": false,
+  "independent_environment_claim": false,
+  "evidence": {
+    "interrupted_legacy_ledger.json": {
+      "path": "data/final_lab_interruption_v1/interrupted_legacy_ledger.json",
+      "sha256": "0783ab9891bb9092cbc40044e8b3dfcd8f58bb220858059e3ccf8a992d065207"
+    },
+    "prepared_file_inventory.json": {
+      "path": "data/final_lab_interruption_v1/prepared_file_inventory.json",
+      "sha256": "b5a5a948ca5a63e1340ba0483faa164b0bf5ced29a841a682af92aeab1ea1b38"
+    },
+    "container_logs.json": {
+      "path": "data/final_lab_interruption_v1/container_logs.json",
+      "sha256": "51525fac0c8a4aea98a3a8006c616817f3c4f6e9bfa59a8cb0f07d51fdd4f7d5"
+    },
+    "runtime_inspect.json": {
+      "path": "data/final_lab_interruption_v1/runtime_inspect.json",
+      "sha256": "3adeb648b812d5081240c4bbbd0831ab7b64a851b272b9a19c919641e87bf377"
+    },
+    "original_collection.lock": {
+      "path": "data/final_lab_interruption_v1/original_collection.lock",
+      "sha256": "73e5608506e1117ddb50c360078389c68b08f4485e71b4b02cca29a0f7d98f9d"
+    },
+    "unflushed_container_capture.pcap": {
+      "path": "data/final_lab_interruption_v1/unflushed_container_capture.pcap",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "validation": {
+      "path": "results/development/validation_final_lab_interruption_v1.json",
+      "sha256": "62d393cccb59406f1734e46cb69f404b8f6f9adc91fccd9d333d3105bb0b5f45"
+    }
+  },
+  "stopped_containers_with_archived_inspection_and_logs": 10
+}

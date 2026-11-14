@@ -1,3 +1,33 @@
+# Next gate — lab catalog complete; finish external and cost evidence
+
+**All 60 declared lab trials are qualified/scored and independently reconciled: 20 benign, 40 campaigns, 117 configurations each (7,020 evaluations). No lab collection/scoring process or live lock remains. Do not rerun lab trials.** Read root `PROJECT_CONTEXT.md`, [full results](FINAL_LAB_RESULTS_V2.md), [current readiness](../results/final/final_lab_readiness_v1.json), [v8 audit](../results/final/final_lab_checkpoint_v8_audit.json) and [export audit](../results/final/final_lab_report_v2_audit.json). All prior frozen sources/results and the unscheduled interruption archive remain intact.
+
+1. **Prepare separate pre-access public-source declarations.** Complete public Wednesday slow/context, supplied CIC2019 01-12 and all CSE-CIC-IDS2018 remain unopened/unqualified. Declare source ownership, exact allowed acquisitions/labels/clock/service/packet compatibility, context boundaries, failure accounting and qualification before opening payloads. Seal the addenda against the unchanged freeze. Friday remains T and 03-11 V. Never infer public idle/unlabelled traffic benign or move final lab context into development.
+2. **Qualify and run only supported frozen transfer.** Preserve complete groups, raw hashes, state resets, unknown labels, clock uncertainty and any incompatible/N/A source. Use original models/maps/thresholds/evaluation and every prescribed case; no source-specific retuning or outcome-based inclusion. Lab completion does not establish independent-domain or zero-day generalization.
+3. **Declare/measure cost and actual live latency separately.** Feature extraction/inference cost and measured end-to-end live detector delay are not established by whole-job runtimes or the offline window-end+1s reorder proxy. Fix workload/hardware/warmup/repetitions/measurement and failure accounting before these experiments; retain misses rather than reporting detected-only speed.
+4. **Finish paper evidence using all findings.** Hybrid recall 78.20%, FPR 59.14% versus AE 99.47%, 43.92% at seed 7 do not support a hybrid advantage on this lab mixture. Both have serious benign-stress false alarms. Weak one-source low-header/body hybrid recall 176/1195 and 160/1195, despite 40/40 overall episode hits, must remain. All 7 matched baselines and 117 cases/1, 404 strata are in report-v2. Paired-parent intervals are descriptive conditional same-host session intervals, not population guarantees; no best-seed/variant selection. Complete supported transfer/cost tables, scientific figures and limitations before results-based paper claims.
+5. **Preserve reproducibility and handoff.** Do not overwrite v1-v6/v8 source/JSON/CSV or completed report-v2. V7/report-v1 preparation was superseded and unexecuted. Both old/new ledgers and original setup/stale lock are retained under the sealed interruption review; do not count the unscheduled setup as another independent trial. Full replay/audit/inference from a fresh clone requires exact ignored raw/qualified/scores/weights/C1/image/original-resolution/interruption bundles separately. Public source contains code/small evidence only. Keep private raw data/environments/credentials/student IDs outside Git and preserve the sanitized Phase2 proposal.
+
+Full-study completion and headline/generalization readiness remain false; lab catalog completion is true. Any later model redesign requires separate development and new independent final evidence.
+
+---
+
+## Historical active-run instructions (superseded; do not launch)
+
+# Current gate — finish the active sealed 24-unit continuation
+
+Read the newest root `PROJECT_CONTEXT.md` entry and `final_lab_interruption_resume_v1.json` first. The original full run reached 36 canonical qualified/scored trials, then stopped before releasing the next unit's schedule. Docker was restored; the dead setup, old ledger, logs and stale lock are preserved byte-exactly. Eleven new refusal fixtures passed, and a separate declaration was sealed before the fresh schedule. No released/partly measured trial or prior result was replaced.
+
+**A collector is active: do not start another runner or remove its lock.** Check `data/final_lab_v1/collection.lock`, its OS process and `results/qualification/final_lab_interruption_batch_v1.json`. Active command is project Python on `src/final_lab_interruption_resume_v1.py run --limit 24`; current continuation starts `final-a-015` and ends `final-a-008`, retaining all original settings/seeds/order. The old image-recovery ledger remains byte-exact with its preserved unscheduled `started` entry; do not invoke its old runner. Any new failed/partial entry stops for explicit review, not automatic recollection.
+
+After the collector exits successfully: run new `src/summarize_final_lab_checkpoint_v8.py` once; run `src/audit_final_lab_checkpoint_v2.py --version 8 --previous 6 --new-units` with all 39 fixed IDs added since v6 (derive from catalogs and v6 completed IDs). Then run `src/report_final_lab_results_v2.py` once. These sources are prepared/syntax-checked, not completed results. Never execute/overwrite the older prepared v7/report-v1 or completed v1-v6 snapshots. Audit v2 validates the separately sealed interruption archive, effective canonical ledger and every original/current result, qualification/input/raw/CSV hash. Report v2 requires the complete audited 60-trial catalog and retains all 117 configurations and declared strata.
+
+Copy exact new qualification metadata, update root context/progress/checklist with actual final findings, and review/sanitize/push code/plans/small evidence only. Preserve every raw/setup archive, model and old evidence byte outside Git. Complete public slow/K/external sources remain unopened/unqualified; transfer and measured cost/live-latency work remain separate. Host/engine interruption is disclosed, not independent-environment evidence.
+
+---
+
+## Historical next-action record (superseded while continuation runs)
+
 # Next gate — continue after checkpoint v6 (twenty-one final sessions)
 
 Read root `PROJECT_CONTEXT.md`, [v6 checkpoint](../results/final/final_lab_checkpoint_v6.json)/[audit](../results/final/final_lab_checkpoint_v6_audit.json), [probe definitions](PROBE_OUTCOME_DEFINITIONS.md), recovery review/ledger and checklist. Completed 8/20 benign and 13/40 campaigns; 39 lab sessions remain. All 117 cases/session scored (2,457 evaluations). Original seals intact, actual data/hash/row/packet checks pass; previously passed 225 engineering checks remain on unchanged sealed sources. No active job/lock/task-owned lab resource remains.

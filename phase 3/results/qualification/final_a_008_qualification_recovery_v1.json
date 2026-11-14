@@ -1,0 +1,119 @@
+{
+  "freeze_sha256": "063a838d5fe45b1d38e536ca589959214871961dcb944a868203e98e15712bfe",
+  "acquisition_sha256": "01c8e563e2220ce19982dc6388b0da412bede167833eadb5952473eb730ce9a1",
+  "source_slot": "lab_slow",
+  "source_id": "lab_final_slow",
+  "role": "U",
+  "parent_recording": "final-a-008",
+  "group_id": "final-a-008",
+  "raw_sha256": "d9a87adf05967ff7c2e6f05e1c1e0a3c9653f8fb3b4ddbac051f371ec46f5846",
+  "qualification_pass": true,
+  "model_scores_used_for_qualification": false,
+  "unknown_or_idle_inferred_benign": false,
+  "feature_state_crosses_groups": false,
+  "feature_core_sha256": "24795f084da55ab93bb858e14bd35663fd85c86b994ed928cb5d80e481c5e708",
+  "predictor_columns": [
+    "packets_in",
+    "packets_out",
+    "bytes_in",
+    "bytes_out",
+    "syn_in",
+    "ack_in",
+    "rst_in",
+    "synack_out",
+    "handshakes_completed",
+    "new_connections",
+    "distinct_sources",
+    "packet_length_mean",
+    "packet_length_std",
+    "inbound_iat_mean",
+    "inbound_iat_std",
+    "active_connections",
+    "known_age_connections",
+    "unknown_age_connections",
+    "active_age_mean",
+    "active_age_max",
+    "uncompleted_fraction",
+    "handshake_to_syn_ratio",
+    "in_out_byte_ratio",
+    "packet_rate_change",
+    "packets_in_mean_5",
+    "packets_in_std_5",
+    "packets_in_mean_10",
+    "packets_in_std_10",
+    "packets_in_mean_20",
+    "packets_in_std_20"
+  ],
+  "qualified_after_seal_utc": 1794627966.10288,
+  "payload_access_started_utc": 1794627622.8568394,
+  "capture_started_utc": 1794627626.067593,
+  "qualification_evidence": {
+    "provenance": {
+      "path": "data/final_lab_v1/final-a-008/qualified_v1/provenance.json",
+      "sha256": "bdcb9f865bdb8addec5e1173a72cc286586cc001c9fc6e0a4ad7c08d2af0f3d5"
+    },
+    "clock_labels": {
+      "path": "data/final_lab_v1/final-a-008/qualified_v1/clock_labels.json",
+      "sha256": "d2b77616141d207a9864e56f70dcca369e6433f76ea83b16ac8b7672a0eaae55"
+    },
+    "reference_recovery": {
+      "path": "data/final_lab_v1/final-a-008/qualified_v1/reference_recovery.json",
+      "sha256": "722f47c67c0ae8e68398ad725a5725521671e56bda10b487932a8144a5de9e44"
+    },
+    "interruption_resume": {
+      "path": "data/final_lab_v1/final-a-008/qualified_v1/interruption_resume.json",
+      "sha256": "c3770146810668af43e7a43dd5081476793b476fdfbfaa451ee33bf92cc5353c"
+    }
+  },
+  "features": {
+    "path": "data/final_lab_v1/final-a-008/qualified_v1/features.csv",
+    "sha256": "9ddeb14d1c4bb297930fdb1f8c3ff7fe702d43c326d93a7d7ac70ca1110067e6"
+  },
+  "ground_truth": {
+    "path": "data/final_lab_v1/final-a-008/qualified_v1/truth.csv",
+    "sha256": "abbe3fb94bba375982df94a8c3d283cc551408d2048a1f5d1719001ea31a132d"
+  },
+  "scorable_clock_segments": [
+    {
+      "start": 1794627627,
+      "end": 1794627940,
+      "core_reset": true,
+      "boundary_guard_seconds": 50
+    }
+  ],
+  "evaluation_intervals": [
+    [
+      1794627694,
+      1794627934
+    ]
+  ],
+  "episodes": [
+    {
+      "id": "final-a-008",
+      "family": "incomplete_header",
+      "onset_low": 1794627694.081994,
+      "onset_high": 1794627694.081994,
+      "end": 1794627934,
+      "impact_class": "See measured probe failures/latencies; no automatic denial assertion"
+    }
+  ],
+  "packet_quality": {
+    "truncated_records": 0,
+    "selected_fragmented_tcp": 0,
+    "late_selected_dropped": 0,
+    "kernel_capture_drops": 0
+  },
+  "service": {
+    "protocol": "TCP",
+    "port": 80
+  },
+  "label_provenance_verified": true,
+  "clock_alignment_verified": true,
+  "isolated_private_lab_verified": true,
+  "all_planned_outcomes_retained": true,
+  "qualification_exclusions": {
+    "planned_episodes": 1,
+    "no_corroborated_initial_payload": 0,
+    "no_silent_replacement": true
+  }
+}

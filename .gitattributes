@@ -33,3 +33,6 @@
 
 # The exact-image recovery is declared before resumed traffic.
 "phase 3/plan/final_lab_resolution_recovery_*.json" -text whitespace=cr-at-eol
+
+# Reviewed unscheduled-setup declarations are sealed before resumption.
+"phase 3/plan/final_lab_interruption_resume_*.json" -text whitespace=cr-at-eol
